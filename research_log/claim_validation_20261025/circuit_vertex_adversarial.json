@@ -1,0 +1,461 @@
+{
+  "scope": "fresh bounded adversarial actual-gate audit; independent exact LP vertices",
+  "source_sha256": {
+    "simulation\\source_faithful_20261024\\qft_bank.py": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "simulation\\source_faithful_20261024\\qft_reconstruction.py": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "simulation\\source_faithful_20261024\\qft_normal_form.py": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1",
+    "simulation\\source_faithful_20261024\\resource_profile.py": "b6eb390ec0dde1f8e50d1ff9310285b5b74f5f746cc397eeb0c6ec387f9dda01",
+    "simulation\\pruning_study_20261023\\circuits.py": "5ab166ee9a3f5db18d6f42d7e99a9341277e98e2a9e60d4569dc8ff383ae56e9",
+    "simulation\\oracle_h\\node_bound_reversible.py": "7aa8181eca1e259bc13fac7dd47ce92d53602d63696d5d6aa14736943c33da12",
+    "research_log\\claim_validation_20261025\\circuit_vertex_adversarial.py": "4ca3ec34e758c263554307ce6acd10cd79ed5beff0c92e8718e63e0112e06312"
+  },
+  "qft_rows": [
+    {
+      "label": "near_integer_denominator17",
+      "weights": [
+        17,
+        3
+      ],
+      "values": [
+        16,
+        2
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 128,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 128,
+        "maximum_amplitude_error": 7.622822184008539e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.52478030202019e-12,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 20.317518600000767
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "weights": [
+        17,
+        3
+      ],
+      "values": [
+        16,
+        2
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 128,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 128,
+        "maximum_amplitude_error": 4.372079928143151e-13,
+        "maximum_leakage": 6.661338147750939e-16,
+        "maximum_norm_error": 8.744116541947733e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 9.721926600002917
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "weights": [
+        17,
+        3
+      ],
+      "values": [
+        16,
+        2
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 128,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 128,
+        "maximum_amplitude_error": 7.783228829911308e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.5567547251293945e-12,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 20.557171300024493
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "weights": [
+        17,
+        3
+      ],
+      "values": [
+        16,
+        2
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 128,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 128,
+        "maximum_amplitude_error": 4.2455010116981206e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 8.490985692333197e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 9.981256200000644
+      }
+    },
+    {
+      "label": "ties_and_zero_profit",
+      "weights": [
+        2,
+        4,
+        1
+      ],
+      "values": [
+        1,
+        2,
+        0
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 112,
+        "maximum_amplitude_error": 6.306223147372305e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.2612133559741778e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.47745400000712834
+      }
+    }
+  ],
+  "boolean_rows": [],
+  "superpositions": [
+    {
+      "label": "ties_and_zero_profit",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "seed_hardcoded": 2026102529,
+        "logical_amplitudes": 32,
+        "maximum_amplitude_error": 0.21540057075978067,
+        "workspace_leakage": 0.0,
+        "normalization_error": 1.993072373807081e-12,
+        "failures": 1
+      }
+    }
+  ],
+  "profile_rows": [
+    {
+      "label": "near_integer_denominator17",
+      "policy": "direct",
+      "form": "raw",
+      "mismatch": false,
+      "actual_full_transpile_counts": {
+        "u": 18156,
+        "cx": 11301
+      },
+      "actual_full_transpile_depth": 9110,
+      "derived": {
+        "classification": "DERIVED",
+        "qubits": 38,
+        "native_counts": {
+          "h": 640,
+          "cp": 4020,
+          "x": 578,
+          "ccx": 542,
+          "cx": 9
+        },
+        "native_depth": 1750,
+        "common_counts": {
+          "u": 18156,
+          "cx": 11301
+        },
+        "common_depth": 9110,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.01784750001388602,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "policy": "direct",
+      "form": "cancelled",
+      "mismatch": false,
+      "actual_full_transpile_counts": {
+        "u": 10448,
+        "cx": 6749
+      },
+      "actual_full_transpile_depth": 6381,
+      "derived": {
+        "classification": "DERIVED",
+        "qubits": 38,
+        "native_counts": {
+          "h": 192,
+          "cp": 1756,
+          "x": 146,
+          "ccx": 538,
+          "cx": 9
+        },
+        "native_depth": 983,
+        "common_counts": {
+          "u": 10448,
+          "cx": 6749
+        },
+        "common_depth": 6381,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.010957100021187216,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "policy": "source_generic",
+      "form": "raw",
+      "mismatch": false,
+      "actual_full_transpile_counts": {
+        "u": 18714,
+        "cx": 11735
+      },
+      "actual_full_transpile_depth": 9685,
+      "derived": {
+        "classification": "DERIVED",
+        "qubits": 39,
+        "native_counts": {
+          "h": 640,
+          "cp": 4020,
+          "x": 578,
+          "ccx": 604,
+          "cx": 71
+        },
+        "native_depth": 1854,
+        "common_counts": {
+          "u": 18714,
+          "cx": 11735
+        },
+        "common_depth": 9685,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.01870820001931861,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      }
+    },
+    {
+      "label": "near_integer_denominator17",
+      "policy": "source_generic",
+      "form": "cancelled",
+      "mismatch": false,
+      "actual_full_transpile_counts": {
+        "u": 10988,
+        "cx": 7171
+      },
+      "actual_full_transpile_depth": 7087,
+      "derived": {
+        "classification": "DERIVED",
+        "qubits": 39,
+        "native_counts": {
+          "h": 192,
+          "cp": 1756,
+          "x": 146,
+          "ccx": 598,
+          "cx": 71
+        },
+        "native_depth": 1107,
+        "common_counts": {
+          "u": 10988,
+          "cx": 7171
+        },
+        "common_depth": 7087,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.011038399999961257,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      }
+    }
+  ],
+  "errors": []
+}

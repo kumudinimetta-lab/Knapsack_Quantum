@@ -1,0 +1,5 @@
+near_integer_denominator17 direct raw COMPLETED 128 0
+near_integer_denominator17 direct cancelled COMPLETED 128 0
+near_integer_denominator17 source_generic raw COMPLETED 128 0
+near_integer_denominator17 source_generic cancelled COMPLETED 128 0
+ties_and_zero_profit direct raw COMPLETED 32 0

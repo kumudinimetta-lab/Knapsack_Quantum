@@ -1,0 +1,43 @@
+{
+  "classification": "DERIVED exact arithmetic coverage",
+  "panels": {
+    "main": {
+      "instances": 700,
+      "reachable_states": 3148192,
+      "bank_floor_comparisons": 12592768,
+      "empty_inputs": 0,
+      "all_fit_inputs": 0
+    },
+    "core": {
+      "instances": 700,
+      "reachable_states": 2056264,
+      "bank_floor_comparisons": 8225056,
+      "empty_inputs": 11,
+      "all_fit_inputs": 23
+    }
+  },
+  "total": {
+    "instances": 1400,
+    "reachable_states": 5204456,
+    "bank_floor_comparisons": 20817824,
+    "empty_inputs": 11,
+    "all_fit_inputs": 23
+  },
+  "status": "PASS",
+  "predicate_floor_mismatches": 0,
+  "seconds_measured": 16.223300899990136,
+  "reference": "Independent full suffix dual breakpoint enumeration; no greedy LP/bank helper imports",
+  "scope": "All reachable quotient states of the 700 original and 700 core registries, all four banks. Integer-P equivalence extends floors to all integer thresholds; NOT exhaustive gate validation.",
+  "hashes": {
+    "research_log\\claim_validation_20261025\\root_all_reachable_coverage.py": "4f57d0248c2d560384d370bd11d67ccf079184c8d029e63ad7a0c2929f194923",
+    "research_log\\claim_validation_20261025\\ROOT_AUDIT_PLAN.md": "7fd08727e82a5afaab834d0a2268440b11ea2f33bfb2860facd06eed68af260f",
+    "research_log\\source_faithful_20261024\\theory_banks_dp_free.jsonl": "f083d61bbd808afdd62bdbb6732497f1d916492ec01ad260edba383b2e7285f7",
+    "research_log\\pruning_study_20261023\\inputs.json": "47900afa72ad21b83d3a91b8fdc9d2dd96df253f259223f3e30581dd015997a5",
+    "research_log\\source_faithful_20261024\\theory_banks_main.jsonl": "b621858adfe5450ad8a4714af606ba19c11789530b93fd1c7f29747eadeef0c8",
+    "research_log\\source_faithful_20261024\\theory_banks_continuous_main.jsonl": "7461ca3bfc8ce297e7ba008830075e26671d3ca90a2b9e00a308666835027490",
+    "research_log\\pruning_study_20261023\\inputs_core700.json": "7db67725f0825774f079b30a9f0de0f6888861ddfb9dc4409bbaef9584235156",
+    "research_log\\source_faithful_20261024\\theory_banks_core.jsonl": "5be785892a625640595e20a0268c2b68dedbc2ee68eff10efe75d2b344411445",
+    "research_log\\source_faithful_20261024\\theory_banks_continuous_core.jsonl": "fe63a459adf3479c61ed94d905824667a913b42b2a5632220efeb487a0eae617",
+    "research_log\\claim_validation_20261025\\root_all_reachable_v2_rows.jsonl": "2f9c2fb4a64919d28f3ca16c017892cf4e122c56aae790994c07002293b4a484"
+  }
+}

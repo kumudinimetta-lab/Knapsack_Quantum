@@ -1,0 +1,27 @@
+ties_and_zero_profit direct cancelled COMPLETED 32 0
+ties_and_zero_profit source_generic raw COMPLETED 32 0
+ties_and_zero_profit source_generic cancelled COMPLETED 32 0
+all_fit_multi_item direct raw COMPLETED 64 0
+all_fit_multi_item direct cancelled COMPLETED 64 0
+all_fit_multi_item source_generic raw COMPLETED 64 0
+all_fit_multi_item source_generic cancelled COMPLETED 64 0
+zero_capacity_multi_rational direct raw COMPLETED 32 0
+zero_capacity_multi_rational direct cancelled COMPLETED 32 0
+zero_capacity_multi_rational source_generic raw COMPLETED 32 0
+zero_capacity_multi_rational source_generic cancelled COMPLETED 32 0
+off_grid_integer_floor_only direct raw COMPLETED 16 0
+off_grid_integer_floor_only direct cancelled COMPLETED 16 0
+off_grid_integer_floor_only source_generic raw COMPLETED 16 0
+off_grid_integer_floor_only source_generic cancelled COMPLETED 16 0
+insufficient_bank_expected_not_LP direct raw COMPLETED 8 0
+insufficient_bank_expected_not_LP direct cancelled COMPLETED 8 0
+insufficient_bank_expected_not_LP source_generic raw COMPLETED 8 0
+insufficient_bank_expected_not_LP source_generic cancelled COMPLETED 8 0
+BOOLEAN near_integer_denominator17 COMPLETED 1024 0
+BOOLEAN all_fit_multi_item COMPLETED 256 0
+BOOLEAN zero_capacity_multi_rational COMPLETED 256 0
+BOOLEAN off_grid_integer_floor_only COMPLETED 128 0
+BOOLEAN insufficient_bank_expected_not_LP COMPLETED 32 0
+BOOLEAN empty_boolean_invalid_depth COMPLETED 8 0
+BOOLEAN large_coeff_near_integer COMPLETED 512 0
+{"qft_method_cases_including_inherited": 24, "qft_basis_columns": 1120, "qft_gate_mismatches": 0, "qft_statuses": {"COMPLETED": 24}, "expected_insufficient_bank_LP_disagreements": 8, "certified_QFT_LP_disagreements": 0, "boolean_cases": 7, "boolean_columns": 2216, "boolean_gate_mismatches": 0, "boolean_invalid_depth_columns": 548, "boolean_statuses": {"COMPLETED": 7}, "profiler_conditions": 4, "profiler_mismatches": 0, "native_superposition_conditions": 2, "native_superposition_amplitudes": 64, "native_superposition_failures": 0, "input_domain_checks": 4, "input_domain_rejection_failures": 0}

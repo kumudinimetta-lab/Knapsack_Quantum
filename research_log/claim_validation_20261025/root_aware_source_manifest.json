@@ -1,0 +1,44 @@
+{
+  "base_source": "C:\\CBP\\HybridQuantumKnapsack\\simulation\\source_faithful_20261024\\width_controls.py",
+  "base_sha256": "0aef8efb138862d76ad50c9365f217492bac7ddfc893c44fdecfb9c36ce4fbd1",
+  "new_source_sha256": "ecbe54890972ba2820c2913b2b838771b61b8defcfcf933e42c136e0d94bd0e2",
+  "derivation_sha256": "c5cc8c736cef8a190e2fa98befb9a65c5f1807d26b07389f1fd3ab02b619df39",
+  "transformations": [
+    [
+      "from .qft_reconstruction import QFTNetwork",
+      "from simulation.source_faithful_20261024.qft_reconstruction import QFTNetwork"
+    ],
+    [
+      "from ..pruning_study_20261023.compact_sensitivity import Ripple",
+      "from simulation.pruning_study_20261023.compact_sensitivity import Ripple"
+    ],
+    [
+      "from ..pruning_study_20261023.circuits import _data, threshold_bits",
+      "from simulation.pruning_study_20261023.circuits import _data, threshold_bits"
+    ],
+    [
+      "from ..oracle_h.node_bound_reversible import exact_order",
+      "from simulation.oracle_h.node_bound_reversible import exact_order"
+    ],
+    [
+      "def build_exact_control(",
+      "def build_root_aware_control("
+    ],
+    [
+      "    wb, vb, cb, tb = widths(weights, values, capacity, width_policy)",
+      "    wb, vb, cb, tb = widths(weights, values, capacity, width_policy)\n    if width_policy != \"normalized\":\n        raise ValueError(\"This control requires normalized widths\")\n    cumulative, root_split = 0, len(weights)\n    for position, item in enumerate(order):\n        cumulative += weights[item]\n        if cumulative > capacity:\n            root_split = position\n            break\n    eligible = order[max(depth, root_split):]\n    total, tau_max = sum(values), (1 << tb) - 1\n    bounds = [total, tau_max]\n    for item in eligible:\n        ratio = Fraction(values[item], weights[item])\n        bounds.extend([total*ratio.denominator + capacity*ratio.numerator, tau_max*ratio.denominator])\n    cb = max(1, max(bounds).bit_length() + 1)"
+    ],
+    [
+      "    for item in order[depth:]:",
+      "    for position, item in enumerate(order[depth:], start=depth):"
+    ],
+    [
+      "        ratio = Fraction(values[item], weights[item])\n        start = len(c.gates)\n        c.product_add(numerator, pval, ratio.denominator)\n        c.product_add(numerator, residual, ratio.numerator)\n        c.product_add(threshold, c.inputs[depth:], ratio.denominator)\n        products = list(c.gates[start:])\n        c.less(numerator, threshold, below)\n        c.extend(undo(products))\n        outputs.append((split, below))",
+      "        if position >= root_split:\n            ratio = Fraction(values[item], weights[item])\n            start = len(c.gates)\n            c.product_add(numerator, pval, ratio.denominator)\n            c.product_add(numerator, residual, ratio.numerator)\n            c.product_add(threshold, c.inputs[depth:], ratio.denominator)\n            products = list(c.gates[start:])\n            c.less(numerator, threshold, below)\n            c.extend(undo(products))\n            outputs.append((split, below))"
+    ],
+    [
+      "    meta = dict(width_policy=width_policy, weight_width=wb, value_width=vb, numerator_width=cb,",
+      "    meta = dict(root_split=root_split, eligible_fraction_positions=list(range(max(depth, root_split),len(weights))), width_policy=\"root_aware_normalized\", weight_width=wb, value_width=vb, numerator_width=cb,"
+    ]
+  ]
+}

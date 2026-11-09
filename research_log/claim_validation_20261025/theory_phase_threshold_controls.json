@@ -1,0 +1,1319 @@
+{
+  "scope": "no-oracle 22-wire input-preparation threshold sensitivity",
+  "seed_hardcoded": 2026102529,
+  "tolerance_hardcoded": 1e-08,
+  "qiskit": "2.4.2",
+  "qiskit_aer": "0.17.2",
+  "source_sha256": "43524943de84d31562cea2947bbfd9d0628d47475b2feceb13f783b042f680bd",
+  "classifications": {
+    "amplitudes": "SIMULATED",
+    "errors": "DERIVED",
+    "host_seconds": "MEASURED"
+  },
+  "rows": [
+    {
+      "preparation": "initialize",
+      "requested_threshold": "default",
+      "effective_threshold": 1e-16,
+      "zero_threshold": 1e-10,
+      "norm_squared": 118.98133214176931,
+      "residuals": {
+        "raw_amplitude_error": 3.4143976923418693,
+        "complex_overlap": [
+          7.7872121104487935,
+          0.005950414161645545
+        ],
+        "overlap_magnitude": 7.787214383882663,
+        "overlap_phase_radians": 0.0007641262263210214,
+        "phase_aligned_amplitude_error": 3.4144107976335727,
+        "vector_norm_squared": 118.98133214176931
+      },
+      "host_seconds_measured": 0.004495700006373227,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.000243,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "mps": "single"
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        }
+      }
+    },
+    {
+      "preparation": "decomposed_initialize",
+      "requested_threshold": "default",
+      "effective_threshold": 1e-16,
+      "zero_threshold": 1e-10,
+      "norm_squared": 1.0000000000000024,
+      "residuals": {
+        "raw_amplitude_error": 2.1184406257903627e-11,
+        "complex_overlap": [
+          1.0000000000000013,
+          -7.577272143066693e-15
+        ],
+        "overlap_magnitude": 1.0000000000000013,
+        "overlap_phase_radians": -7.577272143066684e-15,
+        "phase_aligned_amplitude_error": 2.118413341535171e-11,
+        "vector_norm_squared": 1.0000000000000027
+      },
+      "host_seconds_measured": 0.0027648000104818493,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0003676,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": false,
+        "noise": "ideal",
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        },
+        "result_subtypes": {
+          "mps": "single"
+        }
+      }
+    },
+    {
+      "preparation": "initialize",
+      "requested_threshold": 0.0,
+      "effective_threshold": 0.0,
+      "zero_threshold": 1e-10,
+      "norm_squared": 118.98133214176931,
+      "residuals": {
+        "raw_amplitude_error": 3.4143976923418693,
+        "complex_overlap": [
+          7.7872121104487935,
+          0.005950414161645545
+        ],
+        "overlap_magnitude": 7.787214383882663,
+        "overlap_phase_radians": 0.0007641262263210214,
+        "phase_aligned_amplitude_error": 3.4144107976335727,
+        "vector_norm_squared": 118.98133214176931
+      },
+      "host_seconds_measured": 0.0019583000103011727,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0001424,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "mps": "single"
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        }
+      }
+    },
+    {
+      "preparation": "decomposed_initialize",
+      "requested_threshold": 0.0,
+      "effective_threshold": 0.0,
+      "zero_threshold": 1e-10,
+      "norm_squared": 1.0000000000000024,
+      "residuals": {
+        "raw_amplitude_error": 2.1184406257903627e-11,
+        "complex_overlap": [
+          1.0000000000000013,
+          -7.577272143066693e-15
+        ],
+        "overlap_magnitude": 1.0000000000000013,
+        "overlap_phase_radians": -7.577272143066684e-15,
+        "phase_aligned_amplitude_error": 2.118413341535171e-11,
+        "vector_norm_squared": 1.0000000000000027
+      },
+      "host_seconds_measured": 0.002999700023792684,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0003876,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": false,
+        "noise": "ideal",
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_truncation_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        },
+        "result_subtypes": {
+          "mps": "single"
+        }
+      }
+    },
+    {
+      "preparation": "initialize",
+      "requested_threshold": 1e-20,
+      "effective_threshold": 1e-20,
+      "zero_threshold": 1e-10,
+      "norm_squared": 118.98133214176931,
+      "residuals": {
+        "raw_amplitude_error": 3.4143976923418693,
+        "complex_overlap": [
+          7.7872121104487935,
+          0.005950414161645545
+        ],
+        "overlap_magnitude": 7.787214383882663,
+        "overlap_phase_radians": 0.0007641262263210214,
+        "phase_aligned_amplitude_error": 3.4144107976335727,
+        "vector_norm_squared": 118.98133214176931
+      },
+      "host_seconds_measured": 0.0024329000152647495,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0001786,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 1e-20,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "mps": "single"
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        }
+      }
+    },
+    {
+      "preparation": "decomposed_initialize",
+      "requested_threshold": 1e-20,
+      "effective_threshold": 1e-20,
+      "zero_threshold": 1e-10,
+      "norm_squared": 1.0000000000000024,
+      "residuals": {
+        "raw_amplitude_error": 2.1184406257903627e-11,
+        "complex_overlap": [
+          1.0000000000000013,
+          -7.577272143066693e-15
+        ],
+        "overlap_magnitude": 1.0000000000000013,
+        "overlap_phase_radians": -7.577272143066684e-15,
+        "phase_aligned_amplitude_error": 2.118413341535171e-11,
+        "vector_norm_squared": 1.0000000000000027
+      },
+      "host_seconds_measured": 0.002686599997105077,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0003156,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": false,
+        "noise": "ideal",
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_truncation_threshold": 1e-20,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        },
+        "result_subtypes": {
+          "mps": "single"
+        }
+      }
+    },
+    {
+      "preparation": "initialize",
+      "requested_threshold": 1e-16,
+      "effective_threshold": 1e-16,
+      "zero_threshold": 1e-10,
+      "norm_squared": 118.98133214176931,
+      "residuals": {
+        "raw_amplitude_error": 3.4143976923418693,
+        "complex_overlap": [
+          7.7872121104487935,
+          0.005950414161645545
+        ],
+        "overlap_magnitude": 7.787214383882663,
+        "overlap_phase_radians": 0.0007641262263210214,
+        "phase_aligned_amplitude_error": 3.4144107976335727,
+        "vector_norm_squared": 118.98133214176931
+      },
+      "host_seconds_measured": 0.0034269000170752406,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0004797,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": true,
+        "noise": "ideal",
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_subtypes": {
+          "mps": "single"
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        }
+      }
+    },
+    {
+      "preparation": "decomposed_initialize",
+      "requested_threshold": 1e-16,
+      "effective_threshold": 1e-16,
+      "zero_threshold": 1e-10,
+      "norm_squared": 1.0000000000000024,
+      "residuals": {
+        "raw_amplitude_error": 2.1184406257903627e-11,
+        "complex_overlap": [
+          1.0000000000000013,
+          -7.577272143066693e-15
+        ],
+        "overlap_magnitude": 1.0000000000000013,
+        "overlap_phase_radians": -7.577272143066684e-15,
+        "phase_aligned_amplitude_error": 2.118413341535171e-11,
+        "vector_norm_squared": 1.0000000000000027
+      },
+      "host_seconds_measured": 0.0038554999919142574,
+      "metadata": {
+        "batched_shots_optimization": false,
+        "required_memory_mb": 0,
+        "method": "matrix_product_state",
+        "active_input_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "device": "CPU",
+        "remapped_qubits": false,
+        "num_qubits": 22,
+        "num_clbits": 0,
+        "time_taken": 0.0003727,
+        "input_qubit_map": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "max_memory_mb": 15917,
+        "measure_sampling": false,
+        "noise": "ideal",
+        "matrix_product_state_sample_measure_algorithm": 0,
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "matrix_product_state_max_bond_dimension": 18446744073709551615,
+        "matrix_product_state_lapack": false,
+        "parallel_shots": 1,
+        "parallel_state_update": 1,
+        "runtime_parameter_bind": false,
+        "num_bind_params": 1,
+        "fusion": {
+          "enabled": false
+        },
+        "result_types": {
+          "mps": "save_matrix_product_state"
+        },
+        "result_subtypes": {
+          "mps": "single"
+        }
+      }
+    }
+  ]
+}

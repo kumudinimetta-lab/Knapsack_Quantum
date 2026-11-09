@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "label": "early_fraction_eliminated",
+      "engine": "compact_exact",
+      "columns": 16,
+      "mismatches": 0,
+      "dirty": 0
+    },
+    {
+      "label": "early_fraction_eliminated",
+      "engine": "qft",
+      "form": "raw",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 2.939891532558364e-13,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 5.879741138414829e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 1.2818537999992259
+      }
+    },
+    {
+      "label": "early_fraction_eliminated",
+      "engine": "qft",
+      "form": "cancelled",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 1.9451107589460536e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 3.892441924335799e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.6809352000127546
+      }
+    },
+    {
+      "label": "early_fraction_eliminated",
+      "engine": "qft_coherent",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "preparation": "native_H_P_CX_CP_no_initialize",
+        "logical_amplitudes": 16,
+        "maximum_amplitude_error": 1.4106747233957095e-10,
+        "workspace_leakage": 0.0,
+        "normalization_error": 5.440092820663267e-15,
+        "tolerance_hardcoded": 1e-08,
+        "failures": 0
+      }
+    },
+    {
+      "label": "all_fit_no_fraction",
+      "engine": "compact_exact",
+      "columns": 8,
+      "mismatches": 0,
+      "dirty": 0
+    },
+    {
+      "label": "all_fit_no_fraction",
+      "engine": "qft",
+      "form": "raw",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 4.333320903351235e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 8.659739592076221e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.0836983000044711
+      }
+    },
+    {
+      "label": "all_fit_no_fraction",
+      "engine": "qft",
+      "form": "cancelled",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 3.552991223715482e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 7.105427357601002e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.05387820000760257
+      }
+    },
+    {
+      "label": "capacity_zero",
+      "engine": "compact_exact",
+      "columns": 16,
+      "mismatches": 0,
+      "dirty": 0
+    },
+    {
+      "label": "capacity_zero",
+      "engine": "qft",
+      "form": "raw",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 8,
+        "maximum_amplitude_error": 4.218927638180205e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 8.43769498715119e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.13591790001373738
+      }
+    },
+    {
+      "label": "capacity_zero",
+      "engine": "qft",
+      "form": "cancelled",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 8,
+        "maximum_amplitude_error": 2.7090643283502267e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 5.440092820663267e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.08093890000600368
+      }
+    },
+    {
+      "label": "complete_prefix",
+      "engine": "compact_exact",
+      "columns": 64,
+      "mismatches": 0,
+      "dirty": 0
+    },
+    {
+      "label": "complete_prefix",
+      "engine": "qft",
+      "form": "raw",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 32,
+        "maximum_amplitude_error": 9.748172171581553e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.949551631241775e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 1.2807340999715962
+      }
+    },
+    {
+      "label": "complete_prefix",
+      "engine": "qft",
+      "form": "cancelled",
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 32,
+        "maximum_amplitude_error": 5.17386008897766e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 1.0369483049998962e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.7020885000238195
+      }
+    }
+  ],
+  "source_sha256": {
+    "root_aware_experiments.py": "97035ac33539ce5dd3241818521ec43d653e02455df9f2cadb2bb0be04129849",
+    "root_aware_control.py": "ecbe54890972ba2820c2913b2b838771b61b8defcfcf933e42c136e0d94bd0e2",
+    "root_aware_control_derivation.md": "c5cc8c736cef8a190e2fa98befb9a65c5f1807d26b07389f1fd3ab02b619df39"
+  },
+  "scope": "Actual gate checks against independent LP vertices, basis and one primitive-unitary coherent control; no partial initialize"
+}

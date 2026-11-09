@@ -1,0 +1,13 @@
+# Fresh adversarial audit plan
+
+User requested validation of the exact integer-pruning claim. This pass does not alter the paper, implementations, earlier raw data or checkpoint. Missing graph tools were discovered before targeted filesystem reads.
+
+Root will independently enumerate every feasible reachable (depth, residual-capacity) pair for all 700 originals and 700 cores. It will compare saved root-tail, minimum-grid, DP-free and continuous banks against a separately assembled exact dual reference containing zero and EVERY suffix density, without calling the existing greedy-LP, bank-construction or interval routines. Sorting uses integer cross products with stable index ties, and reachability uses Python sets rather than the production bitset code. Exact integer arithmetic avoids floating-point tolerance.
+
+Reference justification, before code: for one-row fractional knapsack with nonnegative profits and positive weights, F(lambda)=lambda*R+sum max(v-lambda*w,0) is the LP dual objective for lambda>=0. It is convex piecewise linear with breakpoints at nonnegative suffix densities; at R=0 its final flat minimum is attained at the largest density, and when all fit zero is a minimum. Otherwise its minimum is attained at a breakpoint. Thus enumeration of all suffix breakpoints and zero is an exact reference; floor(min F)=min floor(F). This independently checks the earlier greedy reference but still uses LP duality; agents will separately enumerate primal LP vertices on adversarial tiny instances.
+
+Because integer prefix profit cancels, a matching residual floor certifies ALL integer thresholds for EVERY prefix represented by that state. This is exhaustive arithmetic bank-coverage validation over the quotient states, not exhaustive gate simulation or a full quantum algorithm. Exact gate propagation and phase-sensitive checks are separate tasks. Overweight states are rejected separately by the circuits.
+
+Each input must match all saved registries. Any true discrepancy stops the affected test immediately and is saved as RESEARCH_INTEGRITY_STOP. All shortcuts, empty cores and capacity-zero cases are retained; new enumeration counts may exceed old compiler state counts because old all-fit shortcuts did not enumerate states. No regression or dependent-variable fitting will be performed. Counts/results are DERIVED exact arithmetic, elapsed host time is MEASURED, and panel selection is HARDCODED by the existing benchmark registries.
+
+Other reviewers independently re-check algebra/counterexamples, phase-sensitive circuit behavior, primary-source distinctions, source hashes, and resource aggregation. Passing this audit cannot prove historical priority or guarantee journal acceptance.

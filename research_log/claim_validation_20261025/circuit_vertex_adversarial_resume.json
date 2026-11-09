@@ -1,0 +1,1386 @@
+{
+  "scope": "remaining predeclared fixtures only; no production/tolerance modification",
+  "previous_raw_sha256": "6299f3aa7c67c0e43b12979f590be7c37d3872ae6c772da46066021e890a6c4f",
+  "preserved_initial_harness_sha256": "4ca3ec34e758c263554307ce6acd10cd79ed5beff0c92e8718e63e0112e06312",
+  "source_sha256": "e144b60182cffbabde3f72b1a2f8cfea4af82dc0966847c09ca1540d422cca99",
+  "resolution": "AerMPS_partial_initialize_backend_failure_reproduced_before_oracle; dense_full_oracle_and_native_prep_controls_pass",
+  "inherited_passing_method_cases": 5,
+  "inherited_basis_columns": 544,
+  "qft_rows": [
+    {
+      "label": "ties_and_zero_profit",
+      "weights": [
+        2,
+        4,
+        1
+      ],
+      "values": [
+        1,
+        2,
+        0
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 112,
+        "maximum_amplitude_error": 3.708208556227667e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 7.394085344003543e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.3065375000005588
+      }
+    },
+    {
+      "label": "ties_and_zero_profit",
+      "weights": [
+        2,
+        4,
+        1
+      ],
+      "values": [
+        1,
+        2,
+        0
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 112,
+        "maximum_amplitude_error": 5.00498833832247e-14,
+        "maximum_leakage": 6.661338147750939e-16,
+        "maximum_norm_error": 9.992007221626409e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.4913656999997329
+      }
+    },
+    {
+      "label": "ties_and_zero_profit",
+      "weights": [
+        2,
+        4,
+        1
+      ],
+      "values": [
+        1,
+        2,
+        0
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 112,
+        "maximum_amplitude_error": 4.353616703318202e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 8.704148513061227e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.3630944000033196
+      }
+    },
+    {
+      "label": "all_fit_multi_item",
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "capacity": 10,
+      "depth": 2,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 7.660562157980393e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.532107773982716e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 1.1108735000016168
+      }
+    },
+    {
+      "label": "all_fit_multi_item",
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "capacity": 10,
+      "depth": 2,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 3.552831766587693e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 7.083222897108499e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.45311729999957606
+      }
+    },
+    {
+      "label": "all_fit_multi_item",
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "capacity": 10,
+      "depth": 2,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 6.063987901559688e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 1.212363542890671e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 1.1366255000175443
+      }
+    },
+    {
+      "label": "all_fit_multi_item",
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "capacity": 10,
+      "depth": 2,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 64,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 64,
+        "maximum_amplitude_error": 3.197444156608747e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 6.394884621840902e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.5061438000120688
+      }
+    },
+    {
+      "label": "zero_capacity_multi_rational",
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 2.50467200170112e-13,
+        "maximum_leakage": 6.661338147750939e-16,
+        "maximum_norm_error": 5.009326287108706e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 2.100098999973852
+      }
+    },
+    {
+      "label": "zero_capacity_multi_rational",
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 1.4766194952027113e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 2.950972799453666e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.9427050999947824
+      }
+    },
+    {
+      "label": "zero_capacity_multi_rational",
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 2.3426011285122886e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 4.685141163918161e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 2.0425382000103127
+      }
+    },
+    {
+      "label": "zero_capacity_multi_rational",
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 1.583198294870953e-13,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 3.1663560662309465e-13,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.9683689999801572
+      }
+    },
+    {
+      "label": "off_grid_integer_floor_only",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 24,
+        "maximum_amplitude_error": 2.5559253454202266e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 5.10702591327572e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.10096219999832101
+      }
+    },
+    {
+      "label": "off_grid_integer_floor_only",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 24,
+        "maximum_amplitude_error": 1.3767464972855096e-14,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 2.7533531010703882e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.052177000005031005
+      }
+    },
+    {
+      "label": "off_grid_integer_floor_only",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 24,
+        "maximum_amplitude_error": 1.93185984317526e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 3.885780586188048e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.0966109000146389
+      }
+    },
+    {
+      "label": "off_grid_integer_floor_only",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 0,
+        "LP_vertices_evaluated": 24,
+        "maximum_amplitude_error": 1.0436686958930981e-14,
+        "maximum_leakage": 4.440892098500626e-16,
+        "maximum_norm_error": 2.0872192862952943e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.05704429998877458
+      }
+    },
+    {
+      "label": "insufficient_bank_expected_not_LP",
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": false,
+      "policy": "direct",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 2,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 8.215650382226158e-15,
+        "maximum_leakage": 1.1102230246251565e-16,
+        "maximum_norm_error": 1.6209256159527285e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.024812999996356666
+      }
+    },
+    {
+      "label": "insufficient_bank_expected_not_LP",
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": false,
+      "policy": "direct",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 2,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 3.1106063782808446e-15,
+        "maximum_leakage": 0.0,
+        "maximum_norm_error": 5.773159728050814e-15,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.01164839998818934
+      }
+    },
+    {
+      "label": "insufficient_bank_expected_not_LP",
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": false,
+      "policy": "source_generic",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 2,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 8.888027007547732e-15,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 1.7763568394002505e-14,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.02299880000646226
+      }
+    },
+    {
+      "label": "insufficient_bank_expected_not_LP",
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": false,
+      "policy": "source_generic",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "bank_vs_vertex_LP_predicate_disagreements": 2,
+        "LP_vertices_evaluated": 16,
+        "maximum_amplitude_error": 2.2232198742534223e-15,
+        "maximum_leakage": 2.220446049250313e-16,
+        "maximum_norm_error": 4.6629367034256575e-15,
+        "first_failures": [],
+        "tolerance_hardcoded": 1e-08,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "gates": 40000,
+          "columns": 512,
+          "seconds": 90
+        },
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold": 1e-10
+        },
+        "host_seconds_measured": 0.014879399997880682
+      }
+    }
+  ],
+  "boolean_rows": [
+    {
+      "label": "near_integer_denominator17",
+      "weights": [
+        17,
+        3
+      ],
+      "values": [
+        16,
+        2
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 1024,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 256,
+        "LP_vertices_evaluated": 1088,
+        "first_failures": [],
+        "qubits": 248,
+        "gates": 797,
+        "depth_bits": 2,
+        "threshold_bits": 5,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "all_fit_multi_item",
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "capacity": 10,
+      "depth": 2,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 256,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 64,
+        "LP_vertices_evaluated": 448,
+        "first_failures": [],
+        "qubits": 87,
+        "gates": 275,
+        "depth_bits": 2,
+        "threshold_bits": 3,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "zero_capacity_multi_rational",
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 256,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 64,
+        "LP_vertices_evaluated": 112,
+        "first_failures": [],
+        "qubits": 177,
+        "gates": 571,
+        "depth_bits": 2,
+        "threshold_bits": 3,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "off_grid_integer_floor_only",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 128,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 32,
+        "LP_vertices_evaluated": 168,
+        "first_failures": [],
+        "qubits": 79,
+        "gates": 255,
+        "depth_bits": 2,
+        "threshold_bits": 2,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "insufficient_bank_expected_not_LP",
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": false,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 32,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 4,
+        "invalid_depth_columns": 0,
+        "LP_vertices_evaluated": 40,
+        "first_failures": [],
+        "qubits": 46,
+        "gates": 149,
+        "depth_bits": 1,
+        "threshold_bits": 2,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "empty_boolean_invalid_depth",
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 8,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 4,
+        "LP_vertices_evaluated": 4,
+        "first_failures": [],
+        "qubits": 18,
+        "gates": 59,
+        "depth_bits": 1,
+        "threshold_bits": 1,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    },
+    {
+      "label": "large_coeff_near_integer",
+      "weights": [
+        65537,
+        65539
+      ],
+      "values": [
+        3,
+        5
+      ],
+      "capacity": 65538,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          65537
+        ],
+        [
+          5,
+          65539
+        ]
+      ],
+      "certified": true,
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED_exact_X_CX_CCX_gate_labels",
+        "columns": 512,
+        "actual_gate_mismatches": 0,
+        "LP_predicate_disagreements": 0,
+        "invalid_depth_columns": 128,
+        "LP_vertices_evaluated": 704,
+        "first_failures": [],
+        "qubits": 387,
+        "gates": 1267,
+        "depth_bits": 2,
+        "threshold_bits": 4,
+        "phase_argument": "only_+1_permutation_gates_no_phase_primitive"
+      }
+    }
+  ],
+  "native_superpositions": [
+    {
+      "label": "ties_and_zero_profit",
+      "form": "raw",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "preparation": "native_H_P_CX_CP_no_initialize",
+        "logical_amplitudes": 32,
+        "maximum_amplitude_error": 4.532273016302698e-11,
+        "workspace_leakage": 2.220446049250313e-16,
+        "normalization_error": 3.441691376337985e-14,
+        "tolerance_hardcoded": 1e-08,
+        "failures": 0
+      }
+    },
+    {
+      "label": "ties_and_zero_profit",
+      "form": "cancelled",
+      "result": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "preparation": "native_H_P_CX_CP_no_initialize",
+        "logical_amplitudes": 32,
+        "maximum_amplitude_error": 4.761329582911206e-11,
+        "workspace_leakage": 0.0,
+        "normalization_error": 4.3298697960381105e-15,
+        "tolerance_hardcoded": 1e-08,
+        "failures": 0
+      }
+    }
+  ],
+  "input_domain_checks": [
+    {
+      "label": "Boolean_zero_profit_explicitly_unsupported",
+      "expected_rejection": true,
+      "exception": "Matching positive integer data and nonnegative integer capacity required"
+    },
+    {
+      "label": "QFT_negative_bank_rejected",
+      "expected_rejection": true,
+      "exception": "Dual multipliers must be nonnegative"
+    },
+    {
+      "label": "QFT_empty_bank_rejected",
+      "expected_rejection": true,
+      "exception": "Bank must not be empty"
+    },
+    {
+      "label": "QFT_invalid_depth_rejected",
+      "expected_rejection": true,
+      "exception": "Invalid fixed depth"
+    }
+  ],
+  "limitations": {
+    "insufficient_bank": {
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "LP": "1/2",
+      "bank_upper": "1",
+      "integer_threshold": 1,
+      "LP_reject": true,
+      "bank_reject": false
+    },
+    "fractional_threshold": {
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          1,
+          2
+        ]
+      ],
+      "LP": "1",
+      "bank_upper": "3/2",
+      "threshold": "5/4",
+      "LP_reject": true,
+      "bank_reject": false,
+      "supported": false,
+      "reason": "integer-floor preservation does not preserve rational thresholds"
+    },
+    "unsigned_range": {
+      "values": [
+        1,
+        1
+      ],
+      "threshold_bits": 2,
+      "representable": [
+        0,
+        3
+      ],
+      "unsupported_threshold": 4,
+      "if_caller_truncates_it_encodes": 0
+    }
+  },
+  "summary": {
+    "qft_method_cases_including_inherited": 24,
+    "qft_basis_columns": 1120,
+    "qft_gate_mismatches": 0,
+    "qft_statuses": {
+      "COMPLETED": 24
+    },
+    "expected_insufficient_bank_LP_disagreements": 8,
+    "certified_QFT_LP_disagreements": 0,
+    "boolean_cases": 7,
+    "boolean_columns": 2216,
+    "boolean_gate_mismatches": 0,
+    "boolean_invalid_depth_columns": 548,
+    "boolean_statuses": {
+      "COMPLETED": 7
+    },
+    "profiler_conditions": 4,
+    "profiler_mismatches": 0,
+    "native_superposition_conditions": 2,
+    "native_superposition_amplitudes": 64,
+    "native_superposition_failures": 0,
+    "input_domain_checks": 4,
+    "input_domain_rejection_failures": 0
+  }
+}

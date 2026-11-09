@@ -1,0 +1,47 @@
+{
+  "classification": "DERIVED qubits in reconstructed native netlists; not optimized minimum qubits",
+  "input_budget": 105,
+  "soft_time_budget_seconds": 90,
+  "attempted_rows": 210,
+  "status_counts": {
+    "complete": 210
+  },
+  "paired_inputs": 105,
+  "unattempted_inputs": [],
+  "ratios": {
+    "allocated_qubits": {
+      "n": 105,
+      "median": 0.46236559139784944,
+      "minimum": 0.3973509933774834,
+      "maximum": 0.5,
+      "bank_lower": 105
+    },
+    "interface_plus_touched_qubits": {
+      "n": 105,
+      "median": 0.4817073170731707,
+      "minimum": 0.36764705882352944,
+      "maximum": 0.5208333333333334,
+      "bank_lower": 105
+    }
+  },
+  "idle_workspace_by_family": {
+    "lp": {
+      "median": 6,
+      "maximum": 7
+    },
+    "bank": {
+      "median": 0,
+      "maximum": 7
+    }
+  },
+  "elapsed_seconds_measured": 34.50482709999778,
+  "source_sha256": {
+    "simulation\\source_faithful_20261024\\qft_bank.py": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "simulation\\source_faithful_20261024\\qft_normal_form.py": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1",
+    "simulation\\source_faithful_20261024\\width_controls.py": "0aef8efb138862d76ad50c9365f217492bac7ddfc893c44fdecfb9c36ce4fbd1",
+    "simulation\\source_faithful_20261024\\qft_reconstruction.py": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "simulation\\source_faithful_20261024\\resource_profile.py": "b6eb390ec0dde1f8e50d1ff9310285b5b74f5f746cc397eeb0c6ec387f9dda01",
+    "simulation\\source_faithful_20261024\\compressed_bank.py": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5",
+    "research_log\\source_faithful_20261024\\qft_bank_resources.py": "b72d15be8c3a5a6de11b98cd01e74f4c7a5aec05b3a2707f60039b94b41a6810"
+  }
+}

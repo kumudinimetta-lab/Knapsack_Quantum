@@ -1,0 +1,19 @@
+{
+  "classification": "DERIVED source-lineage checks",
+  "records": 1445,
+  "counts": {
+    "main700": 700,
+    "core700": 700,
+    "independent_large": 45
+  },
+  "hash_conflicts": 0,
+  "id_conflicts": 0,
+  "metadata_conflicts": 0,
+  "paths_sha256": {
+    "research_log\\source_faithful_20261024\\theory_banks_main.jsonl": "b621858adfe5450ad8a4714af606ba19c11789530b93fd1c7f29747eadeef0c8",
+    "research_log\\source_faithful_20261024\\theory_banks_core.jsonl": "5be785892a625640595e20a0268c2b68dedbc2ee68eff10efe75d2b344411445",
+    "research_log\\source_faithful_20261024\\theory_banks_independent.jsonl": "6db58e8b1f49e071f1b70181ace21964787030c9cfc3d3464e5d9fc0f9f9ee86"
+  },
+  "driver_sha256": "3606f53ce7e4fd210bb0c9e90c44f93e108304efc169b573937fe7f9cd269080",
+  "bank_file_sha256": "f083d61bbd808afdd62bdbb6732497f1d916492ec01ad260edba383b2e7285f7"
+}

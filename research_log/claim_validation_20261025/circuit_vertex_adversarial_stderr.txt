@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\CBP\HybridQuantumKnapsack\research_log\claim_validation_20261025\circuit_vertex_adversarial.py", line 281, in <module>
+    main()
+    ~~~~^^
+  File "C:\CBP\HybridQuantumKnapsack\research_log\claim_validation_20261025\circuit_vertex_adversarial.py", line 232, in main
+    raise RuntimeError('RESEARCH_INTEGRITY_STOP: complex-state phase/cleanup mismatch')
+RuntimeError: RESEARCH_INTEGRITY_STOP: complex-state phase/cleanup mismatch
