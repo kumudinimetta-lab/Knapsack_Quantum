@@ -1,10 +1,9 @@
 """
-Faithful simulation of Montanaro's quantum branch-and-bound for 0/1 knapsack
+Analytical walk simulation for threshold search and witness recovery
 ============================================================================
-This module replaces the previous *placeholder* quantum cost (which simply
-reported ``sqrt(T_core) * (depth + 1)``) with an HONEST end-to-end simulation
-of the quantum backtracking algorithm of Montanaro (Theory of Computing, 2018;
-Phys. Rev. Research, 2020), built on Belovs' quantum walk.
+This module constructs explicit threshold trees and Belovs--Montanaro walk
+operators. It is a classical simulation, not a full gate-model implementation
+of Montanaro's 2020 adaptive branch-and-bound algorithm.
 
 What is actually simulated here:
   1. We build the *real* LP-pruned branch-and-bound tree for a fixed value
@@ -30,19 +29,22 @@ What is actually simulated here:
      of W and the Fejer (phase-estimation) kernel -- this is mathematically
      identical to running the phase-estimation register, and is cross-checked
      against a literal statevector phase-estimation circuit in the unit test.
-  4. The B&B *optimum* is found by binary search over the threshold tau, each
-     step calling the quantum detection subroutine.  We report the TOTAL
-     measured number of walk-operator applications (quantum queries) and verify
-     that the quantum-returned optimum equals the classical optimum.
+  4. Binary search determines a candidate optimum value; additional detections
+     recover a prefix witness. The final witness and value are checked against
+     classical ground truth, which never repairs or guides the search.
 
-Headline scientific point: the quantum query count is *measured*, and is shown
-to scale as Theta(sqrt(T_LP * m)) -- Montanaro's bound is confirmed
-empirically, not assumed.
+Acceptance probabilities and analytical-majority decisions are SIMULATED.
+K*(2**s-1) is a SCHEDULED query budget because s is selected from tree size
+and depth. Fitting that budget to those predictors is circular and cannot
+validate an asymptotic theorem. Explicit tree enumeration costs are not hidden
+inside an asserted physical quantum runtime. The PE constant is calibrated,
+and the simulation does not certify a universal single-shot error bound.
 """
 
 from __future__ import annotations
 
 import math
+from fractions import Fraction
 from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 
@@ -56,11 +58,13 @@ import scipy.sparse as sp
 
 def efficiency_order(weights: List[int], values: List[int]) -> List[int]:
     n = len(weights)
-    return sorted(range(n), key=lambda i: values[i] / max(weights[i], 1e-12), reverse=True)
+    if len(values) != n or any(w <= 0 for w in weights):
+        raise ValueError("Positive integer weights and matching values are required")
+    return sorted(range(n), key=lambda i: Fraction(values[i], weights[i]), reverse=True)
 
 
-def lp_bound_from(cw: float, cv: float, capacity: int,
-                  remaining: List[int], weights, values) -> float:
+def lp_bound_from(cw: int, cv: int, capacity: int,
+                  remaining: List[int], weights, values):
     """Dantzig fractional upper bound for a partial assignment.
 
     ``remaining`` must already be sorted by decreasing efficiency.
@@ -68,14 +72,14 @@ def lp_bound_from(cw: float, cv: float, capacity: int,
     rem = capacity - cw
     if rem < 0:
         return -math.inf
-    bound = cv
+    bound = Fraction(cv)
     for i in remaining:
         wi = weights[i]
         if wi <= rem:
             rem -= wi
             bound += values[i]
         else:
-            bound += (values[i] / max(wi, 1e-12)) * rem
+            bound += Fraction(values[i] * rem, wi)
             break
     return bound
 
@@ -123,7 +127,7 @@ def build_threshold_tree(weights, values, capacity, tau, order,
     tree = Tree()
     root = tree._add(None, 0)
     # stack entries: (node_id, k, cw, cv)
-    stack = [(root, 0, 0.0, 0.0)]
+    stack = [(root, 0, 0, 0)]
     suffix = [order[k:] for k in range(m + 1)]  # precomputed remaining lists
 
     while stack:
@@ -131,11 +135,11 @@ def build_threshold_tree(weights, values, capacity, tau, order,
         if tree.size > max_nodes:
             return None
         if k == m:
-            if cw <= capacity and cv >= tau - 1e-9:
+            if cw <= capacity and cv >= tau:
                 tree.marked[nid] = True
             continue
         ub = lp_bound_from(cw, cv, capacity, suffix[k], weights, values)
-        if ub < tau - 1e-9:
+        if ub < tau:
             continue  # dead leaf: this branch cannot reach tau
         item = order[k]
         d = tree.depth[nid] + 1
@@ -154,7 +158,7 @@ def classical_decision_nodes(weights, values, capacity, tau, order,
     """Count nodes a classical backtracking solver visits for value >= tau."""
     m = len(order)
     suffix = [order[k:] for k in range(m + 1)]
-    stack = [(0, 0.0, 0.0)]
+    stack = [(0, 0, 0)]
     nodes = 0
     while stack:
         k, cw, cv = stack.pop()
@@ -164,7 +168,7 @@ def classical_decision_nodes(weights, values, capacity, tau, order,
         if k == m:
             continue
         ub = lp_bound_from(cw, cv, capacity, suffix[k], weights, values)
-        if ub < tau - 1e-9:
+        if ub < tau:
             continue
         item = order[k]
         stack.append((k + 1, cw, cv))
@@ -269,8 +273,9 @@ def detection_accept_prob(W, root: int, s: int) -> float:
 def detection_accept_prob_spectral(W, root: int, s: int) -> float:
     """Spectral computation of P(accept) (dense; for cross-checking only)."""
     Wd = W.toarray() if sp.issparse(W) else W
-    evals, evecs = np.linalg.eig(Wd)
-    phases = np.angle(evals)
+    from scipy.linalg import schur
+    triangular, evecs = schur(Wd, output="complex")
+    phases = np.angle(np.diag(triangular))
     overlaps = np.abs(evecs.conj().T @ np.eye(Wd.shape[0])[root]) ** 2
     p = 0.0
     for lam, w in zip(phases, overlaps):
@@ -285,7 +290,7 @@ class DetectionResult:
     decided_marked: bool
     accept_prob: float
     s_qubits: int
-    queries: int  # walk-operator applications used
+    queries: int  # SCHEDULED walk applications, not a measured cost
 
 
 def quantum_detect(weights, values, capacity, tau, order,
@@ -297,15 +302,19 @@ def quantum_detect(weights, values, capacity, tau, order,
     the phase-estimation precision 2^s ~ constant * sqrt(T n); ``K`` is the
     number of repetitions for the threshold (3/8) vote.
     """
+    if K < 1 or constant <= 0:
+        raise ValueError("Positive repetition count and PE constant are required")
     tree = build_threshold_tree(weights, values, capacity, tau, order, max_nodes)
     if tree is None:
         return None
     T = tree.size
     if T <= 1:
-        # trivial tree: only the root, no marked vertex possible
-        return DetectionResult(False, 0.0, 0, 0)
+        # An empty residual problem can have a marked root.
+        marked = bool(tree.marked[0])
+        return DetectionResult(marked, float(marked), 0, 0)
 
-    n_eff = max(tree.max_depth, 1)
+    # Use the same supplied depth bound as the root diffusion normalization.
+    n_eff = max(n_depth, tree.max_depth, 1)
     s = max(1, int(math.ceil(math.log2(constant * math.sqrt(T * n_eff) + 1.0))))
 
     W = build_walk_operator(tree, n_depth)
@@ -315,10 +324,8 @@ def quantum_detect(weights, values, capacity, tau, order,
     # K repeats, accept overall if >= 3/8 of single-shot acceptances.
     # Compute the exact probability of the overall accept decision (binomial).
     threshold = math.ceil(3.0 * K / 8.0)
-    p_overall = 0.0
-    from math import comb
-    for j in range(threshold, K + 1):
-        p_overall += comb(K, j) * (p_accept ** j) * ((1 - p_accept) ** (K - j))
+    from scipy.stats import binom
+    p_overall = float(binom.sf(threshold - 1, K, np.clip(p_accept, 0.0, 1.0)))
     decided = p_overall >= 0.5
     queries = K * (2 ** s - 1)
     return DetectionResult(decided, p_accept, s, queries)
@@ -336,27 +343,41 @@ class QBBResult:
     detection_calls: int
     correct: bool
     max_tree: int
-    # raw single-detection Montanaro query count (2^s - 1) on the largest tree
-    # encountered; this is the quantity that should scale as Theta(sqrt(T n)),
-    # separate from the O(log(value range)) binary-search and K-repeat overheads.
+    # SCHEDULED single-shot budget on the largest encountered tree. Its scaling
+    # is set by the precision policy, not discovered by measurement/regression.
     montanaro_queries_decisive: int = 0
+    assignment: Tuple[int, ...] = ()
+    witness_valid: bool = False
+    witness_detection_calls: int = 0
+    query_classification: str = "SCHEDULED"
+    decision_classification: str = "SIMULATED_ANALYTICAL_MAJORITY"
 
 
 def quantum_bb_optimize(weights, values, capacity,
-                        constant: float = 1.0, K: int = 11,
-                        max_nodes: int = 20000) -> Optional[QBBResult]:
-    """Find the knapsack optimum via quantum-detected threshold binary search.
+                        constant: float = 1.0, K: Optional[int] = None,
+                        max_nodes: int = 20000,
+                        failure_budget: float = 0.001) -> Optional[QBBResult]:
+    """Simulate value search and prefix recovery; report scheduled budgets.
 
-    Mirrors Montanaro (2020): repeated quantum backtracking detection over a
-    binary search on the value threshold.  Returns measured quantum query
-    totals, or None if any required tree is too large to simulate densely.
+    Returns None on any tree cap. Conditional theoretical error allocation is
+    separate from this simulator's calibrated PE constant and deterministic
+    analytical-majority decisions; no physical sampling is performed here.
     """
     n = len(weights)
     order = efficiency_order(weights, values)
+    if not 0 < failure_budget < 1:
+        raise ValueError("failure_budget must be in (0,1)")
+    max_calls = max(1, int(sum(values)).bit_length() + n)
+    if K is None:
+        # Hoeffding with a 1/8 margin, conditional on single-shot marked
+        # p>=1/2 and unmarked p<=1/4. The calibrated PE constant in this
+        # simulator is not a universal proof of those separation assumptions.
+        K = math.ceil(32 * (math.log(max_calls) - math.log(failure_budget)))
 
-    # classical optimum (ground truth) and value search range
-    classical_opt = _classical_optimum(weights, values, capacity)
-    hi = int(sum(values))
+    if capacity < 0:
+        raise ValueError("Capacity must be nonnegative")
+    # No classical optimum is used to choose thresholds or witness bits.
+    hi = int(sum(values)) + 1  # certified infeasible threshold
     lo = 0
 
     q_total = 0
@@ -367,11 +388,8 @@ def quantum_bb_optimize(weights, values, capacity,
     decisive_q = 0  # single-detection query count on the largest tree
 
     # binary search for the largest tau with a feasible solution of value >= tau
-    while lo <= hi:
+    while hi - lo > 1:
         mid = (lo + hi) // 2
-        if mid == 0:
-            lo = mid + 1
-            continue
         det = quantum_detect(weights, values, capacity, mid, order,
                              n_depth=max(n, 1), constant=constant, K=K,
                              max_nodes=max_nodes)
@@ -386,18 +404,62 @@ def quantum_bb_optimize(weights, values, capacity,
         calls += 1
         if det.decided_marked:
             found = mid
-            lo = mid + 1
+            lo = mid
         else:
-            hi = mid - 1
+            hi = mid
 
+    # Recover a witness by decision-to-search self-reduction. Prefixes follow
+    # the same exact efficiency order as the static threshold trees.
+    assignment = [0] * n
+    prefix_weight = prefix_value = 0
+    witness_calls = 0
+    for k, item in enumerate(order):
+        residual_target = found - prefix_value
+        if residual_target <= 0:
+            break
+        rest = order[k + 1:]
+        if not rest:
+            zero_possible = False
+        else:
+            rw = [weights[j] for j in rest]
+            rv = [values[j] for j in rest]
+            rc = capacity - prefix_weight
+            det = quantum_detect(rw, rv, rc, residual_target,
+                                 efficiency_order(rw, rv),
+                                 n_depth=max(len(rest), 1), constant=constant,
+                                 K=K, max_nodes=max_nodes)
+            if det is None:
+                return None
+            size = _last_tree_size(rw, rv, rc, residual_target,
+                                   efficiency_order(rw, rv), max_nodes)
+            if size >= max_tree:
+                max_tree = size
+                decisive_q = det.queries // max(K, 1)
+            q_total += det.queries
+            c_total += classical_decision_nodes(rw, rv, rc, residual_target,
+                                                efficiency_order(rw, rv))
+            calls += 1
+            witness_calls += 1
+            zero_possible = det.decided_marked
+        if not zero_possible:
+            assignment[item] = 1
+            prefix_weight += weights[item]
+            prefix_value += values[item]
+
+    witness_valid = prefix_weight <= capacity and prefix_value == found
+    # Ground truth is an audit only; it never repairs an erroneous decision.
+    classical_opt = _classical_optimum(weights, values, capacity)
     return QBBResult(
         optimal_value=found,
         classical_nodes_total=c_total,
         quantum_queries_total=q_total,
         detection_calls=calls,
-        correct=(found == classical_opt),
+        correct=(found == classical_opt and witness_valid),
         max_tree=max_tree,
         montanaro_queries_decisive=decisive_q,
+        assignment=tuple(assignment),
+        witness_valid=witness_valid,
+        witness_detection_calls=witness_calls,
     )
 
 

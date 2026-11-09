@@ -1,2 +1,7 @@
 # Added by code-review-graph
 .code-review-graph/
+.firecrawl/
+**/__pycache__/
+
+# Locally installed dependencies
+**/node_modules/
