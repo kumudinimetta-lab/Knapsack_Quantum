@@ -1,0 +1,53 @@
+[
+  {
+    "command": [
+      "C:\\Users\\Shiva\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Shiva\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\bibtex.EXE",
+      "main"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Shiva\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Shiva\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Shiva\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "exit": 0
+  }
+]

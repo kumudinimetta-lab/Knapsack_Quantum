@@ -1,0 +1,150 @@
+{
+  "research_log/claim_validation_20261025/VALIDATION_VERDICT.md": {
+    "sha256": "8482e5321f8fa47cd1b7bff341cf804f9d9c78a49fe80f6d709ddc85871ad75c",
+    "local_copy": "evidence\\VALIDATION_VERDICT.md"
+  },
+  "research_log/claim_validation_20261025/theory_claim_audit.md": {
+    "sha256": "f8cb175bdcff82a664a6d86dde4832180bde3fcbc52ad1ca43bcc30fe8a9ef4b",
+    "local_copy": "evidence\\theory_claim_audit.md"
+  },
+  "research_log/claim_validation_20261025/theory_adversarial_audit_v2.json": {
+    "sha256": "4f3cf84b68d1a41f46b6d3dd563a8ef30ee707ddeb4b6ee5dc716eebac7e5977",
+    "local_copy": "evidence\\theory_adversarial_audit_v2.json"
+  },
+  "research_log/claim_validation_20261025/root_all_reachable_v2_summary.json": {
+    "sha256": "6b6068b6abda9d6a01eeb061b9857818dda87e90363101e81e8a3c0639f2bf97",
+    "local_copy": "evidence\\root_all_reachable_v2_summary.json"
+  },
+  "research_log/claim_validation_20261025/root_all_reachable_v2_rows.jsonl": {
+    "sha256": "2f9c2fb4a64919d28f3ca16c017892cf4e122c56aae790994c07002293b4a484",
+    "local_copy": "evidence\\root_all_reachable_v2_rows.jsonl"
+  },
+  "research_log/claim_validation_20261025/root_aware_resource105_summary.json": {
+    "sha256": "71770e6d0c728dec160ac0d59231349946dc5706392335e6261d1b75c5f08bb4",
+    "local_copy": "evidence\\root_aware_resource105_summary.json"
+  },
+  "research_log/claim_validation_20261025/root_aware_resource105_rows.jsonl": {
+    "sha256": "31b5882c58aafb1ad132a0ef335d885e18175fee0e3b5b34bfb5f3e738f1f148",
+    "local_copy": "evidence\\root_aware_resource105_rows.jsonl"
+  },
+  "research_log/claim_validation_20261025/root_aware_validation.json": {
+    "sha256": "50e449cf928a3ebd2a64c7bb0028a98e4d55ef1d5581138fc79301600db68136",
+    "local_copy": "evidence\\root_aware_validation.json"
+  },
+  "research_log/claim_validation_20261025/final_crosscheck.json": {
+    "sha256": "365cca5710b0c03ac1e59ef16d99ac07fa6fbd4729d9bd57dfdeb2677bdee808",
+    "local_copy": "evidence\\final_crosscheck.json"
+  },
+  "research_log/claim_validation_20261025/circuit_vertex_adversarial.json": {
+    "sha256": "6299f3aa7c67c0e43b12979f590be7c37d3872ae6c772da46066021e890a6c4f",
+    "local_copy": "evidence\\circuit_vertex_adversarial.json"
+  },
+  "research_log/claim_validation_20261025/circuit_vertex_adversarial_resume.json": {
+    "sha256": "8c3b038510aea7cc4b848f0bb12a36eb79a63dfb5e9d4c4e37e5b3b0bcf3c864",
+    "local_copy": "evidence\\circuit_vertex_adversarial_resume.json"
+  },
+  "research_log/claim_validation_20261025/theory_phase_preparation_triage_v2.json": {
+    "sha256": "1707acc871947602a56497cccd283366e814db569ee0b498cd660f93f24b7686",
+    "local_copy": "evidence\\theory_phase_preparation_triage_v2.json"
+  },
+  "research_log/pruning_study_20261023/inputs.json": {
+    "sha256": "47900afa72ad21b83d3a91b8fdc9d2dd96df253f259223f3e30581dd015997a5",
+    "local_copy": "evidence\\inputs.json"
+  },
+  "research_log/pruning_study_20261023/inputs_core700.json": {
+    "sha256": "7db67725f0825774f079b30a9f0de0f6888861ddfb9dc4409bbaef9584235156",
+    "local_copy": "evidence\\inputs_core700.json"
+  },
+  "research_log/source_faithful_20261024/qft_bank_full105_manifest.json": {
+    "sha256": "e8bfba2e9387146bd9ea22243082dc4cbd6e1392f39321e708929386d30c5e36",
+    "local_copy": "evidence\\qft_bank_full105_manifest.json"
+  },
+  "research_log/references_literature_20261026/COMPLETE_REFERENCE_AUDIT.json": {
+    "sha256": "58275ad543a4a9d5457797eb120d69aea6f4d7e8a5f4caee26b465d092376ef1",
+    "local_copy": "evidence\\COMPLETE_REFERENCE_AUDIT.json"
+  },
+  "research_log/references_literature_20261026/FINAL_AUDIT.md": {
+    "sha256": "e903767ac1fcebe6bb0038df8296e4a1d197ef94a8624eaa09e503c64056e497",
+    "local_copy": "evidence\\FINAL_AUDIT.md"
+  },
+  "simulation/source_faithful_20261024/qft_bank.py": {
+    "sha256": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\qft_bank.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/source_faithful_20261024/compressed_bank.py": {
+    "sha256": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\compressed_bank.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/source_faithful_20261024/continuous_bank.py": {
+    "sha256": "4308ba9d025a5b43377ff39a5893b172ea6ad9672f60475424d1651b5defe82c",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\continuous_bank.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/source_faithful_20261024/resource_profile.py": {
+    "sha256": "b6eb390ec0dde1f8e50d1ff9310285b5b74f5f746cc397eeb0c6ec387f9dda01",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\resource_profile.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/source_faithful_20261024/qft_normal_form.py": {
+    "sha256": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\qft_normal_form.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/source_faithful_20261024/qft_reconstruction.py": {
+    "sha256": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "local_copy": "evidence\\source_snapshots\\simulation\\source_faithful_20261024\\qft_reconstruction.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/root_aware_control.py": {
+    "sha256": "ecbe54890972ba2820c2913b2b838771b61b8defcfcf933e42c136e0d94bd0e2",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\root_aware_control.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/root_aware_experiments.py": {
+    "sha256": "97035ac33539ce5dd3241818521ec43d653e02455df9f2cadb2bb0be04129849",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\root_aware_experiments.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/root_all_reachable_coverage.py": {
+    "sha256": "4f57d0248c2d560384d370bd11d67ccf079184c8d029e63ad7a0c2929f194923",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\root_all_reachable_coverage.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/theory_adversarial_audit.py": {
+    "sha256": "2addb1f833e1ea4db2d41e23467a100186dbbb8b0041507e362869afdcc3f8bc",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\theory_adversarial_audit.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/circuit_vertex_adversarial.py": {
+    "sha256": "4ca3ec34e758c263554307ce6acd10cd79ed5beff0c92e8718e63e0112e06312",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\circuit_vertex_adversarial.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/claim_validation_20261025/circuit_vertex_adversarial_resume.py": {
+    "sha256": "e144b60182cffbabde3f72b1a2f8cfea4af82dc0966847c09ca1540d422cca99",
+    "local_copy": "evidence\\source_snapshots\\research_log\\claim_validation_20261025\\circuit_vertex_adversarial_resume.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/pruning_study_20261023/tree_experiments.py": {
+    "sha256": "80b3a33318895d7c5e0128da47ca5cdd64b7fe7f13674950773b7473e3cfaaa5",
+    "local_copy": "evidence\\source_snapshots\\research_log\\pruning_study_20261023\\tree_experiments.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "research_log/pruning_study_20261023/make_core_inputs.py": {
+    "sha256": "e8c71da90e1c2d47a8faee1e536332271b28641224c8b01c63a149089f298b00",
+    "local_copy": "evidence\\source_snapshots\\research_log\\pruning_study_20261023\\make_core_inputs.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/exact_knapsack.py": {
+    "sha256": "49680352a2223d29283b2888549b078f005409c181a38f59de98d8250e1ad774",
+    "local_copy": "evidence\\source_snapshots\\simulation\\exact_knapsack.py",
+    "note": "Source snapshot; imports use original project tree"
+  },
+  "simulation/benchmark_v5.py": {
+    "sha256": "81551dc31902d94bff42556f40d212355293ba655629974f7ccd325e82a994dc",
+    "local_copy": "evidence\\source_snapshots\\simulation\\benchmark_v5.py",
+    "note": "Source snapshot; imports use original project tree"
+  }
+}

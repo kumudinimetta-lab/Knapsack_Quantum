@@ -1,0 +1,33 @@
+{
+  "checked": "2026-10-27",
+  "publisher_locations": {
+    "ref5": [
+      "Berlin, Heidelberg",
+      "https://link.springer.com/chapter/10.1007/978-3-642-20465-4_21"
+    ],
+    "ref11": [
+      "Providence, RI",
+      "https://userpages.cs.umbc.edu/lomonaco/ams/Special.html"
+    ],
+    "ref17": [
+      "Dagstuhl, Germany",
+      "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TQC.2018.5"
+    ],
+    "bonnetain2020improved": [
+      "Cham",
+      "https://link.springer.com/chapter/10.1007/978-3-030-64834-3_22"
+    ],
+    "hamitouche2025": [
+      "Auckland, New Zealand",
+      "https://www.cs.auckland.ac.nz/research/groups/CDMTCS/researchreports/download.php?selected-id=904"
+    ],
+    "martiel2019": [
+      "Cham",
+      "https://link.springer.com/chapter/10.1007/978-3-030-38919-2_49"
+    ]
+  },
+  "ref17": "Keep exact article/page identifiers in note; stock BST otherwise strips colons into false page range 5--1515.",
+  "erickson2019algorithms": "Author-hosted electronic textbook formatted as misc; no publication city invented. All 40 works retained.",
+  "erickson_source": "https://jeffe.web.engr.illinois.edu/teaching/algorithms/",
+  "class_and_bst": "Official files unmodified."
+}

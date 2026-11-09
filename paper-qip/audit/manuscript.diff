@@ -1,0 +1,1090 @@
+--- paper/main.tex (preserved)
++++ paper-qip/main.tex
+@@ -1,115 +1,69 @@
+-\documentclass[conference]{IEEEtran}
+-\IEEEoverridecommandlockouts
+-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+-\usepackage{cite}
+-\usepackage{amsmath,amssymb,amsfonts}
+-\usepackage{algorithmic}
+-\usepackage{algorithm}
++\documentclass[referee,pdflatex,sn-mathphys-num]{sn-jnl}
+ \usepackage{graphicx}
+-\usepackage{textcomp}
+-\usepackage{xcolor}
++\usepackage{amsmath,amssymb,amsfonts,amsthm}
+ \usepackage{booktabs}
+-\usepackage{multirow}
++\usepackage{array}
+ \usepackage{url}
+-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
++\IfFileExists{xurl.sty}{\usepackage{xurl}}{}
++\providecommand{\burl}[1]{\url{#1}}
++\theoremstyle{thmstyleone}
++\newtheorem{theorem}{Theorem}
++\newtheorem{lemma}[theorem]{Lemma}
++\newtheorem{proposition}[theorem]{Proposition}
++\theoremstyle{thmstyletwo}
++\newtheorem{remark}{Remark}
++\raggedbottom
+ 
+ \begin{document}
+-
+-
+-
+-
+-\title{LP-Pruned Quantum Branch-and-Bound for the 0/1 Knapsack Problem: Query-Complexity Analysis and Spectral Validation}
+-
+-\author{%
+-\IEEEauthorblockN{1\textsuperscript{st} Nagini S.}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\nagini\_s@vnrvjiet.in}
+-\and
+-\IEEEauthorblockN{2\textsuperscript{nd} Madhavi A.}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\madhavi\_a@vnrvjiet.in}
+-\and
+-\IEEEauthorblockN{3\textsuperscript{rd} Shiva Sai}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\venkatashivasai07@gmail.com}
+-\and
+-\IEEEauthorblockN{4\textsuperscript{th} Metta Kumudini}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\kumudini.metta@gmail.com}
+-\and
+-\IEEEauthorblockN{5\textsuperscript{th} Purusharth Mishra}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\purusharthmishra10@gmail.com}
+-\and
+-\IEEEauthorblockN{6\textsuperscript{th} Rakshit Chaturvedi}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\rakshitchaturvedi09@gmail.com}
+-\and
+-\IEEEauthorblockN{7\textsuperscript{th} Veerabhadra Yerram}
+-\IEEEauthorblockA{Department of CSE\\VNR VJIET\\Hyderabad, India\\veerabhadrayerram@gmail.com}
+-}
+-
++\title[Reversible integer LP-pruning predicates]{Reversible Oracles Preserving Integer LP-Pruning Decisions for the 0/1 Knapsack Problem}
++\author[1]{\fnm{Nagini} \sur{S.}}% Retained contact: nagini_s@vnrvjiet.in
++\author*[1]{\fnm{Madhavi} \sur{A.}}\email{madhavi\_a@vnrvjiet.in}
++\author[1]{\fnm{Shiva} \sur{Sai}}% Retained contact: venkatashivasai07@gmail.com
++\author[1]{\fnm{Metta} \sur{Kumudini}}% Retained contact: kumudini.metta@gmail.com
++\author[1]{\fnm{Purusharth} \sur{Mishra}}% Retained contact: purusharthmishra10@gmail.com
++\author[1]{\fnm{Rakshit} \sur{Chaturvedi}}% Retained contact: rakshitchaturvedi09@gmail.com
++\author[1]{\fnm{Veerabhadra} \sur{Yerram}}% Retained contact: veerabhadrayerram@gmail.com
++\affil[1]{\orgdiv{Department of Computer Science and Engineering}, \orgname{VNR VJIET}, \orgaddress{\city{Hyderabad}, \country{India}}}
++
++\abstract{Quantum branch-and-bound frameworks use reversible bounding predicates, whose implementation costs can offset reductions in oracle queries. We study the linear-programming relaxation of the 0/1 knapsack problem under a fixed efficiency-ordered prefix branching rule. A classically certified finite bank of rational affine bounds preserves every integer-threshold pruning decision without reproducing the fractional bound itself. We derive coverage certificates, minimum-cardinality constructions on a density grid and over nonnegative rational multipliers, and a sufficient construction that avoids capacity-reachability dynamic programming. A counterexample family shows that a linear number of multipliers can still be necessary. The reversible construction uses constant-coefficient arithmetic, explicit register bounds, and compute--copy--uncompute cleanup. Exact arithmetic checks on 700 original instances and their 700 reduced cores cover 5,204,456 reachable states with zero mismatches in 20,817,824 bank-floor comparisons. Completed small-circuit basis tests report zero gate mismatches in 1,120 Fourier-arithmetic basis columns and 2,216 Boolean gate columns; these tests do not constitute large-instance circuit simulation. On 105 fixed-depth instances, derived logical resources relative to a root-aware fractional-scan reconstruction have median bank-to-control ratios of 0.4981 for controlled-NOT gates, 0.4908 for active qubits, and 1.0720 for depth. The results establish scoped predicate preservation and a gate-count--depth tradeoff, not hardware advantage or end-to-end quantum speedup.}
++
++\keywords{quantum computing, knapsack problem, reversible arithmetic, linear programming, branch-and-bound, quantum oracles}
+ \maketitle
+ 
+-
+-
+-
+-\begin{abstract} The 0/1 knapsack problem is a fundamental NP-hard combinatorial optimization problem with applications spanning resource allocation, cryptography, and logistics. The best provable quantum algorithms either match classical meet-in-the-middle at $O(2^{n/2})$ or rely on unproven heuristic assumptions (Heuristic~2) and infeasible QRAQM hardware. We present a hybrid algorithm for knapsack that couples LP-guided reduced-cost variable fixing with Montanaro's quantum branch-and-bound framework. Unlike prior quantum knapsack methods---which are generic, heuristic, or QRAQM-dependent---our method is simultaneously provable, gate-model feasible (QRAQM-free), knapsack-specific, and instance-adaptive. Our three-phase hybrid algorithm uses: (1)~reduced-cost variable fixing to provably eliminate items from the search space, reducing the problem to $m = \alpha n$ core items where $\alpha \in [0, 1]$ depends on instance structure; (2)~a classical threshold-search outer loop invoking quantum detection, with composed query complexity $O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right)$, where $T_{\max}$ is the maximum LP-pruned tree size encountered over the tested thresholds; and (3)~classical post-processing to reconstruct the global optimum. We prove instance-dependent complexity bounds showing that for weakly constrained instances, LP preprocessing reduces the effective problem size to near-constant, while for strongly constrained instances with substantially larger LP-pruned trees, the quantum phase achieves a quadratic query reduction relative to classical traversal of the same backtracking tree under the Montanaro oracle-model assumptions. We establish a core containment theorem bounding the reduced-cost core, accompanied by a necessity-of-$\Delta$ spacing structural result. Beyond complexity counting, we computationally test the spectral conditions for the quantum phase on the LP-pruned tree. We verify the effective spectral-gap inequality and phase-zero weight bound, finding perfect agreement with the analytical detection criterion on 889 completed simulated trees ($T_{\text{LP}} \le 2000$). We benchmark against strong classical solvers (dynamic programming, Google OR-Tools at scale up to $n=1000$) and derive an empirical regression model for the LP-pruned tree size $T_{\text{LP}}$, clarifying that the query-complexity reduction is relevant only in the large-coefficient, LP-hard regime where DP is infeasible and branch-and-bound explodes. A fault-tolerant resource estimate for our answer-agnostic reversible oracle establishes baseline component costs for the predicate $V$, and we synthesize the reversible LP bounding oracle at $m=4$, which is measured, fault-tested, and benchmark-verified. Finally, we characterize the NISQ noise boundary of amplitude amplification on IBM's \texttt{ibm\_fez} processor (156-qubit Heron~r2) for core sizes $n \in \{3, 4, 5, 6\}$. We do not claim wall-clock quantum speedup, hardware advantage, or complete end-to-end full-walk gate complexity reduction. \end{abstract}
+-
+-\begin{IEEEkeywords} quantum computing, knapsack problem, branch-and-bound, quantum walk, LP relaxation, variable fixing, combinatorial optimization \end{IEEEkeywords}
+-
+-
+-
+-
+-\section{Introduction}
+-
+-The 0/1 knapsack problem is one of the most studied problems in combinatorial optimization: given $n$ items, each with a weight $w_i$ and a value $v_i$, and a capacity $W$, find the subset that maximizes total value without exceeding the capacity. Despite its simple formulation, the problem is NP-hard, and the best classical exact algorithm---the Horowitz--Sahni meet-in-the-middle approach---runs in $O(2^{n/2})$ time and space \cite{ref2}.
+-
+-Quantum computing has long promised speedups for combinatorial problems. Grover's algorithm \cite{ref8} provides a quadratic speedup for unstructured search, and its generalization via amplitude amplification \cite{ref11} is a powerful tool. However, applying Grover search directly to knapsack yields $O(2^{n/2})$---no improvement over classical meet-in-the-middle.
+-
+-More sophisticated quantum approaches based on quantum walks have achieved better asymptotic complexities. Bernstein et al. \cite{ref16} achieved $O(2^{0.241n})$, and Helm and May \cite{ref17} further improved this to $O(2^{0.226n})$. However, these results rely on Heuristic~2---an unproven assumption about quantum walk update times---which Bonnetain et al. \cite{bonnetain2020improved} have shown to be mathematically unsound in general. Furthermore, these algorithms require QRAQM (Quantum Random Access Memory with Quantum Addressing), a hardware model that does not exist and faces severe engineering challenges \cite{ref18}.
+-
+-This creates a gap in the literature: can LP structure be combined with provable quantum tree-search query bounds without unproven heuristics or QRAQM?
+-
+-\subsection{Contributions and Novelty}
+-
+-Our algorithm uniquely combines exact LP reduced-cost fixing with a quantum tree search. Our defensible contributions are:
+-
+-\begin{enumerate}
+-    \item Exact LP/reduced-cost variable fixing for reducing the knapsack core before quantum tree search, backed by a core containment theorem and a necessity-of-$\Delta$ spacing structural result.
+-    \item A threshold-optimization composition using a classical binary-search outer loop and a Montanaro-style quantum detection primitive.
+-    \item A composed query bound $O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right)$, with $T_{\max}$ explicitly defined as the maximum threshold-dependent LP-pruned tree size encountered by the outer loop.
+-    \item Computational spectral validation of the implemented walk on 889 completed simulated trees with $T_{\text{LP}} \le 2000$, including effective spectral-gap inequality, phase-zero marked weight, and analytical phase-estimation acceptance separation.
+-    \item Gate-level synthesis and verification of the reversible LP bounding oracle at $m=4$, which is measured, fault-tested, and benchmark-verified.
+-    \item Small-scale IBM hardware characterization of the reversible threshold predicate/core circuit, explicitly limited to the executed small instances.
+-    \item Large-scale benchmarking against Google OR-Tools (up to $n=1000$) demonstrating the behavior of the LP-pruned core size and an empirical regression for $T_{\text{LP}}$.
+-\end{enumerate}
+-
+-We do not claim wall-clock quantum acceleration or a complete gate-complexity bound for the full LP-bounded walk, because the reversible LP heuristic $h$ is not synthesized.
+-
+-The remainder of this paper is organized as follows. Section~II reviews related work. Section~III establishes mathematical preliminaries. Section~IV presents our algorithm. Section~V provides the theoretical analysis. Section~VI describes our experimental methodology and results. Section~VII discusses implications and limitations. Section~VIII concludes.
+-
+-% ==============================================================
+-% II. LITERATURE REVIEW
+-% ==============================================================
++\section{Introduction}\label{sec:intro}
++The 0/1 knapsack problem asks for a subset of maximum total value whose total weight does not exceed a given capacity. Linear-programming (LP) bounds and classical core methods exploit structure beyond enumeration \cite{ref1,ref3,balas1980core}. Quantum backtracking and branch-and-bound (B\&B) frameworks motivate a different implementation question: how much reversible computation is required to decide that a partial assignment cannot reach an integer objective target? Their query guarantees assume access to the required oracles \cite{ref35,ref24}; an oracle query is not a unit of physical runtime.
++
++The distinction between a numerical bound and its pruning predicate is useful here. For integer profits and an integer target, two fractional upper bounds produce identical pruning decisions whenever their floors agree. A reversible oracle can therefore preserve the decision without returning the fractional LP value. The difficulty is to establish this equality at every allowed prefix, rather than selecting a few multipliers that merely give valid but weaker bounds.
++
++We study a static, instance-dependent bank of nonnegative rational multipliers under a fixed nonincreasing exact-efficiency order. Our construction links all-prefix coverage to interval stabbing and compiles the resulting bank into a clean reversible predicate. Affine Lagrangian bounds, minimization over multiplier sets, integer rounding, interval stabbing, and reversible arithmetic are established techniques \cite{bozejko2026,erickson2019algorithms,vedral1996,draper2000}. The contribution is a construction combining these techniques with coverage certificates for the integer LP predicate and a matched reversible-resource comparison.
++
++The paper makes four concrete contributions. First, it specifies the exact prefix and integer-threshold contract and derives finite-grid and rational-bank coverage certificates. Second, it gives a sufficient construction without capacity-reachability dynamic programming and a family requiring linearly many multipliers. Third, it describes a reversible constant-coefficient implementation with bounded unsigned intermediates and cleaned workspace. Fourth, it evaluates arithmetic coverage, small-circuit behavior, and logical resources separately. The comparison with a root-aware scan control shows lower gate counts and qubit requirements alongside increased median depth.
++
++Sections~\ref{sec:model}--\ref{sec:bank} develop the predicate and coverage results. Section~\ref{sec:circuit} describes the circuit and comparison control. Sections~\ref{sec:methods} and~\ref{sec:results} give the evaluation protocol and findings, and Section~\ref{sec:discussion} discusses their scope.
++
+ \section{Literature Review}
+ 
+ \textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\&B) \cite{ref3}. The \emph{core} concept was introduced by Balas and Zemel \cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \cite{ref4}. MINKNAP uses an expanding-core dynamic program \cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\"ocking's expected-polynomial knapsack analysis \cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\&B analysis \cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here.
+ 
+-\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\sqrt{N})$ oracle queries \cite{ref8}. Amplitude amplification generalizes this principle \cite{ref11}, with optimization variants via pure adaptive search \cite{ref12} and D\"urr--H{\o}yer minimum finding \cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime.
+-
+-\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \cite{ref5} and the quantum algorithms of Bernstein et al.\ \cite{ref16} and Helm--May \cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible.
+-
+-\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \cite{hou2020}. Hamitouche et al.\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \cite{hamitouche2025}. Wilkening et al.\ present a quantum tree generator with amplitude amplification; separately, their quantum B\&B benchmarks use fractional-greedy bounds \cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\ combine feasible-solution state preparation with Grover-mixer QAOA \cite{ref23}, within the variational framework introduced by Farhi et al.\ \cite{ref25}. Christiansen et al.\ prove eventual optimal sampling at sufficiently large depth \cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \cite{ref26} is a distinct search approach, rather than a variational algorithm.
+-
+-\textit{LP and Lagrangian bounds in quantum methods.} Sanavio et al.\ combine classical B\&B with quantum annealing for integer linear problems \cite{ref36}. Bo\.{z}ejko et al.\ use Lagrangian multiplier bounds in a D-Wave knapsack B\&B framework, including minimization over a multiplier set and integer rounding in pruning \cite{bozejko2026}. Their large-instance device experiments evaluate bounds at the root, rather than executing the full search tree on the QPU. Gabbassov et al.\ study Lagrangian duality for constrained quantum optimization and compare it with QUBO reformulations \cite{gabbassov2025}. Thus, neither Lagrangian relaxation nor taking an integer floor of a valid upper bound is itself a new contribution.
++\textit{Quantum search and its limits.} For an unstructured space of size $N$ containing one marked item, Grover's algorithm finds that item with bounded error using $O(\sqrt{N})$ oracle queries \cite{ref8}. Amplitude amplification generalizes this principle \cite{ref11}, with optimization variants via pure adaptive search \cite{ref12} and D\"urr--H{\o}yer minimum finding \cite{ref13}. Treating the $2^n$ binary assignments as an unstructured objective table gives an $O(2^{n/2})$-query minimum-finding baseline at constant success probability, before accounting for oracle cost \cite{ref13}. Bennett et al.'s black-box lower bounds \cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime.
++
++\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \cite{ref5} and the quantum algorithms of Bernstein et al.\ \cite{ref16} and Helm--May \cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish quantum random-access memory (QRAM) architectures and their resource assumptions \cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible.
++
++\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \cite{hou2020}. Hamitouche et al.\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \cite{hamitouche2025}. Wilkening et al.\ present a quantum tree generator (QTG) with amplitude amplification; separately, their quantum B\&B (QBnB) benchmarks use fractional-greedy bounds \cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\ combine feasible-solution state preparation with the Grover-mixer quantum approximate optimization algorithm (QAOA) \cite{ref23}, within the variational framework introduced by Farhi et al.\ \cite{ref25}. Christiansen et al.\ establish arbitrarily high optimal-solution sampling probability at sufficiently large depth with suitable parameters \cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \cite{ref26} is a distinct search approach, rather than a variational algorithm.
++
++\textit{LP and Lagrangian bounds in quantum methods.} Sanavio et al.\ combine classical B\&B with quantum annealing for integer linear problems \cite{ref36}. Bo\.{z}ejko et al.\ use Lagrangian multiplier bounds in a D-Wave knapsack B\&B framework, including minimization over a multiplier set and integer rounding in pruning \cite{bozejko2026}. Their large-instance device experiments evaluate bounds at the root, rather than executing the full search tree on the quantum processing unit (QPU). Gabbassov et al.\ study Lagrangian duality for constrained quantum optimization and compare it with quadratic unconstrained binary optimization (QUBO) reformulations \cite{gabbassov2025}. Thus, neither Lagrangian relaxation nor taking an integer floor of a valid upper bound is itself a new contribution.
+ 
+ \textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \cite{ref35} and quantum B\&B \cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \cite{vedral1996}, Draper's Fourier-basis addition \cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\ \cite{barenco1995}. Thapliyal et al.'s reversible integer divider \cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor.
+ 
+ \textit{Closest prior work and our position.} The relevant distinction is between computing a fractional bound, testing a complete assignment, and reversibly deciding whether the LP relaxation of a partial prefix excludes an integer target. The construction under study targets the last task: for a fixed exact-efficiency prefix order, a classically certified bank of affine bounds is compiled into a reversible predicate that preserves the integer-threshold LP-pruning decisions. This scope requires positive integer weights, nonnegative integer profits, a coverage certificate, representable integer thresholds, a separate capacity check, and clean initial workspace. It does not imply reproduction of the numerical fractional LP value, support for arbitrary branching orders, or an implementation of the complete quantum walk. Circuit comparisons reconstructed from published fractional-greedy primitives \cite{wilkening2025,wilkening2025code} must therefore account for both predicate semantics and resource costs, and be identified as reconstructions rather than released LP-oracle circuits. Table~\ref{tab:related} summarizes the roles of the closest approaches without asserting historical priority or a hardware advantage.
+ 
+-\begin{table*}[t]
++\begin{table}[t]
+ \caption{Related methods and the distinctions relevant to an LP-pruning oracle. These descriptions identify scope, not a ranking of performance.}
+ \label{tab:related}
+-\begin{center}
+-\footnotesize
++\centering
++\small
+ \setlength{\tabcolsep}{5pt}
+-\begin{tabular}{p{0.20\textwidth}p{0.32\textwidth}p{0.38\textwidth}}
++\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}}
+ \toprule
+ \textbf{Work} & \textbf{Computation or model} & \textbf{Relevant scope} \\
+ \midrule
+@@ -121,652 +75,295 @@
+ Martiel--Remaud \cite{martiel2019} & Circuit implementation of quantum backtracking & Implementation resources remain separate from abstract query counts. \\
+ \bottomrule
+ \end{tabular}
+-\end{center}
+-\end{table*}
+-
+-% ==============================================================
+-% III. PRELIMINARIES
+-% ==============================================================
+-\section{Preliminaries}
+-
+-\subsection{Problem Definition}
+-
+-The 0/1 Knapsack Problem is defined as follows. Given a set of $n$ items, where item $i$ has weight $w_i \in \mathbb{Z}^+$ and value $v_i \in \mathbb{Z}^+$, and a capacity $W \in \mathbb{Z}^+$, find a binary vector $x^* = (x_1^*, x_2^*, \ldots, x_n^*) \in \{0,1\}^n$ that solves
++\end{table}
++
++
++
++\section{Problem and pruning contract}\label{sec:model}
++Consider $n$ items with weights $w_i\in\mathbb Z_{>0}$, profits $v_i\in\mathbb Z_{\geq0}$, and capacity $W\in\mathbb Z_{\geq0}$. We maximize $\sum_{i=1}^{n} v_i x_i$ subject to $\sum_{i=1}^{n} w_i x_i\leq W$ and $x_i\in\{0,1\}$. Relabel the items so that $\rho_i=v_i/w_i$ is nonincreasing. Comparisons use exact rational arithmetic; ties retain a fixed deterministic order. Distinct efficiencies are not assumed. The empty instance is allowed.
++
++At depth $d$, the first $d$ decisions are fixed. Write
+ \begin{equation}
+-    \max \sum_{i=1}^{n} v_i x_i \quad \text{subject to} \quad \sum_{i=1}^{n} w_i x_i \leq W.
+-    \label{eq:knapsack}
+-\end{equation}
+-We denote the optimal value by $Z^* = \sum_{i} v_i x_i^*$. Without loss of generality, we assume $w_i \leq W$ for all $i$ (items heavier than the capacity are trivially excluded) and that all efficiencies $e_i = v_i / w_i$ are distinct.
+-
+-\subsection{LP Relaxation, Split Item, and Dantzig Bound}
+-
+-The LP relaxation of \eqref{eq:knapsack} permits fractional assignments $x_i \in [0,1]$. Its solution has a closed-form structure due to Dantzig \cite{ref1}.
+-
+-\textbf{Definition 1 (Efficiency Ordering).} Order items so that $e_1 > e_2 > \cdots > e_n$ where $e_i = v_i / w_i$.
+-
+-\textbf{Definition 2 (Split Item).} The \textit{split item} $s$ is the smallest index such that
++ P=\sum_{i\leq d}v_ix_i,\qquad R=W-\sum_{i\leq d}w_ix_i.
++\end{equation}
++For a feasible prefix, $R\geq0$, the residual LP value is
++\begin{equation}\label{eq:lp}
++ U_d(R)=\max\left\{\sum_{i>d}v_i y_i:\ \sum_{i>d}w_i y_i\leq R,\ 0\leq y_i\leq1\right\}.
++\end{equation}
++The target predicate, with 1 meaning rejection, is
++\begin{equation}\label{eq:predicate}
++ f(x,\tau)=\begin{cases}
++ 1,&R<0,\\
++ [P+U_d(R)<\tau],&R\geq0.
++ \end{cases}
++\end{equation}
++Here $\tau$ is an integer; in a circuit it must be representable in the chosen unsigned register. For an integer incumbent $L$, set $\tau=L+1$. Rejection then means $\lfloor P+U_d(R)\rfloor\leq L$, which differs from the unrounded test $P+U_d(R)\leq L$. Rejection rules out every feasible completion reaching $\tau$; nonrejection does not guarantee such a completion.
++
++For $\lambda\geq0$, define the residual dual bound
++\begin{equation}\label{eq:dual}
++ F_d(R,\lambda)=\lambda R+\sum_{i>d}\max(v_i-\lambda w_i,0).
++\end{equation}
++For every feasible LP vector, $v_i y_i\leq\lambda w_i y_i+\max(v_i-\lambda w_i,0)$; summing proves $U_d(R)\leq F_d(R,\lambda)$. Greedy fractional filling in efficiency order attains equality at the split item's density: items of higher density are filled, those of lower density are empty, and the split group uses the remaining capacity. An exchange of weight from lower to higher density cannot decrease value. If all suffix items fit, $\lambda=0$ attains equality. If $R=0$ and the suffix is nonempty, its largest density attains zero; an empty suffix is covered by $\lambda=0$. Thus
++\begin{equation}\label{eq:dualequality}
++ U_d(R)=\min_{\lambda\in\{0\}\cup\{\rho_i:i>d\}}F_d(R,\lambda).
++\end{equation}
++The identity includes tied densities, zero residual capacity, and all-fit suffixes.
++
++\subsection{Core preprocessing and interpretation}
++The oracle can be applied to an original instance or to a separately justified reduced core. In the core panel used below, a feasible greedy solution supplies an integer lower bound $L$. A variable is fixed only when the opposite assignment is infeasible or its LP bound is strictly below $L$. Every feasible solution with value at least $L$ must then respect that fixing. Applying such individually necessary fixings together preserves all such solutions. Subtracting fixed-in weight and profit produces the residual instance; its threshold is shifted by the fixed-in profit. The bank is rebuilt for this residual instance and its own efficiency order. This argument does not preserve arbitrary low-threshold trees of the original instance. Exact reference optima are used only to check the transformations, not to select bank entries.
++
++\section{Certified multiplier banks}\label{sec:bank}
++A bank $B$ is a nonempty finite set of nonnegative rational numbers. Its bound is $U^B_d(R)=\min_{\lambda\in B}F_d(R,\lambda)$. Every such bank gives a valid upper bound, but this alone does not make its pruning decisions equal to those of the LP.
++
++\begin{lemma}[Root-tail sufficiency]\label{lem:tail}
++Let $s$ be the first root index for which $\sum_{i\leq s}w_i>W$. If it exists, the bank $\{0\}\cup\{\rho_i:i\geq s\}$ reproduces $U_d(R)$ at every feasible prefix. If every item fits at the root, the bank $\{0\}$ suffices.
++\end{lemma}
++\begin{proof}
++If $d<s$, selecting an arbitrary prefix uses no more weight than selecting it entirely. Filling the suffix through any index $j<s$ therefore uses at most $\sum_{i\leq j}w_i\leq W$. A fractional split cannot occur before $s$. If $d\geq s$, all remaining items are already in the root tail. Equation~\eqref{eq:dualequality} supplies a tail density, or zero for an all-fit suffix, attaining the LP value. When all root items fit, the remaining suffix fits after every prefix because omitted items only release capacity. Tied densities do not change the weight argument.
++\end{proof}
++
++\subsection{Integer-threshold coverage}
++The set of feasible consumed weights after $d$ decisions is
++\begin{equation}\label{eq:reach}
++ S_0=\{0\},\qquad S_{d+1}=\bigl(S_d\cup\{q+w_{d+1}:q\in S_d\}\bigr)\cap[0,W].
++\end{equation}
++Only states $(d,W-q)$ with $q\in S_d$ require coverage. Prefix profits need not be enumerated because they are integers.
++
++\begin{theorem}[Coverage criterion]\label{thm:coverage}
++A bank preserves \eqref{eq:predicate} at every feasible prefix and every integer threshold if and only if, for every reachable $(d,R)$, it contains a multiplier satisfying
++\begin{equation}\label{eq:coverage}
++ F_d(R,\lambda)<\lfloor U_d(R)\rfloor+1.
++\end{equation}
++\end{theorem}
++\begin{proof}
++Weak duality gives $U^B_d(R)\geq U_d(R)$. Hence \eqref{eq:coverage} is equivalent to $\lfloor U^B_d(R)\rfloor=\lfloor U_d(R)\rfloor$. Adding the integer $P$ preserves floor equality, which gives identical strict comparisons with every integer $\tau$. Conversely, if the floors differ, take $\tau=P+\lfloor U_d(R)\rfloor+1$. The LP rejects and the bank does not. This last necessity statement concerns all integer thresholds mathematically; the circuit contract only covers thresholds in its finite register.
++\end{proof}
++
++On a sorted density grid, convexity of $F_d(R,\lambda)$ makes the grid points satisfying \eqref{eq:coverage} a nonempty contiguous index interval. The root-tail grid suffices by Lemma~\ref{lem:tail}. Sort these intervals by right endpoint and select that endpoint whenever the current selection misses an interval. Each selected point covers its interval. The intervals that cause new selections are pairwise disjoint, so every bank on this grid needs at least as many points. This is a minimum-cardinality grid bank, with a checkable lower-bound certificate. The greedy stabbing method itself is standard \cite{erickson2019algorithms}.
++
++\subsection{Rational multipliers and open endpoints}
++For $j=d,\ldots,n$, put $V_{dj}=\sum_{d<i\leq j}v_i$ and $W_{dj}=\sum_{d<i\leq j}w_i$. Because positive reduced costs form a prefix,
++\begin{equation}\label{eq:affine}
++ F_d(R,\lambda)=\max_{j=d,\ldots,n}\{V_{dj}+\lambda(R-W_{dj})\},\quad \lambda\geq0.
++\end{equation}
++Writing $K=\lfloor U_d(R)\rfloor+1$, its continuous coverage interval is the intersection of
++\begin{equation}\label{eq:interval}
++ \lambda(R-W_{dj})<K-V_{dj},\quad j=d,\ldots,n,\qquad \lambda\geq0.
++\end{equation}
++Every finite endpoint is rational. The upper endpoint is open; a positive lower endpoint is open, while zero may be included. The upper endpoint may be infinite. Nonemptiness follows from an LP-optimal multiplier.
++
++\begin{proposition}[Minimum rational-bank certificate]\label{prop:continuous}
++For the finite set of reachable states, a minimum-cardinality bank among nonnegative rational multipliers can be constructed by interval stabbing with these endpoint conventions.
++\end{proposition}
++\begin{proof}
++Collect all finite endpoints, including zero. Choose a rational representative between each pair of consecutive endpoints and one above the greatest endpoint. Membership is constant within each such cell. A point at zero can be moved a sufficiently small positive distance without losing membership in any of the finitely many intervals containing it. Any other included endpoint can likewise be moved slightly to its right: every finite upper endpoint is excluded. Thus cell representatives suffice. Process intervals by increasing upper endpoint. If the next interval is not already hit, select a representative immediately below its upper endpoint; for an unbounded interval use a rational point above the greatest finite endpoint. For a finite upper endpoint $u$, the selected representative lies below $u$ and above every lower endpoint strictly below $u$. Every remaining interval hit by a point in the earliest-ending interval has lower endpoint below $u$ and upper endpoint at least $u$, so this replacement preserves its coverage. This exchange establishes greedy optimality. Equivalently, the intervals triggering new points are pairwise disjoint, giving a lower bound equal to the number selected.
++\end{proof}
++This minimizes cardinality, not numerator size, denominator size, qubits, gates, or circuit depth. Choosing a midpoint or a mediant in a cell can change arithmetic widths without changing coverage.
++
++For a concrete example, take $w=v=(1,1)$ and $W=1$. The singleton bank $B=\{1/2\}$ gives root bound $3/2$, whereas the LP value is $1$. Nevertheless, it intersects the coverage intervals of all five reachable $(d,R)$ states and preserves their integer-target decisions (Fig.~\ref{fig:coverage-example}). This analytical example is separate from the benchmark cohorts.
++\begin{figure}[t]
++\centering
++\includegraphics[width=\textwidth]{integer_coverage_example.pdf}
++\caption{Illustration of integer-threshold coverage. The root dual bound can differ from the LP value while retaining its floor. Below, one rational multiplier intersects all five state coverage intervals; open circles exclude endpoints, filled circles include them, and arrows denote unbounded intervals}\label{fig:coverage-example}
++\end{figure}
++
++\subsection{A sufficient bank without reachability enumeration}
++Let $\rho=a/b>0$ be a reduced density and $G_\rho=\sum_{i:\rho_i=\rho}w_i$ the total weight of its tied group. Consider a state whose fractional split lies in that group. At $\rho$, the residual LP value has denominator dividing $b$, so its distance to the next integer is at least $1/b$. Between $\rho$ and an adjacent distinct density, the slope of the dual objective has magnitude at most the weight of the remaining split group, and therefore at most $G_\rho$. Consequently,
++\begin{equation}\label{eq:radius}
++ |\lambda-\rho|<\frac{1}{bG_\rho}
++ \quad\Longrightarrow\quad
++ F_d(R,\lambda)<\lfloor U_d(R)\rfloor+1,
++\end{equation}
++provided that the segment crosses no other distinct density. To see the strict inequality, the increase above the optimum is at most $G_\rho|\lambda-\rho|<1/b$, no larger than the available integer gap. Zero is retained for empty and all-fit suffixes, including zero-profit tails.
++
++The implemented sufficient constructor tests each root-tail density and its immediate neighbors against \eqref{eq:radius}, forms the resulting grid intervals, and stabs those intervals. This avoids the capacity-reachability dynamic program. Its minimality is only for these sufficient constraints, not for the actual all-state coverage intervals. It can retain the entire root-tail grid. The full tied-group weight and strict inequality are essential; Appendix~\ref{app:counterexamples} gives failures of weaker formulations.
++
++\subsection{Preprocessing cost and a limitation}
++Reachability enumeration has up to $(n+1)(W+1)$ states. This is pseudopolynomial in numerical capacity and can be expensive compared with classical optimization itself. The grid compiler computes coverage intervals on those states. The rational compiler additionally intersects up to $n-d+1$ affine constraints per state. Preprocessing costs must therefore be included in any end-to-end performance assessment. If a compilation budget is exceeded, the constructors return the root-tail bank; its coverage is preserved, but minimality is not certified.
++
++\begin{proposition}[Linear cardinality can be necessary]\label{prop:barrier}
++For each $m\geq2$, there is an instance with $m+1$ items whose minimum rational bank has cardinality $m-\lfloor m/2\rfloor+1$.
++\end{proposition}
++\begin{proof}
++For $i=1,\ldots,m$, take $w_i=2$, $v_i=4(m-i+1)+1$. Append a dummy item with weight and profit 1. Set $k=\lfloor m/2\rfloor$ and $W=2k+1$. The last main density is $5/2$, so the dummy, of density 1, is last. For each $i=k+1,\ldots,m$, set the first $i-k-1$ decisions to zero. The greedy suffix fills $k$ main items and half of item $i$. Its value is half-integral. Immediately below and above $\rho_i=v_i/2$, the dual slopes are $-1$ and $1$. Adjacent distinct densities are at least $3/2$ away, so the exact coverage interval is $(\rho_i-1/2,\rho_i+1/2)$. Convexity prevents coverage from returning outside this interval. These $m-k$ intervals are pairwise disjoint, since their centers differ by 2. The all-zero full leaf adds $[0,1/W)$, disjoint from all of them: $\rho_m=5/2$ gives the lowest interval $(2,3)$, whose lower endpoint $5/2-1/2=2$ exceeds $1/W$. Thus at least $m-k+1$ multipliers are needed. Conversely, zero and the main densities from the root split onward reproduce every suffix LP value: a main-item split uses a retained density, an all-fit suffix uses zero, and the unit-weight dummy cannot be partially filled with a strictly fractional amount when residual capacity is integer. These $m-k+1$ points attain the lower bound. The dummy also makes the common weight divisor one. The lower bound concerns bank cardinality; the family itself is easy to optimize.
++\end{proof}
++
++
++\section{Reversible implementation and comparison control}\label{sec:circuit}
++\subsection{Constant-coefficient predicate}
++For a bank entry $\lambda=a/b$ with $a\geq0$, $b>0$, define
++\begin{align}
++ c_i&=bv_i-aw_i,& C_\lambda&=aW+\sum_i\max(c_i,0),\\
++ D_\lambda(x)&=\sum_{i\leq d}\bigl[(1-x_i)\max(c_i,0)+x_i\max(-c_i,0)\bigr].\label{eq:loss}
++\end{align}
++Direct expansion gives
++\begin{equation}\label{eq:integercompare}
++ b\{P+F_d(R,\lambda)\}=C_\lambda-D_\lambda(x),\qquad
++ P+F_d(R,\lambda)<\tau\ \Longleftrightarrow\ C_\lambda<D_\lambda(x)+b\tau.
++\end{equation}
++The implementation compares the two nonnegative operands on the right. It need not represent a potentially negative difference on overweight inputs. All coefficients are compiled from the classical instance and bank. The circuit evaluates the decision predicate using integer coefficients, without quantum division or efficiency truncation.
++
++Write $\operatorname{bitlength}(u)=\lceil\log_2(u+1)\rceil$ for nonnegative integers $u$. Let $t=\max(1,\operatorname{bitlength}(1+\sum_i v_i))$ and $\tau_{\max}=2^t-1$. For each entry,
++\begin{equation}\label{eq:width}
++ 0\leq D_\lambda(x)+b\tau\leq M_\lambda:=\sum_{i\leq d}|c_i|+b\tau_{\max}.
++\end{equation}
++The shared accumulator has width
+ \begin{equation}
+-    \sum_{i=1}^{s} w_i > W \quad \text{and} \quad \sum_{i=1}^{s-1} w_i \leq W.
+-    \label{eq:split}
+-\end{equation}
+-
+-The LP optimal solution is then
+-\begin{equation}
+-    x_i^{LP} = \begin{cases}
+-    1 & \text{if } i < s, \\
+-    (W - \sum_{j=1}^{s-1} w_j) / w_s & \text{if } i = s, \\
+-    0 & \text{if } i > s,
+-    \end{cases}
+-    \label{eq:lpsol}
+-\end{equation}
+-and the \textit{Dantzig bound} is $Z_{LP} = \sum_{i=1}^{n} v_i x_i^{LP}$. This is computable in $O(n)$ time after sorting, and satisfies $Z^* \leq Z_{LP}$.
+-
+-\textbf{Definition 3 (Core Items).} Given a parameter $\delta > 0$, the \textit{core} $C$ is the set of items with efficiencies close to the split item:
+-\begin{equation}
+-    C = \{i : |e_i - e_s| \leq \delta \cdot e_s\}.
+-    \label{eq:core}
+-\end{equation}
+-The remaining items are partitioned into \textit{fixed-in} items $F_1 = \{i : e_i > e_s + \delta \cdot e_s\}$ and \textit{fixed-out} items $F_0 = \{i : e_i < e_s - \delta \cdot e_s\}$.
+-
+-The core concept was introduced by Pisinger \cite{ref4}, who showed empirically that $|C| \ll n$ for typical instances. Our algorithm exploits this structure theoretically.
+-
+-\subsection{Amplitude Amplification}
+-
+-We use the following standard result \cite{ref11}.
+-
+-\textbf{Theorem (Brassard et al., 2002).} Let $\mathcal{A}$ be a quantum algorithm that produces $\mathcal{A}|0\rangle = \sin\theta\,|\Psi_{\text{good}}\rangle + \cos\theta\,|\Psi_{\text{bad}}\rangle$. Then amplitude amplification finds a good state in $O(1/\sqrt{p})$ oracle calls where $p = \sin^2\theta$.
+-
+-\subsection{Quantum Branch-and-Bound (Montanaro)}
+-
+-Montanaro~\cite{ref24} proved that quantum computers can speed up classical branch-and-bound algorithms:
+-
+-\textbf{Theorem (Montanaro, 2020).} Let $\mathcal{B}$ be a classical B\&B algorithm that determines if there is a valid assignment evaluating to at least $\tau$, exploring a tree of size $T$ and maximum depth $d$. There is a quantum algorithm that solves the same detection problem with failure probability $\le 1/3$ using
+-\begin{equation}
+-    O(\sqrt{T}\, d \log d)
+-    \label{eq:montanaro}
+-\end{equation}
+-queries to the branching and bounding heuristics.
+-
+-The algorithm uses a quantum walk on the implicit B\&B tree and does not require QRAQM---only the ability to evaluate the bounding function (our LP relaxation) as a quantum oracle. This is the key quantum ingredient in our approach.
+-
+-\subsection{Reduced-Cost Variable Fixing}
+-
+-Given a lower bound $Z_{\text{LB}}$ (e.g., from a greedy solution), an item~$i$ with $x_i^{LP} = 1$ can be \textit{provably fixed} to~1 if removing it causes the LP upper bound to drop below $Z_{\text{LB}}$. Similarly, an item~$j$ with $x_j^{LP} = 0$ can be fixed to~0 if forcing it in causes the LP bound to drop below $Z_{\text{LB}}$. This technique, due to Pisinger~\cite{ref4}, is exact---no heuristic assumptions are involved.
+-
+-\subsection{Meet-in-the-Middle Framework}
+-
+-The Horowitz--Sahni algorithm \cite{ref2} partitions the $n$ items into two disjoint sets $A$ and $B$ with $|A| = |B| = n/2$. It enumerates all $2^{n/2}$ subsets of $A$, storing pairs $(w(S_A), v(S_A))$ for each subset $S_A \subseteq A$, where $w(S_A) = \sum_{i \in S_A} w_i$ and $v(S_A) = \sum_{i \in S_A} v_i$. It does the same for $B$. Then, for each subset $S_A$ of $A$, it finds the best compatible subset $S_B$ of $B$ satisfying $w(S_A) + w(S_B) \leq W$ using binary search on the sorted list of $B$-subsets. The total time and space are both $O(2^{n/2})$.
+-
+-% ==============================================================
+-% IV. PROPOSED ALGORITHM
+-% ==============================================================
+-\section{Proposed Algorithm}
+-
+-Our hybrid algorithm operates in three phases: classical LP preprocessing, quantum branch-and-bound over the reduced core, and classical post-processing.
+-
+-\subsection{Phase 1: LP Preprocessing via Reduced-Cost Variable Fixing}
+-
+-The classical preprocessing exploits the LP relaxation and reduced-cost analysis to provably partition items into three disjoint sets.
+-
+-\begin{algorithm}[h]
+-\caption{Reduced-Cost Variable Fixing}
+-\label{alg:filter}
+-\begin{algorithmic}[1]
+-\REQUIRE Items $(w_i, v_i)_{i=1}^n$, capacity $W$
+-\ENSURE Partition $(F_1, C, F_0)$, residual capacity $W'$
+-\STATE Compute efficiencies $e_i \leftarrow v_i / w_i$; sort decreasingly
+-\STATE Compute greedy lower bound $Z_{\text{LB}}$
+-\STATE Compute Dantzig upper bound $Z_{\text{LP}}$
+-\FOR{each item $i \in \{1, \ldots, n\}$}
+-    \IF{$x_i^{LP} = 1$ (item before split)}
+-        \STATE $Z'_i \leftarrow$ LP bound with item $i$ forced out
+-        \IF{$Z'_i < Z_{\text{LB}}$}
+-            \STATE $F_1 \leftarrow F_1 \cup \{i\}$ \COMMENT{Provably in optimal}
+-        \ELSE
+-            \STATE $C \leftarrow C \cup \{i\}$
+-        \ENDIF
+-    \ELSE
+-        \STATE $Z'_i \leftarrow$ LP bound with item $i$ forced in
+-        \IF{$Z'_i < Z_{\text{LB}}$}
+-            \STATE $F_0 \leftarrow F_0 \cup \{i\}$ \COMMENT{Provably out of optimal}
+-        \ELSE
+-            \STATE $C \leftarrow C \cup \{i\}$
+-        \ENDIF
+-    \ENDIF
+-\ENDFOR
+-\STATE $W' \leftarrow W - \sum_{i \in F_1} w_i$; $V_1 \leftarrow \sum_{i \in F_1} v_i$
+-\RETURN $(F_1, C, F_0)$, $W'$, $V_1$
+-\end{algorithmic}
+-\end{algorithm}
+-
+-Unlike heuristic delta-based filtering, reduced-cost fixing is \textit{provably exact}: no item in $F_1$ or $F_0$ can change the optimal solution. Let $m = |C|$ and $\alpha = m/n$.
+-
+-\subsection{Phase 2: Quantum Branch-and-Bound on Core}
+-
+-The core contribution of this paper. We construct a classical B\&B tree over the $m$ core items using LP relaxation bounds at each node, then apply Montanaro's quantum walk~\cite{ref24} to search this tree in $$O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right)$$ queries.
+-
+-\subsubsection{Classical B\&B Tree Structure}
+-
+-At each node of the B\&B tree, we branch on a core item $c_i$ (include/exclude) and compute the LP relaxation bound on the remaining subproblem. A node is pruned when its LP bound falls below the current best known integer solution.
+-
+-\textbf{Bounding oracle.} The LP relaxation for the residual knapsack at each B\&B node is computable in $O(m)$ time classically. The LP relaxation defines the bounding heuristic $h$ required by the abstract query model.
+-
+-\subsubsection{Reversible LP-Bound Oracle ($h$)}
+-
+-To implement the bounding heuristic $h$ as a quantum oracle, we construct a fixed-precision integer circuit that evaluates the exact threshold rule from Lemma 1a. The fixed-precision calculation evaluates a scaled integer bound $\tilde{Z}_{scaled} = V_{int} 2^k + W_{res} \lfloor v_s 2^k / w_s \rfloor$. Because $\tilde{Z}_{scaled}$ is guaranteed to be an integer, the condition $\tilde{Z}'_i \le Z_{LB} - 1/W_{max}$ is evaluated by comparing $\tilde{Z}_{scaled}$ against a classically pre-computed threshold $T = \lfloor Z_{LB} 2^k - 2^k/W_{max} \rfloor$ without any precision loss.
+-
+-The register layout allocates quantum memory for the scaled dividend, divisor, quotient, remainder, residual capacity, and the intermediate additions and multiplications. The arithmetic relies on the Thapliyal restoring divider \cite{thapliyal2016} for calculating the fixed-point efficiency, the Vedral-Barenco-Ekert (VBE) multiplier \cite{vedral1996} for computing the residual product, and the zero-ancilla Draper QFT adder \cite{draper2000}. By mapping the division remainder to the ancillary register required by Thapliyal's in-place division, the ancillary overhead is strictly bounded. Resource estimates for this layout are provided in Table~\ref{tab:h_resources}. Note that while the exact logical and ancillary qubit counts are established, full gate-level decomposition of the arithmetic blocks is deferred.
+-
+-\begin{table*}[t]
++ q=\max\Bigl\{1,\,1+\operatorname{bitlength}\!\left(\max_{\lambda\in B}\{C_\lambda,M_\lambda\}\right)\Bigr\}.
++\end{equation}
++The weight word uses $1+\operatorname{bitlength}(W+\sum_iw_i)$ bits, with a minimum of one. These conservative widths include padding for comparison. To form $D_\lambda$, initialize the sum of positive $c_i$ over the prefix, subtract $c_i$ controlled on $x_i$ when $c_i>0$, and add $-c_i$ when $c_i<0$. Every intermediate remains nonnegative and is bounded by the sum of absolute prefix coefficients. Adding $b\tau$ is bounded by \eqref{eq:width}.
++
++The Fourier-arithmetic implementation uses full, ideal quantum Fourier transform (QFT) additions and constant comparisons. Its arithmetic follows Fourier-basis addition \cite{draper2000} and the arithmetic primitives described by Wilkening et al., Supplement E.3--E.5 \cite{wilkening2025}. Controlled gates are decomposed into an explicit gate list \cite{barenco1995}. No rotations are deliberately omitted. Numerical simulation uses floating-point angles; ``exact'' in the predicate claim refers to rational/integer semantics, not infinitely accurate physical rotations. A separate Boolean implementation uses X, controlled-NOT (CX), and Toffoli gates. The Boolean implementation requires strictly positive profits, whereas the QFT implementation accepts zero profits; their test domains are reported separately.
++
++\subsection{Output semantics and cleanup}
++At each fixed classical depth the desired transformation is
++\begin{equation}\label{eq:unitary}
++ |x\rangle|\tau\rangle|z\rangle|0^a\rangle
++ \longmapsto |x\rangle|\tau\rangle|z\mathbin{\oplus}f(x,\tau)\rangle|0^a\rangle.
++\end{equation}
++First compute the prefix weight and its capacity-rejection flag. For each multiplier, compute the loss accumulator, compare \eqref{eq:integercompare} into a fresh flag, and reverse the accumulator computation. Compute the logical OR of all bound flags and the capacity flag into an aggregate bit, copy it to the arbitrary output target, then reverse all preceding gates. Logical OR ensures that simultaneous rejection conditions still produce rejection. In the ideal arithmetic model, inverse computation restores every work bit and preserves the input registers. Theorem~\ref{thm:coverage} supplies equivalence to the LP only when the supplied bank is certified. An arbitrary bank circuit correctly evaluating its own bound is not automatically an LP-equivalent circuit.
++
++The resource comparison concerns fixed-depth bounding predicates. Integrating them into a quantum search requires coherent node handling and tree reflections, which are outside this implementation. An extension to superpositions of depths would also require depth-controlled prefix arithmetic; its synthesis costs are not included here.
++
++Figure~\ref{fig:workflow} separates instance-dependent classical preparation from reversible predicate evaluation.
++\begin{figure}[t]
+ \centering
+-\caption{Resource estimates for the LP-bound bounding oracle ($h$) at varying core sizes ($m$).}
+-\label{tab:h_resources}
+-\footnotesize
+-\begin{tabular}{ccccccc}
+-\hline\hline
+-$m$ ($W_{max}$) & Precision $k$ & Logical Qubits & Ancilla Qubits & Total Qubits & Depth / Gates & T-count \\
+-\hline
+-4 (15) (Analytical) & 8 & \multicolumn{3}{c}{\textit{(Analytical estimate: 82 qubits)}} & \multicolumn{2}{c}{\textit{N/A --- gate-level decomposition deferred}} \\
+-4 (15) (MEASURED) & 8 & 84 & 12 & 96 & 3,844 / 8,170 & $\approx 1.2\times 10^6$$^\ddagger$ (17,633$^\star$) \\
+-6 (31) & 10 & 101 & 1 & 102 & N/A --- gate-level decomposition deferred & N/A \\
+-8 (63) & 12 & 121 & 1 & 122 & N/A --- gate-level decomposition deferred & N/A \\
+-\hline\hline
+-\multicolumn{7}{p{0.85\textwidth}}{\footnotesize Note: The $(m, W_{max})$ pairings shown (15/31/63) are representative illustrative example values chosen for demonstration. Qubit counts are derived from the register layout mapping to Draper, Vedral-Barenco-Ekert, and Thapliyal reversible arithmetic blocks. The fractional fixed-point precision ($k$) scales with $W_{max}$ per Lemma 1a. We synthesized and tested the gate-level circuit for $m=4$ ($W_{max}=15$) achieving 0 mismatches against standard integer arithmetic on 25 benchmark instances. Measured hardware metrics for $m=4$ yield 96 qubits, 8,170 gates, and depth 3,844.} \\
+-\multicolumn{7}{p{0.85\textwidth}}{\footnotesize $^\ddagger$Ross-Selinger estimate $\epsilon=10^{-10}$ using Barenco et al.~\cite{barenco1995} 3-rotation decomposition. $^\star$Naive estimate treating `ccp` gates as standard Toffolis (7 T-gates).} \\
+-\end{tabular}
+-\end{table*}
+-
+-\subsubsection{Quantum Walk Application}
+-
+-We apply Montanaro's quantum B\&B framework~\cite{ref24} to the implicit tree defined by our LP-bounded branching strategy:
+-
+-\begin{algorithm}[h]
+-\caption{Classical Threshold-Search Outer Loop (Phase 2)}
+-\label{alg:qbb}
+-\begin{algorithmic}[1]
+-\REQUIRE Core items $C$ with $|C| = m$, residual capacity $W'$, lower bound $V_1$
+-\ENSURE Optimal core assignment $x^*_C$
+-\STATE Initialize binary search interval for threshold $\tau$
+-\WHILE{search interval $> 0$}
+-\STATE Define LP-pruned fixed-threshold tree for $\tau$
+-\STATE Invoke quantum detection on that tree
+-\STATE Update binary-search interval from the detection result
+-\ENDWHILE
+-\STATE Recover the optimum threshold/value after the loop
+-\RETURN Optimal core assignment $x^*_C$
+-\end{algorithmic}
+-\end{algorithm}
+-
+-For each tested threshold $\tau_i$, the fixed-threshold detection primitive requires $O(\sqrt{T_{\tau_i}}\,m\log m)$ queries under the Montanaro oracle-model assumptions. Since the classical outer loop tests at most $O(\log V_{\max})$ thresholds, summing these calls gives $O(\sqrt{T_{\max}}\,m\log m\log V_{\max})$ queries, where $T_{\max}=\max_i T_{\tau_i}$.
+-
+-\subsubsection{Reversible Knapsack Oracle (Answer-Agnostic)}
+-\label{sec:oracle-impl}
+-
+-The quantum subroutines require a constructible oracle that marks states satisfying the threshold predicate $\text{feasible}(x) \wedge \text{value}(x) \geq \tau$, where $\tau$ is the binary-search threshold---\textit{never} the (unknown) optimal value. We implement this as a genuine gate-level reversible circuit using in-place Draper (QFT) arithmetic with \textit{zero ancilla} beyond two accumulator registers: (1)~accumulate $\sum_i w_i x_i$ into a weight register and subtract $W{+}1$, so its two's-complement sign bit equals feasibility; (2)~accumulate $\sum_i v_i x_i$ and subtract $\tau$, so its sign bit encodes $\text{value} \geq \tau$; (3)~flip the phase conditioned on both flags; (4)~uncompute. 
+-
+-Table~\ref{tab:oracle} details the exact logical resource requirements for this evaluation/threshold predicate $V$. Crucially, we synthesize the predicate $V$ only; the LP bounding heuristic $h$ is not synthesized to a reversible Clifford+T circuit. 
+-
+-\begin{table}[htbp]
+-\caption{Exact Logical Predicate Resources and Analytical T-Count Estimates}
+-\label{tab:oracle}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lccccc}
++\includegraphics[width=\textwidth]{oracle_workflow.pdf}
++\caption{Conceptual workflow, rather than a literal gate diagram. For a fixed instance and depth, the predicate $f$ combines capacity rejection with the bank's bound flags. Copying their OR into the target and reversing the work preserves the inputs and restores clean workspace}\label{fig:workflow}
++\end{figure}
++
++\subsection{Root-aware fractional-scan control}
++The control reconstructs a fractional greedy suffix scan using the same direct-control QFT engine, threshold width, output semantics, and inverse cancellation. It computes feasible whole-item takes, residual capacity, and the comparison at a possible fractional split. If $s$ is the root split, no item $j<s$ can be the first nonfitting suffix item at a feasible prefix: used weight before $j$ is at most $\sum_{i<j}w_i$. The control therefore omits fractional-product terms for $j<s$, while retaining its whole-item logic and separate capacity rejection. All-fit roots need only an integer comparison. Widths are recomputed for the eligible fractional positions and all encoded thresholds.
++
++The root-aware control is reconstructed from the published arithmetic primitives, rather than taken from a released LP-oracle netlist \cite{wilkening2025,wilkening2025code}. Both implementations use serial shared workspace and the same local inverse-cancellation rule. The comparison is specific to these implementations and does not establish optimal circuit cost.
++
++\section{Evaluation protocol}\label{sec:methods}
++\subsection{Inputs and evidence categories}
++The main arithmetic panel contains 700 instances, and the core panel contains their 700 deterministically transformed residual instances. The original panel comprises five generator classes and seven sizes $n\in\{12,14,16,18,20,22,24\}$, with 20 trials per class--size pair. The seed is $1000n+j$ for trial $j=0,\ldots,19$, using NumPy's \texttt{RandomState}. Capacity is $\lfloor\sum_iw_i/2\rfloor$. For uncorrelated inputs, weights and profits are drawn uniformly from integers 1--100. Weakly correlated inputs use such weights and $v_i=\max(1,w_i+\eta_i)$, where $\eta_i$ is uniform on integers $-10,\ldots,10$. Strongly correlated inputs set $v_i=w_i+10$; subset-sum inputs set $v_i=w_i$. Inverse-strongly-correlated inputs draw profits uniformly from integers 1--100 and set $w_i=v_i+10$. Exact arrays and seeds are retained in the input registries. The 105-input resource cohort uses trials 0, 1, and 2 for every class--size pair, at depth $\lfloor n/2\rfloor$, with the sufficient bank from \eqref{eq:radius}. This selection is independent of the observed resource ratios. Appendix~\ref{app:reproduce} specifies the registries and scripts.
++
++Exact rational coverage and logical netlist counts are classified as \textsc{Derived}, propagation through gates as \textsc{Simulated}, and host elapsed times as \textsc{Measured}. Tolerances and computational budgets are fixed settings (\textsc{Hardcoded}). Logical gate counts and depth exclude physical routing, rotation synthesis, and device execution time.
++
++\subsection{Arithmetic coverage and independent references}
++For every original and core instance, a set-based reachability implementation enumerates all states in \eqref{eq:reach}. It evaluates the full suffix density grid plus zero using exact rational/integer coefficients, independently of the production greedy-LP and bank constructors. The four tested banks are the root tail, minimum grid, sufficient bank without reachability enumeration, and continuous rational bank. Equality of residual floors covers all integer prefix profits and targets by Theorem~\ref{thm:coverage}; it is not an exhaustive quantum statevector experiment.
++
++A separate primal reference enumerates LP vertices, including box vertices and vertices with one fractional coordinate. It checks 1,792 systematic two-item inputs with weights 1--4 and profits 0--3, including zero-capacity and all-fit transitions, plus 96 additional instances of size 3--7 using seed 202610251703. This reference avoids both the greedy routine and the dual-breakpoint reference. It checks interval endpoints and disjointness certificates separately. Counterexamples delimiting the assumptions are given in Appendix~\ref{app:counterexamples}.
++
++\subsection{Gate checks and resource accounting}
++Small-circuit tests use independently computed primal LP answers, both target-bit values, and initialized work registers. QFT tests use full rotations and numerical tolerance $10^{-8}$. Boolean tests interpret the actual X/CX/Toffoli gate lists exactly. Fixed fixtures include near-integer fractions, ties, zero profits where supported, zero capacity, all-fit and empty inputs, maximum thresholds, and an intentionally insufficient bank. Table~\ref{tab:fixtures} records their numerical inputs. Coherent checks additionally compare complex amplitudes; basis truth tables alone would not detect unintended relative phases.
++
++For resource accounting, Qiskit generates a $\{u,\mathrm{CX}\}$ decomposition template for each native gate type at optimization level zero. The profiler applies these templates to the circuit gate list, assuming all-to-all connectivity, and computes depth by dependency scheduling. The local profiler is cross-checked against complete transpilation on small controls. Active qubits include all interface wires plus every wire touched by a gate, even if an interface wire is otherwise idle. Allocated qubits are also retained. The common inverse-cancellation pass removes literal inverses separated only by gates acting on disjoint wires. The cohort uses budgets of 150,000 allocated qubits, 2,000,000 gates, and 60 seconds per build or profile operation. Capped and failed runs are retained with explicit status labels.
++
++\section{Results}\label{sec:results}
++\subsection{All-state coverage}
++Table~\ref{tab:coverage} reports exhaustive arithmetic coverage of the declared panels. All four banks agree with the independent residual-floor reference on 5,204,456 reachable states: 20,817,824 comparisons, with 0 mismatches. The 700 core cases retain all 23 all-fit instances, including 11 empty cores. All reachable states of these cases are included. The 15 scaled and 5 tiny auxiliary records in the input registry are outside the declared 700-instance panel.
++
++\begin{table}[t]
++\caption{Derived exact-arithmetic coverage. Each reachable state is compared with four banks; these are not quantum gate simulations}\label{tab:coverage}
++\centering\small
++\begin{tabular}{lrrrr}
+ \toprule
+-\textbf{Core Size ($m$)} & \textbf{Qubits} & \textbf{Depth} & \textbf{Total Gates} & \textbf{2Q Gates} & \textbf{T-Count Estimate$^\dagger$} \\
++Panel & Inputs & States & Comparisons & Mismatches\\
+ \midrule
+-4 & 19 & 266 & 1353 & 573 & $\approx 188{,}004$ \\
+-6 & 22 & 300 & 1788 & 773 & $\approx 227{,}631$ \\
+-8 & 25 & 327 & 2243 & 977 & $\approx 250{,}404$ \\
+-\bottomrule
+-\end{tabular}%
+-}
+-\begin{flushleft}
+-\footnotesize
+-$^\dagger$Heuristic analytical estimate assuming Ross-Selinger arbitrary $R_z$ synthesis at $\epsilon = 10^{-10}$.\\
+-The LP heuristic $h$ was NOT synthesized.
+-\end{flushleft}
+-\end{center}
+-\end{table}
+-
+-This construction uses only the problem data and $\tau$, so the optimum is \textit{discovered} by the search rather than supplied to it---unlike a diagonal oracle built from a precomputed solution. We verified by exhaustive statevector simulation that, for all thresholds, the oracle marks exactly the brute-force-correct set and returns ancillae to $|0\rangle$, and that one amplitude-amplification stage with the full reversible circuit matches the verified phase action to $<10^{-13}$. In a separate small-scale component experiment, a D\"urr--H{\o}yer-style maximum-finding loop built on this oracle recovered the exact optimum on the tested $n \le 5$ statevector instances. This experiment is not the optimization loop used by quantum\_bb\_optimize.
+-
+-\subsection{Phase 3: Classical Post-Processing}
+-
+-\begin{algorithm}[h]
+-\caption{Classical Reconstruction}
+-\label{alg:postprocess}
+-\begin{algorithmic}[1]
+-\REQUIRE $(F_1, C, F_0)$, quantum solution $x^*_C$, capacity $W$
+-\ENSURE Globally optimal solution $x^*$
+-\STATE $x^* \leftarrow F_1 \cup \{i \in C : x^*_{C,i} = 1\}$
+-\STATE $Z^* \leftarrow \sum_{i \in x^*} v_i$
+-\RETURN $x^*$, $Z^*$
+-\end{algorithmic}
+-\end{algorithm}
+-
+-Since reduced-cost fixing is exact, the combined solution $F_1 \cup x^*_C$ is globally optimal. No swap verification is needed.
+-
+-\subsection{Overall Algorithm}
+-
+-\begin{algorithm}[h]
+-\caption{LP-Pruned Quantum B\&B Knapsack Solver}
+-\label{alg:hybrid}
+-\begin{algorithmic}[1]
+-\REQUIRE Items $(w_i, v_i)_{i=1}^n$, capacity $W$
+-\ENSURE Optimal solution $x^*$ and value $Z^*$
+-\STATE \textbf{Phase 1:} $(F_1, C, F_0), W', V_1 \leftarrow$ \textsc{RC-Fix}$(w, v, W)$ \COMMENT{Alg.~\ref{alg:filter}}
+-\STATE $m \leftarrow |C|$
+-\IF{$m = 0$}
+-    \RETURN $x^* = F_1$, $Z^* = V_1$
+-\ELSIF{$m \leq m_{\text{thresh}}$}
+-    \STATE Solve core classically via B\&B
+-\ELSE
+-    \STATE \textbf{Phase 2:} $x^*_C \leftarrow$ \textsc{Quantum-B\&B}$(C, W', V_1)$ \COMMENT{Alg.~\ref{alg:qbb}}
+-\ENDIF
+-\STATE \textbf{Phase 3:} $x^* \leftarrow F_1 \cup x^*_C$
+-\RETURN $x^*$, $Z^* = V_1 + v_C(x^*_C)$
+-\end{algorithmic}
+-\end{algorithm}
+-
+-\subsection{Algorithmic Extensions}
+-
+-
+-
+-\subsubsection{Multidimensional Knapsack Extension}
+-Our framework extends cleanly to the $d$-dimensional 0/1 knapsack problem. We generalize the LP fixing by using a surrogate relaxation: the minimum of $d$ single-constraint Dantzig bounds. Sorting items by per-constraint efficiencies $v_i/w_{ij}$ yields provably valid upper bounds for reduced-cost fixing (because each single-constraint Dantzig bound maximizes the objective over a strict superset of the full $d$-dimensional feasible region, making their minimum a valid relaxation). Table~\ref{tab:multidim} summarizes the empirical behavior of $\alpha$ across 20 independent trials per configuration for strongly correlated instances ($n=24$). For these multidimensional instances, weights are drawn independently as $w_{ij} \sim U(1, 100)$, and values are tied to the average weight via $v_i = \lfloor \frac{1}{d} \sum_{j=1}^d w_{ij} \rfloor + 10$. The results show that strongly correlated multidimensional instances heavily resist classical variable fixing, saturating to $\alpha = 1.0$ instantly at $d \ge 2$, meaning zero variables are fixed by Phase 1. The consequences for quantum query complexity require a separate analysis of the resulting pruned trees.
+-
+-\begin{table}[htbp]
+-\caption{Core size ratio $\alpha$ vs. dimensionality $d$ for strongly correlated instances ($n=24$, 20 trials)}
+-\label{tab:multidim}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lcccc}
+-\toprule
+-\textbf{Dimensionality} & $d=1$ & $d=2$ & $d=3$ & $d=4$ \\
+-\midrule
+-\textbf{Core Ratio $\alpha$ (Mean $\pm$ 95\% CI)} & $0.96 \pm 0.06$ & $1.00 \pm 0.00$ & $1.00 \pm 0.00$ & $1.00 \pm 0.00$ \\
+-\bottomrule
+-\end{tabular}%
+-}
+-\end{center}
+-\end{table}
+-
+-% ==============================================================
+-% V. THEORETICAL ANALYSIS
+-% ==============================================================
+-\section{Theoretical Analysis}
+-
+-\subsection{Correctness}
+-
+-\textbf{Lemma 1a (Precision requirement for robust reduced-cost fixing).} \label{lem:precision} \textit{Assume a 0/1 knapsack instance with capacity $W$, max weight $W_{max}$, and a greedy integer lower bound $Z_{LB}$. Let $Z'_i$ be the exact perturbed LP bound for item $i$.
+-If the LP bound is computed using $k$-bit floor truncation for the split item's efficiency $e_s$, yielding a truncated bound $\tilde{Z}'_i$, the quantum detection loop will produce the \textbf{exact same} variable fixing partition $(F_1, C, F_0)$ as infinite-precision classical Algorithm 1, provided two conditions are met:
+-\begin{enumerate}
+-    \item The classical check $Z'_i < Z_{LB}$ is replaced by the robust check $\tilde{Z}'_i \le Z_{LB} - 1/W_{max}$.
+-    \item The precision satisfies $k > 2 \log_2(W_{max})$.
+-\end{enumerate}}
+-
+-\textit{Note:} The adoption of the robust check $\tilde{Z}'_i \le Z_{LB} - 1/W_{max}$ entirely eliminates the exception for degenerate instances ($Z'_i = Z_{LB}$). Because the maximum truncation error $W_{max} 2^{-k}$ is strictly less than the safety margin $1/W_{max}$, the truncated bound will never falsely cross the threshold, ensuring unconditional exactness for all instances.
+-
+-
+-\textbf{Theorem 1.} \textit{Algorithm~\ref{alg:hybrid} returns the optimal solution to the 0/1 knapsack problem with probability at least $1 - 2^{-r}$ after $r$ independent repetitions of the quantum detection phase, for all instances.}
+-
+-\textit{Proof.} We show that no optimal item is permanently excluded by the filtering phase.
+-
+-Consider any optimal solution $x^*$ and any item $j$ with $x_j^* = 1$. There are three cases:
+-\begin{enumerate}
+-    \item If $j \in F_1$, it is included in the solution during Phase~1.
+-    \item If $j \in C$, it is considered in Phase~2, which searches the B\&B tree over all $2^m$ subsets of the core.
+-    \item The case $j \in F_0$ cannot occur: by the definition of reduced-cost fixing (Algorithm~\ref{alg:filter}), if $j \in F_0$ then forcing $j$ into the solution causes the LP upper bound to drop below the greedy lower bound $Z_{\text{LB}} \leq Z^*$. Since $Z^*$ is the optimal value and the LP bound is an upper bound, this implies no optimal solution includes $j$.
+-\end{enumerate}
+-
+-For case (2), the algorithm tests thresholds via a classical binary-search outer loop. At each threshold, it invokes Montanaro's quantum detection primitive, which correctly identifies if a valid assignment exceeding the threshold exists with high probability. By bounding the failure probability at each of the $O(\log V_{\max})$ steps, the binary search converges to the optimal core assignment with high probability.
+-
+-Since $F_1$ items are provably optimal, $F_0$ items are provably non-optimal, and the quantum phase finds the optimal core assignment, the combined solution $F_1 \cup x^*_C$ is globally optimal. Repeated applications with independent randomness yield success probability $1 - 2^{-r}$ after $r$ independent runs. \hfill$\blacksquare$
+-
+-\textbf{Lemma 1b (Monotonicity of the Marginal-Loss Formula).} \label{lem:monotonicity} \textit{For any item $i \ne s$, the true perturbed LP bound satisfies $Z'_i \le \hat{Z}'_i$, where $\hat{Z}'_i$ is the derived formula assuming no split shift ($\hat{Z}'_i = Z_{LP} - w_i |e_i - e_s|$). The formula provides an upper bound on the true perturbed value, and equality holds when the no-split-shift condition is satisfied.}
+-
+-\textbf{Theorem 2 (Core Containment).} \textit{Let $C_{RC}$ be the reduced-cost core produced by Algorithm~\ref{alg:filter}, and let $C_{\delta^*}$ be the $\delta$-band core from Definition~3 with $\delta^* = \frac{Z_{LP} - Z_{LB}}{w_{\min} \cdot e_s}$, where $w_{\min} = \min_{i} w_i$. Assume items are sorted in strictly decreasing efficiency order. Then $C_{RC} \subseteq C_{\delta^*}$.}
+-
+-\textit{Proof.} Let $i \in C_{RC}$, meaning item $i$ was not fixed and $Z'_i \ge Z_{LB}$. By Lemma 1b, $Z'_i \le \hat{Z}'_i = Z_{LP} - w_i |e_i - e_s|$. Thus, $Z_{LB} \le Z_{LP} - w_i |e_i - e_s|$, which rearranges to $w_i |e_i - e_s| \le Z_{LP} - Z_{LB}$, and therefore $|e_i - e_s| \le \frac{Z_{LP} - Z_{LB}}{w_i} \le \delta^* \cdot e_s$. This implies $i \in C_{\delta^*}$. $\square$
+-
+-\textbf{Remark.} The no-split-shift condition is not required as a hypothesis for Theorem 2. While violating it breaks the formula's equivalence, Lemma 1b shows it only makes the true $Z'_i$ smaller, which can only cause more items to be fixed, preserving the containment direction. The proof also establishes a tighter item-dependent bound $|e_i - e_s| \le (Z_{LP} - Z_{LB})/w_i$.
+-
+-\textbf{Proposition 2 (Composed Counting Bound).} \textit{Assume the hypotheses of Theorem 2, and that there exists a minimum efficiency spacing $\Delta > 0$ such that $|e_i - e_j| \ge \Delta$ for all $i \ne j$. Then the core size is bounded by $|C_{RC}| \le \lfloor \frac{2(Z_{LP} - Z_{LB})}{w_{\min} \cdot \Delta} \rfloor + 1$.}
+-
+-\textit{Proof.} By Theorem 2, $|C_{RC}| \le |C_{\delta^*}|$. The band $C_{\delta^*}$ has width $2 \delta^* e_s$. With spacing $\Delta$, this interval contains at most $\lfloor 2\delta^* e_s / \Delta \rfloor + 1$ items. $\square$
+-
+-\textbf{Consequence for $T_{LP}$ and Verification.} The LP-pruned B\&B tree on the core satisfies $T_{LP} \le 2^{|C_{RC}|}$. Combined with Montanaro's quantum B\&B, this yields a quantum query complexity bounded by $O(2^{(Z_{LP} - Z_{LB})/(2 w_{\min} \Delta)} \cdot \sqrt{m \log m \log V_{\max}})$. However, there are three important caveats: (1) The $\Delta$-spacing is a structural hypothesis not guaranteed universally (e.g., strongly correlated instances clustering efficiencies, shrinking $\Delta$); (2) $w_{\min}$ can be small; and (3) $2^m$ is a worst-case tree bound, whereas the actual tree is typically smaller.
+-The containment theorem and Monotonicity Lemma were tested via a rational arithmetic test over 2,000 instances (16,518 item-level checks), and independently reproduced across 3,000 instances (20,339 checks) with zero containment violations observed.
+-
+-\textbf{Remark (Necessity of $\Delta$).} The $\Delta$-spacing hypothesis in Proposition~2 is \emph{necessary}, not merely a convenient simplification. Consider the family $\mathcal{F}_n$ with $n$ items, all weights $w_i = 1$, values $v_i = 2 - i/n^2$ ($i = 1, \ldots, n$), and capacity $W = \lfloor n/2 \rfloor + \tfrac{1}{2}$. The LP gap converges to $\tfrac{1}{2}v_s \to 1$ (bounded, independent of $n$), while $|C_{RC}| = n$ for every $n \ge 2$---the full item set is in the core and no item is fixed by Algorithm~1. This is not an artefact of the marginal-loss formula: in $\mathcal{F}_n$ every item violates the no-split-shift condition ($w_i = 1 > w_s - R = \tfrac{1}{2}$), so the analysis proceeds from the exact LP re-optimisation directly. When item $i < s$ is forced out, the freed unit of capacity first completes item $s$ (at cost $\tfrac{1}{2}e_s$) then fills item $s{+}1$ fractionally (at cost $\tfrac{1}{2}e_{s+1}$); the true marginal loss is $v_i - \tfrac{1}{2}(v_s + v_{s+1}) = O(1/n^2)$, far below the $O(1)$ gap, so the item survives. The mechanism is that all efficiencies are packed into a window of width $O(1/n^2)$ around $e_s$; split-shifts always land on a neighbour with nearly identical efficiency, keeping every marginal loss negligible relative to the gap. The minimum spacing in $\mathcal{F}_n$ is $\Delta_n = 1/n^2 \to 0$, and Proposition~2's bound grows as $O(n^2)$---correctly diverging, consistent with (but looser than) the true $|C_{RC}| = n$. Hence no bound of the form $|C_{RC}| \le f(Z_{LP} - Z_{LB})$ depending only on the LP gap can exist; the $\Delta > 0$ hypothesis cannot be removed in general.
+-
+-\textbf{Proposition 1 (Composed Query Complexity).} \textit{The implemented threshold-search composition algorithm solves the 0/1 knapsack problem using a classical outer loop to test thresholds. This implementation composes a classical binary-search outer loop with the fixed-threshold detection primitive, requiring at most $O(\log V_{\max})$ fixed-threshold detection calls. If each detection call evaluates a tree of size $T_{\tau_i}$, bounded by Montanaro's primitive taking $O(\sqrt{T_{\tau_i}}\,m\log m)$ queries, the total implemented algorithm query bound is}
+-\begin{equation}
+-    O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right) \text{ queries},
+-    \label{eq:totalcomplexity}
+-\end{equation}
+-\textit{where $T_{\max} = \max_i T_{\tau_i}$ over the thresholds tested by the classical binary-search outer loop.}
+-
+-\textit{Proof.} Phase~1 sorts the $n$ items by efficiency in $O(n \log n)$ time. Computing the greedy lower bound and the initial LP upper bound takes $O(n)$. Phase~2 invokes the threshold detection primitive up to $O(\log V_{\max})$ times. Montanaro's fixed-threshold detection result is the primitive used at each threshold; Theorem 4 is not directly implemented by quantum\_bb\_optimize. Summing at most $O(\log V_{\max})$ fixed-threshold detection calls, each bounded by $O(\sqrt{T_{\tau_i}}\,m\log m)$, gives the stated query complexity. \hfill$\blacksquare$
+-
+-\subsection{Discussion: Structural Interpretation}
+-The experiments suggest that the hybrid algorithm adapts across instance distributions. For uncorrelated uniform instances, classical B\&B evaluates relatively few states. In the tested instances, subset-sum capacities generate much larger search spaces. The theorem-backed query bound indicates that, conditional on a large LP-pruned tree, square-root dependence on tree size can reduce query complexity relative to classical traversal of the same tree.
+-
+-\subsection{Comparison with Prior Work}
+-
+-Table~\ref{tab:comparison} summarizes the key differences.
+-
+-\begin{table*}[t]
+-\caption{Comparison of Knapsack/Subset-Sum Algorithms}
+-\label{tab:comparison}
+-\begin{center}
+-\footnotesize
+-\begin{tabular}{lcccc}
+-\toprule
+-\textbf{Algorithm} & \textbf{Reported Complexity Measure} & \textbf{Space} & \textbf{Prov.} & \textbf{QRAQM} \\
+-\midrule
+-Horowitz--Sahni & $O(2^{n/2})$ & $O(2^{n/2})$ & Yes & N/A \\
+-Grover & $O(2^{n/2})$ & $O(n)$ & Yes & No \\
+-Bernstein et al. & $O(2^{0.241n})$ & $O(2^{0.241n})$ & No$^\dagger$ & Yes \\
+-Helm \& May & $O(2^{0.226n})$ & $O(2^{0.226n})$ & No$^\dagger$ & Yes \\
+-Montanaro B\&B & $\tilde{O}(\sqrt{T}\,d)$ queries & $O(\text{poly})$ & Yes & No \\
+-QTG+AA & $O(\sqrt{N_f})$ & $O(\text{poly})$ & Yes & No \\
+-\textbf{Ours} & $O(\sqrt{T_{\max}}\,m\log m\log V_{\max})$ & $O(\text{poly})$ & \textbf{Yes} & \textbf{No} \\
+-\bottomrule
+-\multicolumn{5}{p{0.7\textwidth}}{\footnotesize $^\dagger$Relies on Heuristic 2, shown unsound by \cite{bonnetain2020improved}.} \\
+-\multicolumn{5}{p{0.7\textwidth}}{\footnotesize $T$: full B\&B tree. $T_{LP}$: LP-pruned tree ($T_{LP} \ll T$). $N_f$: feasible states.}
+-\end{tabular}
+-\end{center}
+-\end{table*}
+-
+-Our algorithm achieves $O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right)$ queries, combining the structural advantage of exact LP reduced-cost fixing with composed fixed-threshold quantum detection.
+-
+-
+-
+-
+-\section{Experimental Results}
+-\label{sec:experiments}
+-
+-\subsection{Experimental Setup}
+-We implemented and validated all three phases of Algorithm~\ref{alg:hybrid} in Python. Crucially, unlike a complexity-counting argument, the explicit Belovs--Montanaro walk operator is constructed computationally for completed trees and spectral/detection conditions are evaluated. The full optimization algorithm \texttt{quantum\_bb\_optimize} uses a classical binary-search outer loop over thresholds $\tau_i$, invoking the Montanaro detection primitive at each threshold. Therefore, the implementation does not directly implement Montanaro Theorem 4. Phases~1 and~3 are exact classical preprocessing/reconstruction. All reported optima are verified against an exact dynamic-programming solve.
+-
+-The spectral audit tests: the effective spectral-gap inequality, marked phase-zero weight, and the analytical phase-estimation acceptance criterion. It does NOT empirically measure the asymptotic optimization query complexity.
+-
+-Experiments used five standard instance classes from Pisinger's classification~\cite{ref3}: (1)~uncorrelated, (2)~weakly correlated, (3)~strongly correlated, (4)~subset-sum, and (5)~inverse strongly correlated. For each class, we tested $n \in \{12, 14, 16, 18, 20, 22, 24\}$ with 20 random seeds per configuration.
+-
+-\subsection{Variable Fixing Results}
+-Table~\ref{tab:fixing} shows the filtering ratio $\alpha$ across instance types.
+-
+-\begin{table}[htbp]
+-\caption{Average Core Ratio $\alpha = m/n$ by Instance Type}
+-\label{tab:fixing}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lcccc}
+-\toprule
+-\textbf{Instance Type} & $\boldsymbol{\alpha}$ & $|F_1|/n$ & $|F_0|/n$ & \textbf{LP Gap} \\
+-\midrule
+-Uncorrelated & 0.32 & 0.35 & 0.33 & Tight \\
+-Weakly correlated & 0.76 & 0.12 & 0.12 & Medium \\
+-Strongly correlated & 0.95 & 0.02 & 0.03 & Loose \\
+-Subset-sum & 1.00 & 0.00 & 0.00 & N/A (gap $\equiv 0$) \\
+-Inverse strongly & 0.81 & 0.10 & 0.09 & Medium \\
+-\bottomrule
+-\end{tabular}%
+-}
+-\end{center}
+-\end{table}
+-
+-\subsection{Spectral Validation of the Quantum Walk}
+-Across the 1200 theoretically attempted conditions, 889 successfully completed within the simulable regime ($T_{\text{LP}} \le 2000$). We restrict our spectral conclusions strictly to these 889 simulable trees. The taxonomy is: 489 completed marked, 400 completed unmarked, 74 tree-cap marked, 74 seed-level empty-core conditions (37 bypassed, 37 empty), and 163 immediately pruned unmarked conditions. The selection-bias audit confirms that the pre-eigendecomposition core size $m$ is significantly larger for capped trees (median $m=16$) than for completed trees (median $m=10$).
+-
+-For the completed instances, we provide computational evidence for three primary spectral endpoints, bounded by exact Clopper-Pearson 95\% confidence intervals (CI):
+-\begin{enumerate}
+-    \item \textbf{Unmarked Effective Spectral-Gap Inequality:} satisfied for 400/400 completed unmarked trees (95\% CI: [0.9908, 1.0000]).
+-    \item \textbf{Marked Phase-Zero Weight:} satisfied for 489/489 completed marked trees (95\% CI: [0.9925, 1.0000]).
+-    \item \textbf{Phase-Estimation Separation:} 889/889 analytical detection criterion agreement with known marked/unmarked status (95\% CI: [0.9959, 1.0000]).
+-\end{enumerate}
+-
+-The analytical phase-estimation acceptance probabilities exhibit strong distributional separation between marked and unmarked trees. We performed an independent-sample Mann-Whitney U test on the 889 completed simulated trees ($T_{\text{LP}} \le 2000$). The marked acceptance probabilities (N=489, median=0.5177, IQR=0.1752) were significantly higher than the unmarked probabilities (N=400, median=0.0311, IQR=0.0999), yielding $U = 195600.0$ and $p = 1.05\times 10^{-145}$.
+-
+-This Mann-Whitney test supports distributional separation of the analytical phase-estimation acceptance probabilities in the completed simulated subset. It does not support quantum speedup, runtime improvement, quantum advantage, or complexity improvement. The Clopper-Pearson intervals describe the observed satisfaction/agreement proportions in the completed simulable subset, and do not prove universal theorem validity.
+-
+-\begin{table}[htbp]
+-\caption{Taxonomy of Spectral Validation}
+-\label{tab:measured}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lc}
+-\toprule
+-\textbf{Category} & \textbf{Count} \\
+-\midrule
+-Completed Marked (Phase Zero Validated) & 489 \\
+-Completed Unmarked (Spectral Gap Validated) & 400 \\
+-\midrule
+-\textbf{Subtotal Simulable Trees} & \textbf{889 / 889} \\
+-\midrule
+-Tree-Cap Marked (Truncated $T_{\text{LP}} > 2000$) & 74 \\
+-Unmarked (Immediately Pruned) & 163 \\
+-Seed-Level Empty Core & 74 \\
+-\midrule
+-\textbf{Total Attempted Conditions} & \textbf{1200} \\
+-\bottomrule
+-\end{tabular}%
+-}
+-\begin{flushleft}
+-\footnotesize Validated against theoretical detection criterion.
+-\end{flushleft}
+-\end{center}
+-\end{table}
+-
+-\subsection{Classical Runtime and Memory Characterization}
+-We benchmarked the wall-clock execution time and peak memory consumption of classical B\&B against LP-pruned classical B\&B on a standard Python 3 execution environment. Instrumentation used \texttt{time.perf\_counter\_ns()} and \texttt{tracemalloc}. Across 1500 benchmark records at scales $n \in \{12, 14, 16, 18, 20\}$, we performed a paired Wilcoxon signed-rank test on identical instances. 
+-
+-For these extremely small scales, classical B\&B without exact LP preprocessing was universally faster in wall-clock time across all classes (paired median runtime ratio $C/LP \approx 0.24$ to $0.62$, Wilcoxon $p < 10^{-4}$ for most). This reflects the constant-factor overhead of repeated Dantzig bound evaluations in Python dominating the trivial search space at $n \le 20$. LP-pruned peak memory remained minuscule (median $1.2\text{--}1.8$ KB). 
+-
+-The hybrid state-vector simulation runtime is not an estimate of physical quantum execution time and is therefore excluded from claims of wall-clock quantum acceleration. We do not report any wall-clock quantum speedup.
+-
+-\subsection{Comparison Against Google OR-Tools at Scale}
+-
+-We benchmarked the algorithm against Google OR-Tools (version 9.15.6755) across 5 instance classes, with 5 trials each, scaling $n$ up to 1000 for tractable classes and hard-stopping at $n=500$ for strongly and inverse-strongly correlated classes once intractability was reached. Across every class and size, Phase 1 (reduced-cost fixing) resolved 0 of the tested instances outright; Phase 2 core-solving was required in 100\% of cases tested, providing large-scale context for the variable fixing effectiveness reported for smaller $n$ in Section VI-B (Table~\ref{tab:fixing}). Of 90 total instances attempted across all classes and sizes, 69 were fully solved to certified optimality by both solvers, with zero mismatches between this paper's reported optimal value and OR-Tools' optimal value in every one of those 69 cases; this supports the correctness of our implementation. 
+-
+-For the remaining 21 instances, cutoffs were reached (OR-Tools at 20s, our B\&B at $1{,}000{,}000$ nodes); because cutoff time is not solve time, no timing comparison is drawn from these rows, and Table~\ref{tab:ortools_cat_b} reports only the timeout counts. Table~\ref{tab:ortools_cat_a} details the performance for the 69 fully solved instances.
+-
+-\begin{table*}[t]
+-\caption{Category (a): Both Solvers Reached Certified Optimal}
+-\label{tab:ortools_cat_a}
+-\begin{center}
+-\footnotesize
+-\begin{tabular}{lcccccc}
+-\toprule
+-\textbf{Instance Class} & $\boldsymbol{n}$ & \textbf{Successes} & \textbf{Core $m$} & \textbf{OR-Tools (s)} & \textbf{Our B\&B (s)} & \textbf{Notes} \\
+-\midrule
+-Uncorrelated & 100 & 5/5 & 18.2 & 0.0001 & 0.0031 & \\
+-Uncorrelated & 200 & 5/5 & 27.2 & 0.0000 & 0.0210 & \\
+-Uncorrelated & 500 & 5/5 & 78.0 & 0.0002 & 0.0984 & \\
+-Uncorrelated & 1000 & 5/5 & 75.6 & 0.0001 & 0.3301 & \\
+-Weakly correlated & 100 & 5/5 & 79.4 & 0.0000 & 0.0032 & \\
+-Weakly correlated & 200 & 5/5 & 56.4 & 0.0002 & 0.0107 & \\
+-Weakly correlated & 500 & 5/5 & 91.6 & 0.0001 & 0.0729 & \\
+-Weakly correlated & 1000 & 5/5 & 126.2 & 0.0001 & 0.3253 & \\
+-Subset sum & 100 & 5/5 & 100.0 & 0.0000 & 0.0028 & \\
+-Subset sum & 200 & 5/5 & 200.0 & 0.0000 & 0.0109 & \\
+-Subset sum & 500 & 5/5 & 500.0 & 0.0000 & 0.0733 & \\
+-Subset sum & 1000 & 5/5 & 1000.0 & 0.0001 & 0.2970 & \\
+-Strongly correlated & 100 & 3/5 & 100.0 & 0.0809 & 0.0877 & \\
+-Strongly correlated & 200 & 2/5 & 200.0 & 0.0130 & 0.0607 & Warning: $n=2$, not a stable avg \\
+-Inverse strongly & 100 & 3/5 & 36.0 & 0.0563 & 0.0191 & \\
+-Inverse strongly & 200 & 1/5 & 25.0 & 0.0017 & 0.0108 & Warning: $n=1$, not a stable avg \\
+-\bottomrule
+-\end{tabular}
+-\end{center}
+-\end{table*}
+-
+-\begin{table}[htbp]
+-\caption{Category (b): Cutoffs Reached}
+-\label{tab:ortools_cat_b}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lccc}
+-\toprule
+-\textbf{Instance Class} & $\boldsymbol{n}$ & \textbf{OR-Tools Timeouts} & \textbf{Our B\&B Timeouts} \\
+-\midrule
+-Strongly correlated & 100 & 2/5 & 2/5 \\
+-Strongly correlated & 200 & 3/5 & 3/5 \\
+-Strongly correlated & 500 & 5/5 & 5/5 \\
+-Inverse strongly & 100 & 2/5 & 2/5 \\
+-Inverse strongly & 200 & 4/5 & 4/5 \\
+-Inverse strongly & 500 & 5/5 & 5/5 \\
+-\bottomrule
+-\end{tabular}%
+-}
+-\end{center}
+-\end{table}
+-
+-
+-\subsection{Empirical Scaling of $T_{\text{LP}}$ with LP Gap and Core Size}
+-
+-We empirically characterize the scaling of $T_{\text{LP}}$ with instance parameters using a regression model fit to our benchmark dataset. We fit the model $\log(T_{\text{LP}}) \sim \log(\text{gap}) + m$, where gap is the true integrality gap $Z_{\text{LP}} - Z^*$ computed against the exact optimal value, and $m$ is the core size. The pooled model yields $R^2 = 0.469$ (5-fold CV $R^2 = 0.460$), but this masks substantial class dependency.
+-
+-\begin{table}[htbp]
+-\caption{Per-Class Regression Fits for $\log(T_{\text{LP}}) \sim \log(\text{gap}) + m$}
+-\label{tab:tlp_regression}
+-\centering
+-\begin{tabular}{lrr}
+-\toprule
+-\textbf{Instance Class} & $\boldsymbol{R^2}$ & \textbf{CV $\boldsymbol{R^2}$} \\
+-\midrule
+-Uncorrelated & 0.627 & 0.584 \\
+-Weakly correlated & 0.594 & 0.479 \\
+-Strongly correlated & 0.601 & 0.560 \\
+-Inverse strongly & 0.583 & 0.540 \\
++Original & 700 & 3,148,192 & 12,592,768 & 0\\
++Reduced cores & 700 & 2,056,264 & 8,225,056 & 0\\
++Total & 1,400 & 5,204,456 & 20,817,824 & 0\\
+ \bottomrule
+ \end{tabular}
+ \end{table}
+ 
+-The coefficient for $\log(\text{gap})$ is $\approx 1.01$ and highly significant ($p < 0.001$) for strongly correlated instances, but statistically indistinguishable from zero ($p = 0.919$) for uncorrelated instances, and mathematically undefined for subset sum (where the gap is identically zero for all instances, hence omitted from Table~\ref{tab:tlp_regression}). This behavior is consistent with the established structural properties of these instances (as seen in Table~\ref{tab:fixing}). Core size $m$, however, is a consistent positive predictor across all valid classes (coefficients $\approx 0.11\text{--}0.13$). We do not claim any universal closed-form bound on $T_{\text{LP}}$; this is a fitted empirical trend specific to the tested instance distributions and parameter ranges ($n \le 24$).
+-
+-\section{Discussion}
+-
+-\subsection{Instance-Dependent Query-Complexity Behavior}
+-
+-Our results reveal a key structural insight: the sources of search reduction are instance-dependent and complementary, creating a synergistic algorithm that exploits the strengths of both classical preprocessing and quantum search.
+-
+-For \textit{uncorrelated instances}, the LP relaxation bound is tight (LP gap $\approx O(1)$), enabling aggressive variable fixing ($\alpha \approx 0.32$ at $n = 24$, dropping to median $\alpha = 0.0276$ at $n = 10{,}000$). The B\&B tree is correspondingly small ($T_{\text{LP}} \approx 70$ at $n=24$). Here, most of the benefit comes from Phase~1 (classical), with the quantum phase contributing a modest additional $\sqrt{T_{\max}}\,m\log m / T_{\max}$ factor in query count.
+-
+-For \textit{strongly correlated and subset-sum instances}, variable fixing is ineffective ($\alpha \to 1$) because all item efficiencies are nearly identical. However, the tested strongly correlated and subset-sum instances produced substantially larger LP-pruned trees ($T_{\text{LP}} \approx 3079$ at $n=24$). Here, Phase~2 provides the key query reduction: Montanaro's quantum walk achieves a quantum query reduction over substantially larger LP-pruned B\&B trees.
+-
+-This synergy is the core novelty: \textit{In the tested instance classes, the relative contribution of LP fixing and the theorem-backed quantum query bound varies substantially with instance structure, and the two phases address different algorithmic bottlenecks}. For uncorrelated instances, $\alpha \ll 1$ makes the quantum phase trivial; For larger LP-pruned trees, the fixed-threshold detection bound has square-root dependence on tree size, with the explicit depth factor $m$. In both regimes, the algorithm adapts automatically.
+-
+-\subsection{Hardware Validation Insights}
+-
+-Our IBM \texttt{ibm\_fez} experiments reveal a clear NISQ noise boundary for amplitude amplification circuits. Table~\ref{tab:hardware} summarizes the measured hardware success probability versus the ideal simulator success probability across scaled core sizes.
+-
+-\begin{table*}[t]
+-\caption{IBM Hardware Results vs. Simulator Success Probability}
+-\label{tab:hardware}
+-\centering
+-\begin{tabular}{lcccc}
++The separate primal-vertex audit covers 1,888 inputs and 15,999 feasible prefixes, with 0 root-tail value mismatches and 0 floor mismatches for each of the grid, sufficient, and rational banks. It checks 1,369 grid and 1,369 rational minimum-cardinality certificates, with 0 failures, and 1,637 independently reconstructed rational critical intervals, with 0 endpoint mismatches. These counts are different checks on overlapping inputs, not independent statistical samples.
++
++\subsection{Gate-level checks and initialization discrepancy}
++The completed QFT bank tests cover 24 method-cases and 1,120 basis columns, with 0 gate mismatches. Certified cases have 0 LP-predicate disagreements. The deliberately insufficient bank has 8 expected LP-predicate disagreements across the tested method rows, while its gate outputs agree with its supplied-bank predicate. The Boolean tests cover 7 cases and 2,216 gate columns, with 0 mismatches, including 548 invalid-depth encodings. Two primitive-unitary coherent checks span 64 logical amplitudes, with 0 failures at tolerance $10^{-8}$. Each method-case is counted once; different circuit forms are not independent problem instances.
++
++For $w=(2,4,1)$, $v=(1,2,0)$, $W=3$, and $d=1$, dense statevector simulations of the raw and inverse-cancelled 22-qubit oracle gave maximum complex-amplitude errors approximately $4.77\times10^{-15}$ and $1.94\times10^{-15}$, respectively. Explicit primitive-gate or decomposed unitary preparation also passed on the matrix-product-state backend at tolerance $10^{-8}$.\footnote{A test using partial-register initialization on the same layout produced amplitude error approximately 0.2154. Preparation-only checks reproduced an incorrect state before any oracle gates. Its cause remains unresolved, and this preparation path is excluded from the supporting correctness evidence. The failed record is retained; the successful checks use the same oracle and tolerance.}
++
++The root-aware scan control was separately checked on 104 exact Boolean columns, 208 QFT basis columns across eight conditions, and one coherent condition spanning 16 logical amplitudes: 0 mismatches, dirty-workspace failures, or coherent failures. Four further complete-transpiler comparisons agree with the control profiler, with 0 discrepancies. These checks cover the stated small inputs; the 105-input resource cohort is not exhaustively gate-simulated.
++
++\subsection{Matched logical resources}
++All 105 root-aware resource comparisons completed, with 0 caps and 0 compilation errors. Table~\ref{tab:resources} gives per-instance bank/control ratios, summarized by their median, minimum, and maximum. Figure~\ref{fig:resources} shows every paired ratio. These quantities are logical resources derived from the compiled gate lists.
++
++\begin{table}[t]
++\caption{Derived paired resource ratios on 105 inputs. Lower/equal/higher compares the bank with the root-aware scan separately on each input}\label{tab:resources}
++\centering\small
++\begin{tabular}{lrrrr}
+ \toprule
+-\textbf{Instance} & \textbf{Sim Prob} & \textbf{HW Prob} & \textbf{Transpiled Depth} & \textbf{2Q Gates} \\
++Resource & Median & Minimum & Maximum & Lower/equal/higher\\
+ \midrule
+-Core-3A (Easy) & 0.9453 & 0.6743 & 301 & 78 \\
+-Core-3B (Medium) & 0.9453 & 0.6671 & 294 & 72 \\
+-Core-4A (Hard) & 0.9613 & 0.1235 & 2106 & 661 \\
+-Core-4B (Subset-Sum) & 0.9613 & 0.1344 & 2102 & 659 \\
+-Core-5A (Uncorrelated) & 0.9992 & 0.0237 & 12512 & 4017 \\
+-Core-5B (Correlated) & 0.9613 & 0.0637 & 9273 & 3012 \\
+-Core-6A (Hard) & 0.9992 & 0.0312 & 50520 & 16579 \\
+-Core-6B (Subset-Sum) & 0.9981 & 0.0330 & 38129 & 12456 \\
++Allocated qubits & 0.4641 & 0.3974 & 0.5294 & 105/0/0\\
++Active qubits & 0.4908 & 0.3676 & 0.5455 & 105/0/0\\
++CX gates & 0.4981 & 0.0933 & 0.9180 & 105/0/0\\
++Arbitrary-angle $u$ gates & 0.4995 & 0.0942 & 0.9178 & 105/0/0\\
++Common-basis depth & 1.0720 & 0.0798 & 2.0480 & 38/0/67\\
+ \bottomrule
+ \end{tabular}
+-\end{table*}
+-
+-At $n \leq 4$ (circuit depth $\leq 2{,}100$, $\leq 661$ two-qubit gates), the correct optimal solution emerges as the dominant measurement outcome with success probabilities of 12--67\%. At $n \geq 5$ (circuit depth $\geq 9{,}000$, $\geq 3{,}000$ two-qubit gates), noise overwhelms the quantum signal, and the output approaches a uniform distribution.
+-
+-Fidelity was not independently measured. Backend calibration snapshots were not retained as controlled experimental covariates; consequently, execution-time T1, T2, readout-error, and two-qubit-error statistics are not used for quantitative attribution of the observed hardware--simulator discrepancy.
+-
+-This characterization has practical implications. For our hybrid algorithm, the quantum phase operates on the \textit{core} items only ($m = \alpha n$). Since $\alpha \ll 1$ for uncorrelated and weakly correlated instances, LP fixing reduces the number of variables exposed to the quantum phase, but the present hardware experiments support only very small cores. No claim is made that current hardware can execute the full quantum B\&B phase for large reduced cores.
+-
+-
+-\subsection{Limitations}
+-
+-\textbf{Hardware requirements.} The fixed-threshold detection primitive has an $O(\sqrt{T_{\tau}}\,m\log m)$ query bound under the Montanaro oracle-model assumptions, each involving an LP bounding oracle with reversible marked and threshold predicates. For large core sizes ($m \geq 5$), this demands fault-tolerant quantum hardware, as our IBM experiments demonstrate.
+-
+-\textbf{NISQ noise boundary.} Our hardware experiments show that current Heron~r2 processors can reliably execute amplitude amplification only for cores with $n \leq 4$ using our unitary oracle construction. Decomposed gate-level oracles and error mitigation techniques~\cite{ref31} may extend this boundary.
+-
+-\textbf{Small-$n$ overhead.} At $n \leq 24$, the Montanaro $\text{poly}(d)$ overhead can make the quantum algorithm slower than classical B\&B for easy instances. The quantum query reduction is asymptotic and becomes pronounced as $n$ grows and the LP-pruned tree becomes sufficiently large.
+-
+-\subsubsection{Resource-Estimation Crossover Analysis}
+-This analysis compares the quantum T-gate cost of the composed query bound against the classical per-node operation cost to derive the crossover threshold. This is strictly an operation-count comparison, not a wall-clock time estimate. Table~\ref{tab:crossover} details the combined per-query T-cost ($C_Q$), aggregating the resources for predicate $V$ (Table~\ref{tab:oracle}) and the LP heuristic $h$ (Table~\ref{tab:h_resources}). For $m=4$, this includes the newly measured T-count for $h$, while for $m=6, 8$, we explicitly note that these counts remain a partial lower bound because full gate-level decomposition is deferred~\cite{vedral1996}.
+-
+-\begin{table}[htbp]
+-\caption{Per-Query T-Cost Estimates ($C_Q$) and Required Crossover Thresholds ($T_{\max}$)}
+-\label{tab:crossover}
+-\begin{center}
+-\resizebox{\columnwidth}{!}{%
+-\begin{tabular}{lrr}
++\end{table}
++
++\begin{figure}[t]
++\centering
++\includegraphics[width=\textwidth]{resource_ratios.pdf}
++\caption{Derived bank-to-root-aware-scan resource ratios for all 105 fixed-depth inputs. Each panel sorts its own ratios for readability, so horizontal positions are not matched instance identities across panels. A ratio below one favors the bank. The horizontal reference denotes equal resources}\label{fig:resources}
++\end{figure}
++
++The median CX ratio is 0.4981 and the median active-qubit ratio is 0.4908. However, median depth is 1.0720 times the control depth: 67 inputs are deeper and 38 shallower, with a maximum depth ratio of 2.0480. The bank reuses one accumulator for successive compute--flag--uncompute evaluations, creating dependencies between multipliers. The scan instead uses separate weight, profit, residual-capacity, and comparison registers in a single suffix pass. These layouts permit different degrees of parallelism, so fewer gates need not imply a shallower circuit. The median of paired ratios is not a ratio of aggregate totals and does not establish an average device-time saving.
++
++The control omits fractional calculations before the earliest possible split, and active-qubit counts exclude unused workspace while retaining all interface wires. The reported ratios apply to this matched comparison, not to an optimal implementation or a classical knapsack solver.
++
++\section{Discussion and limitations}\label{sec:discussion}
++A certified bank preserves the LP rejection decision at integer targets while allowing its fractional value to differ. This permits a constant-coefficient circuit that avoids dynamically finding a fractional split. Coverage certificates are required because a merely valid Lagrangian bound can prune less than the LP. The root-tail construction is a safe baseline; smaller banks require additional coverage reasoning.
++
++These results support a compiler for the stated prefix predicate and quantify its reversible resource tradeoff. Lagrangian multiplier sets and integer rounding already occur in prior work \cite{bozejko2026}, and fractional-greedy bounds already occur in quantum knapsack B\&B comparisons \cite{wilkening2025}. The contribution concerns the all-prefix coverage construction and its implementation; minimum bank cardinality does not imply minimum gate count.
++
++The circuit contract requires positive integer weights, nonnegative integer profits, a fixed efficiency-ordered prefix, representable integer thresholds, and clean initial workspace. It returns no numerical LP value, integrality flag, completion witness, or LP-selected branching variable. Those outputs would require additional computation. Arithmetic coverage and gate-level simulation establish different properties; the initialization discrepancy demonstrates the need for preparation-only and independent dense-reference checks.
++
++The resource comparison assumes ideal arbitrary-angle gates and all-to-all connectivity. Hardware costs would additionally depend on routing, rotation synthesis, and error management. A complete search implementation would still need coherent node handling, branching and marking operations, reflections, error allocation, witness recovery, and preprocessing. Quantum-query frameworks \cite{ref35,ref24} provide context, but do not supply the missing implementation costs. The reported oracle resource reductions therefore do not establish an end-to-end runtime advantage.
++
++The resource tradeoff depends on the arithmetic layout and compilation model. Alternative implementations may change the relative gate counts, qubit requirements, and depth.
++
++\section{Conclusion}
++A certified static multiplier bank can preserve integer-threshold LP-pruning decisions for fixed efficiency-ordered knapsack prefixes. Coverage reduces to interval constraints, and the predicate can be expressed through bounded constant-coefficient arithmetic with reversible cleanup. Exact arithmetic checks cover the original and reduced-core instances, and separate small-circuit simulations test the reversible predicate. The matched root-aware comparison finds lower CX counts and qubit requirements throughout its 105-input cohort, together with increased depth on most inputs. These findings support a specific oracle construction and an explicit resource tradeoff; they do not establish physical or end-to-end quantum advantage.
++
++\backmatter
++\section*{Statements and Declarations}
++\subsection*{Funding}
++Pending author confirmation before submission.
++\subsection*{Competing interests}
++Pending declarations from all authors before submission.
++% Author contributions deliberately deferred at the authors' request.
++\subsection*{Data and code availability}
++The input registries, circuit sources, numerical result ledgers, and verification scripts are retained in the research archive.
++
++\appendix
++\section{Counterexamples delimiting the contract}\label{app:counterexamples}
++These exact arithmetic examples falsify stronger statements, not the stated integer-prefix contract. With $w=(1,1)$, $v=(1,1)$, $W=1$, and bank $\{1/2\}$, the root LP is 1 while the bank bound is $3/2$. Their floors agree, but the decisions differ at rational target $5/4$.
++
++For nonprefix branching, take $w=(10,9)$, $v=(100,1)$, $W=15$. The root-tail grid is $\{0,1/9\}$. Fixing the lower-density item in first leaves the high-density item with capacity 6: the total LP bound is 61, while the tail-bank bound is $905/9$. They disagree at integer target 62. Prefix order is therefore a substantive assumption.
++
++For tied groups, take $w=(2,2,3)$, $v=(1,1,1)$, $W=1$. The LP is $1/2$, but $\lambda=1/3$ gives bound 1. Its distance from the split density $1/2$ is $1/6$. A radius using one tied item's weight would admit it ($1/6<1/4$), whereas the required group-weight radius is $1/8$. For strictness, $w=v=(1)$ and $W=0$ give LP 0; $\lambda=0$ at distance 1 from density 1 gives bound 1, so the nonstrict radius fails at target 1.
++
++Negative multipliers are unsafe: with $w=v=(1)$ and $W=2$, $\lambda=-1$ gives 0 below the LP value 1. Integer weight normalization also need not preserve the fractional LP: $w=(2)$, $v=(3)$, $W=1$ has LP $3/2$, whereas division of weight by 2 and flooring capacity gives LP 0. Equal integer feasible sets do not imply equal LP-pruning predicates.
++
++\section{Gate fixtures and reproducibility map}\label{app:reproduce}
++Table~\ref{tab:fixtures} specifies the fixed QFT fixtures. Raw and inverse-cancelled forms and the recorded control policies produce method-cases; they are not independent problem samples. The Boolean suite omits the zero-profit fixture outside its validator domain and includes the empty instance and $w=(65537,65539)$, $v=(3,5)$, $W=65538$. Its depth register includes invalid encodings. QFT simulation uses seed 2026102529 and full rotations; the retained metadata specifies each policy, encoded threshold range, and work-bit check.
++
++\begin{table}[t]
++\caption{Fixed QFT bank fixtures; all listed inputs are hardcoded test settings. The last bank is deliberately not certified as LP-equivalent}\label{tab:fixtures}
++\centering\small
++\begin{tabular}{llr@{\hspace{1.5em}}rl}
+ \toprule
+-\textbf{Core Size ($m$)} & \textbf{$C_Q$} & \textbf{Required $T_{\max}$ Crossover} \\
++Weights & Profits & $W$ & $d$ & Bank choice\\
+ \midrule
+-4$^\S$ & $\approx 1{,}388{,}704$ & $\approx 1.88 \times 10^{15}$ \\
+-6 & $\ge 240{,}986$ & $\ge 3.49 \times 10^{14}$ \\
+-8 & $\ge 269{,}760$ & $\ge 1.50 \times 10^{15}$ \\
++$(17,3)$ & $(16,2)$ & 1 & 1 & Full density grid + zero\\
++$(2,4,1)$ & $(1,2,0)$ & 3 & 1 & Full density grid + zero\\
++$(2,3)$ & $(3,1)$ & 10 & 2 & $\{0\}$\\
++$(3,5)$ & $(2,4)$ & 0 & 1 & Full density grid + zero\\
++$(1,1)$ & $(1,1)$ & 1 & 1 & $\{1/2\}$\\
++$(2)$ & $(1)$ & 1 & 0 & $\{0\}$, insufficient\\
+ \bottomrule
+-\end{tabular}%
+-}
+-\begin{flushleft}
+-\footnotesize
+-$^\S$MEASURED: $\approx$ denotes a synthesized gate count (Table II). $\ge$ rows remain partial lower bounds (gate-level decomposition deferred).
+-\end{flushleft}
+-\end{center}
++\end{tabular}
+ \end{table}
+ 
+-Setting the classical cost ($T_{\max}$) equal to the quantum cost gives the crossover condition: $T_{\max} \ge (C_Q \cdot m \log_2 m \cdot \log_2 V_{\max})^2$. An adversarial comparison against the empirical data reveals that none of the tested instances approach this required crossover threshold by many orders of magnitude; the maximum observed tree sizes ($T_{\text{LP}} \approx 70$ for uncorrelated and $T_{\text{LP}} \approx 3{,}079$ for strongly correlated instances at $n=24$) are ten to eleven orders of magnitude too small. Because the T-cost estimate is a strict lower bound, the true crossover point can only be larger, strengthening the conclusion that the overhead of reversible arithmetic overwhelms the quantum query reduction for the evaluated regime.
+-
+-\textbf{Pseudo-polynomial regime.} For instances with small integer coefficients, dynamic programming runs in $O(nW)$ time and space, and dominates: our theoretical comparison to branch-and-bound is meaningful only in the large-coefficient regime where DP is infeasible due to time and memory limits. We make this scope explicit rather than claiming general advantage over all classical methods.
+-
+-\textbf{Detection reliability and simulability.} Our phase-estimation precision constant is calibrated empirically. Walk simulation restricts the spectral audit to trees with $T_{\text{LP}} \le 2000$ nodes. \textbf{Oracle Completeness.} Proposition~1 implements the reversible evaluation/threshold predicate $V$. For the LP bounding heuristic $h$, we have specified and verified an exact fixed-precision arithmetic formula (Lemma 1a) and established the complete register layout and qubit resource estimates (Table~\ref{tab:h_resources}). However, full gate-level decomposition of the required arithmetic blocks (multipliers and dividers) remains deferred. Consequently, while the mathematical exactness and qubit overhead of $h$ are confirmed, we still do not claim a full-algorithm gate-complexity bound.
+-
+-
+-
+-
+-\section{Conclusion}
+-
+-We presented a hybrid algorithm that couples LP-guided reduced-cost variable fixing with Montanaro's quantum branch-and-bound for the 0/1 knapsack problem---to our knowledge among the first to combine provability, gate-model feasibility, knapsack-specific LP fixing, instance adaptivity, and computational spectral validation of the explicit walk operator (Table~\ref{tab:related}). The implemented threshold-search composition has query complexity $O\!\left(\sqrt{T_{\max}}\,m\log m\log V_{\max}\right)$, where $T_{\max}$ is the maximum LP-pruned tree size encountered and $m = \alpha n$ is the core size after variable fixing. We established three key results:
+-
+-\begin{enumerate}
+-    \item \textit{Correctness}: reduced-cost fixing is exact---no heuristic assumptions are involved---and Montanaro's quantum walk finds the optimal B\&B solution with high probability.
+-    \item \textit{Instance-dependent synergy}: for uncorrelated instances, LP fixing achieves median $\alpha = 0.0276$ at scale ($n = 10{,}000$), reducing the effective search to a trivial core; for the tested strongly constrained instances with substantially larger LP-pruned trees, the theorem-backed fixed-tree detection primitive has square-root dependence on tree size, up to the stated depth factors, relative to classical traversal of the same tree.
+-    \item \textit{Containment Theorem}: the reduced-cost core is analytically bounded within a $\delta$-band, structurally dependent on the minimum efficiency spacing.
+-\end{enumerate}
+-
+-Experiments on 700 instances across five Pisinger difficulty classes confirmed 100\% correctness against exact dynamic programming. We benchmarked the LP-pruned classical solver against Google OR-Tools at scales up to $n=1000$. Critically, a computational simulation of the quantum walk tested the underlying effective spectral-gap inequality and phase-zero weight constraints across 889 completed simulated trees ($T_{\text{LP}} \le 2000$), providing computational evidence that the implemented LP-pruned walk satisfies the tested spectral conditions underlying Montanaro's detection analysis. A fault-tolerant resource estimate for our answer-agnostic reversible oracle establishes baseline component costs for the predicate $V$, and we synthesized and verified the reversible LP bounding oracle at $m=4$. Finally, a NISQ characterization on IBM's \texttt{ibm\_fez} processor (156-qubit Heron~r2) identified the correct solution as the top-1 measured state for $n \leq 4$ while delineating the noise boundary at $n \geq 5$.
+-
+-Future work includes: (a)~extending the analysis to multi-dimensional and multi-objective knapsack variants; (b)~implementing decomposed gate-level oracles to reduce circuit depth and extend the hardware-viable range beyond $n = 4$ core items; (c)~integrating quantum error mitigation techniques to improve hardware success probabilities at larger core sizes; (d)~characterizing instance classes or realistic distributions under which the minimum efficiency spacing $\Delta$ remains bounded away from zero---a $\Delta$-free analytical bound on $|C_{RC}|$ in terms of the LP gap alone is ruled out by the necessity construction in Remark~(Necessity of $\Delta$), so the open question is to identify structured families admitting useful $\Delta$ lower bounds or to derive tighter bounds for specific distributions such as uncorrelated or weakly correlated instances; and (e)~evaluating the algorithm on next-generation fault-tolerant quantum processors as they become available.
+-
+-
+-
+-
+-\section{Data Availability and Reproducibility}
+-
+-To ensure full reproducibility and scientific transparency, the complete source code for our classical B\&B, quantum walk simulation, oracle compilation, and IBM Quantum hardware experiments is publicly available at \url{https://github.com/kumudinimetta-lab/Knapsack_Quantum}. The repository includes scripts to regenerate the 700 Pisinger instances, verify all optimizations against dynamic programming, and reproduce all tables and figures. Crucially, the repository simulates the exact Belovs--Montanaro walk operator computationally to test spectral conditions, moving beyond theoretical complexity assertions.
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-\section*{Acknowledgment}
+-
+-The authors thank the Department of Computer Science and Engineering, VNR Vignana Jyothi Institute of Engineering and Technology, Hyderabad, for institutional support. We also wish to extend our sincere gratitude to Dr.~C.~Thirumal, Professor at VNR Vignana Jyothi Institute of Engineering and Technology, for his valuable guidance and support. IBM Quantum services were used for the hardware experiments reported in Section~\ref{sec:experiments}; the views expressed are those of the authors and do not reflect the official policy of IBM or the IBM Quantum team.
+-
+-\bibliographystyle{IEEEtran}
++The reproducibility records identify the input registries, circuit-test conditions, failed initialization test, source hashes, and numerical resource records. Tables and resource plots are generated from these records.
++
+ \bibliography{references}
+-
+-\end{document} +\end{document}

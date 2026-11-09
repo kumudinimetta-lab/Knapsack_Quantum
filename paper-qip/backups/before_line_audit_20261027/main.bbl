@@ -1,0 +1,665 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{40}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{Dantzig}{1957}]{ref1}
+\begin{barticle}
+\bauthor{\bsnm{Dantzig}, \binits{G.B.}}:
+\batitle{Discrete-variable extremum problems}.
+\bjtitle{Operations Research}
+\bvolume{5}(\bissue{2}),
+\bfpage{266}--\blpage{288}
+(\byear{1957})
+\doiurl{10.1287/opre.5.2.266}
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Kellerer et~al.}{2004}]{ref3}
+\begin{bbook}
+\bauthor{\bsnm{Kellerer}, \binits{H.}},
+\bauthor{\bsnm{Pferschy}, \binits{U.}},
+\bauthor{\bsnm{Pisinger}, \binits{D.}}:
+\bbtitle{Knapsack Problems}.
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
+(\byear{2004}).
+\doiurl{10.1007/978-3-540-24777-7}
+\end{bbook}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{Balas and Zemel}{1980}]{balas1980core}
+\begin{barticle}
+\bauthor{\bsnm{Balas}, \binits{E.}},
+\bauthor{\bsnm{Zemel}, \binits{E.}}:
+\batitle{An algorithm for large zero-one knapsack problems}.
+\bjtitle{Operations Research}
+\bvolume{28}(\bissue{5}),
+\bfpage{1130}--\blpage{1154}
+(\byear{1980})
+\doiurl{10.1287/opre.28.5.1130}
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Montanaro}{2018}]{ref35}
+\begin{barticle}
+\bauthor{\bsnm{Montanaro}, \binits{A.}}:
+\batitle{Quantum-walk speedup of backtracking algorithms}.
+\bjtitle{Theory of Computing}
+\bvolume{14}(\bissue{15}),
+\bfpage{1}--\blpage{24}
+(\byear{2018})
+\doiurl{10.4086/toc.2018.v014a015}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Montanaro}{2020}]{ref24}
+\begin{barticle}
+\bauthor{\bsnm{Montanaro}, \binits{A.}}:
+\batitle{Quantum speedup of branch-and-bound algorithms}.
+\bjtitle{Physical Review Research}
+\bvolume{2}(\bissue{1}),
+\bfpage{013056}
+(\byear{2020})
+\doiurl{10.1103/PhysRevResearch.2.013056}
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Bo\.{z}ejko et~al.}{2026}]{bozejko2026}
+\begin{barticle}
+\bauthor{\bsnm{Bo\.{z}ejko}, \binits{W.}},
+\bauthor{\bsnm{Burduk}, \binits{A.}},
+\bauthor{\bsnm{Pempera}, \binits{J.}},
+\bauthor{\bsnm{Uchro{\'n}ski}, \binits{M.}},
+\bauthor{\bsnm{Wodecki}, \binits{M.}}:
+\batitle{Optimal solving of a binary knapsack problem on a {D-Wave} quantum
+  machine and its implementation in production systems}.
+\bjtitle{Annals of Operations Research}
+\bvolume{364},
+\bfpage{2111}--\blpage{2126}
+(\byear{2026})
+\doiurl{10.1007/s10479-024-06025-1} .
+\bcomment{First published online 13 May 2024}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{Erickson}{2019}]{erickson2019algorithms}
+\begin{botherref}
+\oauthor{\bsnm{Erickson}, \binits{J.}}:
+Algorithms.
+Self-published textbook, first edition
+(2019).
+\url{https://jeffe.cs.illinois.edu/teaching/algorithms/}
+\end{botherref}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Vedral et~al.}{1996}]{vedral1996}
+\begin{barticle}
+\bauthor{\bsnm{Vedral}, \binits{V.}},
+\bauthor{\bsnm{Barenco}, \binits{A.}},
+\bauthor{\bsnm{Ekert}, \binits{A.}}:
+\batitle{Quantum networks for elementary arithmetic operations}.
+\bjtitle{Physical Review A}
+\bvolume{54}(\bissue{1}),
+\bfpage{147}--\blpage{153}
+(\byear{1996})
+\doiurl{10.1103/PhysRevA.54.147}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Draper}{2000}]{draper2000}
+\begin{botherref}
+\oauthor{\bsnm{Draper}, \binits{T.G.}}:
+Addition on a Quantum Computer.
+arXiv:quant-ph/0008033
+(2000).
+\doiurl{10.48550/arXiv.quant-ph/0008033} .
+\url{https://arxiv.org/abs/quant-ph/0008033}
+\end{botherref}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Horowitz and Sahni}{1974}]{ref2}
+\begin{barticle}
+\bauthor{\bsnm{Horowitz}, \binits{E.}},
+\bauthor{\bsnm{Sahni}, \binits{S.}}:
+\batitle{Computing partitions with applications to the knapsack problem}.
+\bjtitle{Journal of the ACM}
+\bvolume{21}(\bissue{2}),
+\bfpage{277}--\blpage{292}
+(\byear{1974})
+\doiurl{10.1145/321812.321823}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Pisinger}{1999}]{ref4}
+\begin{barticle}
+\bauthor{\bsnm{Pisinger}, \binits{D.}}:
+\batitle{Core problems in knapsack algorithms}.
+\bjtitle{Operations Research}
+\bvolume{47}(\bissue{4}),
+\bfpage{570}--\blpage{575}
+(\byear{1999})
+\doiurl{10.1287/opre.47.4.570}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Pisinger}{1997}]{pisinger1997minimal}
+\begin{barticle}
+\bauthor{\bsnm{Pisinger}, \binits{D.}}:
+\batitle{A minimal algorithm for the 0-1 knapsack problem}.
+\bjtitle{Operations Research}
+\bvolume{45}(\bissue{5}),
+\bfpage{758}--\blpage{767}
+(\byear{1997})
+\doiurl{10.1287/opre.45.5.758}
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Martello et~al.}{1999}]{martello1999combo}
+\begin{barticle}
+\bauthor{\bsnm{Martello}, \binits{S.}},
+\bauthor{\bsnm{Pisinger}, \binits{D.}},
+\bauthor{\bsnm{Toth}, \binits{P.}}:
+\batitle{Dynamic programming and strong bounds for the 0-1 knapsack problem}.
+\bjtitle{Management Science}
+\bvolume{45}(\bissue{3}),
+\bfpage{414}--\blpage{424}
+(\byear{1999})
+\doiurl{10.1287/mnsc.45.3.414}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Beier and V{\"o}cking}{2004}]{beier2004random}
+\begin{barticle}
+\bauthor{\bsnm{Beier}, \binits{R.}},
+\bauthor{\bsnm{V{\"o}cking}, \binits{B.}}:
+\batitle{Random knapsack in expected polynomial time}.
+\bjtitle{Journal of Computer and System Sciences}
+\bvolume{69}(\bissue{3}),
+\bfpage{306}--\blpage{329}
+(\byear{2004})
+\doiurl{10.1016/j.jcss.2004.04.004}
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Dey et~al.}{2021}]{dey2021random}
+\begin{botherref}
+\oauthor{\bsnm{Dey}, \binits{S.S.}},
+\oauthor{\bsnm{Dubey}, \binits{Y.}},
+\oauthor{\bsnm{Molinaro}, \binits{M.}}:
+Branch-and-Bound Solves Random Binary IPs in Polytime.
+Version 4, 16 September 2021; first submitted 2020
+(2021).
+\url{https://arxiv.org/abs/2007.15192v4}
+\end{botherref}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Grover}{1996}]{ref8}
+\begin{bchapter}
+\bauthor{\bsnm{Grover}, \binits{L.K.}}:
+\bctitle{A fast quantum mechanical algorithm for database search}.
+In: \bbtitle{Proceedings of the 28th Annual ACM Symposium on Theory of
+  Computing (STOC)},
+pp. \bfpage{212}--\blpage{219}
+(\byear{1996}).
+\doiurl{10.1145/237814.237866}
+\end{bchapter}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Brassard et~al.}{2002}]{ref11}
+\begin{bchapter}
+\bauthor{\bsnm{Brassard}, \binits{G.}},
+\bauthor{\bsnm{H{\o}yer}, \binits{P.}},
+\bauthor{\bsnm{Mosca}, \binits{M.}},
+\bauthor{\bsnm{Tapp}, \binits{A.}}:
+\bctitle{Quantum amplitude amplification and estimation}.
+In: \bbtitle{Quantum Computation and Information}.
+\bsertitle{Contemporary Mathematics},
+vol. \bseriesno{305},
+pp. \bfpage{53}--\blpage{74}.
+\bpublisher{American Mathematical Society},
+\blocation{Providence, RI}
+(\byear{2002}).
+\doiurl{10.1090/conm/305/05215} .
+\burl{https://arxiv.org/abs/quant-ph/0005055}
+\end{bchapter}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Bulger et~al.}{2003}]{ref12}
+\begin{barticle}
+\bauthor{\bsnm{Bulger}, \binits{D.}},
+\bauthor{\bsnm{Baritompa}, \binits{W.P.}},
+\bauthor{\bsnm{Wood}, \binits{G.R.}}:
+\batitle{Implementing pure adaptive search with {Grover}'s quantum algorithm}.
+\bjtitle{Journal of Optimization Theory and Applications}
+\bvolume{116}(\bissue{3}),
+\bfpage{517}--\blpage{529}
+(\byear{2003})
+\doiurl{10.1023/A:1023061218864}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{D{\"u}rr and H{\o}yer}{1996}]{ref13}
+\begin{botherref}
+\oauthor{\bsnm{D{\"u}rr}, \binits{C.}},
+\oauthor{\bsnm{H{\o}yer}, \binits{P.}}:
+A quantum algorithm for finding the minimum.
+arXiv:quant-ph/9607014
+(1996).
+\url{https://arxiv.org/abs/quant-ph/9607014}
+\end{botherref}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Bennett et~al.}{1997}]{ref9}
+\begin{barticle}
+\bauthor{\bsnm{Bennett}, \binits{C.H.}},
+\bauthor{\bsnm{Bernstein}, \binits{E.}},
+\bauthor{\bsnm{Brassard}, \binits{G.}},
+\bauthor{\bsnm{Vazirani}, \binits{U.}}:
+\batitle{Strengths and weaknesses of quantum computing}.
+\bjtitle{SIAM Journal on Computing}
+\bvolume{26}(\bissue{5}),
+\bfpage{1510}--\blpage{1523}
+(\byear{1997})
+\doiurl{10.1137/S0097539796300933}
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Becker et~al.}{2011}]{ref5}
+\begin{bchapter}
+\bauthor{\bsnm{Becker}, \binits{A.}},
+\bauthor{\bsnm{Coron}, \binits{J.-S.}},
+\bauthor{\bsnm{Joux}, \binits{A.}}:
+\bctitle{Improved generic algorithms for hard knapsacks}.
+In: \bbtitle{Advances in Cryptology -- EUROCRYPT 2011}.
+\bsertitle{Lecture Notes in Computer Science},
+vol. \bseriesno{6632},
+pp. \bfpage{364}--\blpage{385}.
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
+(\byear{2011}).
+\doiurl{10.1007/978-3-642-20465-4_21}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Bernstein et~al.}{2013}]{ref16}
+\begin{botherref}
+\oauthor{\bsnm{Bernstein}, \binits{D.J.}},
+\oauthor{\bsnm{Jeffery}, \binits{S.}},
+\oauthor{\bsnm{Lange}, \binits{T.}},
+\oauthor{\bsnm{Meurer}, \binits{A.}}:
+Quantum algorithms for the subset-sum problem.
+Cryptology {ePrint} Archive, Paper 2013/199.
+Expanded version of the PQCrypto 2013 paper
+(2013).
+\url{https://eprint.iacr.org/2013/199}
+\end{botherref}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Helm and May}{2018}]{ref17}
+\begin{bchapter}
+\bauthor{\bsnm{Helm}, \binits{A.}},
+\bauthor{\bsnm{May}, \binits{A.}}:
+\bctitle{Subset sum quantumly in {$1.17^n$}}.
+In: \bbtitle{13th Conference on the Theory of Quantum Computation,
+  Communication and Cryptography (TQC 2018)}.
+\bsertitle{Leibniz International Proceedings in Informatics},
+vol. \bseriesno{111}.
+\bpublisher{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+\blocation{Dagstuhl, Germany}
+(\byear{2018}).
+\doiurl{10.4230/LIPIcs.TQC.2018.5} .
+\bcomment{Article 5, pp. 5:1--5:15}
+\end{bchapter}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Bonnetain
+  et~al.}{2020}]{bonnetain2020improved}
+\begin{bchapter}
+\bauthor{\bsnm{Bonnetain}, \binits{X.}},
+\bauthor{\bsnm{Bricout}, \binits{R.}},
+\bauthor{\bsnm{Schrottenloher}, \binits{A.}},
+\bauthor{\bsnm{Shen}, \binits{Y.}}:
+\bctitle{Improved classical and quantum algorithms for subset-sum}.
+In: \bbtitle{Advances in Cryptology -- ASIACRYPT 2020}.
+\bsertitle{Lecture Notes in Computer Science},
+vol. \bseriesno{12492},
+pp. \bfpage{633}--\blpage{666}.
+\bpublisher{Springer},
+\blocation{Cham}
+(\byear{2020}).
+\doiurl{10.1007/978-3-030-64834-3_22}
+\end{bchapter}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{Jaques and Rattew}{2025}]{ref18}
+\begin{barticle}
+\bauthor{\bsnm{Jaques}, \binits{S.}},
+\bauthor{\bsnm{Rattew}, \binits{A.G.}}:
+\batitle{{QRAM}: A survey and critique}.
+\bjtitle{Quantum}
+\bvolume{9},
+\bfpage{1922}
+(\byear{2025})
+\doiurl{10.22331/q-2025-12-02-1922}
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{Hou and Perkowski}{2020}]{hou2020}
+\begin{barticle}
+\bauthor{\bsnm{Hou}, \binits{W.}},
+\bauthor{\bsnm{Perkowski}, \binits{M.}}:
+\batitle{Quantum-based algorithm and circuit design for bounded knapsack
+  optimization problem}.
+\bjtitle{Quantum Information and Computation}
+\bvolume{20}(\bissue{9--10}),
+\bfpage{766}--\blpage{786}
+(\byear{2020})
+\doiurl{10.26421/QIC20.9-10-4}
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{Hamitouche et~al.}{2025}]{hamitouche2025}
+\begin{bchapter}
+\bauthor{\bsnm{Hamitouche}, \binits{M.}},
+\bauthor{\bsnm{Hnaien}, \binits{F.}},
+\bauthor{\bsnm{Menacer}, \binits{D.E.}}:
+\bctitle{Towards a quantum resolution of the knapsack problem}.
+In: \bbtitle{Proceedings of the PRICAI 2025 Workshop on Quantum Computing for
+  Search and Optimization Problems}.
+\bsertitle{CDMTCS Research Report Series}.
+\bpublisher{University of Auckland},
+\blocation{Auckland, New Zealand}
+(\byear{2025}).
+\bcomment{Workshop paper}.
+\burl{https://www.cs.auckland.ac.nz/research/groups/CDMTCS/researchreports/download.php?selected-id=904}
+\end{bchapter}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{Wilkening et~al.}{2025a}]{wilkening2025}
+\begin{barticle}
+\bauthor{\bsnm{Wilkening}, \binits{S.}},
+\bauthor{\bsnm{Lefterovici}, \binits{A.-I.}},
+\bauthor{\bsnm{Binkowski}, \binits{L.}},
+\bauthor{\bsnm{Perk}, \binits{M.}},
+\bauthor{\bsnm{Fekete}, \binits{S.P.}},
+\bauthor{\bsnm{Osborne}, \binits{T.J.}}:
+\batitle{A quantum algorithm for solving 0-1 knapsack problems}.
+\bjtitle{npj Quantum Information}
+\bvolume{11},
+\bfpage{146}
+(\byear{2025})
+\doiurl{10.1038/s41534-025-01097-8}
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Wilkening et~al.}{2025b}]{wilkening2025code}
+\begin{botherref}
+\oauthor{\bsnm{Wilkening}, \binits{S.}},
+\oauthor{\bsnm{Lefterovici}, \binits{A.-I.}},
+\oauthor{\bsnm{Binkowski}, \binits{L.}},
+\oauthor{\bsnm{Perk}, \binits{M.}},
+\oauthor{\bsnm{Fekete}, \binits{S.P.}},
+\oauthor{\bsnm{Osborne}, \binits{T.J.}}:
+A quantum algorithm for solving 0-1 Knapsack problems.
+Zenodo.
+Software and experiment data, version R1, released 18 August 2025
+(2025).
+\doiurl{10.5281/zenodo.16895828} .
+\url{https://zenodo.org/records/16895828}
+\end{botherref}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Christiansen et~al.}{2025}]{ref23}
+\begin{bchapter}
+\bauthor{\bsnm{Christiansen}, \binits{P.J.}},
+\bauthor{\bsnm{Binkowski}, \binits{L.}},
+\bauthor{\bsnm{Ramacciotti}, \binits{D.}},
+\bauthor{\bsnm{Wilkening}, \binits{S.}}:
+\bctitle{Quantum tree generator improves {QAOA} state-of-the-art for the
+  knapsack problem}.
+In: \bbtitle{2025 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)}
+(\byear{2025}).
+\doiurl{10.1109/QCE65121.2025.00011} .
+\burl{https://arxiv.org/abs/2411.00518v2}
+\end{bchapter}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{Farhi et~al.}{2014}]{ref25}
+\begin{botherref}
+\oauthor{\bsnm{Farhi}, \binits{E.}},
+\oauthor{\bsnm{Goldstone}, \binits{J.}},
+\oauthor{\bsnm{Gutmann}, \binits{S.}}:
+A quantum approximate optimization algorithm.
+arXiv:1411.4028
+(2014).
+\url{https://arxiv.org/abs/1411.4028}
+\end{botherref}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{Gilliam et~al.}{2021}]{ref26}
+\begin{barticle}
+\bauthor{\bsnm{Gilliam}, \binits{A.}},
+\bauthor{\bsnm{Woerner}, \binits{S.}},
+\bauthor{\bsnm{Gonciulea}, \binits{C.}}:
+\batitle{{Grover} adaptive search for constrained polynomial binary
+  optimization}.
+\bjtitle{Quantum}
+\bvolume{5},
+\bfpage{428}
+(\byear{2021})
+\doiurl{10.22331/q-2021-04-08-428}
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{Sanavio et~al.}{2024}]{ref36}
+\begin{barticle}
+\bauthor{\bsnm{Sanavio}, \binits{C.}},
+\bauthor{\bsnm{Tignone}, \binits{E.}},
+\bauthor{\bsnm{Ercolessi}, \binits{E.}}:
+\batitle{Hybrid classical--quantum branch-and-bound algorithm for solving
+  integer linear problems}.
+\bjtitle{Entropy}
+\bvolume{26}(\bissue{4}),
+\bfpage{345}
+(\byear{2024})
+\doiurl{10.3390/e26040345}
+\end{barticle}
+\endbibitem
+
+%%% 34
+\bibitem[\protect\citeauthoryear{Gabbassov et~al.}{2025}]{gabbassov2025}
+\begin{barticle}
+\bauthor{\bsnm{Gabbassov}, \binits{E.}},
+\bauthor{\bsnm{Rosenberg}, \binits{G.}},
+\bauthor{\bsnm{Scherer}, \binits{A.}}:
+\batitle{Lagrangian duality in quantum optimization: Overcoming {QUBO}
+  limitations for constrained problems}.
+\bjtitle{Physical Review Research}
+\bvolume{7},
+\bfpage{023305}
+(\byear{2025})
+\doiurl{10.1103/53gd-2374}
+\end{barticle}
+\endbibitem
+
+%%% 35
+\bibitem[\protect\citeauthoryear{Martiel and Remaud}{2020}]{martiel2019}
+\begin{bchapter}
+\bauthor{\bsnm{Martiel}, \binits{S.}},
+\bauthor{\bsnm{Remaud}, \binits{M.}}:
+\bctitle{Practical implementation of a quantum backtracking algorithm}.
+In: \bbtitle{SOFSEM 2020: Theory and Practice of Computer Science}.
+\bsertitle{Lecture Notes in Computer Science},
+vol. \bseriesno{12011},
+pp. \bfpage{597}--\blpage{606}.
+\bpublisher{Springer},
+\blocation{Cham}
+(\byear{2020}).
+\doiurl{10.1007/978-3-030-38919-2_49} .
+\burl{https://arxiv.org/abs/1908.11291}
+\end{bchapter}
+\endbibitem
+
+%%% 36
+\bibitem[\protect\citeauthoryear{Cuccaro et~al.}{2004}]{cuccaro2004}
+\begin{botherref}
+\oauthor{\bsnm{Cuccaro}, \binits{S.A.}},
+\oauthor{\bsnm{Draper}, \binits{T.G.}},
+\oauthor{\bsnm{Kutin}, \binits{S.A.}},
+\oauthor{\bsnm{Moulton}, \binits{D.P.}}:
+A new quantum ripple-carry addition circuit.
+arXiv:quant-ph/0410184
+(2004).
+\doiurl{10.48550/arXiv.quant-ph/0410184} .
+\url{https://arxiv.org/abs/quant-ph/0410184}
+\end{botherref}
+\endbibitem
+
+%%% 37
+\bibitem[\protect\citeauthoryear{Barenco et~al.}{1995}]{barenco1995}
+\begin{barticle}
+\bauthor{\bsnm{Barenco}, \binits{A.}},
+\bauthor{\bsnm{Bennett}, \binits{C.H.}},
+\bauthor{\bsnm{Cleve}, \binits{R.}},
+\bauthor{\bsnm{DiVincenzo}, \binits{D.P.}},
+\bauthor{\bsnm{Margolus}, \binits{N.}},
+\bauthor{\bsnm{Shor}, \binits{P.}},
+\bauthor{\bsnm{Sleator}, \binits{T.}},
+\bauthor{\bsnm{Smolin}, \binits{J.A.}},
+\bauthor{\bsnm{Weinfurter}, \binits{H.}}:
+\batitle{Elementary gates for quantum computation}.
+\bjtitle{Physical Review A}
+\bvolume{52}(\bissue{5}),
+\bfpage{3457}--\blpage{3467}
+(\byear{1995})
+\doiurl{10.1103/PhysRevA.52.3457}
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem[\protect\citeauthoryear{Thapliyal et~al.}{2016}]{thapliyal2016}
+\begin{botherref}
+\oauthor{\bsnm{Thapliyal}, \binits{H.}},
+\oauthor{\bsnm{Varun}, \binits{T.S.S.}},
+\oauthor{\bsnm{Munoz-Coreas}, \binits{E.}}:
+Quantum Circuit Design of Integer Division Optimizing Ancillary Qubits and
+  {T}-Count.
+arXiv:1609.01241
+(2016).
+\doiurl{10.48550/arXiv.1609.01241} .
+\url{https://arxiv.org/abs/1609.01241}
+\end{botherref}
+\endbibitem
+
+%%% 39
+\bibitem[\protect\citeauthoryear{Preskill}{2018}]{ref31}
+\begin{barticle}
+\bauthor{\bsnm{Preskill}, \binits{J.}}:
+\batitle{Quantum computing in the {NISQ} era and beyond}.
+\bjtitle{Quantum}
+\bvolume{2},
+\bfpage{79}
+(\byear{2018})
+\doiurl{10.22331/q-2018-08-06-79}
+\end{barticle}
+\endbibitem
+
+%%% 40
+\bibitem[\protect\citeauthoryear{Javadi-Abhari et~al.}{2024}]{ref33}
+\begin{botherref}
+\oauthor{\bsnm{Javadi-Abhari}, \binits{A.}},
+\oauthor{\bsnm{Treinish}, \binits{M.}},
+\oauthor{\bsnm{Krsulich}, \binits{K.}},
+\oauthor{\bsnm{Wood}, \binits{C.J.}},
+\oauthor{\bsnm{Lishman}, \binits{J.}},
+\oauthor{\bsnm{Gacon}, \binits{J.}},
+\oauthor{\bsnm{Martiel}, \binits{S.}},
+\oauthor{\bsnm{Nation}, \binits{P.D.}},
+\oauthor{\bsnm{Bishop}, \binits{L.S.}},
+\oauthor{\bsnm{Cross}, \binits{A.W.}},
+\oauthor{\bsnm{Johnson}, \binits{B.R.}},
+\oauthor{\bsnm{Gambetta}, \binits{J.M.}}:
+Quantum computing with {Qiskit}.
+arXiv:2405.08810
+(2024).
+\doiurl{10.48550/arXiv.2405.08810} .
+\url{https://arxiv.org/abs/2405.08810}
+\end{botherref}
+\endbibitem
+
+\end{thebibliography}

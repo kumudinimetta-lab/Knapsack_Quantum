@@ -1,0 +1,102 @@
+{
+  "scope": "Fresh aggregation of saved records, not new experiments",
+  "classification": "DERIVED",
+  "coverage": {
+    "main": [
+      700,
+      3148192,
+      12592768
+    ],
+    "core": [
+      700,
+      2056264,
+      8225056
+    ]
+  },
+  "bank_checks": {
+    "qft_columns": 1120,
+    "boolean_columns": 2216,
+    "gate_mismatches": 0,
+    "expected_insufficient_bank_disagreements": 8,
+    "retained_initialization_failures": 1
+  },
+  "control_checks": {
+    "boolean_columns": 104,
+    "qft_columns": 208,
+    "coherent_amplitudes": 16,
+    "transpiler_conditions": 4,
+    "mismatches": 0
+  },
+  "primal_checks": {
+    "instances": 1888,
+    "systematic_n2": 1792,
+    "feasible_prefixes": 15999,
+    "root_tail_value_mismatches": 0,
+    "grid_floor_mismatches": 0,
+    "dp_free_floor_mismatches": 0,
+    "continuous_floor_mismatches": 0,
+    "independent_minimum_certificates": 1369,
+    "minimum_certificate_failures": 0,
+    "independent_critical_interval_checks": 1637,
+    "critical_interval_mismatches": 0,
+    "independent_grid_minimum_certificates": 1369,
+    "grid_minimum_certificate_failures": 0,
+    "grid_critical_coverage_mismatches": 0,
+    "barrier_endpoint_checks": 14,
+    "barrier_endpoint_mismatches": 0
+  },
+  "resource_ratios": {
+    "allocated_qubits": {
+      "n": 105,
+      "median": 0.46405228758169936,
+      "minimum": 0.3973509933774834,
+      "maximum": 0.5294117647058824,
+      "lower": 105,
+      "equal": 0,
+      "higher": 0
+    },
+    "active_qubits": {
+      "n": 105,
+      "median": 0.49079754601226994,
+      "minimum": 0.36764705882352944,
+      "maximum": 0.5454545454545454,
+      "lower": 105,
+      "equal": 0,
+      "higher": 0
+    },
+    "cx": {
+      "n": 105,
+      "median": 0.49812142250762775,
+      "minimum": 0.09333834366714683,
+      "maximum": 0.9180296829257636,
+      "lower": 105,
+      "equal": 0,
+      "higher": 0
+    },
+    "u": {
+      "n": 105,
+      "median": 0.4995024105444734,
+      "minimum": 0.09419041547413969,
+      "maximum": 0.9178329183480725,
+      "lower": 105,
+      "equal": 0,
+      "higher": 0
+    },
+    "depth": {
+      "n": 105,
+      "median": 1.0720489143998004,
+      "minimum": 0.07975817286162114,
+      "maximum": 2.0479818365287588,
+      "lower": 38,
+      "equal": 0,
+      "higher": 67
+    }
+  },
+  "dense_errors": {
+    "prep_logical_only": 0.0,
+    "prep_full_layout": 0.0,
+    "raw_full_oracle": 4.770005073378115e-15,
+    "cancelled_full_oracle": 1.9379803976335004e-15
+  },
+  "discrepancies": 0
+}

@@ -1,0 +1,61 @@
+{
+  "classification": "DERIVED exact arithmetic checks, not quantum simulation",
+  "source_sha256": "1df7cc3348c6aad7b236600533a78a75537a88727da2f459acea4539d905a634",
+  "counts": {
+    "barrier_instances": 5,
+    "barrier_intervals": 11,
+    "barrier_feasible_prefixes": 332,
+    "core_cases": 53,
+    "core_solutions_preserved": 61,
+    "radius_states": 726,
+    "radius_candidates": 463,
+    "mismatches": 0
+  },
+  "fixed_settings": {
+    "seed": 20261027,
+    "random_cases": 50,
+    "barrier_main_counts": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "denominator_wording_counterexample": {
+    "w": [
+      6
+    ],
+    "v": [
+      4
+    ],
+    "R": 1,
+    "density": "2/3",
+    "fractional_assignment": "1/6",
+    "LP_value": "2/3",
+    "density_denominator": 3
+  },
+  "core_low_threshold_boundary": {
+    "w": [
+      2,
+      1
+    ],
+    "v": [
+      4,
+      1
+    ],
+    "W": 2,
+    "greedy_L": 4,
+    "fixed_in": [
+      0
+    ],
+    "fixed_out": [
+      1
+    ],
+    "feasible_solution_below_L": [
+      0,
+      1
+    ],
+    "value": 1
+  }
+}

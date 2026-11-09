@@ -1,0 +1,1017 @@
+{
+  "ref1": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "ref1",
+      "metadata": {
+        "type": "article",
+        "author": "George B. Dantzig",
+        "title": "Discrete-Variable Extremum Problems",
+        "journal": "Operations Research",
+        "volume": "5",
+        "number": "2",
+        "pages": "266--288",
+        "year": "1957",
+        "doi": "10.1287/opre.5.2.266"
+      },
+      "status": "CORRECT_REAL_RECORD_PAGE_RANGE",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/opre.5.2.266",
+      "evidence": [
+        ".firecrawl/dantzig1957.md:333-372,7857",
+        ".firecrawl/theory_refs_20261026_dantzig_citation.md",
+        ".firecrawl/theory_refs_20261026_primary_web_5.json"
+      ],
+      "passage": "Publisher Cite as confirms 5(2):266\u2013288; abstract discusses LP for discrete-variable optimization.",
+      "supports": "Historical LP context; retain this genuine reference and fix pages.",
+      "does_not_support": "The inspected abstract does not establish a named precision lemma, tightness for every integer instance, or that every modern exact solver uses precisely this bound.",
+      "fulltext": "UNRESOLVED: full paper access; publisher PDF redirects to abstract. No theorem number invented.",
+      "lr_recommendation": "Use 'fractional LP bounds' without 'tight' or universal solver claims."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": [
+      143
+    ]
+  },
+  "ref2": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "ref2",
+      "metadata": {
+        "type": "article",
+        "author": "Ellis Horowitz and Sartaj Sahni",
+        "title": "Computing Partitions with Applications to the Knapsack Problem",
+        "journal": "Journal of the ACM",
+        "volume": "21",
+        "number": "2",
+        "pages": "277--292",
+        "year": "1974",
+        "doi": "10.1145/321812.321823"
+      },
+      "status": "VERIFIED_METADATA_AND_PRIMARY_FULLTEXT",
+      "primary_url": "https://www.cise.ufl.edu/~sahni/papers/computingPartitions.pdf",
+      "evidence": [
+        ".firecrawl/horowitz-sahni-doi.md:148-158",
+        ".firecrawl/theory_refs_20261026_hs.json:data.web[0]",
+        ".firecrawl/theory_refs_20261026_hs_author_full.md:1129-1280"
+      ],
+      "passage": "Section 3 Algorithm 2(b) splits into two lists; its enumeration time includes output term rQ. Section 5 eliminates dominated weight/profit pairs and gives a splitting implementation taking O(2^(r/2)).",
+      "supports": "Classical meet-in-the-middle baseline in the arithmetic/comparison operation model.",
+      "does_not_support": "No lower bound proving worst-case optimality of the algorithm; no current-best claim. A separate binary search per half-subset incurs an additional logarithmic list-size factor unless using soft-O or a different merge.",
+      "symbol_map": "Source r\u2192item count n; source si\u2192weights wi; pi\u2192values vi; M\u2192capacity W; delta\u2192binary decision.",
+      "lr_recommendation": "Call it a classical O(2^(n/2)) baseline, not the best provable algorithm without scope."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": [
+      61,
+      198
+    ]
+  },
+  "ref3": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "ref3",
+      "metadata": {
+        "type": "book",
+        "author": "Hans Kellerer and Ulrich Pferschy and David Pisinger",
+        "title": "Knapsack Problems",
+        "publisher": "Springer",
+        "address": "Berlin, Heidelberg",
+        "year": "2004",
+        "doi": "10.1007/978-3-540-24777-7",
+        "isbn": "978-3-540-40286-2"
+      },
+      "status": "VERIFIED_PUBLISHER_METADATA_TOC",
+      "primary_url": "https://link.springer.com/book/10.1007/978-3-540-24777-7",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_kpp_primary.md:223-274,408-430"
+      ],
+      "passage": "First edition copyright2004. Ch2 Basic Algorithmic Concepts pp15\u201342; Ch3 Advanced Algorithmic Concepts pp43\u201372; Ch5 Exact Solution pp117\u2013160.",
+      "supports": "General reference for exact knapsack methods.",
+      "does_not_support": "Publisher metadata/TOC alone does not verify any exact theorem/page for O(nW), assumptions about typical cores or our benchmark generator.",
+      "fulltext": "UNRESOLVED: exact internal subsection/page; paywall. No guessed theorem number.",
+      "lr_recommendation": "A broad review citation is appropriate; avoid assigning a precise uninspected theorem."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": [
+      496
+    ]
+  },
+  "ref4": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "ref4",
+      "metadata": {
+        "type": "article",
+        "author": "David Pisinger",
+        "title": "Core Problems in Knapsack Algorithms",
+        "journal": "Operations Research",
+        "volume": "47",
+        "number": "4",
+        "pages": "570--575",
+        "year": "1999",
+        "doi": "10.1287/opre.47.4.570"
+      },
+      "status": "VERIFIED_METADATA_ABSTRACT_CONTRADICTS_CURRENT_ATTRIBUTION",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/opre.47.4.570",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_pisinger_core.json:data.web[0]"
+      ],
+      "passage": "Abstract credits Balas and Zemel with introducing cores in the1980s, challenges uniform weights within cores, and identifies difficult capacities and inadequate testing.",
+      "supports": "Core methods can fail under naive typical-instance assumptions; capacity and instance class matter.",
+      "does_not_support": "Pisinger1999 introduced core, universally small/easy core, or attribution of all exact reduced-cost fixing to this article.",
+      "fulltext": "Publisher abstract and bibliography read; full article not accessed.",
+      "lr_recommendation": "Retain as a caution and testing source; cite Balas\u2013Zemel for origin."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": [
+      171,
+      194
+    ]
+  },
+  "ref5": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "ref5",
+      "metadata": {
+        "type": "inproceedings",
+        "author": "Anja Becker and Jean-S{\\'e}bastien Coron and Antoine Joux",
+        "title": "Improved Generic Algorithms for Hard Knapsacks",
+        "booktitle": "Advances in Cryptology -- EUROCRYPT 2011",
+        "series": "Lecture Notes in Computer Science",
+        "volume": "6632",
+        "pages": "364--385",
+        "year": "2011",
+        "publisher": "Springer",
+        "doi": "10.1007/978-3-642-20465-4_21"
+      },
+      "status": "VERIFIED_PUBLISHER_FULLTEXT",
+      "primary_url": "https://link.springer.com/content/pdf/10.1007/978-3-642-20465-4_21.pdf",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_bcj.json:data.web[0],data.web[2]",
+        ".firecrawl/theory_refs_20261026_primary_web_3.json",
+        ".firecrawl/theory_refs_20261026_primary_web_5.json"
+      ],
+      "passage": "Section3 extends representations using {-1,0,+1}. Section3.4 treats heuristic/random behavior. Section3.6 Theorem2 gives a probabilistic guarantee for a large fraction of equibalanced densityD<1 instances.",
+      "supports": "Representation-based subset-sum advances under specified input models; not general optimization of arbitrary weight/value pairs.",
+      "does_not_support": "Every representation algorithm is merely heuristic, or softO(2^.291n) is a worst-case general 0/1 optimization guarantee.",
+      "theorem": "Theorem2: any epsilon>0, fraction at least1\u2212140*2^(\u2212epsilon*n) of equibalanced densityD<1 instances, existing balanced solution, modified algorithm finds it in softO(2^((.291+3epsilon)*n)).",
+      "symbol_map": "Source ai\u2192subset-sum input coefficient; targetS\u2192exact sum; not separate manuscript wi/vi optimization instance.",
+      "lr_recommendation": "Separate subset-sum input models from our knapsack optimization problem; no exact-best label."
+    },
+    "literature_lines": [
+      96
+    ],
+    "other_lines": []
+  },
+  "beier2004random": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "beier2004random",
+      "metadata": {
+        "type": "article",
+        "author": "Ren{\\'e} Beier and Berthold V{\\\"o}cking",
+        "title": "Random knapsack in expected polynomial time",
+        "journal": "Journal of Computer and System Sciences",
+        "volume": "69",
+        "number": "3",
+        "pages": "306--329",
+        "year": "2004",
+        "doi": "10.1016/j.jcss.2004.04.004"
+      },
+      "status": "VERIFIED_METADATA_PRIMARY_ABSTRACT",
+      "primary_url": "https://www.sciencedirect.com/science/article/pii/S0022000004000431",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_beier.json:data.web[0]",
+        ".firecrawl/theory_refs_20261026_primary_web_1.json",
+        ".firecrawl/theory_refs_20261026_primary_web_2.json"
+      ],
+      "passage": "Publisher abstract: average-case Pareto-optimal filling counts imply expected polynomial enumeration by Nemhauser\u2013Ullmann; adversarial weights and random profits or conversely, under their probability-distribution conditions.",
+      "supports": "Instance distributions and correlations can change exact classical difficulty; average-case results need input assumptions.",
+      "does_not_support": "Polynomial deterministic worst-case knapsack, polynomial static-prefix branch-and-bound trees, or automatic transfer to our discrete five benchmark classes.",
+      "fulltext": "2004 journal full theorem not read; institutional2003 TR abstract corroborates scope but is not substituted for journal theorem numbers.",
+      "lr_recommendation": "Keep qualitative and distribution-qualified; no unverified explicit complexity bound."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": []
+  },
+  "pisinger1997minimal": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "pisinger1997minimal",
+      "metadata": {
+        "type": "article",
+        "author": "David Pisinger",
+        "title": "A Minimal Algorithm for the 0-1 Knapsack Problem",
+        "journal": "Operations Research",
+        "volume": "45",
+        "number": "5",
+        "pages": "758--767",
+        "year": "1997",
+        "doi": "10.1287/opre.45.5.758"
+      },
+      "status": "VERIFIED_PUBLISHER_METADATA_ABSTRACT",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/opre.45.5.758",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_minknap_primary.md:360-368,2451"
+      ],
+      "passage": "Abstract says exact core cannot be identified before solving KP; describes dynamic programming with core extended as needed and lazy sorting/reduction.",
+      "supports": "Strong practical expanding-core DP baseline; adaptive classical preprocessing already exists.",
+      "does_not_support": "Cheap prior exact-core identification, a provably fixed small core on all inputs, or optimality of preprocessing/gate cost.",
+      "lr_recommendation": "Describe lazy expanding-core DP and retain experimental strength as source-specific, not global superiority."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": []
+  },
+  "martello1999combo": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "martello1999combo",
+      "metadata": {
+        "type": "article",
+        "author": "Silvano Martello and David Pisinger and Paolo Toth",
+        "title": "Dynamic Programming and Strong Bounds for the 0-1 Knapsack Problem",
+        "journal": "Management Science",
+        "volume": "45",
+        "number": "3",
+        "pages": "414--424",
+        "year": "1999",
+        "doi": "10.1287/mnsc.45.3.414"
+      },
+      "status": "VERIFIED_PUBLISHER_METADATA_ABSTRACT",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/mnsc.45.3.414",
+      "evidence": [
+        ".firecrawl/combo1999.md:460-464"
+      ],
+      "passage": "Abstract combines prior exact approaches, valid inequalities/surrogate relaxation, and a new initial core.",
+      "supports": "COMBO is a strong combined exact baseline using more than a plain static binary tree.",
+      "does_not_support": "A plain DFS on our chosen tree represents COMBO, old machine timings establish current runtime superiority, or asymptotic quantum advantage over COMBO.",
+      "lr_recommendation": "Retain as strong classical solver context without transplanting historical timings."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": []
+  },
+  "dey2021random": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "dey2021random",
+      "metadata": {
+        "type": "misc",
+        "author": "Santanu S. Dey and Yatharth Dubey and Marco Molinaro",
+        "title": "Branch-and-Bound Solves Random Binary IPs in Polytime",
+        "year": "2021",
+        "eprint": "2007.15192",
+        "archivePrefix": "arXiv",
+        "primaryClass": "math.OC",
+        "note": "Version 4, 16 September 2021; first submitted 2020",
+        "url": "https://arxiv.org/abs/2007.15192v4"
+      },
+      "status": "VERIFIED_PRIMARY_FULLTEXT_VERSION4",
+      "primary_url": "https://arxiv.org/html/2007.15192v4",
+      "evidence": [
+        ".firecrawl/theory_search_dey_0.md:11-26,180-246,614-626",
+        ".firecrawl/theory_refs_20261026_primary_web_2.json"
+      ],
+      "passage": "Section3 Lagrangian reduced costs Eq2\u20133; Theorem3 bounds best-bound tree by2*n*|G|+1. Corollary3 gives geometric counting bound. Theorem1 random polynomial guarantee assumes iid continuousuniform coefficient/objective data, fixed constraint count, proportional RHS.",
+      "supports": "Known reduced-cost loss/duality and counting ideas; distinction between deterministic tree certificate and random-instance theorem.",
+      "does_not_support": "Transfer best-bound node-count theorem to arbitrary static-prefix DFS or random theorem to five discrete benchmark classes; newness of reduced-cost identity.",
+      "symbol_map": "n source=number of variables; m source=number constraints(ours1), not manuscript core itemcountm; A_1i=wi,c_i=vi,b_1=W,lambda scalar; G binary points with reduced-cost loss\u2264IPGap.",
+      "lr_recommendation": "Reference established dual/counting context with explicit node-selection/input-model qualifications."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": []
+  },
+  "erickson2019algorithms": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "erickson2019algorithms",
+      "metadata": {
+        "type": "book",
+        "author": "Jeff Erickson",
+        "title": "Algorithms",
+        "edition": "1",
+        "year": "2019",
+        "publisher": "Self-published",
+        "isbn": "978-1-792-64483-2",
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/"
+      },
+      "status": "VERIFIED_AUTHOR_BOOK_AND_CHAPTER",
+      "primary_url": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/04-greedy.pdf",
+      "evidence": [
+        ".firecrawl/theory_erickson_stabbing_20261024_0.md",
+        ".firecrawl/theory_erickson_stabbing_20261024_2.md",
+        ".firecrawl/theory_refs_20261026_primary_web_6.json"
+      ],
+      "passage": "First edition June2019. Chapter4 exercises printedp178 explicitly poses minimum point stabbing of intervals; extracted exercise number illegible, so none supplied.",
+      "supports": "Interval stabbing is an established combinatorial problem; not a new general optimization principle.",
+      "does_not_support": "Book exercise proves our half-open/open rational-cell adaptation, supplies our exact endpoint construction, or certifies minimum gates.",
+      "lr_recommendation": "Cite as standard problem background; retain separate proof of strict-boundary adaptation."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": []
+  },
+  "balas1980core": {
+    "ledger": "theory_reference_audit.json",
+    "source": {
+      "key": "balas1980core",
+      "metadata": {
+        "type": "article",
+        "author": "Egon Balas and Eitan Zemel",
+        "title": "An Algorithm for Large Zero-One Knapsack Problems",
+        "journal": "Operations Research",
+        "volume": "28",
+        "number": "5",
+        "pages": "1130--1154",
+        "year": "1980",
+        "doi": "10.1287/opre.28.5.1130"
+      },
+      "status": "VERIFIED_PRIMARY_METADATA_ABSTRACT_ADD_HISTORICAL_ORIGIN",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/opre.28.5.1130",
+      "evidence": [
+        ".firecrawl/theory_refs_20261026_primary_web_1.json",
+        ".firecrawl/theory_refs_20261026_primary_web_2.json"
+      ],
+      "passage": "Publisher abstract introduces core as equivalent KP on subset variables and says exact core cannot be identified without solving KP; LP gives a satisfactory approximation.",
+      "supports": "Historical origin of core-based methods and LP-guided approximate core identification.",
+      "does_not_support": "A uniformly small exact core is discoverable at negligible cost for every instance.",
+      "lr_recommendation": "Add alongside Pisinger1997/1999 when discussing core methods."
+    },
+    "literature_lines": [
+      92
+    ],
+    "other_lines": []
+  },
+  "draper2000": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "draper2000",
+      "authors": [
+        "Thomas G. Draper"
+      ],
+      "title": "Addition on a Quantum Computer",
+      "year": 2000,
+      "kind": "arXiv preprint",
+      "arxiv": "quant-ph/0008033",
+      "doi": "10.48550/arXiv.quant-ph/0008033",
+      "url": "https://arxiv.org/abs/quant-ph/0008033",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/0008033v1",
+      "locations": [
+        "Section 3, equations (1)-(2)",
+        "Section 5, Quantum Addition"
+      ],
+      "supports": "QFT addition by commuting controlled phase rotations, with no temporary carry register; known constants can be programmed into rotations.",
+      "does_not_support": "Zero workspace for an entire LP oracle, free exact physical rotations, or the old paper's numerical register/gate/T-count claims.",
+      "decision": "RETAIN; correct entry type/identifier; cite as primitive background."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": [
+      258
+    ]
+  },
+  "vedral1996": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "vedral1996",
+      "authors": [
+        "Vlatko Vedral",
+        "Adriano Barenco",
+        "Artur Ekert"
+      ],
+      "title": "Quantum networks for elementary arithmetic operations",
+      "journal": "Physical Review A",
+      "volume": "54",
+      "number": "1",
+      "pages": "147-153",
+      "year": 1996,
+      "doi": "10.1103/PhysRevA.54.147",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.54.147",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/9511018v1",
+      "locations": [
+        "Section III.1 plain adder, equation (9)",
+        "Section III.3 controlled multiplier modulo N"
+      ],
+      "supports": "Explicit reversible arithmetic and constant multiplication via conditional shifted modular additions.",
+      "does_not_support": "That our current compiler literally instantiates the VBE modular multiplier, or any universal one-ancilla complete-oracle count.",
+      "decision": "RETAIN; add DOI and verified full names/page range; background, not automatic code provenance."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": [
+      258,
+      702
+    ]
+  },
+  "barenco1995": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "barenco1995",
+      "authors": [
+        "Adriano Barenco",
+        "Charles H. Bennett",
+        "Richard Cleve",
+        "David P. DiVincenzo",
+        "Norman Margolus",
+        "Peter Shor",
+        "Tycho Sleator",
+        "John A. Smolin",
+        "Harald Weinfurter"
+      ],
+      "title": "Elementary gates for quantum computation",
+      "journal": "Physical Review A",
+      "volume": "52",
+      "number": "5",
+      "pages": "3457-3467",
+      "year": 1995,
+      "doi": "10.1103/PhysRevA.52.3457",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.52.3457",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/9503016v1",
+      "page_range_primary_confirmation": "https://math.mit.edu/~shor/elecpubs.html",
+      "locations": [
+        "Lemma 5.1 (SU(2) assumption)",
+        "Lemma 6.1 (V squared equals U)",
+        "Corollary 6.2",
+        "Section 6.2 warns about relative phase substitutions"
+      ],
+      "supports": "Elementary controlled-unitary decompositions; a doubly controlled U uses controlled V/V-dagger blocks with V^2=U.",
+      "does_not_support": "Replacing three controlled rotations by three single-qubit synthesis rotations, a Ross-Selinger precision/T-cost estimate, or phase-safe arbitrary relative-phase substitutions.",
+      "decision": "RETAIN; add DOI/full page range; old body costing attribution needs separate repair."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": [
+      275
+    ]
+  },
+  "thapliyal2016": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "thapliyal2016",
+      "authors": [
+        "Himanshu Thapliyal",
+        "T. S. S. Varun",
+        "Edgard Munoz-Coreas"
+      ],
+      "title": "Quantum Circuit Design of Integer Division Optimizing Ancillary Qubits and T-Count",
+      "year": 2016,
+      "kind": "arXiv preprint",
+      "arxiv": "1609.01241",
+      "doi": "10.48550/arXiv.1609.01241",
+      "url": "https://arxiv.org/abs/1609.01241",
+      "locations": [
+        "Primary arXiv abstract/metadata"
+      ],
+      "supports": "Existence of a Clifford+T restoring integer-division design built from conditional addition and subtraction.",
+      "does_not_support": "That the new static-bank circuits implement any divider, or that old remainder-to-ancilla mapping/counts follow without deriving and testing that layout.",
+      "full_text_status": "2016 abstract/metadata verified; full HTML fetch failed. The cached four-author 2018 paper is a distinct extended work and was not silently substituted.",
+      "decision": "RETAIN existing key during bibliography/LR-only stage; do not break current body citations. Mark stale divider implementation claim for next body rewrite."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": [
+      258
+    ]
+  },
+  "cuccaro2004": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "cuccaro2004",
+      "authors": [
+        "Steven A. Cuccaro",
+        "Thomas G. Draper",
+        "Samuel A. Kutin",
+        "David Petrie Moulton"
+      ],
+      "title": "A new quantum ripple-carry addition circuit",
+      "year": 2004,
+      "kind": "arXiv preprint",
+      "arxiv": "quant-ph/0410184",
+      "doi": "10.48550/arXiv.quant-ph/0410184",
+      "url": "https://arxiv.org/abs/quant-ph/0410184",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/0410184v1",
+      "locations": [
+        "Section 2 basic MAJ/UMA circuit",
+        "Section 3 optimized circuit",
+        "Section 4 extensions"
+      ],
+      "supports": "Linear-depth one-carry-ancilla ripple addition and clean MAJ/UMA computation.",
+      "does_not_support": "Attributing optimized Section 3 resource constants to our simpler Section 2-based compact control, or treating a one-ancilla adder as a one-ancilla complete pruning circuit.",
+      "decision": "ADD; identify arXiv preprint honestly; Section 2 specifically supports our simple compact arithmetic."
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": []
+  },
+  "hou2020": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "hou2020",
+      "authors": [
+        "Wenjun Hou",
+        "Marek Perkowski"
+      ],
+      "title": "Quantum-based algorithm and circuit design for bounded Knapsack optimization problem",
+      "journal": "Quantum Information and Computation",
+      "volume": "20",
+      "number": "9-10",
+      "pages": "766-786",
+      "year": 2020,
+      "doi": "10.26421/QIC20.9-10-4",
+      "url": "https://doi.org/10.26421/QIC20.9-10-4",
+      "primary_full_text": "https://www.rintonpress.com/xxqic20/qic-20-910/0766-0786.pdf",
+      "locations": [
+        "Section 4 decision oracle",
+        "Sections 5-8 comparison/addition/multiplication",
+        "Section 10 and Table 10.1 simulator verification",
+        "Section 11 gate usage"
+      ],
+      "supports": "Published bounded-knapsack Grover decision-oracle construction, arithmetic circuits and Q# local simulator tests.",
+      "does_not_support": "An LP-prefix integer-pruning bank, a full-optimizer physical speedup, or an instruction to repeat the source's global first claim.",
+      "decision": "ADD as constructive prior oracle work; scope bounded knapsack correctly."
+    },
+    "literature_lines": [
+      98,
+      117
+    ],
+    "other_lines": []
+  },
+  "hamitouche2025": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "hamitouche2025",
+      "authors": [
+        "Monsef Hamitouche",
+        "Faicel Hnaien",
+        "Djamel Eddine Menacer"
+      ],
+      "title": "Towards a Quantum Resolution of the Knapsack Problem",
+      "year": 2025,
+      "kind": "Workshop paper in university research-report proceedings",
+      "booktitle": "Proceedings of the PRICAI 2025 Workshop on Quantum Computing for Search and Optimization Problems",
+      "series": "CDMTCS Research Report Series",
+      "number": "CDMTCS-586",
+      "publisher": "University of Auckland",
+      "paper_local_pages": "1-14",
+      "PDF_one_based_pages": "19-32",
+      "continuous_proceedings_pages": "NOT_ASSERTED",
+      "doi": null,
+      "doi_status": "No DOI identified in inspected primary PDF/program; no absence proof asserted.",
+      "url": "https://www.cs.auckland.ac.nz/research/groups/CDMTCS/researchreports/download.php?selected-id=904",
+      "locations": [
+        "Section 4 reversible feasibility/improvement oracle",
+        "Section 5, Algorithm 1, step 1: classical upper bound, e.g. fractional knapsack",
+        "Section 5 enhanced variant: ancilla reuse/uncomputation",
+        "Section 7 limitations"
+      ],
+      "supports": "Prior hybrid B&B with classical fractional upper-bound pruning, Grover-based improving-completion search, QFT arithmetic and ancilla reuse.",
+      "does_not_support": "A fully coherent LP-prefix oracle, our floor-preserving static bank, a proven overall quantum speedup, or a journal/LNCS publication claim.",
+      "metadata_note": "Cover says April 2025 while the official program places the workshop on 17 November 2025; propose year only, no inferred publication month.",
+      "decision": "ADD as workshop/report prior work; omit invented DOI and continuous pagination."
+    },
+    "literature_lines": [
+      98,
+      117
+    ],
+    "other_lines": []
+  },
+  "wilkening2025": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "wilkening2025",
+      "authors": [
+        "S\u00f6ren Wilkening",
+        "Andreea-Iulia Lefterovici",
+        "Lennart Binkowski",
+        "Michael Perk",
+        "S\u00e1ndor P. Fekete",
+        "Tobias J. Osborne"
+      ],
+      "title": "A quantum algorithm for solving 0-1 Knapsack problems",
+      "journal": "npj Quantum Information",
+      "volume": "11",
+      "article_number": "146",
+      "year": 2025,
+      "published": "2025-08-26",
+      "doi": "10.1038/s41534-025-01097-8",
+      "url": "https://www.nature.com/articles/s41534-025-01097-8",
+      "supplement": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41534-025-01097-8/MediaObjects/41534_2025_1097_MOESM1_ESM.pdf",
+      "locations": [
+        "Main text: QTG and amplitude amplification; QBnB benchmarking",
+        "Supplement E.3-E.5 arithmetic/comparisons",
+        "Supplement F.2 fractional-greedy QBnB upper bound and benchmark assumptions"
+      ],
+      "supports": "Prior gate-model knapsack QTG with amplitude amplification; published QFT arithmetic analysis; fractional-greedy bounds already inside QBnB benchmarking.",
+      "does_not_support": "Describing their QTG solely as QAOA, claiming no prior LP pruning, or calling our serial quantum-threshold completion their released optimized oracle.",
+      "decision": "ADD as closest substantive prior work, with an explicit reconstruction distinction."
+    },
+    "literature_lines": [
+      98,
+      104,
+      118
+    ],
+    "other_lines": []
+  },
+  "wilkening2025code": {
+    "ledger": "circuit_reference_audit.json",
+    "source": {
+      "key": "wilkening2025code",
+      "authors": [
+        "S\u00f6ren Wilkening",
+        "Andreea-Iulia Lefterovici",
+        "Lennart Binkowski",
+        "Michael Perk",
+        "S\u00e1ndor P. Fekete",
+        "Tobias J. Osborne"
+      ],
+      "title": "A quantum algorithm for solving 0-1 Knapsack problems",
+      "kind": "Software and experiment data",
+      "version": "R1",
+      "publisher": "Zenodo",
+      "published": "2025-08-18",
+      "year": 2025,
+      "doi": "10.5281/zenodo.16895828",
+      "concept_doi_not_used_for_pinned_release": "10.5281/zenodo.16895827",
+      "url": "https://zenodo.org/records/16895828",
+      "repository": "https://github.com/SoerenWilkening/QTG_0-1Knapsack/tree/R1",
+      "commit": "d76de0d9f438e385655d9828ee2bf92ea2cb3bfb",
+      "archive_sha256": "8f479e92a7fc8003df85e9e548052d2a7fe21ed7885ed64245e52203b0e3491e",
+      "supports": "Pinned authors' released source/data provenance and the bounded call-path audit.",
+      "does_not_support": "A universal absence claim or a released-oracle gate/runtime victory; the audited QBnB path uses classical host bounds plus resource counters.",
+      "decision": "ADD when describing the release/code audit; cite version DOI rather than floating concept DOI."
+    },
+    "literature_lines": [
+      98,
+      104,
+      118
+    ],
+    "other_lines": []
+  },
+  "ref8": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref8",
+      "primary_url": "https://arxiv.org/abs/quant-ph/9605043",
+      "source_location": "Original STOC paper/abstract; ACM DOI10.1145/237814.237866",
+      "supports": "Unstructured quantum search query scaling",
+      "limits": "Query count excludes reversible implementation cost; not a structured knapsack lower bound.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      94
+    ],
+    "other_lines": [
+      63
+    ]
+  },
+  "ref9": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref9",
+      "primary_url": "https://arxiv.org/html/quant-ph/9701001v1",
+      "source_location": "Section3.1 and Theorem3.5",
+      "supports": "Black-box and random-oracle lower-bound context",
+      "limits": "Theorem3.5 concerns random-oracle NP and time o(2^(n/2)); it does not rule out structure-exploiting knapsack algorithms.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      94
+    ],
+    "other_lines": []
+  },
+  "ref11": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref11",
+      "primary_url": "https://arxiv.org/html/quant-ph/0005055v1",
+      "source_location": "Section2, Theorem3; arXiv journal reference/related DOI; AMS volume305 cover",
+      "supports": "Amplitude amplification using A and its inverse",
+      "limits": "Theorem3 assumes measurement-free A, success probability a>0; expected O(1/sqrt(a)); zero-solution handling requires more than that statement. Publisher cover gives Quantum Computation and Information despite arXiv journal-reference title discrepancy.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      94
+    ],
+    "other_lines": [
+      63,
+      175
+    ]
+  },
+  "ref12": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref12",
+      "primary_url": "https://www.math.canterbury.ac.nz/research/ucdms2000n10.pdf",
+      "source_location": "Author technical-report abstract; author-institution published record https://researchers.mq.edu.au/en/publications/implementing-pure-adaptive-search-with-grovers-quantum-algorithm/",
+      "supports": "Grover-based implementation of pure adaptive search",
+      "limits": "Conditional objective/domain assumptions; not unrestricted polynomial knapsack optimization. Published2003JOTA116(3)517--529, DOI10.1023/A:1023061218864.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      94
+    ],
+    "other_lines": []
+  },
+  "ref13": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref13",
+      "primary_url": "https://arxiv.org/abs/quant-ph/9607014",
+      "source_location": "Abstract and original1996 submission/revision history",
+      "supports": "Quantum minimum finding as optimization background",
+      "limits": "Cited as original preprint, not an invented journal publication; no theorem transplanted into our oracle.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      94
+    ],
+    "other_lines": []
+  },
+  "ref16": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref16",
+      "primary_url": "https://eprint.iacr.org/2013/199",
+      "source_location": "Author-posted abstract, metadata and official BibTeX",
+      "supports": "Quantum subset-sum algorithms using Johnson-graph walks and representation methods",
+      "limits": "The source describes heuristic cost; cite the verified expanded ePrint rather than guessing conference-version details. This is exact-target subset sum, not arbitrary weight/value optimization.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      96
+    ],
+    "other_lines": [
+      65
+    ]
+  },
+  "ref17": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref17",
+      "primary_url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TQC.2018.5",
+      "source_location": "Publisher metadata, abstract and paper opening",
+      "supports": "Quantum subset-sum algorithms under random-instance/heuristic assumptions",
+      "limits": "No current-best claim and no worst-case general-knapsack exponent. Exact proceedings pagination5:1--5:15.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      96
+    ],
+    "other_lines": [
+      65
+    ]
+  },
+  "ref18": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref18",
+      "primary_url": "https://quantum-journal.org/papers/q-2025-12-02-1922/",
+      "source_location": "Published abstract and official BibTeX",
+      "supports": "Active/passive QRAM assumptions and costs",
+      "limits": "Does not prove all quantum-addressable memory impossible; circuit QRAM can help. Updated2023preprint to Quantum9,1922(2025).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      96
+    ],
+    "other_lines": [
+      65
+    ]
+  },
+  "ref23": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref23",
+      "primary_url": "https://arxiv.org/abs/2411.00518v2",
+      "source_location": "Abstract, accepted-at-QCE statement and related DOI",
+      "supports": "QTG state preparation with Grover-mixer QAOA; finite-depth evidence and eventual optimal-sampling result",
+      "limits": "Not all QTG uses are QAOA; do not claim no guarantees whatsoever. DOI10.1109/QCE65121.2025.00011; no unverified page range inserted.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      98,
+      119
+    ],
+    "other_lines": []
+  },
+  "ref24": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref24",
+      "primary_url": "https://arxiv.org/html/1906.10375v1",
+      "source_location": "Statement of results and oracle model",
+      "supports": "Quantum branch-and-bound query framework",
+      "limits": "Monotone cost/bounding oracle, depth and precision assumptions matter. The result is not a free-oracle runtime bound and is not simply sqrt(T)*d in all models. Old body theorem remains on hold.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      102,
+      116
+    ],
+    "other_lines": [
+      181,
+      246,
+      281
+    ]
+  },
+  "ref25": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref25",
+      "primary_url": "https://arxiv.org/html/1411.4028v1",
+      "source_location": "Algorithm description and asymptotic-depth discussion",
+      "supports": "QAOA variational framework",
+      "limits": "Do not claim all QAOA lacks guarantees; source has specified approximation/limit results.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      98
+    ],
+    "other_lines": []
+  },
+  "ref26": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref26",
+      "primary_url": "https://quantum-journal.org/papers/q-2021-04-08-428/",
+      "source_location": "Abstract and official BibTeX",
+      "supports": "Grover adaptive search for constrained polynomial binary optimization",
+      "limits": "Search is not variational QAOA. Source discusses oracle construction and conditional comparison with brute force, not blanket practical advantage. Quantum5,428(2021).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      98
+    ],
+    "other_lines": []
+  },
+  "ref31": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref31",
+      "primary_url": "https://preskill.caltech.edu/pubs/preskill-2018-NISQ.pdf",
+      "source_location": "Author full text; Quantum2,79 metadata",
+      "supports": "Noise/depth context",
+      "limits": "No evidence for this project's device experiments, a four-item boundary or its implementation-specific mitigation claims.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": [
+      697
+    ]
+  },
+  "ref33": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref33",
+      "primary_url": "https://raw.githubusercontent.com/Qiskit/qiskit/refs/heads/main/CITATION.bib",
+      "source_location": "Official Qiskit BibTeX; Aer README citation link",
+      "supports": "Software attribution to Quantum computing with Qiskit,2024",
+      "limits": "Citation is not evidence for device execution or experiment results. Actual package versions belong in later methods revision.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      102
+    ],
+    "other_lines": []
+  },
+  "bonnetain2020improved": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "bonnetain2020improved",
+      "primary_url": "https://arxiv.org/html/2002.05276v4",
+      "source_location": "Section3.2 heuristic discussion, Sections4--5 alternative algorithms and memory tradeoffs; publisher DOI metadata",
+      "supports": "Specific walk-update heuristic issue and subsequent alternatives",
+      "limits": "Do not label every subset-sum method unsound or every variant QRAQM-dependent. Correct ASIACRYPT2020,LNCS12492,633--666, DOI10.1007/978-3-030-64834-3_22.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      96
+    ],
+    "other_lines": [
+      65,
+      477
+    ]
+  },
+  "ref35": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref35",
+      "primary_url": "https://theoryofcomputing.org/articles/v014a015/",
+      "source_location": "Publisher full paper, Theorems1.1/1.2",
+      "supports": "Quantum backtracking query framework",
+      "limits": "Detection and witness recovery have distinct statements. No full gate-model LP walk follows merely from a citation. ToC14(15)1--24(2018), DOI10.4086/toc.2018.v014a015.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      102,
+      116
+    ],
+    "other_lines": []
+  },
+  "ref36": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "ref36",
+      "primary_url": "https://www.mdpi.com/1099-4300/26/4/345",
+      "source_location": "Article title/authors, abstract and hybrid model",
+      "supports": "Classical B&B with quantum annealing for integer linear problems",
+      "limits": "Correct authors Sanavio,Tignone,Ercolessi; Entropy26(4),345(2024), DOI10.3390/e26040345. Oldarxiv2403.09560 is a different DFT paper and is removed.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      100,
+      120
+    ],
+    "other_lines": []
+  },
+  "bozejko2026": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "bozejko2026",
+      "primary_url": "https://link.springer.com/article/10.1007/s10479-024-06025-1",
+      "source_location": "Sections3.1/4, Eq16--20, floor-pruning rule; Section5 experimental scope; publisher CiteThisArticle",
+      "supports": "Finite multiplier-set bounds and integer pruning are prior art; quantum annealing hybrid",
+      "limits": "Their sign convention u<=0 maps to our nonnegative lambda=-u; local residual capacity maps to their subproblem W. No claim their model certifies our bank or circuit. Large instances ran root-bound calculations only. Online2024; actual issue is AnnalsOR364,2111--2126(2026).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      100,
+      120
+    ],
+    "other_lines": []
+  },
+  "gabbassov2025": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "gabbassov2025",
+      "primary_url": "https://journals.aps.org/prresearch/abstract/10.1103/53gd-2374",
+      "source_location": "Publisher abstract and bibliographic header",
+      "supports": "Lagrangian duality in constrained quantum optimization, comparison with QUBO",
+      "limits": "Different adiabatic/fault-tolerant framework; does not establish this bank's correctness or novelty. PRR7,023305(2025), authors EinarGabbassov,GiliRosenberg,ArturScherer.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      100
+    ],
+    "other_lines": []
+  },
+  "martiel2019": {
+    "ledger": "root_reference_audit.json",
+    "source": {
+      "key": "martiel2019",
+      "primary_url": "https://link.springer.com/chapter/10.1007/978-3-030-38919-2_49",
+      "source_location": "Publisher abstract/metadata, arxiv1908.11291 author version",
+      "supports": "Concrete implementation of quantum backtracking and resource accounting",
+      "limits": "CSP graph coloring/SAT, not a full implementation of this LP oracle. Updated to SOFSEM2020,LNCS12011,597--606; key retains historical2019identifier only.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    "literature_lines": [
+      102,
+      121
+    ],
+    "other_lines": []
+  }
+}

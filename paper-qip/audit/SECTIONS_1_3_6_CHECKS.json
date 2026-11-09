@@ -1,0 +1,24 @@
+{
+  "classification": "DERIVED arithmetic/source consistency checks; no new gate simulation",
+  "generator_records": 700,
+  "generator_mismatches": 0,
+  "core_records": 700,
+  "core_mismatches": 0,
+  "resource_selection_records": 105,
+  "selection_mismatches": 0,
+  "encoded_arithmetic_checks": 1224,
+  "arithmetic_mismatches": 0,
+  "target_completion_counterexample": {
+    "w": [
+      2
+    ],
+    "v": [
+      3
+    ],
+    "W": 1,
+    "tau": 1,
+    "LP": "3/2",
+    "integer_optimum": 0
+  },
+  "manuscript_sha256": "8de094621a4aa91ca284baf33b8fd75f1ffca2f4d9a1243e821175c22c9de1ce"
+}

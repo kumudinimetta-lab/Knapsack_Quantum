@@ -1,0 +1,179 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex.fmt)
+entering extended mode
+(main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(sn-jnl.cls
+Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Jour
+nal articles
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/sttools\cuted.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+))) (C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
+ttable.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty)
+
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty)))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+ (C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def) (main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (main.out) (main.out)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\Shiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{C:/User
+s/Shiva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active [2]
+Underfull \vbox (badness 10000) has occurred while \output is active [3]
+Underfull \vbox (badness 10000) has occurred while \output is active [4]
+Underfull \vbox (badness 10000) has occurred while \output is active [5]
+Underfull \vbox (badness 10000) has occurred while \output is active [6]
+Underfull \vbox (badness 10000) has occurred while \output is active [7]
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9]
+Underfull \vbox (badness 10000) has occurred while \output is active [10]
+Underfull \vbox (badness 10000) has occurred while \output is active [11]
+Underfull \vbox (badness 10000) has occurred while \output is active [12 <./int
+eger_coverage_example.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [13]
+Underfull \hbox (badness 1168) in paragraph at lines 206--207
+[]\OT1/cmr/m/n/10 Write $[](\OML/cmm/m/it/10.03749 u\OT1/cmr/m/n/10 ) = \OMS/cm
+sy/m/n/10.03749 d[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10.03749 u \OT1/cmr/m/n/10 
++ 1)\OMS/cmsy/m/n/10.03749 e$ \OT1/cmr/m/n/10 for non-neg-a-tive inte-gers $\OM
+L/cmm/m/it/10.03749 u$\OT1/cmr/m/n/10 . Let $\OML/cmm/m/it/10.03749 t \OT1/cmr/
+m/n/10 =
+
+Underfull \vbox (badness 10000) has occurred while \output is active [14]
+Underfull \vbox (badness 10000) has occurred while \output is active [15]
+Underfull \vbox (badness 10000) has occurred while \output is active [16]
+Underfull \vbox (badness 10000) has occurred while \output is active [17 <./ora
+cle_workflow.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [18]
+Underfull \vbox (badness 10000) has occurred while \output is active [19]
+Underfull \vbox (badness 10000) has occurred while \output is active [20]
+Underfull \vbox (badness 10000) has occurred while \output is active [21]
+Underfull \vbox (badness 10000) has occurred while \output is active [22 <./res
+ource_ratios.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active [23]
+Underfull \vbox (badness 10000) has occurred while \output is active [24]
+(main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active [25]
+Underfull \vbox (badness 10000) has occurred while \output is active [26]
+Underfull \vbox (badness 10000) has occurred while \output is active [27]
+Underfull \vbox (badness 10000) has occurred while \output is active [28]
+Underfull \hbox (badness 2970) in paragraph at lines 431--445
+\OT1/cmr/m/n/10 Work-shop paper. [][]$https : / / www . cs . auckland . ac . nz
+ / research / groups / CDMTCS /
+
+Underfull \vbox (badness 10000) has occurred while \output is active [29]
+Underfull \vbox (badness 10000) has occurred while \output is active [30])
+Underfull \vbox (badness 10000) has occurred while \output is active [31]
+(main.aux) )
+(see the transcript file for additional information)<C:/Users/Shiva/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Shiva/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users
+/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
+x9.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmcsc10.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/Shiva/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Shiva/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Shiva/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Shiva
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr5.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Shiva/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Shiva/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Shiva/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Shiva/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users
+/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
+C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmti9.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb><C:/Users/Shiva/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb><C:/Users/Shiva/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (31 pages, 557296 bytes).
+Transcript written on main.log.
+

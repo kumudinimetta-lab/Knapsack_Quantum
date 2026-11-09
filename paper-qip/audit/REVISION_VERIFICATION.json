@@ -1,0 +1,13 @@
+{
+  "original_files_verified": 467,
+  "original_conflicts": [],
+  "barrier_endpoint_checks": 14,
+  "barrier_mismatches": 0,
+  "arithmetic_identity_and_width_checks": 1376,
+  "identity_mismatches": 0,
+  "reference_entries": 40,
+  "cited_entries": 40,
+  "missing_cross_references": 0,
+  "abstract_words": 199,
+  "scope": "DERIVED manuscript arithmetic and evidence checks; no new large-circuit simulation; same-agent separate audit pass"
+}
