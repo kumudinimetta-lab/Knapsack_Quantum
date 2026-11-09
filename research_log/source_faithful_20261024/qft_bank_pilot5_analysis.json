@@ -1,0 +1,1311 @@
+{
+  "classification": "DERIVED resources; descriptive matched ratios, no extrapolation/quantum advantage claim",
+  "statuses": {
+    "COMPLETED": 40
+  },
+  "inputs": 5,
+  "rows": 40,
+  "comparisons": [
+    {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.47297297297297297,
+          "min_ratio": 0.45,
+          "max_ratio": 0.5,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4203361015725668,
+          "min_ratio": 0.2041366355636319,
+          "max_ratio": 0.7516606674844323,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4187685269711672,
+          "min_ratio": 0.20413111244056803,
+          "max_ratio": 0.7506145388153935,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.9953226143244936,
+          "min_ratio": 0.3454403943442729,
+          "max_ratio": 1.916491171229548,
+          "lower": 3,
+          "tied": 0,
+          "higher": 2
+        }
+      },
+      "numerator_weakly_dominates_all_four": 3,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 70,
+            "u": 62306,
+            "cx": 40827,
+            "common_depth": 23833
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 148229,
+            "cx": 97493,
+            "common_depth": 23945
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 72,
+            "u": 96210,
+            "cx": 63031,
+            "common_depth": 40591
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 139221,
+            "cx": 91453,
+            "common_depth": 22447
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 68,
+            "u": 47154,
+            "cx": 30971,
+            "common_depth": 19884
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 154383,
+            "cx": 101593,
+            "common_depth": 25931
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 54,
+            "u": 9998,
+            "cx": 6483,
+            "common_depth": 5326
+          },
+          "denominator": {
+            "qubits": 120,
+            "u": 48977,
+            "cx": 31759,
+            "common_depth": 15418
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 75,
+            "u": 112138,
+            "cx": 73591,
+            "common_depth": 47322
+          },
+          "denominator": {
+            "qubits": 150,
+            "u": 149187,
+            "cx": 98041,
+            "common_depth": 24692
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_bank_direct_raw",
+      "denominator": "qft_lp_direct_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.47297297297297297,
+          "min_ratio": 0.45,
+          "max_ratio": 0.5,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.7411579076584062,
+          "min_ratio": 0.2888764263559681,
+          "max_ratio": 1.2818937978196308,
+          "lower": 3,
+          "tied": 0,
+          "higher": 2
+        },
+        "cx": {
+          "median_ratio": 0.7340779851901126,
+          "min_ratio": 0.28449372190080424,
+          "max_ratio": 1.2650997603441805,
+          "lower": 3,
+          "tied": 0,
+          "higher": 2
+        },
+        "common_depth": {
+          "median_ratio": 1.3163284132841329,
+          "min_ratio": 0.45220871913580246,
+          "max_ratio": 2.459750039694241,
+          "lower": 2,
+          "tied": 0,
+          "higher": 3
+        }
+      },
+      "numerator_weakly_dominates_all_four": 2,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 70,
+            "u": 247546,
+            "cx": 158911,
+            "common_depth": 71345
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 333999,
+            "cx": 216477,
+            "common_depth": 54200
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 72,
+            "u": 342290,
+            "cx": 219071,
+            "common_depth": 108443
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 267019,
+            "cx": 173165,
+            "common_depth": 44087
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 68,
+            "u": 183752,
+            "cx": 117911,
+            "common_depth": 54000
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 382237,
+            "cx": 247689,
+            "common_depth": 61442
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 54,
+            "u": 25240,
+            "cx": 15883,
+            "common_depth": 9377
+          },
+          "denominator": {
+            "qubits": 120,
+            "u": 87373,
+            "cx": 55829,
+            "common_depth": 20736
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 75,
+            "u": 406184,
+            "cx": 260475,
+            "common_depth": 123267
+          },
+          "denominator": {
+            "qubits": 150,
+            "u": 333129,
+            "cx": 215937,
+            "common_depth": 53415
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_bank_direct_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 5,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.27607685187008846,
+          "min_ratio": 0.25169463453257174,
+          "max_ratio": 0.3961172741679873,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.2825261541414723,
+          "min_ratio": 0.256917394013001,
+          "max_ratio": 0.408172259648681,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.3743072397480704,
+          "min_ratio": 0.33405284182493516,
+          "max_ratio": 0.5679854964274288,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 5,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 70,
+            "u": 62306,
+            "cx": 40827,
+            "common_depth": 23833
+          },
+          "denominator": {
+            "qubits": 70,
+            "u": 247546,
+            "cx": 158911,
+            "common_depth": 71345
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 72,
+            "u": 96210,
+            "cx": 63031,
+            "common_depth": 40591
+          },
+          "denominator": {
+            "qubits": 72,
+            "u": 342290,
+            "cx": 219071,
+            "common_depth": 108443
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 68,
+            "u": 47154,
+            "cx": 30971,
+            "common_depth": 19884
+          },
+          "denominator": {
+            "qubits": 68,
+            "u": 183752,
+            "cx": 117911,
+            "common_depth": 54000
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 54,
+            "u": 9998,
+            "cx": 6483,
+            "common_depth": 5326
+          },
+          "denominator": {
+            "qubits": 54,
+            "u": 25240,
+            "cx": 15883,
+            "common_depth": 9377
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 75,
+            "u": 112138,
+            "cx": 73591,
+            "common_depth": 47322
+          },
+          "denominator": {
+            "qubits": 75,
+            "u": 406184,
+            "cx": 260475,
+            "common_depth": 123267
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_lp_direct_merged",
+      "denominator": "qft_lp_direct_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 5,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4478355231757067,
+          "min_ratio": 0.40389339598207397,
+          "max_ratio": 0.5605507422201367,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4540259427518211,
+          "min_ratio": 0.41016355187351883,
+          "max_ratio": 0.5688620609360726,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.4622671534213236,
+          "min_ratio": 0.42204029816737737,
+          "max_ratio": 0.7435378086419753,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 5,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 148,
+            "u": 148229,
+            "cx": 97493,
+            "common_depth": 23945
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 333999,
+            "cx": 216477,
+            "common_depth": 54200
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 148,
+            "u": 139221,
+            "cx": 91453,
+            "common_depth": 22447
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 267019,
+            "cx": 173165,
+            "common_depth": 44087
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 148,
+            "u": 154383,
+            "cx": 101593,
+            "common_depth": 25931
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 382237,
+            "cx": 247689,
+            "common_depth": 61442
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 120,
+            "u": 48977,
+            "cx": 31759,
+            "common_depth": 15418
+          },
+          "denominator": {
+            "qubits": 120,
+            "u": 87373,
+            "cx": 55829,
+            "common_depth": 20736
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 150,
+            "u": 149187,
+            "cx": 98041,
+            "common_depth": 24692
+          },
+          "denominator": {
+            "qubits": 150,
+            "u": 333129,
+            "cx": 215937,
+            "common_depth": 53415
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_bank_source_generic_merged",
+      "denominator": "qft_lp_source_generic_merged",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.47651006711409394,
+          "min_ratio": 0.45454545454545453,
+          "max_ratio": 0.5033112582781457,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.42643111347322105,
+          "min_ratio": 0.21044319815350976,
+          "max_ratio": 0.7640473469278635,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4259980575576343,
+          "min_ratio": 0.21174526978585456,
+          "max_ratio": 0.765290667534078,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.0388621300069985,
+          "min_ratio": 0.3684640522875817,
+          "max_ratio": 1.992632710764207,
+          "lower": 2,
+          "tied": 0,
+          "higher": 3
+        }
+      },
+      "numerator_weakly_dominates_all_four": 2,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 71,
+            "u": 63386,
+            "cx": 41669,
+            "common_depth": 25235
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 148643,
+            "cx": 97815,
+            "common_depth": 24291
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 73,
+            "u": 98136,
+            "cx": 64531,
+            "common_depth": 42997
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 139599,
+            "cx": 91747,
+            "common_depth": 22818
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 69,
+            "u": 48090,
+            "cx": 31701,
+            "common_depth": 21074
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 154887,
+            "cx": 101985,
+            "common_depth": 26349
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 55,
+            "u": 10394,
+            "cx": 6793,
+            "common_depth": 5863
+          },
+          "denominator": {
+            "qubits": 121,
+            "u": 49391,
+            "cx": 32081,
+            "common_depth": 15912
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 76,
+            "u": 114316,
+            "cx": 75287,
+            "common_depth": 50037
+          },
+          "denominator": {
+            "qubits": 151,
+            "u": 149619,
+            "cx": 98377,
+            "common_depth": 25111
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_bank_source_generic_raw",
+      "denominator": "qft_lp_source_generic_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.47651006711409394,
+          "min_ratio": 0.45454545454545453,
+          "max_ratio": 0.5033112582781457,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.7435237266493826,
+          "min_ratio": 0.29223005684212927,
+          "max_ratio": 1.2873517653526405,
+          "lower": 3,
+          "tied": 0,
+          "higher": 2
+        },
+        "cx": {
+          "median_ratio": 0.7369268308433157,
+          "min_ratio": 0.28859681929084074,
+          "max_ratio": 1.271672268374659,
+          "lower": 3,
+          "tied": 0,
+          "higher": 2
+        },
+        "common_depth": {
+          "median_ratio": 1.333952342428477,
+          "min_ratio": 0.4710696612105063,
+          "max_ratio": 2.5004632454296885,
+          "lower": 2,
+          "tied": 0,
+          "higher": 3
+        }
+      },
+      "numerator_weakly_dominates_all_four": 2,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 71,
+            "u": 248644,
+            "cx": 159765,
+            "common_depth": 72551
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 334413,
+            "cx": 216799,
+            "common_depth": 54388
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 73,
+            "u": 344234,
+            "cx": 220583,
+            "common_depth": 110653
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 267397,
+            "cx": 173459,
+            "common_depth": 44253
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 69,
+            "u": 184706,
+            "cx": 118653,
+            "common_depth": 54994
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 382741,
+            "cx": 248081,
+            "common_depth": 61652
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 55,
+            "u": 25654,
+            "cx": 16205,
+            "common_depth": 9900
+          },
+          "denominator": {
+            "qubits": 121,
+            "u": 87787,
+            "cx": 56151,
+            "common_depth": 21016
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 76,
+            "u": 408380,
+            "cx": 262183,
+            "common_depth": 125942
+          },
+          "denominator": {
+            "qubits": 151,
+            "u": 333561,
+            "cx": 216273,
+            "common_depth": 53638
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_bank_source_generic_merged",
+      "denominator": "qft_bank_source_generic_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 5,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.27992555952789067,
+          "min_ratio": 0.25492672254307364,
+          "max_ratio": 0.40516098853979887,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.28715439216120037,
+          "min_ratio": 0.2608143210340187,
+          "max_ratio": 0.41919160752854057,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.3885750951171681,
+          "min_ratio": 0.3478242891207564,
+          "max_ratio": 0.5922222222222222,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 5,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 71,
+            "u": 63386,
+            "cx": 41669,
+            "common_depth": 25235
+          },
+          "denominator": {
+            "qubits": 71,
+            "u": 248644,
+            "cx": 159765,
+            "common_depth": 72551
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 73,
+            "u": 98136,
+            "cx": 64531,
+            "common_depth": 42997
+          },
+          "denominator": {
+            "qubits": 73,
+            "u": 344234,
+            "cx": 220583,
+            "common_depth": 110653
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 69,
+            "u": 48090,
+            "cx": 31701,
+            "common_depth": 21074
+          },
+          "denominator": {
+            "qubits": 69,
+            "u": 184706,
+            "cx": 118653,
+            "common_depth": 54994
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 55,
+            "u": 10394,
+            "cx": 6793,
+            "common_depth": 5863
+          },
+          "denominator": {
+            "qubits": 55,
+            "u": 25654,
+            "cx": 16205,
+            "common_depth": 9900
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 76,
+            "u": 114316,
+            "cx": 75287,
+            "common_depth": 50037
+          },
+          "denominator": {
+            "qubits": 76,
+            "u": 408380,
+            "cx": 262183,
+            "common_depth": 125942
+          }
+        }
+      ]
+    },
+    {
+      "numerator": "qft_lp_source_generic_merged",
+      "denominator": "qft_lp_source_generic_raw",
+      "paired": 5,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 5,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4485506399129395,
+          "min_ratio": 0.4046783595172715,
+          "max_ratio": 0.5626231674393702,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.45487416367276545,
+          "min_ratio": 0.4110955695921896,
+          "max_ratio": 0.5713344374988869,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.4681569036876841,
+          "min_ratio": 0.42738272886524364,
+          "max_ratio": 0.7571374191092501,
+          "lower": 5,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 5,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 149,
+            "u": 148643,
+            "cx": 97815,
+            "common_depth": 24291
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 334413,
+            "cx": 216799,
+            "common_depth": 54388
+          }
+        },
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 149,
+            "u": 139599,
+            "cx": 91747,
+            "common_depth": 22818
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 267397,
+            "cx": 173459,
+            "common_depth": 44253
+          }
+        },
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 149,
+            "u": 154887,
+            "cx": 101985,
+            "common_depth": 26349
+          },
+          "denominator": {
+            "qubits": 149,
+            "u": 382741,
+            "cx": 248081,
+            "common_depth": 61652
+          }
+        },
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 121,
+            "u": 49391,
+            "cx": 32081,
+            "common_depth": 15912
+          },
+          "denominator": {
+            "qubits": 121,
+            "u": 87787,
+            "cx": 56151,
+            "common_depth": 21016
+          }
+        },
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 151,
+            "u": 149619,
+            "cx": 98377,
+            "common_depth": 25111
+          },
+          "denominator": {
+            "qubits": 151,
+            "u": 333561,
+            "cx": 216273,
+            "common_depth": 53638
+          }
+        }
+      ]
+    }
+  ],
+  "by_class": {
+    "inverse_strongly": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 1,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.5,
+          "min_ratio": 0.5,
+          "max_ratio": 0.5,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.7516606674844323,
+          "min_ratio": 0.7516606674844323,
+          "max_ratio": 0.7516606674844323,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.7506145388153935,
+          "min_ratio": 0.7506145388153935,
+          "max_ratio": 0.7506145388153935,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.916491171229548,
+          "min_ratio": 1.916491171229548,
+          "max_ratio": 1.916491171229548,
+          "lower": 0,
+          "tied": 0,
+          "higher": 1
+        }
+      },
+      "numerator_weakly_dominates_all_four": 0,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "inverse_strongly_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 75,
+            "u": 112138,
+            "cx": 73591,
+            "common_depth": 47322
+          },
+          "denominator": {
+            "qubits": 150,
+            "u": 149187,
+            "cx": 98041,
+            "common_depth": 24692
+          }
+        }
+      ]
+    },
+    "strongly_correlated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 1,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.4594594594594595,
+          "min_ratio": 0.4594594594594595,
+          "max_ratio": 0.4594594594594595,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.3054351839256913,
+          "min_ratio": 0.3054351839256913,
+          "max_ratio": 0.3054351839256913,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.30485368086383907,
+          "min_ratio": 0.30485368086383907,
+          "max_ratio": 0.30485368086383907,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.7668042111758128,
+          "min_ratio": 0.7668042111758128,
+          "max_ratio": 0.7668042111758128,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 1,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "strongly_correlated_n12_s12000_R100",
+          "bank_size": 4,
+          "numerator": {
+            "qubits": 68,
+            "u": 47154,
+            "cx": 30971,
+            "common_depth": 19884
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 154383,
+            "cx": 101593,
+            "common_depth": 25931
+          }
+        }
+      ]
+    },
+    "subset_sum": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 1,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.45,
+          "min_ratio": 0.45,
+          "max_ratio": 0.45,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.2041366355636319,
+          "min_ratio": 0.2041366355636319,
+          "max_ratio": 0.2041366355636319,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.20413111244056803,
+          "min_ratio": 0.20413111244056803,
+          "max_ratio": 0.20413111244056803,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.3454403943442729,
+          "min_ratio": 0.3454403943442729,
+          "max_ratio": 0.3454403943442729,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 1,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "subset_sum_n12_s12000_R100",
+          "bank_size": 2,
+          "numerator": {
+            "qubits": 54,
+            "u": 9998,
+            "cx": 6483,
+            "common_depth": 5326
+          },
+          "denominator": {
+            "qubits": 120,
+            "u": 48977,
+            "cx": 31759,
+            "common_depth": 15418
+          }
+        }
+      ]
+    },
+    "uncorrelated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 1,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.47297297297297297,
+          "min_ratio": 0.47297297297297297,
+          "max_ratio": 0.47297297297297297,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4203361015725668,
+          "min_ratio": 0.4203361015725668,
+          "max_ratio": 0.4203361015725668,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4187685269711672,
+          "min_ratio": 0.4187685269711672,
+          "max_ratio": 0.4187685269711672,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.9953226143244936,
+          "min_ratio": 0.9953226143244936,
+          "max_ratio": 0.9953226143244936,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 1,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "uncorrelated_n12_s12000_R100",
+          "bank_size": 6,
+          "numerator": {
+            "qubits": 70,
+            "u": 62306,
+            "cx": 40827,
+            "common_depth": 23833
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 148229,
+            "cx": 97493,
+            "common_depth": 23945
+          }
+        }
+      ]
+    },
+    "weakly_correlated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 1,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.4864864864864865,
+          "min_ratio": 0.4864864864864865,
+          "max_ratio": 0.4864864864864865,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.6910595384317021,
+          "min_ratio": 0.6910595384317021,
+          "max_ratio": 0.6910595384317021,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.6892174122226717,
+          "min_ratio": 0.6892174122226717,
+          "max_ratio": 0.6892174122226717,
+          "lower": 1,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.808304004989531,
+          "min_ratio": 1.808304004989531,
+          "max_ratio": 1.808304004989531,
+          "lower": 0,
+          "tied": 0,
+          "higher": 1
+        }
+      },
+      "numerator_weakly_dominates_all_four": 0,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": [
+        {
+          "source_id": "weakly_correlated_n12_s12000_R100",
+          "bank_size": 10,
+          "numerator": {
+            "qubits": 72,
+            "u": 96210,
+            "cx": 63031,
+            "common_depth": 40591
+          },
+          "denominator": {
+            "qubits": 148,
+            "u": 139221,
+            "cx": 91453,
+            "common_depth": 22447
+          }
+        }
+      ]
+    }
+  },
+  "bank_sizes": {
+    "inverse_strongly_n12_s12000_R100": 10,
+    "strongly_correlated_n12_s12000_R100": 4,
+    "subset_sum_n12_s12000_R100": 2,
+    "uncorrelated_n12_s12000_R100": 6,
+    "weakly_correlated_n12_s12000_R100": 10
+  }
+}

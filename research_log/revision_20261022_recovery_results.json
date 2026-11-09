@@ -1,0 +1,3378 @@
+{
+  "date": "2026-10-22",
+  "python": "3.13.6",
+  "part": "recovery",
+  "recovery": {
+    "classification": "SIMULATED_ANALYTICAL_MAJORITY_WITH_SCHEDULED_QUERIES",
+    "rows": [
+      {
+        "generator": "gen_uncorrelated",
+        "n": 0,
+        "seed": 0,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_uncorrelated",
+        "n": 0,
+        "seed": 1,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_uncorrelated",
+        "n": 0,
+        "seed": 2,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 1,
+        "seed": 1000,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 6,
+          "quantum_queries_total": 99,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 1,
+        "seed": 1001,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 6,
+          "quantum_queries_total": 99,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 1,
+        "seed": 1002,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 2,
+          "quantum_queries_total": 33,
+          "detection_calls": 1,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 2,
+        "seed": 2000,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 11,
+          "quantum_queries_total": 154,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 2,
+        "seed": 2001,
+        "capped": false,
+        "result": {
+          "optimal_value": 7,
+          "classical_nodes_total": 14,
+          "quantum_queries_total": 231,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 2,
+        "seed": 2002,
+        "capped": false,
+        "result": {
+          "optimal_value": 9,
+          "classical_nodes_total": 19,
+          "quantum_queries_total": 308,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 3,
+        "seed": 3000,
+        "capped": false,
+        "result": {
+          "optimal_value": 21,
+          "classical_nodes_total": 22,
+          "quantum_queries_total": 495,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 7,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 3,
+        "seed": 3001,
+        "capped": false,
+        "result": {
+          "optimal_value": 10,
+          "classical_nodes_total": 42,
+          "quantum_queries_total": 902,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 3,
+        "seed": 3002,
+        "capped": false,
+        "result": {
+          "optimal_value": 13,
+          "classical_nodes_total": 44,
+          "quantum_queries_total": 902,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 4,
+        "seed": 4000,
+        "capped": false,
+        "result": {
+          "optimal_value": 25,
+          "classical_nodes_total": 31,
+          "quantum_queries_total": 495,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 4,
+        "seed": 4001,
+        "capped": false,
+        "result": {
+          "optimal_value": 19,
+          "classical_nodes_total": 22,
+          "quantum_queries_total": 330,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 11,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 4,
+        "seed": 4002,
+        "capped": false,
+        "result": {
+          "optimal_value": 8,
+          "classical_nodes_total": 32,
+          "quantum_queries_total": 737,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 5,
+        "seed": 5000,
+        "capped": false,
+        "result": {
+          "optimal_value": 20,
+          "classical_nodes_total": 64,
+          "quantum_queries_total": 1188,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 5,
+        "seed": 5001,
+        "capped": false,
+        "result": {
+          "optimal_value": 32,
+          "classical_nodes_total": 46,
+          "quantum_queries_total": 847,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 20,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 5,
+        "seed": 5002,
+        "capped": false,
+        "result": {
+          "optimal_value": 22,
+          "classical_nodes_total": 38,
+          "quantum_queries_total": 671,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 18,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 6,
+        "seed": 6000,
+        "capped": false,
+        "result": {
+          "optimal_value": 37,
+          "classical_nodes_total": 70,
+          "quantum_queries_total": 1023,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 38,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 6,
+        "seed": 6001,
+        "capped": false,
+        "result": {
+          "optimal_value": 40,
+          "classical_nodes_total": 97,
+          "quantum_queries_total": 1771,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 31,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 6,
+        "seed": 6002,
+        "capped": false,
+        "result": {
+          "optimal_value": 35,
+          "classical_nodes_total": 84,
+          "quantum_queries_total": 1650,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 41,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 7,
+        "seed": 7000,
+        "capped": false,
+        "result": {
+          "optimal_value": 51,
+          "classical_nodes_total": 149,
+          "quantum_queries_total": 2211,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 80,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 7,
+        "seed": 7001,
+        "capped": false,
+        "result": {
+          "optimal_value": 38,
+          "classical_nodes_total": 117,
+          "quantum_queries_total": 1870,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 59,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 7,
+        "seed": 7002,
+        "capped": false,
+        "result": {
+          "optimal_value": 32,
+          "classical_nodes_total": 183,
+          "quantum_queries_total": 2915,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 72,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 8,
+        "seed": 8000,
+        "capped": false,
+        "result": {
+          "optimal_value": 58,
+          "classical_nodes_total": 341,
+          "quantum_queries_total": 4147,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 161,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 8,
+        "seed": 8001,
+        "capped": false,
+        "result": {
+          "optimal_value": 47,
+          "classical_nodes_total": 362,
+          "quantum_queries_total": 4136,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 162,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "uncorrelated",
+        "n": 8,
+        "seed": 8002,
+        "capped": false,
+        "result": {
+          "optimal_value": 55,
+          "classical_nodes_total": 192,
+          "quantum_queries_total": 2508,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 131,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_weakly_correlated",
+        "n": 0,
+        "seed": 0,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_weakly_correlated",
+        "n": 0,
+        "seed": 1,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_weakly_correlated",
+        "n": 0,
+        "seed": 2,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 1,
+        "seed": 1000,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 3,
+          "quantum_queries_total": 33,
+          "detection_calls": 2,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 1,
+        "seed": 1001,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 5,
+          "quantum_queries_total": 66,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 1,
+        "seed": 1002,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 5,
+          "quantum_queries_total": 66,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 2,
+        "seed": 2000,
+        "capped": false,
+        "result": {
+          "optimal_value": 7,
+          "classical_nodes_total": 18,
+          "quantum_queries_total": 264,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 2,
+        "seed": 2001,
+        "capped": false,
+        "result": {
+          "optimal_value": 1,
+          "classical_nodes_total": 11,
+          "quantum_queries_total": 187,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 2,
+        "seed": 2002,
+        "capped": false,
+        "result": {
+          "optimal_value": 1,
+          "classical_nodes_total": 8,
+          "quantum_queries_total": 154,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 3,
+        "seed": 3000,
+        "capped": false,
+        "result": {
+          "optimal_value": 12,
+          "classical_nodes_total": 17,
+          "quantum_queries_total": 242,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 9,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 3,
+        "seed": 3001,
+        "capped": false,
+        "result": {
+          "optimal_value": 5,
+          "classical_nodes_total": 38,
+          "quantum_queries_total": 726,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 3,
+        "seed": 3002,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 47,
+          "quantum_queries_total": 902,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 4,
+        "seed": 4000,
+        "capped": false,
+        "result": {
+          "optimal_value": 20,
+          "classical_nodes_total": 25,
+          "quantum_queries_total": 649,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 7,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 4,
+        "seed": 4001,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 24,
+          "quantum_queries_total": 407,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 4,
+        "seed": 4002,
+        "capped": false,
+        "result": {
+          "optimal_value": 14,
+          "classical_nodes_total": 71,
+          "quantum_queries_total": 1243,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 5,
+        "seed": 5000,
+        "capped": false,
+        "result": {
+          "optimal_value": 18,
+          "classical_nodes_total": 28,
+          "quantum_queries_total": 506,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 15,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 5,
+        "seed": 5001,
+        "capped": false,
+        "result": {
+          "optimal_value": 24,
+          "classical_nodes_total": 49,
+          "quantum_queries_total": 913,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 5,
+        "seed": 5002,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 26,
+          "quantum_queries_total": 495,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 6,
+        "seed": 6000,
+        "capped": false,
+        "result": {
+          "optimal_value": 21,
+          "classical_nodes_total": 73,
+          "quantum_queries_total": 1254,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 28,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 6,
+        "seed": 6001,
+        "capped": false,
+        "result": {
+          "optimal_value": 24,
+          "classical_nodes_total": 226,
+          "quantum_queries_total": 3080,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 59,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 6,
+        "seed": 6002,
+        "capped": false,
+        "result": {
+          "optimal_value": 25,
+          "classical_nodes_total": 69,
+          "quantum_queries_total": 1265,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 25,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 7,
+        "seed": 7000,
+        "capped": false,
+        "result": {
+          "optimal_value": 24,
+          "classical_nodes_total": 157,
+          "quantum_queries_total": 2563,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 59,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 7,
+        "seed": 7001,
+        "capped": false,
+        "result": {
+          "optimal_value": 34,
+          "classical_nodes_total": 57,
+          "quantum_queries_total": 1034,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 39,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 7,
+        "seed": 7002,
+        "capped": false,
+        "result": {
+          "optimal_value": 23,
+          "classical_nodes_total": 47,
+          "quantum_queries_total": 847,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 24,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 8,
+        "seed": 8000,
+        "capped": false,
+        "result": {
+          "optimal_value": 38,
+          "classical_nodes_total": 122,
+          "quantum_queries_total": 2057,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 56,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 8,
+        "seed": 8001,
+        "capped": false,
+        "result": {
+          "optimal_value": 28,
+          "classical_nodes_total": 294,
+          "quantum_queries_total": 3168,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 116,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "weakly_correlated",
+        "n": 8,
+        "seed": 8002,
+        "capped": false,
+        "result": {
+          "optimal_value": 33,
+          "classical_nodes_total": 146,
+          "quantum_queries_total": 1716,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 100,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_strongly_correlated",
+        "n": 0,
+        "seed": 0,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_strongly_correlated",
+        "n": 0,
+        "seed": 1,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_strongly_correlated",
+        "n": 0,
+        "seed": 2,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 1,
+        "seed": 1000,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 3,
+          "quantum_queries_total": 33,
+          "detection_calls": 2,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 1,
+        "seed": 1001,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 7,
+          "quantum_queries_total": 99,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 1,
+        "seed": 1002,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 5,
+          "quantum_queries_total": 66,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 2,
+        "seed": 2000,
+        "capped": false,
+        "result": {
+          "optimal_value": 8,
+          "classical_nodes_total": 26,
+          "quantum_queries_total": 418,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 2,
+        "seed": 2001,
+        "capped": false,
+        "result": {
+          "optimal_value": 2,
+          "classical_nodes_total": 16,
+          "quantum_queries_total": 264,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 2,
+        "seed": 2002,
+        "capped": false,
+        "result": {
+          "optimal_value": 3,
+          "classical_nodes_total": 11,
+          "quantum_queries_total": 154,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 3,
+        "seed": 3000,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 11,
+          "quantum_queries_total": 165,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 6,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 3,
+        "seed": 3001,
+        "capped": false,
+        "result": {
+          "optimal_value": 7,
+          "classical_nodes_total": 40,
+          "quantum_queries_total": 649,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 3,
+        "seed": 3002,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 56,
+          "quantum_queries_total": 979,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 4,
+        "seed": 4000,
+        "capped": false,
+        "result": {
+          "optimal_value": 23,
+          "classical_nodes_total": 29,
+          "quantum_queries_total": 506,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 17,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 4,
+        "seed": 4001,
+        "capped": false,
+        "result": {
+          "optimal_value": 17,
+          "classical_nodes_total": 101,
+          "quantum_queries_total": 1683,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 4,
+        "seed": 4002,
+        "capped": false,
+        "result": {
+          "optimal_value": 19,
+          "classical_nodes_total": 108,
+          "quantum_queries_total": 1848,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 5,
+        "seed": 5000,
+        "capped": false,
+        "result": {
+          "optimal_value": 19,
+          "classical_nodes_total": 23,
+          "quantum_queries_total": 418,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 12,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 5,
+        "seed": 5001,
+        "capped": false,
+        "result": {
+          "optimal_value": 28,
+          "classical_nodes_total": 23,
+          "quantum_queries_total": 418,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 12,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 5,
+        "seed": 5002,
+        "capped": false,
+        "result": {
+          "optimal_value": 19,
+          "classical_nodes_total": 29,
+          "quantum_queries_total": 495,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 14,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 6,
+        "seed": 6000,
+        "capped": false,
+        "result": {
+          "optimal_value": 25,
+          "classical_nodes_total": 26,
+          "quantum_queries_total": 418,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 14,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 6,
+        "seed": 6001,
+        "capped": false,
+        "result": {
+          "optimal_value": 31,
+          "classical_nodes_total": 26,
+          "quantum_queries_total": 418,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 14,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 6,
+        "seed": 6002,
+        "capped": false,
+        "result": {
+          "optimal_value": 31,
+          "classical_nodes_total": 403,
+          "quantum_queries_total": 4554,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 87,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 7,
+        "seed": 7000,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 128,
+          "quantum_queries_total": 2299,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 60,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 7,
+        "seed": 7001,
+        "capped": false,
+        "result": {
+          "optimal_value": 36,
+          "classical_nodes_total": 68,
+          "quantum_queries_total": 913,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 33,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 7,
+        "seed": 7002,
+        "capped": false,
+        "result": {
+          "optimal_value": 30,
+          "classical_nodes_total": 60,
+          "quantum_queries_total": 858,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 43,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 8,
+        "seed": 8000,
+        "capped": false,
+        "result": {
+          "optimal_value": 43,
+          "classical_nodes_total": 181,
+          "quantum_queries_total": 1980,
+          "detection_calls": 13,
+          "correct": true,
+          "max_tree": 128,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 8,
+        "seed": 8001,
+        "capped": false,
+        "result": {
+          "optimal_value": 31,
+          "classical_nodes_total": 61,
+          "quantum_queries_total": 1012,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 32,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "strongly_correlated",
+        "n": 8,
+        "seed": 8002,
+        "capped": false,
+        "result": {
+          "optimal_value": 37,
+          "classical_nodes_total": 54,
+          "quantum_queries_total": 583,
+          "detection_calls": 13,
+          "correct": true,
+          "max_tree": 30,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_subset_sum",
+        "n": 0,
+        "seed": 0,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_subset_sum",
+        "n": 0,
+        "seed": 1,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_subset_sum",
+        "n": 0,
+        "seed": 2,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 1,
+        "seed": 1000,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 4,
+          "quantum_queries_total": 66,
+          "detection_calls": 2,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 1,
+        "seed": 1001,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 6,
+          "quantum_queries_total": 99,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 1,
+        "seed": 1002,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 6,
+          "quantum_queries_total": 99,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 2,
+        "seed": 2000,
+        "capped": false,
+        "result": {
+          "optimal_value": 7,
+          "classical_nodes_total": 22,
+          "quantum_queries_total": 341,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 2,
+        "seed": 2001,
+        "capped": false,
+        "result": {
+          "optimal_value": 1,
+          "classical_nodes_total": 17,
+          "quantum_queries_total": 264,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 2,
+        "seed": 2002,
+        "capped": false,
+        "result": {
+          "optimal_value": 2,
+          "classical_nodes_total": 13,
+          "quantum_queries_total": 187,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 3,
+        "seed": 3000,
+        "capped": false,
+        "result": {
+          "optimal_value": 13,
+          "classical_nodes_total": 18,
+          "quantum_queries_total": 242,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 9,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 3,
+        "seed": 3001,
+        "capped": false,
+        "result": {
+          "optimal_value": 6,
+          "classical_nodes_total": 30,
+          "quantum_queries_total": 572,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 3,
+        "seed": 3002,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 55,
+          "quantum_queries_total": 979,
+          "detection_calls": 7,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 4,
+        "seed": 4000,
+        "capped": false,
+        "result": {
+          "optimal_value": 21,
+          "classical_nodes_total": 43,
+          "quantum_queries_total": 660,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 4,
+        "seed": 4001,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 97,
+          "quantum_queries_total": 1683,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 4,
+        "seed": 4002,
+        "capped": false,
+        "result": {
+          "optimal_value": 17,
+          "classical_nodes_total": 77,
+          "quantum_queries_total": 1243,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 5,
+        "seed": 5000,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 254,
+          "quantum_queries_total": 2288,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 43,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 5,
+        "seed": 5001,
+        "capped": false,
+        "result": {
+          "optimal_value": 25,
+          "classical_nodes_total": 220,
+          "quantum_queries_total": 2288,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 43,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 5,
+        "seed": 5002,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 65,
+          "quantum_queries_total": 1001,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 30,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 6,
+        "seed": 6000,
+        "capped": false,
+        "result": {
+          "optimal_value": 21,
+          "classical_nodes_total": 246,
+          "quantum_queries_total": 3168,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 55,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 6,
+        "seed": 6001,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 421,
+          "quantum_queries_total": 4246,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 84,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 6,
+        "seed": 6002,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 388,
+          "quantum_queries_total": 4312,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 76,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 7,
+        "seed": 7000,
+        "capped": false,
+        "result": {
+          "optimal_value": 22,
+          "classical_nodes_total": 611,
+          "quantum_queries_total": 5082,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 134,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 7,
+        "seed": 7001,
+        "capped": false,
+        "result": {
+          "optimal_value": 32,
+          "classical_nodes_total": 717,
+          "quantum_queries_total": 6061,
+          "detection_calls": 13,
+          "correct": true,
+          "max_tree": 145,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 7,
+        "seed": 7002,
+        "capped": false,
+        "result": {
+          "optimal_value": 26,
+          "classical_nodes_total": 589,
+          "quantum_queries_total": 4686,
+          "detection_calls": 12,
+          "correct": true,
+          "max_tree": 141,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 6,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 8,
+        "seed": 8000,
+        "capped": false,
+        "result": {
+          "optimal_value": 38,
+          "classical_nodes_total": 518,
+          "quantum_queries_total": 3630,
+          "detection_calls": 13,
+          "correct": true,
+          "max_tree": 250,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 8,
+        "seed": 8001,
+        "capped": false,
+        "result": {
+          "optimal_value": 26,
+          "classical_nodes_total": 1461,
+          "quantum_queries_total": 8954,
+          "detection_calls": 13,
+          "correct": true,
+          "max_tree": 310,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "subset_sum",
+        "n": 8,
+        "seed": 8002,
+        "capped": false,
+        "result": {
+          "optimal_value": 32,
+          "classical_nodes_total": 1069,
+          "quantum_queries_total": 8426,
+          "detection_calls": 14,
+          "correct": true,
+          "max_tree": 258,
+          "montanaro_queries_decisive": 127,
+          "assignment": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 7,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_inverse_strongly",
+        "n": 0,
+        "seed": 0,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_inverse_strongly",
+        "n": 0,
+        "seed": 1,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "gen_inverse_strongly",
+        "n": 0,
+        "seed": 2,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 0,
+          "quantum_queries_total": 0,
+          "detection_calls": 0,
+          "correct": true,
+          "max_tree": 0,
+          "montanaro_queries_decisive": 0,
+          "assignment": [],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 1,
+        "seed": 1000,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 3,
+          "quantum_queries_total": 33,
+          "detection_calls": 2,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 1,
+        "seed": 1001,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 5,
+          "quantum_queries_total": 66,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 1,
+        "seed": 1002,
+        "capped": false,
+        "result": {
+          "optimal_value": 0,
+          "classical_nodes_total": 5,
+          "quantum_queries_total": 66,
+          "detection_calls": 3,
+          "correct": true,
+          "max_tree": 2,
+          "montanaro_queries_decisive": 3,
+          "assignment": [
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 0,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 2,
+        "seed": 2000,
+        "capped": false,
+        "result": {
+          "optimal_value": 7,
+          "classical_nodes_total": 17,
+          "quantum_queries_total": 385,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 2,
+        "seed": 2001,
+        "capped": false,
+        "result": {
+          "optimal_value": 1,
+          "classical_nodes_total": 11,
+          "quantum_queries_total": 308,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 2,
+        "seed": 2002,
+        "capped": false,
+        "result": {
+          "optimal_value": 2,
+          "classical_nodes_total": 12,
+          "quantum_queries_total": 231,
+          "detection_calls": 4,
+          "correct": true,
+          "max_tree": 4,
+          "montanaro_queries_decisive": 7,
+          "assignment": [
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 3,
+        "seed": 3000,
+        "capped": false,
+        "result": {
+          "optimal_value": 13,
+          "classical_nodes_total": 9,
+          "quantum_queries_total": 165,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 5,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            1,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 3,
+        "seed": 3001,
+        "capped": false,
+        "result": {
+          "optimal_value": 6,
+          "classical_nodes_total": 29,
+          "quantum_queries_total": 572,
+          "detection_calls": 5,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 3,
+        "seed": 3002,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 39,
+          "quantum_queries_total": 737,
+          "detection_calls": 6,
+          "correct": true,
+          "max_tree": 10,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 1,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 4,
+        "seed": 4000,
+        "capped": false,
+        "result": {
+          "optimal_value": 21,
+          "classical_nodes_total": 24,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 12,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 4,
+        "seed": 4001,
+        "capped": false,
+        "result": {
+          "optimal_value": 15,
+          "classical_nodes_total": 60,
+          "quantum_queries_total": 1067,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 4,
+        "seed": 4002,
+        "capped": false,
+        "result": {
+          "optimal_value": 17,
+          "classical_nodes_total": 68,
+          "quantum_queries_total": 1232,
+          "detection_calls": 9,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 5,
+        "seed": 5000,
+        "capped": false,
+        "result": {
+          "optimal_value": 17,
+          "classical_nodes_total": 19,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 5,
+        "seed": 5001,
+        "capped": false,
+        "result": {
+          "optimal_value": 26,
+          "classical_nodes_total": 19,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 8,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 5,
+        "seed": 5002,
+        "capped": false,
+        "result": {
+          "optimal_value": 16,
+          "classical_nodes_total": 24,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 11,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 6,
+        "seed": 6000,
+        "capped": false,
+        "result": {
+          "optimal_value": 22,
+          "classical_nodes_total": 21,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 9,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 6,
+        "seed": 6001,
+        "capped": false,
+        "result": {
+          "optimal_value": 28,
+          "classical_nodes_total": 21,
+          "quantum_queries_total": 330,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 9,
+          "montanaro_queries_decisive": 15,
+          "assignment": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 3,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 6,
+        "seed": 6002,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 230,
+          "quantum_queries_total": 3080,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 60,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 7,
+        "seed": 7000,
+        "capped": false,
+        "result": {
+          "optimal_value": 24,
+          "classical_nodes_total": 40,
+          "quantum_queries_total": 682,
+          "detection_calls": 8,
+          "correct": true,
+          "max_tree": 24,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 2,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 7,
+        "seed": 7001,
+        "capped": false,
+        "result": {
+          "optimal_value": 33,
+          "classical_nodes_total": 32,
+          "quantum_queries_total": 506,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 16,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 4,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 7,
+        "seed": 7002,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 52,
+          "quantum_queries_total": 847,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 30,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 8,
+        "seed": 8000,
+        "capped": false,
+        "result": {
+          "optimal_value": 38,
+          "classical_nodes_total": 130,
+          "quantum_queries_total": 2046,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 53,
+          "montanaro_queries_decisive": 63,
+          "assignment": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 8,
+        "seed": 8001,
+        "capped": false,
+        "result": {
+          "optimal_value": 27,
+          "classical_nodes_total": 50,
+          "quantum_queries_total": 847,
+          "detection_calls": 10,
+          "correct": true,
+          "max_tree": 26,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      },
+      {
+        "generator": "inverse_strongly",
+        "n": 8,
+        "seed": 8002,
+        "capped": false,
+        "result": {
+          "optimal_value": 33,
+          "classical_nodes_total": 49,
+          "quantum_queries_total": 836,
+          "detection_calls": 11,
+          "correct": true,
+          "max_tree": 21,
+          "montanaro_queries_decisive": 31,
+          "assignment": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "witness_valid": true,
+          "witness_detection_calls": 5,
+          "query_classification": "SCHEDULED",
+          "decision_classification": "SIMULATED_ANALYTICAL_MAJORITY"
+        }
+      }
+    ],
+    "capped": 0,
+    "mismatches": 0
+  },
+  "source_sha256": {
+    "simulation\\revision_audit_20261022.py": "398eac1f0c558caea0c208ea9ed7f7131bcc191ddb4ccecf951cd05fe58aa3d1",
+    "simulation\\exact_knapsack.py": "49680352a2223d29283b2888549b078f005409c181a38f59de98d8250e1ad774",
+    "simulation\\oracle_h\\node_bound_reversible.py": "7aa8181eca1e259bc13fac7dd47ce92d53602d63696d5d6aa14736943c33da12",
+    "simulation\\quantum_backtracking.py": "31d96854f7461383ac5ce468f2de6a076019a40359b51ece2aae8a0da3bc516b"
+  }
+}

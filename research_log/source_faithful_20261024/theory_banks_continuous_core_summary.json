@@ -1,0 +1,19 @@
+{
+  "panel": "core",
+  "attempted": 700,
+  "status_counts": {
+    "complete": 677,
+    "all_fit_exact_shortcut": 23
+  },
+  "bank_size_median": 5.0,
+  "bank_size_max": 16,
+  "strict_density_grid_improvements": 105,
+  "total_reachable_states": 2056205,
+  "total_affine_constraints": 12771669,
+  "total_preprocessing_seconds": 24.241607800329803,
+  "total_comparison_dp_seconds": 0.20597699997597374,
+  "numerator_bits_max": 10,
+  "denominator_bits_max": 10,
+  "cardinality_contradictions": 0,
+  "source_sha256": "fe63a459adf3479c61ed94d905824667a913b42b2a5632220efeb487a0eae617"
+}

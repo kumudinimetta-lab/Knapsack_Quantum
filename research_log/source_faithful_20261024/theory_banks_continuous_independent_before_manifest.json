@@ -1,0 +1,9 @@
+{
+  "source_hashes": {
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\theory_banks_independent.jsonl": "6db58e8b1f49e071f1b70181ace21964787030c9cfc3d3464e5d9fc0f9f9ee86",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\theory_continuous_bank_study.py": "e3b9056a5282084018802010ba03b1e36dca8afd04edd8e21404db73d0f1a402",
+    "C:\\CBP\\HybridQuantumKnapsack\\simulation\\source_faithful_20261024\\continuous_bank.py": "4308ba9d025a5b43377ff39a5893b172ea6ad9672f60475424d1651b5defe82c",
+    "C:\\CBP\\HybridQuantumKnapsack\\simulation\\source_faithful_20261024\\compressed_bank.py": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5"
+  },
+  "scope": "Minimum cardinality among all nonnegative rational multipliers for exact provided arrays and static prefix order; integer threshold predicates only. Pseudopolynomial preprocessing is not free."
+}

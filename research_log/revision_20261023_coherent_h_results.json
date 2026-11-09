@@ -1,0 +1,94 @@
+{
+  "classification": "SIMULATED_EXACT_SPARSE_STATEVECTOR",
+  "scope": "All prefix, depth, threshold and target input encodings on three listed instances; clean initial workspace.",
+  "rows": [
+    {
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "k": 5,
+      "depth_register_bits": 3,
+      "threshold_bits": 5,
+      "statevector_columns": 8192,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "qubits": 591,
+      "gates": 9228,
+      "gate_depth": 1622,
+      "gate_counts": {
+        "x": 662,
+        "cx": 6441,
+        "ccx": 2125
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    {
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "k": 7,
+      "depth_register_bits": 3,
+      "threshold_bits": 5,
+      "statevector_columns": 8192,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "qubits": 342,
+      "gates": 6056,
+      "gate_depth": 1270,
+      "gate_counts": {
+        "x": 638,
+        "cx": 4201,
+        "ccx": 1217
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    {
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "k": 6,
+      "depth_register_bits": 2,
+      "threshold_bits": 4,
+      "statevector_columns": 1024,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "qubits": 575,
+      "gates": 7607,
+      "gate_depth": 1252,
+      "gate_counts": {
+        "x": 520,
+        "cx": 5329,
+        "ccx": 1758
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    }
+  ]
+}

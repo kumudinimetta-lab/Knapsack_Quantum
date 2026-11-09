@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-22",
+  "python": "3.13.6",
+  "part": "small",
+  "small_oracle": {
+    "classification": "SIMULATED",
+    "instances": [
+      {
+        "weights": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "values": [
+          3,
+          4,
+          5,
+          8
+        ],
+        "capacity": 8,
+        "columns": 1984,
+        "mismatches": 0,
+        "dirty": 0,
+        "profiles": [
+          {
+            "depth": 57,
+            "qubits": 46,
+            "gates": 133,
+            "gate_counts": {
+              "x": 16,
+              "cx": 89,
+              "ccx": 28
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 257,
+            "qubits": 545,
+            "gates": 1747,
+            "gate_counts": {
+              "x": 92,
+              "cx": 1249,
+              "ccx": 406
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 211,
+            "qubits": 404,
+            "gates": 1285,
+            "gate_counts": {
+              "x": 76,
+              "cx": 909,
+              "ccx": 300
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 165,
+            "qubits": 287,
+            "gates": 907,
+            "gate_counts": {
+              "x": 72,
+              "cx": 629,
+              "ccx": 206
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 121,
+            "qubits": 155,
+            "gates": 475,
+            "gate_counts": {
+              "x": 50,
+              "cx": 319,
+              "ccx": 106
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        ]
+      },
+      {
+        "weights": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "values": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "capacity": 13,
+        "columns": 1984,
+        "mismatches": 0,
+        "dirty": 0,
+        "profiles": [
+          {
+            "depth": 33,
+            "qubits": 21,
+            "gates": 55,
+            "gate_counts": {
+              "x": 16,
+              "cx": 33,
+              "ccx": 6
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 183,
+            "qubits": 275,
+            "gates": 899,
+            "gate_counts": {
+              "x": 80,
+              "cx": 645,
+              "ccx": 174
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 193,
+            "qubits": 297,
+            "gates": 961,
+            "gate_counts": {
+              "x": 84,
+              "cx": 681,
+              "ccx": 196
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 137,
+            "qubits": 214,
+            "gates": 681,
+            "gate_counts": {
+              "x": 66,
+              "cx": 475,
+              "ccx": 140
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 89,
+            "qubits": 120,
+            "gates": 365,
+            "gate_counts": {
+              "x": 48,
+              "cx": 241,
+              "ccx": 76
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        ]
+      },
+      {
+        "weights": [
+          4,
+          7,
+          6
+        ],
+        "values": [
+          5,
+          6,
+          2
+        ],
+        "capacity": 7,
+        "columns": 480,
+        "mismatches": 0,
+        "dirty": 0,
+        "profiles": [
+          {
+            "depth": 69,
+            "qubits": 56,
+            "gates": 169,
+            "gate_counts": {
+              "x": 16,
+              "cx": 117,
+              "ccx": 36
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 251,
+            "qubits": 547,
+            "gates": 1757,
+            "gate_counts": {
+              "x": 98,
+              "cx": 1251,
+              "ccx": 408
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 191,
+            "qubits": 392,
+            "gates": 1247,
+            "gate_counts": {
+              "x": 78,
+              "cx": 875,
+              "ccx": 294
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          {
+            "depth": 115,
+            "qubits": 188,
+            "gates": 589,
+            "gate_counts": {
+              "x": 52,
+              "cx": 405,
+              "ccx": 132
+            },
+            "classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        ]
+      }
+    ],
+    "independent_dense_check": {
+      "weights": [
+        2
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 2,
+      "depth": 1,
+      "qubits": 25,
+      "max_amplitude_error": 5.551115123125783e-17
+    }
+  },
+  "source_sha256": {
+    "simulation\\revision_audit_20261022.py": "9b9bae9c0216b4b737b9030e0c74d73e0333faa6462441373393032acf13f12c",
+    "simulation\\exact_knapsack.py": "49680352a2223d29283b2888549b078f005409c181a38f59de98d8250e1ad774",
+    "simulation\\oracle_h\\node_bound_reversible.py": "0f5b1d4da1ddf80057c3e9b3b0d7015d598027c2dd5e1e18bfdd8cbdc0d768af",
+    "simulation\\quantum_backtracking.py": "4aafd6e20f8c755ac44a241c348a3e4031c544cd6502a787baf8a224b703e8fc"
+  }
+}

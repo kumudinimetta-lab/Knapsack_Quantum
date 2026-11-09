@@ -1,0 +1,1860 @@
+{
+  "seed": 2026102411,
+  "configuration_classification": "HARDCODED",
+  "reference_classification": "DERIVED exact LP vertex enumeration",
+  "column_classification": "SIMULATED reversible X/CX/CCX basis propagation",
+  "source_sha256": {
+    "rounding.py": "1d17562bbeda759a4ed26fb9684bca298cd62d7b0d4d34429da3242d29d028ab",
+    "compressed_bank.py": "2c31c8f7d3da1b5f40e3c36ed1afb01f286e9dca38ef92aa3be001415f0f7ee7",
+    "reviewer_adversarial_probe.py": "e77ccf1242bc4d4718ad317886a880336552cbb1edf1e946d61f58fa503540e1"
+  },
+  "rows": [
+    {
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 17
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 4,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 11
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 4,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 11
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 4,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 11
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 30,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 0,
+          "qubits": 92
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 24
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 24
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 26
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 1,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 32,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 0,
+          "qubits": 104
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 26
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 26
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 16,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 0,
+          "qubits": 29
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        3
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 2,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 28,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 3,
+          "qubits": 138
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 24
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 24
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 32
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 1,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        3
+      ],
+      "values": [
+        2
+      ],
+      "capacity": 2,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 30,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 3,
+          "qubits": 133
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 27
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 8,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 27
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 33
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        6,
+        4,
+        1
+      ],
+      "values": [
+        7,
+        4,
+        1
+      ],
+      "capacity": 5,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 330,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 5,
+          "qubits": 576
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 12,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 5,
+          "qubits": 94
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 20,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 5,
+          "qubits": 286
+        },
+        {
+          "fixed_depth": 3,
+          "columns": 70,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 5,
+          "qubits": 75
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        8,
+        16
+      ],
+      "values": [
+        16,
+        8
+      ],
+      "capacity": 17,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 174,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 1,
+          "qubits": 263
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 71
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 26,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 93
+        },
+        {
+          "fixed_depth": 2,
+          "columns": 42,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 49
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 7,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 406,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 1,
+          "qubits": 594
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 94
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 26,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 279
+        },
+        {
+          "fixed_depth": 3,
+          "columns": 78,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 1,
+          "qubits": 86
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        9,
+        1,
+        3
+      ],
+      "values": [
+        17,
+        4,
+        2
+      ],
+      "capacity": 1,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 338,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 7,
+          "qubits": 618
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 7,
+          "qubits": 99
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 26,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 7,
+          "qubits": 372
+        },
+        {
+          "fixed_depth": 3,
+          "columns": 58,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 7,
+          "qubits": 70
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "values": [
+        5,
+        1,
+        8,
+        9
+      ],
+      "capacity": 12,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1322,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 6,
+          "qubits": 972
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 14,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 6,
+          "qubits": 131
+        },
+        {
+          "fixed_depth": 2,
+          "columns": 54,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 6,
+          "qubits": 394
+        },
+        {
+          "fixed_depth": 4,
+          "columns": 188,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 6,
+          "qubits": 110
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        1,
+        3
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 65536,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 166,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 3,
+          "qubits": 690
+        },
+        {
+          "fixed_depth": 0,
+          "columns": 12,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 67
+        },
+        {
+          "fixed_depth": 1,
+          "columns": 26,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 365
+        },
+        {
+          "fixed_depth": 2,
+          "columns": 44,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 0,
+          "precision_bits": 3,
+          "qubits": 52
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        11
+      ],
+      "values": [
+        15
+      ],
+      "capacity": 2,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 38,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 7,
+          "qubits": 324
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        6,
+        11,
+        13,
+        4,
+        13
+      ],
+      "values": [
+        19,
+        6,
+        16,
+        4,
+        19
+      ],
+      "capacity": 21,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2732,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1793
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 4,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        6,
+        11,
+        2,
+        6,
+        11
+      ],
+      "values": [
+        17,
+        12,
+        2,
+        12,
+        15
+      ],
+      "capacity": 33,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 3002,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 7,
+          "qubits": 1583
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        3,
+        10,
+        13,
+        4,
+        13
+      ],
+      "values": [
+        19,
+        14,
+        3,
+        19,
+        6
+      ],
+      "capacity": 17,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2816,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1703
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        3,
+        13,
+        6,
+        12,
+        8
+      ],
+      "values": [
+        16,
+        3,
+        11,
+        5,
+        15
+      ],
+      "capacity": 22,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2876,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1845
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        13,
+        2,
+        6
+      ],
+      "values": [
+        4,
+        17,
+        11
+      ],
+      "capacity": 15,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 422,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 8,
+          "qubits": 977
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        10,
+        3,
+        2,
+        1,
+        4
+      ],
+      "values": [
+        3,
+        18,
+        13,
+        2,
+        15
+      ],
+      "capacity": 12,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2908,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 7,
+          "qubits": 1427
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        9,
+        9,
+        5,
+        13
+      ],
+      "values": [
+        8,
+        5,
+        9,
+        9
+      ],
+      "capacity": 4,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1000,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 8,
+          "qubits": 1182
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 4,
+        "root_tail_size": 5,
+        "brute_grid_minimum": 4
+      }
+    },
+    {
+      "weights": [
+        7,
+        9
+      ],
+      "values": [
+        15,
+        18
+      ],
+      "capacity": 6,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 148,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 6,
+          "qubits": 492
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        9,
+        6,
+        13,
+        5
+      ],
+      "values": [
+        4,
+        4,
+        13,
+        9
+      ],
+      "capacity": 1,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 918,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 7,
+          "qubits": 1091
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 5,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        10,
+        11
+      ],
+      "values": [
+        10,
+        13
+      ],
+      "capacity": 12,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 172,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 7,
+          "qubits": 486
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        3,
+        3,
+        4
+      ],
+      "values": [
+        1,
+        9,
+        2
+      ],
+      "capacity": 1,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 262,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 3,
+          "qubits": 524
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 4,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        8,
+        12,
+        13,
+        8
+      ],
+      "values": [
+        9,
+        11,
+        19,
+        15
+      ],
+      "capacity": 35,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1380,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 8,
+          "qubits": 1568
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        13,
+        4,
+        9,
+        10,
+        2
+      ],
+      "values": [
+        19,
+        4,
+        9,
+        9,
+        6
+      ],
+      "capacity": 6,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2354,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1444
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 4,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        9,
+        1,
+        5,
+        1
+      ],
+      "values": [
+        5,
+        3,
+        7,
+        7
+      ],
+      "capacity": 7,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1306,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 7,
+          "qubits": 1022
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        10,
+        13,
+        3,
+        5,
+        6
+      ],
+      "values": [
+        15,
+        5,
+        10,
+        15,
+        2
+      ],
+      "capacity": 35,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 3006,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1557
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        7,
+        9,
+        13,
+        8,
+        6
+      ],
+      "values": [
+        4,
+        17,
+        6,
+        18,
+        6
+      ],
+      "capacity": 38,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 3012,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1623
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        10,
+        11,
+        13,
+        8,
+        11
+      ],
+      "values": [
+        15,
+        13,
+        1,
+        10,
+        11
+      ],
+      "capacity": 8,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2122,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1307
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 4,
+        "root_tail_size": 6,
+        "brute_grid_minimum": 4
+      }
+    },
+    {
+      "weights": [
+        4,
+        8,
+        8,
+        3,
+        13
+      ],
+      "values": [
+        9,
+        12,
+        12,
+        16,
+        8
+      ],
+      "capacity": 8,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2584,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1366
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        9,
+        5,
+        3
+      ],
+      "values": [
+        18,
+        16,
+        2
+      ],
+      "capacity": 7,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 366,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 17,
+          "precision_bits": 5,
+          "qubits": 700
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        9,
+        1,
+        12,
+        1,
+        2
+      ],
+      "values": [
+        12,
+        13,
+        5,
+        14,
+        11
+      ],
+      "capacity": 26,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 3034,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 8,
+          "qubits": 1590
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        10
+      ],
+      "values": [
+        12
+      ],
+      "capacity": 7,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 42,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 6,
+          "qubits": 244
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        12,
+        2,
+        6,
+        4,
+        10
+      ],
+      "values": [
+        12,
+        13,
+        8,
+        3,
+        7
+      ],
+      "capacity": 19,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 2836,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 129,
+          "precision_bits": 7,
+          "qubits": 1308
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 4,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        4,
+        10
+      ],
+      "values": [
+        16,
+        1
+      ],
+      "capacity": 15,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 178,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 7,
+          "qubits": 356
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        4,
+        8,
+        7,
+        2
+      ],
+      "values": [
+        6,
+        13,
+        3,
+        16
+      ],
+      "capacity": 7,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1174,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 6,
+          "qubits": 950
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 3,
+        "root_tail_size": 4,
+        "brute_grid_minimum": 3
+      }
+    },
+    {
+      "weights": [
+        13
+      ],
+      "values": [
+        8
+      ],
+      "capacity": 9,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 44,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 8,
+          "qubits": 276
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        7
+      ],
+      "values": [
+        16
+      ],
+      "capacity": 1,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 42,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 6,
+          "qubits": 224
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        9,
+        10
+      ],
+      "values": [
+        10,
+        19
+      ],
+      "capacity": 13,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 176,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 7,
+          "qubits": 687
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        2
+      ],
+      "values": [
+        7
+      ],
+      "capacity": 0,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 34,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 1,
+          "qubits": 155
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 1,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        12,
+        2
+      ],
+      "values": [
+        14,
+        9
+      ],
+      "capacity": 5,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 168,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 7,
+          "qubits": 484
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        6
+      ],
+      "values": [
+        18
+      ],
+      "capacity": 2,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 44,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 0,
+          "qubits": 175
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        3,
+        5
+      ],
+      "values": [
+        9,
+        1
+      ],
+      "capacity": 0,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 116,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 5,
+          "qubits": 408
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 1,
+        "root_tail_size": 3,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        3
+      ],
+      "values": [
+        9
+      ],
+      "capacity": 4,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 46,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 0,
+          "qubits": 153
+        }
+      ],
+      "bank": {
+        "status": "all_fit_exact_shortcut",
+        "size": 1,
+        "root_tail_size": 1,
+        "brute_grid_minimum": 1
+      }
+    },
+    {
+      "weights": [
+        7
+      ],
+      "values": [
+        12
+      ],
+      "capacity": 6,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 40,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 1,
+          "precision_bits": 6,
+          "qubits": 264
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        11,
+        6
+      ],
+      "values": [
+        16,
+        17
+      ],
+      "capacity": 14,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 178,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 5,
+          "precision_bits": 7,
+          "qubits": 650
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    },
+    {
+      "weights": [
+        13,
+        2,
+        1,
+        3
+      ],
+      "values": [
+        19,
+        18,
+        17,
+        18
+      ],
+      "capacity": 18,
+      "rounding": [
+        {
+          "fixed_depth": null,
+          "columns": 1388,
+          "mismatches": 0,
+          "dirty_columns": 0,
+          "prefixes_with_nonzero_ignored_suffix": 49,
+          "precision_bits": 8,
+          "qubits": 1267
+        }
+      ],
+      "bank": {
+        "status": "complete",
+        "size": 2,
+        "root_tail_size": 2,
+        "brute_grid_minimum": 2
+      }
+    }
+  ],
+  "first_failures": [],
+  "fallback_controls": [
+    {
+      "settings": {
+        "capacity_cap": 0
+      },
+      "status": "capacity_cap_safe_root_tail_fallback",
+      "minimum": false,
+      "bank_equals_root_tail": true
+    },
+    {
+      "settings": {
+        "state_cap": 0
+      },
+      "status": "state_cap_safe_root_tail_fallback",
+      "minimum": false,
+      "bank_equals_root_tail": true
+    },
+    {
+      "settings": {
+        "seconds_cap": 0
+      },
+      "status": "time_cap_safe_root_tail_fallback",
+      "minimum": false,
+      "bank_equals_root_tail": true
+    }
+  ],
+  "repaired_barrier": [
+    {
+      "main_items": 2,
+      "expected": 2,
+      "actual": 2,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 3,
+      "expected": 3,
+      "actual": 3,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 4,
+      "expected": 3,
+      "actual": 3,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 5,
+      "expected": 4,
+      "actual": 4,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 6,
+      "expected": 4,
+      "actual": 4,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 7,
+      "expected": 5,
+      "actual": 5,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 8,
+      "expected": 5,
+      "actual": 5,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 9,
+      "expected": 6,
+      "actual": 6,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 10,
+      "expected": 6,
+      "actual": 6,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 11,
+      "expected": 7,
+      "actual": 7,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 12,
+      "expected": 7,
+      "actual": 7,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 13,
+      "expected": 8,
+      "actual": 8,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 14,
+      "expected": 8,
+      "actual": 8,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 15,
+      "expected": 9,
+      "actual": 9,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 16,
+      "expected": 9,
+      "actual": 9,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    },
+    {
+      "main_items": 17,
+      "expected": 10,
+      "actual": 10,
+      "weights_gcd": 1,
+      "profits_gcd": 1
+    }
+  ],
+  "totals": {
+    "rounding_columns": 46700,
+    "rounding_mismatches": 0,
+    "rounding_dirty_columns": 0,
+    "compressed_feasible_prefixes": 779,
+    "compressed_floor_mismatches": 0,
+    "compressed_root_tail_exact_mismatches": 0,
+    "noncontiguous_coverage": 0,
+    "brute_grid_minimum_cases": 47,
+    "brute_grid_minimum_mismatches": 0
+  }
+}

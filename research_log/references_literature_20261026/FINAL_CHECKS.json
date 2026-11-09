@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-26",
+  "metric_class": "DERIVED document inventory/checks; no research measurements",
+  "entries": 40,
+  "distinct_cited_keys": 40,
+  "missing_citation_keys": 0,
+  "uncited_entries": 0,
+  "duplicate_keys": 0,
+  "source_identity_records": 40,
+  "all_remaining_references_have_scoped_lr_source_records": true,
+  "prefix_and_suffix_outside_lr_byte_identical": true,
+  "backup_hash_checks": [
+    {
+      "file": "main.tex",
+      "sha256": "593c2b22a7aac7b8d0106dd6a804b40cb37634ed78395d4f1eb74ab8c5cf9dc1",
+      "matches": true
+    },
+    {
+      "file": "references.bib",
+      "sha256": "2129e91caedb7322581d0333aae4af50d5126bfd6b02b6da7dba4ec1d694987b",
+      "matches": true
+    },
+    {
+      "file": "main.pdf",
+      "sha256": "2c26c61db6a2756d8cee0ab5d6851851f7ba0de0a61e0e3abca9373e6875e231",
+      "matches": true
+    }
+  ],
+  "undefined_citations": 0,
+  "undefined_references": 0,
+  "bibtex_warnings": 0,
+  "pdf_pages": 13,
+  "pdf_sha256": "bd6c2fd129baf00d7819d51cc5413d57734fb96460b6e15a6ed4535f89f3a76d",
+  "tex_sha256": "0fd2c3494dc74383403e2e8673731134ebbe1aea94e8e1399bb87929f3e8dd9d",
+  "bib_sha256": "f851910a437394a9fb66274d18cf61da9175438af91b8db1026bc16fe5f04a00",
+  "visual_review_pages": [
+    2,
+    3,
+    4,
+    12,
+    13
+  ],
+  "whole_paper_status": "NOT_CERTIFIED: outside-scope claim/citation integrity holds remain",
+  "warnings": [
+    "LaTeX Warning: `h' float specifier changed to `ht'.",
+    "Overfull \\hbox (33.33115pt too wide) in paragraph at lines 265--277"
+  ]
+}

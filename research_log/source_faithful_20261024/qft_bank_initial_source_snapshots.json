@@ -1,0 +1,14 @@
+[
+  {
+    "source": "simulation/source_faithful_20261024/qft_bank.py",
+    "recovered_snapshot": "qft_bank_initial_source_snapshot.py",
+    "sha256": "c31d0a45b2f61b9bcc8689d698c8555bc8e0ccbfcd5a40b5c19cb0b26822e9bb",
+    "status": "BYTE_HASH_MATCH_TO_PRE_RECORDED_RAW_PILOT"
+  },
+  {
+    "source": "research_log/source_faithful_20261024/qft_bank_pilot.py",
+    "recovered_snapshot": "qft_bank_pilot_initial_source_snapshot.py",
+    "sha256": "d7fc3de151e6c8c74969b47c1c8aa8838a1207bdfd19d8e607cff28754e3d58a",
+    "status": "BYTE_HASH_MATCH_TO_PRE_RECORDED_RAW_PILOT"
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "scope": "Final matched QFT reconstruction and synthesis consistency; not an external implementation speedup",
+  "classification": "DERIVED independent exact ledger recomputation",
+  "rows": 840,
+  "inputs": 105,
+  "status_counts": {
+    "COMPLETED": 840
+  },
+  "source_hash_checks": [
+    {
+      "path": "simulation\\source_faithful_20261024\\qft_bank.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\qft_normal_form.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\width_controls.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\qft_reconstruction.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\resource_profile.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\compressed_bank.py",
+      "match": true
+    },
+    {
+      "path": "research_log\\source_faithful_20261024\\qft_bank_resources.py",
+      "match": true
+    }
+  ],
+  "comparisons_checked": 13,
+  "synthesis_validation": {
+    "records": 7045,
+    "columns": 10843350,
+    "predicate_mismatches": 0,
+    "dirty_columns": 0
+  },
+  "synthesis_continuous_stats": {
+    "main": {
+      "strict_grid_improvements": 128,
+      "preprocessing_seconds": 37.42066380023607,
+      "profit_dp_seconds": 0.2988646003068425
+    },
+    "core": {
+      "strict_grid_improvements": 105,
+      "preprocessing_seconds": 24.241607800329803,
+      "profit_dp_seconds": 0.20597699997597374
+    }
+  },
+  "primary": {
+    "numerator": "qft_bank_direct_merged",
+    "denominator": "qft_lp_direct_merged",
+    "paired": 105,
+    "incomplete_pair_ids": [],
+    "metrics": {
+      "qubits": {
+        "median_ratio": 0.46236559139784944,
+        "min_ratio": 0.3973509933774834,
+        "max_ratio": 0.5,
+        "lower": 105,
+        "tied": 0,
+        "higher": 0
+      },
+      "u": {
+        "median_ratio": 0.4099270324709423,
+        "min_ratio": 0.09419041547413969,
+        "max_ratio": 0.7516606674844323,
+        "lower": 105,
+        "tied": 0,
+        "higher": 0
+      },
+      "cx": {
+        "median_ratio": 0.4091025419744196,
+        "min_ratio": 0.09333834366714683,
+        "max_ratio": 0.7506145388153935,
+        "lower": 105,
+        "tied": 0,
+        "higher": 0
+      },
+      "common_depth": {
+        "median_ratio": 0.94327655759749,
+        "min_ratio": 0.07975817286162114,
+        "max_ratio": 1.916491171229548,
+        "lower": 57,
+        "tied": 0,
+        "higher": 48
+      }
+    },
+    "numerator_weakly_dominates_all_four": 57,
+    "denominator_weakly_dominates_all_four": 0,
+    "examples": []
+  },
+  "failures": []
+}

@@ -1,0 +1,2388 @@
+{
+  "derivation": "normalized_width_derivation_before_code.md",
+  "primitive_skeletons": {
+    "x": [
+      [
+        "u",
+        [
+          0
+        ]
+      ]
+    ],
+    "cx": [
+      [
+        "cx",
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "ccx": [
+      [
+        "u",
+        [
+          2
+        ]
+      ],
+      [
+        "cx",
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        "u",
+        [
+          2
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        "u",
+        [
+          2
+        ]
+      ],
+      [
+        "cx",
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        "u",
+        [
+          1
+        ]
+      ],
+      [
+        "u",
+        [
+          2
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "u",
+        [
+          0
+        ]
+      ],
+      [
+        "u",
+        [
+          1
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "u",
+        [
+          2
+        ]
+      ],
+      [
+        "u",
+        [
+          2
+        ]
+      ]
+    ],
+    "h": [
+      [
+        "u",
+        [
+          0
+        ]
+      ]
+    ],
+    "p": [
+      [
+        "u",
+        [
+          0
+        ]
+      ]
+    ],
+    "cp": [
+      [
+        "u",
+        [
+          0
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "u",
+        [
+          1
+        ]
+      ],
+      [
+        "cx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "u",
+        [
+          1
+        ]
+      ]
+    ]
+  },
+  "prior_resource_checks": [
+    {
+      "fixture": 0,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 0,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 0,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 0,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 1,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 1,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 1,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 1,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 2,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 2,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 2,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 2,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 3,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 3,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 3,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 3,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 4,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 4,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 4,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 4,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 5,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 5,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 5,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 5,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 6,
+      "method": "qft_direct",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 6,
+      "method": "qft_source_generic",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 6,
+      "method": "compact_exact",
+      "count_or_depth_mismatch": false
+    },
+    {
+      "fixture": 6,
+      "method": "compact_dual",
+      "count_or_depth_mismatch": false
+    }
+  ],
+  "normalized_checks": [
+    {
+      "fixture": 0,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 23,
+        "native_counts": {
+          "h": 104,
+          "cp": 198,
+          "x": 6,
+          "ccx": 3,
+          "cx": 19
+        },
+        "native_depth": 124,
+        "common_counts": {
+          "u": 731,
+          "cx": 433
+        },
+        "common_depth": 418,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0007000000041443855,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 4.218927638180205e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 8.43769498715119e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.1420323000056669,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 0,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 25,
+        "native_counts": {
+          "h": 104,
+          "cp": 198,
+          "x": 6,
+          "ccx": 5,
+          "cx": 21
+        },
+        "native_depth": 124,
+        "common_counts": {
+          "u": 749,
+          "cx": 447
+        },
+        "common_depth": 418,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.000986999977612868,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 4.64204468819285e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 9.281464485866309e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.14183369997772388,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 0,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 23,
+        "native_counts": {
+          "cx": 239,
+          "ccx": 93,
+          "x": 34
+        },
+        "native_depth": 266,
+        "common_counts": {
+          "cx": 797,
+          "u": 871
+        },
+        "common_depth": 1140,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0011959999974351376,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.09838919999310747,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 25,
+        "native_counts": {
+          "h": 112,
+          "cp": 222,
+          "x": 8,
+          "ccx": 3,
+          "cx": 19
+        },
+        "native_depth": 130,
+        "common_counts": {
+          "u": 813,
+          "cx": 481
+        },
+        "common_depth": 442,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.001063899981090799,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 3.6415332977570014e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 7.283063041541027e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.15708260002429597,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 27,
+        "native_counts": {
+          "h": 112,
+          "cp": 222,
+          "x": 8,
+          "ccx": 5,
+          "cx": 21
+        },
+        "native_depth": 130,
+        "common_counts": {
+          "u": 831,
+          "cx": 495
+        },
+        "common_depth": 442,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0009772999910637736,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 3.797000372109357e-14,
+        "max_probability_leak": 4.440892098500626e-16,
+        "first_failures": [],
+        "max_normalization_error": 7.593925488436071e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.16846489999443293,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "conservative_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 25,
+        "native_counts": {
+          "cx": 267,
+          "ccx": 105,
+          "x": 44
+        },
+        "native_depth": 296,
+        "common_counts": {
+          "cx": 897,
+          "u": 989
+        },
+        "common_depth": 1284,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.001649500016355887,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.12604970001848415,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 40,
+        "native_counts": {
+          "x": 56,
+          "ccx": 35,
+          "cx": 59,
+          "h": 448,
+          "cp": 1186
+        },
+        "native_depth": 648,
+        "common_counts": {
+          "u": 4377,
+          "cx": 2641
+        },
+        "common_depth": 2330,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004539799992926419,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 1.5609791247152598e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 3.12194714524594e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.558332699991297,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 41,
+        "native_counts": {
+          "x": 56,
+          "ccx": 43,
+          "cx": 67,
+          "h": 448,
+          "cp": 1186
+        },
+        "native_depth": 650,
+        "common_counts": {
+          "u": 4449,
+          "cx": 2697
+        },
+        "common_depth": 2377,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.005028299987316132,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 2.045806844570861e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 4.0900616227190767e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.4419114000047557,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 38,
+        "native_counts": {
+          "x": 160,
+          "cx": 1079,
+          "ccx": 435
+        },
+        "native_depth": 1146,
+        "common_counts": {
+          "u": 4075,
+          "cx": 3689
+        },
+        "common_depth": 5174,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004728700005216524,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.24315629998454824,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 37,
+        "native_counts": {
+          "h": 312,
+          "cp": 802,
+          "x": 34,
+          "ccx": 20,
+          "cx": 41
+        },
+        "native_depth": 438,
+        "common_counts": {
+          "u": 2932,
+          "cx": 1765
+        },
+        "common_depth": 1616,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0036031999916303903,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 1.1590866215598356e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 2.318145675417327e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.5996669000014663,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 38,
+        "native_counts": {
+          "h": 312,
+          "cp": 802,
+          "x": 34,
+          "ccx": 26,
+          "cx": 47
+        },
+        "native_depth": 448,
+        "common_counts": {
+          "u": 2986,
+          "cx": 1807
+        },
+        "common_depth": 1663,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0038111000030767173,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 1.2701955938402166e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 2.5424107263916085e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.4970202000113204,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "conservative_widths": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 35,
+        "native_counts": {
+          "cx": 747,
+          "ccx": 302,
+          "x": 106
+        },
+        "native_depth": 794,
+        "common_counts": {
+          "cx": 2559,
+          "u": 2824
+        },
+        "common_depth": 3606,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.003967099997680634,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.3163763999764342,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        2
+      ],
+      "capacity": 2,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 47,
+        "native_counts": {
+          "h": 528,
+          "cp": 1984,
+          "x": 46,
+          "ccx": 34,
+          "cx": 57
+        },
+        "native_depth": 722,
+        "common_counts": {
+          "u": 6832,
+          "cx": 4229
+        },
+        "common_depth": 2789,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.007463999994797632,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 3.538190472022607e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 7.076561558960748e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 2.5548503000172786,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        2
+      ],
+      "capacity": 2,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 48,
+        "native_counts": {
+          "h": 528,
+          "cp": 1984,
+          "x": 46,
+          "ccx": 42,
+          "cx": 65
+        },
+        "native_depth": 732,
+        "common_counts": {
+          "u": 6904,
+          "cx": 4285
+        },
+        "common_depth": 2845,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.006778500013751909,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 3.2752462600518923e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 6.550315845288424e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 2.5225273999967612,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        2
+      ],
+      "capacity": 2,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        4,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 43,
+        "native_counts": {
+          "cx": 1243,
+          "ccx": 502,
+          "x": 126
+        },
+        "native_depth": 1296,
+        "common_counts": {
+          "cx": 4255,
+          "u": 4644
+        },
+        "common_depth": 6008,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.005853200011188164,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.9960273999895435,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        5,
+        3,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        3,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 44,
+        "native_counts": {
+          "h": 380,
+          "cp": 1226,
+          "x": 36,
+          "ccx": 20,
+          "cx": 49
+        },
+        "native_depth": 532,
+        "common_counts": {
+          "u": 4274,
+          "cx": 2621
+        },
+        "common_depth": 1990,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004555299994535744,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 2.329339022670991e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 4.660716257376407e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 1.586890799982939,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        5,
+        3,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        3,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 45,
+        "native_counts": {
+          "h": 380,
+          "cp": 1226,
+          "x": 36,
+          "ccx": 26,
+          "cx": 55
+        },
+        "native_depth": 542,
+        "common_counts": {
+          "u": 4328,
+          "cx": 2663
+        },
+        "common_depth": 2037,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004782800009706989,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 2.1830038988444254e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 4.3653969328261155e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 1.6439404000120703,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        5,
+        3,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        3,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 41,
+        "native_counts": {
+          "cx": 911,
+          "ccx": 370,
+          "x": 128
+        },
+        "native_depth": 950,
+        "common_counts": {
+          "cx": 3131,
+          "u": 3458
+        },
+        "common_depth": 4408,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004369700007373467,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.7527187000086997,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 53,
+        "native_counts": {
+          "h": 776,
+          "cp": 3000,
+          "x": 82,
+          "ccx": 57,
+          "cx": 83
+        },
+        "native_depth": 1072,
+        "common_counts": {
+          "u": 10371,
+          "cx": 6425
+        },
+        "common_depth": 4026,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.010861099988687783,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 5.380140805971122e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 1.0762502000716268e-12,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 3.8903466000047047,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 54,
+        "native_counts": {
+          "h": 776,
+          "cp": 3000,
+          "x": 82,
+          "ccx": 67,
+          "cx": 93
+        },
+        "native_depth": 1082,
+        "common_counts": {
+          "u": 10461,
+          "cx": 6495
+        },
+        "common_depth": 4073,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.011802200024249032,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 5.218102637736618e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 1.0436096431476471e-12,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 3.8180012999800965,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        6,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 49,
+        "native_counts": {
+          "cx": 1847,
+          "ccx": 751,
+          "x": 206
+        },
+        "native_depth": 1940,
+        "common_counts": {
+          "cx": 6353,
+          "u": 6965
+        },
+        "common_depth": 8970,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.008318399981362745,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 1.4619949999905657,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 7,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "conservative_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 15,
+        "native_counts": {
+          "cx": 15,
+          "x": 2,
+          "h": 60,
+          "cp": 78,
+          "ccx": 1
+        },
+        "native_depth": 78,
+        "common_counts": {
+          "cx": 177,
+          "u": 305
+        },
+        "common_depth": 234,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0004469000268727541,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 1.0659263043768927e-14,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 2.1316282072803006e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.013892199989641085,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 7,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "conservative_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 15,
+        "native_counts": {
+          "cx": 15,
+          "x": 2,
+          "h": 60,
+          "cp": 78,
+          "ccx": 1
+        },
+        "native_depth": 78,
+        "common_counts": {
+          "cx": 177,
+          "u": 305
+        },
+        "common_depth": 234,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0003667999990284443,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 1.0659263043768927e-14,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 2.1316282072803006e-14,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.018012999993516132,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 7,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "conservative_widths": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 15,
+        "native_counts": {
+          "x": 26,
+          "cx": 123,
+          "ccx": 49
+        },
+        "native_depth": 154,
+        "common_counts": {
+          "u": 467,
+          "cx": 417
+        },
+        "common_depth": 610,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.0007207000162452459,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.013272400014102459,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 8,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_direct",
+      "normalized_widths": [
+        5,
+        4,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        7,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 45,
+        "native_counts": {
+          "h": 388,
+          "cp": 1290,
+          "x": 36,
+          "ccx": 20,
+          "cx": 49
+        },
+        "native_depth": 546,
+        "common_counts": {
+          "u": 4474,
+          "cx": 2749
+        },
+        "common_depth": 2040,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.005951400002231821,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 2.1454025363457346e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 4.289901767151605e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 1.6784067999979015,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 8,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "qft_source_generic",
+      "normalized_widths": [
+        5,
+        4,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        7,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 46,
+        "native_counts": {
+          "h": 388,
+          "cp": 1290,
+          "x": 36,
+          "ccx": 26,
+          "cx": 55
+        },
+        "native_depth": 556,
+        "common_counts": {
+          "u": 4528,
+          "cx": 2791
+        },
+        "common_depth": 2087,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.017790100013371557,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 2.1316426632602493e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "first_failures": [],
+        "max_normalization_error": 4.263256414560601e-13,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 1.760503500001505,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    },
+    {
+      "fixture": 8,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        2,
+        4
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "engine": "compact_exact",
+      "normalized_widths": [
+        5,
+        4,
+        5,
+        3
+      ],
+      "conservative_widths": [
+        5,
+        4,
+        7,
+        3
+      ],
+      "resource_profile_count_or_depth_mismatch": false,
+      "conservative_factory_native_netlist_mismatch": false,
+      "resources": {
+        "classification": "DERIVED",
+        "qubits": 42,
+        "native_counts": {
+          "cx": 943,
+          "ccx": 378,
+          "x": 128
+        },
+        "native_depth": 978,
+        "common_counts": {
+          "cx": 3211,
+          "u": 3530
+        },
+        "common_depth": 4512,
+        "common_basis": [
+          "u",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "connectivity": "all_to_all",
+        "profile_seconds_measured": 0.004517599998507649,
+        "resource_method": "actual_native_netlist_exact_local_transpiler_expansion_DAG_levels"
+      },
+      "simulation": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_or_cleanup_failures": 0,
+        "max_expected_amplitude_error": 0.0,
+        "max_probability_leak": 0.0,
+        "first_failures": [],
+        "max_normalization_error": 0.0,
+        "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615
+        },
+        "tolerance_hardcoded": 1e-08,
+        "seconds_measured": 0.7728103999979794,
+        "caps_hardcoded": {
+          "qubits": 96,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "classification": "SIMULATED for circuits; DERIVED resource decomposition crosschecks",
+    "prior_resource_method_cases": 28,
+    "normalized_resource_method_cases": 27,
+    "resource_count_or_depth_mismatches": 0,
+    "conservative_factory_netlist_mismatches": 0,
+    "compiled_columns": 564,
+    "predicate_or_cleanup_failures": 0
+  }
+}

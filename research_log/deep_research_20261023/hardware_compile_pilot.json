@@ -1,0 +1,675 @@
+{
+  "date": "2026-10-23",
+  "qiskit_version": "2.4.2",
+  "scope": "Offline static compilation of one threshold Grover iteration; no hardware jobs",
+  "metric_labels": {
+    "inputs": "HARDCODED",
+    "exact_enumeration": "DERIVED",
+    "ideal_grover_success": "DERIVED",
+    "compiler_resources": "DERIVED",
+    "measured_hardware_quantities": null
+  },
+  "runner_sha256": "225d0a1faabf1c3bb7ebc47b5e4611b6851efb74bdcd6939ca486d74e13dffed",
+  "oracle_sha256": "af00983a13241ab12b87f836c8b46bcfb0fef180fe98664c3b157dea39a69a16",
+  "compiler": {
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "optimization_level": 1,
+    "seed_transpiler": 23
+  },
+  "instances": [
+    {
+      "name": "Core-3A (Easy)",
+      "input": {
+        "name": "Core-3A (Easy)",
+        "weights": [
+          2,
+          3,
+          4
+        ],
+        "values": [
+          3,
+          4,
+          5
+        ],
+        "capacity": 5,
+        "description": "3-item core after LP fixing (uncorrelated)"
+      },
+      "greedy_incumbent": 7,
+      "fixed_in": [
+        0,
+        1
+      ],
+      "core": [],
+      "fixed_out": [
+        2
+      ],
+      "equivalence_checked_thresholds": 7,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 7,
+          "marked_count": 1,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 7,
+          "probabilities_j012": [
+            0.12500000000000003,
+            0.7812500000000001,
+            0.9453124999999999
+          ]
+        },
+        {
+          "tau": 8,
+          "marked_count": 0,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 7,
+          "probabilities_j012": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 15,
+          "depth": 231,
+          "two_qubit_gates": 377,
+          "operations": {
+            "rz": 611,
+            "cx": 377,
+            "sx": 55
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 15,
+          "depth": 571,
+          "two_qubit_gates": 1037,
+          "operations": {
+            "cx": 1037,
+            "rz": 653,
+            "sx": 57
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-3B (Medium)",
+      "input": {
+        "name": "Core-3B (Medium)",
+        "weights": [
+          3,
+          4,
+          5
+        ],
+        "values": [
+          4,
+          5,
+          7
+        ],
+        "capacity": 7,
+        "description": "3-item core after LP fixing (weakly correlated)"
+      },
+      "greedy_incumbent": 7,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 11,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 7,
+          "marked_count": 2,
+          "marked_nonoptimal_count": 1,
+          "optimal_value": 9,
+          "probabilities_j012": [
+            0.25,
+            1.0,
+            0.24999999999999956
+          ]
+        },
+        {
+          "tau": 8,
+          "marked_count": 1,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 9,
+          "probabilities_j012": [
+            0.12500000000000003,
+            0.7812500000000001,
+            0.9453124999999999
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 15,
+          "depth": 231,
+          "two_qubit_gates": 379,
+          "operations": {
+            "rz": 611,
+            "cx": 379,
+            "sx": 55
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 15,
+          "depth": 566,
+          "two_qubit_gates": 991,
+          "operations": {
+            "cx": 991,
+            "rz": 649,
+            "sx": 57
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-4A (Hard)",
+      "input": {
+        "name": "Core-4A (Hard)",
+        "weights": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "values": [
+          3,
+          4,
+          5,
+          8
+        ],
+        "capacity": 8,
+        "description": "4-item core after LP fixing (strongly correlated)"
+      },
+      "greedy_incumbent": 11,
+      "fixed_in": [
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 11,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 11,
+          "marked_count": 2,
+          "marked_nonoptimal_count": 1,
+          "optimal_value": 12,
+          "probabilities_j012": [
+            0.12500000000000003,
+            0.7812500000000001,
+            0.9453124999999999
+          ]
+        },
+        {
+          "tau": 12,
+          "marked_count": 1,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 12,
+          "probabilities_j012": [
+            0.0625,
+            0.47265625,
+            0.908447265625
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 17,
+          "depth": 260,
+          "two_qubit_gates": 487,
+          "operations": {
+            "rz": 777,
+            "cx": 487,
+            "sx": 62
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 17,
+          "depth": 684,
+          "two_qubit_gates": 1366,
+          "operations": {
+            "cx": 1366,
+            "rz": 821,
+            "sx": 64
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-4B (Subset-Sum)",
+      "input": {
+        "name": "Core-4B (Subset-Sum)",
+        "weights": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "values": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "capacity": 13,
+        "description": "4-item core (subset-sum type, v_i = w_i)"
+      },
+      "greedy_incumbent": 8,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 17,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 8,
+          "marked_count": 6,
+          "marked_nonoptimal_count": 5,
+          "optimal_value": 13,
+          "probabilities_j012": [
+            0.37499999999999994,
+            0.8437500000000002,
+            0.023437499999999833
+          ]
+        },
+        {
+          "tau": 9,
+          "marked_count": 4,
+          "marked_nonoptimal_count": 3,
+          "optimal_value": 13,
+          "probabilities_j012": [
+            0.25,
+            1.0,
+            0.24999999999999956
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 18,
+          "depth": 283,
+          "two_qubit_gates": 555,
+          "operations": {
+            "rz": 882,
+            "cx": 555,
+            "sx": 66
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 18,
+          "depth": 726,
+          "two_qubit_gates": 1629,
+          "operations": {
+            "cx": 1629,
+            "rz": 932,
+            "sx": 68
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-5A (Uncorrelated)",
+      "input": {
+        "name": "Core-5A (Uncorrelated)",
+        "weights": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "values": [
+          5,
+          4,
+          7,
+          3,
+          8
+        ],
+        "capacity": 12,
+        "description": "5-item core after LP fixing (uncorrelated)"
+      },
+      "greedy_incumbent": 16,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 13,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 16,
+          "marked_count": 3,
+          "marked_nonoptimal_count": 2,
+          "optimal_value": 20,
+          "probabilities_j012": [
+            0.09374999999999999,
+            0.6459960937499998,
+            0.9997787475585938
+          ]
+        },
+        {
+          "tau": 17,
+          "marked_count": 2,
+          "marked_nonoptimal_count": 1,
+          "optimal_value": 20,
+          "probabilities_j012": [
+            0.0625,
+            0.47265625,
+            0.908447265625
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 19,
+          "depth": 375,
+          "two_qubit_gates": 617,
+          "operations": {
+            "rz": 989,
+            "cx": 617,
+            "sx": 77
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 19,
+          "depth": 907,
+          "two_qubit_gates": 1889,
+          "operations": {
+            "cx": 1889,
+            "rz": 1035,
+            "sx": 79
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-5B (Correlated)",
+      "input": {
+        "name": "Core-5B (Correlated)",
+        "weights": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "values": [
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "capacity": 18,
+        "description": "5-item core after LP fixing (weakly correlated)"
+      },
+      "greedy_incumbent": 18,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 24,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 18,
+          "marked_count": 5,
+          "marked_nonoptimal_count": 3,
+          "optimal_value": 20,
+          "probabilities_j012": [
+            0.15625000000000003,
+            0.88134765625,
+            0.8020401000976564
+          ]
+        },
+        {
+          "tau": 19,
+          "marked_count": 2,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 20,
+          "probabilities_j012": [
+            0.0625,
+            0.47265625,
+            0.908447265625
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 19,
+          "depth": 371,
+          "two_qubit_gates": 617,
+          "operations": {
+            "rz": 989,
+            "cx": 617,
+            "sx": 75,
+            "x": 1
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 19,
+          "depth": 950,
+          "two_qubit_gates": 1898,
+          "operations": {
+            "cx": 1898,
+            "rz": 1030,
+            "sx": 77,
+            "x": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-6A (Hard)",
+      "input": {
+        "name": "Core-6A (Hard)",
+        "weights": [
+          2,
+          3,
+          5,
+          7,
+          8,
+          10
+        ],
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "capacity": 20,
+        "description": "6-item core after LP fixing (strongly correlated)"
+      },
+      "greedy_incumbent": 26,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 24,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 26,
+          "marked_count": 6,
+          "marked_nonoptimal_count": 4,
+          "optimal_value": 28,
+          "probabilities_j012": [
+            0.09374999999999999,
+            0.6459960937499998,
+            0.9997787475585938
+          ]
+        },
+        {
+          "tau": 27,
+          "marked_count": 5,
+          "marked_nonoptimal_count": 3,
+          "optimal_value": 28,
+          "probabilities_j012": [
+            0.07812500000000001,
+            0.5642700195312501,
+            0.9763538837432862
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 21,
+          "depth": 423,
+          "two_qubit_gates": 773,
+          "operations": {
+            "rz": 1233,
+            "cx": 773,
+            "sx": 88
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 21,
+          "depth": 1112,
+          "two_qubit_gates": 2324,
+          "operations": {
+            "cx": 2324,
+            "rz": 1286,
+            "sx": 90
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core-6B (Subset-Sum)",
+      "input": {
+        "name": "Core-6B (Subset-Sum)",
+        "weights": [
+          3,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "values": [
+          3,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "capacity": 24,
+        "description": "6-item core (subset-sum type, v_i = w_i)"
+      },
+      "greedy_incumbent": 23,
+      "fixed_in": [],
+      "core": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fixed_out": [],
+      "equivalence_checked_thresholds": 26,
+      "equivalence_mismatches": [],
+      "diagnostics": [
+        {
+          "tau": 23,
+          "marked_count": 6,
+          "marked_nonoptimal_count": 3,
+          "optimal_value": 24,
+          "probabilities_j012": [
+            0.09374999999999999,
+            0.6459960937499998,
+            0.9997787475585938
+          ]
+        },
+        {
+          "tau": 24,
+          "marked_count": 3,
+          "marked_nonoptimal_count": 0,
+          "optimal_value": 24,
+          "probabilities_j012": [
+            0.04687499999999999,
+            0.37078857421875,
+            0.7870681285858153
+          ]
+        }
+      ],
+      "one_iteration_resources": [
+        {
+          "topology": "all_to_all",
+          "qubits": 22,
+          "depth": 451,
+          "two_qubit_gates": 847,
+          "operations": {
+            "rz": 1344,
+            "cx": 847,
+            "sx": 92
+          }
+        },
+        {
+          "topology": "path",
+          "qubits": 22,
+          "depth": 1345,
+          "two_qubit_gates": 2647,
+          "operations": {
+            "cx": 2647,
+            "rz": 1403,
+            "sx": 94
+          }
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

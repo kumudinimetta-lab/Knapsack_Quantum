@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-24 Asia/Calcutta",
+  "scope": "Additional comparison; no substantial cross-source performance advance established",
+  "manuscript_unchanged_sha256": {
+    "main.tex": "593c2b22a7aac7b8d0106dd6a804b40cb37634ed78395d4f1eb74ab8c5cf9dc1",
+    "references.bib": "2129e91caedb7322581d0333aae4af50d5126bfd6b02b6da7dba4ec1d694987b",
+    "main.pdf": "2c26c61db6a2756d8cee0ab5d6851851f7ba0de0a61e0e3abca9373e6875e231"
+  },
+  "source_archive_sha256": "8f479e92a7fc8003df85e9e548052d2a7fe21ed7885ed64245e52203b0e3491e",
+  "file_sha256": {
+    "ADVANCE_ASSESSMENT.md": "1b327eee3189b4bc883cd9cb2f88f18370ce7dcab28aa0ff17c2e63ed55f1b91",
+    "adversarial_assessment.md": "e7f27902303d86f224e2093d93225db00b12a6414c69abb48507e468364fe73f",
+    "certificate_selector.py": "c4b7c07cdb295b1cda62eef5b7a51c2ddb66378e329022d7b669a2b4050bbec5",
+    "certificate_selector_conditions.jsonl": "5e69a65cf9467ae8f50a6517ea650c05b7abf12a729baafb95190376884369d9",
+    "certificate_selector_results.json": "03f554a4093ffa9be0a34e65c238b5dff6860669de25134b2dd495d2c72137ee",
+    "common_cohort.py": "66369d9bae6a2808cf22d1ba7af660ee70d14a85825b23d5e34abfddd0d4ccbb",
+    "common_cohort_conditions.jsonl": "ace5830634e7af7f8df097ba633e3cf79c1260755592afecc7022598f7364792",
+    "common_cohort_results.json": "d6f9e27f24d8de211a2e0630dfdeb99b539bdcd8637f97c28328ab92d711e154",
+    "PROTOCOL.md": "6b5434c0ad2c62e179fd08148e17b1cfdcbd5f9262adf1424be6b2f7533ca489",
+    "qtg_R1_source_manifest.json": "1cd908a978f7b6bcb29c8f66ba82cd5331d4ae46ae4e0a0e1fe8e61c8877a4a0",
+    "reviewer_common_cohort_audit.py": "ad1f2cd71731a3292dda1fb4221b4d06b166398b4602a490b69242143aca8450",
+    "reviewer_common_cohort_audit_result.json": "1b63e33d58f40898bdee33d833647113e3a27194a9d913cf78d81104933bdbc5",
+    "reviewer_selector_audit.py": "5e36ccc52b8643e3e9f794c98cead05c23fb4ad8acdb23117437585c19ef0f48",
+    "reviewer_selector_audit_result.json": "bc4a89b4980e3f08a80c44eee47bd6f7103fbf67e3e644f7a95fd837d3e181c9",
+    "RUN_LOG.md": "e2e7721166137eeffcb2fa1035e9140c9bf124a8e5229541c1bbe539ffb4638a",
+    "save_checkpoint.py": "4fc9b436c3868e47df5101b64aeab62652140e8eba073c1f7bf1274c5d9183ec",
+    "SELECTOR_DERIVATION.md": "fff4b9f0f82eb334dcde2fec493a307eca4a2a94a5e69e5fca5803d2b452ece6",
+    "source_implementation_audit.md": "ca867ec405ccc275a561590e3de7b7a72a7ae5f6f52f264daa57b959a3cb2cf7"
+  }
+}

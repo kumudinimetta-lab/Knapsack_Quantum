@@ -1,0 +1,262 @@
+{
+  "date": "2026-10-26",
+  "scope": "Primary-source identity and claim-scope audit; main paper/bib read-only; no simulations",
+  "graph_tools": "discovery returned none; targeted fallback reads",
+  "references": [
+    {
+      "key": "draper2000",
+      "authors": [
+        "Thomas G. Draper"
+      ],
+      "title": "Addition on a Quantum Computer",
+      "year": 2000,
+      "kind": "arXiv preprint",
+      "arxiv": "quant-ph/0008033",
+      "doi": "10.48550/arXiv.quant-ph/0008033",
+      "url": "https://arxiv.org/abs/quant-ph/0008033",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/0008033v1",
+      "locations": [
+        "Section 3, equations (1)-(2)",
+        "Section 5, Quantum Addition"
+      ],
+      "supports": "QFT addition by commuting controlled phase rotations, with no temporary carry register; known constants can be programmed into rotations.",
+      "does_not_support": "Zero workspace for an entire LP oracle, free exact physical rotations, or the old paper's numerical register/gate/T-count claims.",
+      "decision": "RETAIN; correct entry type/identifier; cite as primitive background."
+    },
+    {
+      "key": "vedral1996",
+      "authors": [
+        "Vlatko Vedral",
+        "Adriano Barenco",
+        "Artur Ekert"
+      ],
+      "title": "Quantum networks for elementary arithmetic operations",
+      "journal": "Physical Review A",
+      "volume": "54",
+      "number": "1",
+      "pages": "147-153",
+      "year": 1996,
+      "doi": "10.1103/PhysRevA.54.147",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.54.147",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/9511018v1",
+      "locations": [
+        "Section III.1 plain adder, equation (9)",
+        "Section III.3 controlled multiplier modulo N"
+      ],
+      "supports": "Explicit reversible arithmetic and constant multiplication via conditional shifted modular additions.",
+      "does_not_support": "That our current compiler literally instantiates the VBE modular multiplier, or any universal one-ancilla complete-oracle count.",
+      "decision": "RETAIN; add DOI and verified full names/page range; background, not automatic code provenance."
+    },
+    {
+      "key": "barenco1995",
+      "authors": [
+        "Adriano Barenco",
+        "Charles H. Bennett",
+        "Richard Cleve",
+        "David P. DiVincenzo",
+        "Norman Margolus",
+        "Peter Shor",
+        "Tycho Sleator",
+        "John A. Smolin",
+        "Harald Weinfurter"
+      ],
+      "title": "Elementary gates for quantum computation",
+      "journal": "Physical Review A",
+      "volume": "52",
+      "number": "5",
+      "pages": "3457-3467",
+      "year": 1995,
+      "doi": "10.1103/PhysRevA.52.3457",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.52.3457",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/9503016v1",
+      "page_range_primary_confirmation": "https://math.mit.edu/~shor/elecpubs.html",
+      "locations": [
+        "Lemma 5.1 (SU(2) assumption)",
+        "Lemma 6.1 (V squared equals U)",
+        "Corollary 6.2",
+        "Section 6.2 warns about relative phase substitutions"
+      ],
+      "supports": "Elementary controlled-unitary decompositions; a doubly controlled U uses controlled V/V-dagger blocks with V^2=U.",
+      "does_not_support": "Replacing three controlled rotations by three single-qubit synthesis rotations, a Ross-Selinger precision/T-cost estimate, or phase-safe arbitrary relative-phase substitutions.",
+      "decision": "RETAIN; add DOI/full page range; old body costing attribution needs separate repair."
+    },
+    {
+      "key": "thapliyal2016",
+      "authors": [
+        "Himanshu Thapliyal",
+        "T. S. S. Varun",
+        "Edgard Munoz-Coreas"
+      ],
+      "title": "Quantum Circuit Design of Integer Division Optimizing Ancillary Qubits and T-Count",
+      "year": 2016,
+      "kind": "arXiv preprint",
+      "arxiv": "1609.01241",
+      "doi": "10.48550/arXiv.1609.01241",
+      "url": "https://arxiv.org/abs/1609.01241",
+      "locations": [
+        "Primary arXiv abstract/metadata"
+      ],
+      "supports": "Existence of a Clifford+T restoring integer-division design built from conditional addition and subtraction.",
+      "does_not_support": "That the new static-bank circuits implement any divider, or that old remainder-to-ancilla mapping/counts follow without deriving and testing that layout.",
+      "full_text_status": "2016 abstract/metadata verified; full HTML fetch failed. The cached four-author 2018 paper is a distinct extended work and was not silently substituted.",
+      "decision": "RETAIN existing key during bibliography/LR-only stage; do not break current body citations. Mark stale divider implementation claim for next body rewrite."
+    },
+    {
+      "key": "cuccaro2004",
+      "authors": [
+        "Steven A. Cuccaro",
+        "Thomas G. Draper",
+        "Samuel A. Kutin",
+        "David Petrie Moulton"
+      ],
+      "title": "A new quantum ripple-carry addition circuit",
+      "year": 2004,
+      "kind": "arXiv preprint",
+      "arxiv": "quant-ph/0410184",
+      "doi": "10.48550/arXiv.quant-ph/0410184",
+      "url": "https://arxiv.org/abs/quant-ph/0410184",
+      "primary_full_text": "https://arxiv.org/html/quant-ph/0410184v1",
+      "locations": [
+        "Section 2 basic MAJ/UMA circuit",
+        "Section 3 optimized circuit",
+        "Section 4 extensions"
+      ],
+      "supports": "Linear-depth one-carry-ancilla ripple addition and clean MAJ/UMA computation.",
+      "does_not_support": "Attributing optimized Section 3 resource constants to our simpler Section 2-based compact control, or treating a one-ancilla adder as a one-ancilla complete pruning circuit.",
+      "decision": "ADD; identify arXiv preprint honestly; Section 2 specifically supports our simple compact arithmetic."
+    },
+    {
+      "key": "hou2020",
+      "authors": [
+        "Wenjun Hou",
+        "Marek Perkowski"
+      ],
+      "title": "Quantum-based algorithm and circuit design for bounded Knapsack optimization problem",
+      "journal": "Quantum Information and Computation",
+      "volume": "20",
+      "number": "9-10",
+      "pages": "766-786",
+      "year": 2020,
+      "doi": "10.26421/QIC20.9-10-4",
+      "url": "https://doi.org/10.26421/QIC20.9-10-4",
+      "primary_full_text": "https://www.rintonpress.com/xxqic20/qic-20-910/0766-0786.pdf",
+      "locations": [
+        "Section 4 decision oracle",
+        "Sections 5-8 comparison/addition/multiplication",
+        "Section 10 and Table 10.1 simulator verification",
+        "Section 11 gate usage"
+      ],
+      "supports": "Published bounded-knapsack Grover decision-oracle construction, arithmetic circuits and Q# local simulator tests.",
+      "does_not_support": "An LP-prefix integer-pruning bank, a full-optimizer physical speedup, or an instruction to repeat the source's global first claim.",
+      "decision": "ADD as constructive prior oracle work; scope bounded knapsack correctly."
+    },
+    {
+      "key": "hamitouche2025",
+      "authors": [
+        "Monsef Hamitouche",
+        "Faicel Hnaien",
+        "Djamel Eddine Menacer"
+      ],
+      "title": "Towards a Quantum Resolution of the Knapsack Problem",
+      "year": 2025,
+      "kind": "Workshop paper in university research-report proceedings",
+      "booktitle": "Proceedings of the PRICAI 2025 Workshop on Quantum Computing for Search and Optimization Problems",
+      "series": "CDMTCS Research Report Series",
+      "number": "CDMTCS-586",
+      "publisher": "University of Auckland",
+      "paper_local_pages": "1-14",
+      "PDF_one_based_pages": "19-32",
+      "continuous_proceedings_pages": "NOT_ASSERTED",
+      "doi": null,
+      "doi_status": "No DOI identified in inspected primary PDF/program; no absence proof asserted.",
+      "url": "https://www.cs.auckland.ac.nz/research/groups/CDMTCS/researchreports/download.php?selected-id=904",
+      "locations": [
+        "Section 4 reversible feasibility/improvement oracle",
+        "Section 5, Algorithm 1, step 1: classical upper bound, e.g. fractional knapsack",
+        "Section 5 enhanced variant: ancilla reuse/uncomputation",
+        "Section 7 limitations"
+      ],
+      "supports": "Prior hybrid B&B with classical fractional upper-bound pruning, Grover-based improving-completion search, QFT arithmetic and ancilla reuse.",
+      "does_not_support": "A fully coherent LP-prefix oracle, our floor-preserving static bank, a proven overall quantum speedup, or a journal/LNCS publication claim.",
+      "metadata_note": "Cover says April 2025 while the official program places the workshop on 17 November 2025; propose year only, no inferred publication month.",
+      "decision": "ADD as workshop/report prior work; omit invented DOI and continuous pagination."
+    },
+    {
+      "key": "wilkening2025",
+      "authors": [
+        "Sören Wilkening",
+        "Andreea-Iulia Lefterovici",
+        "Lennart Binkowski",
+        "Michael Perk",
+        "Sándor P. Fekete",
+        "Tobias J. Osborne"
+      ],
+      "title": "A quantum algorithm for solving 0-1 Knapsack problems",
+      "journal": "npj Quantum Information",
+      "volume": "11",
+      "article_number": "146",
+      "year": 2025,
+      "published": "2025-08-26",
+      "doi": "10.1038/s41534-025-01097-8",
+      "url": "https://www.nature.com/articles/s41534-025-01097-8",
+      "supplement": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41534-025-01097-8/MediaObjects/41534_2025_1097_MOESM1_ESM.pdf",
+      "locations": [
+        "Main text: QTG and amplitude amplification; QBnB benchmarking",
+        "Supplement E.3-E.5 arithmetic/comparisons",
+        "Supplement F.2 fractional-greedy QBnB upper bound and benchmark assumptions"
+      ],
+      "supports": "Prior gate-model knapsack QTG with amplitude amplification; published QFT arithmetic analysis; fractional-greedy bounds already inside QBnB benchmarking.",
+      "does_not_support": "Describing their QTG solely as QAOA, claiming no prior LP pruning, or calling our serial quantum-threshold completion their released optimized oracle.",
+      "decision": "ADD as closest substantive prior work, with an explicit reconstruction distinction."
+    },
+    {
+      "key": "wilkening2025code",
+      "authors": [
+        "Sören Wilkening",
+        "Andreea-Iulia Lefterovici",
+        "Lennart Binkowski",
+        "Michael Perk",
+        "Sándor P. Fekete",
+        "Tobias J. Osborne"
+      ],
+      "title": "A quantum algorithm for solving 0-1 Knapsack problems",
+      "kind": "Software and experiment data",
+      "version": "R1",
+      "publisher": "Zenodo",
+      "published": "2025-08-18",
+      "year": 2025,
+      "doi": "10.5281/zenodo.16895828",
+      "concept_doi_not_used_for_pinned_release": "10.5281/zenodo.16895827",
+      "url": "https://zenodo.org/records/16895828",
+      "repository": "https://github.com/SoerenWilkening/QTG_0-1Knapsack/tree/R1",
+      "commit": "d76de0d9f438e385655d9828ee2bf92ea2cb3bfb",
+      "archive_sha256": "8f479e92a7fc8003df85e9e548052d2a7fe21ed7885ed64245e52203b0e3491e",
+      "supports": "Pinned authors' released source/data provenance and the bounded call-path audit.",
+      "does_not_support": "A universal absence claim or a released-oracle gate/runtime victory; the audited QBnB path uses classical host bounds plus resource counters.",
+      "decision": "ADD when describing the release/code audit; cite version DOI rather than floating concept DOI."
+    }
+  ],
+  "stale_body_flags": [
+    {
+      "file": "paper/main.tex",
+      "line": 263,
+      "issue": "Current implementation does not justify the stated Thapliyal divider/VBE multiplier/remainder-ancilla mapping; retain real citation, defer body correction."
+    },
+    {
+      "file": "paper/main.tex",
+      "line": 280,
+      "issue": "Barenco Lemma 6.1 is not a three-single-rotation Clifford+T estimate."
+    },
+    {
+      "file": "paper/main.tex",
+      "line": 310,
+      "issue": "No carry ancilla for QFT addition is not a complete-oracle zero-workspace theorem."
+    },
+    {
+      "file": "paper/main.tex",
+      "line": 100,
+      "issue": "Closest-work discussion must include Wilkening 2025 amplitude-amplification QTG and fractional-pruning comparison, and Hamitouche's classical-bound/Grover hybrid; no global unique/first framing."
+    }
+  ],
+  "network_note": "Reused cached primary sources. A few targeted Firecrawl scrapes completed before parent reported depleted credits; thereafter web fallback only. No install or repeated Firecrawl spending."
+}

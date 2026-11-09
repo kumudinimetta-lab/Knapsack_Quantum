@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-24",
+  "scope": "Exact squared certificate/cost key; observed T only evaluates selected outcome",
+  "classification": "DERIVED read-only verification",
+  "condition_rows_checked": 31605,
+  "summary_groups_checked": 120,
+  "failure_count": 0,
+  "failures": [],
+  "headline": [
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 492
+      },
+      "median_ratio_to_exact": 0.2384616196578761,
+      "less_than_exact": 492,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.7794600507092444
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 488,
+        "bank4": 3,
+        "bank2": 1
+      },
+      "median_ratio_to_exact": 0.9644825822698595,
+      "less_than_exact": 265,
+      "median_hindsight_regret": 1.1949727342072136,
+      "maximum_hindsight_regret": 3.0483921113921957
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 462,
+        "bank2": 17,
+        "bank4": 13
+      },
+      "median_ratio_to_exact": 1.5413205151822835,
+      "less_than_exact": 46,
+      "median_hindsight_regret": 1.547982629700397,
+      "maximum_hindsight_regret": 4.942443623043319
+    }
+  ],
+  "accounting_limit": "Recorded bank1+bank2+bank4 timings are summed; prospective four-member reuse is separate; compilation/setup is excluded from quantum gate units",
+  "source_hashes": {
+    "certificate_selector.py": "c4b7c07cdb295b1cda62eef5b7a51c2ddb66378e329022d7b669a2b4050bbec5",
+    "certificate_selector_results.json": "03f554a4093ffa9be0a34e65c238b5dff6860669de25134b2dd495d2c72137ee",
+    "certificate_selector_conditions.jsonl": "5e69a65cf9467ae8f50a6517ea650c05b7abf12a729baafb95190376884369d9"
+  }
+}

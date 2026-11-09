@@ -1,0 +1,107 @@
+{
+  "seed": 2026102413,
+  "budget": 2000,
+  "instances_generated": 7,
+  "nontrivial_search_cases": 7,
+  "classification": "DERIVED exact rational counterexample search",
+  "witness": {
+    "index": 6,
+    "weights": [
+      27,
+      28,
+      12
+    ],
+    "values": [
+      1,
+      9,
+      5
+    ],
+    "capacity": 34,
+    "grid": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        9,
+        28
+      ]
+    ],
+    "grid_minimum": 3,
+    "grid_bank": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        9,
+        28
+      ]
+    ],
+    "offgrid_bank": [
+      [
+        1,
+        54
+      ],
+      [
+        271,
+        1512
+      ]
+    ],
+    "offgrid_size": 2,
+    "all_prefix_vertex_checks": 10,
+    "vertex_floor_mismatches": 0
+  },
+  "search_records": [
+    {
+      "index": 0,
+      "grid_minimum": 4,
+      "candidates": 7,
+      "feasible_states": 25
+    },
+    {
+      "index": 1,
+      "grid_minimum": 2,
+      "candidates": 3,
+      "feasible_states": 30
+    },
+    {
+      "index": 2,
+      "grid_minimum": 3,
+      "candidates": 7,
+      "feasible_states": 37
+    },
+    {
+      "index": 3,
+      "grid_minimum": 5,
+      "candidates": 9,
+      "feasible_states": 18
+    },
+    {
+      "index": 4,
+      "grid_minimum": 2,
+      "candidates": 3,
+      "feasible_states": 28
+    },
+    {
+      "index": 5,
+      "grid_minimum": 3,
+      "candidates": 5,
+      "feasible_states": 3
+    },
+    {
+      "index": 6,
+      "grid_minimum": 3,
+      "candidates": 5,
+      "feasible_states": 10
+    }
+  ]
+}

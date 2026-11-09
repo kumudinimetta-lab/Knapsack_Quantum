@@ -1,0 +1,2 @@
+TypeError: Object of type int64 is not JSON serializable
+At initial output.write_text(json.dumps(out, indent=2)) after kernels(), before full predicate loop.

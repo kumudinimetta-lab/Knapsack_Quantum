@@ -1,0 +1,21 @@
+{
+  "reason": "Initial soft time caps under concurrent builds materially censor structural comparisons. Rerun ALL such method/condition pairs; same 50000 node budget, time cap escalated from 0.4 to 5 seconds. Not runtime benchmarking.",
+  "settings": {
+    "node_cap": 50000,
+    "seconds_cap": 5.0
+  },
+  "source_hashes": {
+    "trees_full.jsonl": "49a5727113ee5927e5e45a23621388c8f06876050e624004566c8904f5b08306",
+    "trees_core_v3.jsonl": "23d7661afee348305727ac5b3ba25401636517aef9a0c3039e1d47c891799c39",
+    "trees_independent_v2.jsonl": "f93246b40a89ddcd32932ee5a00e1917ba4fc4faa2bbca8d4e72d977e4a7c18e"
+  },
+  "code_hashes": {
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\timecap_reruns.py": "675182cb620cc7975e33f5a0857a4295c92dbd52d53c51eb1b7cd7aa03ddff19",
+    "C:\\CBP\\HybridQuantumKnapsack\\simulation\\pruning_study_20261023\\trees.py": "7d9f6115050ec9a6830d9ef145eeda9f6d9548dcb026c1c8fba606e53f4ba5a1"
+  },
+  "attempted": 183,
+  "by_panel": {
+    "trees_full.jsonl": 5,
+    "trees_core_v3.jsonl": 178
+  }
+}

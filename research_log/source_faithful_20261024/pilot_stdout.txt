@@ -1,0 +1,2 @@
+Dense kernels passed 1848
+0 qft_direct COMPLETED 16 15

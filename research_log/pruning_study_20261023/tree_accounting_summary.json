@@ -1,0 +1,346 @@
+{
+  "trees_pilot.jsonl": {
+    "small": {
+      "inputs": 5,
+      "methods": {
+        "simple": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 2,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 120
+        },
+        "root_dual": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 70
+        },
+        "bank2": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 66
+        },
+        "bank4": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 62
+        },
+        "exact_lp": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 62
+        }
+      }
+    },
+    "main700": {
+      "inputs": 5,
+      "methods": {
+        "simple": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 0,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 23410
+        },
+        "root_dual": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 1,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 17042
+        },
+        "bank2": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 1,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 12682
+        },
+        "bank4": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 1,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 12238
+        },
+        "exact_lp": {
+          "algorithm_status": {
+            "complete": 5
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 10,
+          "root_reject_conditions": 1,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 11884
+        }
+      }
+    }
+  },
+  "trees_full.jsonl": {
+    "main700": {
+      "inputs": 700,
+      "methods": {
+        "simple": {
+          "algorithm_status": {
+            "complete": 407,
+            "capped_undecided": 289,
+            "capped_witness": 4
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 610
+          },
+          "complete_fixed_trees": 790,
+          "root_reject_conditions": 0,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 38661996
+        },
+        "root_dual": {
+          "algorithm_status": {
+            "complete": 638,
+            "capped_witness": 38,
+            "capped_undecided": 24
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 184
+          },
+          "complete_fixed_trees": 1216,
+          "root_reject_conditions": 187,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 13084708
+        },
+        "bank2": {
+          "algorithm_status": {
+            "complete": 692,
+            "capped_undecided": 8
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 162,
+            "time_cap": 1
+          },
+          "complete_fixed_trees": 1237,
+          "root_reject_conditions": 187,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 11175801
+        },
+        "bank4": {
+          "algorithm_status": {
+            "complete": 697,
+            "capped_undecided": 2,
+            "capped_witness": 1
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 160,
+            "time_cap": 2
+          },
+          "complete_fixed_trees": 1238,
+          "root_reject_conditions": 187,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 10764426
+        },
+        "exact_lp": {
+          "algorithm_status": {
+            "complete": 698,
+            "capped_undecided": 2
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 153,
+            "time_cap": 2
+          },
+          "complete_fixed_trees": 1245,
+          "root_reject_conditions": 187,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 9616445
+        }
+      }
+    },
+    "highbit_scaled": {
+      "inputs": 15,
+      "methods": {
+        "simple": {
+          "algorithm_status": {
+            "complete": 12,
+            "capped_undecided": 3
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 30,
+          "root_reject_conditions": 0,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 70230
+        },
+        "root_dual": {
+          "algorithm_status": {
+            "complete": 15
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 30,
+          "root_reject_conditions": 3,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 51126
+        },
+        "bank2": {
+          "algorithm_status": {
+            "complete": 15
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 30,
+          "root_reject_conditions": 3,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 38046
+        },
+        "bank4": {
+          "algorithm_status": {
+            "complete": 15
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 30,
+          "root_reject_conditions": 3,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 36714
+        },
+        "exact_lp": {
+          "algorithm_status": {
+            "complete": 15
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {},
+          "complete_fixed_trees": 30,
+          "root_reject_conditions": 3,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 35652
+        }
+      }
+    }
+  },
+  "trees_independent_v2.jsonl": {
+    "independent_large": {
+      "inputs": 45,
+      "methods": {
+        "simple": {
+          "algorithm_status": {
+            "complete": 3,
+            "capped_undecided": 42
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 74
+          },
+          "complete_fixed_trees": 16,
+          "root_reject_conditions": 0,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 3959228
+        },
+        "root_dual": {
+          "algorithm_status": {
+            "complete": 27,
+            "capped_witness": 1,
+            "capped_undecided": 17
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 23
+          },
+          "complete_fixed_trees": 67,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 1619237
+        },
+        "bank2": {
+          "algorithm_status": {
+            "complete": 29,
+            "capped_undecided": 16
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 22
+          },
+          "complete_fixed_trees": 68,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 1461120
+        },
+        "bank4": {
+          "algorithm_status": {
+            "complete": 29,
+            "capped_undecided": 16
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 21
+          },
+          "complete_fixed_trees": 69,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 1392947
+        },
+        "exact_lp": {
+          "algorithm_status": {
+            "complete": 31,
+            "capped_undecided": 14
+          },
+          "completed_value_or_witness_mismatches": 0,
+          "fixed_tree_caps": {
+            "node_cap": 19
+          },
+          "complete_fixed_trees": 71,
+          "root_reject_conditions": 6,
+          "certificate_failures_observed": 0,
+          "total_classical_processed_nodes": 1166095
+        }
+      }
+    }
+  }
+}

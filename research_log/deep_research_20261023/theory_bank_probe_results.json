@@ -1,0 +1,5265 @@
+{
+  "description": "Finite root/zero/extreme-ratio dual bank pilot; no circuits or quantum runtime.",
+  "taxonomy": {
+    "node_counts": "MEASURED (classical enumeration)",
+    "cap": "HARDCODED 50000"
+  },
+  "rows": [
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "uncorrelated",
+      "tau": 393,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 65,
+          "capped": false,
+          "multipliers": [
+            [
+              31,
+              49
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 45,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              31,
+              49
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 43,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              31,
+              49
+            ],
+            [
+              49,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 37,
+        "marked": 1,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "uncorrelated",
+      "tau": 394,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 47,
+          "capped": false,
+          "multipliers": [
+            [
+              31,
+              49
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 31,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              31,
+              49
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 25,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              31,
+              49
+            ],
+            [
+              49,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 21,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "uncorrelated",
+      "tau": 486,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 359,
+          "capped": false,
+          "multipliers": [
+            [
+              72,
+              71
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 231,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              72,
+              71
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 157,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              28,
+              99
+            ],
+            [
+              72,
+              71
+            ],
+            [
+              41,
+              5
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 119,
+        "marked": 5,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "uncorrelated",
+      "tau": 511,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 101,
+          "capped": false,
+          "multipliers": [
+            [
+              72,
+              71
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 69,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              72,
+              71
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 45,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              28,
+              99
+            ],
+            [
+              72,
+              71
+            ],
+            [
+              41,
+              5
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 37,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "uncorrelated",
+      "tau": 533,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 183,
+          "capped": false,
+          "multipliers": [
+            [
+              17,
+              12
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 165,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              17,
+              12
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 143,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              21,
+              29
+            ],
+            [
+              17,
+              12
+            ],
+            [
+              67,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 117,
+        "marked": 4,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "uncorrelated",
+      "tau": 537,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 145,
+          "capped": false,
+          "multipliers": [
+            [
+              17,
+              12
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 131,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              17,
+              12
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 107,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              21,
+              29
+            ],
+            [
+              17,
+              12
+            ],
+            [
+              67,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 81,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "weakly_correlated",
+      "tau": 292,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 373,
+          "capped": false,
+          "multipliers": [
+            [
+              47,
+              49
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 123,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              47,
+              49
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 117,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              47,
+              49
+            ],
+            [
+              87,
+              77
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 63,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "weakly_correlated",
+      "tau": 292,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 373,
+          "capped": false,
+          "multipliers": [
+            [
+              47,
+              49
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 123,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              47,
+              49
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 117,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              47,
+              49
+            ],
+            [
+              87,
+              77
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 63,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "weakly_correlated",
+      "tau": 290,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 4783,
+          "capped": false,
+          "multipliers": [
+            [
+              103,
+              99
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 2431,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              103,
+              99
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 2143,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              103,
+              99
+            ],
+            [
+              17,
+              10
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 2059,
+        "marked": 105,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "weakly_correlated",
+      "tau": 314,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 219,
+          "capped": false,
+          "multipliers": [
+            [
+              103,
+              99
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 149,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              103,
+              99
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 115,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              103,
+              99
+            ],
+            [
+              17,
+              10
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 69,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "weakly_correlated",
+      "tau": 234,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 69,
+          "capped": false,
+          "multipliers": [
+            [
+              50,
+              57
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 47,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              50,
+              57
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 41,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              50,
+              57
+            ],
+            [
+              53,
+              43
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 39,
+        "marked": 1,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "weakly_correlated",
+      "tau": 235,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              50,
+              57
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 39,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              50,
+              57
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              50,
+              57
+            ],
+            [
+              53,
+              43
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 27,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "strongly_correlated",
+      "tau": 299,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 6717,
+          "capped": false,
+          "multipliers": [
+            [
+              87,
+              77
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 5973,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              87,
+              77
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 5973,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              54,
+              49
+            ],
+            [
+              87,
+              77
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 5973,
+        "marked": 690,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "strongly_correlated",
+      "tau": 372,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 357,
+          "capped": false,
+          "multipliers": [
+            [
+              87,
+              77
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 331,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              87,
+              77
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 231,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              54,
+              49
+            ],
+            [
+              87,
+              77
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 231,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "strongly_correlated",
+      "tau": 311,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 6831,
+          "capped": false,
+          "multipliers": [
+            [
+              81,
+              71
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 5903,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              81,
+              71
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 5903,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              109,
+              99
+            ],
+            [
+              81,
+              71
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 5903,
+        "marked": 424,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "strongly_correlated",
+      "tau": 361,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 123,
+          "capped": false,
+          "multipliers": [
+            [
+              81,
+              71
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 117,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              81,
+              71
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 99,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              109,
+              99
+            ],
+            [
+              81,
+              71
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 93,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "strongly_correlated",
+      "tau": 283,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 5771,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              24
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 4859,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              24
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 4115,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              97,
+              87
+            ],
+            [
+              29,
+              24
+            ],
+            [
+              21,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 4051,
+        "marked": 101,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "strongly_correlated",
+      "tau": 307,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 129,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              24
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 123,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              24
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 87,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              97,
+              87
+            ],
+            [
+              29,
+              24
+            ],
+            [
+              21,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 71,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "subset_sum",
+      "tau": 286,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 6627,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 5185,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 5185,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 5185,
+        "marked": 89,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "subset_sum",
+      "tau": 293,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "subset_sum",
+      "tau": 272,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 5559,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 3221,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 3221,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 3221,
+        "marked": 156,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "subset_sum",
+      "tau": 281,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "subset_sum",
+      "tau": 222,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 5693,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 3359,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 3359,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 3359,
+        "marked": 101,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "subset_sum",
+      "tau": 227,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "inverse_strongly",
+      "tau": 307,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1241,
+          "capped": false,
+          "multipliers": [
+            [
+              77,
+              87
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 435,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              77,
+              87
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 273,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              77,
+              87
+            ],
+            [
+              49,
+              54
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 155,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "inverse_strongly",
+      "tau": 307,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1241,
+          "capped": false,
+          "multipliers": [
+            [
+              77,
+              87
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 435,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              77,
+              87
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 273,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              77,
+              87
+            ],
+            [
+              49,
+              54
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 155,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "inverse_strongly",
+      "tau": 295,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 979,
+          "capped": false,
+          "multipliers": [
+            [
+              71,
+              81
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 371,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              71,
+              81
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 243,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              71,
+              81
+            ],
+            [
+              99,
+              109
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 129,
+        "marked": 2,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "inverse_strongly",
+      "tau": 296,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 731,
+          "capped": false,
+          "multipliers": [
+            [
+              71,
+              81
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 327,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              71,
+              81
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 209,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              71,
+              81
+            ],
+            [
+              99,
+              109
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 107,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "inverse_strongly",
+      "tau": 246,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 25,
+          "capped": false,
+          "multipliers": [
+            [
+              24,
+              29
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 19,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              24,
+              29
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 15,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              24,
+              29
+            ],
+            [
+              87,
+              97
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 9,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "inverse_strongly",
+      "tau": 246,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 25,
+          "capped": false,
+          "multipliers": [
+            [
+              24,
+              29
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 19,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              24,
+              29
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 15,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              24,
+              29
+            ],
+            [
+              87,
+              97
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 9,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "uncorrelated",
+      "tau": 557,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 143,
+          "capped": false,
+          "multipliers": [
+            [
+              13,
+              16
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 123,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              13,
+              16
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 115,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              89
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              99,
+              31
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 95,
+        "marked": 1,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "uncorrelated",
+      "tau": 564,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 65,
+          "capped": false,
+          "multipliers": [
+            [
+              13,
+              16
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 55,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              13,
+              16
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 53,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              89
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              99,
+              31
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 45,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "uncorrelated",
+      "tau": 549,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              18
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              45,
+              8
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "uncorrelated",
+      "tau": 549,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              18
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              45,
+              8
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "uncorrelated",
+      "tau": 569,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 105,
+          "capped": false,
+          "multipliers": [
+            [
+              71,
+              96
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 65,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              71,
+              96
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              27
+            ],
+            [
+              71,
+              96
+            ],
+            [
+              39,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 37,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "uncorrelated",
+      "tau": 569,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 105,
+          "capped": false,
+          "multipliers": [
+            [
+              71,
+              96
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 65,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              71,
+              96
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              27
+            ],
+            [
+              71,
+              96
+            ],
+            [
+              39,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 37,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "weakly_correlated",
+      "tau": 407,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 47,
+          "capped": false,
+          "multipliers": [
+            [
+              41,
+              40
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 39,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              41,
+              40
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 37,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              41,
+              40
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 31,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "weakly_correlated",
+      "tau": 407,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 47,
+          "capped": false,
+          "multipliers": [
+            [
+              41,
+              40
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 39,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              41,
+              40
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 37,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              41,
+              40
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 31,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "weakly_correlated",
+      "tau": 393,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 2601,
+          "capped": false,
+          "multipliers": [
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1223,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1049,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              29,
+              21
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 549,
+        "marked": 7,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "weakly_correlated",
+      "tau": 401,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 67,
+          "capped": false,
+          "multipliers": [
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 43,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              30,
+              31
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 41,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              29,
+              21
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 21,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "weakly_correlated",
+      "tau": 414,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 63,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              15,
+              8
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 19,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "weakly_correlated",
+      "tau": 414,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 63,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 57,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              15,
+              8
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 19,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "strongly_correlated",
+      "tau": 430,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              34,
+              29
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              34,
+              29
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 48197,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              99,
+              89
+            ],
+            [
+              34,
+              29
+            ],
+            [
+              17,
+              7
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 47667,
+        "marked": 1261,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "strongly_correlated",
+      "tau": 463,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 227,
+          "capped": false,
+          "multipliers": [
+            [
+              34,
+              29
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 221,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              34,
+              29
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 131,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              99,
+              89
+            ],
+            [
+              34,
+              29
+            ],
+            [
+              17,
+              7
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 103,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "strongly_correlated",
+      "tau": 431,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              38,
+              33
+            ],
+            [
+              23,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 3726,
+        "capped": true
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "strongly_correlated",
+      "tau": 484,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 905,
+          "capped": false,
+          "multipliers": [
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 861,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 719,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              38,
+              33
+            ],
+            [
+              23,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 661,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "strongly_correlated",
+      "tau": 485,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              49,
+              44
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              49,
+              44
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              53,
+              48
+            ],
+            [
+              49,
+              44
+            ],
+            [
+              13,
+              3
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 33,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "strongly_correlated",
+      "tau": 485,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              49,
+              44
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              49,
+              44
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 33,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              53,
+              48
+            ],
+            [
+              49,
+              44
+            ],
+            [
+              13,
+              3
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 33,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "subset_sum",
+      "tau": 351,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 49319,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 49319,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 49319,
+        "marked": 493,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "subset_sum",
+      "tau": 353,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "subset_sum",
+      "tau": 374,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 33025,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 33025,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 33025,
+        "marked": 2384,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "subset_sum",
+      "tau": 384,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "subset_sum",
+      "tau": 363,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 629,
+        "capped": true
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "subset_sum",
+      "tau": 366,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "inverse_strongly",
+      "tau": 375,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1379,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 795,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 631,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              17
+            ],
+            [
+              29,
+              34
+            ],
+            [
+              89,
+              99
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 177,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "inverse_strongly",
+      "tau": 375,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1379,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 795,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 631,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              17
+            ],
+            [
+              29,
+              34
+            ],
+            [
+              89,
+              99
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 177,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "inverse_strongly",
+      "tau": 403,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 2773,
+          "capped": false,
+          "multipliers": [
+            [
+              33,
+              38
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1303,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              33,
+              38
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 759,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              33,
+              38
+            ],
+            [
+              9,
+              10
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 175,
+        "marked": 1,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "inverse_strongly",
+      "tau": 404,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1497,
+          "capped": false,
+          "multipliers": [
+            [
+              33,
+              38
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 761,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              33,
+              38
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 503,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              33,
+              38
+            ],
+            [
+              9,
+              10
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 89,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "inverse_strongly",
+      "tau": 394,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 943,
+          "capped": false,
+          "multipliers": [
+            [
+              36,
+              41
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 437,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              36,
+              41
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 395,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              36,
+              41
+            ],
+            [
+              48,
+              53
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 83,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "inverse_strongly",
+      "tau": 394,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 943,
+          "capped": false,
+          "multipliers": [
+            [
+              36,
+              41
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 437,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              36,
+              41
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 395,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              36,
+              41
+            ],
+            [
+              48,
+              53
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 83,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "uncorrelated",
+      "tau": 810,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 103,
+          "capped": false,
+          "multipliers": [
+            [
+              53,
+              61
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 81,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              53,
+              61
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 79,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              55
+            ],
+            [
+              53,
+              61
+            ],
+            [
+              86,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 33,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "uncorrelated",
+      "tau": 810,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 103,
+          "capped": false,
+          "multipliers": [
+            [
+              53,
+              61
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 81,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              53,
+              61
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 79,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              55
+            ],
+            [
+              53,
+              61
+            ],
+            [
+              86,
+              13
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 33,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "uncorrelated",
+      "tau": 759,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 3027,
+          "capped": false,
+          "multipliers": [
+            [
+              81,
+              91
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1917,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              81,
+              91
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1125,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              23,
+              85
+            ],
+            [
+              81,
+              91
+            ],
+            [
+              47,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 467,
+        "marked": 10,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "uncorrelated",
+      "tau": 770,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 813,
+          "capped": false,
+          "multipliers": [
+            [
+              81,
+              91
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 563,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              81,
+              91
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 355,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              23,
+              85
+            ],
+            [
+              81,
+              91
+            ],
+            [
+              47,
+              4
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 105,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "uncorrelated",
+      "tau": 699,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1245,
+          "capped": false,
+          "multipliers": [
+            [
+              45,
+              47
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 863,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              45,
+              47
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 611,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              23,
+              83
+            ],
+            [
+              45,
+              47
+            ],
+            [
+              77,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 285,
+        "marked": 6,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "uncorrelated",
+      "tau": 708,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 231,
+          "capped": false,
+          "multipliers": [
+            [
+              45,
+              47
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 183,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              45,
+              47
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 139,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              23,
+              83
+            ],
+            [
+              45,
+              47
+            ],
+            [
+              77,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 83,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "weakly_correlated",
+      "tau": 553,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 4733,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 2967,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 2697,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1065,
+        "marked": 14,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "weakly_correlated",
+      "tau": 558,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 809,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 579,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 523,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 205,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "weakly_correlated",
+      "tau": 615,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1023,
+          "capped": false,
+          "multipliers": [
+            [
+              95,
+              91
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 871,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              95,
+              91
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 521,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              95,
+              91
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 279,
+        "marked": 1,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "weakly_correlated",
+      "tau": 616,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 629,
+          "capped": false,
+          "multipliers": [
+            [
+              95,
+              91
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 545,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              95,
+              91
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 331,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              95,
+              91
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 175,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "weakly_correlated",
+      "tau": 491,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1703,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1201,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1121,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 359,
+        "marked": 2,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "weakly_correlated",
+      "tau": 496,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 275,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 227,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 217,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 63,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "strongly_correlated",
+      "tau": 582,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              103,
+              93
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 1832,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "strongly_correlated",
+      "tau": 646,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 3855,
+          "capped": false,
+          "multipliers": [
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 3519,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 2085,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              103,
+              93
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1917,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "strongly_correlated",
+      "tau": 640,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              7,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 629,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "strongly_correlated",
+      "tau": 673,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 735,
+          "capped": false,
+          "multipliers": [
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 707,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 529,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              7,
+              2
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 383,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "strongly_correlated",
+      "tau": 565,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              51,
+              46
+            ],
+            [
+              38,
+              33
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 263,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "strongly_correlated",
+      "tau": 585,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 185,
+          "capped": false,
+          "multipliers": [
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 185,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              38,
+              33
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 149,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              51,
+              46
+            ],
+            [
+              38,
+              33
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 121,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "subset_sum",
+      "tau": 512,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 1003,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "subset_sum",
+      "tau": 516,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "subset_sum",
+      "tau": 521,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 3613,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "subset_sum",
+      "tau": 543,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "subset_sum",
+      "tau": 436,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 50000,
+          "capped": true,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 50000,
+        "marked": 2003,
+        "capped": true
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "subset_sum",
+      "tau": 445,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "inverse_strongly",
+      "tau": 542,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 15175,
+          "capped": false,
+          "multipliers": [
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 7493,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 6347,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              93,
+              103
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 1421,
+        "marked": 19,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "inverse_strongly",
+      "tau": 546,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 1309,
+          "capped": false,
+          "multipliers": [
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 741,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 647,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              93,
+              103
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 69,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "inverse_strongly",
+      "tau": 567,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 10179,
+          "capped": false,
+          "multipliers": [
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 5715,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 5247,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 979,
+        "marked": 2,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "inverse_strongly",
+      "tau": 571,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 429,
+          "capped": false,
+          "multipliers": [
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 299,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 291,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              10,
+              11
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 77,
+        "marked": 0,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "inverse_strongly",
+      "tau": 469,
+      "target_kind": "incumbent_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 41861,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 14207,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 13379,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              29,
+              34
+            ],
+            [
+              46,
+              51
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 4903,
+        "marked": 95,
+        "capped": false
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "inverse_strongly",
+      "tau": 475,
+      "target_kind": "optimum_plus_one",
+      "trees": {
+        "1": {
+          "nodes": 3707,
+          "capped": false,
+          "multipliers": [
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "2": {
+          "nodes": 1835,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              29,
+              34
+            ]
+          ]
+        },
+        "4": {
+          "nodes": 1793,
+          "capped": false,
+          "multipliers": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              29,
+              34
+            ],
+            [
+              46,
+              51
+            ]
+          ]
+        }
+      },
+      "lp": {
+        "nodes": 485,
+        "marked": 0,
+        "capped": false
+      }
+    }
+  ]
+}

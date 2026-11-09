@@ -1,0 +1,39 @@
+{
+  "core700": {
+    "inputs": 700,
+    "status_counts": {
+      "complete_sufficient_dp_free": 677,
+      "all_fit_exact_shortcut": 23
+    },
+    "root_tail_size_median": 6.0,
+    "bank_size_median": 6.0,
+    "strict_root_tail_compressions": 75,
+    "total_seconds": 0.059138799988431856,
+    "total_radius_comparisons": 9943,
+    "cardinality_contradictions": 0
+  },
+  "independent_large": {
+    "inputs": 45,
+    "status_counts": {
+      "complete_sufficient_dp_free": 45
+    },
+    "root_tail_size_median": 10,
+    "bank_size_median": 10,
+    "strict_root_tail_compressions": 0,
+    "total_seconds": 0.006326000118860975,
+    "total_radius_comparisons": 1230,
+    "cardinality_contradictions": 0
+  },
+  "main700": {
+    "inputs": 700,
+    "status_counts": {
+      "complete_sufficient_dp_free": 700
+    },
+    "root_tail_size_median": 8.0,
+    "bank_size_median": 8.0,
+    "strict_root_tail_compressions": 96,
+    "total_seconds": 0.07334090012591332,
+    "total_radius_comparisons": 13688,
+    "cardinality_contradictions": 0
+  }
+}

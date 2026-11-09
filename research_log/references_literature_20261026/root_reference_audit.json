@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-26",
+  "scope": "Root quantum/theory-context source audit; not whole-paper validation",
+  "references": [
+    {
+      "key": "ref8",
+      "primary_url": "https://arxiv.org/abs/quant-ph/9605043",
+      "source_location": "Original STOC paper/abstract; ACM DOI10.1145/237814.237866",
+      "supports": "Unstructured quantum search query scaling",
+      "limits": "Query count excludes reversible implementation cost; not a structured knapsack lower bound.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref9",
+      "primary_url": "https://arxiv.org/html/quant-ph/9701001v1",
+      "source_location": "Section3.1 and Theorem3.5",
+      "supports": "Black-box and random-oracle lower-bound context",
+      "limits": "Theorem3.5 concerns random-oracle NP and time o(2^(n/2)); it does not rule out structure-exploiting knapsack algorithms.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref11",
+      "primary_url": "https://arxiv.org/html/quant-ph/0005055v1",
+      "source_location": "Section2, Theorem3; arXiv journal reference/related DOI; AMS volume305 cover",
+      "supports": "Amplitude amplification using A and its inverse",
+      "limits": "Theorem3 assumes measurement-free A, success probability a>0; expected O(1/sqrt(a)); zero-solution handling requires more than that statement. Publisher cover gives Quantum Computation and Information despite arXiv journal-reference title discrepancy.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref12",
+      "primary_url": "https://www.math.canterbury.ac.nz/research/ucdms2000n10.pdf",
+      "source_location": "Author technical-report abstract; author-institution published record https://researchers.mq.edu.au/en/publications/implementing-pure-adaptive-search-with-grovers-quantum-algorithm/",
+      "supports": "Grover-based implementation of pure adaptive search",
+      "limits": "Conditional objective/domain assumptions; not unrestricted polynomial knapsack optimization. Published2003JOTA116(3)517--529, DOI10.1023/A:1023061218864.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref13",
+      "primary_url": "https://arxiv.org/abs/quant-ph/9607014",
+      "source_location": "Abstract and original1996 submission/revision history",
+      "supports": "Quantum minimum finding as optimization background",
+      "limits": "Cited as original preprint, not an invented journal publication; no theorem transplanted into our oracle.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref16",
+      "primary_url": "https://eprint.iacr.org/2013/199",
+      "source_location": "Author-posted abstract, metadata and official BibTeX",
+      "supports": "Quantum subset-sum algorithms using Johnson-graph walks and representation methods",
+      "limits": "The source describes heuristic cost; cite the verified expanded ePrint rather than guessing conference-version details. This is exact-target subset sum, not arbitrary weight/value optimization.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref17",
+      "primary_url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TQC.2018.5",
+      "source_location": "Publisher metadata, abstract and paper opening",
+      "supports": "Quantum subset-sum algorithms under random-instance/heuristic assumptions",
+      "limits": "No current-best claim and no worst-case general-knapsack exponent. Exact proceedings pagination5:1--5:15.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref18",
+      "primary_url": "https://quantum-journal.org/papers/q-2025-12-02-1922/",
+      "source_location": "Published abstract and official BibTeX",
+      "supports": "Active/passive QRAM assumptions and costs",
+      "limits": "Does not prove all quantum-addressable memory impossible; circuit QRAM can help. Updated2023preprint to Quantum9,1922(2025).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref23",
+      "primary_url": "https://arxiv.org/abs/2411.00518v2",
+      "source_location": "Abstract, accepted-at-QCE statement and related DOI",
+      "supports": "QTG state preparation with Grover-mixer QAOA; finite-depth evidence and eventual optimal-sampling result",
+      "limits": "Not all QTG uses are QAOA; do not claim no guarantees whatsoever. DOI10.1109/QCE65121.2025.00011; no unverified page range inserted.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref24",
+      "primary_url": "https://arxiv.org/html/1906.10375v1",
+      "source_location": "Statement of results and oracle model",
+      "supports": "Quantum branch-and-bound query framework",
+      "limits": "Monotone cost/bounding oracle, depth and precision assumptions matter. The result is not a free-oracle runtime bound and is not simply sqrt(T)*d in all models. Old body theorem remains on hold.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref25",
+      "primary_url": "https://arxiv.org/html/1411.4028v1",
+      "source_location": "Algorithm description and asymptotic-depth discussion",
+      "supports": "QAOA variational framework",
+      "limits": "Do not claim all QAOA lacks guarantees; source has specified approximation/limit results.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref26",
+      "primary_url": "https://quantum-journal.org/papers/q-2021-04-08-428/",
+      "source_location": "Abstract and official BibTeX",
+      "supports": "Grover adaptive search for constrained polynomial binary optimization",
+      "limits": "Search is not variational QAOA. Source discusses oracle construction and conditional comparison with brute force, not blanket practical advantage. Quantum5,428(2021).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref31",
+      "primary_url": "https://preskill.caltech.edu/pubs/preskill-2018-NISQ.pdf",
+      "source_location": "Author full text; Quantum2,79 metadata",
+      "supports": "Noise/depth context",
+      "limits": "No evidence for this project's device experiments, a four-item boundary or its implementation-specific mitigation claims.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref33",
+      "primary_url": "https://raw.githubusercontent.com/Qiskit/qiskit/refs/heads/main/CITATION.bib",
+      "source_location": "Official Qiskit BibTeX; Aer README citation link",
+      "supports": "Software attribution to Quantum computing with Qiskit,2024",
+      "limits": "Citation is not evidence for device execution or experiment results. Actual package versions belong in later methods revision.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "bonnetain2020improved",
+      "primary_url": "https://arxiv.org/html/2002.05276v4",
+      "source_location": "Section3.2 heuristic discussion, Sections4--5 alternative algorithms and memory tradeoffs; publisher DOI metadata",
+      "supports": "Specific walk-update heuristic issue and subsequent alternatives",
+      "limits": "Do not label every subset-sum method unsound or every variant QRAQM-dependent. Correct ASIACRYPT2020,LNCS12492,633--666, DOI10.1007/978-3-030-64834-3_22.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref35",
+      "primary_url": "https://theoryofcomputing.org/articles/v014a015/",
+      "source_location": "Publisher full paper, Theorems1.1/1.2",
+      "supports": "Quantum backtracking query framework",
+      "limits": "Detection and witness recovery have distinct statements. No full gate-model LP walk follows merely from a citation. ToC14(15)1--24(2018), DOI10.4086/toc.2018.v014a015.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "ref36",
+      "primary_url": "https://www.mdpi.com/1099-4300/26/4/345",
+      "source_location": "Article title/authors, abstract and hybrid model",
+      "supports": "Classical B&B with quantum annealing for integer linear problems",
+      "limits": "Correct authors Sanavio,Tignone,Ercolessi; Entropy26(4),345(2024), DOI10.3390/e26040345. Oldarxiv2403.09560 is a different DFT paper and is removed.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "bozejko2026",
+      "primary_url": "https://link.springer.com/article/10.1007/s10479-024-06025-1",
+      "source_location": "Sections3.1/4, Eq16--20, floor-pruning rule; Section5 experimental scope; publisher CiteThisArticle",
+      "supports": "Finite multiplier-set bounds and integer pruning are prior art; quantum annealing hybrid",
+      "limits": "Their sign convention u<=0 maps to our nonnegative lambda=-u; local residual capacity maps to their subproblem W. No claim their model certifies our bank or circuit. Large instances ran root-bound calculations only. Online2024; actual issue is AnnalsOR364,2111--2126(2026).",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "gabbassov2025",
+      "primary_url": "https://journals.aps.org/prresearch/abstract/10.1103/53gd-2374",
+      "source_location": "Publisher abstract and bibliographic header",
+      "supports": "Lagrangian duality in constrained quantum optimization, comparison with QUBO",
+      "limits": "Different adiabatic/fault-tolerant framework; does not establish this bank's correctness or novelty. PRR7,023305(2025), authors EinarGabbassov,GiliRosenberg,ArturScherer.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    },
+    {
+      "key": "martiel2019",
+      "primary_url": "https://link.springer.com/chapter/10.1007/978-3-030-38919-2_49",
+      "source_location": "Publisher abstract/metadata, arxiv1908.11291 author version",
+      "supports": "Concrete implementation of quantum backtracking and resource accounting",
+      "limits": "CSP graph coloring/SAT, not a full implementation of this LP oracle. Updated to SOFSEM2020,LNCS12011,597--606; key retains historical2019identifier only.",
+      "identity_status": "VERIFIED_REAL_RECORD",
+      "lr_status": "SUPPORTED_WITH_STATED_SCOPE"
+    }
+  ],
+  "rejected_mappings": [
+    "Cached .firecrawl/grover1996.md is actually BBHT Tight bounds on quantum searching, quant-ph/9605034; rejected for ref8. Correct Grover is quant-ph/9605043.",
+    "Exploratory arxiv1802.07240 is CobaltBFT, not Preskill; rejected. Correct Preskill identifier1801.00862.",
+    "Exploratory arxiv1898.11291 typo rejected in the preceding reference plan; correct Martiel1908.11291.",
+    "Official AMS volume305 cover says Quantum Computation and Information; arXiv journal-reference field contains a different volume-title wording. Publisher title prevails.",
+    "Firecrawl default network resolution failed; escalated scrape returned insufficient credits. No purchase/repeated credit retry; verified cached sources and web fallback used.",
+    "Fresh primary metadata changes Bozejko from advance-online2024 to issue2026; original online date retained as note."
+  ],
+  "no_new_experiments": true,
+  "priority_status": "UNRESOLVED; no first/unique or acceptance guarantee asserted"
+}

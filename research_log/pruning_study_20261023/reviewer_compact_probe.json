@@ -1,0 +1,4381 @@
+{
+  "scope": "Independent compact primitive and matching fixed-depth predicate audit",
+  "taxonomy": {
+    "outputs": "SIMULATED",
+    "resources_and_references": "DERIVED",
+    "domains": "HARDCODED"
+  },
+  "source_sha256": "b966a44df6bfcea206316b6c66fc2148ea62392380e5c259ad4f869417044682",
+  "primitives": [
+    {
+      "width": 1,
+      "adder_columns": 4,
+      "adder_mismatches": [],
+      "comparator_columns": 8,
+      "comparator_mismatches": []
+    },
+    {
+      "width": 2,
+      "adder_columns": 16,
+      "adder_mismatches": [],
+      "comparator_columns": 32,
+      "comparator_mismatches": []
+    },
+    {
+      "width": 3,
+      "adder_columns": 64,
+      "adder_mismatches": [],
+      "comparator_columns": 128,
+      "comparator_mismatches": []
+    },
+    {
+      "width": 4,
+      "adder_columns": 256,
+      "adder_mismatches": [],
+      "comparator_columns": 512,
+      "comparator_mismatches": []
+    },
+    {
+      "width": 5,
+      "adder_columns": 1024,
+      "adder_mismatches": [],
+      "comparator_columns": 2048,
+      "comparator_mismatches": []
+    },
+    {
+      "controlled_constant_width": 1,
+      "columns": 16,
+      "mismatches": []
+    },
+    {
+      "controlled_constant_width": 2,
+      "columns": 64,
+      "mismatches": []
+    },
+    {
+      "controlled_constant_width": 3,
+      "columns": 256,
+      "mismatches": []
+    },
+    {
+      "controlled_constant_width": 4,
+      "columns": 1024,
+      "mismatches": []
+    }
+  ],
+  "predicate_cases": [
+    {
+      "input": [
+        [],
+        [],
+        0
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 4,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 8,
+        "gates": 25,
+        "gate_depth": 21,
+        "gate_counts": {
+          "x": 12,
+          "cx": 13,
+          "ccx": 0
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [],
+        [],
+        0
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 4,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 10,
+        "gates": 95,
+        "gate_depth": 62,
+        "gate_counts": {
+          "x": 24,
+          "cx": 50,
+          "ccx": 21
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [],
+        [],
+        0
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 4,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 11,
+        "gates": 37,
+        "gate_depth": 35,
+        "gate_counts": {
+          "x": 18,
+          "cx": 19,
+          "ccx": 0
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [],
+        [],
+        0
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 4,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 15,
+        "gates": 198,
+        "gate_depth": 154,
+        "gate_counts": {
+          "x": 26,
+          "cx": 123,
+          "ccx": 49
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 12,
+        "gates": 35,
+        "gate_depth": 25,
+        "gate_counts": {
+          "x": 14,
+          "cx": 19,
+          "ccx": 2
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 14,
+        "gates": 143,
+        "gate_depth": 88,
+        "gate_counts": {
+          "x": 32,
+          "cx": 78,
+          "ccx": 33
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 24,
+        "gates": 81,
+        "gate_depth": 49,
+        "gate_counts": {
+          "x": 34,
+          "cx": 43,
+          "ccx": 4
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 26,
+        "gates": 741,
+        "gate_depth": 536,
+        "gate_counts": {
+          "x": 76,
+          "cx": 475,
+          "ccx": 190
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 20,
+        "gates": 61,
+        "gate_depth": 27,
+        "gate_counts": {
+          "x": 26,
+          "cx": 31,
+          "ccx": 4
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 15,
+        "gates": 171,
+        "gate_depth": 112,
+        "gate_counts": {
+          "x": 32,
+          "cx": 98,
+          "ccx": 41
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 26,
+        "gates": 81,
+        "gate_depth": 49,
+        "gate_counts": {
+          "x": 30,
+          "cx": 43,
+          "ccx": 8
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        0
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 23,
+        "gates": 366,
+        "gate_depth": 266,
+        "gate_counts": {
+          "x": 34,
+          "cx": 239,
+          "ccx": 93
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 15,
+        "gates": 47,
+        "gate_depth": 31,
+        "gate_counts": {
+          "x": 18,
+          "cx": 27,
+          "ccx": 2
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 17,
+        "gates": 195,
+        "gate_depth": 120,
+        "gate_counts": {
+          "x": 48,
+          "cx": 102,
+          "ccx": 45
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 26,
+        "gates": 89,
+        "gate_depth": 45,
+        "gate_counts": {
+          "x": 34,
+          "cx": 51,
+          "ccx": 4
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 8,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 28,
+        "gates": 815,
+        "gate_depth": 572,
+        "gate_counts": {
+          "x": 90,
+          "cx": 519,
+          "ccx": 206
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 32,
+        "gates": 103,
+        "gate_depth": 43,
+        "gate_counts": {
+          "x": 34,
+          "cx": 59,
+          "ccx": 10
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 18,
+        "gates": 291,
+        "gate_depth": 200,
+        "gate_counts": {
+          "x": 52,
+          "cx": 166,
+          "ccx": 73
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 29,
+        "gates": 93,
+        "gate_depth": 49,
+        "gate_counts": {
+          "x": 34,
+          "cx": 51,
+          "ccx": 8
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 25,
+        "gates": 416,
+        "gate_depth": 296,
+        "gate_counts": {
+          "x": 44,
+          "cx": 267,
+          "ccx": 105
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 20,
+        "gates": 61,
+        "gate_depth": 35,
+        "gate_counts": {
+          "x": 20,
+          "cx": 37,
+          "ccx": 4
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 21,
+        "gates": 247,
+        "gate_depth": 138,
+        "gate_counts": {
+          "x": 60,
+          "cx": 130,
+          "ccx": 57
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 56,
+        "gates": 197,
+        "gate_depth": 63,
+        "gate_counts": {
+          "x": 68,
+          "cx": 117,
+          "ccx": 12
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 16,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 46,
+        "gates": 2586,
+        "gate_depth": 1756,
+        "gate_counts": {
+          "x": 184,
+          "cx": 1711,
+          "ccx": 691
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 31,
+        "gates": 99,
+        "gate_depth": 37,
+        "gate_counts": {
+          "x": 36,
+          "cx": 57,
+          "ccx": 6
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 22,
+        "gates": 299,
+        "gate_depth": 178,
+        "gate_counts": {
+          "x": 60,
+          "cx": 166,
+          "ccx": 73
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 131,
+        "gates": 427,
+        "gate_depth": 119,
+        "gate_counts": {
+          "x": 72,
+          "cx": 277,
+          "ccx": 78
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 43,
+        "gates": 1699,
+        "gate_depth": 1160,
+        "gate_counts": {
+          "x": 122,
+          "cx": 1123,
+          "ccx": 454
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 37,
+        "gates": 115,
+        "gate_depth": 37,
+        "gate_counts": {
+          "x": 38,
+          "cx": 67,
+          "ccx": 10
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 23,
+        "gates": 351,
+        "gate_depth": 220,
+        "gate_counts": {
+          "x": 60,
+          "cx": 202,
+          "ccx": 89
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 52,
+        "gates": 161,
+        "gate_depth": 73,
+        "gate_counts": {
+          "x": 38,
+          "cx": 99,
+          "ccx": 24
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        2
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 40,
+        "gates": 812,
+        "gate_depth": 566,
+        "gate_counts": {
+          "x": 60,
+          "cx": 535,
+          "ccx": 217
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 28,
+        "gates": 81,
+        "gate_depth": 43,
+        "gate_counts": {
+          "x": 24,
+          "cx": 49,
+          "ccx": 8
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 29,
+        "gates": 355,
+        "gate_depth": 194,
+        "gate_counts": {
+          "x": 88,
+          "cx": 186,
+          "ccx": 81
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 100,
+        "gates": 345,
+        "gate_depth": 75,
+        "gate_counts": {
+          "x": 108,
+          "cx": 205,
+          "ccx": 32
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 67,
+        "gates": 5329,
+        "gate_depth": 3572,
+        "gate_counts": {
+          "x": 342,
+          "cx": 3555,
+          "ccx": 1432
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 34,
+        "gates": 101,
+        "gate_depth": 43,
+        "gate_counts": {
+          "x": 32,
+          "cx": 61,
+          "ccx": 8
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 30,
+        "gates": 431,
+        "gate_depth": 254,
+        "gate_counts": {
+          "x": 88,
+          "cx": 238,
+          "ccx": 105
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 291,
+        "gates": 949,
+        "gate_depth": 197,
+        "gate_counts": {
+          "x": 124,
+          "cx": 637,
+          "ccx": 188
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 64,
+        "gates": 4010,
+        "gate_depth": 2698,
+        "gate_counts": {
+          "x": 260,
+          "cx": 2671,
+          "ccx": 1079
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 47,
+        "gates": 145,
+        "gate_depth": 45,
+        "gate_counts": {
+          "x": 48,
+          "cx": 85,
+          "ccx": 12
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 31,
+        "gates": 507,
+        "gate_depth": 316,
+        "gate_counts": {
+          "x": 88,
+          "cx": 290,
+          "ccx": 129
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 218,
+        "gates": 705,
+        "gate_depth": 149,
+        "gate_counts": {
+          "x": 92,
+          "cx": 477,
+          "ccx": 136
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 61,
+        "gates": 2691,
+        "gate_depth": 1822,
+        "gate_counts": {
+          "x": 178,
+          "cx": 1787,
+          "ccx": 726
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 58,
+        "gates": 177,
+        "gate_depth": 51,
+        "gate_counts": {
+          "x": 50,
+          "cx": 107,
+          "ccx": 20
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 32,
+        "gates": 587,
+        "gate_depth": 378,
+        "gate_counts": {
+          "x": 88,
+          "cx": 346,
+          "ccx": 153
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 86,
+        "gates": 263,
+        "gate_depth": 87,
+        "gate_counts": {
+          "x": 48,
+          "cx": 169,
+          "ccx": 46
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 58,
+        "gates": 1368,
+        "gate_depth": 948,
+        "gate_counts": {
+          "x": 92,
+          "cx": 903,
+          "ccx": 373
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 69,
+        "gates": 219,
+        "gate_depth": 75,
+        "gate_counts": {
+          "x": 34,
+          "cx": 147,
+          "ccx": 38
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 32,
+        "gates": 659,
+        "gate_depth": 416,
+        "gate_counts": {
+          "x": 100,
+          "cx": 390,
+          "ccx": 169
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 154,
+        "gates": 525,
+        "gate_depth": 109,
+        "gate_counts": {
+          "x": 118,
+          "cx": 335,
+          "ccx": 72
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 65,
+        "gates": 6489,
+        "gate_depth": 4486,
+        "gate_counts": {
+          "x": 350,
+          "cx": 4359,
+          "ccx": 1780
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 103,
+        "gates": 329,
+        "gate_depth": 91,
+        "gate_counts": {
+          "x": 52,
+          "cx": 217,
+          "ccx": 60
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 33,
+        "gates": 859,
+        "gate_depth": 570,
+        "gate_counts": {
+          "x": 104,
+          "cx": 526,
+          "ccx": 229
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 421,
+        "gates": 1373,
+        "gate_depth": 245,
+        "gate_counts": {
+          "x": 138,
+          "cx": 947,
+          "ccx": 288
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 62,
+        "gates": 5186,
+        "gate_depth": 3612,
+        "gate_counts": {
+          "x": 268,
+          "cx": 3491,
+          "ccx": 1427
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 119,
+        "gates": 381,
+        "gate_depth": 91,
+        "gate_counts": {
+          "x": 62,
+          "cx": 251,
+          "ccx": 68
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 34,
+        "gates": 943,
+        "gate_depth": 634,
+        "gate_counts": {
+          "x": 104,
+          "cx": 586,
+          "ccx": 253
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 237,
+        "gates": 769,
+        "gate_depth": 167,
+        "gate_counts": {
+          "x": 94,
+          "cx": 523,
+          "ccx": 152
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 59,
+        "gates": 2867,
+        "gate_depth": 1990,
+        "gate_counts": {
+          "x": 178,
+          "cx": 1903,
+          "ccx": 786
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 148,
+        "gates": 469,
+        "gate_depth": 105,
+        "gate_counts": {
+          "x": 62,
+          "cx": 315,
+          "ccx": 92
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 35,
+        "gates": 1143,
+        "gate_depth": 784,
+        "gate_counts": {
+          "x": 104,
+          "cx": 726,
+          "ccx": 313
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 86,
+        "gates": 267,
+        "gate_depth": 85,
+        "gate_counts": {
+          "x": 50,
+          "cx": 171,
+          "ccx": 46
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 56,
+        "gates": 1320,
+        "gate_depth": 918,
+        "gate_counts": {
+          "x": 92,
+          "cx": 867,
+          "ccx": 361
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 53,
+        "gates": 161,
+        "gate_depth": 71,
+        "gate_counts": {
+          "x": 32,
+          "cx": 101,
+          "ccx": 28
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 34,
+        "gates": 551,
+        "gate_depth": 342,
+        "gate_counts": {
+          "x": 84,
+          "cx": 326,
+          "ccx": 141
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 148,
+        "gates": 497,
+        "gate_depth": 105,
+        "gate_counts": {
+          "x": 120,
+          "cx": 305,
+          "ccx": 72
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 68,
+        "gates": 6129,
+        "gate_depth": 4260,
+        "gate_counts": {
+          "x": 334,
+          "cx": 4107,
+          "ccx": 1688
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 92,
+        "gates": 287,
+        "gate_depth": 83,
+        "gate_counts": {
+          "x": 52,
+          "cx": 181,
+          "ccx": 54
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 35,
+        "gates": 751,
+        "gate_depth": 502,
+        "gate_counts": {
+          "x": 88,
+          "cx": 462,
+          "ccx": 201
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 353,
+        "gates": 1145,
+        "gate_depth": 255,
+        "gate_counts": {
+          "x": 130,
+          "cx": 775,
+          "ccx": 240
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 65,
+        "gates": 5010,
+        "gate_depth": 3498,
+        "gate_counts": {
+          "x": 252,
+          "cx": 3375,
+          "ccx": 1383
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 100,
+        "gates": 309,
+        "gate_depth": 83,
+        "gate_counts": {
+          "x": 54,
+          "cx": 195,
+          "ccx": 60
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 36,
+        "gates": 819,
+        "gate_depth": 556,
+        "gate_counts": {
+          "x": 88,
+          "cx": 510,
+          "ccx": 221
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 204,
+        "gates": 655,
+        "gate_depth": 175,
+        "gate_counts": {
+          "x": 88,
+          "cx": 437,
+          "ccx": 130
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 62,
+        "gates": 3039,
+        "gate_depth": 2126,
+        "gate_counts": {
+          "x": 166,
+          "cx": 2035,
+          "ccx": 838
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 120,
+        "gates": 369,
+        "gate_depth": 99,
+        "gate_counts": {
+          "x": 54,
+          "cx": 239,
+          "ccx": 76
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 37,
+        "gates": 1015,
+        "gate_depth": 714,
+        "gate_counts": {
+          "x": 88,
+          "cx": 646,
+          "ccx": 281
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 70,
+        "gates": 211,
+        "gate_depth": 77,
+        "gate_counts": {
+          "x": 46,
+          "cx": 131,
+          "ccx": 34
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          9,
+          1,
+          3
+        ],
+        [
+          17,
+          4,
+          2
+        ],
+        1
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 59,
+        "gates": 1348,
+        "gate_depth": 956,
+        "gate_counts": {
+          "x": 80,
+          "cx": 895,
+          "ccx": 373
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 27,
+        "gates": 83,
+        "gate_depth": 43,
+        "gate_counts": {
+          "x": 26,
+          "cx": 51,
+          "ccx": 6
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 26,
+        "gates": 319,
+        "gate_depth": 180,
+        "gate_counts": {
+          "x": 80,
+          "cx": 166,
+          "ccx": 73
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 99,
+        "gates": 337,
+        "gate_depth": 75,
+        "gate_counts": {
+          "x": 86,
+          "cx": 211,
+          "ccx": 40
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 32,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 62,
+        "gates": 5279,
+        "gate_depth": 3578,
+        "gate_counts": {
+          "x": 320,
+          "cx": 3539,
+          "ccx": 1420
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 48,
+        "gates": 149,
+        "gate_depth": 63,
+        "gate_counts": {
+          "x": 34,
+          "cx": 95,
+          "ccx": 20
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 27,
+        "gates": 483,
+        "gate_depth": 304,
+        "gate_counts": {
+          "x": 84,
+          "cx": 278,
+          "ccx": 121
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 320,
+        "gates": 1047,
+        "gate_depth": 207,
+        "gate_counts": {
+          "x": 122,
+          "cx": 715,
+          "ccx": 210
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 59,
+        "gates": 3848,
+        "gate_depth": 2628,
+        "gate_counts": {
+          "x": 242,
+          "cx": 2567,
+          "ccx": 1039
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 64,
+        "gates": 197,
+        "gate_depth": 71,
+        "gate_counts": {
+          "x": 36,
+          "cx": 129,
+          "ccx": 32
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 28,
+        "gates": 643,
+        "gate_depth": 428,
+        "gate_counts": {
+          "x": 88,
+          "cx": 386,
+          "ccx": 169
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 205,
+        "gates": 659,
+        "gate_depth": 141,
+        "gate_counts": {
+          "x": 78,
+          "cx": 447,
+          "ccx": 134
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 56,
+        "gates": 2657,
+        "gate_depth": 1842,
+        "gate_counts": {
+          "x": 164,
+          "cx": 1771,
+          "ccx": 722
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 97,
+        "gates": 303,
+        "gate_depth": 79,
+        "gate_counts": {
+          "x": 54,
+          "cx": 195,
+          "ccx": 54
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 29,
+        "gates": 803,
+        "gate_depth": 558,
+        "gate_counts": {
+          "x": 92,
+          "cx": 494,
+          "ccx": 217
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 84,
+        "gates": 259,
+        "gate_depth": 89,
+        "gate_counts": {
+          "x": 48,
+          "cx": 165,
+          "ccx": 46
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          7,
+          1,
+          5
+        ],
+        9
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 53,
+        "gates": 1246,
+        "gate_depth": 878,
+        "gate_counts": {
+          "x": 82,
+          "cx": 823,
+          "ccx": 341
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 30,
+        "gates": 89,
+        "gate_depth": 45,
+        "gate_counts": {
+          "x": 26,
+          "cx": 55,
+          "ccx": 8
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 29,
+        "gates": 343,
+        "gate_depth": 188,
+        "gate_counts": {
+          "x": 88,
+          "cx": 178,
+          "ccx": 77
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 132,
+        "gates": 465,
+        "gate_depth": 89,
+        "gate_counts": {
+          "x": 152,
+          "cx": 273,
+          "ccx": 40
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 76,
+        "gates": 6364,
+        "gate_depth": 4326,
+        "gate_counts": {
+          "x": 476,
+          "cx": 4171,
+          "ccx": 1717
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 39,
+        "gates": 119,
+        "gate_depth": 45,
+        "gate_counts": {
+          "x": 36,
+          "cx": 73,
+          "ccx": 10
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 30,
+        "gates": 435,
+        "gate_depth": 262,
+        "gate_counts": {
+          "x": 88,
+          "cx": 242,
+          "ccx": 105
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 371,
+        "gates": 1235,
+        "gate_depth": 223,
+        "gate_counts": {
+          "x": 174,
+          "cx": 839,
+          "ccx": 222
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 73,
+        "gates": 5193,
+        "gate_depth": 3542,
+        "gate_counts": {
+          "x": 382,
+          "cx": 3407,
+          "ccx": 1404
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 63,
+        "gates": 199,
+        "gate_depth": 57,
+        "gate_counts": {
+          "x": 56,
+          "cx": 121,
+          "ccx": 22
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 31,
+        "gates": 527,
+        "gate_depth": 336,
+        "gate_counts": {
+          "x": 88,
+          "cx": 306,
+          "ccx": 133
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 369,
+        "gates": 1213,
+        "gate_depth": 239,
+        "gate_counts": {
+          "x": 154,
+          "cx": 827,
+          "ccx": 232
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 70,
+        "gates": 4022,
+        "gate_depth": 2758,
+        "gate_counts": {
+          "x": 288,
+          "cx": 2643,
+          "ccx": 1091
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 81,
+        "gates": 253,
+        "gate_depth": 69,
+        "gate_counts": {
+          "x": 58,
+          "cx": 159,
+          "ccx": 36
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 32,
+        "gates": 623,
+        "gate_depth": 410,
+        "gate_counts": {
+          "x": 88,
+          "cx": 374,
+          "ccx": 161
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 254,
+        "gates": 821,
+        "gate_depth": 167,
+        "gate_counts": {
+          "x": 104,
+          "cx": 557,
+          "ccx": 160
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 67,
+        "gates": 2847,
+        "gate_depth": 1974,
+        "gate_counts": {
+          "x": 190,
+          "cx": 1879,
+          "ccx": 778
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 4,
+      "method": "outplace_dual",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 89,
+        "gates": 275,
+        "gate_depth": 75,
+        "gate_counts": {
+          "x": 60,
+          "cx": 173,
+          "ccx": 42
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 4,
+      "method": "compact_dual",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 33,
+        "gates": 711,
+        "gate_depth": 480,
+        "gate_counts": {
+          "x": 88,
+          "cx": 434,
+          "ccx": 189
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 4,
+      "method": "outplace_exact",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 126,
+        "gates": 387,
+        "gate_depth": 105,
+        "gate_counts": {
+          "x": 54,
+          "cx": 255,
+          "ccx": 78
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        [
+          3,
+          5,
+          7,
+          8
+        ],
+        13
+      ],
+      "depth": 4,
+      "method": "compact_exact",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 64,
+        "gates": 1680,
+        "gate_depth": 1190,
+        "gate_counts": {
+          "x": 100,
+          "cx": 1115,
+          "ccx": 465
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 0,
+      "method": "outplace_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 55,
+        "gates": 169,
+        "gate_depth": 63,
+        "gate_counts": {
+          "x": 30,
+          "cx": 111,
+          "ccx": 28
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 0,
+      "method": "compact_dual",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 31,
+        "gates": 491,
+        "gate_depth": 294,
+        "gate_counts": {
+          "x": 84,
+          "cx": 286,
+          "ccx": 121
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 0,
+      "method": "outplace_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 180,
+        "gates": 617,
+        "gate_depth": 111,
+        "gate_counts": {
+          "x": 148,
+          "cx": 389,
+          "ccx": 80
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 0,
+      "method": "compact_exact",
+      "columns": 64,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 71,
+        "gates": 7304,
+        "gate_depth": 4964,
+        "gate_counts": {
+          "x": 416,
+          "cx": 4911,
+          "ccx": 1977
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 1,
+      "method": "outplace_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 75,
+        "gates": 231,
+        "gate_depth": 69,
+        "gate_counts": {
+          "x": 40,
+          "cx": 149,
+          "ccx": 42
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 1,
+      "method": "compact_dual",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 32,
+        "gates": 675,
+        "gate_depth": 438,
+        "gate_counts": {
+          "x": 88,
+          "cx": 410,
+          "ccx": 177
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 1,
+      "method": "outplace_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 464,
+        "gates": 1521,
+        "gate_depth": 287,
+        "gate_counts": {
+          "x": 170,
+          "cx": 1043,
+          "ccx": 308
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 1,
+      "method": "compact_exact",
+      "columns": 128,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 68,
+        "gates": 5725,
+        "gate_depth": 3894,
+        "gate_counts": {
+          "x": 330,
+          "cx": 3843,
+          "ccx": 1552
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 2,
+      "method": "outplace_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 86,
+        "gates": 263,
+        "gate_depth": 69,
+        "gate_counts": {
+          "x": 42,
+          "cx": 171,
+          "ccx": 50
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 2,
+      "method": "compact_dual",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 33,
+        "gates": 855,
+        "gate_depth": 582,
+        "gate_counts": {
+          "x": 92,
+          "cx": 530,
+          "ccx": 233
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 2,
+      "method": "outplace_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 338,
+        "gates": 1099,
+        "gate_depth": 209,
+        "gate_counts": {
+          "x": 126,
+          "cx": 751,
+          "ccx": 222
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 2,
+      "method": "compact_exact",
+      "columns": 256,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 65,
+        "gates": 4406,
+        "gate_depth": 3018,
+        "gate_counts": {
+          "x": 248,
+          "cx": 2959,
+          "ccx": 1199
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 3,
+      "method": "outplace_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 107,
+        "gates": 331,
+        "gate_depth": 71,
+        "gate_counts": {
+          "x": 56,
+          "cx": 213,
+          "ccx": 62
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 3,
+      "method": "compact_dual",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 34,
+        "gates": 935,
+        "gate_depth": 646,
+        "gate_counts": {
+          "x": 92,
+          "cx": 586,
+          "ccx": 257
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 3,
+      "method": "outplace_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 235,
+        "gates": 757,
+        "gate_depth": 157,
+        "gate_counts": {
+          "x": 96,
+          "cx": 513,
+          "ccx": 148
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 3,
+      "method": "compact_exact",
+      "columns": 512,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 62,
+        "gates": 2827,
+        "gate_depth": 1950,
+        "gate_counts": {
+          "x": 162,
+          "cx": 1891,
+          "ccx": 774
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 4,
+      "method": "outplace_dual",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 119,
+        "gates": 365,
+        "gate_depth": 95,
+        "gate_counts": {
+          "x": 56,
+          "cx": 237,
+          "ccx": 72
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 4,
+      "method": "compact_dual",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 35,
+        "gates": 1111,
+        "gate_depth": 790,
+        "gate_counts": {
+          "x": 92,
+          "cx": 706,
+          "ccx": 313
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 4,
+      "method": "outplace_exact",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 92,
+        "gates": 277,
+        "gate_depth": 97,
+        "gate_counts": {
+          "x": 48,
+          "cx": 177,
+          "ccx": 52
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          8
+        ],
+        8
+      ],
+      "depth": 4,
+      "method": "compact_exact",
+      "columns": 1024,
+      "predicate_mismatches": [],
+      "dirty_columns": 0,
+      "resources": {
+        "qubits": 59,
+        "gates": 1508,
+        "gate_depth": 1074,
+        "gate_counts": {
+          "x": 80,
+          "cx": 1007,
+          "ccx": 421
+        },
+        "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+        "classification": "DERIVED"
+      }
+    }
+  ],
+  "source_unchanged": true
+}

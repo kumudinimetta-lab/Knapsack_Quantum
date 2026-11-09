@@ -1,0 +1,250 @@
+{
+  "archive": ".firecrawl\\circuit_qtg_R1.zip",
+  "archive_bytes": 26364013,
+  "archive_md5": "02d7becb556d26f3e4a6f898b69530b7",
+  "md5_matches_zenodo_record": true,
+  "archive_sha256": "8f479e92a7fc8003df85e9e548052d2a7fe21ed7885ed64245e52203b0e3491e",
+  "archive_root": "SoerenWilkening-QTG_0-1Knapsack-d76de0d",
+  "selected_files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 1097,
+      "sha256": "cfdaa4bb026c89b2d7364067b3dbf1f4b8bc8723c8624be5937134e9f954afea"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5680,
+      "sha256": "46c27c10ce6eb3f63fc085acd7bc18db05950e99b10e0875a84ed520f0f977f2"
+    },
+    {
+      "path": "evaluation/00_generate.py",
+      "bytes": 1233,
+      "sha256": "339e7e328527ed2b4f0b707544bd4dd57b2bd7e5f6e53f42c1ce79eaaa34a91a"
+    },
+    {
+      "path": "evaluation/01_run_solver.py",
+      "bytes": 2105,
+      "sha256": "859fc51a70db4d00bedd30f2a0d0d215d004e77252f7fb36f6983f82d6907883"
+    },
+    {
+      "path": "evaluation/02_run_classical_benchmark.py",
+      "bytes": 6391,
+      "sha256": "9f9df85e4aa8c8a01295e15be264f04b6114d61e247b2fef3b23cde9f6250901"
+    },
+    {
+      "path": "evaluation/03_run_qtg_benchmark.py",
+      "bytes": 5342,
+      "sha256": "d9870b3773c18e43c416612949e015aa750beb0d80b277e6f4263f600326169a"
+    },
+    {
+      "path": "evaluation/04_run_qbnb_benchmark.py",
+      "bytes": 3786,
+      "sha256": "414f325256d988b358687e4a24448411cf41b17cc7499f3d0fd3b2d7e33451a4"
+    },
+    {
+      "path": "evaluation/05_run_ctg_benchmark.py",
+      "bytes": 4212,
+      "sha256": "0d716c94459d6c040e509d802102024061b091e4df47219b6a195c439774ee5d"
+    },
+    {
+      "path": "evaluation/10_run_exact_as_heuristic.py",
+      "bytes": 3679,
+      "sha256": "0f6de54f98d66df5e36c9196c7f2b750c148b00115d332f41803665e5336627e"
+    },
+    {
+      "path": "include/combo/combo.h",
+      "bytes": 2211,
+      "sha256": "5ff3e21fce43758ea900bd381fa846b910b66b4a51591dac7ffca441c69ab472"
+    },
+    {
+      "path": "include/combo/combowrp.h",
+      "bytes": 1395,
+      "sha256": "5133b973a0962f98e98544ccdeb88284de6d11696219281e47eab9625863016c"
+    },
+    {
+      "path": "include/common/knapsack.h",
+      "bytes": 23684,
+      "sha256": "5c15a6c0ab32b58d6337ee4eb025958463cd120636e34bb1065cbeac744fb7e3"
+    },
+    {
+      "path": "include/common/stategen.h",
+      "bytes": 5655,
+      "sha256": "3075c94cef00112985da021142ab778868d396f30a05be2bebbab7a7939276e5"
+    },
+    {
+      "path": "include/common/syslinks.h",
+      "bytes": 3200,
+      "sha256": "14a5cc3683dc02d6440fe4f71950b7e4da6fdcf797ef2835d4f6805a05784267"
+    },
+    {
+      "path": "include/common/utils.hpp",
+      "bytes": 2343,
+      "sha256": "6ff015a49a400c3ad5f0519dcf2f28cd3aad3b7624675986f7bb6c6ee4c2f412"
+    },
+    {
+      "path": "include/expknap/expknap.h",
+      "bytes": 1526,
+      "sha256": "8bfed5dda5261ba496b881b9b19346ebef1bd10e1f9ebc9788837bc4c77c8997"
+    },
+    {
+      "path": "include/generator/jooken_generator.h",
+      "bytes": 288,
+      "sha256": "dba46443c0a52064dede4a0933e994350c5fffaf83beeefaf54a1549604bdabe"
+    },
+    {
+      "path": "include/map/map.h",
+      "bytes": 2112,
+      "sha256": "11d230db4f40cf511cb6574451a931bc05197ff8066badce3700ae7665006a22"
+    },
+    {
+      "path": "include/simulation/qtgcount.h",
+      "bytes": 14713,
+      "sha256": "526bad4c92174389ab7e47b1dc94e82805d6c4b19a924af5c9c652d714c22b31"
+    },
+    {
+      "path": "include/simulation/quantum_branch_and_bound.h",
+      "bytes": 636,
+      "sha256": "ad06873a687eacfe5c62b4122b23404b5862a62f85d830d1b2d42c7b633bf7b7"
+    },
+    {
+      "path": "include/simulation/simulate.h",
+      "bytes": 4393,
+      "sha256": "ca5c6a7642a93939b1d0b965f7dcfec917555c3c39a3c2916c67d244f7905a2b"
+    },
+    {
+      "path": "pysrc/qtg/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pysrc/qtg/bindings/__init__.py",
+      "bytes": 306,
+      "sha256": "50093bb361774c02e50b44429e2610d5a09f8645c8a24fda68b03a561fc134b5"
+    },
+    {
+      "path": "pysrc/qtg/solvers/__init__.py",
+      "bytes": 34,
+      "sha256": "85a4e9e145a5260c4545f9dc191db84e2f8ba0369c0c4c0a5eb96db0ee0b5ff8"
+    },
+    {
+      "path": "pysrc/qtg/solvers/cp_sat_model.py",
+      "bytes": 1629,
+      "sha256": "ea72198bc0908259ac091c53769a5bd781e34c2562644bc9031fb43bd5e88d18"
+    },
+    {
+      "path": "pysrc/qtg/solvers/greedy.py",
+      "bytes": 1828,
+      "sha256": "7ffcc50dba3139bd46bf9c04212f5118598ccd02fa64b6c40fa50660307ad667"
+    },
+    {
+      "path": "pysrc/qtg/solvers/ip_model.py",
+      "bytes": 1460,
+      "sha256": "60b8c1c5941b4db57df9b1c891052c1a2b213ce23474b9b6d4980f62d001fb38"
+    },
+    {
+      "path": "pysrc/qtg/solvers/solution.py",
+      "bytes": 266,
+      "sha256": "8b2132197a1ba3ffb086ab265342b90733d255398366ffaed477e3619a5fd1c7"
+    },
+    {
+      "path": "pysrc/qtg/solvers/solver.py",
+      "bytes": 1470,
+      "sha256": "daaeb73a2c9dbb8a511e2f3cffec30bcb53608e1885a75d717cda2d02f301ca6"
+    },
+    {
+      "path": "pysrc/qtg/utils.py",
+      "bytes": 2156,
+      "sha256": "065bb10a5ecfbaa938300950fd486f52c5b1b8d57d6acc459a4f51e8ca9dbf62"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 641,
+      "sha256": "759a1ea86f56942876444c0a0087193d2794d0e1bafc62613a544d37d33fec33"
+    },
+    {
+      "path": "src/CMakeLists.txt",
+      "bytes": 1053,
+      "sha256": "b6baad12b80ade9391d31c2b520e286329bc12eee8d07ce1c7d0d2f9caaa974c"
+    },
+    {
+      "path": "src/bindings/_qtg_bindings.cpp",
+      "bytes": 22665,
+      "sha256": "db9549719ed36f44b77fb0d5b281a1b821deb1765fd98b6500109c3fc0b02ff3"
+    },
+    {
+      "path": "src/combo/combo.c",
+      "bytes": 44138,
+      "sha256": "8b21a996e4daf4e71ecf28e1c385af2f6789709622d9a053c6d3220064d4c927"
+    },
+    {
+      "path": "src/combo/combowrp.c",
+      "bytes": 2065,
+      "sha256": "f081313862bbc84021788f23f6c2862d0225d4a034dbe4e1cbc6b87364ec1071"
+    },
+    {
+      "path": "src/common/knapsack.c",
+      "bytes": 17658,
+      "sha256": "975fc459facb892f41fa0dbe66f6fa48a1820deae15b7be13d7146eccd252add"
+    },
+    {
+      "path": "src/common/stategen.c",
+      "bytes": 14080,
+      "sha256": "1732e58fcf86e02764fa0ce8d2c17a42c8accea1f0f6f7a552df1ae6ec4e3509"
+    },
+    {
+      "path": "src/common/syslinks.c",
+      "bytes": 5570,
+      "sha256": "c6d50ba6ad03b34034cb6f7360eea0bae168e4fff4cd157882595bfbd6ee4dd2"
+    },
+    {
+      "path": "src/expknap/expknap.c",
+      "bytes": 18895,
+      "sha256": "9e1c9af89c4514005987eee847afdfc61f3a9061449316c02759899e7e29c244"
+    },
+    {
+      "path": "src/generator/jooken_generator.cpp",
+      "bytes": 2414,
+      "sha256": "8e7e49238ed271ed627129ed809224331b0cbd0eed50e250d6d1c490f9eb6c99"
+    },
+    {
+      "path": "src/map/map.c",
+      "bytes": 6718,
+      "sha256": "76d57b0dbdb3dd3b8d5f8020da96d8d2d38fab9acb70981dd46190d74c0e1e4e"
+    },
+    {
+      "path": "src/simulation/qtgcount.c",
+      "bytes": 19887,
+      "sha256": "3fd7a0e32213d24c6cf98586c698ec59579b5e2fcebee2ca472983305303182a"
+    },
+    {
+      "path": "src/simulation/quantum_branch_and_bound.c",
+      "bytes": 2093,
+      "sha256": "a83c2002096e75215a43e66f3889e6bbba34c638d426f2930c8f63027f18d2f4"
+    },
+    {
+      "path": "src/simulation/simulate.c",
+      "bytes": 3514,
+      "sha256": "d135920c4e37fd756d258827f5cadf552e28a66ff36e84af83ae729ec9b10ffe"
+    },
+    {
+      "path": "tests/test_greedy.py",
+      "bytes": 456,
+      "sha256": "57272a895bcfc24645362c9779db19b2f81eaecd63de79954b451c25a3863e47"
+    },
+    {
+      "path": "tests/test_numerical_errors.py",
+      "bytes": 1436,
+      "sha256": "85747e592a9117c6c217b859b6553169cc0d572480f27e8701acf259f10ad515"
+    },
+    {
+      "path": "tests/test_parse.py",
+      "bytes": 665,
+      "sha256": "da0553cb3792e09f40f058e2925eb07d3755676432726d86567cf81f9881aae8"
+    },
+    {
+      "path": "tests/test_solvers.py",
+      "bytes": 6749,
+      "sha256": "80df1096101778f96bff0a14ae22a40ba940a7333b47e5bd41f3e0f1633536f1"
+    }
+  ]
+}

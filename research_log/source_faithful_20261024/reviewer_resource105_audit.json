@@ -1,0 +1,95 @@
+{
+  "scope": "Audit of historical unmerged source-primitive assembly, not optimized source artifact",
+  "classification": "DERIVED raw-ledger consistency and ratios",
+  "rows": 735,
+  "unique_conditions": 735,
+  "unique_inputs": 105,
+  "status_counts": {
+    "COMPLETED": 735,
+    "CAPPED": 0,
+    "ERROR": 0
+  },
+  "source_hash_checks": [
+    {
+      "path": "simulation\\source_faithful_20261024\\width_controls.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\qft_reconstruction.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\source_faithful_20261024\\resource_profile.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\pruning_study_20261023\\compact_sensitivity.py",
+      "match": true
+    },
+    {
+      "path": "simulation\\pruning_study_20261023\\circuits.py",
+      "match": true
+    },
+    {
+      "path": "research_log\\source_faithful_20261024\\run_resources.py",
+      "match": true
+    }
+  ],
+  "failures": [],
+  "normalized_over_conservative": [
+    {
+      "method": "qft_direct",
+      "metric": "qubits",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "qft_direct",
+      "metric": "common_depth",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "qft_direct",
+      "metric": "common_cx",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "qft_source_generic",
+      "metric": "qubits",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "qft_source_generic",
+      "metric": "common_depth",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "qft_source_generic",
+      "metric": "common_cx",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "compact_exact",
+      "metric": "qubits",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "compact_exact",
+      "metric": "common_depth",
+      "n": 105,
+      "median": 1.0
+    },
+    {
+      "method": "compact_exact",
+      "metric": "common_cx",
+      "n": 105,
+      "median": 1.0
+    }
+  ]
+}

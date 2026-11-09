@@ -1,0 +1,85 @@
+{
+  "inputs": 700,
+  "offset_conflicts": 0,
+  "methods": {
+    "simple": {
+      "algorithm_status": {
+        "complete": 487,
+        "capped_undecided": 208,
+        "capped_witness": 5
+      },
+      "completed_value_or_witness_mismatches": 0,
+      "original_reconstruction_checks": 487,
+      "original_reconstruction_failures": 0,
+      "complete_fixed_trees": 910,
+      "fixed_tree_caps": {
+        "node_cap": 481,
+        "time_cap": 9
+      },
+      "root_only_conditions": 46
+    },
+    "root_dual": {
+      "algorithm_status": {
+        "complete": 638,
+        "capped_witness": 39,
+        "capped_undecided": 23
+      },
+      "completed_value_or_witness_mismatches": 0,
+      "original_reconstruction_checks": 638,
+      "original_reconstruction_failures": 0,
+      "complete_fixed_trees": 1217,
+      "fixed_tree_caps": {
+        "node_cap": 157,
+        "time_cap": 26
+      },
+      "root_only_conditions": 227
+    },
+    "bank2": {
+      "algorithm_status": {
+        "complete": 692,
+        "capped_undecided": 8
+      },
+      "completed_value_or_witness_mismatches": 0,
+      "original_reconstruction_checks": 692,
+      "original_reconstruction_failures": 0,
+      "complete_fixed_trees": 1235,
+      "fixed_tree_caps": {
+        "node_cap": 147,
+        "time_cap": 18
+      },
+      "root_only_conditions": 227
+    },
+    "bank4": {
+      "algorithm_status": {
+        "complete": 697,
+        "capped_undecided": 2,
+        "capped_witness": 1
+      },
+      "completed_value_or_witness_mismatches": 0,
+      "original_reconstruction_checks": 697,
+      "original_reconstruction_failures": 0,
+      "complete_fixed_trees": 1236,
+      "fixed_tree_caps": {
+        "node_cap": 130,
+        "time_cap": 34
+      },
+      "root_only_conditions": 227
+    },
+    "exact_lp": {
+      "algorithm_status": {
+        "complete": 698,
+        "capped_undecided": 2
+      },
+      "completed_value_or_witness_mismatches": 0,
+      "original_reconstruction_checks": 698,
+      "original_reconstruction_failures": 0,
+      "complete_fixed_trees": 1234,
+      "fixed_tree_caps": {
+        "time_cap": 91,
+        "node_cap": 75
+      },
+      "root_only_conditions": 227
+    }
+  },
+  "source_sha256": "23d7661afee348305727ac5b3ba25401636517aef9a0c3039e1d47c891799c39"
+}

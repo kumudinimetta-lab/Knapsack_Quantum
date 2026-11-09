@@ -1,0 +1,18 @@
+{
+  "panel": "independent",
+  "attempted": 45,
+  "status_counts": {
+    "capacity_cap_safe_root_tail_fallback": 45
+  },
+  "bank_size_median": 10,
+  "bank_size_max": 20,
+  "strict_density_grid_improvements": 0,
+  "total_reachable_states": 0,
+  "total_affine_constraints": 0,
+  "total_preprocessing_seconds": 0.0031833998509682715,
+  "total_comparison_dp_seconds": 0,
+  "numerator_bits_max": 21,
+  "denominator_bits_max": 20,
+  "cardinality_contradictions": 0,
+  "source_sha256": "4a32287a1c2781deb737099c45b8237d1ea727415f9b6d651680afb7df351084"
+}

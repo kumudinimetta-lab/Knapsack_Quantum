@@ -1,0 +1,2124 @@
+{
+  "scope": "actual complete merged compiled predicates, ideal QFT, both target bits and full threshold domain",
+  "cancellation": "literal inverses across only disjoint gates; no source-optimality claim",
+  "rows": [
+    {
+      "fixture": 0,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 55,
+      "merged_gates": 35,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 55,
+        "output_gates": 35,
+        "removed_gate_counts": {
+          "x": 4,
+          "h": 8,
+          "cp": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 1.1112324770348983e-15,
+        "max_probability_leak": 0.0,
+        "max_normalization_error": 2.220446049250313e-15,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.022182200016686693
+      }
+    },
+    {
+      "fixture": 0,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 156,
+      "merged_gates": 80,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 156,
+        "output_gates": 80,
+        "removed_gate_counts": {
+          "h": 32,
+          "cp": 40,
+          "cx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 6.232662264222581e-15,
+        "max_probability_leak": 8.881784197001252e-16,
+        "max_normalization_error": 1.2434497875801753e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.028206099988892674
+      }
+    },
+    {
+      "fixture": 0,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 63,
+      "merged_gates": 41,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 63,
+        "output_gates": 41,
+        "removed_gate_counts": {
+          "x": 4,
+          "ccx": 2,
+          "h": 8,
+          "cp": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 8.881784197001252e-16,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 1.7763568394002505e-15,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.009881000005407259
+      }
+    },
+    {
+      "fixture": 0,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 156,
+      "merged_gates": 80,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 156,
+        "output_gates": 80,
+        "removed_gate_counts": {
+          "h": 32,
+          "cp": 40,
+          "cx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 4,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 6.232662264222581e-15,
+        "max_probability_leak": 8.881784197001252e-16,
+        "max_normalization_error": 1.2434497875801753e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.02769700001226738
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 427,
+      "merged_gates": 245,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 427,
+        "output_gates": 245,
+        "removed_gate_counts": {
+          "h": 60,
+          "cp": 98,
+          "x": 22,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.8867720116152064e-14,
+        "max_probability_leak": 4.440892098500626e-16,
+        "max_normalization_error": 5.773159728050814e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.293865099985851
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 330,
+      "merged_gates": 180,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 330,
+        "output_gates": 180,
+        "removed_gate_counts": {
+          "h": 48,
+          "cp": 96,
+          "cx": 6
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.7090643283502267e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 5.440092820663267e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.2804203999985475
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 455,
+      "merged_gates": 271,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 455,
+        "output_gates": 271,
+        "removed_gate_counts": {
+          "h": 60,
+          "cp": 98,
+          "x": 22,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 3.441803292161975e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 6.88338275267597e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.1989809999940917
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 334,
+      "merged_gates": 184,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 334,
+        "output_gates": 184,
+        "removed_gate_counts": {
+          "h": 48,
+          "cp": 96,
+          "cx": 6
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.5324069160261465e-14,
+        "max_probability_leak": 3.3306690738754696e-16,
+        "max_normalization_error": 5.084821452783217e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.1598093000066001
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 281,
+      "merged_gates": 129,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 281,
+        "output_gates": 129,
+        "removed_gate_counts": {
+          "h": 48,
+          "cp": 94,
+          "x": 10
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 1.3769563162174884e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 2.7755575615628914e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.08565520000411198
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 364,
+      "merged_gates": 194,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 364,
+        "output_gates": 194,
+        "removed_gate_counts": {
+          "h": 52,
+          "cp": 110,
+          "cx": 6,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 1.7330931357410715e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.4638958368304884e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.13318319999962114
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 297,
+      "merged_gates": 143,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 297,
+        "output_gates": 143,
+        "removed_gate_counts": {
+          "h": 48,
+          "cp": 94,
+          "x": 10,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 1.2879663765561465e-14,
+        "max_probability_leak": 6.661338147750939e-16,
+        "max_normalization_error": 2.55351295663786e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.12223989999620244
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 368,
+      "merged_gates": 198,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 368,
+        "output_gates": 198,
+        "removed_gate_counts": {
+          "h": 52,
+          "cp": 110,
+          "cx": 6,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 2.042863298075973e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 4.107825191113079e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.15820550001808442
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 303,
+      "merged_gates": 193,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 303,
+        "output_gates": 193,
+        "removed_gate_counts": {
+          "x": 18,
+          "h": 32,
+          "cp": 58,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 2,
+        "max_expected_amplitude_error": 1.5987715145614403e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.197442310920451e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.05596040000091307
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 1784,
+      "merged_gates": 1236,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1784,
+        "output_gates": 1236,
+        "removed_gate_counts": {
+          "x": 8,
+          "h": 192,
+          "cp": 340,
+          "cx": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 2,
+        "max_expected_amplitude_error": 1.1148689851504407e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 2.2293278334473143e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.450351600011345
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 331,
+      "merged_gates": 219,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 331,
+        "output_gates": 219,
+        "removed_gate_counts": {
+          "x": 18,
+          "h": 32,
+          "cp": 58,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 2,
+        "max_expected_amplitude_error": 1.7767817958208732e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.552713678800501e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.07744939997792244
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 1800,
+      "merged_gates": 1252,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1800,
+        "output_gates": 1252,
+        "removed_gate_counts": {
+          "x": 8,
+          "h": 192,
+          "cp": 340,
+          "cx": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 2,
+        "max_expected_amplitude_error": 1.5721243216990833e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.1441516057384433e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.43699829999241047
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 551,
+      "merged_gates": 251,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 551,
+        "output_gates": 251,
+        "removed_gate_counts": {
+          "x": 24,
+          "h": 96,
+          "cp": 178,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 1.7989810111694652e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.6193270602780103e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.1487081999948714
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 1209,
+      "merged_gates": 799,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1209,
+        "output_gates": 799,
+        "removed_gate_counts": {
+          "x": 6,
+          "h": 140,
+          "cp": 256,
+          "cx": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 1.0525252658782319e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 2.1049828546892968e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.6205573999905027
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 579,
+      "merged_gates": 277,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 579,
+        "output_gates": 277,
+        "removed_gate_counts": {
+          "x": 24,
+          "h": 96,
+          "cp": 178,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.509179257047718e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 5.040412531798211e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.16260549999424256
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 1221,
+      "merged_gates": 811,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1221,
+        "output_gates": 811,
+        "removed_gate_counts": {
+          "x": 6,
+          "h": 140,
+          "cp": 256,
+          "cx": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 9.394673858384112e-14,
+        "max_probability_leak": 4.440892098500626e-16,
+        "max_normalization_error": 1.8784973576657649e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.5648364000080619
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 623,
+      "merged_gates": 357,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 623,
+        "output_gates": 357,
+        "removed_gate_counts": {
+          "h": 84,
+          "x": 18,
+          "cp": 162,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 18,
+        "max_expected_amplitude_error": 3.708208556227667e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 7.394085344003543e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.9796543999982532
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 1711,
+      "merged_gates": 1115,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1711,
+        "output_gates": 1115,
+        "removed_gate_counts": {
+          "h": 176,
+          "x": 6,
+          "cp": 404,
+          "cx": 10
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 18,
+        "max_expected_amplitude_error": 1.8030355784473766e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.6060043839825084e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 1.8001512000046205
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 651,
+      "merged_gates": 383,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 651,
+        "output_gates": 383,
+        "removed_gate_counts": {
+          "h": 84,
+          "x": 18,
+          "cp": 162,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 18,
+        "max_expected_amplitude_error": 4.353616703318202e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 8.704148513061227e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.5174026000022423
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 1723,
+      "merged_gates": 1127,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1723,
+        "output_gates": 1127,
+        "removed_gate_counts": {
+          "h": 176,
+          "x": 6,
+          "cp": 404,
+          "cx": 10
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 18,
+        "max_expected_amplitude_error": 1.8297083431036382e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 3.659295089164516e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 1.6862600000167731
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 1297,
+      "merged_gates": 569,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1297,
+        "output_gates": 569,
+        "removed_gate_counts": {
+          "h": 184,
+          "x": 48,
+          "cp": 494,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 16,
+        "max_expected_amplitude_error": 5.8854492241209e-14,
+        "max_probability_leak": 4.440892098500626e-16,
+        "max_normalization_error": 1.1790568521519162e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.7307580000197049
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "policy": "direct",
+      "method": "lp",
+      "raw_gates": 3998,
+      "merged_gates": 2306,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 3998,
+        "output_gates": 2306,
+        "removed_gate_counts": {
+          "h": 400,
+          "x": 20,
+          "cp": 1260,
+          "cx": 12
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 16,
+        "max_expected_amplitude_error": 4.041669769747537e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 8.08242361927114e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 3.3737439999822527
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 1337,
+      "merged_gates": 607,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 1337,
+        "output_gates": 607,
+        "removed_gate_counts": {
+          "h": 184,
+          "x": 48,
+          "cp": 494,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 16,
+        "max_expected_amplitude_error": 6.794564910705958e-14,
+        "max_probability_leak": 4.440892098500626e-16,
+        "max_normalization_error": 1.3589129821411916e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.5416141000168864
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "lp",
+      "raw_gates": 4018,
+      "merged_gates": 2326,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 4018,
+        "output_gates": 2326,
+        "removed_gate_counts": {
+          "h": 400,
+          "x": 20,
+          "cp": 1260,
+          "cx": 12
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 32,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 16,
+        "max_expected_amplitude_error": 4.0972133975418986e-13,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 8.193445921733655e-13,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 2.494731500017224
+      }
+    },
+    {
+      "fixture": 7,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        0,
+        0
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 105,
+      "merged_gates": 81,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 105,
+        "output_gates": 81,
+        "removed_gate_counts": {
+          "x": 8,
+          "h": 8,
+          "cp": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 2.220446049250313e-15,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 4.440892098500626e-15,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.013901099999202415
+      }
+    },
+    {
+      "fixture": 7,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        0,
+        0
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 121,
+      "merged_gates": 95,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 121,
+        "output_gates": 95,
+        "removed_gate_counts": {
+          "x": 8,
+          "ccx": 2,
+          "h": 8,
+          "cp": 8
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 8,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 0,
+        "max_expected_amplitude_error": 2.220446049250313e-15,
+        "max_probability_leak": 1.1102230246251565e-16,
+        "max_normalization_error": 4.440892098500626e-15,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.015917499986244366
+      }
+    },
+    {
+      "fixture": 8,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        0,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "direct",
+      "method": "bank",
+      "raw_gates": 441,
+      "merged_gates": 259,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 441,
+        "output_gates": 259,
+        "removed_gate_counts": {
+          "h": 68,
+          "x": 18,
+          "cp": 94,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.2656779640037027e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 4.4853010194856324e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.11216109999804758
+      }
+    },
+    {
+      "fixture": 8,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        0,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "bank": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "policy": "source_generic",
+      "method": "bank",
+      "raw_gates": 469,
+      "merged_gates": 285,
+      "cancellation": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 469,
+        "output_gates": 285,
+        "removed_gate_counts": {
+          "h": 68,
+          "x": 18,
+          "cp": 94,
+          "ccx": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      },
+      "check": {
+        "status": "COMPLETED",
+        "classification": "SIMULATED",
+        "columns": 16,
+        "predicate_phase_or_cleanup_failures": 0,
+        "exact_rational_LP_predicate_disagreements": 0,
+        "overlapping_reject_flag_columns": 6,
+        "max_expected_amplitude_error": 2.802776771454748e-14,
+        "max_probability_leak": 2.220446049250313e-16,
+        "max_normalization_error": 5.595524044110789e-14,
+        "caps_hardcoded": {
+          "qubits": 128,
+          "native_gates": 40000,
+          "columns": 512,
+          "condition_seconds": 90
+        },
+        "tolerance_hardcoded": 1e-08,
+        "first_failures": [],
+        "simulator": {
+          "method": "matrix_product_state",
+          "noise": "ideal",
+          "matrix_product_state_truncation_threshold": 0.0,
+          "matrix_product_state_max_bond_dimension": 18446744073709551615,
+          "zero_threshold_config": 1e-10
+        },
+        "seconds_measured": 0.11442739999620244
+      }
+    }
+  ],
+  "errors": [],
+  "source_sha256": {
+    "simulation/source_faithful_20261024/qft_bank.py": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "simulation/source_faithful_20261024/qft_normal_form.py": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1",
+    "simulation/source_faithful_20261024/width_controls.py": "0aef8efb138862d76ad50c9365f217492bac7ddfc893c44fdecfb9c36ce4fbd1",
+    "simulation/source_faithful_20261024/qft_reconstruction.py": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "simulation/source_faithful_20261024/compressed_bank.py": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5",
+    "research_log/source_faithful_20261024/qft_bank_pilot.py": "da425a0164813353f0b5e65c618e288ccb4bbf9088c5bd2df7faddd89afe27e0",
+    "research_log/source_faithful_20261024/mps_readout.py": "9ed8f85588243ff5952e778b78727df5a55789964b6dc27ef029a37b98ffd7bc",
+    "research_log\\source_faithful_20261024\\qft_bank_merged_validation.py": "7cdf19c51e15b94b3f5972b6b6f8563f0f2a654c8defe990877b89321209fe3d"
+  },
+  "summary": {
+    "method_cases": 32,
+    "columns": 544,
+    "statuses": {
+      "COMPLETED": 32
+    },
+    "predicate_phase_or_cleanup_failures": 0,
+    "exact_rational_LP_predicate_disagreements": 0,
+    "max_expected_amplitude_error": 4.0972133975418986e-13
+  }
+}

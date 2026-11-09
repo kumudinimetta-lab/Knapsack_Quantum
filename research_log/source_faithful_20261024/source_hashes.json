@@ -1,0 +1,8 @@
+{
+  "simulation\\source_faithful_20261024\\qft_reconstruction.py": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+  "research_log\\source_faithful_20261024\\pilot.py": "4c4d10b45d177760b80d7c025eb6462adbadd0aeae6106ad4e0ef9e8fecf74ef",
+  "research_log\\source_faithful_20261024\\mps_readout.py": "9ed8f85588243ff5952e778b78727df5a55789964b6dc27ef029a37b98ffd7bc",
+  "research_log\\source_faithful_20261024\\pilot_results_mps_tensor.json": "c321af0c0f512d2f691fa4b7a447d252654913d15369f9ea2c7562f52b94e630",
+  "simulation\\pruning_study_20261023\\circuits.py": "5ab166ee9a3f5db18d6f42d7e99a9341277e98e2a9e60d4569dc8ff383ae56e9",
+  "simulation\\pruning_study_20261023\\compact_sensitivity.py": "b966a44df6bfcea206316b6c66fc2148ea62392380e5c259ad4f869417044682"
+}

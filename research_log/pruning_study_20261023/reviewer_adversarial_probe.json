@@ -1,0 +1,967 @@
+{
+  "scope": "Independent prototype audit, not production circuit/full walk",
+  "source_sha256": "04997df84f9aac5689a025216db937fb302d974d3019e99d7435d8f482f60673",
+  "configuration_classification": "HARDCODED",
+  "reference_classification": "DERIVED exact vertex enumeration",
+  "circuit_output_classification": "SIMULATED",
+  "cases": [
+    {
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 17,
+            "gates": 55,
+            "gate_depth": 37,
+            "gate_counts": {
+              "x": 26,
+              "cx": 27,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 17,
+            "gates": 92,
+            "gate_depth": 70,
+            "gate_counts": {
+              "x": 44,
+              "cx": 47,
+              "ccx": 1
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 16,
+            "gates": 51,
+            "gate_depth": 31,
+            "gate_counts": {
+              "x": 24,
+              "cx": 25,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [],
+      "values": [],
+      "capacity": 5,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 17,
+            "gates": 55,
+            "gate_depth": 37,
+            "gate_counts": {
+              "x": 26,
+              "cx": 27,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 17,
+            "gates": 92,
+            "gate_depth": 70,
+            "gate_counts": {
+              "x": 44,
+              "cx": 47,
+              "ccx": 1
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 16,
+            "gates": 51,
+            "gate_depth": 31,
+            "gate_counts": {
+              "x": 24,
+              "cx": 25,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 92,
+            "gates": 299,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 74,
+              "cx": 175,
+              "ccx": 50
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 36,
+            "gates": 357,
+            "gate_depth": 196,
+            "gate_counts": {
+              "x": 142,
+              "cx": 187,
+              "ccx": 28
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 35,
+            "gates": 111,
+            "gate_depth": 47,
+            "gate_counts": {
+              "x": 46,
+              "cx": 55,
+              "ccx": 10
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 104,
+            "gates": 341,
+            "gate_depth": 119,
+            "gate_counts": {
+              "x": 80,
+              "cx": 205,
+              "ccx": 56
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 39,
+            "gates": 397,
+            "gate_depth": 188,
+            "gate_counts": {
+              "x": 150,
+              "cx": 219,
+              "ccx": 28
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 47,
+            "gates": 153,
+            "gate_depth": 69,
+            "gate_counts": {
+              "x": 54,
+              "cx": 83,
+              "ccx": 16
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 2,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 88,
+            "gates": 287,
+            "gate_depth": 107,
+            "gate_counts": {
+              "x": 70,
+              "cx": 171,
+              "ccx": 46
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 39,
+            "gates": 357,
+            "gate_depth": 180,
+            "gate_counts": {
+              "x": 134,
+              "cx": 203,
+              "ccx": 20
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 32,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 40,
+            "gates": 127,
+            "gate_depth": 67,
+            "gate_counts": {
+              "x": 44,
+              "cx": 69,
+              "ccx": 14
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        2,
+        2
+      ],
+      "values": [
+        3,
+        3
+      ],
+      "capacity": 2,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 289,
+            "gates": 941,
+            "gate_depth": 207,
+            "gate_counts": {
+              "x": 140,
+              "cx": 617,
+              "ccx": 184
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 153,
+            "gates": 1636,
+            "gate_depth": 510,
+            "gate_counts": {
+              "x": 382,
+              "cx": 1013,
+              "ccx": 241
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 69,
+            "gates": 219,
+            "gate_depth": 67,
+            "gate_counts": {
+              "x": 72,
+              "cx": 121,
+              "ccx": 26
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 7,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 624,
+            "gates": 2041,
+            "gate_depth": 345,
+            "gate_counts": {
+              "x": 232,
+              "cx": 1397,
+              "ccx": 412
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 319,
+            "gates": 4607,
+            "gate_depth": 1039,
+            "gate_counts": {
+              "x": 776,
+              "cx": 3009,
+              "ccx": 822
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 102,
+            "gates": 323,
+            "gate_depth": 83,
+            "gate_counts": {
+              "x": 96,
+              "cx": 185,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 716,
+            "gates": 2335,
+            "gate_depth": 379,
+            "gate_counts": {
+              "x": 234,
+              "cx": 1611,
+              "ccx": 490
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 449,
+            "gates": 5951,
+            "gate_depth": 1231,
+            "gate_counts": {
+              "x": 832,
+              "cx": 3985,
+              "ccx": 1134
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 192,
+            "gates": 615,
+            "gate_depth": 123,
+            "gate_counts": {
+              "x": 108,
+              "cx": 393,
+              "ccx": 114
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        9,
+        1,
+        3
+      ],
+      "values": [
+        17,
+        4,
+        2
+      ],
+      "capacity": 1,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 625,
+            "gates": 2033,
+            "gate_depth": 369,
+            "gate_counts": {
+              "x": 230,
+              "cx": 1379,
+              "ccx": 424
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 381,
+            "gates": 5099,
+            "gate_depth": 1223,
+            "gate_counts": {
+              "x": 800,
+              "cx": 3329,
+              "ccx": 970
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 2048,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 164,
+            "gates": 515,
+            "gate_depth": 121,
+            "gate_counts": {
+              "x": 100,
+              "cx": 317,
+              "ccx": 98
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        2,
+        3,
+        4
+      ],
+      "values": [
+        7,
+        1,
+        5
+      ],
+      "capacity": 9,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 660,
+            "gates": 2159,
+            "gate_depth": 349,
+            "gate_counts": {
+              "x": 232,
+              "cx": 1485,
+              "ccx": 442
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 348,
+            "gates": 4687,
+            "gate_depth": 1067,
+            "gate_counts": {
+              "x": 700,
+              "cx": 3109,
+              "ccx": 878
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 141,
+            "gates": 449,
+            "gate_depth": 113,
+            "gate_counts": {
+              "x": 100,
+              "cx": 273,
+              "ccx": 76
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        8,
+        16
+      ],
+      "values": [
+        16,
+        8
+      ],
+      "capacity": 16,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 270,
+            "gates": 885,
+            "gate_depth": 213,
+            "gate_counts": {
+              "x": 168,
+              "cx": 561,
+              "ccx": 156
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 118,
+            "gates": 1460,
+            "gate_depth": 473,
+            "gate_counts": {
+              "x": 414,
+              "cx": 853,
+              "ccx": 193
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 1024,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 88,
+            "gates": 275,
+            "gate_depth": 89,
+            "gate_counts": {
+              "x": 80,
+              "cx": 157,
+              "ccx": 38
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 815,
+            "gates": 2681,
+            "gate_depth": 445,
+            "gate_counts": {
+              "x": 324,
+              "cx": 1829,
+              "ccx": 528
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 417,
+            "gates": 8376,
+            "gate_depth": 1646,
+            "gate_counts": {
+              "x": 1326,
+              "cx": 5553,
+              "ccx": 1497
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 159,
+            "gates": 505,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 126,
+              "cx": 299,
+              "ccx": 80
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 881,
+            "gates": 2875,
+            "gate_depth": 433,
+            "gate_counts": {
+              "x": 302,
+              "cx": 1975,
+              "ccx": 598
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 510,
+            "gates": 8676,
+            "gate_depth": 1722,
+            "gate_counts": {
+              "x": 1226,
+              "cx": 5797,
+              "ccx": 1653
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 8192,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 189,
+            "gates": 595,
+            "gate_depth": 115,
+            "gate_counts": {
+              "x": 122,
+              "cx": 363,
+              "ccx": 110
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        1024,
+        2048
+      ],
+      "values": [
+        2048,
+        1024
+      ],
+      "capacity": 2048,
+      "circuits": {
+        "exact_single": {
+          "scope": "128 deterministic adversarial/random encodings",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 354,
+            "gates": 1151,
+            "gate_depth": 241,
+            "gate_counts": {
+              "x": 238,
+              "cx": 715,
+              "ccx": 198
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "128 deterministic adversarial/random encodings",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 174,
+            "gates": 2412,
+            "gate_depth": 662,
+            "gate_counts": {
+              "x": 638,
+              "cx": 1413,
+              "ccx": 361
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "128 deterministic adversarial/random encodings",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 116,
+            "gates": 345,
+            "gate_depth": 89,
+            "gate_counts": {
+              "x": 94,
+              "cx": 199,
+              "ccx": 52
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        3
+      ],
+      "capacity": 1048576,
+      "circuits": {
+        "exact_single": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 846,
+            "gates": 2825,
+            "gate_depth": 525,
+            "gate_counts": {
+              "x": 314,
+              "cx": 1983,
+              "ccx": 528
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "exact_wrapper": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 364,
+            "gates": 3328,
+            "gate_depth": 863,
+            "gate_counts": {
+              "x": 722,
+              "cx": 2153,
+              "ccx": 453
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        },
+        "root_dual": {
+          "scope": "exhaustive encoded inputs with clean workspace",
+          "columns": 256,
+          "mismatches": [],
+          "dirty_columns": 0,
+          "resources": {
+            "qubits": 96,
+            "gates": 315,
+            "gate_depth": 95,
+            "gate_counts": {
+              "x": 100,
+              "cx": 177,
+              "ccx": 38
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    }
+  ]
+}

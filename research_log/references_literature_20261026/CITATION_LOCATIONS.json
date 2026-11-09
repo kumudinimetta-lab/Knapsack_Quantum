@@ -1,0 +1,516 @@
+[
+  {
+    "line": 61,
+    "keys": [
+      "ref2"
+    ],
+    "text": "The 0/1 knapsack problem is one of the most studied problems in combinatorial optimization: given $n$ items, each with a weight $w_i$ and a value $v_i$, and a capacity $W$, find the subset that maximizes total value without exceeding the capacity. Despite its simple formulation, the problem is NP-hard, and the best classical exact algorithm---the Horowitz--Sahni meet-in-the-middle approach---runs in $O(2^{n/2})$ time and space \\cite{ref2}."
+  },
+  {
+    "line": 63,
+    "keys": [
+      "ref8"
+    ],
+    "text": "Quantum computing has long promised speedups for combinatorial problems. Grover's algorithm \\cite{ref8} provides a quadratic speedup for unstructured search, and its generalization via amplitude amplification \\cite{ref11} is a powerful tool. However, applying Grover search directly to knapsack yields $O(2^{n/2})$---no improvement over classical meet-in-the-middle."
+  },
+  {
+    "line": 63,
+    "keys": [
+      "ref11"
+    ],
+    "text": "Quantum computing has long promised speedups for combinatorial problems. Grover's algorithm \\cite{ref8} provides a quadratic speedup for unstructured search, and its generalization via amplitude amplification \\cite{ref11} is a powerful tool. However, applying Grover search directly to knapsack yields $O(2^{n/2})$---no improvement over classical meet-in-the-middle."
+  },
+  {
+    "line": 65,
+    "keys": [
+      "ref16"
+    ],
+    "text": "More sophisticated quantum approaches based on quantum walks have achieved better asymptotic complexities. Bernstein et al. \\cite{ref16} achieved $O(2^{0.241n})$, and Helm and May \\cite{ref17} further improved this to $O(2^{0.226n})$. However, these results rely on Heuristic~2---an unproven assumption about quantum walk update times---which Bonnetain et al. \\cite{bonnetain2020improved} have shown to be mathematically unsound in general. Furthermore, these algorithms require QRAQM (Quantum Random Access Memory with Quantum Addressing), a hardware model that does not exist and faces severe engineering challenges \\cite{ref18}."
+  },
+  {
+    "line": 65,
+    "keys": [
+      "ref17"
+    ],
+    "text": "More sophisticated quantum approaches based on quantum walks have achieved better asymptotic complexities. Bernstein et al. \\cite{ref16} achieved $O(2^{0.241n})$, and Helm and May \\cite{ref17} further improved this to $O(2^{0.226n})$. However, these results rely on Heuristic~2---an unproven assumption about quantum walk update times---which Bonnetain et al. \\cite{bonnetain2020improved} have shown to be mathematically unsound in general. Furthermore, these algorithms require QRAQM (Quantum Random Access Memory with Quantum Addressing), a hardware model that does not exist and faces severe engineering challenges \\cite{ref18}."
+  },
+  {
+    "line": 65,
+    "keys": [
+      "bonnetain2020improved"
+    ],
+    "text": "More sophisticated quantum approaches based on quantum walks have achieved better asymptotic complexities. Bernstein et al. \\cite{ref16} achieved $O(2^{0.241n})$, and Helm and May \\cite{ref17} further improved this to $O(2^{0.226n})$. However, these results rely on Heuristic~2---an unproven assumption about quantum walk update times---which Bonnetain et al. \\cite{bonnetain2020improved} have shown to be mathematically unsound in general. Furthermore, these algorithms require QRAQM (Quantum Random Access Memory with Quantum Addressing), a hardware model that does not exist and faces severe engineering challenges \\cite{ref18}."
+  },
+  {
+    "line": 65,
+    "keys": [
+      "ref18"
+    ],
+    "text": "More sophisticated quantum approaches based on quantum walks have achieved better asymptotic complexities. Bernstein et al. \\cite{ref16} achieved $O(2^{0.241n})$, and Helm and May \\cite{ref17} further improved this to $O(2^{0.226n})$. However, these results rely on Heuristic~2---an unproven assumption about quantum walk update times---which Bonnetain et al. \\cite{bonnetain2020improved} have shown to be mathematically unsound in general. Furthermore, these algorithms require QRAQM (Quantum Random Access Memory with Quantum Addressing), a hardware model that does not exist and faces severe engineering challenges \\cite{ref18}."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "ref1"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "ref2"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "ref3"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "balas1980core"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "ref4"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "pisinger1997minimal"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "martello1999combo"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "beier2004random"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 92,
+    "keys": [
+      "dey2021random"
+    ],
+    "text": "\\textit{Classical exact methods.} Fractional LP bounds have a long history in discrete optimization \\cite{ref1}. The Horowitz--Sahni meet-in-the-middle (MitM) algorithm splits the items into two halves and combines partial solutions, providing a classical $O(2^{n/2})$ arithmetic-operation baseline \\cite{ref2}. Kellerer, Pferschy, and Pisinger consolidate dynamic programming, greedy bounds, and branch-and-bound (B\\&B) \\cite{ref3}. The \\emph{core} concept was introduced by Balas and Zemel \\cite{balas1980core}; Pisinger subsequently showed why core difficulty must be assessed across capacities and instance distributions \\cite{ref4}. MINKNAP uses an expanding-core dynamic program \\cite{pisinger1997minimal}, while COMBO combines dynamic programming with strong bounds \\cite{martello1999combo}. These methods provide stronger classical context than brute-force baselines alone. Beier and V\\\"ocking's expected-polynomial knapsack analysis \\cite{beier2004random} and Dey, Dubey, and Molinaro's random binary-IP B\\&B analysis \\cite{dey2021random} require their respective distributional assumptions; neither establishes polynomial search trees for the benchmark classes considered here."
+  },
+  {
+    "line": 94,
+    "keys": [
+      "ref8"
+    ],
+    "text": "\\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\\sqrt{N})$ oracle queries \\cite{ref8}. Amplitude amplification generalizes this principle \\cite{ref11}, with optimization variants via pure adaptive search \\cite{ref12} and D\\\"urr--H{\\o}yer minimum finding \\cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \\cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime."
+  },
+  {
+    "line": 94,
+    "keys": [
+      "ref11"
+    ],
+    "text": "\\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\\sqrt{N})$ oracle queries \\cite{ref8}. Amplitude amplification generalizes this principle \\cite{ref11}, with optimization variants via pure adaptive search \\cite{ref12} and D\\\"urr--H{\\o}yer minimum finding \\cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \\cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime."
+  },
+  {
+    "line": 94,
+    "keys": [
+      "ref12"
+    ],
+    "text": "\\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\\sqrt{N})$ oracle queries \\cite{ref8}. Amplitude amplification generalizes this principle \\cite{ref11}, with optimization variants via pure adaptive search \\cite{ref12} and D\\\"urr--H{\\o}yer minimum finding \\cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \\cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime."
+  },
+  {
+    "line": 94,
+    "keys": [
+      "ref13"
+    ],
+    "text": "\\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\\sqrt{N})$ oracle queries \\cite{ref8}. Amplitude amplification generalizes this principle \\cite{ref11}, with optimization variants via pure adaptive search \\cite{ref12} and D\\\"urr--H{\\o}yer minimum finding \\cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \\cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime."
+  },
+  {
+    "line": 94,
+    "keys": [
+      "ref9"
+    ],
+    "text": "\\textit{Quantum search and its limits.} Grover's algorithm searches an unstructured space of size $N$ using $O(\\sqrt{N})$ oracle queries \\cite{ref8}. Amplitude amplification generalizes this principle \\cite{ref11}, with optimization variants via pure adaptive search \\cite{ref12} and D\\\"urr--H{\\o}yer minimum finding \\cite{ref13}. Searching all binary assignments therefore requires $O(2^{n/2})$ queries before accounting for oracle cost. Bennett et al.'s black-box lower bounds \\cite{ref9} concern unstructured oracle access; they do not establish an unrestricted lower bound for structured knapsack algorithms or equate query complexity with runtime."
+  },
+  {
+    "line": 96,
+    "keys": [
+      "ref5"
+    ],
+    "text": "\\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \\cite{ref5} and the quantum algorithms of Bernstein et al.\\ \\cite{ref16} and Helm--May \\cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \\cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \\cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible."
+  },
+  {
+    "line": 96,
+    "keys": [
+      "ref16"
+    ],
+    "text": "\\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \\cite{ref5} and the quantum algorithms of Bernstein et al.\\ \\cite{ref16} and Helm--May \\cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \\cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \\cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible."
+  },
+  {
+    "line": 96,
+    "keys": [
+      "ref17"
+    ],
+    "text": "\\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \\cite{ref5} and the quantum algorithms of Bernstein et al.\\ \\cite{ref16} and Helm--May \\cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \\cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \\cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible."
+  },
+  {
+    "line": 96,
+    "keys": [
+      "bonnetain2020improved"
+    ],
+    "text": "\\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \\cite{ref5} and the quantum algorithms of Bernstein et al.\\ \\cite{ref16} and Helm--May \\cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \\cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \\cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible."
+  },
+  {
+    "line": 96,
+    "keys": [
+      "ref18"
+    ],
+    "text": "\\textit{Subset-sum algorithms and memory assumptions.} Closely related subset-sum work includes the representation technique of Becker, Coron, and Joux \\cite{ref5} and the quantum algorithms of Bernstein et al.\\ \\cite{ref16} and Helm--May \\cite{ref17}. Their input models and, where used, heuristic assumptions must be distinguished from worst-case optimization with separate weights and values. Bonnetain et al.\\ identify a problem with a walk-update heuristic and develop alternative algorithms and memory tradeoffs \\cite{bonnetain2020improved}; this is not a rejection of every quantum subset-sum algorithm. Jaques and Rattew distinguish QRAM architectures and their resource assumptions \\cite{ref18}. Such costs require explicit accounting, rather than a blanket assertion that quantum-addressable memory is impossible."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "hou2020"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "hamitouche2025"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "wilkening2025"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "wilkening2025code"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "ref23"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "ref25"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "ref23"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 98,
+    "keys": [
+      "ref26"
+    ],
+    "text": "\\textit{Gate-model knapsack and hybrid optimization.} Hou and Perkowski give gate-model bounded-knapsack circuits that test complete candidate assignments \\cite{hou2020}. Hamitouche et al.\\ combine Grover-based feasibility and threshold tests with a separately computed classical upper bound, for which a fractional-knapsack bound is one option \\cite{hamitouche2025}. Wilkening et al.\\ present a quantum tree generator with amplitude amplification; separately, their quantum B\\&B benchmarks use fractional-greedy bounds \\cite{wilkening2025}. Their released R1 software and experiment data provide a version-specific implementation reference \\cite{wilkening2025code}. These works make quantum knapsack arithmetic and the use of fractional bounds prior art. Christiansen et al.\\ combine feasible-solution state preparation with Grover-mixer QAOA \\cite{ref23}, within the variational framework introduced by Farhi et al.\\ \\cite{ref25}. Christiansen et al.\\ prove eventual optimal sampling at sufficiently large depth \\cite{ref23}; this does not establish a practical finite-depth advantage. Grover adaptive search for constrained polynomial binary optimization \\cite{ref26} is a distinct search approach, rather than a variational algorithm."
+  },
+  {
+    "line": 100,
+    "keys": [
+      "ref36"
+    ],
+    "text": "\\textit{LP and Lagrangian bounds in quantum methods.} Sanavio et al.\\ combine classical B\\&B with quantum annealing for integer linear problems \\cite{ref36}. Bo\\.{z}ejko et al.\\ use Lagrangian multiplier bounds in a D-Wave knapsack B\\&B framework, including minimization over a multiplier set and integer rounding in pruning \\cite{bozejko2026}. Their large-instance device experiments evaluate bounds at the root, rather than executing the full search tree on the QPU. Gabbassov et al.\\ study Lagrangian duality for constrained quantum optimization and compare it with QUBO reformulations \\cite{gabbassov2025}. Thus, neither Lagrangian relaxation nor taking an integer floor of a valid upper bound is itself a new contribution."
+  },
+  {
+    "line": 100,
+    "keys": [
+      "bozejko2026"
+    ],
+    "text": "\\textit{LP and Lagrangian bounds in quantum methods.} Sanavio et al.\\ combine classical B\\&B with quantum annealing for integer linear problems \\cite{ref36}. Bo\\.{z}ejko et al.\\ use Lagrangian multiplier bounds in a D-Wave knapsack B\\&B framework, including minimization over a multiplier set and integer rounding in pruning \\cite{bozejko2026}. Their large-instance device experiments evaluate bounds at the root, rather than executing the full search tree on the QPU. Gabbassov et al.\\ study Lagrangian duality for constrained quantum optimization and compare it with QUBO reformulations \\cite{gabbassov2025}. Thus, neither Lagrangian relaxation nor taking an integer floor of a valid upper bound is itself a new contribution."
+  },
+  {
+    "line": 100,
+    "keys": [
+      "gabbassov2025"
+    ],
+    "text": "\\textit{LP and Lagrangian bounds in quantum methods.} Sanavio et al.\\ combine classical B\\&B with quantum annealing for integer linear problems \\cite{ref36}. Bo\\.{z}ejko et al.\\ use Lagrangian multiplier bounds in a D-Wave knapsack B\\&B framework, including minimization over a multiplier set and integer rounding in pruning \\cite{bozejko2026}. Their large-instance device experiments evaluate bounds at the root, rather than executing the full search tree on the QPU. Gabbassov et al.\\ study Lagrangian duality for constrained quantum optimization and compare it with QUBO reformulations \\cite{gabbassov2025}. Thus, neither Lagrangian relaxation nor taking an integer floor of a valid upper bound is itself a new contribution."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "ref35"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "ref24"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "martiel2019"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "vedral1996"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "draper2000"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "cuccaro2004"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "barenco1995"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "thapliyal2016"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "erickson2019algorithms"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "ref31"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 102,
+    "keys": [
+      "ref33"
+    ],
+    "text": "\\textit{Query frameworks and reversible implementation.} Montanaro's quantum backtracking \\cite{ref35} and quantum B\\&B \\cite{ref24} give query reductions under specified access to tree and bounding oracles. These frameworks do not make the cost of implementing an LP oracle free. Martiel and Remaud study concrete circuit implementation of quantum backtracking \\cite{martiel2019}. Reversible arithmetic includes the networks of Vedral, Barenco, and Ekert \\cite{vedral1996}, Draper's Fourier-basis addition \\cite{draper2000}, and Cuccaro et al.'s ripple-carry addition \\cite{cuccaro2004}; elementary controlled-gate decompositions are treated by Barenco et al.\\ \\cite{barenco1995}. Thapliyal et al.'s reversible integer divider \\cite{thapliyal2016} is a useful arithmetic comparison, but the constant-coefficient oracle construction considered here does not execute that divider. Minimum interval stabbing is also an established combinatorial problem \\cite{erickson2019algorithms}, so any contribution using it must concern the reduction and its endpoint conditions, rather than the greedy algorithm itself. Preskill's discussion of noise and depth constraints \\cite{ref31} motivates separating logical circuit resources from device performance. Qiskit \\cite{ref33} supplies software tools; its use alone is not evidence of execution on a quantum processor."
+  },
+  {
+    "line": 104,
+    "keys": [
+      "wilkening2025",
+      "wilkening2025code"
+    ],
+    "text": "\\textit{Closest prior work and our position.} The relevant distinction is between computing a fractional bound, testing a complete assignment, and reversibly deciding whether the LP relaxation of a partial prefix excludes an integer target. The construction under study targets the last task: for a fixed exact-efficiency prefix order, a classically certified bank of affine bounds is compiled into a reversible predicate that preserves the integer-threshold LP-pruning decisions. This scope requires positive integer weights, nonnegative integer profits, a coverage certificate, representable integer thresholds, a separate capacity check, and clean initial workspace. It does not imply reproduction of the numerical fractional LP value, support for arbitrary branching orders, or an implementation of the complete quantum walk. Circuit comparisons reconstructed from published fractional-greedy primitives \\cite{wilkening2025,wilkening2025code} must therefore account for both predicate semantics and resource costs, and be identified as reconstructions rather than released LP-oracle circuits. Table~\\ref{tab:related} summarizes the roles of the closest approaches without asserting historical priority or a hardware advantage."
+  },
+  {
+    "line": 116,
+    "keys": [
+      "ref35",
+      "ref24"
+    ],
+    "text": "Montanaro \\cite{ref35,ref24} & Quantum backtracking and B\\&B query frameworks & Assumes access to the required tree and bounding oracles. \\\\"
+  },
+  {
+    "line": 117,
+    "keys": [
+      "hou2020"
+    ],
+    "text": "Hou--Perkowski \\cite{hou2020}; Hamitouche et al.\\ \\cite{hamitouche2025} & Gate-model candidate feasibility and objective tests & Complete-assignment tests; Hamitouche et al.'s optional fractional bound is classical. \\\\"
+  },
+  {
+    "line": 117,
+    "keys": [
+      "hamitouche2025"
+    ],
+    "text": "Hou--Perkowski \\cite{hou2020}; Hamitouche et al.\\ \\cite{hamitouche2025} & Gate-model candidate feasibility and objective tests & Complete-assignment tests; Hamitouche et al.'s optional fractional bound is classical. \\\\"
+  },
+  {
+    "line": 118,
+    "keys": [
+      "wilkening2025",
+      "wilkening2025code"
+    ],
+    "text": "Wilkening et al.\\ \\cite{wilkening2025,wilkening2025code} & QTG search; separate fractional-bound QBnB comparison & Published arithmetic primitives and released simulator/resource models; a matched LP-oracle circuit requires reconstruction. \\\\"
+  },
+  {
+    "line": 119,
+    "keys": [
+      "ref23"
+    ],
+    "text": "Christiansen et al.\\ \\cite{ref23} & Feasible-solution preparation and QAOA & Variational search with depth-dependent behavior. \\\\"
+  },
+  {
+    "line": 120,
+    "keys": [
+      "ref36"
+    ],
+    "text": "Sanavio et al.\\ \\cite{ref36}; Bo\\.{z}ejko et al.\\ \\cite{bozejko2026} & Classical B\\&B with quantum-annealing subproblems & A different computational model from a coherent reversible prefix predicate. \\\\"
+  },
+  {
+    "line": 120,
+    "keys": [
+      "bozejko2026"
+    ],
+    "text": "Sanavio et al.\\ \\cite{ref36}; Bo\\.{z}ejko et al.\\ \\cite{bozejko2026} & Classical B\\&B with quantum-annealing subproblems & A different computational model from a coherent reversible prefix predicate. \\\\"
+  },
+  {
+    "line": 121,
+    "keys": [
+      "martiel2019"
+    ],
+    "text": "Martiel--Remaud \\cite{martiel2019} & Circuit implementation of quantum backtracking & Implementation resources remain separate from abstract query counts. \\\\"
+  },
+  {
+    "line": 143,
+    "keys": [
+      "ref1"
+    ],
+    "text": "The LP relaxation of \\eqref{eq:knapsack} permits fractional assignments $x_i \\in [0,1]$. Its solution has a closed-form structure due to Dantzig \\cite{ref1}."
+  },
+  {
+    "line": 171,
+    "keys": [
+      "ref4"
+    ],
+    "text": "The core concept was introduced by Pisinger \\cite{ref4}, who showed empirically that $|C| \\ll n$ for typical instances. Our algorithm exploits this structure theoretically."
+  },
+  {
+    "line": 175,
+    "keys": [
+      "ref11"
+    ],
+    "text": "We use the following standard result \\cite{ref11}."
+  },
+  {
+    "line": 181,
+    "keys": [
+      "ref24"
+    ],
+    "text": "Montanaro~\\cite{ref24} proved that quantum computers can speed up classical branch-and-bound algorithms:"
+  },
+  {
+    "line": 194,
+    "keys": [
+      "ref4"
+    ],
+    "text": "Given a lower bound $Z_{\\text{LB}}$ (e.g., from a greedy solution), an item~$i$ with $x_i^{LP} = 1$ can be \\textit{provably fixed} to~1 if removing it causes the LP upper bound to drop below $Z_{\\text{LB}}$. Similarly, an item~$j$ with $x_j^{LP} = 0$ can be fixed to~0 if forcing it in causes the LP bound to drop below $Z_{\\text{LB}}$. This technique, due to Pisinger~\\cite{ref4}, is exact---no heuristic assumptions are involved."
+  },
+  {
+    "line": 198,
+    "keys": [
+      "ref2"
+    ],
+    "text": "The Horowitz--Sahni algorithm \\cite{ref2} partitions the $n$ items into two disjoint sets $A$ and $B$ with $|A| = |B| = n/2$. It enumerates all $2^{n/2}$ subsets of $A$, storing pairs $(w(S_A), v(S_A))$ for each subset $S_A \\subseteq A$, where $w(S_A) = \\sum_{i \\in S_A} w_i$ and $v(S_A) = \\sum_{i \\in S_A} v_i$. It does the same for $B$. Then, for each subset $S_A$ of $A$, it finds the best compatible subset $S_B$ of $B$ satisfying $w(S_A) + w(S_B) \\leq W$ using binary search on the sorted list of $B$-subsets. The total time and space are both $O(2^{n/2})$."
+  },
+  {
+    "line": 246,
+    "keys": [
+      "ref24"
+    ],
+    "text": "The core contribution of this paper. We construct a classical B\\&B tree over the $m$ core items using LP relaxation bounds at each node, then apply Montanaro's quantum walk~\\cite{ref24} to search this tree in $$O\\!\\left(\\sqrt{T_{\\max}}\\,m\\log m\\log V_{\\max}\\right)$$ queries."
+  },
+  {
+    "line": 258,
+    "keys": [
+      "thapliyal2016"
+    ],
+    "text": "The register layout allocates quantum memory for the scaled dividend, divisor, quotient, remainder, residual capacity, and the intermediate additions and multiplications. The arithmetic relies on the Thapliyal restoring divider \\cite{thapliyal2016} for calculating the fixed-point efficiency, the Vedral-Barenco-Ekert (VBE) multiplier \\cite{vedral1996} for computing the residual product, and the zero-ancilla Draper QFT adder \\cite{draper2000}. By mapping the division remainder to the ancillary register required by Thapliyal's in-place division, the ancillary overhead is strictly bounded. Resource estimates for this layout are provided in Table~\\ref{tab:h_resources}. Note that while the exact logical and ancillary qubit counts are established, full gate-level decomposition of the arithmetic blocks is deferred."
+  },
+  {
+    "line": 258,
+    "keys": [
+      "vedral1996"
+    ],
+    "text": "The register layout allocates quantum memory for the scaled dividend, divisor, quotient, remainder, residual capacity, and the intermediate additions and multiplications. The arithmetic relies on the Thapliyal restoring divider \\cite{thapliyal2016} for calculating the fixed-point efficiency, the Vedral-Barenco-Ekert (VBE) multiplier \\cite{vedral1996} for computing the residual product, and the zero-ancilla Draper QFT adder \\cite{draper2000}. By mapping the division remainder to the ancillary register required by Thapliyal's in-place division, the ancillary overhead is strictly bounded. Resource estimates for this layout are provided in Table~\\ref{tab:h_resources}. Note that while the exact logical and ancillary qubit counts are established, full gate-level decomposition of the arithmetic blocks is deferred."
+  },
+  {
+    "line": 258,
+    "keys": [
+      "draper2000"
+    ],
+    "text": "The register layout allocates quantum memory for the scaled dividend, divisor, quotient, remainder, residual capacity, and the intermediate additions and multiplications. The arithmetic relies on the Thapliyal restoring divider \\cite{thapliyal2016} for calculating the fixed-point efficiency, the Vedral-Barenco-Ekert (VBE) multiplier \\cite{vedral1996} for computing the residual product, and the zero-ancilla Draper QFT adder \\cite{draper2000}. By mapping the division remainder to the ancillary register required by Thapliyal's in-place division, the ancillary overhead is strictly bounded. Resource estimates for this layout are provided in Table~\\ref{tab:h_resources}. Note that while the exact logical and ancillary qubit counts are established, full gate-level decomposition of the arithmetic blocks is deferred."
+  },
+  {
+    "line": 275,
+    "keys": [
+      "barenco1995"
+    ],
+    "text": "\\multicolumn{7}{p{0.85\\textwidth}}{\\footnotesize $^\\ddagger$Ross-Selinger estimate $\\epsilon=10^{-10}$ using Barenco et al.~\\cite{barenco1995} 3-rotation decomposition. $^\\star$Naive estimate treating `ccp` gates as standard Toffolis (7 T-gates).} \\\\"
+  },
+  {
+    "line": 281,
+    "keys": [
+      "ref24"
+    ],
+    "text": "We apply Montanaro's quantum B\\&B framework~\\cite{ref24} to the implicit tree defined by our LP-bounded branching strategy:"
+  },
+  {
+    "line": 477,
+    "keys": [
+      "bonnetain2020improved"
+    ],
+    "text": "\\multicolumn{5}{p{0.7\\textwidth}}{\\footnotesize $^\\dagger$Relies on Heuristic 2, shown unsound by \\cite{bonnetain2020improved}.} \\\\"
+  },
+  {
+    "line": 496,
+    "keys": [
+      "ref3"
+    ],
+    "text": "Experiments used five standard instance classes from Pisinger's classification~\\cite{ref3}: (1)~uncorrelated, (2)~weakly correlated, (3)~strongly correlated, (4)~subset-sum, and (5)~inverse strongly correlated. For each class, we tested $n \\in \\{12, 14, 16, 18, 20, 22, 24\\}$ with 20 random seeds per configuration."
+  },
+  {
+    "line": 697,
+    "keys": [
+      "ref31"
+    ],
+    "text": "\\textbf{NISQ noise boundary.} Our hardware experiments show that current Heron~r2 processors can reliably execute amplitude amplification only for cores with $n \\leq 4$ using our unitary oracle construction. Decomposed gate-level oracles and error mitigation techniques~\\cite{ref31} may extend this boundary."
+  },
+  {
+    "line": 702,
+    "keys": [
+      "vedral1996"
+    ],
+    "text": "This analysis compares the quantum T-gate cost of the composed query bound against the classical per-node operation cost to derive the crossover threshold. This is strictly an operation-count comparison, not a wall-clock time estimate. Table~\\ref{tab:crossover} details the combined per-query T-cost ($C_Q$), aggregating the resources for predicate $V$ (Table~\\ref{tab:oracle}) and the LP heuristic $h$ (Table~\\ref{tab:h_resources}). For $m=4$, this includes the newly measured T-count for $h$, while for $m=6, 8$, we explicitly note that these counts remain a partial lower bound because full gate-level decomposition is deferred~\\cite{vedral1996}."
+  }
+]

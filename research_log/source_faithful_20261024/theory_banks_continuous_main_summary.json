@@ -1,0 +1,18 @@
+{
+  "panel": "main",
+  "attempted": 700,
+  "status_counts": {
+    "complete": 700
+  },
+  "bank_size_median": 7.0,
+  "bank_size_max": 16,
+  "strict_density_grid_improvements": 128,
+  "total_reachable_states": 3148192,
+  "total_affine_constraints": 20496181,
+  "total_preprocessing_seconds": 37.42066380023607,
+  "total_comparison_dp_seconds": 0.2988646003068425,
+  "numerator_bits_max": 10,
+  "denominator_bits_max": 10,
+  "cardinality_contradictions": 0,
+  "source_sha256": "7461ca3bfc8ce297e7ba008830075e26671d3ca90a2b9e00a308666835027490"
+}

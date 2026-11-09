@@ -1,0 +1,10 @@
+{
+  "panel": "independent",
+  "inputs": 45,
+  "source_hashes": {
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\inputs_stress_independent.json": "3a1a2e4d86b21b2cd488e6847465ca54b4a3ec54c0e3d2d43d1bae9a6b2af05e",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\theory_compressed_bank_study.py": "0de2d0d1ecfd12b2b3ced164f05dc93c9438d8324a003ebe1960cf1b65aef3af",
+    "C:\\CBP\\HybridQuantumKnapsack\\simulation\\source_faithful_20261024\\compressed_bank.py": "2c31c8f7d3da1b5f40e3c36ed1afb01f286e9dca38ef92aa3be001415f0f7ee7"
+  },
+  "scope": "Same given arrays; all feasible efficiency-prefix states and all integer thresholds. Pseudopolynomial offline compilation, not end-to-end quantum acceleration."
+}

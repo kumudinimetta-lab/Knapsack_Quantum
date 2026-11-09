@@ -1,0 +1,678 @@
+{
+  "classification": "DERIVED resources; descriptive matched ratios, no extrapolation/quantum advantage claim",
+  "statuses": {
+    "COMPLETED": 840
+  },
+  "inputs": 105,
+  "rows": 840,
+  "comparisons": [
+    {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46236559139784944,
+          "min_ratio": 0.3973509933774834,
+          "max_ratio": 0.5,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4099270324709423,
+          "min_ratio": 0.09419041547413969,
+          "max_ratio": 0.7516606674844323,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4091025419744196,
+          "min_ratio": 0.09333834366714683,
+          "max_ratio": 0.7506145388153935,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.94327655759749,
+          "min_ratio": 0.07975817286162114,
+          "max_ratio": 1.916491171229548,
+          "lower": 57,
+          "tied": 0,
+          "higher": 48
+        }
+      },
+      "numerator_weakly_dominates_all_four": 57,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_bank_direct_raw",
+      "denominator": "qft_lp_direct_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46236559139784944,
+          "min_ratio": 0.3973509933774834,
+          "max_ratio": 0.5,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.8072947365642952,
+          "min_ratio": 0.2097749322976325,
+          "max_ratio": 1.573688588363821,
+          "lower": 70,
+          "tied": 0,
+          "higher": 35
+        },
+        "cx": {
+          "median_ratio": 0.7998947408841314,
+          "min_ratio": 0.20700640714378768,
+          "max_ratio": 1.560120234258069,
+          "lower": 73,
+          "tied": 0,
+          "higher": 32
+        },
+        "common_depth": {
+          "median_ratio": 1.4878499035851696,
+          "min_ratio": 0.26524056861673045,
+          "max_ratio": 2.8958355720105113,
+          "lower": 24,
+          "tied": 0,
+          "higher": 81
+        }
+      },
+      "numerator_weakly_dominates_all_four": 24,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_bank_direct_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 105,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.22593417785982559,
+          "min_ratio": 0.18123000240526976,
+          "max_ratio": 0.3961172741679873,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.23069990839543464,
+          "min_ratio": 0.18508392645547073,
+          "max_ratio": 0.408172259648681,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.28499886813547265,
+          "min_ratio": 0.2186077780421572,
+          "max_ratio": 0.5679854964274288,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 105,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_lp_direct_merged",
+      "denominator": "qft_lp_direct_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 105,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.437786845518373,
+          "min_ratio": 0.37755058932871444,
+          "max_ratio": 0.5702661138040452,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.44417244824443036,
+          "min_ratio": 0.3833737999071762,
+          "max_ratio": 0.5795879150208177,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.4465443904793508,
+          "min_ratio": 0.39607730887459086,
+          "max_ratio": 0.7956946115790882,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 105,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_bank_source_generic_merged",
+      "denominator": "qft_lp_source_generic_merged",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46524064171123,
+          "min_ratio": 0.40131578947368424,
+          "max_ratio": 0.5033112582781457,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4146338902983116,
+          "min_ratio": 0.09549085912134399,
+          "max_ratio": 0.7640473469278635,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4145992999357084,
+          "min_ratio": 0.0949412958399768,
+          "max_ratio": 0.765290667534078,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.9771241830065359,
+          "min_ratio": 0.08763672811260731,
+          "max_ratio": 1.992632710764207,
+          "lower": 53,
+          "tied": 0,
+          "higher": 52
+        }
+      },
+      "numerator_weakly_dominates_all_four": 53,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_bank_source_generic_raw",
+      "denominator": "qft_lp_source_generic_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46524064171123,
+          "min_ratio": 0.40131578947368424,
+          "max_ratio": 0.5033112582781457,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.8088425270891371,
+          "min_ratio": 0.2102001798520377,
+          "max_ratio": 1.5763544814236603,
+          "lower": 69,
+          "tied": 0,
+          "higher": 36
+        },
+        "cx": {
+          "median_ratio": 0.801758268531866,
+          "min_ratio": 0.20753515896686275,
+          "max_ratio": 1.5633307764354638,
+          "lower": 72,
+          "tied": 0,
+          "higher": 33
+        },
+        "common_depth": {
+          "median_ratio": 1.5034439974090192,
+          "min_ratio": 0.26573497221754505,
+          "max_ratio": 2.9284230442881802,
+          "lower": 24,
+          "tied": 0,
+          "higher": 81
+        }
+      },
+      "numerator_weakly_dominates_all_four": 24,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_bank_source_generic_merged",
+      "denominator": "qft_bank_source_generic_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 105,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.22844072786336067,
+          "min_ratio": 0.1830694211409396,
+          "max_ratio": 0.40516098853979887,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.23372146355176138,
+          "min_ratio": 0.1872972148094817,
+          "max_ratio": 0.41919160752854057,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.2972456572343546,
+          "min_ratio": 0.22694454726624866,
+          "max_ratio": 0.5922222222222222,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 105,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    {
+      "numerator": "qft_lp_source_generic_merged",
+      "denominator": "qft_lp_source_generic_raw",
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 1.0,
+          "max_ratio": 1.0,
+          "lower": 0,
+          "tied": 105,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4383616853801897,
+          "min_ratio": 0.37835698100657933,
+          "max_ratio": 0.5727364224054504,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.44497660904715153,
+          "min_ratio": 0.3843325737701779,
+          "max_ratio": 0.5825294180006361,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.4529273502189539,
+          "min_ratio": 0.4006877374183777,
+          "max_ratio": 0.8055452336715735,
+          "lower": 105,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 105,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    }
+  ],
+  "by_class": {
+    "inverse_strongly": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.48404255319148937,
+          "min_ratio": 0.4581005586592179,
+          "max_ratio": 0.5,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.6273089132997172,
+          "min_ratio": 0.5729495500978838,
+          "max_ratio": 0.7516606674844323,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.6267234422485878,
+          "min_ratio": 0.5715991029843023,
+          "max_ratio": 0.7506145388153935,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.5047862651629655,
+          "min_ratio": 1.2150094549970365,
+          "max_ratio": 1.916491171229548,
+          "lower": 0,
+          "tied": 0,
+          "higher": 21
+        }
+      },
+      "numerator_weakly_dominates_all_four": 0,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    "strongly_correlated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.45454545454545453,
+          "min_ratio": 0.43646408839779005,
+          "max_ratio": 0.46621621621621623,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.32817980657729284,
+          "min_ratio": 0.2579748676452197,
+          "max_ratio": 0.3970871736183489,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.32800363269601057,
+          "min_ratio": 0.25724538258575197,
+          "max_ratio": 0.39664943380197054,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.7859812849652542,
+          "min_ratio": 0.5960236524123746,
+          "max_ratio": 0.8802190025699281,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 21,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    "subset_sum": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.4189189189189189,
+          "min_ratio": 0.3973509933774834,
+          "max_ratio": 0.45,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.12120139953610881,
+          "min_ratio": 0.09419041547413969,
+          "max_ratio": 0.2041366355636319,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.1211512009311184,
+          "min_ratio": 0.09333834366714683,
+          "max_ratio": 0.20413111244056803,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.1832342844487099,
+          "min_ratio": 0.07975817286162114,
+          "max_ratio": 0.3454403943442729,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        }
+      },
+      "numerator_weakly_dominates_all_four": 21,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    "uncorrelated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46774193548387094,
+          "min_ratio": 0.44751381215469616,
+          "max_ratio": 0.49032258064516127,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.4203361015725668,
+          "min_ratio": 0.3207953903513727,
+          "max_ratio": 0.597397244140855,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.4187685269711672,
+          "min_ratio": 0.3198415586020361,
+          "max_ratio": 0.5968957513733433,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.9953226143244936,
+          "min_ratio": 0.6763764578247898,
+          "max_ratio": 1.4645353917856103,
+          "lower": 11,
+          "tied": 0,
+          "higher": 10
+        }
+      },
+      "numerator_weakly_dominates_all_four": 11,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    },
+    "weakly_correlated": {
+      "numerator": "qft_bank_direct_merged",
+      "denominator": "qft_lp_direct_merged",
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.46875,
+          "min_ratio": 0.44886363636363635,
+          "max_ratio": 0.4864864864864865,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "u": {
+          "median_ratio": 0.49969735284622835,
+          "min_ratio": 0.39640597977527336,
+          "max_ratio": 0.6910595384317021,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.49950689579405105,
+          "min_ratio": 0.3956525492147474,
+          "max_ratio": 0.6892174122226717,
+          "lower": 21,
+          "tied": 0,
+          "higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.1243345052737317,
+          "min_ratio": 0.8908264136022143,
+          "max_ratio": 1.808304004989531,
+          "lower": 4,
+          "tied": 0,
+          "higher": 17
+        }
+      },
+      "numerator_weakly_dominates_all_four": 4,
+      "denominator_weakly_dominates_all_four": 0,
+      "examples": []
+    }
+  },
+  "bank_sizes": {
+    "inverse_strongly_n12_s12000_R100": 10,
+    "inverse_strongly_n12_s12001_R100": 8,
+    "inverse_strongly_n12_s12002_R100": 10,
+    "inverse_strongly_n14_s14000_R100": 11,
+    "inverse_strongly_n14_s14001_R100": 11,
+    "inverse_strongly_n14_s14002_R100": 11,
+    "inverse_strongly_n16_s16000_R100": 12,
+    "inverse_strongly_n16_s16001_R100": 12,
+    "inverse_strongly_n16_s16002_R100": 13,
+    "inverse_strongly_n18_s18000_R100": 14,
+    "inverse_strongly_n18_s18001_R100": 14,
+    "inverse_strongly_n18_s18002_R100": 13,
+    "inverse_strongly_n20_s20000_R100": 13,
+    "inverse_strongly_n20_s20001_R100": 14,
+    "inverse_strongly_n20_s20002_R100": 14,
+    "inverse_strongly_n22_s22000_R100": 16,
+    "inverse_strongly_n22_s22001_R100": 14,
+    "inverse_strongly_n22_s22002_R100": 14,
+    "inverse_strongly_n24_s24000_R100": 15,
+    "inverse_strongly_n24_s24001_R100": 16,
+    "inverse_strongly_n24_s24002_R100": 16,
+    "strongly_correlated_n12_s12000_R100": 4,
+    "strongly_correlated_n12_s12001_R100": 5,
+    "strongly_correlated_n12_s12002_R100": 5,
+    "strongly_correlated_n14_s14000_R100": 6,
+    "strongly_correlated_n14_s14001_R100": 6,
+    "strongly_correlated_n14_s14002_R100": 6,
+    "strongly_correlated_n16_s16000_R100": 6,
+    "strongly_correlated_n16_s16001_R100": 6,
+    "strongly_correlated_n16_s16002_R100": 5,
+    "strongly_correlated_n18_s18000_R100": 7,
+    "strongly_correlated_n18_s18001_R100": 6,
+    "strongly_correlated_n18_s18002_R100": 8,
+    "strongly_correlated_n20_s20000_R100": 8,
+    "strongly_correlated_n20_s20001_R100": 8,
+    "strongly_correlated_n20_s20002_R100": 7,
+    "strongly_correlated_n22_s22000_R100": 8,
+    "strongly_correlated_n22_s22001_R100": 7,
+    "strongly_correlated_n22_s22002_R100": 6,
+    "strongly_correlated_n24_s24000_R100": 9,
+    "strongly_correlated_n24_s24001_R100": 8,
+    "strongly_correlated_n24_s24002_R100": 8,
+    "subset_sum_n12_s12000_R100": 2,
+    "subset_sum_n12_s12001_R100": 2,
+    "subset_sum_n12_s12002_R100": 2,
+    "subset_sum_n14_s14000_R100": 2,
+    "subset_sum_n14_s14001_R100": 2,
+    "subset_sum_n14_s14002_R100": 2,
+    "subset_sum_n16_s16000_R100": 2,
+    "subset_sum_n16_s16001_R100": 2,
+    "subset_sum_n16_s16002_R100": 2,
+    "subset_sum_n18_s18000_R100": 2,
+    "subset_sum_n18_s18001_R100": 2,
+    "subset_sum_n18_s18002_R100": 2,
+    "subset_sum_n20_s20000_R100": 2,
+    "subset_sum_n20_s20001_R100": 2,
+    "subset_sum_n20_s20002_R100": 2,
+    "subset_sum_n22_s22000_R100": 2,
+    "subset_sum_n22_s22001_R100": 2,
+    "subset_sum_n22_s22002_R100": 2,
+    "subset_sum_n24_s24000_R100": 2,
+    "subset_sum_n24_s24001_R100": 2,
+    "subset_sum_n24_s24002_R100": 2,
+    "uncorrelated_n12_s12000_R100": 6,
+    "uncorrelated_n12_s12001_R100": 5,
+    "uncorrelated_n12_s12002_R100": 5,
+    "uncorrelated_n14_s14000_R100": 8,
+    "uncorrelated_n14_s14001_R100": 8,
+    "uncorrelated_n14_s14002_R100": 6,
+    "uncorrelated_n16_s16000_R100": 6,
+    "uncorrelated_n16_s16001_R100": 8,
+    "uncorrelated_n16_s16002_R100": 8,
+    "uncorrelated_n18_s18000_R100": 8,
+    "uncorrelated_n18_s18001_R100": 9,
+    "uncorrelated_n18_s18002_R100": 9,
+    "uncorrelated_n20_s20000_R100": 9,
+    "uncorrelated_n20_s20001_R100": 9,
+    "uncorrelated_n20_s20002_R100": 8,
+    "uncorrelated_n22_s22000_R100": 8,
+    "uncorrelated_n22_s22001_R100": 7,
+    "uncorrelated_n22_s22002_R100": 10,
+    "uncorrelated_n24_s24000_R100": 13,
+    "uncorrelated_n24_s24001_R100": 11,
+    "uncorrelated_n24_s24002_R100": 11,
+    "weakly_correlated_n12_s12000_R100": 10,
+    "weakly_correlated_n12_s12001_R100": 6,
+    "weakly_correlated_n12_s12002_R100": 9,
+    "weakly_correlated_n14_s14000_R100": 9,
+    "weakly_correlated_n14_s14001_R100": 8,
+    "weakly_correlated_n14_s14002_R100": 8,
+    "weakly_correlated_n16_s16000_R100": 10,
+    "weakly_correlated_n16_s16001_R100": 10,
+    "weakly_correlated_n16_s16002_R100": 8,
+    "weakly_correlated_n18_s18000_R100": 9,
+    "weakly_correlated_n18_s18001_R100": 10,
+    "weakly_correlated_n18_s18002_R100": 10,
+    "weakly_correlated_n20_s20000_R100": 9,
+    "weakly_correlated_n20_s20001_R100": 9,
+    "weakly_correlated_n20_s20002_R100": 9,
+    "weakly_correlated_n22_s22000_R100": 10,
+    "weakly_correlated_n22_s22001_R100": 12,
+    "weakly_correlated_n22_s22002_R100": 11,
+    "weakly_correlated_n24_s24000_R100": 12,
+    "weakly_correlated_n24_s24001_R100": 10,
+    "weakly_correlated_n24_s24002_R100": 12
+  }
+}

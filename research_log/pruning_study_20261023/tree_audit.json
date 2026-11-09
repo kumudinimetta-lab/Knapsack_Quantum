@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "instances": 100,
+    "feasible_prefixes": 4101,
+    "hierarchy_failures": 0,
+    "certificate_failures": 0,
+    "completed_optimizer_cases": 500,
+    "optimizer_value_or_witness_failures": 0,
+    "capped_optimizer_cases": 0
+  },
+  "failures": []
+}

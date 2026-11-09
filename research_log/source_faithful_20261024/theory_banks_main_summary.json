@@ -1,0 +1,17 @@
+{
+  "panel": "main",
+  "attempted": 700,
+  "status_counts": {
+    "complete": 700
+  },
+  "original_grid_size_median": 17.0,
+  "root_tail_size_median": 8.0,
+  "bank_size_median": 7.0,
+  "bank_size_max": 17,
+  "total_reachable_states": 3148192,
+  "total_coverage_comparisons": 12803116,
+  "total_preprocessing_seconds": 7.349170200090157,
+  "total_comparison_dp_seconds": 0.2889136999147013,
+  "strict_root_tail_compressions": 313,
+  "source_sha256": "b621858adfe5450ad8a4714af606ba19c11789530b93fd1c7f29747eadeef0c8"
+}

@@ -1,0 +1,7 @@
+{
+  "instances": 140,
+  "complete_pairs": 202,
+  "complete_node_mismatches": 0,
+  "capped_pairs_retained": 78,
+  "observed_decision_conflicts": 0
+}

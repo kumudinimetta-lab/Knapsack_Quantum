@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-24",
+  "scope": "Independent common-cohort joins, observed-tree proxy ratios and hindsight winners",
+  "classification": "DERIVED read-only ledger/model verification",
+  "source_hashes": {
+    "common_cohort.py": "66369d9bae6a2808cf22d1ba7af660ee70d14a85825b23d5e34abfddd0d4ccbb",
+    "common_cohort_results.json": "d6f9e27f24d8de211a2e0630dfdeb99b539bdcd8637f97c28328ab92d711e154",
+    "common_cohort_conditions.jsonl": "ace5830634e7af7f8df097ba633e3cf79c1260755592afecc7022598f7364792"
+  },
+  "condition_rows_checked": 56265,
+  "summary_groups_checked": 240,
+  "coverage_groups_checked": 16,
+  "failure_count": 0,
+  "failures": [],
+  "headline_groups": [
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "dual_family",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 492,
+      "method_ratios": {
+        "root_dual": {
+          "n": 492,
+          "median": 0.2384616196578761,
+          "minimum": 0.12526673877523758,
+          "maximum": 0.7349010397970358,
+          "less_than_exact": 492,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 492,
+          "median": 0.2712996267060832,
+          "minimum": 0.16161957855544787,
+          "maximum": 0.6533876049332071,
+          "less_than_exact": 492,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 492,
+          "median": 0.4366742777765532,
+          "minimum": 0.24710894704808276,
+          "maximum": 1.1073253750785823,
+          "less_than_exact": 490,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 492,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 492
+        }
+      },
+      "unique_winners": {
+        "root_dual": 384,
+        "bank2": 107
+      },
+      "tied_winner_conditions": 1
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "dual_family",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 492,
+      "method_ratios": {
+        "root_dual": {
+          "n": 492,
+          "median": 0.9706593563624939,
+          "minimum": 0.5634157509157509,
+          "maximum": 3.0483921113921957,
+          "less_than_exact": 263,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 492,
+          "median": 0.8225166900487366,
+          "minimum": 0.5836700552384548,
+          "maximum": 2.0531842399637914,
+          "less_than_exact": 370,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 492,
+          "median": 0.8456823588557643,
+          "minimum": 0.6235544735240415,
+          "maximum": 2.1886174034494665,
+          "less_than_exact": 360,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 492,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 492
+        }
+      },
+      "unique_winners": {
+        "bank2": 219,
+        "bank4": 79,
+        "root_dual": 43,
+        "exact_lp": 111
+      },
+      "tied_winner_conditions": 40
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "dual_family",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 492,
+      "method_ratios": {
+        "root_dual": {
+          "n": 492,
+          "median": 1.5671347121268815,
+          "minimum": 0.9206210456210456,
+          "maximum": 4.942443623043319,
+          "less_than_exact": 22,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 492,
+          "median": 1.2733202852567493,
+          "minimum": 0.9244824762066143,
+          "maximum": 3.1984723958979058,
+          "less_than_exact": 88,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 492,
+          "median": 1.178393819714867,
+          "minimum": 0.9315553588225529,
+          "maximum": 3.073310881207463,
+          "less_than_exact": 125,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 492,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 492
+        }
+      },
+      "unique_winners": {
+        "exact_lp": 366,
+        "bank4": 56,
+        "root_dual": 8,
+        "bank2": 22
+      },
+      "tied_winner_conditions": 40
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "with_simple",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 371,
+      "method_ratios": {
+        "simple": {
+          "n": 371,
+          "median": 0.41757665276803463,
+          "minimum": 0.10189499844672259,
+          "maximum": 6.756523307714362,
+          "less_than_exact": 298,
+          "ties_exact": 0
+        },
+        "root_dual": {
+          "n": 371,
+          "median": 0.23313835763454782,
+          "minimum": 0.12526673877523758,
+          "maximum": 0.7349010397970358,
+          "less_than_exact": 371,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 371,
+          "median": 0.2655485674353599,
+          "minimum": 0.16161957855544787,
+          "maximum": 0.6533876049332071,
+          "less_than_exact": 371,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 371,
+          "median": 0.42420024865516337,
+          "minimum": 0.24710894704808276,
+          "maximum": 1.1073253750785823,
+          "less_than_exact": 370,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 371,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 371
+        }
+      },
+      "unique_winners": {
+        "root_dual": 245,
+        "simple": 81,
+        "bank2": 45
+      },
+      "tied_winner_conditions": 0
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "with_simple",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 371,
+      "method_ratios": {
+        "simple": {
+          "n": 371,
+          "median": 2.0193194260852536,
+          "minimum": 0.5509474992233613,
+          "maximum": 32.294254034970706,
+          "less_than_exact": 92,
+          "ties_exact": 0
+        },
+        "root_dual": {
+          "n": 371,
+          "median": 0.9297215097334511,
+          "minimum": 0.5634157509157509,
+          "maximum": 2.9947461362778283,
+          "less_than_exact": 213,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 371,
+          "median": 0.7865069969398697,
+          "minimum": 0.5836700552384548,
+          "maximum": 2.0531842399637914,
+          "less_than_exact": 308,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 371,
+          "median": 0.8152874438369897,
+          "minimum": 0.6235544735240415,
+          "maximum": 2.1886174034494665,
+          "less_than_exact": 300,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 371,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 371
+        }
+      },
+      "unique_winners": {
+        "bank2": 161,
+        "bank4": 56,
+        "root_dual": 31,
+        "simple": 68,
+        "exact_lp": 55
+      },
+      "tied_winner_conditions": 0
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "cohort": "with_simple",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 371,
+      "method_ratios": {
+        "simple": {
+          "n": 371,
+          "median": 3.332446887039035,
+          "minimum": 0.918354090767884,
+          "maximum": 53.18876099363499,
+          "less_than_exact": 62,
+          "ties_exact": 0
+        },
+        "root_dual": {
+          "n": 371,
+          "median": 1.4958551144746528,
+          "minimum": 0.9206210456210456,
+          "maximum": 4.843710306125749,
+          "less_than_exact": 18,
+          "ties_exact": 0
+        },
+        "bank2": {
+          "n": 371,
+          "median": 1.2301378164671506,
+          "minimum": 0.9244824762066143,
+          "maximum": 3.1984723958979058,
+          "less_than_exact": 83,
+          "ties_exact": 0
+        },
+        "bank4": {
+          "n": 371,
+          "median": 1.1290217027058747,
+          "minimum": 0.9315553588225529,
+          "maximum": 3.073310881207463,
+          "less_than_exact": 105,
+          "ties_exact": 0
+        },
+        "exact_lp": {
+          "n": 371,
+          "median": 1.0,
+          "minimum": 1.0,
+          "maximum": 1.0,
+          "less_than_exact": 0,
+          "ties_exact": 371
+        }
+      },
+      "unique_winners": {
+        "exact_lp": 265,
+        "bank4": 38,
+        "root_dual": 5,
+        "bank2": 4,
+        "simple": 59
+      },
+      "tied_winner_conditions": 0
+    }
+  ]
+}

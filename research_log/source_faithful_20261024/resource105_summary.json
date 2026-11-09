@@ -1,0 +1,12 @@
+{
+  "scope": "DERIVED fixed-depth resource-only, not MPS/hardware/full-walk validation",
+  "classification": "DERIVED resources; MEASURED build/profile host durations",
+  "inputs": 105,
+  "method_rows": 735,
+  "status_counts": {
+    "COMPLETED": 735,
+    "CAPPED": 0,
+    "ERROR": 0
+  },
+  "elapsed_seconds_measured": 268.76948580000317
+}

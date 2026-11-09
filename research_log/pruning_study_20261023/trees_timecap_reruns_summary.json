@@ -1,0 +1,91 @@
+{
+  "attempted": 183,
+  "conflicts": 0,
+  "by_panel": {
+    "trees_full.jsonl": {
+      "attempted": 5,
+      "completed": 3,
+      "cap_reasons": {
+        "node_cap": 2
+      },
+      "methods": {
+        "simple": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "root_dual": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "bank2": {
+          "attempted": 1,
+          "completed": 1
+        },
+        "bank4": {
+          "attempted": 2,
+          "completed": 1
+        },
+        "exact_lp": {
+          "attempted": 2,
+          "completed": 1
+        }
+      }
+    },
+    "trees_core_v3.jsonl": {
+      "attempted": 178,
+      "completed": 20,
+      "cap_reasons": {
+        "node_cap": 158
+      },
+      "methods": {
+        "simple": {
+          "attempted": 9,
+          "completed": 2
+        },
+        "root_dual": {
+          "attempted": 26,
+          "completed": 0
+        },
+        "bank2": {
+          "attempted": 18,
+          "completed": 3
+        },
+        "bank4": {
+          "attempted": 34,
+          "completed": 3
+        },
+        "exact_lp": {
+          "attempted": 91,
+          "completed": 12
+        }
+      }
+    },
+    "trees_independent_v2.jsonl": {
+      "attempted": 0,
+      "completed": 0,
+      "cap_reasons": {},
+      "methods": {
+        "simple": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "root_dual": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "bank2": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "bank4": {
+          "attempted": 0,
+          "completed": 0
+        },
+        "exact_lp": {
+          "attempted": 0,
+          "completed": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,698 @@
+{
+  "current_entries": 45,
+  "distinct_cited_keys": 41,
+  "uncited": [
+    "beier2004random",
+    "pisinger1997minimal",
+    "martello1999combo",
+    "martello1988mtm"
+  ],
+  "current": [
+    {
+      "key": "ref1",
+      "type": "article",
+      "author_as_saved": "G. B. Dantzig",
+      "title_as_saved": "Discrete-variable extremum problems",
+      "year_as_saved": "1957",
+      "venue_as_saved": "Operations Research",
+      "cited_lines": [
+        92,
+        148
+      ],
+      "recommendation": "KEEP",
+      "reason": "Fractional-knapsack LP bound; foundational attribution."
+    },
+    {
+      "key": "ref2",
+      "type": "article",
+      "author_as_saved": "E. Horowitz and S. Sahni",
+      "title_as_saved": "Computing partitions with applications to the knapsack problem",
+      "year_as_saved": "1974",
+      "venue_as_saved": "Journal of the ACM",
+      "cited_lines": [
+        61,
+        92,
+        203
+      ],
+      "recommendation": "KEEP",
+      "reason": "Meet-in-the-middle reference; qualify model and worst-case comparisons."
+    },
+    {
+      "key": "ref3",
+      "type": "book",
+      "author_as_saved": "H. Kellerer and U. Pferschy and D. Pisinger",
+      "title_as_saved": "Knapsack Problems",
+      "year_as_saved": "2004",
+      "venue_as_saved": "Springer",
+      "cited_lines": [
+        92,
+        501
+      ],
+      "recommendation": "KEEP",
+      "reason": "Knapsack definitions, exact methods, benchmark classes and preprocessing."
+    },
+    {
+      "key": "ref4",
+      "type": "article",
+      "author_as_saved": "D. Pisinger",
+      "title_as_saved": "Core problems in knapsack algorithms",
+      "year_as_saved": "1999",
+      "venue_as_saved": "Operations Research",
+      "cited_lines": [
+        92,
+        176,
+        199
+      ],
+      "recommendation": "KEEP",
+      "reason": "Core methods; verify exact attribution of any specific fixing lemma."
+    },
+    {
+      "key": "ref5",
+      "type": "inproceedings",
+      "author_as_saved": "A. Becker and J.-S. Coron and A. Joux",
+      "title_as_saved": "Improved generic algorithms for hard knapsacks",
+      "year_as_saved": "2011",
+      "venue_as_saved": "Advances in Cryptology -- EUROCRYPT",
+      "cited_lines": [
+        92
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Subset-sum representation background; retain if discussing that comparison."
+    },
+    {
+      "key": "ref6",
+      "type": "inproceedings",
+      "author_as_saved": "A. Helm and A. May",
+      "title_as_saved": "Subset sum algorithms: improved classical and quantum algorithms",
+      "year_as_saved": "2021",
+      "venue_as_saved": "Proc. European Symposium on Algorithms (ESA)",
+      "cited_lines": [
+        92
+      ],
+      "recommendation": "HOLD_VERIFY",
+      "reason": "Exact title/authors/ESA2021 metadata not established. Do not treat as a verified Helm-May paper or delete merely for being unverified."
+    },
+    {
+      "key": "ref7",
+      "type": "article",
+      "author_as_saved": "G. Plateau and M. Elkihel",
+      "title_as_saved": "Analysis and optimisation of the packing tree search algorithm for the knapsack problem",
+      "year_as_saved": "1985",
+      "venue_as_saved": "European Journal of Operational Research",
+      "cited_lines": [
+        92
+      ],
+      "recommendation": "HOLD_VERIFY",
+      "reason": "Exact packing-tree title/venue/pages need verification; related real Plateau-Elkihel hybrid-knapsack work is not an automatic substitute."
+    },
+    {
+      "key": "ref8",
+      "type": "inproceedings",
+      "author_as_saved": "L. K. Grover",
+      "title_as_saved": "A fast quantum mechanical algorithm for database search",
+      "year_as_saved": "1996",
+      "venue_as_saved": "Proc. 28th Annual ACM Symposium on Theory of Computing (STOC)",
+      "cited_lines": [
+        63,
+        94
+      ],
+      "recommendation": "KEEP",
+      "reason": "Quantum search foundation."
+    },
+    {
+      "key": "ref9",
+      "type": "article",
+      "author_as_saved": "C. H. Bennett and E. Bernstein and G. Brassard and U. Vazirani",
+      "title_as_saved": "Strengths and weaknesses of quantum computing",
+      "year_as_saved": "1997",
+      "venue_as_saved": "SIAM Journal on Computing",
+      "cited_lines": [
+        94
+      ],
+      "recommendation": "KEEP",
+      "reason": "Black-box lower-bound context; does not prove an unrestricted lower bound for structured knapsack."
+    },
+    {
+      "key": "ref10",
+      "type": "article",
+      "author_as_saved": "G.-L. Long",
+      "title_as_saved": "Grover algorithm with zero theoretical failure rate",
+      "year_as_saved": "2001",
+      "venue_as_saved": "Physical Review A",
+      "cited_lines": [
+        94
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Exact Grover variant; remove only if that discussion is omitted and this method is not used."
+    },
+    {
+      "key": "ref11",
+      "type": "article",
+      "author_as_saved": "G. Brassard and P. H{\\o}yer and M. Mosca and A. Tapp",
+      "title_as_saved": "Quantum amplitude amplification and estimation",
+      "year_as_saved": "2002",
+      "venue_as_saved": "Contemporary Mathematics",
+      "cited_lines": [
+        63,
+        94,
+        180
+      ],
+      "recommendation": "KEEP",
+      "reason": "Amplitude amplification; assumptions and success probabilities must be stated."
+    },
+    {
+      "key": "ref12",
+      "type": "article",
+      "author_as_saved": "D. Bulger and W. Baritompa and G. Wood",
+      "title_as_saved": "Implementing pure adaptive search with Grover's quantum algorithm",
+      "year_as_saved": "2003",
+      "venue_as_saved": "Journal of Optimization Theory and Applications",
+      "cited_lines": [
+        94
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Pure adaptive search background; not the implemented main construction."
+    },
+    {
+      "key": "ref13",
+      "type": "article",
+      "author_as_saved": "C. D{\\\"u}rr and P. H{\\o}yer",
+      "title_as_saved": "A quantum algorithm for finding the minimum",
+      "year_as_saved": "1996",
+      "venue_as_saved": "arXiv:quant-ph/9607014",
+      "cited_lines": [
+        94
+      ],
+      "recommendation": "KEEP",
+      "reason": "Quantum optimization/minimum finding background if retained."
+    },
+    {
+      "key": "ref14",
+      "type": "inproceedings",
+      "author_as_saved": "A. Ambainis",
+      "title_as_saved": "Quantum walk algorithm for element distinctness",
+      "year_as_saved": "2004",
+      "venue_as_saved": "Proc. IEEE FOCS",
+      "cited_lines": [
+        96
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Element distinctness is background rather than the backtracking theorem used."
+    },
+    {
+      "key": "ref15",
+      "type": "article",
+      "author_as_saved": "F. Magniez and A. Nayak and J. Roland and M. Santha",
+      "title_as_saved": "Search via quantum walk",
+      "year_as_saved": "2011",
+      "venue_as_saved": "SIAM Journal on Computing",
+      "cited_lines": [
+        96
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Generic walk-search framework; retain only for a meaningful comparison or theorem use."
+    },
+    {
+      "key": "ref16",
+      "type": "inproceedings",
+      "author_as_saved": "D. J. Bernstein and S. Jeffery and T. Lange and A. Meurer",
+      "title_as_saved": "Quantum algorithms for the subset-sum problem",
+      "year_as_saved": "2013",
+      "venue_as_saved": "Post-Quantum Cryptography (PQCrypto)",
+      "cited_lines": [
+        65,
+        96
+      ],
+      "recommendation": "KEEP",
+      "reason": "Closest subset-sum quantum algorithm background; distinguish subset sum from general knapsack."
+    },
+    {
+      "key": "ref17",
+      "type": "inproceedings",
+      "author_as_saved": "A. Helm and A. May",
+      "title_as_saved": "Subset sum quantumly in $1.17^n$",
+      "year_as_saved": "2018",
+      "venue_as_saved": "Proc. Theory of Quantum Computation, Communication and Cryptography (TQC)",
+      "cited_lines": [
+        65,
+        96
+      ],
+      "recommendation": "KEEP",
+      "reason": "Quantum subset-sum comparison; qualify heuristic assumptions and memory model."
+    },
+    {
+      "key": "ref18",
+      "type": "article",
+      "author_as_saved": "S. Jaques and A. G. Rattew",
+      "title_as_saved": "QRAM: A survey and critique",
+      "year_as_saved": "2023",
+      "venue_as_saved": "arXiv:2305.10310",
+      "cited_lines": [
+        65,
+        96
+      ],
+      "recommendation": "KEEP",
+      "reason": "QRAM model discussion; a critique is not proof that every hardware proposal is impossible."
+    },
+    {
+      "key": "ref19",
+      "type": "inproceedings",
+      "author_as_saved": "S. Jaques and J. M. Schanck",
+      "title_as_saved": "Quantum lattice sieving with reduced memory requirements",
+      "year_as_saved": "2020",
+      "venue_as_saved": "Advances in Cryptology -- EUROCRYPT",
+      "cited_lines": [
+        96
+      ],
+      "recommendation": "HOLD_VERIFY",
+      "reason": "Saved Jaques-Schanck lattice-sieving title/venue was not verified. Their real RAM-model cryptanalysis paper is a different work."
+    },
+    {
+      "key": "ref20",
+      "type": "article",
+      "author_as_saved": "J. Shi",
+      "title_as_saved": "A quantum algorithm for the solution of the 0-1 knapsack problem",
+      "year_as_saved": "2020",
+      "venue_as_saved": "arXiv:2006.09838",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "REPAIR_OR_REPLACE",
+      "reason": "CONFIRMED wrong arXiv identifier:2006.09838 is Xin Xu, LSTM Networks for Music Generation. Do not cite as knapsack; identify intended paper or replace with verified Hou-Perkowski, without inventing a Shi record."
+    },
+    {
+      "key": "ref21",
+      "type": "article",
+      "author_as_saved": "V. Dunjko and Y. Ge and J. I. Cirac",
+      "title_as_saved": "Computational speedups using small quantum devices",
+      "year_as_saved": "2018",
+      "venue_as_saved": "Physical Review Letters",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "KEEP_SCOPE",
+      "reason": "Real small-device speedup work; do not describe it as a verified Grover-knapsack solver without source support."
+    },
+    {
+      "key": "ref22",
+      "type": "article",
+      "author_as_saved": "C. Patvardhan and S. Bansal and A. Srivastav",
+      "title_as_saved": "A quantum search method for quadratic and multidimensional knapsack problems",
+      "year_as_saved": "2015",
+      "venue_as_saved": "Journal of Theoretical and Applied Information Technology",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "HOLD_VERIFY",
+      "reason": "Exact quantum-search/JTAIT record not verified. Same authors have real quantum-INSPIRED evolutionary papers; do not conflate them with gate-model search."
+    },
+    {
+      "key": "ref23",
+      "type": "article",
+      "author_as_saved": "P. J. Christiansen and L. Binkowski and D. Ramacciotti and S. Wilkening",
+      "title_as_saved": "Quantum tree generator improves {QAOA} state-of-the-art for the knapsack problem",
+      "year_as_saved": "2024",
+      "venue_as_saved": "arXiv:2411.00518",
+      "cited_lines": [
+        98,
+        100,
+        111
+      ],
+      "recommendation": "KEEP_UPDATE",
+      "reason": "Keep QTG/QAOA comparison; primary now lists QCE2025 DOI10.1109/QCE65121.2025.00011. Saved extra author initial should be checked against official export."
+    },
+    {
+      "key": "ref24",
+      "type": "article",
+      "author_as_saved": "A. Montanaro",
+      "title_as_saved": "Quantum speedup of branch-and-bound algorithms",
+      "year_as_saved": "2020",
+      "venue_as_saved": "Physical Review Research",
+      "cited_lines": [
+        98,
+        100,
+        111,
+        186,
+        251,
+        286
+      ],
+      "recommendation": "KEEP_UPDATE",
+      "reason": "Central B&B framework; complete article013056/DOI10.1103/PhysRevResearch.2.013056 and verify exact theorem use."
+    },
+    {
+      "key": "ref25",
+      "type": "article",
+      "author_as_saved": "E. Farhi and J. Goldstone and S. Gutmann",
+      "title_as_saved": "A quantum approximate optimization algorithm",
+      "year_as_saved": "2014",
+      "venue_as_saved": "arXiv:1411.4028",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "QAOA context if retained; not the algorithm used by the new oracle."
+    },
+    {
+      "key": "ref26",
+      "type": "article",
+      "author_as_saved": "A. Gilliam and S. Woerner and C. Gonciulea",
+      "title_as_saved": "Grover adaptive search for constrained polynomial binary optimization",
+      "year_as_saved": "2019",
+      "venue_as_saved": "arXiv:1912.04088",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "KEEP_SCOPE",
+      "reason": "Relevant constrained adaptive-search comparison; check published citation and avoid claiming it is our algorithm."
+    },
+    {
+      "key": "ref27",
+      "type": "article",
+      "author_as_saved": "A. Ajagekar and F. You",
+      "title_as_saved": "Quantum computing assisted optimization for energy systems",
+      "year_as_saved": "2020",
+      "venue_as_saved": "Computers \\& Chemical Engineering",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL_VERIFY",
+      "reason": "Energy application is peripheral; saved title/year/venue appear conflated. Author group lists Energy179(2019)76-89 for the energy-systems review, and a different fault-diagnosis title in C&CE143(2020)."
+    },
+    {
+      "key": "ref28",
+      "type": "article",
+      "author_as_saved": "H. B. Norambuena and others",
+      "title_as_saved": "Hybrid quantum genetic algorithm for the 0-1 knapsack problem",
+      "year_as_saved": "2023",
+      "venue_as_saved": "Expert Systems with Applications",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL_VERIFY",
+      "reason": "Peripheral genetic-method comparison. Saved Norambuena/ESWA223 record not verified; verified Ballinas-Montiel2022 is different, not an automatic repair."
+    },
+    {
+      "key": "ref29",
+      "type": "article",
+      "author_as_saved": "X. Geng and others",
+      "title_as_saved": "Quantum-inspired wolf pack algorithm to solve the 0-1 knapsack problem",
+      "year_as_saved": "2020",
+      "venue_as_saved": "Mathematical Problems in Engineering",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL_VERIFY",
+      "reason": "Peripheral quantum-inspired wolf-pack method; saved authors/title/venue/year need primary verification."
+    },
+    {
+      "key": "ref30",
+      "type": "article",
+      "author_as_saved": "S. Li and others",
+      "title_as_saved": "A binary multi-scale quantum harmonic oscillator algorithm for 0-1 knapsack problem",
+      "year_as_saved": "2020",
+      "venue_as_saved": "IEEE Access",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL_VERIFY",
+      "reason": "Peripheral harmonic-oscillator method; likely metadata mismatch. Related real record has Genetic Operator in title, DOI10.1109/ACCESS.2019.2942340; publisher confirmation pending."
+    },
+    {
+      "key": "ref31",
+      "type": "article",
+      "author_as_saved": "J. Preskill",
+      "title_as_saved": "Quantum computing in the NISQ era and beyond",
+      "year_as_saved": "2018",
+      "venue_as_saved": "Quantum",
+      "cited_lines": [
+        98,
+        702
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Retain for an explicit limitations paragraph; not evidence of device execution or knapsack advantage."
+    },
+    {
+      "key": "ref32",
+      "type": "article",
+      "author_as_saved": "S. Bravyi and D. Gosset and R. K{\\\"o}nig",
+      "title_as_saved": "Quantum advantage with shallow circuits",
+      "year_as_saved": "2018",
+      "venue_as_saved": "Science",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Unrelated shallow-circuit separation; not support for advantages of this oracle."
+    },
+    {
+      "key": "ref33",
+      "type": "misc",
+      "author_as_saved": "{Qiskit Development Team}",
+      "title_as_saved": "Qiskit: An open-source framework for quantum computing",
+      "year_as_saved": "2023",
+      "venue_as_saved": "",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "KEEP_UPDATE",
+      "reason": "Use official Quantum computing with Qiskit citation (Javadi-Abhari etal.,2024,arXiv2405.08810), and state actual Qiskit2.4.2/Aer0.17.2 versions."
+    },
+    {
+      "key": "ref34",
+      "type": "article",
+      "author_as_saved": "A. Ambainis",
+      "title_as_saved": "Quantum lower bounds by quantum arguments",
+      "year_as_saved": "2002",
+      "venue_as_saved": "Journal of Computer and System Sciences",
+      "cited_lines": [
+        94
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Generic adversary-method lower bounds; retain only if actually used, without an unrestricted NP/knapsack conclusion."
+    },
+    {
+      "key": "bonnetain2020improved",
+      "type": "inproceedings",
+      "author_as_saved": "X. Bonnetain and R. Bricout and A. Schrottenloher and Y. Shen",
+      "title_as_saved": "Improved classical and quantum algorithms for subset-sum",
+      "year_as_saved": "2020",
+      "venue_as_saved": "Advances in Cryptology -- EUROCRYPT",
+      "cited_lines": [
+        65,
+        96,
+        100,
+        111,
+        482
+      ],
+      "recommendation": "KEEP",
+      "reason": "Needed if discussing subset-sum walk assumptions; avoid a blanket claim that all quantum subset-sum algorithms are unsound."
+    },
+    {
+      "key": "ref35",
+      "type": "article",
+      "author_as_saved": "A. Montanaro",
+      "title_as_saved": "Quantum-walk speedup of backtracking algorithms",
+      "year_as_saved": "2018",
+      "venue_as_saved": "Theory of Computing",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "KEEP",
+      "reason": "Backtracking/detection versus witness-search theorem attribution; not interchangeable with the B&B theorem."
+    },
+    {
+      "key": "ref36",
+      "type": "article",
+      "author_as_saved": "C. Sanavio and P. Kl\\\"{o}s and M. Schwarz",
+      "title_as_saved": "Hybrid classical-quantum branch-and-bound algorithm for solving integer linear programs",
+      "year_as_saved": "2024",
+      "venue_as_saved": "arXiv:2403.09560",
+      "cited_lines": [
+        98
+      ],
+      "recommendation": "REPAIR",
+      "reason": "CONFIRMED wrong identifier and author list. Real intended-topic paper:Sanavio,Tignone,Ercolessi, Hybrid Classical-Quantum Branch-and-Bound Algorithm for Solving Integer Linear Problems, Entropy26(4),345(2024), DOI10.3390/e26040345."
+    },
+    {
+      "key": "beier2004random",
+      "type": "article",
+      "author_as_saved": "R. Beier and B. V{\\\"o}cking",
+      "title_as_saved": "Random knapsack in expected polynomial time",
+      "year_as_saved": "2004",
+      "venue_as_saved": "Journal of Computer and System Sciences",
+      "cited_lines": [],
+      "recommendation": "KEEP_SCOPE",
+      "reason": "Currently uncited. Useful random-instance context only if distribution assumptions are mapped; not a theorem about our correlated panels."
+    },
+    {
+      "key": "pisinger1997minimal",
+      "type": "article",
+      "author_as_saved": "D. Pisinger",
+      "title_as_saved": "A minimal algorithm for the 0-1 knapsack problem",
+      "year_as_saved": "1997",
+      "venue_as_saved": "Operations Research",
+      "cited_lines": [],
+      "recommendation": "KEEP",
+      "reason": "Currently uncited. Strong exact-solver/MINKNAP context, useful for fair classical comparisons."
+    },
+    {
+      "key": "martello1999combo",
+      "type": "article",
+      "author_as_saved": "S. Martello and D. Pisinger and P. Toth",
+      "title_as_saved": "Dynamic programming and strong bounds for the 0-1 knapsack problem",
+      "year_as_saved": "1999",
+      "venue_as_saved": "Management Science",
+      "cited_lines": [],
+      "recommendation": "KEEP",
+      "reason": "Currently uncited. Essential COMBO/strong-bound comparison if that baseline is discussed."
+    },
+    {
+      "key": "martello1988mtm",
+      "type": "article",
+      "author_as_saved": "S. Martello and P. Toth",
+      "title_as_saved": "A new algorithm for the 0-1 knapsack problem",
+      "year_as_saved": "1988",
+      "venue_as_saved": "Management Science",
+      "cited_lines": [],
+      "recommendation": "OPTIONAL",
+      "reason": "Currently uncited. Retain for actual historical/exact-algorithm comparison; do not delete simply because uncited."
+    },
+    {
+      "key": "draper2000",
+      "type": "article",
+      "author_as_saved": "Thomas G. Draper",
+      "title_as_saved": "Addition on a Quantum Computer",
+      "year_as_saved": "2000",
+      "venue_as_saved": "arXiv:quant-ph/0008033",
+      "cited_lines": [
+        263
+      ],
+      "recommendation": "KEEP",
+      "reason": "Already present: QFT addition used in reconstruction. Do not add a duplicate."
+    },
+    {
+      "key": "vedral1996",
+      "type": "article",
+      "author_as_saved": "V. Vedral and A. Barenco and A. Ekert",
+      "title_as_saved": "Quantum Networks for Elementary Arithmetic Operations",
+      "year_as_saved": "1996",
+      "venue_as_saved": "Physical Review A",
+      "cited_lines": [
+        263,
+        707
+      ],
+      "recommendation": "KEEP",
+      "reason": "Already present: elementary reversible arithmetic. Attribute the construction actually used."
+    },
+    {
+      "key": "thapliyal2016",
+      "type": "article",
+      "author_as_saved": "Himanshu Thapliyal and T. S. S. Varun and Edgard Munoz-Coreas",
+      "title_as_saved": "Quantum Circuit Design of Integer Division Optimizing Ancillary Qubits and T-Count",
+      "year_as_saved": "2016",
+      "venue_as_saved": "arXiv:1609.01241",
+      "cited_lines": [
+        263
+      ],
+      "recommendation": "OPTIONAL",
+      "reason": "Real divider paper, but new circuits compile classical rational constants and do not execute this divider. Drop only if divider discussion is removed; do not call it fabricated."
+    },
+    {
+      "key": "barenco1995",
+      "type": "article",
+      "author_as_saved": "Barenco, Adriano and Bennett, Charles H and Cleve, Richard and DiVincenzo, David P and Margolus, Norman and Shor, Peter and Sleator, Tycho and Smolin, John A and Weinfurter, Harald",
+      "title_as_saved": "Elementary gates for quantum computation",
+      "year_as_saved": "1995",
+      "venue_as_saved": "Physical review A",
+      "cited_lines": [
+        280
+      ],
+      "recommendation": "KEEP_SCOPE",
+      "reason": "Elementary gate decomposition background if used; does not by itself justify Ross-Selinger T-synthesis numbers."
+    }
+  ],
+  "proposed_additions": [
+    [
+      "ADD",
+      "Wilkening et al. (2025)",
+      "A quantum algorithm for solving 0-1 Knapsack problems",
+      "https://doi.org/10.1038/s41534-025-01097-8",
+      "Closest fractional-greedy quantum-knapsack work and arithmetic comparison; distinct from existing QTG-QAOA ref23."
+    ],
+    [
+      "ADD",
+      "Cuccaro, Draper, Kutin and Moulton (2004)",
+      "A new quantum ripple-carry addition circuit",
+      "https://arxiv.org/abs/quant-ph/0410184",
+      "Actual ripple/MAJ-UMA arithmetic comparator used in the research; cite the simple versus optimized variant accurately."
+    ],
+    [
+      "ADD",
+      "Dey, Dubey and Molinaro (2020; revised2021v4)",
+      "Branch-and-Bound Solves Random Binary IPs in Polytime",
+      "https://arxiv.org/abs/2007.15192",
+      "Section3 LP dual/reduced-cost framework; do not transfer its random-IP polynomial result to our benchmarks."
+    ],
+    [
+      "ADD",
+      "Bozejko, Burduk, Pempera, Uchronski and Wodecki (2024)",
+      "Optimal solving of a binary knapsack problem on a D-Wave quantum machine and its implementation in production systems",
+      "https://doi.org/10.1007/s10479-024-06025-1",
+      "Required prior art for affine Lagrangian multiplier sets and integer-floor pruning; not our clean reversible compiler."
+    ],
+    [
+      "ADD_OR_REPLACE_REF20",
+      "Hou and Perkowski (2020)",
+      "Quantum-based algorithm and circuit design for bounded Knapsack optimization problem",
+      "https://doi.org/10.26421/QIC20.9-10-4",
+      "Verified gate-model knapsack feasibility oracle, Quantum Information and Computation20(9-10),766-786; relevant comparison rather than the incorrect ref20."
+    ],
+    [
+      "ADD",
+      "Gabbassov, Rosenberg and Scherer (2025)",
+      "Lagrangian duality in quantum optimization: Overcoming QUBO limitations for constrained problems",
+      "https://doi.org/10.1103/53gd-2374",
+      "Physical Review Research7,023305; distinguish established quantum/Lagrangian optimization from our scoped bank compiler."
+    ],
+    [
+      "ADD",
+      "Erickson (2019)",
+      "Algorithms, Chapter4: Greedy Algorithms",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/04-greedy.pdf",
+      "Credit standard interval-stabbing subproblem; keep our strict open-endpoint proof self-contained. No invented exercise/theorem number."
+    ],
+    [
+      "RECOMMENDED_CLOSEST_CONTEXT",
+      "Hamitouche, Hnaien and Menacer (2025)",
+      "Towards a Quantum Resolution of the Knapsack Problem",
+      "https://www.cs.auckland.ac.nz/research/groups/CDMTCS/researchreports/download.php?selected-id=904",
+      "Workshop contribution in CDMTCS-586; compare quantum feasibility oracle versus separate classical fractional bound. Cite as workshop/report, not QIP journal article."
+    ],
+    [
+      "SOFTWARE_ARTIFACT",
+      "Wilkening et al. released R1 software archive",
+      "Version-specific source artifact DOI10.5281/zenodo.16895828",
+      "https://doi.org/10.5281/zenodo.16895828",
+      "Reproducibility citation when reporting our source audit; import official archive metadata rather than inventing the artifact title."
+    ],
+    [
+      "UPDATE_EXISTING_REF33",
+      "Javadi-Abhari et al. (2024)",
+      "Quantum computing with Qiskit",
+      "https://github.com/Qiskit/qiskit/blob/main/CITATION.bib",
+      "Official Qiskit/Aer recommendation. Do not add redundant citations merely to inflate counts. Report actual package versions and link Aer documentation for simulator options."
+    ],
+    [
+      "CONDITIONAL",
+      "Martiel and Remaud (2019)",
+      "Practical implementation of a quantum backtracking algorithm",
+      "https://arxiv.org/abs/1908.11291",
+      "Add if retaining circuit-space/backtracking implementation comparisons; no full-walk implementation claim is implied."
+    ]
+  ],
+  "paper_sha256_before": {
+    "main.tex": "593c2b22a7aac7b8d0106dd6a804b40cb37634ed78395d4f1eb74ab8c5cf9dc1",
+    "references.bib": "2129e91caedb7322581d0333aae4af50d5126bfd6b02b6da7dba4ec1d694987b",
+    "main.pdf": "2c26c61db6a2756d8cee0ab5d6851851f7ba0de0a61e0e3abca9373e6875e231"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "classification": "SIMULATED phase-sensitive noiseless ideal-gate checks",
+  "seed": 2026102412,
+  "tolerance_hardcoded": 1e-08,
+  "dense_readout_controls": [
+    {
+      "mode": "variable_add_2",
+      "qubits": 5,
+      "all_amplitudes": 32,
+      "independent_vs_dense_max_error": 5.792524571296236e-12,
+      "helper_vs_dense_max_error": 5.792520536192398e-12,
+      "helper_norm_error": 3.9968028886505635e-15
+    },
+    {
+      "mode": "signed_compare_3",
+      "qubits": 11,
+      "all_amplitudes": 2048,
+      "independent_vs_dense_max_error": 5.693786988836846e-11,
+      "helper_vs_dense_max_error": 5.693787470930297e-11,
+      "helper_norm_error": 1.199040866595169e-14
+    },
+    {
+      "mode": "constant_compare_3",
+      "qubits": 6,
+      "all_amplitudes": 64,
+      "independent_vs_dense_max_error": 9.761324606251659e-15,
+      "helper_vs_dense_max_error": 9.761324606251659e-15,
+      "helper_norm_error": 0.0
+    },
+    {
+      "mode": "controlled_add_3",
+      "qubits": 5,
+      "all_amplitudes": 32,
+      "independent_vs_dense_max_error": 7.724452805615794e-13,
+      "helper_vs_dense_max_error": 7.724315968919246e-13,
+      "helper_norm_error": 6.439293542825908e-15
+    }
+  ],
+  "saved_amplitude_conflict": {
+    "initial": 1,
+    "expected": 9,
+    "qubits": 23,
+    "saved_amplitudes": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "logical_probability_at_9": 1.0000000000000369,
+    "tensor_amplitude_at_9": [
+      1.0000000000000184,
+      1.7964065669862427e-15
+    ],
+    "tensor_norm_squared": 1.0000000000000369
+  },
+  "coherent_first_fixture": {
+    "qubits": 23,
+    "nonzero_logical_input_amplitudes": 16,
+    "maximum_logical_amplitude_error": 1.1788303996078873e-10,
+    "workspace_probability_leak": 3.3306690738754696e-16,
+    "norm_error": 3.175237850427948e-14
+  },
+  "source_sha256": {
+    "qft_reconstruction.py": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "mps_readout.py": "9ed8f85588243ff5952e778b78727df5a55789964b6dc27ef029a37b98ffd7bc"
+  }
+}

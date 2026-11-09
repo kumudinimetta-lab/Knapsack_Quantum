@@ -1,0 +1,647 @@
+{
+  "seed": 2026102515,
+  "classification": "SIMULATED dense full-state equivalence",
+  "conditions": 30,
+  "failures": 0,
+  "maximum_amplitude_difference": 6.938893903907228e-16,
+  "rows": [
+    {
+      "network": 0,
+      "qubits": 13,
+      "commute_disjoint": false,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 142,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 142,
+        "output_gates": 142,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 0,
+      "qubits": 13,
+      "commute_disjoint": true,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 106,
+      "maximum_amplitude_difference": 2.0630814761166827e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 142,
+        "output_gates": 106,
+        "removed_gate_counts": {
+          "h": 18,
+          "cp": 18
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 1,
+      "qubits": 13,
+      "commute_disjoint": false,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 142,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 142,
+        "output_gates": 142,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 1,
+      "qubits": 13,
+      "commute_disjoint": true,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 106,
+      "maximum_amplitude_difference": 2.2971826326221923e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 142,
+        "output_gates": 106,
+        "removed_gate_counts": {
+          "h": 18,
+          "cp": 18
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 2,
+      "qubits": 13,
+      "commute_disjoint": false,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 142,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 142,
+        "output_gates": 142,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 2,
+      "qubits": 13,
+      "commute_disjoint": true,
+      "logical_amplitudes": 512,
+      "full_amplitudes": 8192,
+      "raw_gates": 142,
+      "reduced_gates": 106,
+      "maximum_amplitude_difference": 2.1228933251263786e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 142,
+        "output_gates": 106,
+        "removed_gate_counts": {
+          "h": 18,
+          "cp": 18
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 3,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 3,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 44,
+      "maximum_amplitude_difference": 5.649129063713848e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 44,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24,
+          "cx": 2,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 4,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 4,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 46,
+      "maximum_amplitude_difference": 4.941739743737032e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 46,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 5,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 88,
+      "maximum_amplitude_difference": 1.4946834900704541e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 88,
+        "removed_gate_counts": {
+          "x": 6,
+          "h": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 5,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 40,
+      "maximum_amplitude_difference": 6.731800026102354e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 40,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 26,
+          "x": 6
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 6,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 92,
+      "maximum_amplitude_difference": 1.2412670766236366e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 92,
+        "removed_gate_counts": {
+          "h": 2,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 6,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 42,
+      "maximum_amplitude_difference": 5.775561153410717e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 42,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 26,
+          "x": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 7,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 92,
+      "maximum_amplitude_difference": 1.716587549445839e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 92,
+        "removed_gate_counts": {
+          "h": 2,
+          "cx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 7,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 46,
+      "maximum_amplitude_difference": 5.274015853390341e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 46,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24,
+          "cx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 8,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 8,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 48,
+      "maximum_amplitude_difference": 4.847302891456678e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 48,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 9,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 94,
+      "maximum_amplitude_difference": 1.1443916996305594e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 94,
+        "removed_gate_counts": {
+          "h": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 9,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 44,
+      "maximum_amplitude_difference": 5.185169430563076e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 44,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24,
+          "x": 4
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 10,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 10,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 42,
+      "maximum_amplitude_difference": 6.23728986632994e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 42,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 24,
+          "x": 4,
+          "ccx": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 11,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 11,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 46,
+      "maximum_amplitude_difference": 5.721958498152797e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 46,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 26
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 12,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 12,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 42,
+      "maximum_amplitude_difference": 5.909070137656226e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 42,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 28,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 13,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 13,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 44,
+      "maximum_amplitude_difference": 6.938893903907228e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 44,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 26,
+          "x": 2
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 14,
+      "qubits": 6,
+      "commute_disjoint": false,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 96,
+      "maximum_amplitude_difference": 0.0,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "adjacent_inverse_pairs",
+        "input_gates": 96,
+        "output_gates": 96,
+        "removed_gate_counts": {},
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    },
+    {
+      "network": 14,
+      "qubits": 6,
+      "commute_disjoint": true,
+      "logical_amplitudes": 64,
+      "full_amplitudes": 64,
+      "raw_gates": 96,
+      "reduced_gates": 46,
+      "maximum_amplitude_difference": 6.329245045284193e-16,
+      "audit": {
+        "classification": "DERIVED exact native-netlist inverse cancellation",
+        "policy": "inverse_pairs_across_disjoint_wires",
+        "input_gates": 96,
+        "output_gates": 46,
+        "removed_gate_counts": {
+          "cp": 24,
+          "h": 26
+        },
+        "angle_test": "literal_opposite_no_tolerance",
+        "not_performed": "diagonal_angle_merging_register_reallocation_or_approximation"
+      }
+    }
+  ],
+  "source_sha256": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1"
+}

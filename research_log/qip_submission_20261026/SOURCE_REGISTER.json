@@ -1,0 +1,42 @@
+{
+  "checked_date": "2026-10-26",
+  "deliverables": [
+    "paper/QIP_SUBMISSION_GUIDE_2026-10-26.md",
+    "paper/QIP_SUBMISSION_GUIDE_2026-10-26.pdf"
+  ],
+  "scope": "Official submission rules, template inspection and project-specific revision plan. No manuscript revision or submission in this preparation step.",
+  "sources": [
+    {"id":"QIP-GUIDE","url":"https://link.springer.com/journal/11128/submission-guidelines","verified":"Live page, all substantive section groups plus prior cached primary copy","supports":"Article categories, single-blind process, source delivery, front matter, headings, reference format, tables, artwork, supplements, ethics, authorship, declarations, data, proofs","cautions":["Same page states abstract80--100 and150--250; unresolved","Author contributions required in interface even where manuscript contribution wording is recommended","Acknowledgment/title-page and declaration/back-matter instructions must be reconciled with universal template"]},
+    {"id":"QIP-SCOPE","url":"https://link.springer.com/journal/11128/aims-and-scope","verified":"Live page","supports":"Quantum algorithms/computer-science scope; does not establish novelty or acceptance"},
+    {"id":"QIP-FEES","url":"https://link.springer.com/journal/11128/how-to-publish-with-us","verified":"Live page","supports":"Hybrid publishing, subscription noAPC, OA GBP2190/USD3090/EUR2490 before tax, price determined at acceptance"},
+    {"id":"TEMPLATE-PORTAL","url":"https://www.springernature.com/gp/authors/campaigns/latex-author-support","verified":"Live page plus locally cached official ZIP","supports":"Recommended universal journal template; current linked December2024 release","cautions":["Binary download via web tool unavailable; did not claim fresh ZIP download","Local cached template inspected and hashed"]},
+    {"id":"TEMPLATE-MANUAL","local":"research_log/qip_submission_20261026/user-manual.pdf","verified":"All relevant text read from the cached official ZIP;14pages","supports":"Sections2--3 review spacing/single-column/fonts/neutral layout; Sections6--8 front matter/theorems/figures/citations/back matter; sn-article.tex version3.1December2024","cautions":["Optional line numbering is our choice","Generic EPS/compiler passage is not a pdfLaTeX-only-format rule","QIP is a Springer journal, not a Nature-Portfolio journal: do not copy Nature-specific instructions"]},
+    {"id":"SPRINGER-POLICIES","url":"https://link.springer.com/brands/springer/journal-policies","verified":"Live page: citation, preprint, AI, ethics sections","supports":"Identifiable preprints allowed in reference lists; disclosure/human accountability; accurate original citations","cautions":["Do not infer preprints are forbidden from a generic journal reference sentence","Broader current AI guidance differs from older copyediting exception"]},
+    {"id":"AI-RESEARCH","url":"https://www.springernature.com/gp/policies/editorial-policies/using-ai-in-research","verified":"Live page","supports":"Human oversight and methodological transparency for research assistance"},
+    {"id":"AI-WRITING","url":"https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation","verified":"Live page","supports":"Disclosure and verifiable inputs; authors retain judgment and accountability"},
+    {"id":"DATA-POLICY","url":"https://www.springernature.com/gp/authors/research-data-policy","verified":"Linked live primary policy and journal-specific data section","supports":"Data availability statement and sharing guidance"},
+    {"id":"PRECHECK","url":"https://link.springer.com/pre-submission?journalId=11128","verified":"Live page","supports":"Preparation checklist and submission/technical/editorial/peer-review sequence"},
+    {"id":"FIGURE-CHECK","url":"https://link.springer.com/pre-submission/figures-and-tables?journalId=11128","verified":"Live page","supports":"Readable tables, captions, units and text consistency"},
+    {"id":"CONTACT","url":"https://link.springer.com/journal/11128/contact-the-journal","verified":"Live page","supports":"Official support route for abstract clarification","cautions":["No message sent"]},
+    {"id":"PROJECT-EVIDENCE","local":"research_log/claim_validation_20261025/VALIDATION_VERDICT.md","verified":"Existing primary research checkpoint","supports":"Scope of defensible construction and evidence; no fabricated IBM experiments"},
+    {"id":"PROJECT-AUDIT","local":"research_log/references_literature_20261026/FINAL_AUDIT.md","verified":"Existing audit","supports":"Pending body scientific/citation revisions; current40-reference audit"}
+  ],
+  "access_and_process_notes": [
+    "Code-review graph tools unavailable after discovery; targeted fallback local reads used.",
+    "Firecrawl skill read; prior insufficient-credit state respected. Official web tools and existing cache used without new Firecrawl credit attempts.",
+    "First template-reading console attempt assumedUTF8 and failed onCP1252; second print hit a Windows console ligature encoding error. Reading resumed with explicitUTF8 stdout. No source was altered.",
+    "Two pre-submission subpages were found but reopening failed; no detailed claims depend on their unseen text.",
+    "No logged-in portal fields, manuscriptID, mandatory cover-letter upload or exact current upload limits were asserted.",
+    "The guide PDF was rendered and all six pages visually inspected. Original main.tex/references.bib/main.pdf hashes unchanged."
+  ],
+  "unresolved_before_submission": [
+    "Abstract limit conflict",
+    "Author names/order, corresponding author and contact facts",
+    "Actual contributions, funding, interests and final approvals",
+    "Human validation and truthful disclosure of AI-assisted research/writing",
+    "Remaining scientific/citation holds outside the revised literature review",
+    "Real versioned public code/data release and verified availability links",
+    "Exact live submission portal fields and generated submission proof"
+  ],
+  "submitted": false
+}

@@ -1,0 +1,2861 @@
+{
+  "scope": "OUR source-primitive reconstruction, not released R1 oracle; fixed depth, ideal full QFT.",
+  "kernels": [
+    {
+      "label": "variable_add_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 2.303328157969851e-16,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "variable_sub_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 2.303328157969851e-16,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "unsigned_compare_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 6.661338147750939e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_add_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_sub_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_direct_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_direct_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_source_generic_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_source_generic_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_add_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 2.303328157969851e-16,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_sub_1",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 2.303328157969851e-16,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_direct_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_direct_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_source_generic_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_source_generic_1",
+      "classification": "SIMULATED",
+      "columns": 4,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 2,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "variable_add_2",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.8036582378888425e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "variable_sub_2",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.8036582378888425e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "unsigned_compare_2",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 1.0000996387460268e-15,
+      "qubits": 8,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_add_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_sub_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_add_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.548678100692191e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_sub_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.548678100692191e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_2_add_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.3864873283885093e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_2_sub_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.3864873283885093e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_False_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_True_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_False_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_True_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_3_add_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.8036582378888425e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_3_sub_2",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 3.8036582378888425e-16,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_False_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_True_direct_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_False_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_True_source_generic_2",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 3,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "variable_add_3",
+      "classification": "SIMULATED",
+      "columns": 128,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.207756086531882e-16,
+      "qubits": 7,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "variable_sub_3",
+      "classification": "SIMULATED",
+      "columns": 128,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.293605927611676e-16,
+      "qubits": 7,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "unsigned_compare_3",
+      "classification": "SIMULATED",
+      "columns": 128,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 1.4433112791944572e-15,
+      "qubits": 11,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_0_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_0_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.685941111410504e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_1_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.756421093468898e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_1_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_2_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.820980429093606e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_2_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.788030771002723e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_2_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_3_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.929512914497791e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_3_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.048976631851715e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_3_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_4_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.482907825975319e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_4_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.495518112573811e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_4_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_4_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_4_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_4_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_5_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.992235530673216e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_5_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.090632661362139e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_5_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_5_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_5_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_5_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_6_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.820980429093606e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_6_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 4.948177604825731e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_6_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_6_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_6_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_6_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_7_add_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 6.248835193106865e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "controlled_constant_7_sub_3",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 5.293605927611676e-16,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_7_False_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 5,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_7_True_direct_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_7_False_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 6,
+      "tolerance_hardcoded": 1e-08
+    },
+    {
+      "label": "const_compare_7_True_source_generic_3",
+      "classification": "SIMULATED",
+      "columns": 16,
+      "failed_columns_above_tolerance": 0,
+      "max_amplitude_error": 0.0,
+      "qubits": 4,
+      "tolerance_hardcoded": 1e-08
+    }
+  ],
+  "tensor_readout_crosscheck": [
+    {
+      "width": 1,
+      "classification": "SIMULATED",
+      "amplitudes_compared": 8,
+      "max_amplitude_error": 7.855367300016406e-16,
+      "normalization_error": 8.881784197001252e-16,
+      "failed": 0
+    },
+    {
+      "width": 2,
+      "classification": "SIMULATED",
+      "amplitudes_compared": 32,
+      "max_amplitude_error": 2.5581113603265465e-12,
+      "normalization_error": 3.774758283725532e-15,
+      "failed": 0
+    },
+    {
+      "width": 3,
+      "classification": "SIMULATED",
+      "amplitudes_compared": 128,
+      "max_amplitude_error": 1.288051191948204e-11,
+      "normalization_error": 5.10702591327572e-15,
+      "failed": 0
+    }
+  ],
+  "rows": [
+    {
+      "fixture": 0,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 23,
+            "native_counts": {
+              "cp": 198,
+              "h": 104,
+              "cx": 19,
+              "x": 6,
+              "ccx": 3
+            },
+            "native_depth": 124,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 731,
+              "cx": 433
+            },
+            "common_depth": 418,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 4.218927638180205e-14,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 8.43769498715119e-14,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.2131630999792833,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.00010750000365078449,
+            "weights": [
+              1
+            ],
+            "values": [
+              1
+            ],
+            "capacity": 0,
+            "order": [
+              0
+            ],
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 25,
+            "native_counts": {
+              "cp": 198,
+              "h": 104,
+              "cx": 21,
+              "x": 6,
+              "ccx": 5
+            },
+            "native_depth": 124,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 749,
+              "cx": 447
+            },
+            "common_depth": 418,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 4.64204468819285e-14,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 9.281464485866309e-14,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.18389260000549257,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.00011659998563118279,
+            "weights": [
+              1
+            ],
+            "values": [
+              1
+            ],
+            "capacity": 0,
+            "order": [
+              0
+            ],
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 23,
+            "native_counts": {
+              "cx": 239,
+              "ccx": 93,
+              "x": 34
+            },
+            "native_depth": 266,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 871,
+              "cx": 797
+            },
+            "common_depth": 1140,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.13354650000110269,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 8.749999688006938e-05,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 15,
+            "native_counts": {
+              "cx": 98,
+              "ccx": 41,
+              "x": 32
+            },
+            "native_depth": 112,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 401,
+              "cx": 344
+            },
+            "common_depth": 492,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.06395359997986816,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 5.840000812895596e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 2,
+            "loss_width": 3
+          }
+        }
+      }
+    },
+    {
+      "fixture": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 25,
+            "native_counts": {
+              "cp": 222,
+              "h": 112,
+              "cx": 19,
+              "x": 8,
+              "ccx": 3
+            },
+            "native_depth": 130,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 813,
+              "cx": 481
+            },
+            "common_depth": 442,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 3.6415332977570014e-14,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 7.283063041541027e-14,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.20687669998733327,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.00010859998292289674,
+            "weights": [
+              1
+            ],
+            "values": [
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0
+            ],
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 27,
+            "native_counts": {
+              "cp": 222,
+              "h": 112,
+              "cx": 21,
+              "x": 8,
+              "ccx": 5
+            },
+            "native_depth": 130,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 831,
+              "cx": 495
+            },
+            "common_depth": 442,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 3.797000372109357e-14,
+            "max_probability_leak": 4.440892098500626e-16,
+            "first_failures": [],
+            "max_normalization_error": 7.593925488436071e-14,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.22571820000302978,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 8.92000098247081e-05,
+            "weights": [
+              1
+            ],
+            "values": [
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0
+            ],
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 25,
+            "native_counts": {
+              "cx": 267,
+              "ccx": 105,
+              "x": 44
+            },
+            "native_depth": 296,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 989,
+              "cx": 897
+            },
+            "common_depth": 1284,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.14957199999480508,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00017060001846402884,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 18,
+            "native_counts": {
+              "cx": 166,
+              "ccx": 73,
+              "x": 52
+            },
+            "native_depth": 200,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 709,
+              "cx": 604
+            },
+            "common_depth": 884,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.08763799999724142,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 6.839999696239829e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 3,
+            "loss_width": 4
+          }
+        }
+      }
+    },
+    {
+      "fixture": 2,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 40,
+            "native_counts": {
+              "cp": 1186,
+              "h": 448,
+              "cx": 59,
+              "x": 56,
+              "ccx": 35
+            },
+            "native_depth": 648,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 4377,
+              "cx": 2641
+            },
+            "common_depth": 2330,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 8,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 1.5609791247152598e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 3.12194714524594e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.4702599000011105,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.0003226000117138028,
+            "weights": [
+              1,
+              2
+            ],
+            "values": [
+              1,
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 41,
+            "native_counts": {
+              "cp": 1186,
+              "h": 448,
+              "cx": 67,
+              "x": 56,
+              "ccx": 43
+            },
+            "native_depth": 650,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 4449,
+              "cx": 2697
+            },
+            "common_depth": 2377,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 8,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 2.045806844570861e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 4.0900616227190767e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.5949403999838978,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.00030980000155977905,
+            "weights": [
+              1,
+              2
+            ],
+            "values": [
+              1,
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 38,
+            "native_counts": {
+              "cx": 1079,
+              "ccx": 435,
+              "x": 160
+            },
+            "native_depth": 1146,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 4075,
+              "cx": 3689
+            },
+            "common_depth": 5174,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 8,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.31521619998966344,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0001608999737072736,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 18,
+            "native_counts": {
+              "cx": 110,
+              "x": 52,
+              "ccx": 49
+            },
+            "native_depth": 122,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 493,
+              "cx": 404
+            },
+            "common_depth": 578,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 8,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.031480500008910894,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0001416000013705343,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              2
+            ],
+            "weight_width": 4,
+            "loss_width": 4
+          }
+        }
+      }
+    },
+    {
+      "fixture": 3,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 37,
+            "native_counts": {
+              "cp": 802,
+              "h": 312,
+              "cx": 41,
+              "x": 34,
+              "ccx": 20
+            },
+            "native_depth": 438,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 2932,
+              "cx": 1765
+            },
+            "common_depth": 1616,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 1.1590866215598356e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 2.318145675417327e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.7885019000095781,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.0002418000076431781,
+            "weights": [
+              1,
+              2
+            ],
+            "values": [
+              1,
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 38,
+            "native_counts": {
+              "cp": 802,
+              "h": 312,
+              "cx": 47,
+              "x": 34,
+              "ccx": 26
+            },
+            "native_depth": 448,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 2986,
+              "cx": 1807
+            },
+            "common_depth": 1663,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 1.2701955938402166e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 2.5424107263916085e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.7583825000037905,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.00022799998987466097,
+            "weights": [
+              1,
+              2
+            ],
+            "values": [
+              1,
+              1
+            ],
+            "capacity": 1,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 35,
+            "native_counts": {
+              "cx": 747,
+              "ccx": 302,
+              "x": 106
+            },
+            "native_depth": 794,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 2824,
+              "cx": 2559
+            },
+            "common_depth": 3606,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.40243229997577146,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0001385000068694353,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 4,
+            "value_width": 3,
+            "numerator_width": 4
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 19,
+            "native_counts": {
+              "cx": 182,
+              "ccx": 81,
+              "x": 56
+            },
+            "native_depth": 212,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 785,
+              "cx": 668
+            },
+            "common_depth": 972,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 16,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.11875379999401048,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 6.829999620094895e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              2
+            ],
+            "weight_width": 4,
+            "loss_width": 4
+          }
+        }
+      }
+    },
+    {
+      "fixture": 4,
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        2
+      ],
+      "capacity": 2,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 47,
+            "native_counts": {
+              "cp": 1984,
+              "h": 528,
+              "cx": 57,
+              "x": 46,
+              "ccx": 34
+            },
+            "native_depth": 722,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 6832,
+              "cx": 4229
+            },
+            "common_depth": 2789,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 3.538190472022607e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 7.076561558960748e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 4.151045700011309,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.0003896999987773597,
+            "weights": [
+              2,
+              3
+            ],
+            "values": [
+              3,
+              2
+            ],
+            "capacity": 2,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 48,
+            "native_counts": {
+              "cp": 1984,
+              "h": 528,
+              "cx": 65,
+              "x": 46,
+              "ccx": 42
+            },
+            "native_depth": 732,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 6904,
+              "cx": 4285
+            },
+            "common_depth": 2845,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 3.2752462600518923e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 6.550315845288424e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 3.5972432999988087,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.0008388999849557877,
+            "weights": [
+              2,
+              3
+            ],
+            "values": [
+              3,
+              2
+            ],
+            "capacity": 2,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 4,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 43,
+            "native_counts": {
+              "cx": 1243,
+              "ccx": 502,
+              "x": 126
+            },
+            "native_depth": 1296,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 4644,
+              "cx": 4255
+            },
+            "common_depth": 6008,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 1.4233519999834243,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0003858999989461154,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 4,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 24,
+            "native_counts": {
+              "cx": 298,
+              "ccx": 129,
+              "x": 68
+            },
+            "native_depth": 326,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 1229,
+              "cx": 1072
+            },
+            "common_depth": 1542,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.3955926999915391,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00011839999933727086,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              2,
+              3
+            ],
+            "weight_width": 4,
+            "loss_width": 6
+          }
+        }
+      }
+    },
+    {
+      "fixture": 5,
+      "weights": [
+        2,
+        4
+      ],
+      "values": [
+        1,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 48,
+            "native_counts": {
+              "cp": 1646,
+              "h": 436,
+              "cx": 57,
+              "x": 36,
+              "ccx": 20
+            },
+            "native_depth": 616,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 5590,
+              "cx": 3469
+            },
+            "common_depth": 2326,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 3.013686905086253e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 6.02629057766535e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 2.790115399984643,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.0004292000085115433,
+            "weights": [
+              2,
+              4
+            ],
+            "values": [
+              1,
+              2
+            ],
+            "capacity": 3,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 5,
+            "value_width": 3,
+            "numerator_width": 6
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 49,
+            "native_counts": {
+              "cp": 1646,
+              "h": 436,
+              "cx": 63,
+              "x": 36,
+              "ccx": 26
+            },
+            "native_depth": 626,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 5644,
+              "cx": 3511
+            },
+            "common_depth": 2373,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 2.917874469068082e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 5.837552663479073e-13,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 2.9815981999854557,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.0005952999927103519,
+            "weights": [
+              2,
+              4
+            ],
+            "values": [
+              1,
+              2
+            ],
+            "capacity": 3,
+            "order": [
+              0,
+              1
+            ],
+            "weight_width": 5,
+            "value_width": 3,
+            "numerator_width": 6
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 44,
+            "native_counts": {
+              "cx": 1007,
+              "ccx": 418,
+              "x": 136
+            },
+            "native_depth": 1066,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 3898,
+              "cx": 3515
+            },
+            "common_depth": 4980,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.9653353000176139,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00013359999866224825,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 5,
+            "value_width": 3,
+            "numerator_width": 6
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 23,
+            "native_counts": {
+              "cx": 182,
+              "ccx": 81,
+              "x": 68
+            },
+            "native_depth": 200,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 797,
+              "cx": 668
+            },
+            "common_depth": 960,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.20052060001762584,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 6.820002454333007e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              2
+            ],
+            "weight_width": 5,
+            "loss_width": 5
+          }
+        }
+      }
+    },
+    {
+      "fixture": 6,
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "values": [
+        2,
+        1,
+        1
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "methods": {
+        "qft_direct": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 53,
+            "native_counts": {
+              "cp": 3000,
+              "h": 776,
+              "cx": 83,
+              "x": 82,
+              "ccx": 57
+            },
+            "native_depth": 1072,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 10371,
+              "cx": 6425
+            },
+            "common_depth": 4026,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 5.380140805971122e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 1.0762502000716268e-12,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 4.646400400000857,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "direct",
+            "build_seconds_measured": 0.0006446999905165285,
+            "weights": [
+              2,
+              3,
+              1
+            ],
+            "values": [
+              2,
+              1,
+              1
+            ],
+            "capacity": 3,
+            "order": [
+              0,
+              2,
+              1
+            ],
+            "weight_width": 5,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "qft_source_generic": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 54,
+            "native_counts": {
+              "cp": 3000,
+              "h": 776,
+              "cx": 93,
+              "x": 82,
+              "ccx": 67
+            },
+            "native_depth": 1082,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 10461,
+              "cx": 6495
+            },
+            "common_depth": 4073,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 5.218102637736618e-13,
+            "max_probability_leak": 2.220446049250313e-16,
+            "first_failures": [],
+            "max_normalization_error": 1.0436096431476471e-12,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 4.131201100011822,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "scope": "OUR_source_primitive_reconstruction_NOT_released_R1_oracle",
+            "qft_precision": "ideal_full_no_omitted_rotations",
+            "control_strategy": "serial_shared_clean_ancillas_no_copied_control_parallelization",
+            "multi_control_policy": "source_generic",
+            "build_seconds_measured": 0.0005663999763783067,
+            "weights": [
+              2,
+              3,
+              1
+            ],
+            "values": [
+              2,
+              1,
+              1
+            ],
+            "capacity": 3,
+            "order": [
+              0,
+              2,
+              1
+            ],
+            "weight_width": 5,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "compact_exact": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 49,
+            "native_counts": {
+              "cx": 1847,
+              "ccx": 751,
+              "x": 206
+            },
+            "native_depth": 1940,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 6965,
+              "cx": 6353
+            },
+            "common_depth": 8970,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 1.495144699991215,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00023029997828416526,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 5,
+            "value_width": 4,
+            "numerator_width": 6
+          }
+        },
+        "compact_dual": {
+          "resources": {
+            "classification": "DERIVED",
+            "qubits": 25,
+            "native_counts": {
+              "cx": 310,
+              "ccx": 137,
+              "x": 76
+            },
+            "native_depth": 342,
+            "common_basis": [
+              "u",
+              "cx"
+            ],
+            "common_counts": {
+              "u": 1309,
+              "cx": 1132
+            },
+            "common_depth": 1634,
+            "optimization_level": 0,
+            "connectivity": "all_to_all",
+            "rotation_synthesis": "ideal_arbitrary_angle_u"
+          },
+          "check": {
+            "status": "COMPLETED",
+            "classification": "SIMULATED",
+            "columns": 32,
+            "predicate_or_cleanup_failures": 0,
+            "max_expected_amplitude_error": 0.0,
+            "max_probability_leak": 0.0,
+            "first_failures": [],
+            "max_normalization_error": 0.0,
+            "readout": "explicit_saved_MPS_tensor_contraction_after_dense_crosscheck",
+            "simulator": {
+              "method": "matrix_product_state",
+              "noise": "ideal",
+              "matrix_product_state_truncation_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 18446744073709551615
+            },
+            "tolerance_hardcoded": 1e-08,
+            "seconds_measured": 0.25624499999685213,
+            "caps_hardcoded": {
+              "qubits": 96,
+              "native_gates": 40000,
+              "columns": 512,
+              "condition_seconds": 90
+            }
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 7.450001430697739e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              3
+            ],
+            "weight_width": 5,
+            "loss_width": 6
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "classification": "SIMULATED",
+    "dense_kernel_columns": 1848,
+    "dense_kernel_failures": 0,
+    "full_method_cases": 28,
+    "full_compiled_columns": 608,
+    "full_predicate_or_cleanup_failures": 0,
+    "max_expected_amplitude_error": 5.380140805971122e-13,
+    "seconds_measured": 36.69972790000611
+  }
+}

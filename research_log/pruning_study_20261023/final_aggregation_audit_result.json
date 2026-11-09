@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-24",
+  "scope": "Independent read-only reconstruction of final aggregation; no quantum execution",
+  "taxonomy": "DERIVED ledger/hash/ratio verification",
+  "paired_summary_sha256": "80211bcf478d04e721e341ea5de02603bcb4f3daa9f74302ae150f42b1fefa43",
+  "resource_attempts": 6732,
+  "build_status": {
+    "main_single_v1": {
+      "complete": 4200
+    },
+    "representative_wrappers_v1": {
+      "complete": 210
+    },
+    "core_changed_single_v1": {
+      "complete": 1866
+    },
+    "core_changed_wrappers_v1": {
+      "complete": 96
+    },
+    "independent_single_v1": {
+      "complete": 237,
+      "build_cap": 33
+    },
+    "scaled_single_v1": {
+      "complete": 87,
+      "build_cap": 3
+    }
+  },
+  "tree_inputs": 1460,
+  "timecap_overlay_keys": 183,
+  "extra_completed_threshold_conditions": 23,
+  "summary_source_hashes_checked": 21,
+  "resource_stat_groups_checked": 1524,
+  "proxy_stat_groups_checked": 7875,
+  "coverage_groups_checked": 96,
+  "certificate_stat_groups_checked": 20,
+  "resource_aliases": 700,
+  "reused_original_resources": 389,
+  "recomputed_ratio_examples": [
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 65,
+      "Texact": 37,
+      "overhead_exact_cost_units": 0,
+      "ratio": 0.20204109667639464
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 65,
+      "Texact": 37,
+      "overhead_exact_cost_units": 1,
+      "ratio": 0.7637340529457232
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 65,
+      "Texact": 37,
+      "overhead_exact_cost_units": 100,
+      "ratio": 1.3143043764176394
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 47,
+      "Texact": 21,
+      "overhead_exact_cost_units": 0,
+      "ratio": 0.22804637991998403
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 47,
+      "Texact": 21,
+      "overhead_exact_cost_units": 1,
+      "ratio": 0.8620364315030877
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 864,
+      "Cexact": 5668,
+      "Tweak": 47,
+      "Texact": 21,
+      "overhead_exact_cost_units": 100,
+      "ratio": 1.4834722246390013
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 359,
+      "Texact": 119,
+      "overhead_exact_cost_units": 0,
+      "ratio": 0.2695473465600842
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 359,
+      "Texact": 119,
+      "overhead_exact_cost_units": 1,
+      "ratio": 1.0032215304783134
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "incumbent_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 359,
+      "Texact": 119,
+      "overhead_exact_cost_units": 100,
+      "ratio": 1.7223675127347953
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 101,
+      "Texact": 37,
+      "overhead_exact_cost_units": 0,
+      "ratio": 0.2564018428177805
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 101,
+      "Texact": 37,
+      "overhead_exact_cost_units": 1,
+      "ratio": 0.9542956087374268
+    },
+    {
+      "id": "uncorrelated_n12_s12001_R100",
+      "target": "optimum_plus_one",
+      "weak": "root_dual",
+      "metric": "ccx",
+      "Cweak": 960,
+      "Cexact": 6186,
+      "Tweak": 101,
+      "Texact": 37,
+      "overhead_exact_cost_units": 100,
+      "ratio": 1.6383696961240106
+    }
+  ],
+  "failure_count": 0,
+  "failures": []
+}

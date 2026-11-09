@@ -1,0 +1,1811 @@
+{
+  "scope": "Certificate-only diagnostic; no novelty/guaranteed improvement or full quantum runtime claim",
+  "summary": [
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 467,
+        "bank2": 6
+      },
+      "median_ratio_to_exact": 0.22372580011956067,
+      "less_than_exact": 473,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.7794600507092444
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 439,
+        "bank2": 28,
+        "bank4": 6
+      },
+      "median_ratio_to_exact": 0.4817031973997124,
+      "less_than_exact": 455,
+      "median_hindsight_regret": 1.0509669016048193,
+      "maximum_hindsight_regret": 2.186529314844491
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 396,
+        "bank4": 38,
+        "bank2": 39
+      },
+      "median_ratio_to_exact": 0.8185750253132951,
+      "less_than_exact": 299,
+      "median_hindsight_regret": 1.1762698088597776,
+      "maximum_hindsight_regret": 2.8390045002399598
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 473,
+      "selected": {
+        "bank2": 53,
+        "bank4": 79,
+        "root_dual": 341
+      },
+      "median_ratio_to_exact": 1.2361187657193422,
+      "less_than_exact": 127,
+      "median_hindsight_regret": 1.2871088726959317,
+      "maximum_hindsight_regret": 4.594919059220072
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 473,
+      "selected": {
+        "bank2": 73,
+        "bank4": 93,
+        "root_dual": 307
+      },
+      "median_ratio_to_exact": 1.2669231722190135,
+      "less_than_exact": 123,
+      "median_hindsight_regret": 1.2669231722190135,
+      "maximum_hindsight_regret": 4.942624912483462
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 400,
+        "bank4": 30,
+        "bank2": 43
+      },
+      "median_ratio_to_exact": 0.24339408369360133,
+      "less_than_exact": 473,
+      "median_hindsight_regret": 1.1710857120885865,
+      "maximum_hindsight_regret": 2.5192148359212427
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 473,
+      "selected": {
+        "bank2": 44,
+        "bank4": 51,
+        "root_dual": 378
+      },
+      "median_ratio_to_exact": 0.4866261962636111,
+      "less_than_exact": 461,
+      "median_hindsight_regret": 1.2232859815341754,
+      "maximum_hindsight_regret": 2.820931592316918
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 473,
+      "selected": {
+        "bank2": 51,
+        "bank4": 78,
+        "root_dual": 344
+      },
+      "median_ratio_to_exact": 0.7689663449731156,
+      "less_than_exact": 309,
+      "median_hindsight_regret": 1.2192512336235444,
+      "maximum_hindsight_regret": 2.931145635574894
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 473,
+      "selected": {
+        "bank2": 74,
+        "bank4": 92,
+        "root_dual": 307
+      },
+      "median_ratio_to_exact": 1.1749502894049395,
+      "less_than_exact": 157,
+      "median_hindsight_regret": 1.226624535375132,
+      "maximum_hindsight_regret": 4.5803286042590425
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 473,
+      "selected": {
+        "bank2": 75,
+        "bank4": 94,
+        "root_dual": 304
+      },
+      "median_ratio_to_exact": 1.2666120875782279,
+      "less_than_exact": 125,
+      "median_hindsight_regret": 1.2684071009581432,
+      "maximum_hindsight_regret": 4.94103585303226
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 465,
+        "bank2": 6,
+        "bank4": 2
+      },
+      "median_ratio_to_exact": 0.22582153540180167,
+      "less_than_exact": 473,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 2.7025285076846797
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 436,
+        "bank2": 30,
+        "bank4": 7
+      },
+      "median_ratio_to_exact": 0.48309543201243893,
+      "less_than_exact": 456,
+      "median_hindsight_regret": 1.0739177061826914,
+      "maximum_hindsight_regret": 2.228089393354615
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 473,
+      "selected": {
+        "root_dual": 393,
+        "bank4": 41,
+        "bank2": 39
+      },
+      "median_ratio_to_exact": 0.8178297706705011,
+      "less_than_exact": 300,
+      "median_hindsight_regret": 1.1842761932976351,
+      "maximum_hindsight_regret": 2.828252623782077
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 473,
+      "selected": {
+        "bank2": 53,
+        "bank4": 81,
+        "root_dual": 339
+      },
+      "median_ratio_to_exact": 1.2357883339197329,
+      "less_than_exact": 128,
+      "median_hindsight_regret": 1.2680757472892612,
+      "maximum_hindsight_regret": 4.592964172591366
+    },
+    {
+      "category": "core700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 473,
+      "selected": {
+        "bank2": 74,
+        "bank4": 93,
+        "root_dual": 306
+      },
+      "median_ratio_to_exact": 1.2668687882520884,
+      "less_than_exact": 123,
+      "median_hindsight_regret": 1.2668687882520884,
+      "maximum_hindsight_regret": 4.942412004038751
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 512,
+        "bank2": 5
+      },
+      "median_ratio_to_exact": 0.21861694539575882,
+      "less_than_exact": 517,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.5020585708324057
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 489,
+        "bank2": 23,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 0.46834814209269787,
+      "less_than_exact": 485,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.8456694750913034
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 455,
+        "bank4": 28,
+        "bank2": 34
+      },
+      "median_ratio_to_exact": 0.8293596204101384,
+      "less_than_exact": 329,
+      "median_hindsight_regret": 1.1253055592463317,
+      "maximum_hindsight_regret": 3.3923332121094343
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 434,
+        "bank4": 51,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.316306081692299,
+      "less_than_exact": 93,
+      "median_hindsight_regret": 1.3264463067917562,
+      "maximum_hindsight_regret": 5.599994602278916
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 52,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.4125776351934267,
+      "less_than_exact": 74,
+      "median_hindsight_regret": 1.4125776351934267,
+      "maximum_hindsight_regret": 6.037155273599606
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 461,
+        "bank4": 20,
+        "bank2": 36
+      },
+      "median_ratio_to_exact": 0.23732635089567894,
+      "less_than_exact": 517,
+      "median_hindsight_regret": 1.1261954511690102,
+      "maximum_hindsight_regret": 2.050772664005788
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 447,
+        "bank4": 35,
+        "bank2": 35
+      },
+      "median_ratio_to_exact": 0.48092909848590804,
+      "less_than_exact": 494,
+      "median_hindsight_regret": 1.1786205212428948,
+      "maximum_hindsight_regret": 2.2963858874061955
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 436,
+        "bank4": 47,
+        "bank2": 34
+      },
+      "median_ratio_to_exact": 0.8103349691430617,
+      "less_than_exact": 334,
+      "median_hindsight_regret": 1.2103130196334233,
+      "maximum_hindsight_regret": 3.3517093336147594
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 52,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.3102525002423302,
+      "less_than_exact": 93,
+      "median_hindsight_regret": 1.3332166643219887,
+      "maximum_hindsight_regret": 5.592608442552612
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 52,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.4122246744557279,
+      "less_than_exact": 74,
+      "median_hindsight_regret": 1.4122246744557279,
+      "maximum_hindsight_regret": 6.036350840362087
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 510,
+        "bank2": 5,
+        "bank4": 2
+      },
+      "median_ratio_to_exact": 0.21689853759882813,
+      "less_than_exact": 517,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 2.7025285076846797
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 487,
+        "bank2": 24,
+        "bank4": 6
+      },
+      "median_ratio_to_exact": 0.46844270314092595,
+      "less_than_exact": 485,
+      "median_hindsight_regret": 1.019676578765207,
+      "maximum_hindsight_regret": 1.880750719037026
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 452,
+        "bank4": 31,
+        "bank2": 34
+      },
+      "median_ratio_to_exact": 0.8261716721131394,
+      "less_than_exact": 331,
+      "median_hindsight_regret": 1.1372285815317267,
+      "maximum_hindsight_regret": 3.3827815548419276
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 434,
+        "bank4": 51,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.3151778799256664,
+      "less_than_exact": 93,
+      "median_hindsight_regret": 1.325347776588348,
+      "maximum_hindsight_regret": 5.598257937321187
+    },
+    {
+      "category": "core700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 517,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 52,
+        "bank2": 32
+      },
+      "median_ratio_to_exact": 1.412502944899656,
+      "less_than_exact": 74,
+      "median_hindsight_regret": 1.412502944899656,
+      "maximum_hindsight_regret": 6.036966131871537
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 15
+      },
+      "median_ratio_to_exact": 0.1964904096088748,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.2135316635418711
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 15
+      },
+      "median_ratio_to_exact": 0.42227772953011017,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0401220845523644,
+      "maximum_hindsight_regret": 1.4941390093459657
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.7609587094119632,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.0146160573070848,
+      "maximum_hindsight_regret": 1.6465162669844968
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.2227964092508536,
+      "less_than_exact": 3,
+      "median_hindsight_regret": 1.2227964092508536,
+      "maximum_hindsight_regret": 2.2459891058873733
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3142494191199412,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3142494191199412,
+      "maximum_hindsight_regret": 2.4128423141135418
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.18842382340587654,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0416916076817075,
+      "maximum_hindsight_regret": 1.7165003896454374
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.4158244605677116,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0962424144741851,
+      "maximum_hindsight_regret": 1.7316643227186286
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.7569254163104641,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.1188294271084513,
+      "maximum_hindsight_regret": 1.7379636031573138
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.2220630832323995,
+      "less_than_exact": 3,
+      "median_hindsight_regret": 1.2253730583983549,
+      "maximum_hindsight_regret": 2.248785450896003
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3141695519298122,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3141695519298122,
+      "maximum_hindsight_regret": 2.413146866540224
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 15
+      },
+      "median_ratio_to_exact": 0.18474221197756546,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.237009850311135
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 15
+      },
+      "median_ratio_to_exact": 0.41287917142506264,
+      "less_than_exact": 15,
+      "median_hindsight_regret": 1.0570935422901218,
+      "maximum_hindsight_regret": 1.5159703371419304
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.7550846105963086,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.0350661750016386,
+      "maximum_hindsight_regret": 1.6574653016573155
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.2217283912843713,
+      "less_than_exact": 3,
+      "median_hindsight_regret": 1.2217283912843713,
+      "maximum_hindsight_regret": 2.243980576285888
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 15,
+      "selected": {
+        "root_dual": 12,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3141331003315122,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3141331003315122,
+      "maximum_hindsight_regret": 2.412623563364865
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 12
+      },
+      "median_ratio_to_exact": 0.2930448813739771,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.0969852181079238,
+      "maximum_hindsight_regret": 1.2135316635418711
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 12
+      },
+      "median_ratio_to_exact": 0.6273621018085859,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.2660433921628091,
+      "maximum_hindsight_regret": 1.4941390093459657
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.8795120127353764,
+      "less_than_exact": 9,
+      "median_hindsight_regret": 1.1160156975810533,
+      "maximum_hindsight_regret": 1.6465162669844968
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3145501052171316,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3145501052171316,
+      "maximum_hindsight_regret": 2.2459891058873733
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.4010135544660418,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.4010135544660418,
+      "maximum_hindsight_regret": 2.4128423141135418
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.22116288239645523,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.165442586316768,
+      "maximum_hindsight_regret": 1.7165003896454374
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.45378080282475775,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.2283401415715904,
+      "maximum_hindsight_regret": 1.7316643227186286
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.8129559927808145,
+      "less_than_exact": 9,
+      "median_hindsight_regret": 1.2787622955706786,
+      "maximum_hindsight_regret": 1.7379636031573138
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3027403427208917,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3096782650496162,
+      "maximum_hindsight_regret": 2.248785450896003
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3997273427090258,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3997273427090258,
+      "maximum_hindsight_regret": 2.413146866540224
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 12
+      },
+      "median_ratio_to_exact": 0.27180239649551274,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.1087033215770925,
+      "maximum_hindsight_regret": 1.237009850311135
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 12
+      },
+      "median_ratio_to_exact": 0.6103681139058144,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.2843056172649008,
+      "maximum_hindsight_regret": 1.5159703371419304
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 0.8651950396873449,
+      "less_than_exact": 9,
+      "median_hindsight_regret": 1.1310777684144566,
+      "maximum_hindsight_regret": 1.6574653016573155
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.3117712926169478,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.3117712926169478,
+      "maximum_hindsight_regret": 2.243980576285888
+    },
+    {
+      "category": "highbit_scaled",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 12,
+      "selected": {
+        "root_dual": 9,
+        "bank4": 3
+      },
+      "median_ratio_to_exact": 1.4007109115095866,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.4007109115095866,
+      "maximum_hindsight_regret": 2.412623563364865
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.14187316038320025,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.3042142313818275
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.5227989110306015,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.1355269685788256,
+      "maximum_hindsight_regret": 1.5690616313459058
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.077938859359938,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.2559045903844246,
+      "maximum_hindsight_regret": 1.9291436752752376
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.8349478798090328,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.8349478798090328,
+      "maximum_hindsight_regret": 3.3118662645988577
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.9848506561355865,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.9848506561355865,
+      "maximum_hindsight_regret": 3.5856727179302674
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.1243717665971147,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.1962523837173087,
+      "maximum_hindsight_regret": 1.6492669496698666
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.5120720787448374,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.2444460969115574,
+      "maximum_hindsight_regret": 1.6649722915200296
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.0712345891813353,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.3016732139471658,
+      "maximum_hindsight_regret": 1.9036091454638944
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.8337289215947417,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.8337289215947417,
+      "maximum_hindsight_regret": 3.307223622814977
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.9847178983102678,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.9847178983102678,
+      "maximum_hindsight_regret": 3.585167083676578
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.13580327863637337,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.3229317478111446
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 0.5172892105842215,
+      "less_than_exact": 26,
+      "median_hindsight_regret": 1.1423381161992388,
+      "maximum_hindsight_regret": 1.5778142268232154
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.0744952965809502,
+      "less_than_exact": 12,
+      "median_hindsight_regret": 1.2583900732250202,
+      "maximum_hindsight_regret": 1.9237702825535798
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.8343217774855805,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.8343217774855805,
+      "maximum_hindsight_regret": 3.3108892841040105
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 26,
+      "selected": {
+        "root_dual": 26
+      },
+      "median_ratio_to_exact": 1.9847824667736265,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.9847824667736265,
+      "maximum_hindsight_regret": 3.5855663141139966
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.11549706516908803,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.0783430219219299
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.43825060153028855,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.0720531385532157,
+      "maximum_hindsight_regret": 1.3107609572839787
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.9227466205298179,
+      "less_than_exact": 18,
+      "median_hindsight_regret": 1.18336695194116,
+      "maximum_hindsight_regret": 2.0316393780225552
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.5834230100746307,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.5834230100746307,
+      "maximum_hindsight_regret": 3.4958462809437827
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.714250017905287,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.714250017905287,
+      "maximum_hindsight_regret": 3.785788241918283
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.11228282503911577,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.1333170722793278,
+      "maximum_hindsight_regret": 1.3807012364288778
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.41875677453731686,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.176234280928769,
+      "maximum_hindsight_regret": 1.3966241505199632
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.9100827276399376,
+      "less_than_exact": 18,
+      "median_hindsight_regret": 1.210548703338147,
+      "maximum_hindsight_regret": 2.0157826376969528
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.5811204840946527,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.5811204840946527,
+      "maximum_hindsight_regret": 3.4929632372482193
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.7139992477490518,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.7139992477490518,
+      "maximum_hindsight_regret": 3.78547424706035
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.11003987539276099,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.093818932814175
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.43332970025269935,
+      "less_than_exact": 35,
+      "median_hindsight_regret": 1.0790950247183682,
+      "maximum_hindsight_regret": 1.3178950730104864
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 0.9196710572313249,
+      "less_than_exact": 18,
+      "median_hindsight_regret": 1.179911389589972,
+      "maximum_hindsight_regret": 2.0261807151128344
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.5828638167476323,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.5828638167476323,
+      "maximum_hindsight_regret": 3.4948537967783793
+    },
+    {
+      "category": "independent_large",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 35,
+      "selected": {
+        "root_dual": 35
+      },
+      "median_ratio_to_exact": 1.7141891156617524,
+      "less_than_exact": 0,
+      "median_hindsight_regret": 1.7141891156617524,
+      "maximum_hindsight_regret": 3.7856801495834373
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 492
+      },
+      "median_ratio_to_exact": 0.2384616196578761,
+      "less_than_exact": 492,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.7794600507092444
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 492
+      },
+      "median_ratio_to_exact": 0.5338075399940818,
+      "less_than_exact": 460,
+      "median_hindsight_regret": 1.0467824220367483,
+      "maximum_hindsight_regret": 2.186529314844491
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 488,
+        "bank4": 3,
+        "bank2": 1
+      },
+      "median_ratio_to_exact": 0.9644825822698595,
+      "less_than_exact": 265,
+      "median_hindsight_regret": 1.1949727342072136,
+      "maximum_hindsight_regret": 3.0483921113921957
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 462,
+        "bank2": 17,
+        "bank4": 13
+      },
+      "median_ratio_to_exact": 1.5413205151822835,
+      "less_than_exact": 46,
+      "median_hindsight_regret": 1.547982629700397,
+      "maximum_hindsight_regret": 4.942443623043319
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 22,
+        "bank2": 37
+      },
+      "median_ratio_to_exact": 1.6442463581668862,
+      "less_than_exact": 49,
+      "median_hindsight_regret": 1.6442463581668862,
+      "maximum_hindsight_regret": 5.31750332832077
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 486,
+        "bank4": 5,
+        "bank2": 1
+      },
+      "median_ratio_to_exact": 0.18932690291801638,
+      "less_than_exact": 492,
+      "median_hindsight_regret": 1.1722607687726463,
+      "maximum_hindsight_regret": 2.5192148359212427
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 480,
+        "bank4": 8,
+        "bank2": 4
+      },
+      "median_ratio_to_exact": 0.4935764378153856,
+      "less_than_exact": 468,
+      "median_hindsight_regret": 1.2394708241004047,
+      "maximum_hindsight_regret": 2.820931592316918
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 463,
+        "bank4": 15,
+        "bank2": 14
+      },
+      "median_ratio_to_exact": 0.9349633919765616,
+      "less_than_exact": 282,
+      "median_hindsight_regret": 1.264955945729795,
+      "maximum_hindsight_regret": 2.9809964853286885
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 433,
+        "bank4": 21,
+        "bank2": 38
+      },
+      "median_ratio_to_exact": 1.5258357310081356,
+      "less_than_exact": 74,
+      "median_hindsight_regret": 1.5305630697096122,
+      "maximum_hindsight_regret": 4.9301898728499545
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 430,
+        "bank4": 23,
+        "bank2": 39
+      },
+      "median_ratio_to_exact": 1.643728890930199,
+      "less_than_exact": 51,
+      "median_hindsight_regret": 1.643728890930199,
+      "maximum_hindsight_regret": 5.316168761468027
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 492
+      },
+      "median_ratio_to_exact": 0.23053752827755164,
+      "less_than_exact": 492,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.8536917080867976
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 491,
+        "bank4": 1
+      },
+      "median_ratio_to_exact": 0.5253995967298305,
+      "less_than_exact": 462,
+      "median_hindsight_regret": 1.072066045191356,
+      "maximum_hindsight_regret": 2.228089393354615
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 486,
+        "bank4": 5,
+        "bank2": 1
+      },
+      "median_ratio_to_exact": 0.9606661576516999,
+      "less_than_exact": 267,
+      "median_hindsight_regret": 1.2074105359493088,
+      "maximum_hindsight_regret": 3.0338620873272415
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 460,
+        "bank2": 17,
+        "bank4": 15
+      },
+      "median_ratio_to_exact": 1.5361837353544188,
+      "less_than_exact": 47,
+      "median_hindsight_regret": 1.540698378474676,
+      "maximum_hindsight_regret": 4.939801800486055
+    },
+    {
+      "category": "main700",
+      "target_kind": "incumbent_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 492,
+      "selected": {
+        "root_dual": 432,
+        "bank4": 22,
+        "bank2": 38
+      },
+      "median_ratio_to_exact": 1.6441541215597324,
+      "less_than_exact": 49,
+      "median_hindsight_regret": 1.6441541215597324,
+      "maximum_hindsight_regret": 5.317215605071959
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 537
+      },
+      "median_ratio_to_exact": 0.2282148826843635,
+      "less_than_exact": 537,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.5332540961925623
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 0.25,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 536,
+        "bank4": 1
+      },
+      "median_ratio_to_exact": 0.5111605807500789,
+      "less_than_exact": 490,
+      "median_hindsight_regret": 1.0005588351071273,
+      "maximum_hindsight_regret": 1.8456694750913034
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 1,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 533,
+        "bank4": 4
+      },
+      "median_ratio_to_exact": 0.9214423190734999,
+      "less_than_exact": 309,
+      "median_hindsight_regret": 1.1272675618501014,
+      "maximum_hindsight_regret": 3.3923332121094343
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 10,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.4798255310138222,
+      "less_than_exact": 30,
+      "median_hindsight_regret": 1.4798255310138222,
+      "maximum_hindsight_regret": 5.599994602278916
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "ccx",
+      "overhead": 100,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.5936075955797988,
+      "less_than_exact": 11,
+      "median_hindsight_regret": 1.5936075955797988,
+      "maximum_hindsight_regret": 6.037155273599606
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 533,
+        "bank4": 4
+      },
+      "median_ratio_to_exact": 0.17955043611907753,
+      "less_than_exact": 537,
+      "median_hindsight_regret": 1.1295902921068945,
+      "maximum_hindsight_regret": 2.050772664005788
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 0.25,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 0.46462108580273037,
+      "less_than_exact": 500,
+      "median_hindsight_regret": 1.187947188969408,
+      "maximum_hindsight_regret": 2.2963858874061955
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 1,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 0.89196913919451,
+      "less_than_exact": 319,
+      "median_hindsight_regret": 1.2299757379175205,
+      "maximum_hindsight_regret": 3.3517093336147594
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 10,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.4753172723215946,
+      "less_than_exact": 30,
+      "median_hindsight_regret": 1.4753172723215946,
+      "maximum_hindsight_regret": 5.592608442552612
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gate_depth",
+      "overhead": 100,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.593116597108368,
+      "less_than_exact": 11,
+      "median_hindsight_regret": 1.593116597108368,
+      "maximum_hindsight_regret": 6.036350840362087
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 537
+      },
+      "median_ratio_to_exact": 0.21949477677428977,
+      "less_than_exact": 537,
+      "median_hindsight_regret": 1.0,
+      "maximum_hindsight_regret": 1.5958285045976575
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 0.25,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 535,
+        "bank4": 2
+      },
+      "median_ratio_to_exact": 0.5041301165739741,
+      "less_than_exact": 490,
+      "median_hindsight_regret": 1.02020671869045,
+      "maximum_hindsight_regret": 1.880750719037026
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 1,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 0.9170400681688944,
+      "less_than_exact": 311,
+      "median_hindsight_regret": 1.1379662974015492,
+      "maximum_hindsight_regret": 3.3827815548419276
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 10,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.478897456336331,
+      "less_than_exact": 30,
+      "median_hindsight_regret": 1.478897456336331,
+      "maximum_hindsight_regret": 5.598257937321187
+    },
+    {
+      "category": "main700",
+      "target_kind": "optimum_plus_one",
+      "metric": "gates",
+      "overhead": 100,
+      "conditions": 537,
+      "selected": {
+        "root_dual": 532,
+        "bank4": 5
+      },
+      "median_ratio_to_exact": 1.5935065181396764,
+      "less_than_exact": 11,
+      "median_hindsight_regret": 1.5935065181396764,
+      "maximum_hindsight_regret": 6.036966131871537
+    }
+  ],
+  "source_sha256": {
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\certificate_bank_controls.jsonl": "c6d49dc90704dd7565f6d1e670ff4eccf2882b3db418d2acadff04d1b8a5de21",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\core_resource_aliases.json": "288a559c941e08cbd908b809ac16a931c2130f71bd1b6571fbf2a291ce334363",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\advance_comparison_20261024\\common_cohort_conditions.jsonl": "ace5830634e7af7f8df097ba633e3cf79c1260755592afecc7022598f7364792",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\advance_comparison_20261024\\certificate_selector.py": "c4b7c07cdb295b1cda62eef5b7a51c2ddb66378e329022d7b669a2b4050bbec5",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\runs\\main_single_v1\\resource_records.jsonl": "1fbd4c02e0289673e26ddb3634f59ab33edc7d3b07baf9133b8e15e1c5d94292",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\runs\\core_changed_single_v1\\resource_records.jsonl": "9cd42d580333276d2aa4f3ddc42bccdaf9089dee83c8c7b1fcde6170cda4ac3f",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\runs\\independent_single_v1\\resource_records.jsonl": "8b2bc6b737977b243721a8ae373c8c027d7d8285fa5fe056b68d8cdbccc0ad00",
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\pruning_study_20261023\\runs\\scaled_single_v1\\resource_records.jsonl": "5283393eb4d9a7d90ebda9fb074fe68bc62fae39d429a8dfd71058778a909193"
+  }
+}

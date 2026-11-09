@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\CBP\HybridQuantumKnapsack\research_log\source_faithful_20261024\validate_widths.py", line 72, in <module>
+    main()
+    ~~~~^^
+  File "C:\CBP\HybridQuantumKnapsack\research_log\source_faithful_20261024\validate_widths.py", line 39, in main
+    c = build_exact_control(w, v, cap, d, engine=engine)
+  File "C:\CBP\HybridQuantumKnapsack\simulation\source_faithful_20261024\width_controls.py", line 88, in build_exact_control
+    return c.circuit(order, tb, depth, "compact_exact_width_control", **meta)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Ripple.circuit() got multiple values for argument 'order'

@@ -1,0 +1,6 @@
+1 uncorrelated_n12_s12000_R100 {'COMPLETED': 8}
+2 weakly_correlated_n12_s12000_R100 {'COMPLETED': 16}
+3 strongly_correlated_n12_s12000_R100 {'COMPLETED': 24}
+4 subset_sum_n12_s12000_R100 {'COMPLETED': 32}
+5 inverse_strongly_n12_s12000_R100 {'COMPLETED': 40}
+{"scope": "DERIVED fixed-depth same-integer-predicate resources; no 105-input gate simulation or full walk", "inputs": 5, "rows": 40, "status_counts": {"COMPLETED": 40}, "seconds_measured": 9.420939699979499}

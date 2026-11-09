@@ -1,0 +1,61 @@
+{
+  "seed": 2026102516,
+  "classification": "SIMULATED complete ideal-gate MPS on complex coherent input",
+  "weights": [
+    5,
+    2,
+    3
+  ],
+  "values": [
+    0,
+    3,
+    2
+  ],
+  "capacity": 4,
+  "depth": 2,
+  "bank": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "overlapping_rejection_logical_encodings": 32,
+  "overweight_logical_encodings": 16,
+  "rows": [
+    {
+      "method": "raw",
+      "qubits": 26,
+      "gates": 2209,
+      "logical_amplitudes": 64,
+      "maximum_expected_amplitude_error": 6.583756198030394e-10,
+      "workspace_probability_leak": 1.1102230246251565e-16,
+      "normalization_error": 9.969802761133906e-14
+    },
+    {
+      "method": "exact_inverse_cancellation",
+      "qubits": 26,
+      "gates": 751,
+      "logical_amplitudes": 64,
+      "maximum_expected_amplitude_error": 6.790057540413853e-10,
+      "workspace_probability_leak": 1.1102230246251565e-16,
+      "normalization_error": 2.0872192862952943e-14
+    }
+  ],
+  "failures": 0,
+  "source_sha256": {
+    "qft_bank.py": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "qft_normal_form.py": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1"
+  }
+}

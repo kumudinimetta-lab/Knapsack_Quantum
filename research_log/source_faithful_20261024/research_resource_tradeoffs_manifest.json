@@ -1,0 +1,10 @@
+{
+  "classification": "DERIVED logical gate resources; not hardware time",
+  "left": "All original 700 inputs. Baseline is a separate per-metric minimum, not one Pareto circuit.",
+  "right": "All fixed-depth 105 representatives. Same QFT engine, exact inverse cancellation on both sides; resource only.",
+  "sha256": {
+    "compilation_extended_pairs.jsonl": "e8291aff201606bdfe2c1edee3033a8d9c4b81c8f23813ef5717378f3a11459b",
+    "qft_bank_full105_rows.jsonl": "ae7faf0e78508558e911380adb0515caa535f2d1d4cb367c4bb6f5d174bc62e2",
+    "make_research_figure.py": "249c325ba46bfd4bd31f753e1495ccbb265600949b326a8f46cd46acd6b37211"
+  }
+}

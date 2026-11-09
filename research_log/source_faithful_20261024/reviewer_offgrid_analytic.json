@@ -1,0 +1,83 @@
+{
+  "classification": "DERIVED exact LP vertex and rational comparisons",
+  "weights": [
+    9,
+    9
+  ],
+  "values": [
+    1,
+    1
+  ],
+  "capacity": 10,
+  "density_grid_minimum": 2,
+  "density_grid_bank": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      9
+    ]
+  ],
+  "offgrid_bank": [
+    [
+      1,
+      11
+    ]
+  ],
+  "offgrid_size": 1,
+  "feasible_prefix_checks": 6,
+  "floor_mismatches": 0,
+  "includes_complete_leaves": true,
+  "rows": [
+    {
+      "depth": 0,
+      "prefix": 0,
+      "exact": "10/9",
+      "offgrid": "14/11",
+      "exact_floor": 1,
+      "offgrid_floor": 1
+    },
+    {
+      "depth": 1,
+      "prefix": 0,
+      "exact": "1",
+      "offgrid": "12/11",
+      "exact_floor": 1,
+      "offgrid_floor": 1
+    },
+    {
+      "depth": 1,
+      "prefix": 1,
+      "exact": "10/9",
+      "offgrid": "14/11",
+      "exact_floor": 1,
+      "offgrid_floor": 1
+    },
+    {
+      "depth": 2,
+      "prefix": 0,
+      "exact": "0",
+      "offgrid": "10/11",
+      "exact_floor": 0,
+      "offgrid_floor": 0
+    },
+    {
+      "depth": 2,
+      "prefix": 1,
+      "exact": "1",
+      "offgrid": "12/11",
+      "exact_floor": 1,
+      "offgrid_floor": 1
+    },
+    {
+      "depth": 2,
+      "prefix": 2,
+      "exact": "1",
+      "offgrid": "12/11",
+      "exact_floor": 1,
+      "offgrid_floor": 1
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "panel": "independent",
+  "attempted": 45,
+  "status_counts": {
+    "capacity_cap_safe_root_tail_fallback": 45
+  },
+  "original_grid_size_median": 25,
+  "root_tail_size_median": 10,
+  "bank_size_median": 10,
+  "bank_size_max": 20,
+  "total_reachable_states": 0,
+  "total_coverage_comparisons": 0,
+  "total_preprocessing_seconds": 0.004576599865686148,
+  "total_comparison_dp_seconds": 0,
+  "strict_root_tail_compressions": 0,
+  "source_sha256": "6db58e8b1f49e071f1b70181ace21964787030c9cfc3d3464e5d9fc0f9f9ee86"
+}

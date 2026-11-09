@@ -1,0 +1,329 @@
+{
+  "classification": "SIMULATED_DENSE_STATEVECTOR_WITH_DERIVED_GATE_COUNTS",
+  "weights": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "values": [
+    3,
+    4,
+    5,
+    8
+  ],
+  "capacity": 8,
+  "thresholds": 22,
+  "selection_basis_states_per_threshold": 16,
+  "mismatches": 0,
+  "rows": [
+    {
+      "tau": 0,
+      "qubits": 16,
+      "gates": 1090,
+      "depth": 241,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 319
+      },
+      "max_amplitude_error": 2.152594670363702e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.391847297645178e-28
+    },
+    {
+      "tau": 1,
+      "qubits": 16,
+      "gates": 1102,
+      "depth": 243,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 331
+      },
+      "max_amplitude_error": 2.0805055816364054e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.08695343134708e-28
+    },
+    {
+      "tau": 2,
+      "qubits": 16,
+      "gates": 1101,
+      "depth": 242,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 330
+      },
+      "max_amplitude_error": 2.5172913936258424e-14,
+      "mismatch": false,
+      "workspace_leakage": 6.845600288943126e-28
+    },
+    {
+      "tau": 3,
+      "qubits": 16,
+      "gates": 1102,
+      "depth": 243,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 331
+      },
+      "max_amplitude_error": 2.2604167790923894e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.944321925801719e-28
+    },
+    {
+      "tau": 4,
+      "qubits": 16,
+      "gates": 1100,
+      "depth": 242,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 329
+      },
+      "max_amplitude_error": 2.6855308971097876e-14,
+      "mismatch": false,
+      "workspace_leakage": 8.24450409150608e-28
+    },
+    {
+      "tau": 5,
+      "qubits": 16,
+      "gates": 1102,
+      "depth": 243,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 331
+      },
+      "max_amplitude_error": 2.4301687863676805e-14,
+      "mismatch": false,
+      "workspace_leakage": 6.004767160103148e-28
+    },
+    {
+      "tau": 6,
+      "qubits": 16,
+      "gates": 1101,
+      "depth": 242,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 330
+      },
+      "max_amplitude_error": 2.1605659228644727e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.401795918623981e-28
+    },
+    {
+      "tau": 7,
+      "qubits": 16,
+      "gates": 1102,
+      "depth": 243,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 331
+      },
+      "max_amplitude_error": 2.6119797025437292e-14,
+      "mismatch": false,
+      "workspace_leakage": 7.41262745861084e-28
+    },
+    {
+      "tau": 8,
+      "qubits": 16,
+      "gates": 1096,
+      "depth": 242,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 325
+      },
+      "max_amplitude_error": 2.1686404112773694e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.379904096299953e-28
+    },
+    {
+      "tau": 9,
+      "qubits": 16,
+      "gates": 1102,
+      "depth": 243,
+      "gate_counts": {
+        "cx": 411,
+        "p": 360,
+        "u": 331
+      },
+      "max_amplitude_error": 2.0810453944299442e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.1372081076327915e-28
+    },
+    {
+      "tau": 10,
+      "qubits": 17,
+      "gates": 1282,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 369
+      },
+      "max_amplitude_error": 5.04594743005799e-14,
+      "mismatch": false,
+      "workspace_leakage": 3.0908850230789157e-27
+    },
+    {
+      "tau": 11,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 4.8835564671608205e-14,
+      "mismatch": false,
+      "workspace_leakage": 2.8041472266583026e-27
+    },
+    {
+      "tau": 12,
+      "qubits": 17,
+      "gates": 1281,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 368
+      },
+      "max_amplitude_error": 4.504891306330711e-14,
+      "mismatch": false,
+      "workspace_leakage": 2.1202633640793913e-27
+    },
+    {
+      "tau": 13,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 4.181688669109389e-14,
+      "mismatch": false,
+      "workspace_leakage": 1.6626679409656207e-27
+    },
+    {
+      "tau": 14,
+      "qubits": 17,
+      "gates": 1282,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 369
+      },
+      "max_amplitude_error": 5.394197330877837e-14,
+      "mismatch": false,
+      "workspace_leakage": 3.987366364547891e-27
+    },
+    {
+      "tau": 15,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 5.239569621707147e-14,
+      "mismatch": false,
+      "workspace_leakage": 3.6540965994354024e-27
+    },
+    {
+      "tau": 16,
+      "qubits": 17,
+      "gates": 1275,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 362
+      },
+      "max_amplitude_error": 4.5169703213936965e-14,
+      "mismatch": false,
+      "workspace_leakage": 2.105596768016958e-27
+    },
+    {
+      "tau": 17,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 4.5325132035503764e-14,
+      "mismatch": false,
+      "workspace_leakage": 2.162142847150354e-27
+    },
+    {
+      "tau": 18,
+      "qubits": 17,
+      "gates": 1282,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 369
+      },
+      "max_amplitude_error": 4.329105721016552e-14,
+      "mismatch": false,
+      "workspace_leakage": 1.8092272589140415e-27
+    },
+    {
+      "tau": 19,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 5.5925198114787524e-14,
+      "mismatch": false,
+      "workspace_leakage": 4.638297751963861e-27
+    },
+    {
+      "tau": 20,
+      "qubits": 17,
+      "gates": 1281,
+      "depth": 262,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 368
+      },
+      "max_amplitude_error": 5.191393759921886e-14,
+      "mismatch": false,
+      "workspace_leakage": 3.539284750795278e-27
+    },
+    {
+      "tau": 21,
+      "qubits": 17,
+      "gates": 1283,
+      "depth": 263,
+      "gate_counts": {
+        "cx": 481,
+        "p": 432,
+        "u": 370
+      },
+      "max_amplitude_error": 4.883495078212866e-14,
+      "mismatch": false,
+      "workspace_leakage": 2.856970373299071e-27
+    }
+  ]
+}

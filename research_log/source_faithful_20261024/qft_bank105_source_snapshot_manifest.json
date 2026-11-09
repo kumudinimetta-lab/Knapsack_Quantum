@@ -1,0 +1,65 @@
+[
+  {
+    "source": "simulation/source_faithful_20261024/qft_bank.py",
+    "snapshot": "source_snapshot_qft_bank105\\qft_bank.py",
+    "sha256": "c24deea7cf8189dfb4870a00b5b96009310cfd4b17a3ea288d05c8a8da34f91f",
+    "identical_to_old_LP_run": null
+  },
+  {
+    "source": "simulation/source_faithful_20261024/qft_normal_form.py",
+    "snapshot": "source_snapshot_qft_bank105\\qft_normal_form.py",
+    "sha256": "becf17b6e43bc307e57dc72ed6fe9d5067fa1045da7998c1e88f194fb5ddfca1",
+    "identical_to_old_LP_run": null
+  },
+  {
+    "source": "simulation/source_faithful_20261024/width_controls.py",
+    "snapshot": "source_snapshot_qft_bank105\\width_controls.py",
+    "sha256": "0aef8efb138862d76ad50c9365f217492bac7ddfc893c44fdecfb9c36ce4fbd1",
+    "identical_to_old_LP_run": true
+  },
+  {
+    "source": "simulation/source_faithful_20261024/qft_reconstruction.py",
+    "snapshot": "source_snapshot_qft_bank105\\qft_reconstruction.py",
+    "sha256": "06965bf4480b634afe287ef9ba550041a617806aa149ece13f0c390096aa1a95",
+    "identical_to_old_LP_run": true
+  },
+  {
+    "source": "simulation/source_faithful_20261024/resource_profile.py",
+    "snapshot": "source_snapshot_qft_bank105\\resource_profile.py",
+    "sha256": "b6eb390ec0dde1f8e50d1ff9310285b5b74f5f746cc397eeb0c6ec387f9dda01",
+    "identical_to_old_LP_run": true
+  },
+  {
+    "source": "simulation/source_faithful_20261024/compressed_bank.py",
+    "snapshot": "source_snapshot_qft_bank105\\compressed_bank.py",
+    "sha256": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5",
+    "identical_to_old_LP_run": null
+  },
+  {
+    "source": "research_log/source_faithful_20261024/qft_bank_resources.py",
+    "snapshot": "source_snapshot_qft_bank105\\qft_bank_resources.py",
+    "sha256": "b72d15be8c3a5a6de11b98cd01e74f4c7a5aec05b3a2707f60039b94b41a6810",
+    "identical_to_old_LP_run": null
+  },
+  {
+    "source": "simulation/pruning_study_20261023/circuits.py",
+    "snapshot": "source_snapshot_qft_bank105\\circuits.py",
+    "sha256": "5ab166ee9a3f5db18d6f42d7e99a9341277e98e2a9e60d4569dc8ff383ae56e9",
+    "classification": "current direct dependency snapshot",
+    "identical_to_old_LP_run": true
+  },
+  {
+    "source": "simulation/pruning_study_20261023/compact_sensitivity.py",
+    "snapshot": "source_snapshot_qft_bank105\\compact_sensitivity.py",
+    "sha256": "b966a44df6bfcea206316b6c66fc2148ea62392380e5c259ad4f869417044682",
+    "classification": "current direct dependency snapshot",
+    "identical_to_old_LP_run": true
+  },
+  {
+    "source": "simulation/oracle_h/node_bound_reversible.py",
+    "snapshot": "source_snapshot_qft_bank105\\node_bound_reversible.py",
+    "sha256": "7aa8181eca1e259bc13fac7dd47ce92d53602d63696d5d6aa14736943c33da12",
+    "classification": "current direct dependency snapshot",
+    "identical_to_old_LP_run": null
+  }
+]

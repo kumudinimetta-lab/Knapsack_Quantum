@@ -1,0 +1,7 @@
+{
+  "source_hashes": {
+    "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\theory_dp_free_study.py": "d7ad87e72a5ba6f9e84f1869e436c6c138ba03f8f2f3a4d032a54503ed26fc22",
+    "C:\\CBP\\HybridQuantumKnapsack\\simulation\\source_faithful_20261024\\compressed_bank.py": "842f353079cab7618ed3b3a6150a354360c86d0ae67391a02ee5df65763ce9a5"
+  },
+  "scope": "No reachability DP; sufficient adjacent-density-group radius criteria; separate from exact finite-grid minimum compiler"
+}

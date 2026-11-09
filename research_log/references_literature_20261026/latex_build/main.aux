@@ -1,0 +1,199 @@
+\relax 
+\citation{ref2}
+\citation{ref8}
+\citation{ref11}
+\citation{ref16}
+\citation{ref17}
+\citation{bonnetain2020improved}
+\citation{ref18}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\citation{ref1}
+\citation{ref2}
+\citation{ref3}
+\citation{balas1980core}
+\citation{ref4}
+\citation{pisinger1997minimal}
+\citation{martello1999combo}
+\citation{beier2004random}
+\citation{dey2021random}
+\citation{ref8}
+\citation{ref11}
+\citation{ref12}
+\citation{ref13}
+\citation{ref9}
+\citation{ref5}
+\citation{ref16}
+\citation{ref17}
+\citation{bonnetain2020improved}
+\citation{ref18}
+\citation{hou2020}
+\citation{hamitouche2025}
+\citation{wilkening2025}
+\citation{wilkening2025code}
+\citation{ref23}
+\citation{ref25}
+\citation{ref23}
+\citation{ref26}
+\citation{ref36}
+\citation{bozejko2026}
+\citation{gabbassov2025}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-A}}Contributions and Novelty}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Literature Review}{2}{}\protected@file@percent }
+\citation{ref35}
+\citation{ref24}
+\citation{martiel2019}
+\citation{vedral1996}
+\citation{draper2000}
+\citation{cuccaro2004}
+\citation{barenco1995}
+\citation{thapliyal2016}
+\citation{erickson2019algorithms}
+\citation{ref31}
+\citation{ref33}
+\citation{wilkening2025,wilkening2025code}
+\citation{ref35,ref24}
+\citation{hou2020}
+\citation{hamitouche2025}
+\citation{wilkening2025,wilkening2025code}
+\citation{ref23}
+\citation{ref36}
+\citation{bozejko2026}
+\citation{martiel2019}
+\citation{ref1}
+\citation{ref4}
+\citation{ref11}
+\citation{ref24}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Preliminaries}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Problem Definition}{3}{}\protected@file@percent }
+\newlabel{eq:knapsack}{{1}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}LP Relaxation, Split Item, and Dantzig Bound}{3}{}\protected@file@percent }
+\newlabel{eq:split}{{2}{3}{}{}{}}
+\newlabel{eq:lpsol}{{3}{3}{}{}{}}
+\newlabel{eq:core}{{4}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Amplitude Amplification}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Quantum Branch-and-Bound (Montanaro)}{3}{}\protected@file@percent }
+\newlabel{eq:montanaro}{{5}{3}{}{}{}}
+\citation{ref4}
+\citation{ref2}
+\citation{ref24}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Related methods and the distinctions relevant to an LP-pruning oracle. These descriptions identify scope, not a ranking of performance.}}{4}{}\protected@file@percent }
+\newlabel{tab:related}{{I}{4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Reduced-Cost Variable Fixing}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Meet-in-the-Middle Framework}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Proposed Algorithm}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Phase 1: LP Preprocessing via Reduced-Cost Variable Fixing}{4}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Reduced-Cost Variable Fixing}}{4}{}\protected@file@percent }
+\newlabel{alg:filter}{{1}{4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Phase 2: Quantum Branch-and-Bound on Core}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}1}Classical B\&B Tree Structure}{4}{}\protected@file@percent }
+\citation{thapliyal2016}
+\citation{vedral1996}
+\citation{draper2000}
+\citation{barenco1995}
+\citation{ref24}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}2}Reversible LP-Bound Oracle ($h$)}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}3}Quantum Walk Application}{5}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Classical Threshold-Search Outer Loop (Phase 2)}}{5}{}\protected@file@percent }
+\newlabel{alg:qbb}{{2}{5}{}{}{}}
+\newlabel{sec:oracle-impl}{{\mbox  {IV-B}4}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}4}Reversible Knapsack Oracle (Answer-Agnostic)}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Phase 3: Classical Post-Processing}{5}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Classical Reconstruction}}{5}{}\protected@file@percent }
+\newlabel{alg:postprocess}{{3}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Overall Algorithm}{5}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces LP-Pruned Quantum B\&B Knapsack Solver}}{5}{}\protected@file@percent }
+\newlabel{alg:hybrid}{{4}{5}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Resource estimates for the LP-bound bounding oracle ($h$) at varying core sizes ($m$).}}{6}{}\protected@file@percent }
+\newlabel{tab:h_resources}{{II}{6}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Exact Logical Predicate Resources and Analytical T-Count Estimates}}{6}{}\protected@file@percent }
+\newlabel{tab:oracle}{{III}{6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Algorithmic Extensions}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-E}1}Multidimensional Knapsack Extension}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Core size ratio $\alpha $ vs. dimensionality $d$ for strongly correlated instances ($n=24$, 20 trials)}}{6}{}\protected@file@percent }
+\newlabel{tab:multidim}{{IV}{6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Theoretical Analysis}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Correctness}{6}{}\protected@file@percent }
+\newlabel{lem:precision}{{\mbox  {V-A}}{6}{}{}{}}
+\citation{bonnetain2020improved}
+\newlabel{lem:monotonicity}{{\mbox  {V-A}}{7}{}{}{}}
+\newlabel{eq:totalcomplexity}{{6}{7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Discussion: Structural Interpretation}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Comparison with Prior Work}{7}{}\protected@file@percent }
+\citation{ref3}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Comparison of Knapsack/Subset-Sum Algorithms}}{8}{}\protected@file@percent }
+\newlabel{tab:comparison}{{V}{8}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Experimental Results}{8}{}\protected@file@percent }
+\newlabel{sec:experiments}{{VI}{8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Experimental Setup}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Variable Fixing Results}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Average Core Ratio $\alpha = m/n$ by Instance Type}}{8}{}\protected@file@percent }
+\newlabel{tab:fixing}{{VI}{8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Spectral Validation of the Quantum Walk}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Taxonomy of Spectral Validation}}{9}{}\protected@file@percent }
+\newlabel{tab:measured}{{VII}{9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Classical Runtime and Memory Characterization}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Comparison Against Google OR-Tools at Scale}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-F}}Empirical Scaling of $T_{\text  {LP}}$ with LP Gap and Core Size}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Instance-Dependent Query-Complexity Behavior}{9}{}\protected@file@percent }
+\citation{ref31}
+\citation{vedral1996}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Category (a): Both Solvers Reached Certified Optimal}}{10}{}\protected@file@percent }
+\newlabel{tab:ortools_cat_a}{{VIII}{10}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Category (b): Cutoffs Reached}}{10}{}\protected@file@percent }
+\newlabel{tab:ortools_cat_b}{{IX}{10}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces Per-Class Regression Fits for $\log (T_{\text  {LP}}) \sim \log (\text  {gap}) + m$}}{10}{}\protected@file@percent }
+\newlabel{tab:tlp_regression}{{X}{10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Hardware Validation Insights}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Limitations}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VII-C}1}Resource-Estimation Crossover Analysis}{10}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces IBM Hardware Results vs. Simulator Success Probability}}{11}{}\protected@file@percent }
+\newlabel{tab:hardware}{{XI}{11}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {XII}{\ignorespaces Per-Query T-Cost Estimates ($C_Q$) and Required Crossover Thresholds ($T_{\max }$)}}{11}{}\protected@file@percent }
+\newlabel{tab:crossover}{{XII}{11}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{11}{}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{ref2}{1}
+\bibcite{ref8}{2}
+\bibcite{ref11}{3}
+\bibcite{ref16}{4}
+\bibcite{ref17}{5}
+\bibcite{bonnetain2020improved}{6}
+\bibcite{ref18}{7}
+\bibcite{ref1}{8}
+\bibcite{ref3}{9}
+\bibcite{balas1980core}{10}
+\bibcite{ref4}{11}
+\bibcite{pisinger1997minimal}{12}
+\bibcite{martello1999combo}{13}
+\bibcite{beier2004random}{14}
+\bibcite{dey2021random}{15}
+\bibcite{ref12}{16}
+\bibcite{ref13}{17}
+\bibcite{ref9}{18}
+\bibcite{ref5}{19}
+\bibcite{hou2020}{20}
+\bibcite{hamitouche2025}{21}
+\bibcite{wilkening2025}{22}
+\bibcite{wilkening2025code}{23}
+\bibcite{ref23}{24}
+\bibcite{ref25}{25}
+\bibcite{ref26}{26}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Data Availability and Reproducibility}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{12}{}\protected@file@percent }
+\bibcite{ref36}{27}
+\bibcite{bozejko2026}{28}
+\bibcite{gabbassov2025}{29}
+\bibcite{ref35}{30}
+\bibcite{ref24}{31}
+\bibcite{martiel2019}{32}
+\bibcite{vedral1996}{33}
+\bibcite{draper2000}{34}
+\bibcite{cuccaro2004}{35}
+\bibcite{barenco1995}{36}
+\bibcite{thapliyal2016}{37}
+\bibcite{erickson2019algorithms}{38}
+\bibcite{ref31}{39}
+\bibcite{ref33}{40}
+\gdef \@abspage@last{13}

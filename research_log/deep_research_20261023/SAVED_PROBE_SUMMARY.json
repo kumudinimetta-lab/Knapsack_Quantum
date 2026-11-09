@@ -1,0 +1,247 @@
+{
+  "classification": "DERIVED summary of separately classified saved outputs",
+  "scope": "Feasibility probes only. No full quantum walk, hardware job, runtime advantage or established novelty.",
+  "circuit_checks": {
+    "baseline_fixedpoint_wrapper": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    },
+    "exact_wrapper_initial_wasted_arithmetic": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    },
+    "exact_wrapper_skip_assigned_only": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    },
+    "exact_crossproduct_wrapper": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    },
+    "exact_crossproduct_single_scan": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    },
+    "root_dual_single_scan": {
+      "classification": "SIMULATED",
+      "instances": 5,
+      "columns": 17920,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0
+    }
+  },
+  "first_circuit_instance": {
+    "weights": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "values": [
+      3,
+      4,
+      5,
+      8
+    ],
+    "capacity": 8,
+    "dual_bound_check": {
+      "classification": "SIMULATED",
+      "feasible_prefixes": 24,
+      "lp_exceeds_dual": 0
+    }
+  },
+  "first_instance_resources": {
+    "baseline_fixedpoint_wrapper": {
+      "qubits": 591,
+      "gates": 9228,
+      "gate_depth": 1622,
+      "gate_counts": {
+        "x": 662,
+        "cx": 6441,
+        "ccx": 2125
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    "exact_wrapper_initial_wasted_arithmetic": {
+      "qubits": 697,
+      "gates": 17024,
+      "gate_depth": 2342,
+      "gate_counts": {
+        "x": 1978,
+        "cx": 11829,
+        "ccx": 3217
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    "exact_wrapper_skip_assigned_only": {
+      "qubits": 510,
+      "gates": 8676,
+      "gate_depth": 1722,
+      "gate_counts": {
+        "x": 1226,
+        "cx": 5797,
+        "ccx": 1653
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    "exact_crossproduct_wrapper": {
+      "qubits": 510,
+      "gates": 8676,
+      "gate_depth": 1722,
+      "gate_counts": {
+        "x": 1226,
+        "cx": 5797,
+        "ccx": 1653
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    "exact_crossproduct_single_scan": {
+      "qubits": 881,
+      "gates": 2875,
+      "gate_depth": 433,
+      "gate_counts": {
+        "x": 302,
+        "cx": 1975,
+        "ccx": 598
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    },
+    "root_dual_single_scan": {
+      "qubits": 189,
+      "gates": 595,
+      "gate_depth": 115,
+      "gate_counts": {
+        "x": 122,
+        "cx": 363,
+        "ccx": 110
+      },
+      "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+    }
+  },
+  "resource_only_cases": 3,
+  "exact_falsification": {
+    "instances": 120,
+    "prefix_cases": 7012,
+    "upper_bound_failures": 0,
+    "unsafe_rejects": 0,
+    "dual_versus_lp_tree_failures": 0,
+    "certificate_failures": 0,
+    "finite_bank_lp_mismatches": 0,
+    "first_failures": []
+  },
+  "tree_rows": 90,
+  "tree_caps": {
+    "simple": 30,
+    "dual": 11,
+    "lp": 8
+  },
+  "cheap_certificate_improves_full_binary_bound": 75,
+  "root_rejected_rows": 11,
+  "completed_dual_lp_node_ratios": {
+    "uncorrelated": {
+      "count": 18,
+      "median": 2.756431129925106,
+      "maximum": 7.742857142857143
+    },
+    "weakly_correlated": {
+      "count": 18,
+      "median": 3.4550375939849625,
+      "maximum": 5.920634920634921
+    },
+    "strongly_correlated": {
+      "count": 13,
+      "median": 1.4245865218464577,
+      "maximum": 2.203883495145631
+    },
+    "subset_sum": {
+      "count": 12,
+      "median": 1.0,
+      "maximum": 1.725861533685191
+    },
+    "inverse_strongly": {
+      "count": 18,
+      "median": 8.006451612903225,
+      "maximum": 18.971014492753625
+    }
+  },
+  "dual_bank_tree_only": {
+    "1": {
+      "all_rows": 90,
+      "caps": 11,
+      "completed_pairs_vs_one": 79,
+      "median_node_reduction_factor": 1.0,
+      "maximum_node_reduction_factor": 1.0,
+      "strictly_smaller_completed_pairs": 0,
+      "actual_distinct_multiplier_counts": [
+        1
+      ]
+    },
+    "2": {
+      "all_rows": 90,
+      "caps": 9,
+      "completed_pairs_vs_one": 79,
+      "median_node_reduction_factor": 1.3157894736842106,
+      "maximum_node_reduction_factor": 3.032520325203252,
+      "strictly_smaller_completed_pairs": 65,
+      "actual_distinct_multiplier_counts": [
+        2
+      ]
+    },
+    "4": {
+      "all_rows": 90,
+      "caps": 8,
+      "completed_pairs_vs_one": 79,
+      "median_node_reduction_factor": 1.6618705035971224,
+      "maximum_node_reduction_factor": 4.545787545787546,
+      "strictly_smaller_completed_pairs": 66,
+      "actual_distinct_multiplier_counts": [
+        2,
+        4
+      ]
+    }
+  },
+  "hardware_compiler_version": "2.4.2",
+  "hardware_literal_input_count": 8,
+  "hardware_compilation_failures": [],
+  "hardware_compiler_resources": {
+    "all_to_all": {
+      "minimum_two_qubit_gates": 377,
+      "maximum_two_qubit_gates": 847
+    },
+    "path": {
+      "minimum_two_qubit_gates": 991,
+      "maximum_two_qubit_gates": 2647
+    }
+  },
+  "hardware_zero_fixing_inputs": 6,
+  "hardware_empty_core_inputs": 1,
+  "hardware_marked_set_checks": 133,
+  "hardware_marked_set_mismatches": 0,
+  "hardware_greedy_threshold_has_suboptimal_marked": 7,
+  "raw_probe_sha256": {
+    "circuit_feasibility_probe_results.json": "76129f81593bba7fe16c82a4fb5b27f4c9d32ae2c4f63bee3752fa1b588521ac",
+    "theory_probe_results.json": "098f1a6f759351c4be3a4dd31b46b9798a77084f279869db933f82c514f7af5c",
+    "theory_bank_probe_results.json": "3b94e7dd914f9aa450f5d9525c09685b9af459e73f1d35d64dca8941be45f52e",
+    "hardware_compile_pilot.json": "3b443d81a698f72a82c4d8a784c75732b79e61ba6f2133af4516ab7247267fee"
+  },
+  "paper_sha256": {
+    "main.tex": "593c2b22a7aac7b8d0106dd6a804b40cb37634ed78395d4f1eb74ab8c5cf9dc1",
+    "references.bib": "2129e91caedb7322581d0333aae4af50d5126bfd6b02b6da7dba4ec1d694987b",
+    "main.pdf": "2c26c61db6a2756d8cee0ab5d6851851f7ba0de0a61e0e3abca9373e6875e231"
+  }
+}

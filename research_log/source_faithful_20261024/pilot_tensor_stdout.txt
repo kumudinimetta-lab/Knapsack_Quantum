@@ -1,0 +1,39 @@
+Dense kernels passed 1848
+0 qft_direct COMPLETED 16 0
+0 qft_source_generic COMPLETED 16 0
+0 compact_exact COMPLETED 16 0
+0 compact_dual COMPLETED 16 0
+1 qft_direct COMPLETED 16 0
+1 qft_source_generic COMPLETED 16 0
+1 compact_exact COMPLETED 16 0
+1 compact_dual COMPLETED 16 0
+2 qft_direct COMPLETED 8 0
+2 qft_source_generic COMPLETED 8 0
+2 compact_exact COMPLETED 8 0
+2 compact_dual COMPLETED 8 0
+3 qft_direct COMPLETED 16 0
+3 qft_source_generic COMPLETED 16 0
+3 compact_exact COMPLETED 16 0
+3 compact_dual COMPLETED 16 0
+4 qft_direct COMPLETED 32 0
+4 qft_source_generic COMPLETED 32 0
+4 compact_exact COMPLETED 32 0
+4 compact_dual COMPLETED 32 0
+5 qft_direct COMPLETED 32 0
+5 qft_source_generic COMPLETED 32 0
+5 compact_exact COMPLETED 32 0
+5 compact_dual COMPLETED 32 0
+6 qft_direct COMPLETED 32 0
+6 qft_source_generic COMPLETED 32 0
+6 compact_exact COMPLETED 32 0
+6 compact_dual COMPLETED 32 0
+{
+  "classification": "SIMULATED",
+  "dense_kernel_columns": 1848,
+  "dense_kernel_failures": 0,
+  "full_method_cases": 28,
+  "full_compiled_columns": 608,
+  "full_predicate_or_cleanup_failures": 0,
+  "max_expected_amplitude_error": 5.380140805971122e-13,
+  "seconds_measured": 36.69972790000611
+}

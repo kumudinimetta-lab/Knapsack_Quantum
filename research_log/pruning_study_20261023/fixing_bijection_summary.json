@@ -1,0 +1,97 @@
+{
+  "scope": "Exact fixing preservation for every feasible assignment value>=greedy L",
+  "taxonomy": {
+    "reference_and_counts": "DERIVED exact enumeration",
+    "host_seconds": "MEASURED",
+    "input_domains_and_seeds": "HARDCODED"
+  },
+  "source_sha256": "49680352a2223d29283b2888549b078f005409c181a38f59de98d8250e1ad774",
+  "seed": 2026102309,
+  "counts": {
+    "exhaustive_tiny": {
+      "instances": 6356,
+      "opposite_LP_checks": 18504,
+      "original_encodings": 48674,
+      "feasible_assignments": 30512,
+      "good_assignments": 7946,
+      "residual_encodings": 13002,
+      "threshold_set_checks": 27962,
+      "empty_core_cases": 4342,
+      "all_fit_cases": 1640,
+      "greedy_nonprefix_cases": 259,
+      "cases_with_below_L_losses": 4360,
+      "failure_cases": 0,
+      "failure_count": 0
+    },
+    "explicit_adversarial": {
+      "instances": 8,
+      "opposite_LP_checks": 19,
+      "original_encodings": 49,
+      "feasible_assignments": 33,
+      "good_assignments": 12,
+      "residual_encodings": 27,
+      "threshold_set_checks": 23,
+      "empty_core_cases": 3,
+      "all_fit_cases": 2,
+      "greedy_nonprefix_cases": 2,
+      "cases_with_below_L_losses": 4,
+      "failure_cases": 0,
+      "failure_count": 0
+    },
+    "seeded_random": {
+      "instances": 300,
+      "opposite_LP_checks": 1162,
+      "original_encodings": 16751,
+      "feasible_assignments": 7615,
+      "good_assignments": 371,
+      "residual_encodings": 1445,
+      "threshold_set_checks": 946,
+      "empty_core_cases": 177,
+      "all_fit_cases": 54,
+      "greedy_nonprefix_cases": 36,
+      "cases_with_below_L_losses": 195,
+      "failure_cases": 0,
+      "failure_count": 0
+    }
+  },
+  "first_failures": [],
+  "rejected_claim_counterexamples": [
+    {
+      "claim": "Fixing preserves all feasible assignments even below L",
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "L": 1,
+      "fixed_in": [
+        0
+      ],
+      "lost_assignment_at_tau0": 0
+    },
+    {
+      "claim": "Opposite upper<=L safely preserves all >=L assignments",
+      "weights": [
+        1,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ],
+      "capacity": 1,
+      "L": 1,
+      "opposite_upper": "1",
+      "good_assignments": [
+        1,
+        2
+      ],
+      "reason": "Equality is attainable, so strict inequality cannot be replaced by nonstrict."
+    }
+  ],
+  "host_seconds": 1.8981399000040255,
+  "source_unchanged": true,
+  "rows_sha256": "b7daa6c9f5138e613ed8b56c6f7af2401bf3a8edf43cf9302584dfbd56581de1"
+}

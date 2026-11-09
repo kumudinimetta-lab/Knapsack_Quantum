@@ -1,0 +1,28 @@
+{
+  "classification": "DERIVED_EXACT_ADVERSARIAL_CHECKS",
+  "precision_cases": 84794,
+  "precision_failures": 0,
+  "random_instances": 1000,
+  "containment_checks": 4141,
+  "containment_failures": 0,
+  "nonnecessity_counterexample": "All integral or dyadic efficiencies can be exact below the sufficient k bound.",
+  "truncated_sort_counterexample": {
+    "weights": [
+      2,
+      3
+    ],
+    "values": [
+      1,
+      2
+    ],
+    "k": 1,
+    "exact_order": [
+      1,
+      0
+    ],
+    "truncated_tie_order": [
+      0,
+      1
+    ]
+  }
+}

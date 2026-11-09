@@ -1,0 +1,113 @@
+{
+  "classification": "DERIVED_EXPLORATORY_STATISTICS",
+  "response": "log(core_nodes)",
+  "predictors": [
+    "log(exact LP minus DP optimum)",
+    "core size"
+  ],
+  "cross_validation": "5-fold GroupKFold, grouping same n/seed across classes",
+  "models": [
+    {
+      "class": "pooled",
+      "total": 700,
+      "excluded_zero_gap": 141,
+      "capped": 0,
+      "included": 559,
+      "r2": 0.7834481561753809,
+      "cv_mean_r2": 0.7761700585717515,
+      "coefficients": {
+        "Intercept": 0.7777471015660684,
+        "log_gap": 0.4154274025546709,
+        "m": 0.22881744578758495
+      },
+      "pvalues": {
+        "Intercept": 8.24008601797864e-13,
+        "log_gap": 6.579235411433381e-21,
+        "m": 2.748135928734412e-184
+      }
+    },
+    {
+      "class": "uncorrelated",
+      "total": 140,
+      "excluded_zero_gap": 0,
+      "capped": 0,
+      "included": 140,
+      "r2": 0.8716219834015444,
+      "cv_mean_r2": 0.8610760112906993,
+      "coefficients": {
+        "Intercept": 0.47163605476322157,
+        "log_gap": 0.2290117888805275,
+        "m": 0.2901478819793939
+      },
+      "pvalues": {
+        "Intercept": 0.00017808767600635553,
+        "log_gap": 5.25866377293617e-05,
+        "m": 3.2741615262888024e-53
+      }
+    },
+    {
+      "class": "weakly_correlated",
+      "total": 140,
+      "excluded_zero_gap": 1,
+      "capped": 0,
+      "included": 139,
+      "r2": 0.8023161841995223,
+      "cv_mean_r2": 0.7751736367037049,
+      "coefficients": {
+        "Intercept": 1.5165074067786866,
+        "log_gap": 0.5274166589029904,
+        "m": 0.15425344920173842
+      },
+      "pvalues": {
+        "Intercept": 5.713093225478325e-21,
+        "log_gap": 1.368056068366871e-12,
+        "m": 4.4680698390281344e-43
+      }
+    },
+    {
+      "class": "strongly_correlated",
+      "total": 140,
+      "excluded_zero_gap": 0,
+      "capped": 0,
+      "included": 140,
+      "r2": 0.7013824368744854,
+      "cv_mean_r2": 0.6174903710759378,
+      "coefficients": {
+        "Intercept": 1.3713605931452464,
+        "log_gap": 1.1777017984125078,
+        "m": 0.14512294902117734
+      },
+      "pvalues": {
+        "Intercept": 1.4024892536552871e-06,
+        "log_gap": 1.3343340116610812e-21,
+        "m": 3.2749804281017494e-16
+      }
+    },
+    {
+      "class": "subset_sum",
+      "total": 140,
+      "excluded_zero_gap": 140,
+      "capped": 0,
+      "included": 0
+    },
+    {
+      "class": "inverse_strongly",
+      "total": 140,
+      "excluded_zero_gap": 0,
+      "capped": 0,
+      "included": 140,
+      "r2": 0.7700402163592209,
+      "cv_mean_r2": 0.6879508330388099,
+      "coefficients": {
+        "Intercept": 1.3149870053523363,
+        "log_gap": 0.8080779928719807,
+        "m": 0.16387198415933454
+      },
+      "pvalues": {
+        "Intercept": 6.7084744341826904e-12,
+        "log_gap": 3.3536175083906936e-13,
+        "m": 2.27803352154395e-28
+      }
+    }
+  ]
+}

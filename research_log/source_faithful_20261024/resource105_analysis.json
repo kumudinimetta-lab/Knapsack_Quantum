@@ -1,0 +1,421 @@
+{
+  "scope": "DERIVED serial unmerged controls; no full-walk/hardware/compiler-optimality claim",
+  "rows": 735,
+  "status_counts": {
+    "COMPLETED": 735
+  },
+  "comparisons": [
+    {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 105,
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.1069182389937107,
+          "min_ratio": 1.0675675675675675,
+          "max_ratio": 1.123076923076923,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "u": {
+          "median_ratio": 4.007140188910828,
+          "min_ratio": 2.67812998717026,
+          "max_ratio": 4.274380614500929,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "cx": {
+          "median_ratio": 2.7772603271353398,
+          "min_ratio": 1.8489768307119905,
+          "max_ratio": 2.972220692043156,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "common_depth": {
+          "median_ratio": 0.47916501029161035,
+          "min_ratio": 0.45871727438108045,
+          "max_ratio": 0.5233138012716619,
+          "numerator_lower": 105,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    },
+    {
+      "numerator": "qft_source_generic_normalized",
+      "denominator": "qft_direct_normalized",
+      "total_inputs": 105,
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.00625,
+          "min_ratio": 1.0053191489361701,
+          "max_ratio": 1.0084745762711864,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "u": {
+          "median_ratio": 1.001207305747601,
+          "min_ratio": 1.0009102437430468,
+          "max_ratio": 1.0057816971325118,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "cx": {
+          "median_ratio": 1.0014488773190993,
+          "min_ratio": 1.0010908022990757,
+          "max_ratio": 1.0070460125974166,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        },
+        "common_depth": {
+          "median_ratio": 1.0027603274319437,
+          "min_ratio": 1.0010476536922517,
+          "max_ratio": 1.020149047750483,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 105
+        }
+      }
+    },
+    {
+      "numerator": "qft_direct_normalized",
+      "denominator": "qft_direct_conservative",
+      "total_inputs": 105,
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.8108108108108109,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "u": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.4830840682276836,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "cx": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.4757680344283949,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.6995715394217469,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        }
+      }
+    },
+    {
+      "numerator": "compact_exact_normalized",
+      "denominator": "compact_exact_conservative",
+      "total_inputs": 105,
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.8409090909090909,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "u": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.7289692276523423,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "cx": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.7406193796348765,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 1.0,
+          "min_ratio": 0.7268233246301131,
+          "max_ratio": 1.0,
+          "numerator_lower": 29,
+          "tied": 76,
+          "numerator_higher": 0
+        }
+      }
+    },
+    {
+      "numerator": "compact_root_dual",
+      "denominator": "qft_direct_normalized",
+      "total_inputs": 105,
+      "paired": 105,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 0.41911764705882354,
+          "min_ratio": 0.34946236559139787,
+          "max_ratio": 0.4533333333333333,
+          "numerator_lower": 105,
+          "tied": 0,
+          "numerator_higher": 0
+        },
+        "u": {
+          "median_ratio": 0.022836571787706917,
+          "min_ratio": 0.014344640285087461,
+          "max_ratio": 0.042402290120932405,
+          "numerator_lower": 105,
+          "tied": 0,
+          "numerator_higher": 0
+        },
+        "cx": {
+          "median_ratio": 0.0319738789290583,
+          "min_ratio": 0.019848876043285384,
+          "max_ratio": 0.05912375377298088,
+          "numerator_lower": 105,
+          "tied": 0,
+          "numerator_higher": 0
+        },
+        "common_depth": {
+          "median_ratio": 0.19702472668574364,
+          "min_ratio": 0.1285381047287937,
+          "max_ratio": 0.26164882463304273,
+          "numerator_lower": 105,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    }
+  ],
+  "by_class": {
+    "inverse_strongly": {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 21,
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.1103896103896105,
+          "min_ratio": 1.0994152046783625,
+          "max_ratio": 1.123076923076923,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "u": {
+          "median_ratio": 4.039587886356541,
+          "min_ratio": 3.989499290492601,
+          "max_ratio": 4.249950029411261,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "cx": {
+          "median_ratio": 2.8049302605612603,
+          "min_ratio": 2.7673061698135717,
+          "max_ratio": 2.966301415120313,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "common_depth": {
+          "median_ratio": 0.48014140153878143,
+          "min_ratio": 0.46765993265993266,
+          "max_ratio": 0.4992484680309862,
+          "numerator_lower": 21,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    },
+    "strongly_correlated": {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 21,
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.1103896103896105,
+          "min_ratio": 1.1005917159763314,
+          "max_ratio": 1.121212121212121,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "u": {
+          "median_ratio": 4.182736974262398,
+          "min_ratio": 3.790731847179414,
+          "max_ratio": 4.230305220783429,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "cx": {
+          "median_ratio": 2.891424399975481,
+          "min_ratio": 2.6103507148784373,
+          "max_ratio": 2.926312097223464,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "common_depth": {
+          "median_ratio": 0.4745553453169347,
+          "min_ratio": 0.46242295141406814,
+          "max_ratio": 0.4877740234053074,
+          "numerator_lower": 21,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    },
+    "subset_sum": {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 21,
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.0763358778625953,
+          "min_ratio": 1.0675675675675675,
+          "max_ratio": 1.0826446280991735,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "u": {
+          "median_ratio": 2.9194109686150673,
+          "min_ratio": 2.67812998717026,
+          "max_ratio": 2.9659466822338976,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "cx": {
+          "median_ratio": 2.0151901810669584,
+          "min_ratio": 1.8489768307119905,
+          "max_ratio": 2.042595499738357,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "common_depth": {
+          "median_ratio": 0.49880511960293206,
+          "min_ratio": 0.47277364212848083,
+          "max_ratio": 0.5233138012716619,
+          "numerator_lower": 21,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    },
+    "uncorrelated": {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 21,
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.1073825503355705,
+          "min_ratio": 1.1005917159763314,
+          "max_ratio": 1.121212121212121,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "u": {
+          "median_ratio": 4.007119113946196,
+          "min_ratio": 3.7758752434968845,
+          "max_ratio": 4.225538950218705,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "cx": {
+          "median_ratio": 2.7689420848312634,
+          "min_ratio": 2.6031103414264907,
+          "max_ratio": 2.923279230016585,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "common_depth": {
+          "median_ratio": 0.47061489846663906,
+          "min_ratio": 0.45871727438108045,
+          "max_ratio": 0.48800691493193116,
+          "numerator_lower": 21,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    },
+    "weakly_correlated": {
+      "numerator": "qft_direct_normalized",
+      "denominator": "compact_exact_normalized",
+      "total_inputs": 21,
+      "paired": 21,
+      "incomplete_pair_ids": [],
+      "metrics": {
+        "qubits": {
+          "median_ratio": 1.1103896103896105,
+          "min_ratio": 1.1005917159763314,
+          "max_ratio": 1.121212121212121,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "u": {
+          "median_ratio": 4.018526043312716,
+          "min_ratio": 3.7954391086318773,
+          "max_ratio": 4.274380614500929,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "cx": {
+          "median_ratio": 2.785823738748168,
+          "min_ratio": 2.6439157141746366,
+          "max_ratio": 2.972220692043156,
+          "numerator_lower": 0,
+          "tied": 0,
+          "numerator_higher": 21
+        },
+        "common_depth": {
+          "median_ratio": 0.47916501029161035,
+          "min_ratio": 0.4671277627482007,
+          "max_ratio": 0.5077626517402621,
+          "numerator_lower": 21,
+          "tied": 0,
+          "numerator_higher": 0
+        }
+      }
+    }
+  }
+}

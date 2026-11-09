@@ -1,0 +1,28 @@
+Exhaustive case 0: 8 methods
+Exhaustive case 1: 8 methods
+Exhaustive case 2: 8 methods
+Exhaustive case 3: 8 methods
+Exhaustive case 4: 8 methods
+Exhaustive case 5: 8 methods
+Exhaustive case 6: 8 methods
+Exhaustive case 7: 8 methods
+Exhaustive case 8: 8 methods
+Exhaustive case 9: 8 methods
+Exhaustive case 10: 8 methods
+Exhaustive case 11: 8 methods
+Exhaustive case 12: 8 methods
+Exhaustive case 13: 8 methods
+Exhaustive case 14: 8 methods
+Exhaustive case 15: 8 methods
+Randomized case 0: 8 methods
+Randomized case 1: 8 methods
+Randomized case 2: 8 methods
+Randomized case 3: 8 methods
+{
+  "classification": "SIMULATED",
+  "completed_method_cases": 160,
+  "columns": 422144,
+  "predicate_mismatches": 0,
+  "dirty_columns": 0,
+  "elapsed_seconds_measured": 15.703098700003466
+}

@@ -1,0 +1,172 @@
+{
+  "cases": [
+    {
+      "id": "uncorrelated_n12_s12000_R100_scale1000",
+      "base_id": "uncorrelated_n12_s12000_R100",
+      "weight_gcd": 1000,
+      "value_gcd": 1000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100_scale1000000",
+      "base_id": "uncorrelated_n12_s12000_R100",
+      "weight_gcd": 1000000,
+      "value_gcd": 1000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "uncorrelated_n12_s12000_R100_scale1000000000",
+      "base_id": "uncorrelated_n12_s12000_R100",
+      "weight_gcd": 1000000000,
+      "value_gcd": 1000000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "weakly_correlated_n12_s12000_R100_scale1000",
+      "base_id": "weakly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000,
+      "value_gcd": 1000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "weakly_correlated_n12_s12000_R100_scale1000000",
+      "base_id": "weakly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000000,
+      "value_gcd": 1000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "weakly_correlated_n12_s12000_R100_scale1000000000",
+      "base_id": "weakly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000000000,
+      "value_gcd": 1000000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "strongly_correlated_n12_s12000_R100_scale1000",
+      "base_id": "strongly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000,
+      "value_gcd": 1000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "strongly_correlated_n12_s12000_R100_scale1000000",
+      "base_id": "strongly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000000,
+      "value_gcd": 1000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "strongly_correlated_n12_s12000_R100_scale1000000000",
+      "base_id": "strongly_correlated_n12_s12000_R100",
+      "weight_gcd": 1000000000,
+      "value_gcd": 1000000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "subset_sum_n12_s12000_R100_scale1000",
+      "base_id": "subset_sum_n12_s12000_R100",
+      "weight_gcd": 1000,
+      "value_gcd": 1000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "subset_sum_n12_s12000_R100_scale1000000",
+      "base_id": "subset_sum_n12_s12000_R100",
+      "weight_gcd": 1000000,
+      "value_gcd": 1000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "subset_sum_n12_s12000_R100_scale1000000000",
+      "base_id": "subset_sum_n12_s12000_R100",
+      "weight_gcd": 1000000000,
+      "value_gcd": 1000000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 292,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "inverse_strongly_n12_s12000_R100_scale1000",
+      "base_id": "inverse_strongly_n12_s12000_R100",
+      "weight_gcd": 1000,
+      "value_gcd": 1000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 352,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "inverse_strongly_n12_s12000_R100_scale1000000",
+      "base_id": "inverse_strongly_n12_s12000_R100",
+      "weight_gcd": 1000000,
+      "value_gcd": 1000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 352,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    },
+    {
+      "id": "inverse_strongly_n12_s12000_R100_scale1000000000",
+      "base_id": "inverse_strongly_n12_s12000_R100",
+      "weight_gcd": 1000000000,
+      "value_gcd": 1000000000,
+      "normalized_arrays_equal_base": true,
+      "normalized_capacity": 352,
+      "threshold_map": "ceil(tau/value_gcd)",
+      "capacity_map": "floor(capacity/weight_gcd)",
+      "classification": "DERIVED exact integer normalization identity"
+    }
+  ],
+  "mismatches": 0,
+  "scope": "Uniform scaling is an encoding control, not independently hard data; circuits can compile the identical normalized arrays",
+  "source_sha256": "47900afa72ad21b83d3a91b8fdc9d2dd96df253f259223f3e30581dd015997a5"
+}

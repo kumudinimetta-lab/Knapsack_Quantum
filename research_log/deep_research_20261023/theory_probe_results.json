@@ -1,0 +1,6411 @@
+{
+  "description": "Isolated theory feasibility pilot; NOT quantum execution.",
+  "taxonomy": {
+    "tree_counts": "MEASURED (classical enumeration)",
+    "certificate_bounds": "DERIVED (exact integer computation)",
+    "optimum": "DERIVED (exact classical DP)",
+    "cap": "HARDCODED 50000 nodes per tree"
+  },
+  "falsification": {
+    "instances": 120,
+    "prefix_cases": 7012,
+    "upper_bound_failures": 0,
+    "unsafe_rejects": 0,
+    "dual_versus_lp_tree_failures": 0,
+    "certificate_failures": 0,
+    "finite_bank_lp_mismatches": 0,
+    "first_failures": []
+  },
+  "rows": [
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        5,
+        45,
+        88,
+        98,
+        40,
+        33,
+        1,
+        41,
+        2,
+        62,
+        86,
+        43
+      ],
+      "capacity": 292,
+      "optimum": 393,
+      "incumbent": 392,
+      "target_kind": "incumbent_plus_one",
+      "tau": 393,
+      "multiplier": [
+        31,
+        49
+      ],
+      "exact_certificate": 141,
+      "cheap_certificate": 231,
+      "dpstates": 57,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 185,
+          "marked": 1,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 65,
+          "marked": 1,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 37,
+          "marked": 1,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        5,
+        45,
+        88,
+        98,
+        40,
+        33,
+        1,
+        41,
+        2,
+        62,
+        86,
+        43
+      ],
+      "capacity": 292,
+      "optimum": 393,
+      "incumbent": 392,
+      "target_kind": "optimum_plus_one",
+      "tau": 394,
+      "multiplier": [
+        31,
+        49
+      ],
+      "exact_certificate": 109,
+      "cheap_certificate": 193,
+      "dpstates": 45,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 183,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 47,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 21,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        50,
+        69,
+        47,
+        57,
+        82,
+        26,
+        50,
+        58,
+        28,
+        47,
+        72,
+        75
+      ],
+      "capacity": 280,
+      "optimum": 510,
+      "incumbent": 485,
+      "target_kind": "incumbent_plus_one",
+      "tau": 486,
+      "multiplier": [
+        72,
+        71
+      ],
+      "exact_certificate": 383,
+      "cheap_certificate": 879,
+      "dpstates": 147,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 567,
+          "marked": 5,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 359,
+          "marked": 5,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 119,
+          "marked": 5,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        50,
+        69,
+        47,
+        57,
+        82,
+        26,
+        50,
+        58,
+        28,
+        47,
+        72,
+        75
+      ],
+      "capacity": 280,
+      "optimum": 510,
+      "incumbent": 485,
+      "target_kind": "optimum_plus_one",
+      "tau": 511,
+      "multiplier": [
+        72,
+        71
+      ],
+      "exact_certificate": 107,
+      "cheap_certificate": 137,
+      "dpstates": 41,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 371,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 101,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 37,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        67,
+        92,
+        35,
+        67,
+        70,
+        63,
+        68,
+        64,
+        51,
+        66,
+        86,
+        71
+      ],
+      "capacity": 226,
+      "optimum": 536,
+      "incumbent": 532,
+      "target_kind": "incumbent_plus_one",
+      "tau": 533,
+      "multiplier": [
+        17,
+        12
+      ],
+      "exact_certificate": 241,
+      "cheap_certificate": 913,
+      "dpstates": 91,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 1499,
+          "marked": 4,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 183,
+          "marked": 4,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 117,
+          "marked": 4,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        67,
+        92,
+        35,
+        67,
+        70,
+        63,
+        68,
+        64,
+        51,
+        66,
+        86,
+        71
+      ],
+      "capacity": 226,
+      "optimum": 536,
+      "incumbent": 532,
+      "target_kind": "optimum_plus_one",
+      "tau": 537,
+      "multiplier": [
+        17,
+        12
+      ],
+      "exact_certificate": 197,
+      "cheap_certificate": 425,
+      "dpstates": 73,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 1447,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 145,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 81,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        22,
+        96,
+        63,
+        23,
+        9,
+        20,
+        1,
+        25,
+        7,
+        98,
+        87,
+        94
+      ],
+      "capacity": 292,
+      "optimum": 291,
+      "incumbent": 291,
+      "target_kind": "incumbent_plus_one",
+      "tau": 292,
+      "multiplier": [
+        47,
+        49
+      ],
+      "exact_certificate": 997,
+      "cheap_certificate": 2433,
+      "dpstates": 315,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 349,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 373,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 63,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        22,
+        96,
+        63,
+        23,
+        9,
+        20,
+        1,
+        25,
+        7,
+        98,
+        87,
+        94
+      ],
+      "capacity": 292,
+      "optimum": 291,
+      "incumbent": 291,
+      "target_kind": "optimum_plus_one",
+      "tau": 292,
+      "multiplier": [
+        47,
+        49
+      ],
+      "exact_certificate": 997,
+      "cheap_certificate": 2433,
+      "dpstates": 315,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 349,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 373,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 63,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        29,
+        44,
+        36,
+        57,
+        17,
+        79,
+        83,
+        11,
+        103,
+        17,
+        70,
+        43
+      ],
+      "capacity": 280,
+      "optimum": 313,
+      "incumbent": 289,
+      "target_kind": "incumbent_plus_one",
+      "tau": 290,
+      "multiplier": [
+        103,
+        99
+      ],
+      "exact_certificate": 7031,
+      "cheap_certificate": 8063,
+      "dpstates": 2850,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 2553,
+          "marked": 105,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 4783,
+          "marked": 105,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 2059,
+          "marked": 105,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        29,
+        44,
+        36,
+        57,
+        17,
+        79,
+        83,
+        11,
+        103,
+        17,
+        70,
+        43
+      ],
+      "capacity": 280,
+      "optimum": 313,
+      "incumbent": 289,
+      "target_kind": "optimum_plus_one",
+      "tau": 314,
+      "multiplier": [
+        103,
+        99
+      ],
+      "exact_certificate": 309,
+      "cheap_certificate": 933,
+      "dpstates": 107,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 1895,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 219,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 69,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        50,
+        8,
+        5,
+        6,
+        50,
+        95,
+        42,
+        15,
+        14,
+        29,
+        43,
+        53
+      ],
+      "capacity": 226,
+      "optimum": 234,
+      "incumbent": 233,
+      "target_kind": "incumbent_plus_one",
+      "tau": 234,
+      "multiplier": [
+        50,
+        57
+      ],
+      "exact_certificate": 325,
+      "cheap_certificate": 453,
+      "dpstates": 100,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 251,
+          "marked": 1,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 69,
+          "marked": 1,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 39,
+          "marked": 1,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        50,
+        8,
+        5,
+        6,
+        50,
+        95,
+        42,
+        15,
+        14,
+        29,
+        43,
+        53
+      ],
+      "capacity": 226,
+      "optimum": 234,
+      "incumbent": 233,
+      "target_kind": "optimum_plus_one",
+      "tau": 235,
+      "multiplier": [
+        50,
+        57
+      ],
+      "exact_certificate": 261,
+      "cheap_certificate": 325,
+      "dpstates": 79,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 251,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 57,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 27,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "capacity": 292,
+      "optimum": 371,
+      "incumbent": 298,
+      "target_kind": "incumbent_plus_one",
+      "tau": 299,
+      "multiplier": [
+        87,
+        77
+      ],
+      "exact_certificate": 8191,
+      "cheap_certificate": 8191,
+      "dpstates": 1558,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5973,
+          "marked": 690,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 6717,
+          "marked": 690,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 5973,
+          "marked": 690,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "capacity": 292,
+      "optimum": 371,
+      "incumbent": 298,
+      "target_kind": "optimum_plus_one",
+      "tau": 372,
+      "multiplier": [
+        87,
+        77
+      ],
+      "exact_certificate": 413,
+      "cheap_certificate": 553,
+      "dpstates": 144,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 4837,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 357,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 231,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        32,
+        60,
+        42,
+        60,
+        20,
+        85,
+        96,
+        21,
+        109,
+        31,
+        81,
+        44
+      ],
+      "capacity": 280,
+      "optimum": 360,
+      "incumbent": 310,
+      "target_kind": "incumbent_plus_one",
+      "tau": 311,
+      "multiplier": [
+        81,
+        71
+      ],
+      "exact_certificate": 8191,
+      "cheap_certificate": 8191,
+      "dpstates": 1272,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5903,
+          "marked": 424,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 6831,
+          "marked": 424,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 5903,
+          "marked": 424,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        32,
+        60,
+        42,
+        60,
+        20,
+        85,
+        96,
+        21,
+        109,
+        31,
+        81,
+        44
+      ],
+      "capacity": 280,
+      "optimum": 360,
+      "incumbent": 310,
+      "target_kind": "optimum_plus_one",
+      "tau": 361,
+      "multiplier": [
+        81,
+        71
+      ],
+      "exact_certificate": 169,
+      "cheap_certificate": 519,
+      "dpstates": 58,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 4951,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 123,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 93,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        68,
+        26,
+        23,
+        21,
+        67,
+        97,
+        58,
+        34,
+        28,
+        45,
+        52,
+        53
+      ],
+      "capacity": 226,
+      "optimum": 306,
+      "incumbent": 282,
+      "target_kind": "incumbent_plus_one",
+      "tau": 283,
+      "multiplier": [
+        29,
+        24
+      ],
+      "exact_certificate": 6877,
+      "cheap_certificate": 8191,
+      "dpstates": 744,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5693,
+          "marked": 101,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 5771,
+          "marked": 101,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 4051,
+          "marked": 101,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        68,
+        26,
+        23,
+        21,
+        67,
+        97,
+        58,
+        34,
+        28,
+        45,
+        52,
+        53
+      ],
+      "capacity": 226,
+      "optimum": 306,
+      "incumbent": 282,
+      "target_kind": "optimum_plus_one",
+      "tau": 307,
+      "multiplier": [
+        29,
+        24
+      ],
+      "exact_certificate": 163,
+      "cheap_certificate": 265,
+      "dpstates": 60,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5043,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 129,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 71,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "subset_sum",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 292,
+      "optimum": 292,
+      "incumbent": 285,
+      "target_kind": "incumbent_plus_one",
+      "tau": 286,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 8191,
+      "cheap_certificate": 8191,
+      "dpstates": 13,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5185,
+          "marked": 89,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 6627,
+          "marked": 89,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 5185,
+          "marked": 89,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "subset_sum",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 292,
+      "optimum": 292,
+      "incumbent": 285,
+      "target_kind": "optimum_plus_one",
+      "tau": 293,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 5063,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "subset_sum",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "capacity": 280,
+      "optimum": 280,
+      "incumbent": 271,
+      "target_kind": "incumbent_plus_one",
+      "tau": 272,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 8191,
+      "cheap_certificate": 8191,
+      "dpstates": 13,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 3221,
+          "marked": 156,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 5559,
+          "marked": 156,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 3221,
+          "marked": 156,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "subset_sum",
+      "weights": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "values": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "capacity": 280,
+      "optimum": 280,
+      "incumbent": 271,
+      "target_kind": "optimum_plus_one",
+      "tau": 281,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 2927,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "subset_sum",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "capacity": 226,
+      "optimum": 226,
+      "incumbent": 221,
+      "target_kind": "incumbent_plus_one",
+      "tau": 222,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 8191,
+      "cheap_certificate": 8191,
+      "dpstates": 13,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 3359,
+          "marked": 101,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 5693,
+          "marked": 101,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 3359,
+          "marked": 101,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "subset_sum",
+      "weights": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "values": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "capacity": 226,
+      "optimum": 226,
+      "incumbent": 221,
+      "target_kind": "optimum_plus_one",
+      "tau": 227,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 3151,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 352,
+      "optimum": 306,
+      "incumbent": 306,
+      "target_kind": "incumbent_plus_one",
+      "tau": 307,
+      "multiplier": [
+        77,
+        87
+      ],
+      "exact_certificate": 1663,
+      "cheap_certificate": 3967,
+      "dpstates": 301,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 643,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1241,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 155,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 352,
+      "optimum": 306,
+      "incumbent": 306,
+      "target_kind": "optimum_plus_one",
+      "tau": 307,
+      "multiplier": [
+        77,
+        87
+      ],
+      "exact_certificate": 1663,
+      "cheap_certificate": 3967,
+      "dpstates": 301,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 643,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1241,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 155,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        32,
+        60,
+        42,
+        60,
+        20,
+        85,
+        96,
+        21,
+        109,
+        31,
+        81,
+        44
+      ],
+      "values": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "capacity": 340,
+      "optimum": 295,
+      "incumbent": 294,
+      "target_kind": "incumbent_plus_one",
+      "tau": 295,
+      "multiplier": [
+        71,
+        81
+      ],
+      "exact_certificate": 1311,
+      "cheap_certificate": 2799,
+      "dpstates": 262,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 737,
+          "marked": 2,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 979,
+          "marked": 2,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 129,
+          "marked": 2,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        32,
+        60,
+        42,
+        60,
+        20,
+        85,
+        96,
+        21,
+        109,
+        31,
+        81,
+        44
+      ],
+      "values": [
+        22,
+        50,
+        32,
+        50,
+        10,
+        75,
+        86,
+        11,
+        99,
+        21,
+        71,
+        34
+      ],
+      "capacity": 340,
+      "optimum": 295,
+      "incumbent": 294,
+      "target_kind": "optimum_plus_one",
+      "tau": 296,
+      "multiplier": [
+        71,
+        81
+      ],
+      "exact_certificate": 995,
+      "cheap_certificate": 2799,
+      "dpstates": 217,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 715,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 731,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 107,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        68,
+        26,
+        23,
+        21,
+        67,
+        97,
+        58,
+        34,
+        28,
+        45,
+        52,
+        53
+      ],
+      "values": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "capacity": 286,
+      "optimum": 245,
+      "incumbent": 245,
+      "target_kind": "incumbent_plus_one",
+      "tau": 246,
+      "multiplier": [
+        24,
+        29
+      ],
+      "exact_certificate": 41,
+      "cheap_certificate": 41,
+      "dpstates": 13,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 739,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 25,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 9,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 12,
+      "seed": 12002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        68,
+        26,
+        23,
+        21,
+        67,
+        97,
+        58,
+        34,
+        28,
+        45,
+        52,
+        53
+      ],
+      "values": [
+        58,
+        16,
+        13,
+        11,
+        57,
+        87,
+        48,
+        24,
+        18,
+        35,
+        42,
+        43
+      ],
+      "capacity": 286,
+      "optimum": 245,
+      "incumbent": 245,
+      "target_kind": "optimum_plus_one",
+      "tau": 246,
+      "multiplier": [
+        24,
+        29
+      ],
+      "exact_certificate": 41,
+      "cheap_certificate": 41,
+      "dpstates": 13,
+      "full_binary_bound": 8191,
+      "trees": {
+        "simple": {
+          "nodes": 739,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 25,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 9,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        65,
+        55,
+        68,
+        99,
+        38,
+        52,
+        26,
+        22,
+        57,
+        7,
+        31,
+        85,
+        56,
+        26,
+        34,
+        26
+      ],
+      "capacity": 352,
+      "optimum": 563,
+      "incumbent": 556,
+      "target_kind": "incumbent_plus_one",
+      "tau": 557,
+      "multiplier": [
+        13,
+        16
+      ],
+      "exact_certificate": 297,
+      "cheap_certificate": 705,
+      "dpstates": 109,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 3855,
+          "marked": 1,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 143,
+          "marked": 1,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 95,
+          "marked": 1,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        65,
+        55,
+        68,
+        99,
+        38,
+        52,
+        26,
+        22,
+        57,
+        7,
+        31,
+        85,
+        56,
+        26,
+        34,
+        26
+      ],
+      "capacity": 352,
+      "optimum": 563,
+      "incumbent": 556,
+      "target_kind": "optimum_plus_one",
+      "tau": 564,
+      "multiplier": [
+        13,
+        16
+      ],
+      "exact_certificate": 107,
+      "cheap_certificate": 149,
+      "dpstates": 40,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 3369,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 65,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 45,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        45,
+        26,
+        54,
+        71,
+        83,
+        5,
+        42,
+        34,
+        36,
+        14,
+        65,
+        28,
+        90,
+        57,
+        2,
+        41
+      ],
+      "capacity": 383,
+      "optimum": 548,
+      "incumbent": 548,
+      "target_kind": "incumbent_plus_one",
+      "tau": 549,
+      "multiplier": [
+        6,
+        11
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 527,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        45,
+        26,
+        54,
+        71,
+        83,
+        5,
+        42,
+        34,
+        36,
+        14,
+        65,
+        28,
+        90,
+        57,
+        2,
+        41
+      ],
+      "capacity": 383,
+      "optimum": 548,
+      "incumbent": 548,
+      "target_kind": "optimum_plus_one",
+      "tau": 549,
+      "multiplier": [
+        6,
+        11
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 527,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        75,
+        63,
+        20,
+        62,
+        21,
+        71,
+        7,
+        93,
+        21,
+        1,
+        6,
+        78,
+        50,
+        42,
+        11,
+        73
+      ],
+      "capacity": 365,
+      "optimum": 568,
+      "incumbent": 568,
+      "target_kind": "incumbent_plus_one",
+      "tau": 569,
+      "multiplier": [
+        71,
+        96
+      ],
+      "exact_certificate": 139,
+      "cheap_certificate": 205,
+      "dpstates": 46,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 365,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 105,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 37,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        75,
+        63,
+        20,
+        62,
+        21,
+        71,
+        7,
+        93,
+        21,
+        1,
+        6,
+        78,
+        50,
+        42,
+        11,
+        73
+      ],
+      "capacity": 365,
+      "optimum": 568,
+      "incumbent": 568,
+      "target_kind": "optimum_plus_one",
+      "tau": 569,
+      "multiplier": [
+        71,
+        96
+      ],
+      "exact_certificate": 139,
+      "cheap_certificate": 205,
+      "dpstates": 46,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 365,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 105,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 37,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        82,
+        73,
+        68,
+        24,
+        39,
+        19,
+        29,
+        3,
+        53,
+        99,
+        26,
+        44,
+        40,
+        24,
+        18,
+        75
+      ],
+      "capacity": 352,
+      "optimum": 406,
+      "incumbent": 406,
+      "target_kind": "incumbent_plus_one",
+      "tau": 407,
+      "multiplier": [
+        41,
+        40
+      ],
+      "exact_certificate": 77,
+      "cheap_certificate": 77,
+      "dpstates": 25,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 6393,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 47,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 31,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        82,
+        73,
+        68,
+        24,
+        39,
+        19,
+        29,
+        3,
+        53,
+        99,
+        26,
+        44,
+        40,
+        24,
+        18,
+        75
+      ],
+      "capacity": 352,
+      "optimum": 406,
+      "incumbent": 406,
+      "target_kind": "optimum_plus_one",
+      "tau": 407,
+      "multiplier": [
+        41,
+        40
+      ],
+      "exact_certificate": 77,
+      "cheap_certificate": 77,
+      "dpstates": 25,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 6393,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 47,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 31,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        49,
+        86,
+        69,
+        29,
+        67,
+        7,
+        54,
+        73,
+        57,
+        32,
+        34,
+        57,
+        7,
+        60,
+        38,
+        16
+      ],
+      "capacity": 383,
+      "optimum": 400,
+      "incumbent": 392,
+      "target_kind": "incumbent_plus_one",
+      "tau": 393,
+      "multiplier": [
+        30,
+        31
+      ],
+      "exact_certificate": 3709,
+      "cheap_certificate": 25861,
+      "dpstates": 942,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 8655,
+          "marked": 7,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 2601,
+          "marked": 7,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 549,
+          "marked": 7,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        49,
+        86,
+        69,
+        29,
+        67,
+        7,
+        54,
+        73,
+        57,
+        32,
+        34,
+        57,
+        7,
+        60,
+        38,
+        16
+      ],
+      "capacity": 383,
+      "optimum": 400,
+      "incumbent": 392,
+      "target_kind": "optimum_plus_one",
+      "tau": 401,
+      "multiplier": [
+        30,
+        31
+      ],
+      "exact_certificate": 135,
+      "cheap_certificate": 235,
+      "dpstates": 42,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 7369,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 67,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 21,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        13,
+        26,
+        69,
+        50,
+        89,
+        106,
+        62,
+        94,
+        1,
+        30,
+        29,
+        15,
+        14,
+        46,
+        22,
+        86
+      ],
+      "capacity": 365,
+      "optimum": 413,
+      "incumbent": 413,
+      "target_kind": "incumbent_plus_one",
+      "tau": 414,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 77,
+      "cheap_certificate": 77,
+      "dpstates": 17,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 15929,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 63,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 19,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        13,
+        26,
+        69,
+        50,
+        89,
+        106,
+        62,
+        94,
+        1,
+        30,
+        29,
+        15,
+        14,
+        46,
+        22,
+        86
+      ],
+      "capacity": 365,
+      "optimum": 413,
+      "incumbent": 413,
+      "target_kind": "optimum_plus_one",
+      "tau": 414,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 77,
+      "cheap_certificate": 77,
+      "dpstates": 17,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 15929,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 63,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 19,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        90,
+        93,
+        68,
+        41,
+        57,
+        34,
+        30,
+        17,
+        54,
+        99,
+        45,
+        57,
+        44,
+        28,
+        22,
+        85
+      ],
+      "capacity": 352,
+      "optimum": 462,
+      "incumbent": 429,
+      "target_kind": "incumbent_plus_one",
+      "tau": 430,
+      "multiplier": [
+        34,
+        29
+      ],
+      "exact_certificate": 97049,
+      "cheap_certificate": 131007,
+      "dpstates": 1868,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 449,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 548,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 47667,
+          "marked": 1261,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        90,
+        93,
+        68,
+        41,
+        57,
+        34,
+        30,
+        17,
+        54,
+        99,
+        45,
+        57,
+        44,
+        28,
+        22,
+        85
+      ],
+      "capacity": 352,
+      "optimum": 462,
+      "incumbent": 429,
+      "target_kind": "optimum_plus_one",
+      "tau": 463,
+      "multiplier": [
+        34,
+        29
+      ],
+      "exact_certificate": 259,
+      "cheap_certificate": 917,
+      "dpstates": 79,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 227,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 103,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        57,
+        100,
+        83,
+        31,
+        77,
+        23,
+        56,
+        84,
+        76,
+        49,
+        41,
+        77,
+        26,
+        72,
+        46,
+        29
+      ],
+      "capacity": 383,
+      "optimum": 483,
+      "incumbent": 430,
+      "target_kind": "incumbent_plus_one",
+      "tau": 431,
+      "multiplier": [
+        38,
+        33
+      ],
+      "exact_certificate": 131071,
+      "cheap_certificate": 131071,
+      "dpstates": 2712,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 3726,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 2804,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 3726,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        57,
+        100,
+        83,
+        31,
+        77,
+        23,
+        56,
+        84,
+        76,
+        49,
+        41,
+        77,
+        26,
+        72,
+        46,
+        29
+      ],
+      "capacity": 383,
+      "optimum": 483,
+      "incumbent": 430,
+      "target_kind": "optimum_plus_one",
+      "tau": 484,
+      "multiplier": [
+        38,
+        33
+      ],
+      "exact_certificate": 1679,
+      "cheap_certificate": 8211,
+      "dpstates": 249,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 905,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 661,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        23,
+        27,
+        69,
+        64,
+        103,
+        106,
+        82,
+        99,
+        13,
+        37,
+        43,
+        18,
+        25,
+        51,
+        32,
+        98
+      ],
+      "capacity": 365,
+      "optimum": 484,
+      "incumbent": 484,
+      "target_kind": "incumbent_plus_one",
+      "tau": 485,
+      "multiplier": [
+        49,
+        44
+      ],
+      "exact_certificate": 47,
+      "cheap_certificate": 47,
+      "dpstates": 20,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        23,
+        27,
+        69,
+        64,
+        103,
+        106,
+        82,
+        99,
+        13,
+        37,
+        43,
+        18,
+        25,
+        51,
+        32,
+        98
+      ],
+      "capacity": 365,
+      "optimum": 484,
+      "incumbent": 484,
+      "target_kind": "optimum_plus_one",
+      "tau": 485,
+      "multiplier": [
+        49,
+        44
+      ],
+      "exact_certificate": 47,
+      "cheap_certificate": 47,
+      "dpstates": 20,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "subset_sum",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "capacity": 352,
+      "optimum": 352,
+      "incumbent": 350,
+      "target_kind": "incumbent_plus_one",
+      "tau": 351,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 131071,
+      "cheap_certificate": 131071,
+      "dpstates": 17,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 49319,
+          "marked": 493,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 215,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 49319,
+          "marked": 493,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "subset_sum",
+      "weights": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "values": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "capacity": 352,
+      "optimum": 352,
+      "incumbent": 350,
+      "target_kind": "optimum_plus_one",
+      "tau": 353,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 48349,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "subset_sum",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "capacity": 383,
+      "optimum": 383,
+      "incumbent": 373,
+      "target_kind": "incumbent_plus_one",
+      "tau": 374,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 131071,
+      "cheap_certificate": 131071,
+      "dpstates": 17,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 33025,
+          "marked": 2384,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 1268,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 33025,
+          "marked": 2384,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "subset_sum",
+      "weights": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "values": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "capacity": 383,
+      "optimum": 383,
+      "incumbent": 373,
+      "target_kind": "optimum_plus_one",
+      "tau": 384,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 28683,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "subset_sum",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "capacity": 365,
+      "optimum": 365,
+      "incumbent": 362,
+      "target_kind": "incumbent_plus_one",
+      "tau": 363,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 131071,
+      "cheap_certificate": 131071,
+      "dpstates": 17,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 629,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 343,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 629,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "subset_sum",
+      "weights": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "values": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "capacity": 365,
+      "optimum": 365,
+      "incumbent": 362,
+      "target_kind": "optimum_plus_one",
+      "tau": 366,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        90,
+        93,
+        68,
+        41,
+        57,
+        34,
+        30,
+        17,
+        54,
+        99,
+        45,
+        57,
+        44,
+        28,
+        22,
+        85
+      ],
+      "values": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "capacity": 432,
+      "optimum": 374,
+      "incumbent": 374,
+      "target_kind": "incumbent_plus_one",
+      "tau": 375,
+      "multiplier": [
+        29,
+        34
+      ],
+      "exact_certificate": 2301,
+      "cheap_certificate": 9447,
+      "dpstates": 291,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 7049,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1379,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 177,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        90,
+        93,
+        68,
+        41,
+        57,
+        34,
+        30,
+        17,
+        54,
+        99,
+        45,
+        57,
+        44,
+        28,
+        22,
+        85
+      ],
+      "values": [
+        80,
+        83,
+        58,
+        31,
+        47,
+        24,
+        20,
+        7,
+        44,
+        89,
+        35,
+        47,
+        34,
+        18,
+        12,
+        75
+      ],
+      "capacity": 432,
+      "optimum": 374,
+      "incumbent": 374,
+      "target_kind": "optimum_plus_one",
+      "tau": 375,
+      "multiplier": [
+        29,
+        34
+      ],
+      "exact_certificate": 2301,
+      "cheap_certificate": 9447,
+      "dpstates": 291,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 7049,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1379,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 177,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        57,
+        100,
+        83,
+        31,
+        77,
+        23,
+        56,
+        84,
+        76,
+        49,
+        41,
+        77,
+        26,
+        72,
+        46,
+        29
+      ],
+      "values": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "capacity": 463,
+      "optimum": 403,
+      "incumbent": 402,
+      "target_kind": "incumbent_plus_one",
+      "tau": 403,
+      "multiplier": [
+        33,
+        38
+      ],
+      "exact_certificate": 3741,
+      "cheap_certificate": 7167,
+      "dpstates": 386,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 10335,
+          "marked": 1,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 2773,
+          "marked": 1,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 175,
+          "marked": 1,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        57,
+        100,
+        83,
+        31,
+        77,
+        23,
+        56,
+        84,
+        76,
+        49,
+        41,
+        77,
+        26,
+        72,
+        46,
+        29
+      ],
+      "values": [
+        47,
+        90,
+        73,
+        21,
+        67,
+        13,
+        46,
+        74,
+        66,
+        39,
+        31,
+        67,
+        16,
+        62,
+        36,
+        19
+      ],
+      "capacity": 463,
+      "optimum": 403,
+      "incumbent": 402,
+      "target_kind": "optimum_plus_one",
+      "tau": 404,
+      "multiplier": [
+        33,
+        38
+      ],
+      "exact_certificate": 1971,
+      "cheap_certificate": 6783,
+      "dpstates": 293,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 9991,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1497,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 89,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        23,
+        27,
+        69,
+        64,
+        103,
+        106,
+        82,
+        99,
+        13,
+        37,
+        43,
+        18,
+        25,
+        51,
+        32,
+        98
+      ],
+      "values": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "capacity": 445,
+      "optimum": 393,
+      "incumbent": 393,
+      "target_kind": "incumbent_plus_one",
+      "tau": 394,
+      "multiplier": [
+        36,
+        41
+      ],
+      "exact_certificate": 1411,
+      "cheap_certificate": 7761,
+      "dpstates": 322,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 3319,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 943,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 83,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 16002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        23,
+        27,
+        69,
+        64,
+        103,
+        106,
+        82,
+        99,
+        13,
+        37,
+        43,
+        18,
+        25,
+        51,
+        32,
+        98
+      ],
+      "values": [
+        13,
+        17,
+        59,
+        54,
+        93,
+        96,
+        72,
+        89,
+        3,
+        27,
+        33,
+        8,
+        15,
+        41,
+        22,
+        88
+      ],
+      "capacity": 445,
+      "optimum": 393,
+      "incumbent": 393,
+      "target_kind": "optimum_plus_one",
+      "tau": 394,
+      "multiplier": [
+        36,
+        41
+      ],
+      "exact_certificate": 1411,
+      "cheap_certificate": 7761,
+      "dpstates": 322,
+      "full_binary_bound": 131071,
+      "trees": {
+        "simple": {
+          "nodes": 3319,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 943,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 83,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        56,
+        45,
+        42,
+        35,
+        87,
+        79,
+        86,
+        87,
+        53,
+        3,
+        43,
+        11,
+        70,
+        81,
+        54,
+        34,
+        19,
+        55,
+        33,
+        77
+      ],
+      "capacity": 515,
+      "optimum": 809,
+      "incumbent": 809,
+      "target_kind": "incumbent_plus_one",
+      "tau": 810,
+      "multiplier": [
+        53,
+        61
+      ],
+      "exact_certificate": 117,
+      "cheap_certificate": 147,
+      "dpstates": 40,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 6057,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 103,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "uncorrelated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        56,
+        45,
+        42,
+        35,
+        87,
+        79,
+        86,
+        87,
+        53,
+        3,
+        43,
+        11,
+        70,
+        81,
+        54,
+        34,
+        19,
+        55,
+        33,
+        77
+      ],
+      "capacity": 515,
+      "optimum": 809,
+      "incumbent": 809,
+      "target_kind": "optimum_plus_one",
+      "tau": 810,
+      "multiplier": [
+        53,
+        61
+      ],
+      "exact_certificate": 117,
+      "cheap_certificate": 147,
+      "dpstates": 40,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 6057,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 103,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 33,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        30,
+        99,
+        89,
+        87,
+        50,
+        38,
+        91,
+        19,
+        39,
+        47,
+        19,
+        95,
+        81,
+        51,
+        91,
+        15,
+        23,
+        35,
+        25,
+        56
+      ],
+      "capacity": 542,
+      "optimum": 769,
+      "incumbent": 758,
+      "target_kind": "incumbent_plus_one",
+      "tau": 759,
+      "multiplier": [
+        81,
+        91
+      ],
+      "exact_certificate": 4293,
+      "cheap_certificate": 20491,
+      "dpstates": 1257,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 25233,
+          "marked": 10,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 3027,
+          "marked": 10,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 467,
+          "marked": 10,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "uncorrelated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        30,
+        99,
+        89,
+        87,
+        50,
+        38,
+        91,
+        19,
+        39,
+        47,
+        19,
+        95,
+        81,
+        51,
+        91,
+        15,
+        23,
+        35,
+        25,
+        56
+      ],
+      "capacity": 542,
+      "optimum": 769,
+      "incumbent": 758,
+      "target_kind": "optimum_plus_one",
+      "tau": 770,
+      "multiplier": [
+        81,
+        91
+      ],
+      "exact_certificate": 1083,
+      "cheap_certificate": 3343,
+      "dpstates": 328,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 20039,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 813,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 105,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        59,
+        36,
+        76,
+        65,
+        23,
+        77,
+        94,
+        28,
+        37,
+        41,
+        45,
+        16,
+        31,
+        59,
+        54,
+        66,
+        51,
+        36,
+        62,
+        23
+      ],
+      "capacity": 444,
+      "optimum": 707,
+      "incumbent": 698,
+      "target_kind": "incumbent_plus_one",
+      "tau": 699,
+      "multiplier": [
+        45,
+        47
+      ],
+      "exact_certificate": 1581,
+      "cheap_certificate": 8459,
+      "dpstates": 503,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 35619,
+          "marked": 6,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 1245,
+          "marked": 6,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 285,
+          "marked": 6,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "uncorrelated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        59,
+        36,
+        76,
+        65,
+        23,
+        77,
+        94,
+        28,
+        37,
+        41,
+        45,
+        16,
+        31,
+        59,
+        54,
+        66,
+        51,
+        36,
+        62,
+        23
+      ],
+      "capacity": 444,
+      "optimum": 707,
+      "incumbent": 698,
+      "target_kind": "optimum_plus_one",
+      "tau": 708,
+      "multiplier": [
+        45,
+        47
+      ],
+      "exact_certificate": 325,
+      "cheap_certificate": 789,
+      "dpstates": 107,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 30425,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 231,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 83,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        19,
+        21,
+        64,
+        93,
+        86,
+        25,
+        5,
+        70,
+        70,
+        55,
+        12,
+        32,
+        30,
+        96,
+        45,
+        56,
+        88,
+        93,
+        10,
+        57
+      ],
+      "capacity": 515,
+      "optimum": 557,
+      "incumbent": 552,
+      "target_kind": "incumbent_plus_one",
+      "tau": 553,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 10291,
+      "cheap_certificate": 58395,
+      "dpstates": 164,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 4733,
+          "marked": 14,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1065,
+          "marked": 14,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        19,
+        21,
+        64,
+        93,
+        86,
+        25,
+        5,
+        70,
+        70,
+        55,
+        12,
+        32,
+        30,
+        96,
+        45,
+        56,
+        88,
+        93,
+        10,
+        57
+      ],
+      "capacity": 515,
+      "optimum": 557,
+      "incumbent": 552,
+      "target_kind": "optimum_plus_one",
+      "tau": 558,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1859,
+      "cheap_certificate": 7179,
+      "dpstates": 75,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 809,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 205,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        66,
+        31,
+        69,
+        37,
+        58,
+        64,
+        77,
+        25,
+        45,
+        12,
+        18,
+        42,
+        95,
+        48,
+        91,
+        36,
+        95,
+        78,
+        69,
+        75
+      ],
+      "capacity": 542,
+      "optimum": 615,
+      "incumbent": 614,
+      "target_kind": "incumbent_plus_one",
+      "tau": 615,
+      "multiplier": [
+        95,
+        91
+      ],
+      "exact_certificate": 1401,
+      "cheap_certificate": 3299,
+      "dpstates": 428,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1023,
+          "marked": 1,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 279,
+          "marked": 1,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        66,
+        31,
+        69,
+        37,
+        58,
+        64,
+        77,
+        25,
+        45,
+        12,
+        18,
+        42,
+        95,
+        48,
+        91,
+        36,
+        95,
+        78,
+        69,
+        75
+      ],
+      "capacity": 542,
+      "optimum": 615,
+      "incumbent": 614,
+      "target_kind": "optimum_plus_one",
+      "tau": 616,
+      "multiplier": [
+        95,
+        91
+      ],
+      "exact_certificate": 883,
+      "cheap_certificate": 3297,
+      "dpstates": 276,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 629,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 175,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        51,
+        30,
+        56,
+        60,
+        17,
+        1,
+        94,
+        6,
+        21,
+        45,
+        55,
+        48,
+        76,
+        94,
+        27,
+        63,
+        14,
+        40,
+        13,
+        81
+      ],
+      "capacity": 444,
+      "optimum": 495,
+      "incumbent": 490,
+      "target_kind": "incumbent_plus_one",
+      "tau": 491,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 2397,
+      "cheap_certificate": 15891,
+      "dpstates": 119,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1703,
+          "marked": 2,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 359,
+          "marked": 2,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "weakly_correlated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        51,
+        30,
+        56,
+        60,
+        17,
+        1,
+        94,
+        6,
+        21,
+        45,
+        55,
+        48,
+        76,
+        94,
+        27,
+        63,
+        14,
+        40,
+        13,
+        81
+      ],
+      "capacity": 444,
+      "optimum": 495,
+      "incumbent": 490,
+      "target_kind": "optimum_plus_one",
+      "tau": 496,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 381,
+      "cheap_certificate": 2059,
+      "dpstates": 48,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 275,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 63,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        27,
+        32,
+        82,
+        99,
+        86,
+        41,
+        23,
+        80,
+        71,
+        65,
+        27,
+        36,
+        49,
+        98,
+        65,
+        64,
+        102,
+        103,
+        15,
+        66
+      ],
+      "capacity": 515,
+      "optimum": 645,
+      "incumbent": 581,
+      "target_kind": "incumbent_plus_one",
+      "tau": 582,
+      "multiplier": [
+        8,
+        7
+      ],
+      "exact_certificate": 2097071,
+      "cheap_certificate": 2097151,
+      "dpstates": 5154,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 1807,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 993,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 1832,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        27,
+        32,
+        82,
+        99,
+        86,
+        41,
+        23,
+        80,
+        71,
+        65,
+        27,
+        36,
+        49,
+        98,
+        65,
+        64,
+        102,
+        103,
+        15,
+        66
+      ],
+      "capacity": 515,
+      "optimum": 645,
+      "incumbent": 581,
+      "target_kind": "optimum_plus_one",
+      "tau": 646,
+      "multiplier": [
+        8,
+        7
+      ],
+      "exact_certificate": 5639,
+      "cheap_certificate": 66995,
+      "dpstates": 414,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 3855,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1917,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        84,
+        34,
+        80,
+        52,
+        64,
+        66,
+        91,
+        38,
+        51,
+        14,
+        22,
+        44,
+        101,
+        66,
+        110,
+        40,
+        95,
+        85,
+        70,
+        78
+      ],
+      "capacity": 542,
+      "optimum": 672,
+      "incumbent": 639,
+      "target_kind": "incumbent_plus_one",
+      "tau": 640,
+      "multiplier": [
+        8,
+        7
+      ],
+      "exact_certificate": 1478551,
+      "cheap_certificate": 2097151,
+      "dpstates": 3216,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 243,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 629,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        84,
+        34,
+        80,
+        52,
+        64,
+        66,
+        91,
+        38,
+        51,
+        14,
+        22,
+        44,
+        101,
+        66,
+        110,
+        40,
+        95,
+        85,
+        70,
+        78
+      ],
+      "capacity": 542,
+      "optimum": 672,
+      "incumbent": 639,
+      "target_kind": "optimum_plus_one",
+      "tau": 673,
+      "multiplier": [
+        8,
+        7
+      ],
+      "exact_certificate": 1211,
+      "cheap_certificate": 5519,
+      "dpstates": 173,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 735,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 383,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        68,
+        39,
+        76,
+        68,
+        33,
+        12,
+        102,
+        11,
+        30,
+        64,
+        57,
+        65,
+        77,
+        96,
+        38,
+        80,
+        24,
+        41,
+        14,
+        93
+      ],
+      "capacity": 444,
+      "optimum": 584,
+      "incumbent": 564,
+      "target_kind": "incumbent_plus_one",
+      "tau": 565,
+      "multiplier": [
+        38,
+        33
+      ],
+      "exact_certificate": 140071,
+      "cheap_certificate": 761977,
+      "dpstates": 1521,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 74,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 263,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "strongly_correlated",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        68,
+        39,
+        76,
+        68,
+        33,
+        12,
+        102,
+        11,
+        30,
+        64,
+        57,
+        65,
+        77,
+        96,
+        38,
+        80,
+        24,
+        41,
+        14,
+        93
+      ],
+      "capacity": 444,
+      "optimum": 584,
+      "incumbent": 564,
+      "target_kind": "optimum_plus_one",
+      "tau": 585,
+      "multiplier": [
+        38,
+        33
+      ],
+      "exact_certificate": 303,
+      "cheap_certificate": 1013,
+      "dpstates": 71,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 185,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 121,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "subset_sum",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "capacity": 515,
+      "optimum": 515,
+      "incumbent": 511,
+      "target_kind": "incumbent_plus_one",
+      "tau": 512,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 2097151,
+      "cheap_certificate": 2097151,
+      "dpstates": 21,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 1003,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 179,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 1003,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "subset_sum",
+      "weights": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "values": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "capacity": 515,
+      "optimum": 515,
+      "incumbent": 511,
+      "target_kind": "optimum_plus_one",
+      "tau": 516,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "subset_sum",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "capacity": 542,
+      "optimum": 542,
+      "incumbent": 520,
+      "target_kind": "incumbent_plus_one",
+      "tau": 521,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 2097151,
+      "cheap_certificate": 2097151,
+      "dpstates": 21,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 3613,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 943,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 3613,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "subset_sum",
+      "weights": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "values": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "capacity": 542,
+      "optimum": 542,
+      "incumbent": 520,
+      "target_kind": "optimum_plus_one",
+      "tau": 543,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "subset_sum",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "capacity": 444,
+      "optimum": 444,
+      "incumbent": 435,
+      "target_kind": "incumbent_plus_one",
+      "tau": 436,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 2097151,
+      "cheap_certificate": 2097151,
+      "dpstates": 21,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 2003,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 50000,
+          "marked": 405,
+          "capped": true
+        },
+        "lp": {
+          "nodes": 50000,
+          "marked": 2003,
+          "capped": true
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "subset_sum",
+      "weights": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "values": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "capacity": 444,
+      "optimum": 444,
+      "incumbent": 435,
+      "target_kind": "optimum_plus_one",
+      "tau": 445,
+      "multiplier": [
+        1,
+        1
+      ],
+      "exact_certificate": 1,
+      "cheap_certificate": 1,
+      "dpstates": 0,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        27,
+        32,
+        82,
+        99,
+        86,
+        41,
+        23,
+        80,
+        71,
+        65,
+        27,
+        36,
+        49,
+        98,
+        65,
+        64,
+        102,
+        103,
+        15,
+        66
+      ],
+      "values": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "capacity": 615,
+      "optimum": 545,
+      "incumbent": 541,
+      "target_kind": "incumbent_plus_one",
+      "tau": 542,
+      "multiplier": [
+        7,
+        8
+      ],
+      "exact_certificate": 20565,
+      "cheap_certificate": 124161,
+      "dpstates": 788,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 3,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 15175,
+          "marked": 19,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 1421,
+          "marked": 19,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20000,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        27,
+        32,
+        82,
+        99,
+        86,
+        41,
+        23,
+        80,
+        71,
+        65,
+        27,
+        36,
+        49,
+        98,
+        65,
+        64,
+        102,
+        103,
+        15,
+        66
+      ],
+      "values": [
+        17,
+        22,
+        72,
+        89,
+        76,
+        31,
+        13,
+        70,
+        61,
+        55,
+        17,
+        26,
+        39,
+        88,
+        55,
+        54,
+        92,
+        93,
+        5,
+        56
+      ],
+      "capacity": 615,
+      "optimum": 545,
+      "incumbent": 541,
+      "target_kind": "optimum_plus_one",
+      "tau": 546,
+      "multiplier": [
+        7,
+        8
+      ],
+      "exact_certificate": 2063,
+      "cheap_certificate": 4203,
+      "dpstates": 309,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 1309,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 69,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        84,
+        34,
+        80,
+        52,
+        64,
+        66,
+        91,
+        38,
+        51,
+        14,
+        22,
+        44,
+        101,
+        66,
+        110,
+        40,
+        95,
+        85,
+        70,
+        78
+      ],
+      "values": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "capacity": 642,
+      "optimum": 570,
+      "incumbent": 566,
+      "target_kind": "incumbent_plus_one",
+      "tau": 567,
+      "multiplier": [
+        7,
+        8
+      ],
+      "exact_certificate": 13651,
+      "cheap_certificate": 151745,
+      "dpstates": 622,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 10179,
+          "marked": 2,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 979,
+          "marked": 2,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20001,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        84,
+        34,
+        80,
+        52,
+        64,
+        66,
+        91,
+        38,
+        51,
+        14,
+        22,
+        44,
+        101,
+        66,
+        110,
+        40,
+        95,
+        85,
+        70,
+        78
+      ],
+      "values": [
+        74,
+        24,
+        70,
+        42,
+        54,
+        56,
+        81,
+        28,
+        41,
+        4,
+        12,
+        34,
+        91,
+        56,
+        100,
+        30,
+        85,
+        75,
+        60,
+        68
+      ],
+      "capacity": 642,
+      "optimum": 570,
+      "incumbent": 566,
+      "target_kind": "optimum_plus_one",
+      "tau": 571,
+      "multiplier": [
+        7,
+        8
+      ],
+      "exact_certificate": 569,
+      "cheap_certificate": 1541,
+      "dpstates": 147,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 50000,
+          "marked": 0,
+          "capped": true
+        },
+        "dual": {
+          "nodes": 429,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 77,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        68,
+        39,
+        76,
+        68,
+        33,
+        12,
+        102,
+        11,
+        30,
+        64,
+        57,
+        65,
+        77,
+        96,
+        38,
+        80,
+        24,
+        41,
+        14,
+        93
+      ],
+      "values": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "capacity": 544,
+      "optimum": 474,
+      "incumbent": 468,
+      "target_kind": "incumbent_plus_one",
+      "tau": 469,
+      "multiplier": [
+        29,
+        34
+      ],
+      "exact_certificate": 79693,
+      "cheap_certificate": 357887,
+      "dpstates": 1081,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 34511,
+          "marked": 95,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 41861,
+          "marked": 95,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 4903,
+          "marked": 95,
+          "capped": false
+        }
+      }
+    },
+    {
+      "n": 20,
+      "seed": 20002,
+      "instance_class": "inverse_strongly",
+      "weights": [
+        68,
+        39,
+        76,
+        68,
+        33,
+        12,
+        102,
+        11,
+        30,
+        64,
+        57,
+        65,
+        77,
+        96,
+        38,
+        80,
+        24,
+        41,
+        14,
+        93
+      ],
+      "values": [
+        58,
+        29,
+        66,
+        58,
+        23,
+        2,
+        92,
+        1,
+        20,
+        54,
+        47,
+        55,
+        67,
+        86,
+        28,
+        70,
+        14,
+        31,
+        4,
+        83
+      ],
+      "capacity": 544,
+      "optimum": 474,
+      "incumbent": 468,
+      "target_kind": "optimum_plus_one",
+      "tau": 475,
+      "multiplier": [
+        29,
+        34
+      ],
+      "exact_certificate": 9911,
+      "cheap_certificate": 38917,
+      "dpstates": 496,
+      "full_binary_bound": 2097151,
+      "trees": {
+        "simple": {
+          "nodes": 28001,
+          "marked": 0,
+          "capped": false
+        },
+        "dual": {
+          "nodes": 3707,
+          "marked": 0,
+          "capped": false
+        },
+        "lp": {
+          "nodes": 485,
+          "marked": 0,
+          "capped": false
+        }
+      }
+    }
+  ]
+}

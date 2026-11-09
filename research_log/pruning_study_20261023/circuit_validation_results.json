@@ -1,0 +1,6028 @@
+{
+  "scope": "Compiled predicates only, zero initial workspace; no full walk/QPU claim.",
+  "exhaustive": [
+    {
+      "case_id": 0,
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 18,
+            "gates": 59,
+            "gate_depth": 39,
+            "gate_counts": {
+              "x": 28,
+              "cx": 29,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 6.70000008540228e-05,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 0,
+                "width": 2
+              }
+            ],
+            "weight_width": 1
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 18,
+            "gates": 59,
+            "gate_depth": 39,
+            "gate_counts": {
+              "x": 28,
+              "cx": 29,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 8.230000094044954e-05,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 0,
+                "width": 2
+              }
+            ],
+            "weight_width": 1
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 18,
+            "gates": 59,
+            "gate_depth": 39,
+            "gate_counts": {
+              "x": 28,
+              "cx": 29,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00012919999426230788,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 0,
+                "width": 2
+              }
+            ],
+            "weight_width": 1
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 18,
+            "gates": 59,
+            "gate_depth": 39,
+            "gate_counts": {
+              "x": 28,
+              "cx": 29,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00014730000111740083,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 0,
+                "width": 2
+              }
+            ],
+            "weight_width": 1
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 17,
+            "gates": 55,
+            "gate_depth": 37,
+            "gate_counts": {
+              "x": 26,
+              "cx": 27,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00013020000187680125,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 1,
+            "value_width": 1,
+            "numerator_width": 3,
+            "precision_bits": 1
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 17,
+            "gates": 55,
+            "gate_depth": 37,
+            "gate_counts": {
+              "x": 26,
+              "cx": 27,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00011560000712051988,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 1,
+            "value_width": 1,
+            "numerator_width": 2,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 17,
+            "gates": 92,
+            "gate_depth": 70,
+            "gate_counts": {
+              "x": 44,
+              "cx": 47,
+              "ccx": 1
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0002327999973203987,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 14,
+            "gates": 68,
+            "gate_depth": 34,
+            "gate_counts": {
+              "x": 32,
+              "cx": 35,
+              "ccx": 1
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 46,
+            "gates": 149,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 54,
+              "cx": 79,
+              "ccx": 16
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000225499999942258,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 2
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 37,
+            "gates": 119,
+            "gate_depth": 45,
+            "gate_counts": {
+              "x": 50,
+              "cx": 59,
+              "ccx": 10
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0002810000005410984,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                1,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 0,
+                "width": 3
+              }
+            ],
+            "weight_width": 2
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 59,
+            "gates": 195,
+            "gate_depth": 79,
+            "gate_counts": {
+              "x": 72,
+              "cx": 101,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0011116999958176166,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 0,
+                "width": 3
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 2
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 59,
+            "gates": 195,
+            "gate_depth": 79,
+            "gate_counts": {
+              "x": 72,
+              "cx": 101,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00024029999622143805,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 0,
+                "width": 3
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 2
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 95,
+            "gates": 307,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 74,
+              "cx": 179,
+              "ccx": 54
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00035149999894201756,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 4,
+            "precision_bits": 1
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 92,
+            "gates": 299,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 74,
+              "cx": 175,
+              "ccx": 50
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008787000115262344,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 36,
+            "gates": 357,
+            "gate_depth": 196,
+            "gate_counts": {
+              "x": 142,
+              "cx": 187,
+              "ccx": 28
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005439999949885532,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 37,
+            "gates": 281,
+            "gate_depth": 134,
+            "gate_counts": {
+              "x": 98,
+              "cx": 159,
+              "ccx": 24
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 2,
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 49,
+            "gates": 161,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 58,
+              "cx": 87,
+              "ccx": 16
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00020059999951627105,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 49,
+            "gates": 161,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 58,
+              "cx": 87,
+              "ccx": 16
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00018109999655280262,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 49,
+            "gates": 161,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 58,
+              "cx": 87,
+              "ccx": 16
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00018560000171419233,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 64,
+            "gates": 215,
+            "gate_depth": 85,
+            "gate_counts": {
+              "x": 78,
+              "cx": 115,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00023350000265054405,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 1,
+                "width": 4
+              },
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 1,
+                "width": 3
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 107,
+            "gates": 349,
+            "gate_depth": 119,
+            "gate_counts": {
+              "x": 80,
+              "cx": 209,
+              "ccx": 60
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003997000021627173,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 4,
+            "precision_bits": 1
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 104,
+            "gates": 341,
+            "gate_depth": 119,
+            "gate_counts": {
+              "x": 80,
+              "cx": 205,
+              "ccx": 56
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004039999912492931,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 39,
+            "gates": 397,
+            "gate_depth": 188,
+            "gate_counts": {
+              "x": 150,
+              "cx": 219,
+              "ccx": 28
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00045590000809170306,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 40,
+            "gates": 305,
+            "gate_depth": 136,
+            "gate_counts": {
+              "x": 106,
+              "cx": 175,
+              "ccx": 24
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 3,
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 177,
+            "gates": 559,
+            "gate_depth": 125,
+            "gate_counts": {
+              "x": 124,
+              "cx": 337,
+              "ccx": 98
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005643999902531505,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 20,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 190,
+            "gates": 601,
+            "gate_depth": 137,
+            "gate_counts": {
+              "x": 126,
+              "cx": 367,
+              "ccx": 108
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0006316000071819872,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                4,
+                3
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 37,
+                "width": 8
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 258,
+            "gates": 825,
+            "gate_depth": 147,
+            "gate_counts": {
+              "x": 162,
+              "cx": 507,
+              "ccx": 156
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000850900003570132,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                4,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 37,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 20,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 414,
+            "gates": 1335,
+            "gate_depth": 179,
+            "gate_counts": {
+              "x": 236,
+              "cx": 829,
+              "ccx": 270
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0014081999979680404,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                4,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                8,
+                5
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 37,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 20,
+                "width": 7
+              },
+              {
+                "a": 5,
+                "b": 4,
+                "n0": 50,
+                "width": 9
+              },
+              {
+                "a": 8,
+                "b": 5,
+                "n0": 64,
+                "width": 9
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1272,
+            "gates": 4103,
+            "gate_depth": 507,
+            "gate_counts": {
+              "x": 326,
+              "cx": 2843,
+              "ccx": 934
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.010325299997930415,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 14,
+            "precision_bits": 5
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 881,
+            "gates": 2875,
+            "gate_depth": 433,
+            "gate_counts": {
+              "x": 302,
+              "cx": 1975,
+              "ccx": 598
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.002849600001354702,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 510,
+            "gates": 8676,
+            "gate_depth": 1722,
+            "gate_counts": {
+              "x": 1226,
+              "cx": 5797,
+              "ccx": 1653
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.010313199993106537,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 591,
+            "gates": 9228,
+            "gate_depth": 1622,
+            "gate_counts": {
+              "x": 662,
+              "cx": 6441,
+              "ccx": 2125
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 4,
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 216,
+            "gates": 687,
+            "gate_depth": 133,
+            "gate_counts": {
+              "x": 134,
+              "cx": 427,
+              "ccx": 126
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007233999931486323,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 23,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 161,
+            "gates": 513,
+            "gate_depth": 107,
+            "gate_counts": {
+              "x": 130,
+              "cx": 303,
+              "ccx": 80
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0006671000010101125,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                1,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 250,
+            "gates": 805,
+            "gate_depth": 137,
+            "gate_counts": {
+              "x": 170,
+              "cx": 491,
+              "ccx": 144
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007690000056754798,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 23,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 250,
+            "gates": 805,
+            "gate_depth": 137,
+            "gate_counts": {
+              "x": 170,
+              "cx": 491,
+              "ccx": 144
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008726000087335706,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 23,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 771,
+            "gates": 2513,
+            "gate_depth": 381,
+            "gate_counts": {
+              "x": 284,
+              "cx": 1709,
+              "ccx": 520
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.014294900000095367,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 17,
+            "precision_bits": 7
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 815,
+            "gates": 2681,
+            "gate_depth": 445,
+            "gate_counts": {
+              "x": 324,
+              "cx": 1829,
+              "ccx": 528
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00277059999643825,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 417,
+            "gates": 8376,
+            "gate_depth": 1646,
+            "gate_counts": {
+              "x": 1326,
+              "cx": 5553,
+              "ccx": 1497
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00806209999427665,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 342,
+            "gates": 6056,
+            "gate_depth": 1270,
+            "gate_counts": {
+              "x": 638,
+              "cx": 4201,
+              "ccx": 1217
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 5,
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 145,
+            "gates": 465,
+            "gate_depth": 111,
+            "gate_counts": {
+              "x": 106,
+              "cx": 283,
+              "ccx": 76
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004954999894835055,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 193,
+            "gates": 621,
+            "gate_depth": 139,
+            "gate_counts": {
+              "x": 112,
+              "cx": 397,
+              "ccx": 112
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.012069000003975816,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                6,
+                7
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 6,
+                "b": 7,
+                "n0": 53,
+                "width": 9
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 254,
+            "gates": 823,
+            "gate_depth": 149,
+            "gate_counts": {
+              "x": 146,
+              "cx": 523,
+              "ccx": 154
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0037712999910581857,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                6,
+                7
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 6,
+                "b": 7,
+                "n0": 53,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 400,
+            "gates": 1309,
+            "gate_depth": 169,
+            "gate_counts": {
+              "x": 220,
+              "cx": 837,
+              "ccx": 252
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0013011000119149685,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                6,
+                7
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 6,
+                "b": 7,
+                "n0": 53,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 13,
+                "width": 6
+              },
+              {
+                "a": 1,
+                "b": 3,
+                "n0": 29,
+                "width": 8
+              },
+              {
+                "a": 5,
+                "b": 4,
+                "n0": 35,
+                "width": 8
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1183,
+            "gates": 3813,
+            "gate_depth": 403,
+            "gate_counts": {
+              "x": 260,
+              "cx": 2673,
+              "ccx": 880
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.007182199988164939,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 15,
+            "precision_bits": 6
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 716,
+            "gates": 2335,
+            "gate_depth": 365,
+            "gate_counts": {
+              "x": 234,
+              "cx": 1611,
+              "ccx": 490
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0046968999959062785,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 449,
+            "gates": 5951,
+            "gate_depth": 1211,
+            "gate_counts": {
+              "x": 832,
+              "cx": 3985,
+              "ccx": 1134
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.006949799993890338,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 575,
+            "gates": 7607,
+            "gate_depth": 1252,
+            "gate_counts": {
+              "x": 520,
+              "cx": 5329,
+              "ccx": 1758
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 6,
+      "weights": [
+        1,
+        2
+      ],
+      "values": [
+        3,
+        2
+      ],
+      "capacity": 0,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 84,
+            "gates": 267,
+            "gate_depth": 99,
+            "gate_counts": {
+              "x": 76,
+              "cx": 153,
+              "ccx": 38
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004278999986127019,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 66,
+            "gates": 207,
+            "gate_depth": 77,
+            "gate_counts": {
+              "x": 70,
+              "cx": 111,
+              "ccx": 26
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0002775999892037362,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                3,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 3,
+                "b": 1,
+                "n0": 0,
+                "width": 5
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 105,
+            "gates": 339,
+            "gate_depth": 101,
+            "gate_counts": {
+              "x": 98,
+              "cx": 191,
+              "ccx": 50
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003926999925170094,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 3,
+                "b": 1,
+                "n0": 0,
+                "width": 5
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 431,
+            "gate_depth": 111,
+            "gate_counts": {
+              "x": 124,
+              "cx": 241,
+              "ccx": 66
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004478000046219677,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 3,
+                "b": 1,
+                "n0": 0,
+                "width": 5
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              },
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 2,
+                "width": 5
+              }
+            ],
+            "weight_width": 3
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 243,
+            "gates": 783,
+            "gate_depth": 183,
+            "gate_counts": {
+              "x": 124,
+              "cx": 501,
+              "ccx": 158
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0013221000117482617,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 3,
+            "value_width": 4,
+            "numerator_width": 8,
+            "precision_bits": 3
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 259,
+            "gates": 843,
+            "gate_depth": 199,
+            "gate_counts": {
+              "x": 136,
+              "cx": 545,
+              "ccx": 162
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0010110000002896413,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 3,
+            "value_width": 4,
+            "numerator_width": 5,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 128,
+            "gates": 1332,
+            "gate_depth": 474,
+            "gate_counts": {
+              "x": 354,
+              "cx": 785,
+              "ccx": 193
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0029372000135481358,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 106,
+            "gates": 936,
+            "gate_depth": 340,
+            "gate_counts": {
+              "x": 202,
+              "cx": 577,
+              "ccx": 157
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 7,
+      "weights": [
+        2,
+        3
+      ],
+      "values": [
+        2,
+        3
+      ],
+      "capacity": 5,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 94,
+            "gates": 303,
+            "gate_depth": 99,
+            "gate_counts": {
+              "x": 84,
+              "cx": 177,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00041220001003239304,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 94,
+            "gates": 303,
+            "gate_depth": 99,
+            "gate_counts": {
+              "x": 84,
+              "cx": 177,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003099000023212284,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 94,
+            "gates": 303,
+            "gate_depth": 99,
+            "gate_counts": {
+              "x": 84,
+              "cx": 177,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003116000007139519,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 116,
+            "gates": 381,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 110,
+              "cx": 219,
+              "ccx": 52
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005851000023540109,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 5,
+                "width": 5
+              },
+              {
+                "a": 1,
+                "b": 1,
+                "n0": 5,
+                "width": 4
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 387,
+            "gates": 1255,
+            "gate_depth": 249,
+            "gate_counts": {
+              "x": 154,
+              "cx": 839,
+              "ccx": 262
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0016370999946957454,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 4,
+            "numerator_width": 10,
+            "precision_bits": 4
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 299,
+            "gates": 983,
+            "gate_depth": 229,
+            "gate_counts": {
+              "x": 154,
+              "cx": 647,
+              "ccx": 182
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0010158999939449131,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 4,
+            "numerator_width": 6,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 118,
+            "gates": 1376,
+            "gate_depth": 458,
+            "gate_counts": {
+              "x": 366,
+              "cx": 829,
+              "ccx": 181
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0013802000030409545,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 144,
+            "gates": 1624,
+            "gate_depth": 478,
+            "gate_counts": {
+              "x": 242,
+              "cx": 1065,
+              "ccx": 317
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "weights": [
+        9,
+        10,
+        1
+      ],
+      "values": [
+        7,
+        5,
+        2
+      ],
+      "capacity": 3,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 145,
+            "gates": 463,
+            "gate_depth": 121,
+            "gate_counts": {
+              "x": 104,
+              "cx": 281,
+              "ccx": 78
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005006999999750406,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 161,
+            "gates": 511,
+            "gate_depth": 135,
+            "gate_counts": {
+              "x": 104,
+              "cx": 313,
+              "ccx": 94
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005608999927062541,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                7,
+                9
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 9,
+                "n0": 32,
+                "width": 9
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 229,
+            "gates": 735,
+            "gate_depth": 145,
+            "gate_counts": {
+              "x": 138,
+              "cx": 455,
+              "ccx": 142
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007207000016933307,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                7,
+                9
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 9,
+                "n0": 32,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 346,
+            "gates": 1125,
+            "gate_depth": 165,
+            "gate_counts": {
+              "x": 204,
+              "cx": 701,
+              "ccx": 220
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0011086999875260517,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                7,
+                9
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 9,
+                "n0": 32,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              },
+              {
+                "a": 1,
+                "b": 2,
+                "n0": 11,
+                "width": 7
+              },
+              {
+                "a": 2,
+                "b": 1,
+                "n0": 6,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 816,
+            "gates": 2641,
+            "gate_depth": 385,
+            "gate_counts": {
+              "x": 242,
+              "cx": 1815,
+              "ccx": 584
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0031054999999469146,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 16,
+            "precision_bits": 7
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 635,
+            "gates": 2079,
+            "gate_depth": 353,
+            "gate_counts": {
+              "x": 236,
+              "cx": 1421,
+              "ccx": 422
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.003529199995682575,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 222,
+            "gates": 3631,
+            "gate_depth": 939,
+            "gate_counts": {
+              "x": 732,
+              "cx": 2317,
+              "ccx": 582
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0035113000049022958,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 261,
+            "gates": 3847,
+            "gate_depth": 984,
+            "gate_counts": {
+              "x": 436,
+              "cx": 2621,
+              "ccx": 790
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 9,
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 20,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 137,
+            "gates": 431,
+            "gate_depth": 117,
+            "gate_counts": {
+              "x": 92,
+              "cx": 265,
+              "ccx": 74
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000509100005729124,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 137,
+            "gates": 431,
+            "gate_depth": 117,
+            "gate_counts": {
+              "x": 92,
+              "cx": 265,
+              "ccx": 74
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005150000069988891,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 137,
+            "gates": 431,
+            "gate_depth": 117,
+            "gate_counts": {
+              "x": 92,
+              "cx": 265,
+              "ccx": 74
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00048090000927913934,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 171,
+            "gates": 551,
+            "gate_depth": 127,
+            "gate_counts": {
+              "x": 128,
+              "cx": 333,
+              "ccx": 90
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005715000006603077,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              },
+              {
+                "a": 3,
+                "b": 2,
+                "n0": 60,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 790,
+            "gates": 2553,
+            "gate_depth": 357,
+            "gate_counts": {
+              "x": 216,
+              "cx": 1773,
+              "ccx": 564
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.002446300000883639,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 16,
+            "precision_bits": 6
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 627,
+            "gates": 2049,
+            "gate_depth": 343,
+            "gate_counts": {
+              "x": 228,
+              "cx": 1405,
+              "ccx": 416
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0021201999916229397,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 292,
+            "gates": 4095,
+            "gate_depth": 901,
+            "gate_counts": {
+              "x": 668,
+              "cx": 2709,
+              "ccx": 718
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.003908300001057796,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 277,
+            "gates": 4059,
+            "gate_depth": 888,
+            "gate_counts": {
+              "x": 356,
+              "cx": 2837,
+              "ccx": 866
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "weights": [
+        3,
+        3,
+        7
+      ],
+      "values": [
+        4,
+        9,
+        6
+      ],
+      "capacity": 3,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 150,
+            "gates": 479,
+            "gate_depth": 117,
+            "gate_counts": {
+              "x": 106,
+              "cx": 295,
+              "ccx": 78
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005907000013394281,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 19,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 183,
+            "gates": 585,
+            "gate_depth": 145,
+            "gate_counts": {
+              "x": 108,
+              "cx": 373,
+              "ccx": 104
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008839999936753884,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                4,
+                3
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 27,
+                "width": 8
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 244,
+            "gates": 789,
+            "gate_depth": 155,
+            "gate_counts": {
+              "x": 144,
+              "cx": 501,
+              "ccx": 144
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000745400000596419,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                4,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 27,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 19,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 424,
+            "gates": 1381,
+            "gate_depth": 191,
+            "gate_counts": {
+              "x": 216,
+              "cx": 893,
+              "ccx": 272
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.001370899990433827,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                4,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 4,
+                "b": 3,
+                "n0": 27,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 19,
+                "width": 7
+              },
+              {
+                "a": 6,
+                "b": 7,
+                "n0": 73,
+                "width": 10
+              },
+              {
+                "a": 3,
+                "b": 1,
+                "n0": 9,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1267,
+            "gates": 4077,
+            "gate_depth": 419,
+            "gate_counts": {
+              "x": 254,
+              "cx": 2875,
+              "ccx": 948
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.004015300000901334,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 15,
+            "precision_bits": 6
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 775,
+            "gates": 2519,
+            "gate_depth": 385,
+            "gate_counts": {
+              "x": 232,
+              "cx": 1749,
+              "ccx": 538
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.002476499998010695,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 477,
+            "gates": 6859,
+            "gate_depth": 1287,
+            "gate_counts": {
+              "x": 844,
+              "cx": 4653,
+              "ccx": 1362
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.007171400007791817,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 665,
+            "gates": 8663,
+            "gate_depth": 1348,
+            "gate_counts": {
+              "x": 516,
+              "cx": 6117,
+              "ccx": 2030
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 11,
+      "weights": [
+        5,
+        3,
+        1,
+        4
+      ],
+      "values": [
+        2,
+        7,
+        4,
+        5
+      ],
+      "capacity": 5,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 197,
+            "gates": 621,
+            "gate_depth": 131,
+            "gate_counts": {
+              "x": 126,
+              "cx": 379,
+              "ccx": 116
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0006887000054121017,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 199,
+            "gates": 631,
+            "gate_depth": 137,
+            "gate_counts": {
+              "x": 130,
+              "cx": 387,
+              "ccx": 114
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0011824999965028837,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                5,
+                4
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 4,
+                "n0": 49,
+                "width": 9
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 281,
+            "gates": 897,
+            "gate_depth": 151,
+            "gate_counts": {
+              "x": 166,
+              "cx": 555,
+              "ccx": 176
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008913000056054443,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                5,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 4,
+                "n0": 49,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 468,
+            "gates": 1507,
+            "gate_depth": 187,
+            "gate_counts": {
+              "x": 240,
+              "cx": 953,
+              "ccx": 314
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.001505599997472018,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                5,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 4,
+                "n0": 49,
+                "width": 9
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 18,
+                "width": 7
+              },
+              {
+                "a": 2,
+                "b": 5,
+                "n0": 74,
+                "width": 9
+              },
+              {
+                "a": 4,
+                "b": 1,
+                "n0": 20,
+                "width": 8
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1197,
+            "gates": 3865,
+            "gate_depth": 487,
+            "gate_counts": {
+              "x": 324,
+              "cx": 2669,
+              "ccx": 872
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00845850000041537,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 14,
+            "precision_bits": 5
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 948,
+            "gates": 3089,
+            "gate_depth": 443,
+            "gate_counts": {
+              "x": 306,
+              "cx": 2131,
+              "ccx": 652
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.005335800000466406,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 601,
+            "gates": 10184,
+            "gate_depth": 1817,
+            "gate_counts": {
+              "x": 1270,
+              "cx": 6873,
+              "ccx": 2041
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.010446300002513453,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 588,
+            "gates": 9760,
+            "gate_depth": 1622,
+            "gate_counts": {
+              "x": 694,
+              "cx": 6817,
+              "ccx": 2249
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 12,
+      "weights": [
+        3,
+        5,
+        3
+      ],
+      "values": [
+        6,
+        1,
+        7
+      ],
+      "capacity": 0,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 148,
+            "gates": 469,
+            "gate_depth": 121,
+            "gate_counts": {
+              "x": 98,
+              "cx": 287,
+              "ccx": 84
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007634999928995967,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 140,
+            "gates": 441,
+            "gate_depth": 113,
+            "gate_counts": {
+              "x": 92,
+              "cx": 269,
+              "ccx": 80
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004693999944720417,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                7,
+                3
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 3,
+                "n0": 0,
+                "width": 8
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 208,
+            "gates": 665,
+            "gate_depth": 123,
+            "gate_counts": {
+              "x": 126,
+              "cx": 411,
+              "ccx": 128
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0009415999957127497,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                7,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 3,
+                "n0": 0,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 290,
+            "gates": 939,
+            "gate_depth": 155,
+            "gate_counts": {
+              "x": 170,
+              "cx": 587,
+              "ccx": 182
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0009938000002875924,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                7,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 7,
+                "b": 3,
+                "n0": 0,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 14,
+                "width": 6
+              },
+              {
+                "a": 1,
+                "b": 5,
+                "n0": 59,
+                "width": 9
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 785,
+            "gates": 2531,
+            "gate_depth": 381,
+            "gate_counts": {
+              "x": 232,
+              "cx": 1729,
+              "ccx": 570
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0027775000053225085,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 5,
+            "numerator_width": 13,
+            "precision_bits": 5
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 636,
+            "gates": 2067,
+            "gate_depth": 351,
+            "gate_counts": {
+              "x": 216,
+              "cx": 1413,
+              "ccx": 438
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0024902000004658476,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 5,
+            "numerator_width": 8,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 346,
+            "gates": 4927,
+            "gate_depth": 1160,
+            "gate_counts": {
+              "x": 724,
+              "cx": 3229,
+              "ccx": 974
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.004869900003541261,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 351,
+            "gates": 5007,
+            "gate_depth": 1058,
+            "gate_counts": {
+              "x": 452,
+              "cx": 3413,
+              "ccx": 1142
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 13,
+      "weights": [
+        2,
+        4,
+        7,
+        5
+      ],
+      "values": [
+        7,
+        3,
+        5,
+        1
+      ],
+      "capacity": 9,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 205,
+            "gates": 645,
+            "gate_depth": 137,
+            "gate_counts": {
+              "x": 124,
+              "cx": 397,
+              "ccx": 124
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007278999983100221,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 16,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 253,
+            "gates": 805,
+            "gate_depth": 143,
+            "gate_counts": {
+              "x": 134,
+              "cx": 515,
+              "ccx": 156
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007915000023785979,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                5,
+                7
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 7,
+                "n0": 85,
+                "width": 10
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 342,
+            "gates": 1091,
+            "gate_depth": 153,
+            "gate_counts": {
+              "x": 168,
+              "cx": 697,
+              "ccx": 226
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0013504999951692298,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                5,
+                7
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 7,
+                "n0": 85,
+                "width": 10
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 16,
+                "width": 7
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 542,
+            "gates": 1751,
+            "gate_depth": 185,
+            "gate_counts": {
+              "x": 254,
+              "cx": 1131,
+              "ccx": 366
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0020034000044688582,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                5,
+                7
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 7,
+                "n0": 85,
+                "width": 10
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 16,
+                "width": 7
+              },
+              {
+                "a": 1,
+                "b": 5,
+                "n0": 71,
+                "width": 9
+              },
+              {
+                "a": 7,
+                "b": 2,
+                "n0": 63,
+                "width": 9
+              }
+            ],
+            "weight_width": 6
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1664,
+            "gates": 5359,
+            "gate_depth": 537,
+            "gate_counts": {
+              "x": 340,
+              "cx": 3773,
+              "ccx": 1246
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.006538699992233887,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 16,
+            "precision_bits": 6
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1061,
+            "gates": 3449,
+            "gate_depth": 467,
+            "gate_counts": {
+              "x": 306,
+              "cx": 2399,
+              "ccx": 744
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0038054000033298507,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 658,
+            "gates": 11208,
+            "gate_depth": 1909,
+            "gate_counts": {
+              "x": 1226,
+              "cx": 7653,
+              "ccx": 2329
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.013600899997982197,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 743,
+            "gates": 12660,
+            "gate_depth": 1930,
+            "gate_counts": {
+              "x": 710,
+              "cx": 8977,
+              "ccx": 2973
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 14,
+      "weights": [
+        2,
+        5,
+        4
+      ],
+      "values": [
+        5,
+        6,
+        6
+      ],
+      "capacity": 0,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 133,
+            "gates": 419,
+            "gate_depth": 117,
+            "gate_counts": {
+              "x": 98,
+              "cx": 251,
+              "ccx": 70
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005490999901667237,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 17,
+                "width": 7
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 111,
+            "gates": 347,
+            "gate_depth": 105,
+            "gate_counts": {
+              "x": 92,
+              "cx": 201,
+              "ccx": 54
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00040669999725650996,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                5,
+                2
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 2,
+                "n0": 0,
+                "width": 8
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 177,
+            "gates": 565,
+            "gate_depth": 119,
+            "gate_counts": {
+              "x": 126,
+              "cx": 339,
+              "ccx": 100
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005945000011706725,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                5,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 2,
+                "n0": 0,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 17,
+                "width": 7
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 268,
+            "gates": 863,
+            "gate_depth": 151,
+            "gate_counts": {
+              "x": 166,
+              "cx": 531,
+              "ccx": 166
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008167000050889328,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                5,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                6,
+                5
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 5,
+                "b": 2,
+                "n0": 0,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 17,
+                "width": 7
+              },
+              {
+                "a": 6,
+                "b": 5,
+                "n0": 19,
+                "width": 9
+              }
+            ],
+            "weight_width": 5
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 857,
+            "gates": 2763,
+            "gate_depth": 391,
+            "gate_counts": {
+              "x": 240,
+              "cx": 1901,
+              "ccx": 622
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0025361000007251278,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 6,
+            "numerator_width": 14,
+            "precision_bits": 5
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 648,
+            "gates": 2111,
+            "gate_depth": 337,
+            "gate_counts": {
+              "x": 228,
+              "cx": 1445,
+              "ccx": 438
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.002195900000515394,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 5,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 370,
+            "gates": 4979,
+            "gate_depth": 1052,
+            "gate_counts": {
+              "x": 740,
+              "cx": 3261,
+              "ccx": 978
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.031239100004313514,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 2048,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 386,
+            "gates": 5219,
+            "gate_depth": 1038,
+            "gate_counts": {
+              "x": 448,
+              "cx": 3577,
+              "ccx": 1194
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "case_id": 15,
+      "weights": [
+        5,
+        1,
+        6,
+        7
+      ],
+      "values": [
+        5,
+        5,
+        3,
+        9
+      ],
+      "capacity": 16,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 216,
+            "gates": 681,
+            "gate_depth": 131,
+            "gate_counts": {
+              "x": 128,
+              "cx": 421,
+              "ccx": 132
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "simple_remaining_profit",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007473000005120412,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 22,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 208,
+            "gates": 657,
+            "gate_depth": 129,
+            "gate_counts": {
+              "x": 130,
+              "cx": 403,
+              "ccx": 124
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000640500002191402,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 1,
+            "multipliers": [
+              [
+                1,
+                2
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 2,
+                "n0": 41,
+                "width": 8
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 297,
+            "gates": 947,
+            "gate_depth": 139,
+            "gate_counts": {
+              "x": 168,
+              "cx": 589,
+              "ccx": 190
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0009465000039199367,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 2,
+            "multipliers": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 2,
+                "n0": 41,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 22,
+                "width": 7
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 375,
+            "gates": 1203,
+            "gate_depth": 157,
+            "gate_counts": {
+              "x": 200,
+              "cx": 757,
+              "ccx": 246
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "dual_bank",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0011938999959966168,
+            "build_seconds_classification": "MEASURED",
+            "q_requested": 4,
+            "multipliers": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "bank_data": [
+              {
+                "a": 1,
+                "b": 2,
+                "n0": 41,
+                "width": 8
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "n0": 22,
+                "width": 7
+              },
+              {
+                "a": 5,
+                "b": 1,
+                "n0": 80,
+                "width": 8
+              }
+            ],
+            "weight_width": 7
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1590,
+            "gates": 5123,
+            "gate_depth": 583,
+            "gate_counts": {
+              "x": 340,
+              "cx": 3597,
+              "ccx": 1186
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "fixedpoint_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0049263999972026795,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 17,
+            "precision_bits": 6
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1010,
+            "gates": 3295,
+            "gate_depth": 489,
+            "gate_counts": {
+              "x": 320,
+              "cx": 2281,
+              "ccx": 694
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_single_scan",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.003299699994386174,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": null,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 618,
+            "gates": 9808,
+            "gate_depth": 1861,
+            "gate_counts": {
+              "x": 1294,
+              "cx": 6617,
+              "ccx": 1897
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_depth_wrapper",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.009927799997967668,
+            "build_seconds_classification": "MEASURED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8192,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 654,
+            "gates": 11076,
+            "gate_depth": 1810,
+            "gate_counts": {
+              "x": 698,
+              "cx": 7829,
+              "ccx": 2549
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          },
+          "metadata": {}
+        }
+      }
+    }
+  ],
+  "randomized": [
+    {
+      "seed": 20261100,
+      "weights": [
+        42,
+        99,
+        32,
+        85,
+        35,
+        79
+      ],
+      "values": [
+        94,
+        28,
+        35,
+        86,
+        86,
+        82
+      ],
+      "capacity": 186,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 453,
+            "gates": 1431,
+            "gate_depth": 173,
+            "gate_counts": {
+              "x": 190,
+              "cx": 935,
+              "ccx": 306
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 673,
+            "gates": 2137,
+            "gate_depth": 231,
+            "gate_counts": {
+              "x": 200,
+              "cx": 1457,
+              "ccx": 480
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 886,
+            "gates": 2821,
+            "gate_depth": 241,
+            "gate_counts": {
+              "x": 256,
+              "cx": 1917,
+              "ccx": 648
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1674,
+            "gates": 5361,
+            "gate_depth": 315,
+            "gate_counts": {
+              "x": 394,
+              "cx": 3707,
+              "ccx": 1260
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 6514,
+            "gates": 20933,
+            "gate_depth": 1415,
+            "gate_counts": {
+              "x": 756,
+              "cx": 15129,
+              "ccx": 5048
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 4114,
+            "gates": 13299,
+            "gate_depth": 1127,
+            "gate_counts": {
+              "x": 612,
+              "cx": 9605,
+              "ccx": 3082
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 3053,
+            "gates": 73482,
+            "gate_depth": 7060,
+            "gate_counts": {
+              "x": 3762,
+              "cx": 52865,
+              "ccx": 16855
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 520,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2874,
+            "gates": 68206,
+            "gate_depth": 7070,
+            "gate_counts": {
+              "x": 2134,
+              "cx": 49669,
+              "ccx": 16403
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261101,
+      "weights": [
+        95,
+        12,
+        15,
+        51,
+        8,
+        89,
+        6,
+        7
+      ],
+      "values": [
+        84,
+        29,
+        36,
+        43,
+        17,
+        19,
+        58,
+        72
+      ],
+      "capacity": 141,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 581,
+            "gates": 1833,
+            "gate_depth": 185,
+            "gate_counts": {
+              "x": 234,
+              "cx": 1195,
+              "ccx": 404
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 928,
+            "gates": 2945,
+            "gate_depth": 287,
+            "gate_counts": {
+              "x": 248,
+              "cx": 2017,
+              "ccx": 680
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1181,
+            "gates": 3747,
+            "gate_depth": 297,
+            "gate_counts": {
+              "x": 306,
+              "cx": 2551,
+              "ccx": 890
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2089,
+            "gates": 6651,
+            "gate_depth": 341,
+            "gate_counts": {
+              "x": 444,
+              "cx": 4589,
+              "ccx": 1618
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 11943,
+            "gates": 38317,
+            "gate_depth": 2075,
+            "gate_counts": {
+              "x": 1006,
+              "cx": 27943,
+              "ccx": 9368
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 4778,
+            "gates": 15465,
+            "gate_depth": 1349,
+            "gate_counts": {
+              "x": 778,
+              "cx": 11127,
+              "ccx": 3560
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 3585,
+            "gates": 119854,
+            "gate_depth": 11300,
+            "gate_counts": {
+              "x": 5804,
+              "cx": 86407,
+              "ccx": 27643
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 484,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 4328,
+            "gates": 146318,
+            "gate_depth": 13098,
+            "gate_counts": {
+              "x": 2984,
+              "cx": 107699,
+              "ccx": 35635
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261102,
+      "weights": [
+        73,
+        9,
+        49,
+        81,
+        83,
+        21,
+        16,
+        54,
+        6,
+        98,
+        84,
+        26
+      ],
+      "values": [
+        99,
+        52,
+        67,
+        79,
+        60,
+        25,
+        77,
+        24,
+        91,
+        72,
+        53,
+        73
+      ],
+      "capacity": 300,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 895,
+            "gates": 2815,
+            "gate_depth": 233,
+            "gate_counts": {
+              "x": 308,
+              "cx": 1849,
+              "ccx": 658
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1145,
+            "gates": 3623,
+            "gate_depth": 281,
+            "gate_counts": {
+              "x": 330,
+              "cx": 2443,
+              "ccx": 850
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1548,
+            "gates": 4887,
+            "gate_depth": 291,
+            "gate_counts": {
+              "x": 394,
+              "cx": 3295,
+              "ccx": 1198
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2663,
+            "gates": 8419,
+            "gate_depth": 325,
+            "gate_counts": {
+              "x": 532,
+              "cx": 5761,
+              "ccx": 2126
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 12938,
+            "gates": 41593,
+            "gate_depth": 2557,
+            "gate_counts": {
+              "x": 1532,
+              "cx": 30009,
+              "ccx": 10052
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 7725,
+            "gates": 25011,
+            "gate_depth": 2061,
+            "gate_counts": {
+              "x": 1204,
+              "cx": 18025,
+              "ccx": 5782
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 5962,
+            "gates": 275842,
+            "gate_depth": 24263,
+            "gate_counts": {
+              "x": 12862,
+              "cx": 199289,
+              "ccx": 63691
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 556,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 6464,
+            "gates": 296038,
+            "gate_depth": 25934,
+            "gate_counts": {
+              "x": 6182,
+              "cx": 218625,
+              "ccx": 71231
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261103,
+      "weights": [
+        93785,
+        150568,
+        170001,
+        170982,
+        203602,
+        649892,
+        645294,
+        855656
+      ],
+      "values": [
+        140086,
+        57344,
+        554451,
+        266259,
+        555440,
+        775605,
+        713943,
+        737026
+      ],
+      "capacity": 1469890,
+      "methods": {
+        "simple": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1264,
+            "gates": 3981,
+            "gate_depth": 319,
+            "gate_counts": {
+              "x": 320,
+              "cx": 2725,
+              "ccx": 936
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "root_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2348,
+            "gates": 7459,
+            "gate_depth": 513,
+            "gate_counts": {
+              "x": 372,
+              "cx": 5293,
+              "ccx": 1794
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank2": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2956,
+            "gates": 9405,
+            "gate_depth": 523,
+            "gate_counts": {
+              "x": 474,
+              "cx": 6651,
+              "ccx": 2280
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "bank4": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 6466,
+            "gates": 20623,
+            "gate_depth": 793,
+            "gate_counts": {
+              "x": 738,
+              "cx": 14783,
+              "ccx": 5102
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 53734,
+            "gates": 172183,
+            "gate_depth": 5015,
+            "gate_counts": {
+              "x": 2078,
+              "cx": 127491,
+              "ccx": 42614
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_single": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 27771,
+            "gates": 89229,
+            "gate_depth": 3617,
+            "gate_counts": {
+              "x": 1488,
+              "cx": 66025,
+              "ccx": 21716
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "exact_wrapper": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 21659,
+            "gates": 625674,
+            "gate_depth": 29848,
+            "gate_counts": {
+              "x": 12980,
+              "cx": 461583,
+              "ccx": 151111
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          }
+        },
+        "fixedpoint_wrapper_legacy": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 448,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 23208,
+            "gates": 743606,
+            "gate_depth": 35786,
+            "gate_counts": {
+              "x": 7200,
+              "cx": 553131,
+              "ccx": 183275
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST"
+          }
+        }
+      }
+    }
+  ],
+  "dense": [
+    {
+      "case_id": 0,
+      "method": "simple",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "root_dual",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "bank2",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "bank4",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "fixedpoint_single",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "exact_single",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "exact_wrapper",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 0,
+      "method": "fixedpoint_wrapper_legacy",
+      "classification": "SIMULATED",
+      "status": "COMPLETED",
+      "nonzero_input_amplitudes": 8,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "case_id": 1,
+      "method": "simple",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 46,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "root_dual",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 37,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "bank2",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 59,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "bank4",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 59,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "fixedpoint_single",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 95,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "exact_single",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 92,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "exact_wrapper",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 36,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    },
+    {
+      "case_id": 1,
+      "method": "fixedpoint_wrapper_legacy",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 37,
+      "cap": 18,
+      "cap_classification": "HARDCODED"
+    }
+  ],
+  "caps": [
+    {
+      "expected": "qubit_budget",
+      "reason": "qubit_budget",
+      "status": "EXPECTED_CAP",
+      "counters": {
+        "qubits": 9,
+        "gates": 0,
+        "projected_gates": 0,
+        "elapsed_seconds": 4.1000021155923605e-06,
+        "classification": "MEASURED_BUILD_COUNTERS"
+      }
+    },
+    {
+      "expected": "gate_budget",
+      "reason": "gate_budget",
+      "status": "EXPECTED_CAP",
+      "counters": {
+        "qubits": 15,
+        "gates": 10,
+        "projected_gates": 11,
+        "elapsed_seconds": 5.4100004490464926e-05,
+        "classification": "MEASURED_BUILD_COUNTERS"
+      }
+    },
+    {
+      "expected": "build_time_budget",
+      "reason": "build_time_budget",
+      "status": "EXPECTED_CAP",
+      "counters": {
+        "qubits": 9,
+        "gates": 0,
+        "projected_gates": 0,
+        "elapsed_seconds": 1.5999976312741637e-06,
+        "classification": "MEASURED_BUILD_COUNTERS"
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "classification": "SIMULATED",
+    "completed_method_cases": 160,
+    "columns": 422144,
+    "predicate_mismatches": 0,
+    "dirty_columns": 0,
+    "elapsed_seconds_measured": 15.703098700003466
+  }
+}

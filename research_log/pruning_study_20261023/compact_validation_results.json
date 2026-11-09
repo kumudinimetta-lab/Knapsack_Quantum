@@ -1,0 +1,4767 @@
+{
+  "scope": "Fixed classical depth; quantum prefix/threshold, explicit X/CX/CCX; not full walk.",
+  "primitives": [
+    {
+      "width": 1,
+      "primitive": "add_mod",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "mismatches": 0,
+      "gates": 6,
+      "qubits": 4
+    },
+    {
+      "width": 1,
+      "primitive": "less",
+      "classification": "SIMULATED",
+      "columns": 8,
+      "mismatches": 0,
+      "gates": 12,
+      "qubits": 4
+    },
+    {
+      "width": 2,
+      "primitive": "add_mod",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "mismatches": 0,
+      "gates": 12,
+      "qubits": 6
+    },
+    {
+      "width": 2,
+      "primitive": "less",
+      "classification": "SIMULATED",
+      "columns": 32,
+      "mismatches": 0,
+      "gates": 20,
+      "qubits": 6
+    },
+    {
+      "width": 3,
+      "primitive": "add_mod",
+      "classification": "SIMULATED",
+      "columns": 128,
+      "mismatches": 0,
+      "gates": 18,
+      "qubits": 8
+    },
+    {
+      "width": 3,
+      "primitive": "less",
+      "classification": "SIMULATED",
+      "columns": 128,
+      "mismatches": 0,
+      "gates": 28,
+      "qubits": 8
+    },
+    {
+      "width": 4,
+      "primitive": "add_mod",
+      "classification": "SIMULATED",
+      "columns": 512,
+      "mismatches": 0,
+      "gates": 24,
+      "qubits": 10
+    },
+    {
+      "width": 4,
+      "primitive": "less",
+      "classification": "SIMULATED",
+      "columns": 512,
+      "mismatches": 0,
+      "gates": 36,
+      "qubits": 10
+    },
+    {
+      "width": 5,
+      "primitive": "add_mod",
+      "classification": "SIMULATED",
+      "columns": 2048,
+      "mismatches": 0,
+      "gates": 30,
+      "qubits": 12
+    },
+    {
+      "width": 5,
+      "primitive": "less",
+      "classification": "SIMULATED",
+      "columns": 2048,
+      "mismatches": 0,
+      "gates": 44,
+      "qubits": 12
+    }
+  ],
+  "rows": [
+    {
+      "category": "tiny_all_depths",
+      "label": "empty",
+      "weights": [],
+      "values": [],
+      "capacity": 0,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 4,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 8,
+            "gates": 25,
+            "gate_depth": 21,
+            "gate_counts": {
+              "x": 12,
+              "cx": 13,
+              "ccx": 0
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 7.780001033097506e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 4,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 10,
+            "gates": 95,
+            "gate_depth": 62,
+            "gate_counts": {
+              "x": 24,
+              "cx": 50,
+              "ccx": 21
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 9.819999104365706e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 1,
+            "loss_width": 2
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 4,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 11,
+            "gates": 37,
+            "gate_depth": 35,
+            "gate_counts": {
+              "x": 18,
+              "cx": 19,
+              "ccx": 0
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 4.440000338945538e-05,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 1,
+            "value_width": 1,
+            "numerator_width": 2,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 4,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 15,
+            "gates": 198,
+            "gate_depth": 154,
+            "gate_counts": {
+              "x": 26,
+              "cx": 123,
+              "ccx": 49
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00018679999629966915,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 1,
+            "value_width": 1,
+            "numerator_width": 2
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "nonempty_capacity0",
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 12,
+            "gates": 35,
+            "gate_depth": 25,
+            "gate_counts": {
+              "x": 14,
+              "cx": 19,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 5.0700007705017924e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 14,
+            "gates": 143,
+            "gate_depth": 88,
+            "gate_counts": {
+              "x": 32,
+              "cx": 78,
+              "ccx": 33
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 4.780000017490238e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 2,
+            "loss_width": 3
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 24,
+            "gates": 81,
+            "gate_depth": 49,
+            "gate_counts": {
+              "x": 34,
+              "cx": 43,
+              "ccx": 4
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00010439999459777027,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 26,
+            "gates": 741,
+            "gate_depth": 536,
+            "gate_counts": {
+              "x": 76,
+              "cx": 475,
+              "ccx": 190
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0001348000077996403,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "nonempty_capacity0",
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 0,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 20,
+            "gates": 61,
+            "gate_depth": 27,
+            "gate_counts": {
+              "x": 26,
+              "cx": 31,
+              "ccx": 4
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00020619999850168824,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 15,
+            "gates": 171,
+            "gate_depth": 112,
+            "gate_counts": {
+              "x": 32,
+              "cx": 98,
+              "ccx": 41
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00012240000069141388,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 2,
+            "loss_width": 3
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 26,
+            "gates": 81,
+            "gate_depth": 49,
+            "gate_counts": {
+              "x": 30,
+              "cx": 43,
+              "ccx": 8
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0002077999961329624,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 23,
+            "gates": 366,
+            "gate_depth": 266,
+            "gate_counts": {
+              "x": 34,
+              "cx": 239,
+              "ccx": 93
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00014990000636316836,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 2,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "one_allfit",
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 15,
+            "gates": 47,
+            "gate_depth": 31,
+            "gate_counts": {
+              "x": 18,
+              "cx": 27,
+              "ccx": 2
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 8.699999307282269e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 17,
+            "gates": 195,
+            "gate_depth": 120,
+            "gate_counts": {
+              "x": 48,
+              "cx": 102,
+              "ccx": 45
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 6.9500005338341e-05,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 3,
+            "loss_width": 4
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 26,
+            "gates": 89,
+            "gate_depth": 45,
+            "gate_counts": {
+              "x": 34,
+              "cx": 51,
+              "ccx": 4
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00015249999705702066,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 8,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 28,
+            "gates": 815,
+            "gate_depth": 572,
+            "gate_counts": {
+              "x": 90,
+              "cx": 519,
+              "ccx": 206
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.001985100010642782,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "one_allfit",
+      "weights": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "capacity": 1,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 103,
+            "gate_depth": 43,
+            "gate_counts": {
+              "x": 34,
+              "cx": 59,
+              "ccx": 10
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00016070000128820539,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 18,
+            "gates": 291,
+            "gate_depth": 200,
+            "gate_counts": {
+              "x": 52,
+              "cx": 166,
+              "ccx": 73
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00011439999798312783,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 3,
+            "loss_width": 4
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 29,
+            "gates": 93,
+            "gate_depth": 49,
+            "gate_counts": {
+              "x": 34,
+              "cx": 51,
+              "ccx": 8
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0034318999969400465,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 16,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 25,
+            "gates": 416,
+            "gate_depth": 296,
+            "gate_counts": {
+              "x": 44,
+              "cx": 267,
+              "ccx": 105
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00016110000433400273,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 3,
+            "value_width": 2,
+            "numerator_width": 3
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny4",
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 55,
+            "gates": 169,
+            "gate_depth": 63,
+            "gate_counts": {
+              "x": 30,
+              "cx": 111,
+              "ccx": 28
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.005524600011995062,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 31,
+            "gates": 491,
+            "gate_depth": 294,
+            "gate_counts": {
+              "x": 84,
+              "cx": 286,
+              "ccx": 121
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00015600000915583223,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ],
+            "weight_width": 6,
+            "loss_width": 8
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 180,
+            "gates": 617,
+            "gate_depth": 111,
+            "gate_counts": {
+              "x": 148,
+              "cx": 389,
+              "ccx": 80
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000869700001203455,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 71,
+            "gates": 7304,
+            "gate_depth": 4964,
+            "gate_counts": {
+              "x": 416,
+              "cx": 4911,
+              "ccx": 1977
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.026258899990352802,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny4",
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 75,
+            "gates": 231,
+            "gate_depth": 69,
+            "gate_counts": {
+              "x": 40,
+              "cx": 149,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.005062500000349246,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 675,
+            "gate_depth": 438,
+            "gate_counts": {
+              "x": 88,
+              "cx": 410,
+              "ccx": 177
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00017010000010486692,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ],
+            "weight_width": 6,
+            "loss_width": 8
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 464,
+            "gates": 1521,
+            "gate_depth": 287,
+            "gate_counts": {
+              "x": 170,
+              "cx": 1043,
+              "ccx": 308
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0035611000057542697,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 68,
+            "gates": 5725,
+            "gate_depth": 3894,
+            "gate_counts": {
+              "x": 330,
+              "cx": 3843,
+              "ccx": 1552
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0031589999998686835,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny4",
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "depth": 2,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 86,
+            "gates": 263,
+            "gate_depth": 69,
+            "gate_counts": {
+              "x": 42,
+              "cx": 171,
+              "ccx": 50
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00034589999995660037,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 33,
+            "gates": 855,
+            "gate_depth": 582,
+            "gate_counts": {
+              "x": 92,
+              "cx": 530,
+              "ccx": 233
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00019999999494757503,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ],
+            "weight_width": 6,
+            "loss_width": 8
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 338,
+            "gates": 1099,
+            "gate_depth": 209,
+            "gate_counts": {
+              "x": 126,
+              "cx": 751,
+              "ccx": 222
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.001176400008262135,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 2,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 65,
+            "gates": 4406,
+            "gate_depth": 3018,
+            "gate_counts": {
+              "x": 248,
+              "cx": 2959,
+              "ccx": 1199
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0007723000016994774,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny4",
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "depth": 3,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 107,
+            "gates": 331,
+            "gate_depth": 71,
+            "gate_counts": {
+              "x": 56,
+              "cx": 213,
+              "ccx": 62
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00038610000046901405,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 34,
+            "gates": 935,
+            "gate_depth": 646,
+            "gate_counts": {
+              "x": 92,
+              "cx": 586,
+              "ccx": 257
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00021769999875687063,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ],
+            "weight_width": 6,
+            "loss_width": 8
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 235,
+            "gates": 757,
+            "gate_depth": 157,
+            "gate_counts": {
+              "x": 96,
+              "cx": 513,
+              "ccx": 148
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.001515100011602044,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 3,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 62,
+            "gates": 2827,
+            "gate_depth": 1950,
+            "gate_counts": {
+              "x": 162,
+              "cx": 1891,
+              "ccx": 774
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0031604999967385083,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny4",
+      "weights": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "capacity": 8,
+      "depth": 4,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 119,
+            "gates": 365,
+            "gate_depth": 95,
+            "gate_counts": {
+              "x": 56,
+              "cx": 237,
+              "ccx": 72
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004115000047022477,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 35,
+            "gates": 1111,
+            "gate_depth": 790,
+            "gate_counts": {
+              "x": 92,
+              "cx": 706,
+              "ccx": 313
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00023160000273492187,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              4,
+              3
+            ],
+            "weight_width": 6,
+            "loss_width": 8
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 92,
+            "gates": 277,
+            "gate_depth": 97,
+            "gate_counts": {
+              "x": 48,
+              "cx": 177,
+              "ccx": 52
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00036630000977311283,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 4,
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 59,
+            "gates": 1508,
+            "gate_depth": 1074,
+            "gate_counts": {
+              "x": 80,
+              "cx": 1007,
+              "ccx": 421
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.000939200006541796,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 6,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "ties4",
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 30,
+            "gates": 89,
+            "gate_depth": 45,
+            "gate_counts": {
+              "x": 26,
+              "cx": 55,
+              "ccx": 8
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00014170000213198364,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 29,
+            "gates": 343,
+            "gate_depth": 188,
+            "gate_counts": {
+              "x": 88,
+              "cx": 178,
+              "ccx": 77
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00010200000542681664,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 6
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 465,
+            "gate_depth": 89,
+            "gate_counts": {
+              "x": 152,
+              "cx": 273,
+              "ccx": 40
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005968999903416261,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 76,
+            "gates": 6364,
+            "gate_depth": 4326,
+            "gate_counts": {
+              "x": 476,
+              "cx": 4171,
+              "ccx": 1717
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0008435000054305419,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "ties4",
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 39,
+            "gates": 119,
+            "gate_depth": 45,
+            "gate_counts": {
+              "x": 36,
+              "cx": 73,
+              "ccx": 10
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005485000001499429,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 30,
+            "gates": 435,
+            "gate_depth": 262,
+            "gate_counts": {
+              "x": 88,
+              "cx": 242,
+              "ccx": 105
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00013380000018514693,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 6
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 371,
+            "gates": 1235,
+            "gate_depth": 223,
+            "gate_counts": {
+              "x": 174,
+              "cx": 839,
+              "ccx": 222
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0032085999991977587,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 73,
+            "gates": 5193,
+            "gate_depth": 3542,
+            "gate_counts": {
+              "x": 382,
+              "cx": 3407,
+              "ccx": 1404
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0014323000068543479,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "ties4",
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "depth": 2,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 63,
+            "gates": 199,
+            "gate_depth": 57,
+            "gate_counts": {
+              "x": 56,
+              "cx": 121,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00027859999681822956,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 31,
+            "gates": 527,
+            "gate_depth": 336,
+            "gate_counts": {
+              "x": 88,
+              "cx": 306,
+              "ccx": 133
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00014489999739453197,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 6
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 369,
+            "gates": 1213,
+            "gate_depth": 239,
+            "gate_counts": {
+              "x": 154,
+              "cx": 827,
+              "ccx": 232
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0012764999992214143,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 2,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 70,
+            "gates": 4022,
+            "gate_depth": 2758,
+            "gate_counts": {
+              "x": 288,
+              "cx": 2643,
+              "ccx": 1091
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0005071000050520524,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "ties4",
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "depth": 3,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 81,
+            "gates": 253,
+            "gate_depth": 69,
+            "gate_counts": {
+              "x": 58,
+              "cx": 159,
+              "ccx": 36
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0038197000103536993,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 623,
+            "gate_depth": 410,
+            "gate_counts": {
+              "x": 88,
+              "cx": 374,
+              "ccx": 161
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00015469999925699085,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 6
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 254,
+            "gates": 821,
+            "gate_depth": 167,
+            "gate_counts": {
+              "x": 104,
+              "cx": 557,
+              "ccx": 160
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.003453299999819137,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 3,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 67,
+            "gates": 2847,
+            "gate_depth": 1974,
+            "gate_counts": {
+              "x": 190,
+              "cx": 1879,
+              "ccx": 778
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0003694000042742118,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "ties4",
+      "weights": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "values": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "capacity": 13,
+      "depth": 4,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 89,
+            "gates": 275,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 60,
+              "cx": 173,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003232000017305836,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 33,
+            "gates": 711,
+            "gate_depth": 480,
+            "gate_counts": {
+              "x": 88,
+              "cx": 434,
+              "ccx": 189
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0006797999958507717,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 6
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 126,
+            "gates": 387,
+            "gate_depth": 105,
+            "gate_counts": {
+              "x": 54,
+              "cx": 255,
+              "ccx": 78
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00041680000140331686,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 4,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 1024,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 64,
+            "gates": 1680,
+            "gate_depth": 1190,
+            "gate_counts": {
+              "x": 100,
+              "cx": 1115,
+              "ccx": 465
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00025209999876096845,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny3",
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 69,
+            "gates": 219,
+            "gate_depth": 75,
+            "gate_counts": {
+              "x": 34,
+              "cx": 147,
+              "ccx": 38
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00028160000510979444,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 659,
+            "gate_depth": 416,
+            "gate_counts": {
+              "x": 100,
+              "cx": 390,
+              "ccx": 169
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00015279999934136868,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 154,
+            "gates": 525,
+            "gate_depth": 109,
+            "gate_counts": {
+              "x": 118,
+              "cx": 335,
+              "ccx": 72
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007960999937495217,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 65,
+            "gates": 6489,
+            "gate_depth": 4486,
+            "gate_counts": {
+              "x": 350,
+              "cx": 4359,
+              "ccx": 1780
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0005621000018436462,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny3",
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 103,
+            "gates": 329,
+            "gate_depth": 91,
+            "gate_counts": {
+              "x": 52,
+              "cx": 217,
+              "ccx": 60
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00045789999421685934,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 33,
+            "gates": 859,
+            "gate_depth": 570,
+            "gate_counts": {
+              "x": 104,
+              "cx": 526,
+              "ccx": 229
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0002170000079786405,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 421,
+            "gates": 1373,
+            "gate_depth": 245,
+            "gate_counts": {
+              "x": 138,
+              "cx": 947,
+              "ccx": 288
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.004839700006414205,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 62,
+            "gates": 5186,
+            "gate_depth": 3612,
+            "gate_counts": {
+              "x": 268,
+              "cx": 3491,
+              "ccx": 1427
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0013744000025326386,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny3",
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "depth": 2,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 119,
+            "gates": 381,
+            "gate_depth": 91,
+            "gate_counts": {
+              "x": 62,
+              "cx": 251,
+              "ccx": 68
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004231999919284135,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 34,
+            "gates": 943,
+            "gate_depth": 634,
+            "gate_counts": {
+              "x": 104,
+              "cx": 586,
+              "ccx": 253
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0002226999931735918,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 237,
+            "gates": 769,
+            "gate_depth": 167,
+            "gate_counts": {
+              "x": 94,
+              "cx": 523,
+              "ccx": 152
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008572999940952286,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 2,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 59,
+            "gates": 2867,
+            "gate_depth": 1990,
+            "gate_counts": {
+              "x": 178,
+              "cx": 1903,
+              "ccx": 786
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00036809999437537044,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "tiny3",
+      "weights": [
+        4,
+        7,
+        6
+      ],
+      "values": [
+        5,
+        6,
+        2
+      ],
+      "capacity": 7,
+      "depth": 3,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 148,
+            "gates": 469,
+            "gate_depth": 105,
+            "gate_counts": {
+              "x": 62,
+              "cx": 315,
+              "ccx": 92
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00048210000386461616,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 35,
+            "gates": 1143,
+            "gate_depth": 784,
+            "gate_counts": {
+              "x": 104,
+              "cx": 726,
+              "ccx": 313
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0003259000077378005,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              6,
+              7
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 86,
+            "gates": 267,
+            "gate_depth": 85,
+            "gate_counts": {
+              "x": 50,
+              "cx": 171,
+              "ccx": 46
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0004481999931158498,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 3,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 56,
+            "gates": 1320,
+            "gate_depth": 918,
+            "gate_counts": {
+              "x": 92,
+              "cx": 867,
+              "ccx": 361
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00023950000468175858,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "overweight",
+      "weights": [
+        9,
+        10,
+        1
+      ],
+      "values": [
+        7,
+        5,
+        2
+      ],
+      "capacity": 3,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 42,
+            "gates": 127,
+            "gate_depth": 61,
+            "gate_counts": {
+              "x": 28,
+              "cx": 77,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00017939999816007912,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 519,
+            "gate_depth": 322,
+            "gate_counts": {
+              "x": 84,
+              "cx": 302,
+              "ccx": 133
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00021220000053290278,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 104,
+            "gates": 357,
+            "gate_depth": 95,
+            "gate_counts": {
+              "x": 108,
+              "cx": 209,
+              "ccx": 40
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0005725999944843352,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 32,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 65,
+            "gates": 5471,
+            "gate_depth": 3758,
+            "gate_counts": {
+              "x": 340,
+              "cx": 3639,
+              "ccx": 1492
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.004758299997774884,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "overweight",
+      "weights": [
+        9,
+        10,
+        1
+      ],
+      "values": [
+        7,
+        5,
+        2
+      ],
+      "capacity": 3,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 72,
+            "gates": 221,
+            "gate_depth": 77,
+            "gate_counts": {
+              "x": 36,
+              "cx": 141,
+              "ccx": 44
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0020480999955907464,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 33,
+            "gates": 719,
+            "gate_depth": 482,
+            "gate_counts": {
+              "x": 88,
+              "cx": 438,
+              "ccx": 193
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00015749999147374183,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 154,
+            "gates": 515,
+            "gate_depth": 129,
+            "gate_counts": {
+              "x": 100,
+              "cx": 337,
+              "ccx": 78
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0006680999940726906,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 62,
+            "gates": 4432,
+            "gate_depth": 3056,
+            "gate_counts": {
+              "x": 258,
+              "cx": 2963,
+              "ccx": 1211
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0010378000006312504,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "overweight",
+      "weights": [
+        9,
+        10,
+        1
+      ],
+      "values": [
+        7,
+        5,
+        2
+      ],
+      "capacity": 3,
+      "depth": 2,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 90,
+            "gates": 281,
+            "gate_depth": 79,
+            "gate_counts": {
+              "x": 54,
+              "cx": 175,
+              "ccx": 52
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00032220000866800547,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 34,
+            "gates": 799,
+            "gate_depth": 546,
+            "gate_counts": {
+              "x": 88,
+              "cx": 494,
+              "ccx": 217
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0001849999971454963,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 195,
+            "gates": 637,
+            "gate_depth": 149,
+            "gate_counts": {
+              "x": 94,
+              "cx": 427,
+              "ccx": 116
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.000598999991780147,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 2,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 59,
+            "gates": 2357,
+            "gate_depth": 1620,
+            "gate_counts": {
+              "x": 172,
+              "cx": 1543,
+              "ccx": 642
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0003868999920086935,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "overweight",
+      "weights": [
+        9,
+        10,
+        1
+      ],
+      "values": [
+        7,
+        5,
+        2
+      ],
+      "capacity": 3,
+      "depth": 3,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 116,
+            "gates": 359,
+            "gate_depth": 99,
+            "gate_counts": {
+              "x": 54,
+              "cx": 231,
+              "ccx": 74
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0024206000089179724,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 35,
+            "gates": 999,
+            "gate_depth": 700,
+            "gate_counts": {
+              "x": 88,
+              "cx": 634,
+              "ccx": 277
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00020510000467766076,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              7,
+              9
+            ],
+            "weight_width": 6,
+            "loss_width": 9
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 86,
+            "gates": 265,
+            "gate_depth": 97,
+            "gate_counts": {
+              "x": 48,
+              "cx": 169,
+              "ccx": 48
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003367000026628375,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 3,
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 56,
+            "gates": 1314,
+            "gate_depth": 926,
+            "gate_counts": {
+              "x": 86,
+              "cx": 867,
+              "ccx": 361
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00033379999513272196,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 6,
+            "value_width": 5,
+            "numerator_width": 9
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "allfit_gcd",
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 20,
+      "depth": 0,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 29,
+            "gates": 85,
+            "gate_depth": 45,
+            "gate_counts": {
+              "x": 26,
+              "cx": 51,
+              "ccx": 8
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0001362000039080158,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 30,
+            "gates": 363,
+            "gate_depth": 200,
+            "gate_counts": {
+              "x": 84,
+              "cx": 194,
+              "ccx": 85
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00012339999375399202,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 7
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 84,
+            "gates": 281,
+            "gate_depth": 65,
+            "gate_counts": {
+              "x": 78,
+              "cx": 171,
+              "ccx": 32
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0007095999899320304,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 0,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 64,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 72,
+            "gates": 5887,
+            "gate_depth": 3956,
+            "gate_counts": {
+              "x": 368,
+              "cx": 3927,
+              "ccx": 1592
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0006468000065069646,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "allfit_gcd",
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 20,
+      "depth": 1,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 48,
+            "gates": 143,
+            "gate_depth": 65,
+            "gate_counts": {
+              "x": 32,
+              "cx": 89,
+              "ccx": 22
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00022790000366512686,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 31,
+            "gates": 547,
+            "gate_depth": 344,
+            "gate_counts": {
+              "x": 88,
+              "cx": 318,
+              "ccx": 141
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.000142400007462129,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 7
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 264,
+            "gates": 871,
+            "gate_depth": 163,
+            "gate_counts": {
+              "x": 118,
+              "cx": 595,
+              "ccx": 158
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0008895999926608056,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 1,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 128,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 69,
+            "gates": 4424,
+            "gate_depth": 2984,
+            "gate_counts": {
+              "x": 278,
+              "cx": 2947,
+              "ccx": 1199
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0004717999981949106,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "allfit_gcd",
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 20,
+      "depth": 2,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 66,
+            "gates": 201,
+            "gate_depth": 69,
+            "gate_counts": {
+              "x": 40,
+              "cx": 129,
+              "ccx": 32
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0002901999978348613,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 32,
+            "gates": 731,
+            "gate_depth": 484,
+            "gate_counts": {
+              "x": 92,
+              "cx": 442,
+              "ccx": 197
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0002767000114545226,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 7
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 192,
+            "gates": 619,
+            "gate_depth": 141,
+            "gate_counts": {
+              "x": 84,
+              "cx": 417,
+              "ccx": 118
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0006469000072684139,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 2,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 256,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 66,
+            "gates": 2961,
+            "gate_depth": 2014,
+            "gate_counts": {
+              "x": 188,
+              "cx": 1967,
+              "ccx": 806
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0004293999954825267,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "tiny_all_depths",
+      "label": "allfit_gcd",
+      "weights": [
+        2,
+        4,
+        6
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "capacity": 20,
+      "depth": 3,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 91,
+            "gates": 277,
+            "gate_depth": 81,
+            "gate_counts": {
+              "x": 42,
+              "cx": 183,
+              "ccx": 52
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0003601000062189996,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 33,
+            "gates": 919,
+            "gate_depth": 628,
+            "gate_counts": {
+              "x": 96,
+              "cx": 570,
+              "ccx": 253
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00024000000848900527,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              0,
+              1
+            ],
+            "weight_width": 7,
+            "loss_width": 7
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 78,
+            "gates": 235,
+            "gate_depth": 83,
+            "gate_counts": {
+              "x": 38,
+              "cx": 155,
+              "ccx": 42
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.00035429999115876853,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 3,
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 512,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 63,
+            "gates": 1494,
+            "gate_depth": 1042,
+            "gate_counts": {
+              "x": 94,
+              "cx": 987,
+              "ccx": 413
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00028330000350251794,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 7,
+            "value_width": 6,
+            "numerator_width": 10
+          }
+        }
+      }
+    },
+    {
+      "category": "fixed_depth_pilot",
+      "source_id": "uncorrelated_n12_s12000_R100",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        5,
+        45,
+        88,
+        98,
+        40,
+        33,
+        1,
+        41,
+        2,
+        62,
+        86,
+        43
+      ],
+      "capacity": 292,
+      "depth": 6,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 540,
+            "gates": 1689,
+            "gate_depth": 215,
+            "gate_counts": {
+              "x": 106,
+              "cx": 1179,
+              "ccx": 404
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0018279000069014728,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              31,
+              49
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 65,
+            "gates": 3499,
+            "gate_depth": 2466,
+            "gate_counts": {
+              "x": 196,
+              "cx": 2314,
+              "ccx": 989
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.001018900002236478,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              31,
+              49
+            ],
+            "weight_width": 11,
+            "loss_width": 17
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 3540,
+            "gates": 11457,
+            "gate_depth": 1003,
+            "gate_counts": {
+              "x": 518,
+              "cx": 8303,
+              "ccx": 2636
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.02125530000193976,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 6,
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 33522,
+            "gate_depth": 23132,
+            "gate_counts": {
+              "x": 1016,
+              "cx": 23219,
+              "ccx": 9287
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.007163999995100312,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18
+          }
+        }
+      }
+    },
+    {
+      "category": "fixed_depth_pilot",
+      "source_id": "weakly_correlated_n12_s12000_R100",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        22,
+        96,
+        63,
+        23,
+        9,
+        20,
+        1,
+        25,
+        7,
+        98,
+        87,
+        94
+      ],
+      "capacity": 292,
+      "depth": 6,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 466,
+            "gates": 1445,
+            "gate_depth": 225,
+            "gate_counts": {
+              "x": 94,
+              "cx": 999,
+              "ccx": 352
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.013679299998329952,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              47,
+              49
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 65,
+            "gates": 3223,
+            "gate_depth": 2278,
+            "gate_counts": {
+              "x": 168,
+              "cx": 2134,
+              "ccx": 921
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0004305000038584694,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              47,
+              49
+            ],
+            "weight_width": 11,
+            "loss_width": 17
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 2829,
+            "gates": 9197,
+            "gate_depth": 883,
+            "gate_counts": {
+              "x": 522,
+              "cx": 6623,
+              "ccx": 2052
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.01883339999767486,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 6,
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 26294,
+            "gate_depth": 18046,
+            "gate_counts": {
+              "x": 1008,
+              "cx": 18015,
+              "ccx": 7271
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.011117699992610142,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18
+          }
+        }
+      }
+    },
+    {
+      "category": "fixed_depth_pilot",
+      "source_id": "strongly_correlated_n12_s12000_R100",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "capacity": 292,
+      "depth": 6,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 537,
+            "gates": 1683,
+            "gate_depth": 187,
+            "gate_counts": {
+              "x": 104,
+              "cx": 1181,
+              "ccx": 398
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.010371899988967925,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              87,
+              77
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 67,
+            "gates": 3851,
+            "gate_depth": 2724,
+            "gate_counts": {
+              "x": 192,
+              "cx": 2558,
+              "ccx": 1101
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.00046629999997094274,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              87,
+              77
+            ],
+            "weight_width": 11,
+            "loss_width": 18
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 3929,
+            "gates": 12695,
+            "gate_depth": 1065,
+            "gate_counts": {
+              "x": 516,
+              "cx": 9225,
+              "ccx": 2954
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.05509610001172405,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 6,
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 38210,
+            "gate_depth": 26430,
+            "gate_counts": {
+              "x": 1036,
+              "cx": 26591,
+              "ccx": 10583
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.008633099991129711,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18
+          }
+        }
+      }
+    },
+    {
+      "category": "fixed_depth_pilot",
+      "source_id": "subset_sum_n12_s12000_R100",
+      "weights": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 292,
+      "depth": 6,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 192,
+            "gates": 581,
+            "gate_depth": 119,
+            "gate_counts": {
+              "x": 82,
+              "cx": 379,
+              "ccx": 120
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0009609999979147688,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 53,
+            "gates": 1439,
+            "gate_depth": 974,
+            "gate_counts": {
+              "x": 124,
+              "cx": 918,
+              "ccx": 397
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0007278999983100221,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              1,
+              1
+            ],
+            "weight_width": 11,
+            "loss_width": 11
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 1846,
+            "gates": 6061,
+            "gate_depth": 783,
+            "gate_counts": {
+              "x": 516,
+              "cx": 4289,
+              "ccx": 1256
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.019071000002440996,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 6,
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 132,
+            "gates": 17490,
+            "gate_depth": 11926,
+            "gate_counts": {
+              "x": 1016,
+              "cx": 11651,
+              "ccx": 4823
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0022847000072943047,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 11,
+            "value_width": 11,
+            "numerator_width": 18
+          }
+        }
+      }
+    },
+    {
+      "category": "fixed_depth_pilot",
+      "source_id": "inverse_strongly_n12_s12000_R100",
+      "weights": [
+        38,
+        104,
+        82,
+        36,
+        21,
+        40,
+        18,
+        37,
+        26,
+        108,
+        87,
+        108
+      ],
+      "values": [
+        28,
+        94,
+        72,
+        26,
+        11,
+        30,
+        8,
+        27,
+        16,
+        98,
+        77,
+        98
+      ],
+      "capacity": 352,
+      "depth": 6,
+      "methods": {
+        "outplace_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 563,
+            "gates": 1763,
+            "gate_depth": 201,
+            "gate_counts": {
+              "x": 104,
+              "cx": 1237,
+              "ccx": 422
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "outplace_fixed_root_dual",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.0020031000021845102,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              77,
+              87
+            ]
+          }
+        },
+        "compact_dual": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 68,
+            "gates": 3947,
+            "gate_depth": 2790,
+            "gate_counts": {
+              "x": 188,
+              "cx": 2630,
+              "ccx": 1129
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_root_dual",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.0006908999930601567,
+            "build_seconds_classification": "MEASURED",
+            "multiplier": [
+              77,
+              87
+            ],
+            "weight_width": 12,
+            "loss_width": 18
+          }
+        },
+        "outplace_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 3518,
+            "gates": 11389,
+            "gate_depth": 1043,
+            "gate_counts": {
+              "x": 528,
+              "cx": 8245,
+              "ccx": 2616
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "exact_fixed_depth",
+            "scope": "compiled_clean_pruning_predicate",
+            "build_seconds": 0.026149900004384108,
+            "build_seconds_classification": "MEASURED",
+            "fixed_depth": 6,
+            "weight_width": 12,
+            "value_width": 11,
+            "numerator_width": 18,
+            "precision_bits": 0
+          }
+        },
+        "compact_exact": {
+          "status": "COMPLETED",
+          "classification": "SIMULATED",
+          "columns": 131072,
+          "predicate_mismatches": 0,
+          "dirty_columns": 0,
+          "first_failures": [],
+          "resources": {
+            "qubits": 134,
+            "gates": 32886,
+            "gate_depth": 22612,
+            "gate_counts": {
+              "x": 1044,
+              "cx": 22763,
+              "ccx": 9079
+            },
+            "resource_classification": "DERIVED_FROM_SYNTHESIZED_GATE_LIST",
+            "classification": "DERIVED"
+          },
+          "metadata": {
+            "model": "compact_exact",
+            "scope": "fixed_depth_pruning_predicate",
+            "arithmetic": "simple_Cuccaro_Section2_MAJ_UMA",
+            "build_seconds": 0.015094400005182251,
+            "build_seconds_classification": "MEASURED",
+            "weight_width": 12,
+            "value_width": 11,
+            "numerator_width": 18
+          }
+        }
+      }
+    }
+  ],
+  "dense": [
+    {
+      "method": "outplace_dual",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 20,
+      "cap": 18
+    },
+    {
+      "method": "compact_dual",
+      "status": "COMPLETED",
+      "classification": "SIMULATED",
+      "qubits": 15,
+      "nonzero_input_amplitudes": 16,
+      "max_amplitude_error": 0.0,
+      "mismatches_above_1e-12": 0
+    },
+    {
+      "method": "outplace_exact",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 26,
+      "cap": 18
+    },
+    {
+      "method": "compact_exact",
+      "status": "SKIPPED_DENSE_QUBIT_CAP",
+      "qubits": 23,
+      "cap": 18
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "classification": "SIMULATED",
+    "method_cases": 128,
+    "columns": 2645200,
+    "predicate_mismatches": 0,
+    "dirty_columns": 0,
+    "primitive_columns": 5456,
+    "primitive_mismatches": 0,
+    "elapsed_seconds_measured": 23.8420807000075
+  }
+}

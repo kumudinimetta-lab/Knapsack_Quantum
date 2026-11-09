@@ -1,0 +1,9 @@
+{
+  "scope": "DERIVED fixed-depth same-integer-predicate resources; no 105-input gate simulation or full walk",
+  "inputs": 5,
+  "rows": 40,
+  "status_counts": {
+    "COMPLETED": 40
+  },
+  "seconds_measured": 9.420939699979499
+}

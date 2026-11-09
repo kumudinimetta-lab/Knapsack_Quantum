@@ -1,0 +1,33 @@
+{
+  "scope": "Every listed input; every depth encoding; selected prefixes/thresholds; both target bits; clean workspace",
+  "input_count": 3,
+  "method_cases": 9,
+  "methods": {
+    "exact_single": {
+      "complete_cases": 3,
+      "caps": 0,
+      "columns": 2358,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "unsafe_pruning": 0
+    },
+    "fixedpoint_single": {
+      "complete_cases": 3,
+      "caps": 0,
+      "columns": 2358,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "unsafe_pruning": 0
+    },
+    "root_dual": {
+      "complete_cases": 3,
+      "caps": 0,
+      "columns": 2358,
+      "predicate_mismatches": 0,
+      "dirty_columns": 0,
+      "unsafe_pruning": 0
+    }
+  },
+  "source_unchanged": true,
+  "records_sha256": "5fd3c5637843ac7785e92f14b2630029482c04b6c82418f9a85a08256d019b23"
+}

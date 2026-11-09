@@ -1,0 +1,21 @@
+{
+  "previous_attempt": "Only continuous extension reversed but compared with earlier pre-DP-free hash; no snapshot written",
+  "targets": {
+    "before_continuous": "8c57904979d61a4090afa9c8a90b0a18e169874ac607710beae3f3a40fda8f6c",
+    "before_dp_free": "2007c86dc19fd148fa017013fd25de9a4df7589a729ef938cb88f6746f912bf7"
+  },
+  "candidate_byte_encodings_tested": 18,
+  "recovered": [
+    {
+      "stage": "before_continuous",
+      "path": "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\bank_circuit_experiments_before_continuous.py",
+      "sha256": "8c57904979d61a4090afa9c8a90b0a18e169874ac607710beae3f3a40fda8f6c"
+    },
+    {
+      "stage": "before_dp_free",
+      "path": "C:\\CBP\\HybridQuantumKnapsack\\research_log\\source_faithful_20261024\\bank_circuit_experiments_before_dp_free.py",
+      "sha256": "2007c86dc19fd148fa017013fd25de9a4df7589a729ef938cb88f6746f912bf7"
+    }
+  ],
+  "unresolved": []
+}

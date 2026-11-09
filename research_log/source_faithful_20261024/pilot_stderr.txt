@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\CBP\HybridQuantumKnapsack\research_log\source_faithful_20261024\pilot.py", line 189, in <module>
+    main()
+    ~~~~^^
+  File "C:\CBP\HybridQuantumKnapsack\research_log\source_faithful_20261024\pilot.py", line 170, in main
+    raise RuntimeError("RESEARCH_INTEGRITY_STOP: full predicate failed")
+RuntimeError: RESEARCH_INTEGRITY_STOP: full predicate failed

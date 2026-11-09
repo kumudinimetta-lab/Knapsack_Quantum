@@ -1,0 +1,103 @@
+#### A.6.2 Quantum branch-and-bound
+
+Quantum branch-and-bound (QBnB) \[ [27](https://arxiv.org/html/2310.06623v2#bib.bib27 ""), [38](https://arxiv.org/html/2310.06623v2#bib.bib38 "")\] is one of the most promising candidates for solving ILPs, having a provable worst-case asymptotic near-quadratic speedup over its classical counterpart.
+The near-quadratic speedup is achieved by using quantum walks \[ [52](https://arxiv.org/html/2310.06623v2#bib.bib52 "")\] on the tree explored by the classical algorithm.
+The method has two main ingredients:
+
+1. 1.
+
+
+Quantum tree size estimation \[ [53](https://arxiv.org/html/2310.06623v2#bib.bib53 "")\]
+to get an upper bound on the size of the tree. This implementation shows how to get a quadratic improvement over a classical backtracking algorithm which evaluates TT nodes of a search tree.
+
+2. 2.
+
+
+Quantum tree search \[ [52](https://arxiv.org/html/2310.06623v2#bib.bib52 "")\] to return the label of the marked node if the tree contains at least one marked node, or “not found” if there is no marked node.
+
+
+In general, the QBnB routine requires multiple applications of quantum tree size estimation and quantum tree search.
+At the core of these subroutines lies quantum backtracking \[ [26](https://arxiv.org/html/2310.06623v2#bib.bib26 ""), [39](https://arxiv.org/html/2310.06623v2#bib.bib39 ""), [53](https://arxiv.org/html/2310.06623v2#bib.bib53 "")\].
+In the following, we give an optimistic runtime estimation of the QBnB method.
+We benchmark the QBnB for the 0-1-KP\\KP under the following assumptions:
+
+1. 1.
+
+
+The optimal solution and the respective tree size TT are known, hence quantum tree size estimation has to be applied only once.
+
+2. 2.
+
+
+The success probability of the quantum subroutines is 1.
+
+3. 3.
+
+
+The most expensive part of the algorithm is the backtracking, hence we consider all the other quantum subroutines to be queried once.
+
+
+In general, in order to find the optimal solution, the expected number of oracles calls is at least T​n\\sqrt{Tn}, where TT represents the number of nodes that are actually explored by the corresponding classical BnB algorithm, and nn is the number of items.
+To justify this value, we give a summary of the backtracking algorithm together with our reasoning.
+Consider a rooted tree with TT vertices r,1,…,T−1r,1,\\ldots,T-1, where rr is the root.
+AA denotes the set of vertices at an even distance from rr, and BB the set of vertices at an odd distance from rr. x→yx\\rightarrow y signifies that yy is a child of xx in the tree.
+The quantum walk operates in the space spanned by {\|x⟩:x∈{r,1,…,T−1}}\\{\\ket{x}\\,:\\,x\\in\\{r,1,\\ldots,T-1\\}\\} and starts in the state \|r⟩\\ket{r}.
+This quantum walk utilises a set of diffusion operators DxD\_{x}, where DxD\_{x} is the identity operator if xx is a solution; otherwise, it diffuses on the subspace spanned by {\|x⟩}∪{\|y⟩:x→y}\\{\\ket{x}\\}\\cup\\{\\ket{y}\\,:\\,x\\rightarrow y\\}.
+A step of the quantum walk involves applying the operator RB​RAR\_{B}R\_{A}, where
+
+|     |     |     |
+| --- | --- | --- |
+|  | RA=⨁x∈ADx​ and ​\|r⟩⟨r\|+RB=⨁x∈BDx.\\displaystyle R\_{A}=\\bigoplus\_{x\\raisebox{0.45206pt}{$\\scriptscriptstyle\\in$}A}D\_{x}\\text{ and }\\outerproduct{r}{r}+R\_{B}=\\bigoplus\_{x\\raisebox{0.45206pt}{$\\scriptscriptstyle\\in$}B}D\_{x}. |  |
+
+Using these operators, a marked vertex is detected, because the phase estimation operator RB​RAR\_{B}R\_{A} enables the traversing of paths leading to a solution in the tree.
+According to \[ [26](https://arxiv.org/html/2310.06623v2#bib.bib26 "")\] the operator RB​RAR\_{B}R\_{A} is applied to precision β/T​n\\beta/\\sqrt{Tn}.
+
+For our benchmarking results, we assume that β=1\\beta=1, implying that the application of the phase estimation operator has to be applied exactly T​n\\sqrt{Tn} times.
+We execute the classical algorithm and record the tree size TT.
+
+Within the BnB routine, we use the commonly used upper bound heuristic _Fractional Greedy_\[ [35](https://arxiv.org/html/2310.06623v2#bib.bib35 "")\] which, similar to (Integer) Greedy, sorts all items by decreasing density and then greedily packs items into the knapsack until an item does not fit into the knapsack (by definition the successor of the break item hh).
+It then returns the sum of all the profits of contained items plus the profit of the fraction of the item that could be included additionally, i.e.
+
+|     |     |     |
+| --- | --- | --- |
+|  | ∑m=1hpm+ph+1​c−∑m=1hwmwh+1.\\displaystyle\\sum\_{m=1}^{h}p\_{m}+p\_{h+1}\\frac{c-\\sum\_{m=1}^{h}w\_{m}}{w\_{h+1}}. |  |
+
+Because this routine is very similar to the (Integer) Greedy method, all the previous calculations for the cycle count of the QTG circuit can be used to calculate the costliness of the quantum implementation of Fractional Greedy.
+
+Experimental support, please
+[view the build logs](https://arxiv.org/html/2310.06623v2/__stdout.txt)
+for errors. Generated by
+[L\\
+A\\
+T\\
+Exml![[LOGO]](<Base64-Image-Removed>)](https://math.nist.gov/~BMiller/LaTeXML/).
+
+
+## Instructions for reporting errors
+
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+methods listed below:
+
+- Click the "Report Issue" () button, located in the page header.
+
+**Tip:** You can select the relevant text first, to include it in your report.
+
+Our team has already identified [the following issues](https://github.com/arXiv/html_feedback/issues). We appreciate your time reviewing and reporting rendering errors we
+may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+all.
+
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a [list of packages that need conversion](https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML), and welcome [developer contributions](https://github.com/brucemiller/LaTeXML/issues).
+
+We gratefully acknowledge support from
+our **major funders**,
+[**member institutions**](https://info.arxiv.org/about/ourmembers.html), ,
+and all contributors.
+
+
+[About](https://info.arxiv.org/about)· [Help](https://info.arxiv.org/help)· [Contact](https://info.arxiv.org/help/contact.html)· [Subscribe](https://info.arxiv.org/help/subscribe)· [Copyright](https://info.arxiv.org/help/license/index.html)· [Privacy](https://info.arxiv.org/help/policies/privacy_policy.html)· [Accessibility](https://info.arxiv.org/help/web_accessibility.html)· [Operational Status (opens in new tab)](https://status.arxiv.org/)
+
+Major funding support from
+
+[![Simons Foundation](https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png)](https://www.simonsfoundation.org/)[![Simons Foundation International](https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png)](https://www.sfi.org.bm/)[![Schmidt Sciences](https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png)](https://www.schmidtsciences.org/)

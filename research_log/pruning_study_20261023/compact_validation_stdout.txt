@@ -1,0 +1,15 @@
+uncorrelated_n12_s12000_R100 complete
+weakly_correlated_n12_s12000_R100 complete
+strongly_correlated_n12_s12000_R100 complete
+subset_sum_n12_s12000_R100 complete
+inverse_strongly_n12_s12000_R100 complete
+{
+  "classification": "SIMULATED",
+  "method_cases": 128,
+  "columns": 2645200,
+  "predicate_mismatches": 0,
+  "dirty_columns": 0,
+  "primitive_columns": 5456,
+  "primitive_mismatches": 0,
+  "elapsed_seconds_measured": 23.8420807000075
+}

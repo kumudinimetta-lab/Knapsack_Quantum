@@ -1,0 +1,36 @@
+{
+  "module_sha256": "5ab166ee9a3f5db18d6f42d7e99a9341277e98e2a9e60d4569dc8ff383ae56e9",
+  "registry_sha256": "47900afa72ad21b83d3a91b8fdc9d2dd96df253f259223f3e30581dd015997a5",
+  "subset": "pilot",
+  "ids": [
+    "small_00",
+    "small_01",
+    "small_02",
+    "small_03",
+    "small_04",
+    "uncorrelated_n12_s12000_R100",
+    "weakly_correlated_n12_s12000_R100",
+    "strongly_correlated_n12_s12000_R100",
+    "subset_sum_n12_s12000_R100",
+    "inverse_strongly_n12_s12000_R100"
+  ],
+  "methods": [
+    "simple",
+    "root_dual",
+    "bank2",
+    "bank4",
+    "exact_single",
+    "fixedpoint_single",
+    "exact_wrapper",
+    "fixedpoint_wrapper"
+  ],
+  "limits": {
+    "max_qubits": 150000,
+    "max_gates": 2000000,
+    "max_seconds": 60
+  },
+  "process_seconds": 75,
+  "workers": 2,
+  "classification": "HARDCODED predeclared resource build configuration",
+  "scope": "Gate-list resources only; not hardware or full-walk execution"
+}

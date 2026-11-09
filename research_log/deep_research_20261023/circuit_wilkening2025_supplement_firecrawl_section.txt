@@ -1,0 +1,471 @@
+## F. Benchmarking of competitive quantum methods
+
+This section contains a brief overview and runtime estimations of the nested quantum search [11] and quantum
+branch-and-bound [12, 13] algorithms, together with our
+benchmarking reasoning.
+
+## 1. Nested Quantum Search
+
+Nested quantum search (NQS) is a nested version of
+Grover’s algorithm specifically tailored to constraint satisfaction problems, where the search Hilbert space is decomposed into two factors H<sub>S</sub> = H<sub>A</sub> ⊗H<sub>B</sub>, corresponding to a decomposition S = A *∪* B of the set of classical
+variables. The algorithm itself is a variant of QSearch,
+where the superposition-creating unitary *A* consists of
+the following two steps:
+
+$$
+\mathcal{H}_{\mathrm{S}}=\mathcal{H}_{\mathrm{A}}\otimes\mathcal{H}_{\mathrm{B}}
+$$
+
+$$
+S=A\cup B
+$$
+
+1. Grover’s search in the first tensor factor H<sub>A</sub> to
+(nearly) obtain a uniform superposition of *could-be*
+solutions, i.e. partial assignments (only variables
+in A are assigned) that fulfill all constraints that
+are testable on these variables. Accordingly, these
+are precisely the partial assignments that *could be*
+extended to a full solution of the problem. The employed oracle checks whether a partial assignment
+is a could-be solution and is assumed to only act
+on H<sub>A</sub>.
+
+$$
+\mathcal{H}_{\mathrm{A}}
+$$
+
+$$
+\mathcal{H}_{\mathrm{A}}
+$$
+
+2. Subsequent Grover’s search on the second tensor
+factor H<sub>B</sub>, but with an oracle that acts on the entire
+space H<sub>S</sub> and marks full (and not partial) solutions.
+
+$$
+\mathcal{H}_{\mathrm{B}},
+$$
+
+$$
+\mathcal{H}_{\mathrm{S}}
+$$
+
+The first step of NQS creates a superposition of all,
+say t<sub>A</sub>, could-be solutions plus a vanishing amount of
+√
+non could-be solutions; this step involves ∼ 2|<sup>A</sup>|/t<sub>A</sub>
+Grover iterations. Second, assume that each could-be
+solution gives rise to at most one full solution and let
+t<sub>B</sub> ∈ [0,1] be the average number of full solutions per
+partial solution. Then the total number of solutions is
+given by t<sub>AB</sub> = t<sub>A</sub>t<sub>B</sub> ≤ t<sub>A</sub>. Executing the second step
+produces a superposition of all solutions with amplitude
+*√*
+∼ 1 t<sub>A</sub> and all infeasible solutions, which extend from
+could-be solutions that did not give rise to any solution,
+√
+with amplitude ∼ 1/ t<sub>A</sub>2|<sup>B</sup>|, plus a vanishing amount
+√
+of other infeasible solutions after ∼ 2|<sup>B</sup>|/t<sub>B</sub> steps. The
+total number of Grover iterations per state preparation
+is
+
+$$
+t_{\mathrm{A}}
+$$
+
+$$
+\sim\sqrt{2^{|A|}/t_{A}}
+$$
+
+$$
+t_{\mathrm{B}}\in[0,\stackrel{\mathrm{e}}{1}]
+$$
+
+$$
+t_{\mathrm{AB}}=t_{\mathrm{A}}t_{\mathrm{B}}\leq t_{\mathrm{A}}
+$$
+
+$$
+\sim1\sqrt{t_{A}}
+$$
+
+$$
+\sim1/\sqrt{t_{A}2^{|B|}}
+$$
+
+$$
+\sim\sqrt{2^{|B|}/t_{B}}
+$$
+
+$$
+T\sim\sqrt{2^{|\mathrm{A}|}/t_{A}}+\sqrt{2^{|\mathrm{B}|}/t_{B}}.
+$$
+
+Because there are now t<sub>AB</sub> solution states each having
+*√*
+an amplitude of ∼ 1/ t<sub>A</sub>, they can be amplified to yield
+√
+a positive outcome upon measuring after ∼ t<sub>A</sub>/t<sub>AB</sub>
+iterations within QSearch. In total this yields
+
+$$
+t_{AB}
+$$
+
+$$
+\sim1/\sqrt{t_{A}}
+$$
+
+$$
+\sim\sqrt{t_{A}/t_{AB}}
+$$
+
+$$
+T_{\mathrm{{\bf NQS}}}=T\sqrt{t_{\mathrm{A}}/t_{\mathrm{AB}}}\sim\sqrt{2^{|\mathrm{A}|}/(t_{\mathrm{A}}t_{\mathrm{B}})}+\sqrt{2^{|\mathrm{B}|}}.
+$$
+
+(S.57)
+
+Grover iterations.
+
+NQS can also be used for constrained optimisation
+problems by employing it as a feasible state preparation
+subroutine (i.e. the measurement is omitted), on top of
+which QMaxSearch is executed. For the KP, we can
+utilise the constraint checking techniques from the QTG
+also within NQS. To derive the trend of Grover iterations required to find an optimum, we first find the best
+decomposition of the *n* decision variables into variable
+sets A and B: Following [14], we define a *break item*
+
+$$
+h=\max\left\{m':\sum_{m=1}^{m'}w_{m'}\leq c\right\},
+$$
+
+(S.58)
+
+where every partial assignment up to this item is
+feasible. The first set of variables will be A =
+*{1,...,h,...,h* + *k}* with 0 *≤ k ≤ n − h}* yet to
+be determined; accordingly, B will be given as B =
+*{h+ k* + *1,...,n}.* Furthermore, note that every feasible
+partial assignment can always be extended to a feasible
+full assignment and that any lower bound on the number of feasible solutions also gives a lower bound on the
+runtime of QMaxSearch as fewer elements have to be
+searched through for the optimum. Thus, assuming that
+each partial assignment has exactly one feasible solution
+and therefore that t<sub>B</sub> = 1 and t<sub>AB</sub> = t<sub>A</sub> gives an optimistic lower bound on the runtime of QMaxSearch.
+
+$$
+\left\{1,\ldots,\mathit{h},\ldots,\mathit{h}\text{+}\mathit{k}\right\}
+$$
+
+$$
+A\quad=
+0\leq k\leq n-h
+$$
+
+$$
+B=
+\{h+k+1,\ldots,n\}
+$$
+
+$$
+t_{\mathrm{B}}=1
+$$
+
+$$
+t_{\mathrm{AB}}=t_{\mathrm{A}}
+$$
+
+Using our assumption and the structure of A and B,
+(S.57) gives rise to an NQS-runtime of
+
+$$
+T_{\mathbf{NQS}}\sim\sqrt{2^{h+k}/2^{h}}+\sqrt{2^{n-h-k}}=\sqrt{2^{k}}+\sqrt{2^{n-h-k}}
+$$
+
+This produces an equal superposition of 2<sup>h</sup> feasible solutions upon which we now have to find the maximum
+*√*
+which therefore requires ∼ 2<sup>h</sup> iterations of NQS within
+QMaxSearch, yielding a total number of Grover iterations
+
+$$
+2^{h}
+$$
+
+$$
+\sim\sqrt{2^{h}}
+$$
+
+$$
+T_{\mathrm{NQS}}\sqrt{2^{h}}\sim\sqrt{2^{h+k}}+\sqrt{2^{n-k}}.
+$$
+
+This expression is minimal for k = <sup>n−h</sup>, leading to a
+2
+number of Grover iterations of order
+
+$$
+k=\frac{n-h}{2}
+$$
+
+$$
+\sqrt{2^{(n+h)/2}}+\sqrt{2^{n-h-(n-h)/2}}=2^{(n+h)/4}.
+$$
+
+(S.59)
+
+It is important to notice that setting t<sub>B</sub> = 1 is a very
+strong assumption (it makes the 0-1-KP instance trivial),
+and we use it only to gain insights into the performance
+of NQS. The benchmark results on real instances are
+presented in Supplementary Figure 7.
+
+$$
+t_{\mathrm{B}}=1
+$$
+
+---
+
+**QTG QTG non-biased**
+
+| size | QTG | QTG non-biased | Grover | Nested Q Search |
+| --- | --- | --- | --- | --- |
+| 100 | 2 | 4 | 10000000000 | 7000000000 |
+| 200 | 2 | 12 | 300000000000 | 140000000000 |
+| 300 | 2 | 22 | 10000000000000 | 2600000000000 |
+| 400 | 2 | 30 | 1000000000000000 | 42000000000000 |
+| 500 | 2 | 40 | 100000000000000000 | 550000000000000 |
+| 600 | 2 | 50 | 1000000000000000000000 | 600000000000000000 |
+
+Supplementary Figure 7. Comparison between the number
+of Grover iterations required by QTG-based search with and
+without bias, Grover’s algorithm, and NQS. We observe that
+the number of Grover iterations is almost constant for the
+biased QTG-based search. For the other methods, we have a
+linear increase with the problem size: for Grover’s search for
+problems of size 400 the algorithm already requires more than
+10<sup>50</sup> oracle calls; non-biased QTG-based search and NQS
+perform better, but still requiring more than 10<sup>20</sup> oracle calls.
+Interestingly, the optimistic lower bound on the runtime of
+NQS seems to match the worst-case behaviour of the nonbiased QTG-based search.
+
+$$
+\overset{\cdot}{1}0^{50}
+$$
+
+$$
+10^{20}
+$$
+
+## 2. Quantum branch-and-bound
+
+Quantum branch-and-bound (QBnB) [12, 13] is one of
+the most promising candidates for solving ILPs, having a
+provable worst-case asymptotic near-quadratic speedup
+over its classical counterpart. The near-quadratic speedup is achieved by using quantum walks [15] on the tree
+explored by the classical algorithm. The method has two
+main ingredients:
+
+1. Quantum tree size estimation [16] to get an upper
+bound on the size of the tree. This implementation
+shows how to get a quadratic improvement over a
+classical backtracking algorithm which evaluates *T*
+nodes of a search tree.
+
+$$
+T
+$$
+
+2. Quantum tree search [15] to return the label of
+the marked node if the tree contains at least one
+marked node, or “not found” if there is no marked
+node.
+
+In general, the QBnB routine requires multiple applications of quantum tree size estimation and quantum tree
+search. At the core of these subroutines lies quantum
+backtracking [16–18]. In the following, we give an optimistic runtime estimation of the QBnB method. We
+benchmark the QBnB for the 0-1-KP under the following assumptions:
+
+1. The optimal solution and the respective tree size *T*
+are known, hence quantum tree size estimation has
+to be applied only once.
+
+2. The success probability of the quantum subroutines
+is 1.
+
+3. The most expensive part of the algorithm is the
+backtracking, hence we consider all the other quantum subroutines to be queried once.
+
+In general, in order to find the optimal solution, the
+*√*
+expected number of oracles calls is at least *Tn,* where
+*T* represents the number of nodes that are actually explored by the corresponding classical BnB algorithm, and
+*n* is the number of items. To justify this value, we give
+a summary of the backtracking algorithm together with
+our reasoning. Consider a rooted tree with *T* vertices
+*r,1,...,T −* 1, where *r* is the root. *A* denotes the set
+of vertices at an even distance from *r,* and *B* the set of
+vertices at an odd distance from *r. x → y* signifies that
+*y* is a child of *x* in the tree. The quantum walk operates
+in the space spanned by *{|x⟩* : *x ∈ {r,1,...,T − 1}}*
+and starts in the state *|r⟩.* This quantum walk utilises
+a set of diffusion operators D<sub>x</sub>, where D<sub>x</sub> is the identity
+operator if *x* is a solution; otherwise, it diffuses on the
+subspace spanned by *{|x⟩}∪{|y⟩* : *x → y}.* A step of
+the quantum walk involves applying the operator R<sub>B</sub>R<sub>A</sub>,
+where
+
+$$
+\sqrt{T n}
+$$
+
+$$
+r,1,\ldots,T-1
+$$
+
+$$
+r,
+$$
+
+$$
+x\to y
+$$
+
+$$
+x\in\{r,1,\ldots,T-1\}
+$$
+
+$$
+|r\rangle
+$$
+
+$$
+D_{x},
+$$
+
+$$
+D_{x}
+$$
+
+$$
+\{|x\rangle\}\cup\{|y\rangle\;:\;x\to y\}
+$$
+
+$$
+R_{B}R_{A}
+$$
+
+$$
+R_{A}=\bigoplus_{x\in A}D_{x}\mathrm{and}|r\rangle\langle r|+R_{B}=\bigoplus_{x\in B}D_{x}.
+$$
+
+Using these operators, a marked vertex is detected, because the phase estimation operator R<sub>B</sub>R<sub>A</sub> enables the
+traversing of paths leading to a solution in the tree. According to [17] the operator *RB RA* is applied to precision
+*β/√Tn.*
+
+$$
+R_{B}R_{A}
+$$
+
+$$
+R_{B}R_{A}
+$$
+
+$$
+\beta/\sqrt{T n}
+$$
+
+For our benchmarking results, we assume that *β* = 1,
+implying that the application of the phase estimation op-
+*√*
+erator has to be applied exactly *Tn* times. We execute
+the classical algorithm and record the tree size *T.*
+
+$$
+\beta=1
+$$
+
+$$
+\sqrt{T n}
+$$
+
+Within the BnB routine, we use the commonly used
+upper bound heuristic *Fractional Greedy* [19] which, similar to (Integer) Greedy, sorts all items by decreasing density and then greedily packs items into the knapsack until
+an item does not fit into the knapsack (by definition the
+successor of the break item h). It then returns the sum
+of all the profits of contained items plus the profit of the
+fraction of the item that could be included additionally,
+i.e.
+
+$$
+\sum_{m=1}^{h}p_{m}+p_{h+1}\frac{c-\sum_{m=1}^{h}w_{m}}{w_{h+1}}.
+$$
+
+Because this routine is very similar to the (Integer)
+Greedy method, all the previous calculations for the cycle
+count of the QTG circuit can be used to calculate the
+costliness of the quantum implementation of Fractional
+Greedy.
+
+## REFERENCES
+
+<sup>1</sup>J. Jooken, P. Leyman, and P. De Causmaecker, Eur. J.
+Oper. Res. 301, 841 (2022).
+
+---
+
+<sup>2</sup>L. K. Grover, A fast quantum mechanical algorithm for
+database search (1996), quant-ph/9605043.
+
+<sup>3</sup>M. Boyer, G. Brassard, P. Høyer, and A. Tapp, Fortschr.
+Physik 46, 493 (1998).
+
+<sup>4</sup>G. Brassard, P. Høyer, M. Mosca, and A. Tapp, Commun.
+Contemp. Math. , 53 (2002).
+
+<sup>5</sup>M. Smelyanskiy, N. P. D. Sawaya, and A. Aspuru-Guzik,
+qHiPSTER: The Quantum High Performance Software
+Testing Environment (2016), 1601.07195 [quant-ph].
+
+<sup>6</sup>M. Matsumoto and T. Nishimura, ACM Trans. Model.
+Comput. Simul. 8, 3–30 (1998).
+
+<sup>7</sup>D. Coppersmith, An approximate Fourier transform useful in quantum factoring (2002), arXiv:quant-ph/0201067
+[quant-ph].
+
+<sup>8</sup>T. G. Draper, Addition on a Quantum Computer (2000),
+arXiv:quant-ph/0008033 [quant-ph].
+
+<sup>9</sup>M. A. Nielsen and I. L. Chuang, *Quantum Computation and
+Quantum Information: 10th Anniversary Edition,* 10th ed.
+(Cambridge University Press, USA, 2011).
+
+<sup>10</sup>M. D. Ercegovac and T. Lang, *Digital Arithmetic* (Elsevier,
+
+2004).
+
+<sup>11</sup>N. J. Cerf, L. K. Grover, and C. P. Williams, Phys. Rev. A
+61, 032303 (2000).
+
+<sup>12</sup>A. Montanaro, Phys. Rev. Res. 2, 013056 (2020).
+
+<sup>13</sup>S. Chakrabarti, P. Minssen, R. Yalovetzky, and M. Pistoia, Universal Quantum Speedup for Branch-and-Bound,
+Branch-and-Cut, and Tree-Search Algorithms (2022),
+2210.03210 [quant-ph].
+
+<sup>14</sup>D. Pisinger, Comput. Oper. Res. 32, 2271 (2005).
+
+<sup>15</sup>S. Apers, A. Gilyén, and S. Jeffery, A unified framework of
+quantum walk search (2019), arXiv:1912.04233 [quant-ph].
+
+<sup>16</sup>A. Ambainis and M. Kokainis, in *Proceedings of the 49th
+Annual ACM SIGACT Symposium on Theory of Computing,* STOC ’17 (ACM, 2017).
+
+<sup>17</sup>A. Montanaro, Theory Comput. 14, 1 (2018).
+
+<sup>18</sup>S. Martiel and M. Remaud, Practical implementation of a
+quantum backtracking algorithm (2020).
+
+<sup>19</sup>H. Kellerer, U. Pferschy, and D. Pisinger, *Knapsack Problems* (Springer, 2004).

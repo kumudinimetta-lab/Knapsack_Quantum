@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-23",
+  "abstract_words": 89,
+  "keywords": 6,
+  "verified_cited_entries": 15,
+  "archived_table_rows_checked": 16,
+  "table_values": [
+    {
+      "class": "uncorrelated",
+      "n": 100,
+      "pairs": 5,
+      "values": [
+        "18.2",
+        "0.0001",
+        "0.0031"
+      ]
+    },
+    {
+      "class": "uncorrelated",
+      "n": 200,
+      "pairs": 5,
+      "values": [
+        "27.2",
+        "0.0000",
+        "0.0210"
+      ]
+    },
+    {
+      "class": "uncorrelated",
+      "n": 500,
+      "pairs": 5,
+      "values": [
+        "78.0",
+        "0.0002",
+        "0.0984"
+      ]
+    },
+    {
+      "class": "uncorrelated",
+      "n": 1000,
+      "pairs": 5,
+      "values": [
+        "75.6",
+        "0.0001",
+        "0.3301"
+      ]
+    },
+    {
+      "class": "weakly_correlated",
+      "n": 100,
+      "pairs": 5,
+      "values": [
+        "79.4",
+        "0.0000",
+        "0.0032"
+      ]
+    },
+    {
+      "class": "weakly_correlated",
+      "n": 200,
+      "pairs": 5,
+      "values": [
+        "56.4",
+        "0.0002",
+        "0.0107"
+      ]
+    },
+    {
+      "class": "weakly_correlated",
+      "n": 500,
+      "pairs": 5,
+      "values": [
+        "91.6",
+        "0.0001",
+        "0.0729"
+      ]
+    },
+    {
+      "class": "weakly_correlated",
+      "n": 1000,
+      "pairs": 5,
+      "values": [
+        "126.2",
+        "0.0001",
+        "0.3253"
+      ]
+    },
+    {
+      "class": "subset_sum",
+      "n": 100,
+      "pairs": 5,
+      "values": [
+        "100.0",
+        "0.0000",
+        "0.0028"
+      ]
+    },
+    {
+      "class": "subset_sum",
+      "n": 200,
+      "pairs": 5,
+      "values": [
+        "200.0",
+        "0.0000",
+        "0.0109"
+      ]
+    },
+    {
+      "class": "subset_sum",
+      "n": 500,
+      "pairs": 5,
+      "values": [
+        "500.0",
+        "0.0000",
+        "0.0733"
+      ]
+    },
+    {
+      "class": "subset_sum",
+      "n": 1000,
+      "pairs": 5,
+      "values": [
+        "1000.0",
+        "0.0001",
+        "0.2970"
+      ]
+    },
+    {
+      "class": "strongly_correlated",
+      "n": 100,
+      "pairs": 3,
+      "values": [
+        "100.0",
+        "0.0809",
+        "0.0877"
+      ]
+    },
+    {
+      "class": "strongly_correlated",
+      "n": 200,
+      "pairs": 2,
+      "values": [
+        "200.0",
+        "0.0130",
+        "0.0607"
+      ]
+    },
+    {
+      "class": "inverse_strongly",
+      "n": 100,
+      "pairs": 3,
+      "values": [
+        "36.0",
+        "0.0563",
+        "0.0191"
+      ]
+    },
+    {
+      "class": "inverse_strongly",
+      "n": 200,
+      "pairs": 1,
+      "values": [
+        "25.0",
+        "0.0017",
+        "0.0108"
+      ]
+    }
+  ],
+  "reference_instances": 700,
+  "reference_mismatches": 0,
+  "oracle_columns": 15859712,
+  "oracle_mismatches": 0,
+  "oracle_dirty_columns": 0,
+  "spectral_completed": 889,
+  "spectral_mismatches": 0,
+  "recovery_instances": 135,
+  "recovery_mismatches": 0,
+  "coherent_h_columns": 17408,
+  "coherent_h_mismatches": 0,
+  "manuscript_sha256": "196a36632d5920f26e870b765d8d649dce3f5e1c43037c2ad0d063f0a82a3a86"
+}
