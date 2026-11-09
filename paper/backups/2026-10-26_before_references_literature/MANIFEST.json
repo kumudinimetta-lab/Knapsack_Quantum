@@ -1,0 +1,17 @@
+[
+  {
+    "file": "main.tex",
+    "sha256": "593c2b22a7aac7b8d0106dd6a804b40cb37634ed78395d4f1eb74ab8c5cf9dc1",
+    "bytes": 69757
+  },
+  {
+    "file": "references.bib",
+    "sha256": "2129e91caedb7322581d0333aae4af50d5126bfd6b02b6da7dba4ec1d694987b",
+    "bytes": 10447
+  },
+  {
+    "file": "main.pdf",
+    "sha256": "2c26c61db6a2756d8cee0ab5d6851851f7ba0de0a61e0e3abca9373e6875e231",
+    "bytes": 440244
+  }
+]

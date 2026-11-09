@@ -1,58 +1,71 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+The style file: sn-mathphys-num.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
--- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-
-Done.
-You've used 41 entries,
-            4087 wiz_defined-function locations,
-            1041 strings with 12222 characters,
-and the built_in function-call counts, 26529 in all, are:
-= -- 2206
-> -- 558
-< -- 198
-+ -- 305
-- -- 104
-* -- 1238
-:= -- 4194
-add.period$ -- 82
-call.type$ -- 41
-change.case$ -- 40
-chr.to.int$ -- 423
-cite$ -- 41
-duplicate$ -- 2011
-empty$ -- 2173
-format.name$ -- 127
-if$ -- 6133
-int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 337
-newline$ -- 146
-num.names$ -- 41
-pop$ -- 751
+sn-mathphys-num.bst [2024/07/19 v1.1  bibliography style]
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 15 entries,
+            7485 wiz_defined-function locations,
+            1289 strings with 12036 characters,
+and the built_in function-call counts, 119675 in all, are:
+= -- 20567
+> -- 496
+< -- 256
++ -- 11277
+- -- 142
+* -- 3786
+:= -- 21389
+add.period$ -- 18
+call.type$ -- 15
+change.case$ -- 94
+chr.to.int$ -- 684
+cite$ -- 15
+duplicate$ -- 673
+empty$ -- 2804
+format.name$ -- 300
+if$ -- 30434
+int.to.chr$ -- 1
+int.to.str$ -- 26
+missing$ -- 0
+newline$ -- 255
+num.names$ -- 75
+pop$ -- 287
 preamble$ -- 1
-purify$ -- 0
-quote$ -- 2
-skip$ -- 2086
+purify$ -- 70
+quote$ -- 0
+skip$ -- 12513
 stack$ -- 0
-substring$ -- 1054
-swap$ -- 1529
-text.length$ -- 57
+substring$ -- 11489
+swap$ -- 394
+text.length$ -- 199
 text.prefix$ -- 0
-top$ -- 5
-type$ -- 41
+top$ -- 1
+type$ -- 639
 warning$ -- 0
-while$ -- 115
-width$ -- 43
-write$ -- 406
+while$ -- 432
+width$ -- 0
+write$ -- 343

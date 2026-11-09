@@ -1,0 +1,17 @@
+[
+  {
+    "File": "main.tex",
+    "ExactBackupMatch": true,
+    "SHA256": "593C2B22A7AAC7B8D0106DD6A804B40CB37634ED78395D4F1EB74AB8C5CF9DC1"
+  },
+  {
+    "File": "references.bib",
+    "ExactBackupMatch": true,
+    "SHA256": "2129E91CAEDB7322581D0333AAE4AF50D5126BFD6B02B6DA7DBA4EC1D694987B"
+  },
+  {
+    "File": "main.pdf",
+    "ExactBackupMatch": true,
+    "SHA256": "2C26C61DB6A2756D8CEE0AB5D6851851F7BA0DE0A61E0E3ABCA9373E6875E231"
+  }
+]
